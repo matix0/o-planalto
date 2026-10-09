@@ -551,7 +551,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Indicador que mede o estado do país ou o poder do governante.
 
-**No jogo:** Existem 8 medidores: Dignidade, Consciência, Soberania, Segurança, Verdade, Caixa, Capital Político e Legitimidade.
+**No jogo:** Existem 8 medidores: Dignidade, Consciência, Soberania, Segurança, Integridade, Caixa, Capital Político e Legitimidade.
 
 **Fundamentação:** Os medidores são inspirados nos 4 pilares do *Reigns* (Igreja, Povo, Exército, Tesouro).
 

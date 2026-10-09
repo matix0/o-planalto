@@ -25,7 +25,7 @@ const banner = (secao) =>
 const yaml = (valor) => JSON.stringify(valor);
 
 // Medidores (D-014) e sub-medidores (D-015) escritos como código inline viram fichas do jogo no CSS.
-const MEDIDORES = ['Dignidade', 'Consciência', 'Soberania', 'Segurança', 'Verdade', 'Caixa', 'Capital Político', 'Legitimidade', 'Desemprego', 'Inflação', 'Juros'];
+const MEDIDORES = ['Dignidade', 'Consciência', 'Soberania', 'Segurança', 'Integridade', 'Caixa', 'Capital Político', 'Legitimidade', 'Desemprego', 'Inflação', 'Juros'];
 const reMedidor = new RegExp('`(' + MEDIDORES.join('|') + ')`', 'g');
 
 function marcarMedidores(corpo) {

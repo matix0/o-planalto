@@ -214,6 +214,8 @@ A auditoria v2 foi realizada após a consolidação inicial do projeto, com o ob
 
 #### Inclusão do Medidor `Verdade`
 
+> **Atualização (D-080):** o medidor foi renomeado para `Integridade` e o final "Pós-Verdade Total" para "Desintegração".
+
 **Motivo:** O medidor `Verdade` foi adicionado para capturar a integridade do debate público.
 
 **Fundamentação:** A desinformação é uma arma de destruição da democracia. Sem um medidor que capte isso, o jogo não refletiria a realidade.

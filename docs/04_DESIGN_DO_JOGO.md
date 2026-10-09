@@ -113,7 +113,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | 2 | **Consciência** | Indicador Social | Politização, pensamento crítico, educação, acesso à informação | Alienação Total | Revolução Permanente |
 | 3 | **Soberania** | Indicador Social | Autonomia nacional: controle de recursos, independência geopolítica, BRICS | Colônia | Isolacionismo Paranoico |
 | 4 | **Segurança** | Indicador Social | Percepção de proteção e ordem, mas também segurança humana | Autogestão Popular | Estado Policial |
-| 5 | **Verdade** | Indicador Social | Integridade do debate público, confiança nas instituições, resistência à desinformação | Pós-Verdade Total | Transparência Totalitária |
+| 5 | **Integridade** | Indicador Social | Integridade do debate público, confiança nas instituições, resistência à desinformação | Desintegração | Transparência Totalitária |
 | 6 | **Caixa** | Recurso de Poder | Dinheiro disponível para investir | Paralisia Fiscal | Prosperidade Compartilhada |
 | 7 | **Capital Político** | Recurso de Poder | Apoio no Congresso, capacidade de aprovar leis | Impeachment | Governabilidade Democrática |
 | 8 | **Legitimidade** | Recurso de Poder | Apoio popular direto, confiança da população | Revolta Popular | Apoio Popular Crítico |
@@ -134,7 +134,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | Consciência | 35 |
 | Soberania | 40 |
 | Segurança | 50 |
-| Verdade | 40 |
+| Integridade | 40 |
 | Caixa | 55 |
 | Capital Político | 50 |
 | Legitimidade | 55 |
@@ -163,7 +163,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | **Capital Político** | Governabilidade Democrática | **Ambíguo:** só existe 100% de apoio do Congresso para quem se corrompeu com o Centrão. |
 | **Legitimidade** | Apoio Popular Crítico | **Ambíguo:** apoio popular sem crítica é fanatismo. |
 | **Segurança** | Estado Policial | **Negativo:** ordem total é repressão. |
-| **Verdade** | Transparência Totalitária | **Negativo:** transparência total é vigilância. |
+| **Integridade** | Transparência Totalitária | **Negativo:** transparência total é vigilância. |
 
 ### 04.02.7. Relações entre Medidores
 
@@ -173,7 +173,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | **Consciência** | Legitimidade | Assimétrica | Quando Consciência > 60, Legitimidade -5 por turno. Quando Consciência < 30, Legitimidade +5 por turno. |
 | **Soberania** | Caixa | Imediata | Quando Soberania < 30, Caixa +10 no turno, mas Dignidade -5. |
 | **Segurança** | Dignidade | Condicional | Quando Segurança < 30, Dignidade -10. |
-| **Verdade** | Consciência | Multiplicadora | Quando Verdade < 30, efeitos negativos em Consciência são dobrados. |
+| **Integridade** | Consciência | Multiplicadora | Quando Integridade < 30, efeitos negativos em Consciência são dobrados. |
 | **Caixa** | Legitimidade | Invertida | Quando Caixa > 70, Legitimidade -3 por turno. Quando Caixa < 30, Legitimidade -5 por turno. |
 | **Capital Político** | Caixa | Direta | Quando Capital Político < 30, Caixa -10. |
 | **Legitimidade** | Capital Político | Direta | Quando Legitimidade < 30, Capital Político -10. |
@@ -184,14 +184,14 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | :--- | :--- |
 | **Cadeia da Barbárie** | Dignidade cai → Consciência cai → Legitimidade sobe → Capital Político sobe → Soberania cai. |
 | **Cadeia da Revolta** | Dignidade cai → Consciência sobe → Legitimidade cai → Capital Político cai → Impeachment. |
-| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Verdade cai → Pós-Verdade. |
-| **Cadeia da Resistência** | Consciência sobe → Verdade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
+| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Integridade cai → Desintegração. |
+| **Cadeia da Resistência** | Consciência sobe → Integridade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
 
 ### 04.02.9. Efeitos Não-Lineares (Limiares)
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Verdade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
+| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
 | **Consciência < 15** | O povo não reage a nenhuma crise. |
 | **Soberania < 15** | O país se torna um protetorado. |
 | **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
@@ -328,8 +328,8 @@ O jogo possui **10 modos institucionais**, cada um ensinando um mecanismo difere
 | 6 | **Emendas** | Caixa | Presidencialismo de coalizão, moeda de troca |
 | 7 | **Bancadas** | Capital Político | BBB (Boi, Bíblia, Bala), bancadas de direitos |
 | 8 | **Impeachment** | Legitimidade | Processo, quórum, golpe institucional |
-| 9 | **Judiciário** | Consciência / Verdade | Venda de sentenças, blindagem, suspeição |
-| 10 | **Influenciador / Desinformação** | Verdade / Consciência | Fake news, deepfakes, bets |
+| 9 | **Judiciário** | Consciência / Integridade | Venda de sentenças, blindagem, suspeição |
+| 10 | **Influenciador / Desinformação** | Integridade / Consciência | Fake news, deepfakes, bets |
 
 ### 04.04.2. Fundamentação Teórica
 
@@ -351,16 +351,16 @@ O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada
 
 | # | Ator | Arquétipo | Oferece | Cobra | Preço (Medidores) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Coronel** | Senhor de engenho, chefe local | Capital Político | Autonomia e impunidade | -Dignidade, -Verdade |
+| 1 | **Coronel** | Senhor de engenho, chefe local | Capital Político | Autonomia e impunidade | -Dignidade, -Integridade |
 | 2 | **Tecnocrata** | Planejador militar, economista | Caixa, Capital Político | Cortes sociais e privatizações | -Dignidade, -Soberania |
 | 3 | **Populista** | Líder carismático e messiânico | Legitimidade | Lealdade absoluta | -Consciência, -Capital Político |
-| 4 | **Miliciano** | Policial-bandido, senhor do território | Segurança (superficial) | Impunidade e controle econômico | -Dignidade, -Verdade, -Soberania |
-| 5 | **Pastor** | Imperador midiático da fé | Legitimidade, Capital Político | Censura e controle ideológico | -Consciência, -Verdade |
+| 4 | **Miliciano** | Policial-bandido, senhor do território | Segurança (superficial) | Impunidade e controle econômico | -Dignidade, -Integridade, -Soberania |
+| 5 | **Pastor** | Imperador midiático da fé | Legitimidade, Capital Político | Censura e controle ideológico | -Consciência, -Integridade |
 | 6 | **Banqueiro/Ruralista** | Capital financeiro e agronegócio | Caixa, acesso a mercados | Privatizações e desregulamentação | -Dignidade, -Soberania |
 | 7 | **Professor** | Educador libertador e sucateado | Consciência, Legitimidade | Investimento e liberdade de cátedra | +Consciência, -Capital Político |
 | 8 | **Médico do SUS** | Sanitarista e resistência | Dignidade, Legitimidade | Investimento e fim do teto | +Dignidade, -Caixa |
-| 9 | **Coach Digital** | Novo pastor da prosperidade | Legitimidade, Capital Político | Desregulamentação e isenções | -Consciência, -Verdade |
-| 10 | **Jornalista Independente** | Imprensa alternativa e resistência | Verdade, Consciência | Liberdade de imprensa e proteção | +Verdade, -Capital Político |
+| 9 | **Coach Digital** | Novo pastor da prosperidade | Legitimidade, Capital Político | Desregulamentação e isenções | -Consciência, -Integridade |
+| 10 | **Jornalista Independente** | Imprensa alternativa e resistência | Integridade, Consciência | Liberdade de imprensa e proteção | +Integridade, -Capital Político |
 | 11 | **Artista Engajado** | Cultura como trincheira | Consciência, Paixão Nacional | Financiamento e liberdade de criação | +Consciência, -Capital Político |
 | 12 | **Burocrata** | Servidor público de carreira | Caixa, Capital Político | Estabilidade e aumento salarial | +Caixa, -Dignidade (se acomodar) |
 | 13 | **Empresário da Saúde** | Dono de hospitais e planos | Caixa, Capital Político | Privatização do SUS | -Dignidade |
@@ -375,7 +375,7 @@ O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada
 | 17 | **Ambientalista** | Soberania, Dignidade | Proteção ambiental | +Soberania, -Caixa |
 | 18 | **Indígena** | Soberania, Consciência | Demarcação de terras | +Soberania, -Capital Político |
 | 19 | **Quilombola** | Dignidade, Consciência | Titulação de terras | +Dignidade, -Capital Político |
-| 20 | **Influenciador Progressista** | Consciência, Verdade | Apoio nas redes | +Consciência, -Capital Político |
+| 20 | **Influenciador Progressista** | Consciência, Integridade | Apoio nas redes | +Consciência, -Capital Político |
 
 ### 04.05.4. Sistema de Satisfação
 
@@ -469,7 +469,7 @@ Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao lo
 | Categoria | Quantidade | Status |
 | :--- | :--- | :--- |
 | Cartas inventariadas | 340 | ✅ |
-| Cartas que precisam de `Verdade` | 145 | ✅ Reescritas |
+| Cartas que precisam de `Integridade` | 145 | ✅ Reescritas |
 | Cartas de Aprendizado validadas | 145 | ✅ |
 
 ### 04.06.5. Fundamentação Teórica
@@ -551,7 +551,7 @@ O jogo possui **26 finais**, divididos em 6 categorias:
 | 2 | **Alienação Total** | Consciência = 0 | *"A massa não pensa, a massa segue. Quem não pensa, obedece."* | MV Bill |
 | 3 | **Colônia** | Soberania = 0 | *"Em lugar do cidadão formou-se um consumidor, que aceita ser chamado de usuário."* | Milton Santos |
 | 4 | **Autogestão Popular** | Segurança = 0 | *"A liberdade não é um presente dos governantes, mas uma conquista dos governados."* | Errico Malatesta |
-| 5 | **Pós-Verdade Total** | Verdade = 0 | *"Uma mentira repetida mil vezes torna-se verdade."* | Joseph Goebbels |
+| 5 | **Desintegração** | Integridade = 0 | *"A integridade do debate público foi destruída. Não há mais critério de verdade."* | Adaptação |
 | 6 | **Impeachment** | Capital Político = 0 | *"Uma condenação política exige obrigatoriamente a ocorrência de um crime de responsabilidade..."* | Dilma Rousseff |
 | 7 | **Revolta Popular** | Legitimidade = 0 | *"Liberdade ainda que tardia."* | Inconfidência Mineira |
 
@@ -567,35 +567,35 @@ O jogo possui **26 finais**, divididos em 6 categorias:
 
 | # | Final | Condição | Citação | Autor |
 | :--- | :--- | :--- | :--- | :--- |
-| 11 | **Autoritarismo Eleitoral** | Consciência < 30, Verdade < 30, Legitimidade > 70 | *"A gente vota, mas quem decide é outro."* | Oliveira Vianna (adaptação) |
+| 11 | **Autoritarismo Eleitoral** | Consciência < 30, Integridade < 30, Legitimidade > 70 | *"A gente vota, mas quem decide é outro."* | Oliveira Vianna (adaptação) |
 | 12 | **Golpe Militar** | Segurança > 80, Dignidade < 30, Consciência < 30 | *"Se você não está preparado para ser impiedoso, você não vai a lugar nenhum."* | Adolf Hitler |
 | 13 | **Golpe Institucional** | Capital Político > 80, Consciência < 30, Soberania < 30 | *"Hoje temo a morte da democracia..."* | Dilma Rousseff |
-| 14 | **Populismo Autoritário** | Legitimidade > 80, Consciência < 30, Verdade < 30 | *"O indivíduo nada é e nada vale."* | Adolf Hitler |
-| 15 | **Colônia Digital** | Soberania < 30, Verdade < 30, Dignidade < 30 | *"Sem regras, as Big Techs vão instituir a era do colonialismo digital..."* | Luiz Inácio Lula da Silva |
+| 14 | **Populismo Autoritário** | Legitimidade > 80, Consciência < 30, Integridade < 30 | *"O indivíduo nada é e nada vale."* | Adolf Hitler |
+| 15 | **Colônia Digital** | Soberania < 30, Integridade < 30, Dignidade < 30 | *"Sem regras, as Big Techs vão instituir a era do colonialismo digital..."* | Luiz Inácio Lula da Silva |
 
 ### 04.08.5. 💀 EXTERMÍNIO E EXPLORAÇÃO (2)
 
 | # | Final | Condição | Citação | Autor |
 | :--- | :--- | :--- | :--- | :--- |
-| 16 | **Genocídio Institucionalizado** | Dignidade < 20, Verdade < 20, Consciência < 30, Segurança > 80 | *"E daí? Lamento. Quer que eu faça o quê? Eu não sou coveiro, tá certo?"* | Jair Bolsonaro |
-| 17 | **Exploração Necropolítica** | Soberania < 20, Dignidade < 20, Caixa > 80, Verdade < 30 | *"Índio já tem terra demais, vamos tratá-los como seres humanos... não quer viver em um zoológico?"* | Jair Bolsonaro |
+| 16 | **Genocídio Institucionalizado** | Dignidade < 20, Integridade < 20, Consciência < 30, Segurança > 80 | *"E daí? Lamento. Quer que eu faça o quê? Eu não sou coveiro, tá certo?"* | Jair Bolsonaro |
+| 17 | **Exploração Necropolítica** | Soberania < 20, Dignidade < 20, Caixa > 80, Integridade < 30 | *"Índio já tem terra demais, vamos tratá-los como seres humanos... não quer viver em um zoológico?"* | Jair Bolsonaro |
 
 ### 04.08.6. 🌱 FORTALECIMENTO DA DEMOCRACIA (5)
 
 | # | Final | Condição | Citação | Autor |
 | :--- | :--- | :--- | :--- | :--- |
-| 18 | **República Soberana e Popular** | Dignidade > 80, Consciência > 70, Soberania > 70, Verdade > 70 | *"A educação é o único caminho para emancipar o homem..."* | Leonel Brizola |
-| 19 | **Democracia Participativa** | Consciência > 70, Verdade > 70, Dignidade > 60, Legitimidade > 60 | *"Ninguém liberta ninguém, ninguém se liberta sozinho..."* | Paulo Freire |
+| 18 | **República Soberana e Popular** | Dignidade > 80, Consciência > 70, Soberania > 70, Integridade > 70 | *"A educação é o único caminho para emancipar o homem..."* | Leonel Brizola |
+| 19 | **Democracia Participativa** | Consciência > 70, Integridade > 70, Dignidade > 60, Legitimidade > 60 | *"Ninguém liberta ninguém, ninguém se liberta sozinho..."* | Paulo Freire |
 | 20 | **Desenvolvimento Soberano** | Soberania > 80, Caixa > 60, Dignidade > 60 | *"Queremos um Brasil forte e independente..."* | Leonel Brizola |
-| 21 | **Cidadania Ativa e Mobilizada** | Consciência > 80, Verdade > 80, Legitimidade > 70 | *"A democracia não é só o direito de votar..."* | Luiz Inácio Lula da Silva |
+| 21 | **Cidadania Ativa e Mobilizada** | Consciência > 80, Integridade > 80, Legitimidade > 70 | *"A democracia não é só o direito de votar..."* | Luiz Inácio Lula da Silva |
 | 22 | **Paz Social e Justiça** | Segurança > 70, Dignidade > 70, Consciência > 60 | *"Sem justiça, a paz é enganosa e falsa."* | Dom Helder Câmara |
 
 ### 04.08.7. 🌱 CUIDADO E SOBERANIA (4)
 
 | # | Final | Condição | Citação | Autor |
 | :--- | :--- | :--- | :--- | :--- |
-| 23 | **Cuidado como Política de Estado** | Dignidade > 80, Verdade > 70, Consciência > 70, Segurança > 50 | *"Quero mostrar ao mundo que é possível cuidar do povo pobre."* | Luiz Inácio Lula da Silva |
-| 24 | **Soberania que Alimenta** | Soberania > 80, Dignidade > 70, Verdade > 60, Caixa > 50 | *"Ninguém é pobre porque quer..."* | Luiz Inácio Lula da Silva |
+| 23 | **Cuidado como Política de Estado** | Dignidade > 80, Integridade > 70, Consciência > 70, Segurança > 50 | *"Quero mostrar ao mundo que é possível cuidar do povo pobre."* | Luiz Inácio Lula da Silva |
+| 24 | **Soberania que Alimenta** | Soberania > 80, Dignidade > 70, Integridade > 60, Caixa > 50 | *"Ninguém é pobre porque quer..."* | Luiz Inácio Lula da Silva |
 | 25 | **Fome como Escolha Política** | Dignidade > 80, Consciência > 70, Soberania > 60 | *"A fome não é um problema de produção, mas de distribuição."* | Josué de Castro |
 | 26 | **Protecionismo Soberano** | Soberania > 80, Caixa > 60, Dignidade > 60 | *"Queremos um Brasil forte e independente."* | Leonel Brizola |
 
@@ -647,7 +647,7 @@ Cada final tem uma **citação de impacto**, escolhida para ser um "soco no est�
 | **Dignidade, Consciência e Soberania altos** | *"Seu governo priorizou a dignidade, a educação e a soberania..."* |
 | **Segurança, Capital Político e Caixa altos** | *"Seu governo priorizou a ordem, a estabilidade e a economia..."* |
 | **Equilíbrio entre todos** | *"Seu governo buscou equilíbrio entre diferentes valores..."* |
-| **Verdade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
+| **Integridade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
 | **Dignidade e Soberania baixos** | *"Seu governo negligenciou o povo e a soberania..."* |
 
 ### 04.09.5. Fundamentação Teórica
@@ -665,7 +665,7 @@ O modelo 9axes é uma adaptação do **Political Compass** e do **8values**. Ele
 | 1 | O governo deve priorizar segurança ou prevenção? | Segurança | Prevenção | Segurança / Dignidade |
 | 2 | O Brasil deve se alinhar aos EUA ou ao BRICS? | EUA | BRICS | Soberania |
 | 3 | O Estado deve investir em educação ou cortar gastos? | Educação | Cortar | Consciência / Caixa |
-| 4 | A mídia deve ser livre ou regulada? | Livre | Regulada | Verdade |
+| 4 | A mídia deve ser livre ou regulada? | Livre | Regulada | Integridade |
 | 5 | O governo deve taxar grandes fortunas? | Sim | Não | Dignidade / Caixa |
 | 6 | O povo deve participar das decisões? | Sim | Não | Legitimidade / Consciência |
 
@@ -706,7 +706,7 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 | :--- | :--- |
 | **Exposição Controlada** | O jogador é exposto a uma narrativa manipulada |
 | **Escolha** | O jogador decide como reagir |
-| **Consequência** | Se aceitar, perde `Verdade` e `Consciência`. Se recusar, perde `Legitimidade`. Se investigar, perde `Capital Político`, mas ganha `Verdade`. |
+| **Consequência** | Se aceitar, perde `Integridade` e `Consciência`. Se recusar, perde `Legitimidade`. Se investigar, perde `Capital Político`, mas ganha `Integridade`. |
 | **Carta de Aprendizado** | Explica a técnica e como reconhecê-la |
 
 ### 04.11.4. Exemplo de Carta
@@ -714,11 +714,11 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 > **Carta:** *"Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas."*
 >
 > **◀ ESQUERDA (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
-> - **Efeitos:** `Consciência` +10, `Verdade` +5, `Legitimidade` -10
+> - **Efeitos:** `Consciência` +10, `Integridade` +5, `Legitimidade` -10
 > - **Consequência:** *"O influenciador faz campanha contra você. Mas sua consciência está limpa."*
 >
 > **DIREITA ▶ (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
-> - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Verdade` -10
+> - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10
 > - **Consequência:** *"O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores."*
 >
 > **Carta de Aprendizado:** *"As bets financiam influenciadores com comissão sobre as perdas dos seguidores. O 'cachê da desgraça alheia' é uma das formas mais perversas de exploração digital."*
@@ -743,7 +743,7 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | :--- | :--- |
 | **Gatilho Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 |
 | **Gatilho Alternativo** | O jogador tomou **3 decisões consecutivas** que contrariaram a maioria do Congresso |
-| **Gatilho de Crise** | `Verdade` < 20 **E** `Consciência` < 20 |
+| **Gatilho de Crise** | `Integridade` < 20 **E** `Consciência` < 20 |
 
 **Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3.
 
@@ -752,12 +752,12 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | Fase | O que Acontece | Condição de Sobrevivência |
 | :--- | :--- | :--- |
 | **1. O Pedido** | A oposição protocola. O presidente da Câmara aceita. | Apelar ao povo (Legitimidade > 60) ou confiar na base (Capital Político > 50) |
-| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Verdade > 60) ou negociar (Caixa > 60) |
+| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Integridade > 60) ou negociar (Caixa > 60) |
 | **3. A Votação** | Câmara vota. Resultado depende do apoio popular. | Convocar manifestações (Legitimidade > 70) ou aceitar |
 | **4. O Julgamento** | Senado julga. Resultado depende da correlação de forças. | Renunciar (Consciência > 60) ou lutar até o fim |
 | **5. O Desfecho** | Se o jogador tiver apoio popular massivo, o golpe falha. | Legitimidade > 60 E Consciência > 50 = Absolvição |
 
-**Observação:** Se o jogador tiver `Consciência` < 30 E `Verdade` < 30, o impeachment é **automaticamente consumado**.
+**Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
 
 ### 04.12.4. Fundamentação Teórica
 
@@ -788,7 +788,7 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
 | **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
 | **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
-| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Pós-Verdade Total (Ano 4) |
+| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
 | **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
 | **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
 | **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
@@ -800,14 +800,14 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | :--- | :--- | :--- |
 | **Congresso** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) |
 | **Orçamento** | Crise fiscal (Ano 2) | Falência (Ano 3) |
-| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Pós-Verdade (Ano 3) |
+| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Desintegração (Ano 3) |
 | **Geopolítico** | Dependência externa (Ano 2) | Colônia (Ano 3) |
 | **Prisional e Policial** | Rebelião em presídios (Ano 2) | Estado de Caos (Ano 3) |
 | **Emendas** | Escândalo de desvio (Ano 2) | Impeachment (Ano 3) |
 | **Bancadas** | Agenda conservadora avança (Ano 2) | Hegemonia Autoritária (Ano 3) |
 | **Impeachment** | Processo instaurado (Ano 3) | Condenação ou absolvição (Ano 4) |
 | **Judiciário** | Escândalo no STF (Ano 2) | Crise institucional (Ano 3) |
-| **Influenciador** | Deepfake viral (Ano 2) | Pós-Verdade (Ano 3) |
+| **Influenciador** | Deepfake viral (Ano 2) | Desintegração (Ano 3) |
 
 ### 04.13.4. Eventos por Medidor (16)
 
@@ -817,7 +817,7 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | **Consciência** | Geração alienada (Ano 2) | Alienação Total (Ano 3) |
 | **Soberania** | Dependência externa (Ano 2) | Colônia (Ano 3) |
 | **Segurança** | Chacina policial (Ano 2) | Autogestão Popular (Ano 3) |
-| **Verdade** | Desinformação total (Ano 2) | Pós-Verdade (Ano 3) |
+| **Integridade** | Desinformação total (Ano 2) | Desintegração (Ano 3) |
 | **Caixa** | Crise fiscal (Ano 2) | Paralisia (Ano 3) |
 | **Capital Político** | Perda de apoio no Congresso (Ano 2) | Impeachment (Ano 3) |
 | **Legitimidade** | Revolta popular (Ano 2) | Queda do governo (Ano 3) |
@@ -864,7 +864,7 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | Consciência | 35 |
 | Soberania | 40 |
 | Segurança | 50 |
-| Verdade | 40 |
+| Integridade | 40 |
 | Caixa | 55 |
 | Capital Político | 50 |
 | Legitimidade | 55 |

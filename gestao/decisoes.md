@@ -87,6 +87,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-076 | Cor de destaque do site: tinta azul (`#1D4E89` claro / `#6FA8DC` escuro), só em links, botões e foco | 2026-10-09 | Proposta TA (P-009) |
 | D-077 | Site em Astro Starlight na pasta `site/`, build e deploy por GitHub Actions; `docs/` segue como fonte | 2026-10-09 | Escolha do PO (P-009) |
 | D-078 | Docs truncados (04, 05, 06, 08, 10): aviso "incompleto", marca no menu e `noindex` até a recuperação | 2026-10-09 | Proposta UX (P-009) |
+| D-080 | Medidor `Verdade` renomeado para `Integridade`; final "Pós-Verdade Total" → "Desintegração" (citação de Goebbels substituída por adaptação). Conceito e regras mantidos | 2026-10-09 | Nome capturado pelo discurso político; validar com o Prof. Alisson |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---

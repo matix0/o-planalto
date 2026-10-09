@@ -243,7 +243,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "opcao_direita": {
     "texto": "Aceitar as mudanças",
     "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Verdade": -5 },
+    "efeitos": { "Soberania": -15, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
   "aprendizado": {
@@ -349,7 +349,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "satisfacao": 50,
   "oferece": ["Capital Político"],
   "cobra": ["Autonomia", "Impunidade"],
-  "preco": { "Dignidade": -5, "Verdade": -5 },
+  "preco": { "Dignidade": -5, "Integridade": -5 },
   "cartas": ["ATOR-001", "ATOR-002", "ATOR-003", "ATOR-004", "ATOR-005"],
   "eventos_encadeados": [
     {
@@ -399,7 +399,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
     "Consciência": 35,
     "Soberania": 40,
     "Segurança": 50,
-    "Verdade": 40,
+    "Integridade": 40,
     "Caixa": 55,
     "Capital Político": 50,
     "Legitimidade": 55
@@ -409,7 +409,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
     "Consciência": 35,
     "Soberania": 50,
     "Segurança": 50,
-    "Verdade": 35,
+    "Integridade": 35,
     "Caixa": 65,
     "Capital Político": 50,
     "Legitimidade": 55
@@ -576,7 +576,7 @@ funcao calcular_eixo(escolhas):
 | **Dignidade, Consciência e Soberania altos** | *"Seu governo priorizou a dignidade, a educação e a soberania..."* |
 | **Segurança, Capital Político e Caixa altos** | *"Seu governo priorizou a ordem, a estabilidade e a economia..."* |
 | **Equilíbrio entre todos** | *"Seu governo buscou equilíbrio entre diferentes valores..."* |
-| **Verdade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
+| **Integridade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
 | **Dignidade e Soberania baixos** | *"Seu governo negligenciou o povo e a soberania..."* |
 
 ### 13.4.4. Sistema de Relações entre Medidores
@@ -587,7 +587,7 @@ funcao calcular_eixo(escolhas):
 | **Consciência** | Legitimidade | Assimétrica | Quando Consciência > 60, Legitimidade -5 por turno. Quando Consciência < 30, Legitimidade +5 por turno. |
 | **Soberania** | Caixa | Imediata | Quando Soberania < 30, Caixa +10 no turno, mas Dignidade -5. |
 | **Segurança** | Dignidade | Condicional | Quando Segurança < 30, Dignidade -10. |
-| **Verdade** | Consciência | Multiplicadora | Quando Verdade < 30, efeitos negativos em Consciência são dobrados. |
+| **Integridade** | Consciência | Multiplicadora | Quando Integridade < 30, efeitos negativos em Consciência são dobrados. |
 | **Caixa** | Legitimidade | Invertida | Quando Caixa > 70, Legitimidade -3 por turno. Quando Caixa < 30, Legitimidade -5 por turno. |
 | **Capital Político** | Caixa | Direta | Quando Capital Político < 30, Caixa -10. |
 | **Legitimidade** | Capital Político | Direta | Quando Legitimidade < 30, Capital Político -10. |
@@ -598,14 +598,14 @@ funcao calcular_eixo(escolhas):
 | :--- | :--- |
 | **Cadeia da Barbárie** | Dignidade cai → Consciência cai → Legitimidade sobe → Capital Político sobe → Soberania cai. |
 | **Cadeia da Revolta** | Dignidade cai → Consciência sobe → Legitimidade cai → Capital Político cai → Impeachment. |
-| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Verdade cai → Pós-Verdade. |
-| **Cadeia da Resistência** | Consciência sobe → Verdade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
+| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Integridade cai → Desintegração. |
+| **Cadeia da Resistência** | Consciência sobe → Integridade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
 
 **Efeitos Não-Lineares (Limiares):**
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Verdade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
+| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
 | **Consciência < 15** | O povo não reage a nenhuma crise. |
 | **Soberania < 15** | O país se torna um protetorado. |
 | **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
@@ -650,7 +650,7 @@ funcao calcular_eixo(escolhas):
       "opcao_direita": {
         "texto": "Aceitar as mudanças",
         "custo": { "Capital Político": 10, "Caixa": 10 },
-        "efeitos": { "Soberania": -15, "Verdade": -5 },
+        "efeitos": { "Soberania": -15, "Integridade": -5 },
         "consequencia": "O relator é adversário. O projeto avança."
       },
       "aprendizado": {

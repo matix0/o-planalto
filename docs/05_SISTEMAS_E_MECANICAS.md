@@ -81,7 +81,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 
 | Tipo | Quantidade | Medidores |
 | :--- | :--- | :--- |
-| **Indicadores Sociais** | 5 | Dignidade, Consciência, Soberania, Segurança, Verdade |
+| **Indicadores Sociais** | 5 | Dignidade, Consciência, Soberania, Segurança, Integridade |
 | **Recursos de Poder** | 3 | Caixa, Capital Político, Legitimidade |
 | **Sub-medidores Econômicos** | 3 | Desemprego, Inflação, Juros |
 
@@ -93,7 +93,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | Consciência | 35 | A despolitização é a regra |
 | Soberania | 40 | Dependência externa, mas com margem de manobra |
 | Segurança | 50 | Violência urbana, mas não é caos total |
-| Verdade | 40 | Desinformação crescente |
+| Integridade | 40 | Desinformação crescente |
 | Caixa | 55 | Ainda há algum dinheiro |
 | Capital Político | 50 | Congresso fragmentado, mas com base |
 | Legitimidade | 55 | O povo está esperançoso (Lua de Mel) |
@@ -118,7 +118,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | **Consciência** | Legitimidade | Assimétrica | Quando Consciência > 60, Legitimidade -5 por turno. Quando Consciência < 30, Legitimidade +5 por turno. |
 | **Soberania** | Caixa | Imediata | Quando Soberania < 30, Caixa +10 no turno, mas Dignidade -5. |
 | **Segurança** | Dignidade | Condicional | Quando Segurança < 30, Dignidade -10. |
-| **Verdade** | Consciência | Multiplicadora | Quando Verdade < 30, efeitos negativos em Consciência são dobrados. |
+| **Integridade** | Consciência | Multiplicadora | Quando Integridade < 30, efeitos negativos em Consciência são dobrados. |
 | **Caixa** | Legitimidade | Invertida | Quando Caixa > 70, Legitimidade -3 por turno. Quando Caixa < 30, Legitimidade -5 por turno. |
 | **Capital Político** | Caixa | Direta | Quando Capital Político < 30, Caixa -10. |
 | **Legitimidade** | Capital Político | Direta | Quando Legitimidade < 30, Capital Político -10. |
@@ -129,14 +129,14 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | :--- | :--- |
 | **Cadeia da Barbárie** | Dignidade cai → Consciência cai → Legitimidade sobe → Capital Político sobe → Soberania cai. |
 | **Cadeia da Revolta** | Dignidade cai → Consciência sobe → Legitimidade cai → Capital Político cai → Impeachment. |
-| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Verdade cai → Pós-Verdade. |
-| **Cadeia da Resistência** | Consciência sobe → Verdade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
+| **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Integridade cai → Desintegração. |
+| **Cadeia da Resistência** | Consciência sobe → Integridade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
 
 ### 05.02.6. Efeitos Não-Lineares (Limiares)
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Verdade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
+| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
 | **Consciência < 15** | O povo não reage a nenhuma crise. |
 | **Soberania < 15** | O país se torna um protetorado. |
 | **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
@@ -189,7 +189,7 @@ O sistema de medidores é baseado em:
   "opcao_direita": {
     "texto": "Aceitar as mudanças",
     "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Verdade": -5 },
+    "efeitos": { "Soberania": -15, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
   "aprendizado": {
@@ -360,7 +360,7 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
 | **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
 | **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
-| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Pós-Verdade Total (Ano 4) |
+| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
 | **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
 | **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
 | **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
@@ -372,14 +372,14 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | :--- | :--- | :--- |
 | **Congresso** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) |
 | **Orçamento** | Crise fiscal (Ano 2) | Falência (Ano 3) |
-| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Pós-Verdade (Ano 3) |
+| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Desintegração (Ano 3) |
 | **Geopolítico** | Dependência externa (Ano 2) | Colônia (Ano 3) |
 | **Prisional e Policial** | Rebelião em presídios (Ano 2) | Estado de Caos (Ano 3) |
 | **Emendas** | Escândalo de desvio (Ano 2) | Impeachment (Ano 3) |
 | **Bancadas** | Agenda conservadora avança (Ano 2) | Hegemonia Autoritária (Ano 3) |
 | **Impeachment** | Processo instaurado (Ano 3) | Condenação ou absolvição (Ano 4) |
 | **Judiciário** | Escândalo no STF (Ano 2) | Crise institucional (Ano 3) |
-| **Influenciador** | Deepfake viral (Ano 2) | Pós-Verdade (Ano 3) |
+| **Influenciador** | Deepfake viral (Ano 2) | Desintegração (Ano 3) |
 
 ### 05.06.4. Eventos por Medidor (16)
 
@@ -389,7 +389,7 @@ Os eventos encadeados são **consequências de decisões anteriores** que se man
 | **Consciência** | Geração alienada (Ano 2) | Alienação Total (Ano 3) |
 | **Soberania** | Dependência externa (Ano 2) | Colônia (Ano 3) |
 | **Segurança** | Chacina policial (Ano 2) | Autogestão Popular (Ano 3) |
-| **Verdade** | Desinformação total (Ano 2) | Pós-Verdade (Ano 3) |
+| **Integridade** | Desinformação total (Ano 2) | Desintegração (Ano 3) |
 | **Caixa** | Crise fiscal (Ano 2) | Paralisia (Ano 3) |
 | **Capital Político** | Perda de apoio no Congresso (Ano 2) | Impeachment (Ano 3) |
 | **Legitimidade** | Revolta popular (Ano 2) | Queda do governo (Ano 3) |
@@ -431,7 +431,7 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | :--- | :--- |
 | **Gatilho Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 |
 | **Gatilho Alternativo** | O jogador tomou **3 decisões consecutivas** que contrariaram a maioria do Congresso |
-| **Gatilho de Crise** | `Verdade` < 20 **E** `Consciência` < 20 |
+| **Gatilho de Crise** | `Integridade` < 20 **E** `Consciência` < 20 |
 
 **Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3.
 
@@ -440,12 +440,12 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | Fase | O que Acontece | Condição de Sobrevivência |
 | :--- | :--- | :--- |
 | **1. O Pedido** | A oposição protocola. O presidente da Câmara aceita. | Apelar ao povo (Legitimidade > 60) ou confiar na base (Capital Político > 50) |
-| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Verdade > 60) ou negociar (Caixa > 60) |
+| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Integridade > 60) ou negociar (Caixa > 60) |
 | **3. A Votação** | Câmara vota. Resultado depende do apoio popular. | Convocar manifestações (Legitimidade > 70) ou aceitar |
 | **4. O Julgamento** | Senado julga. Resultado depende da correlação de forças. | Renunciar (Consciência > 60) ou lutar até o fim |
 | **5. O Desfecho** | Se o jogador tiver apoio popular massivo, o golpe falha. | Legitimidade > 60 E Consciência > 50 = Absolvição |
 
-**Observação:** Se o jogador tiver `Consciência` < 30 E `Verdade` < 30, o impeachment é **automaticamente consumado**.
+**Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
 
 ### 05.07.4. Fluxo do Impeachment
 
@@ -526,7 +526,7 @@ funcao calcular_eixo(escolhas):
 | **Dignidade, Consciência e Soberania altos** | *"Seu governo priorizou a dignidade, a educação e a soberania..."* |
 | **Segurança, Capital Político e Caixa altos** | *"Seu governo priorizou a ordem, a estabilidade e a economia..."* |
 | **Equilíbrio entre todos** | *"Seu governo buscou equilíbrio entre diferentes valores..."* |
-| **Verdade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
+| **Integridade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
 | **Dignidade e Soberania baixos** | *"Seu governo negligenciou o povo e a soberania..."* |
 
 ### 05.08.5. Fundamentação Teórica
@@ -544,7 +544,7 @@ O modelo 9axes é uma adaptação do **Political Compass** e do **8values**. Ele
 | 1 | O governo deve priorizar segurança ou prevenção? | Segurança | Prevenção | Segurança / Dignidade |
 | 2 | O Brasil deve se alinhar aos EUA ou ao BRICS? | EUA | BRICS | Soberania |
 | 3 | O Estado deve investir em educação ou cortar gastos? | Educação | Cortar | Consciência / Caixa |
-| 4 | A mídia deve ser livre ou regulada? | Livre | Regulada | Verdade |
+| 4 | A mídia deve ser livre ou regulada? | Livre | Regulada | Integridade |
 | 5 | O governo deve taxar grandes fortunas? | Sim | Não | Dignidade / Caixa |
 | 6 | O povo deve participar das decisões? | Sim | Não | Legitimidade / Consciência |
 
@@ -585,7 +585,7 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 | :--- | :--- |
 | **Exposição Controlada** | O jogador é exposto a uma narrativa manipulada |
 | **Escolha** | O jogador decide como reagir |
-| **Consequência** | Se aceitar, perde `Verdade` e `Consciência`. Se recusar, perde `Legitimidade`. Se investigar, perde `Capital Político`, mas ganha `Verdade`. |
+| **Consequência** | Se aceitar, perde `Integridade` e `Consciência`. Se recusar, perde `Legitimidade`. Se investigar, perde `Capital Político`, mas ganha `Integridade`. |
 | **Carta de Aprendizado** | Explica a técnica e como reconhecê-la |
 
 ### 05.10.4. Exemplo de Carta
@@ -593,11 +593,11 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 > **Carta:** *"Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas."*
 >
 > **◀ ESQUERDA (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
-> - **Efeitos:** `Consciência` +10, `Verdade` +5, `Legitimidade` -10
+> - **Efeitos:** `Consciência` +10, `Integridade` +5, `Legitimidade` -10
 > - **Consequência:** *"O influenciador faz campanha contra você. Mas sua consciência está limpa."*
 >
 > **DIREITA ▶ (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
-> - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Verdade` -10
+> - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10
 > - **Consequência:** *"O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores."*
 >
 > **Carta de Aprendizado:** *"As bets financiam influenciadores com comissão sobre as perdas dos seguidores. O 'cachê da desgraça alheia' é uma das formas mais perversas de exploração digital."*
@@ -618,7 +618,7 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 | Consciência | 35 |
 | Soberania | 40 |
 | Segurança | 50 |
-| Verdade | 40 |
+| Integridade | 40 |
 | Caixa | 55 |
 | Capital Político | 50 |
 | Legitimidade | 55 |

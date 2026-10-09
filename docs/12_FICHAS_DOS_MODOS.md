@@ -59,8 +59,8 @@ Cada ficha contém:
 | 6 | Emendas | Caixa | MOD-006 |
 | 7 | Bancadas | Capital Político | MOD-007 |
 | 8 | Impeachment | Legitimidade | MOD-008 |
-| 9 | Judiciário | Consciência / Verdade | MOD-009 |
-| 10 | Influenciador / Desinformação | Verdade / Consciência | MOD-010 |
+| 9 | Judiciário | Consciência / Integridade | MOD-009 |
+| 10 | Influenciador / Desinformação | Integridade / Consciência | MOD-010 |
 
 ### 12.1.5. Referências
 
@@ -79,10 +79,10 @@ Cada ficha contém:
 | **Nome** | Congresso |
 | **O que ensina** | Bicameralismo, comissões, relatores, poder de agenda, barganha, presidencialismo de coalizão, CPI, quórum, maioria simples, maioria qualificada, veto, sanção |
 | **Medidor Principal** | `Capital Político` |
-| **Medidores Secundários** | `Dignidade`, `Soberania`, `Verdade`, `Caixa` |
+| **Medidores Secundários** | `Dignidade`, `Soberania`, `Integridade`, `Caixa` |
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Capital Político` < 40. |
 | **Cartas Associadas** | INST-001 a INST-020 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Verdade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
+| **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
 | **Conexão com Atores** | Coronel, Tecnocrata, Pastor, Banqueiro/Ruralista, Burocrata |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-007 (Bancadas), MOD-008 (Impeachment) |
 | **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, o relator do impeachment de Dilma admitiu que as pedaladas fiscais não configuravam crime. |
@@ -128,7 +128,7 @@ Cada ficha contém:
 | **Nome** | Orçamento |
 | **O que ensina** | Teto de gastos, dívida pública, emendas parlamentares, subfinanciamento, escolhas políticas, orçamento público ≠ orçamento doméstico |
 | **Medidor Principal** | `Dignidade` |
-| **Medidores Secundários** | `Caixa`, `Capital Político`, `Verdade`, `Legitimidade` |
+| **Medidores Secundários** | `Caixa`, `Capital Político`, `Integridade`, `Legitimidade` |
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` < 30 ou `Dignidade` < 30. |
 | **Cartas Associadas** | INST-021 a INST-040 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Crise fiscal" (`Caixa` -15, `Dignidade` -10) · Ano 3: "Falência" (`Caixa` -20, `Capital Político` -15) |
@@ -177,10 +177,10 @@ Cada ficha contém:
 | **Nome** | Currículo e Mídia |
 | **O que ensina** | BNCC, concessões de TV, censura, pensamento crítico, educação integral, mídia como campo de batalha, redes sociais |
 | **Medidor Principal** | `Consciência` |
-| **Medidores Secundários** | `Verdade`, `Dignidade`, `Capital Político` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Consciência` < 30 ou `Verdade` < 30. |
+| **Medidores Secundários** | `Integridade`, `Dignidade`, `Capital Político` |
+| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Consciência` < 30 ou `Integridade` < 30. |
 | **Cartas Associadas** | INST-041 a INST-060 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Geração sem pensamento crítico" (`Consciência` -15, `Verdade` -10) · Ano 3: "Pós-Verdade" (`Verdade` -20, `Consciência` -15) |
+| **Eventos Encadeados** | Ano 2: "Geração sem pensamento crítico" (`Consciência` -15, `Integridade` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
 | **Conexão com Atores** | Professor, Artista Engajado, Pastor, Coach Digital, Reitor Privatista, Jornalista Independente |
 | **Referências Cruzadas** | MOD-010 (Influenciador) |
 | **Fundamentação** | A Lei 13.415/2017 rebaixou Filosofia e Sociologia de "disciplinas obrigatórias" para "estudos e práticas". O "Escola sem Partido" criminaliza o debate crítico. A educação integral (CIEPs) ataca as causas do crime. |
@@ -226,7 +226,7 @@ Cada ficha contém:
 | **Nome** | Geopolítico |
 | **O que ensina** | BRICS, desdolarização, dependência externa, soberania, imperialismo, domínio chinês, venda de recursos estratégicos |
 | **Medidor Principal** | `Soberania` |
-| **Medidores Secundários** | `Caixa`, `Dignidade`, `Verdade` |
+| **Medidores Secundários** | `Caixa`, `Dignidade`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Soberania` < 30. |
 | **Cartas Associadas** | INST-061 a INST-080 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Dependência externa" (`Soberania` -15, `Caixa` +10) · Ano 3: "Colônia" (`Soberania` -20, `Dignidade` -15) |
@@ -275,7 +275,7 @@ Cada ficha contém:
 | **Nome** | Prisional e Policial |
 | **O que ensina** | Encarceramento em massa, política de drogas, violência policial, Estado penal vs. Estado social, sistema prisional, facções |
 | **Medidor Principal** | `Segurança` |
-| **Medidores Secundários** | `Dignidade`, `Consciência`, `Verdade` |
+| **Medidores Secundários** | `Dignidade`, `Consciência`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Segurança` < 30 ou `Dignidade` < 30. |
 | **Cartas Associadas** | INST-081 a INST-100 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Rebelião em presídios" (`Segurança` -15, `Dignidade` -10) · Ano 3: "Estado de Caos" (`Segurança` -20, `Dignidade` -15) |
@@ -324,10 +324,10 @@ Cada ficha contém:
 | **Nome** | Emendas |
 | **O que ensina** | Presidencialismo de coalizão, emendas parlamentares, moeda de troca, fisiologismo, Centrão, governabilidade |
 | **Medidor Principal** | `Caixa` |
-| **Medidores Secundários** | `Capital Político`, `Dignidade`, `Verdade` |
+| **Medidores Secundários** | `Capital Político`, `Dignidade`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` > 60 ou `Capital Político` < 40. |
 | **Cartas Associadas** | INST-101 a INST-120 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Escândalo de desvio" (`Caixa` -15, `Verdade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
+| **Eventos Encadeados** | Ano 2: "Escândalo de desvio" (`Caixa` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
 | **Conexão com Atores** | Coronel, Burocrata, Banqueiro/Ruralista, Pastor |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-007 (Bancadas) |
 | **Fundamentação** | As emendas parlamentares representam 0,9% do orçamento. Entre janeiro de 2024 e março de 2026, cem artistas acumularam mais de R$ 5 bilhões em cachês. O agronegócio recebeu 56 vezes mais recursos que a agricultura familiar. |
@@ -373,7 +373,7 @@ Cada ficha contém:
 | **Nome** | Bancadas |
 | **O que ensina** | Bancada BBB (Boi, Bíblia, Bala), bancadas de direitos, bancadas temáticas, lobby, financiamento de campanha |
 | **Medidor Principal** | `Capital Político` |
-| **Medidores Secundários** | `Dignidade`, `Consciência`, `Soberania`, `Verdade` |
+| **Medidores Secundários** | `Dignidade`, `Consciência`, `Soberania`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Capital Político` < 40. |
 | **Cartas Associadas** | INST-121 a INST-140 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Agenda conservadora avança" (`Consciência` -10, `Soberania` -5) · Ano 3: "Hegemonia Autoritária" (`Capital Político` +20, `Consciência` -20) |
@@ -422,7 +422,7 @@ Cada ficha contém:
 | **Nome** | Impeachment |
 | **O que ensina** | Processo de impeachment, quórum de 2/3, julgamento político, golpe institucional, crime de responsabilidade |
 | **Medidor Principal** | `Legitimidade` |
-| **Medidores Secundários** | `Capital Político`, `Consciência`, `Verdade` |
+| **Medidores Secundários** | `Capital Político`, `Consciência`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 2-4. Acionado quando `Legitimidade` < 20 E `Capital Político` < 20. |
 | **Cartas Associadas** | INST-141 a INST-160 (20 cartas) |
 | **Eventos Encadeados** | Ano 3: "Processo instaurado" (`Capital Político` -15, `Legitimidade` -10) · Ano 4: "Condenação ou absolvição" (`Legitimidade` -30 ou +20) |
@@ -470,11 +470,11 @@ Cada ficha contém:
 | **ID** | MOD-009 |
 | **Nome** | Judiciário |
 | **O que ensina** | Venda de sentenças, blindagem institucional, suspeição, foro privilegiado, aposentadoria compulsória, impunidade |
-| **Medidor Principal** | `Consciência` / `Verdade` |
+| **Medidor Principal** | `Consciência` / `Integridade` |
 | **Medidores Secundários** | `Capital Político`, `Legitimidade`, `Dignidade` |
-| **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Verdade` < 30. |
+| **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Integridade` < 30. |
 | **Cartas Associadas** | INST-161 a INST-180 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Escândalo no STF" (`Verdade` -15, `Consciência` -10) · Ano 3: "Crise institucional" (`Verdade` -20, `Capital Político` -15) |
+| **Eventos Encadeados** | Ano 2: "Escândalo no STF" (`Integridade` -15, `Consciência` -10) · Ano 3: "Crise institucional" (`Integridade` -20, `Capital Político` -15) |
 | **Conexão com Atores** | Jornalista Independente, Burocrata, Banqueiro/Ruralista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-010 (Influenciador) |
 | **Fundamentação** | A venda de sentenças é um mercado nacional. O Banco Master revelou 52 mensagens entre Vorcaro e Alexandre de Moraes. A CPI pediu impeachment de Toffoli, Moraes e Gilmar. A aposentadoria compulsória é uma forma de blindagem institucional. |
@@ -519,11 +519,11 @@ Cada ficha contém:
 | **ID** | MOD-010 |
 | **Nome** | Influenciador / Desinformação |
 | **O que ensina** | Fake news, deepfakes, bets, influenciadores, pânico moral, desmoralização, didatismo acusatório, fazendas de IA, cachê da desgraça |
-| **Medidor Principal** | `Verdade` / `Consciência` |
+| **Medidor Principal** | `Integridade` / `Consciência` |
 | **Medidores Secundários** | `Legitimidade`, `Capital Político`, `Dignidade` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Verdade` < 30 ou `Consciência` < 30. |
+| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Integridade` < 30 ou `Consciência` < 30. |
 | **Cartas Associadas** | INST-181 a INST-200 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Deepfake viral" (`Verdade` -15, `Consciência` -10) · Ano 3: "Pós-Verdade" (`Verdade` -20, `Consciência` -15) |
+| **Eventos Encadeados** | Ano 2: "Deepfake viral" (`Integridade` -15, `Consciência` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
 | **Conexão com Atores** | Coach Digital, Jornalista Independente, Influenciador Progressista, Pastor |
 | **Referências Cruzadas** | MOD-003 (Currículo e Mídia) |
 | **Fundamentação** | A divulgação de conteúdos falsos com IA mais que triplicou entre 2024 e 2025. 554 vídeos deepfake foram publicados nas eleições de 2026. As bets financiam influenciadores com comissão sobre as perdas. O "cachê da desgraça alheia" é uma das formas mais perversas de exploração digital. |
@@ -571,7 +571,7 @@ Cada ficha contém:
 | **Consciência** | Currículo e Mídia, Judiciário |
 | **Soberania** | Geopolítico |
 | **Segurança** | Prisional e Policial |
-| **Verdade** | Judiciário, Influenciador |
+| **Integridade** | Judiciário, Influenciador |
 | **Caixa** | Emendas |
 | **Capital Político** | Congresso, Bancadas |
 | **Legitimidade** | Impeachment |
