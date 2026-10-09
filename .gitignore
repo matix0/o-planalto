@@ -1,0 +1,23 @@
+# Godot 4 (https://github.com/github/gitignore/blob/main/Godot.gitignore)
+.godot/
+.nomedia
+export_credentials.cfg
+*.translation
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Builds
+build/
+dist/
+
+# Claude Code (configuração pessoal e notas de sessão)
+.claude/settings.local.json
+.claude/notas/
