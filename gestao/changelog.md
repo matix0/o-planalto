@@ -36,6 +36,7 @@ Versionamento: [SemVer](https://semver.org/).
 - `.claude/rules/subagents.md` (duplicava `gestao/equipe.md`)
 
 ### Corrigido
+- `docs/04_DESIGN_DO_JOGO.md` restaurado na íntegra (04.01–04.16), texto enviado pelo PO
 - `docs/12` e `docs/13`: título residual de chat (`# 📄 …md`); `docs/13`: bloco de código sem fechamento e resumo de chat no fim
 - Referências a `Docs/` inexistente (README, `/fechar-plano`, docs vivos)
 - `/fechar-plano`, `leitura.md`: blocos colados quebrados
