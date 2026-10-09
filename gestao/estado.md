@@ -124,6 +124,10 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 **Escrever os arquivos 14-18** (UI/UX, Fluxo, Manual, Roteiros) antes do GDD.
 
+**Pendências do P-009:**
+- Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).
+- Parecer jurídico sobre o conteúdo com políticos reais (RC-08).
+
 **Bloqueios:** Nenhum.
 
 **Aguardando:** Ordem do PO.

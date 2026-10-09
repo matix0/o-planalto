@@ -200,9 +200,9 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🟡 Em andamento |
+| **Status** | ✅ Concluído |
 | **Início** | 2026-10-09 |
-| **Conclusão** | — |
+| **Conclusão** | 2026-10-09 |
 | **Objetivo** | Redesenhar o site público da documentação com processo de design (UX, TA, PSI) |
 | **Decisões** | D-075 a D-079 |
 | **Notas** | `.claude/notas/P-009-design-pages/` (local) |
@@ -217,7 +217,13 @@
 | 4 | Implementar o site em `site/` (Starlight) | ✅ | `site/`, `.github/workflows/site.yml` |
 | 5 | Verificar: build, navegador, acessibilidade, zero requisições externas | ✅ | build local (17 páginas); navegador claro/escuro, desktop/celular |
 | 6 | Onda 2: PSI (textos) e QA (aceite) | ✅ | QA 9/9; PSI cancelado a pedido do PO (textos validados pelo PO) |
-| 7 | Aprovação dos textos pelo PO e publicação | 🟡 | textos validados; fonte do Pages = GitHub Actions; deploy em andamento |
+| 7 | Aprovação dos textos pelo PO e publicação | ✅ | commit `dd7563b`; workflow `Site` run 37981047273 ✅; https://matix0.github.io/o-planalto/ verificado (zero requisições externas, 404 em pt-BR) |
+
+**Pendências geradas:**
+- Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).
+- Parecer jurídico e revisão do conteúdo com políticos reais à luz da D-005 (RC-08).
+- GD: eixo ideológico calculado pelo lado do arrasto (`docs/13_ARQUITETURA_TECNICA.md:560-569`).
+- Atualizar o Node local para ≥ 22.12 (RT-09).
 
 ---
 
