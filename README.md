@@ -39,7 +39,7 @@ A documentação completa está em [`docs/`](./docs/) e é publicada via GitHub 
 | 12 | [Modos](./docs/12_FICHAS_DOS_MODOS.md) | 10 modos |
 | 13 | [Arquitetura](./docs/13_ARQUITETURA_TECNICA.md) | Stack, dados |
 
-**GitHub Pages:** https://SEU-USUARIO.github.io/o-planalto/
+**GitHub Pages:** https://matix0.github.io/o-planalto/
 
 ---
 
@@ -104,7 +104,7 @@ A definir (Creative Commons ou MIT).
 ## Contato
 
 - **Idealizador:** Mateus
-- **Repositório:** https://github.com/SEU-USUARIO/o-planalto
+- **Repositório:** https://github.com/matix0/o-planalto
 
 ---
 
