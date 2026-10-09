@@ -8,6 +8,7 @@ export const SECOES = [
 	{ nome: 'Design do jogo', resumo: 'Medidores, cartas, finais, atores e modos.' },
 	{ nome: 'Produção e histórico', resumo: 'Referências, decisões tomadas e plano de produção.' },
 	{ nome: 'Referência rápida', resumo: 'Glossário e guia de estilo para quem escreve as cartas.' },
+	{ nome: 'Roteiros', resumo: 'As 340 cartas e suas Cartas de Aprendizado.' },
 	{ nome: 'Técnico', resumo: 'Stack, estrutura de dados e fluxos do protótipo.' },
 ];
 
@@ -27,6 +28,11 @@ export const DOCS = [
 	{ arquivo: '08_PRODUCAO_E_PROXIMOS_PASSOS.md', slug: '08-producao-e-proximos-passos', titulo: '08 — Produção e Próximos Passos', curto: 'Produção e próximos passos', secao: 'Produção e histórico', descricao: 'Stack, equipe, cronograma, validação, questões legais e distribuição.', aviso: true },
 	{ arquivo: '09_GLOSSARIO.md', slug: '09-glossario', titulo: '09 — Glossário', curto: 'Glossário', secao: 'Referência rápida', descricao: 'Termos institucionais, políticos e do jogo.', aviso: true },
 	{ arquivo: '10_GUIA_DE_ESTILO_E_TOM.md', slug: '10-guia-de-estilo-e-tom', titulo: '10 — Guia de Estilo e Tom', curto: 'Guia de estilo e tom', secao: 'Referência rápida', descricao: 'Tom, regras de escrita, diálogos, finais e checklists para escrever as cartas.', aviso: true },
+	{ arquivo: '14_UI_UX_DESIGN.md', slug: '14-ui-ux-design', titulo: '14 — UI/UX Design', curto: 'UI/UX design', secao: 'Design do jogo', descricao: 'Telas, HUD, interações e acessibilidade do jogo.', aviso: true },
+	{ arquivo: '15_FLUXO_DO_JOGO.md', slug: '15-fluxo-do-jogo', titulo: '15 — Fluxo do Jogo', curto: 'Fluxo do jogo', secao: 'Design do jogo', descricao: 'O fluxo completo de uma partida, da tela inicial ao final.' },
+	{ arquivo: '16_MANUAL_DO_JOGADOR.md', slug: '16-manual-do-jogador', titulo: '16 — Manual do Jogador', curto: 'Manual do jogador', secao: 'Visão geral', descricao: 'Guia para jogar O Planalto.', aviso: true },
+	{ arquivo: '17_ROTEIRO_DAS_CARTAS.md', slug: '17-roteiro-das-cartas', titulo: '17 — Roteiro das Cartas', curto: 'Roteiro das cartas', secao: 'Roteiros', descricao: 'Roteiro das 340 cartas do jogo.', aviso: true },
+	{ arquivo: '18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md', slug: '18-roteiro-das-cartas-de-aprendizado', titulo: '18 — Roteiro das Cartas de Aprendizado', curto: 'Cartas de aprendizado', secao: 'Roteiros', descricao: 'Roteiro das Cartas de Aprendizado, por modo.', aviso: true },
 	{ arquivo: '13_ARQUITETURA_TECNICA.md', slug: '13-arquitetura-tecnica', titulo: '13 — Arquitetura Técnica', curto: 'Arquitetura técnica', secao: 'Técnico', descricao: 'Stack, estrutura de dados, sistemas e fluxos do jogo.' },
 ];
 

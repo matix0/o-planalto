@@ -63,20 +63,20 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | ⏳ Pendente |
-| **Início** | — |
-| **Conclusão** | — |
+| **Status** | ✅ Concluído |
+| **Início** | 2026-10 |
+| **Conclusão** | 2026-10-09 |
 | **Objetivo** | Escrever UI/UX, Fluxo, Manual, Roteiros |
 
 ### Etapas
 
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
-| 1 | Escrever `14_UI_UX_DESIGN.md` | ⏳ | — |
-| 2 | Escrever `15_FLUXO_DO_JOGO.md` | ⏳ | — |
-| 3 | Escrever `16_MANUAL_DO_JOGADOR.md` | ⏳ | — |
-| 4 | Escrever `17_ROTEIRO_DAS_CARTAS.md` | ⏳ | — |
-| 5 | Escrever `18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | ⏳ | — |
+| 1 | Escrever `14_UI_UX_DESIGN.md` | ✅ | `docs/` |
+| 2 | Escrever `15_FLUXO_DO_JOGO.md` | ✅ | `docs/` |
+| 3 | Escrever `16_MANUAL_DO_JOGADOR.md` | ✅ | `docs/` |
+| 4 | Escrever `17_ROTEIRO_DAS_CARTAS.md` | ✅ | `docs/` |
+| 5 | Escrever `18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | ✅ | `docs/` |
 
 ---
 

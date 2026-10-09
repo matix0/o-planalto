@@ -10,6 +10,7 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Docs 14–18 (UI/UX, Fluxo, Manual, Roteiro das Cartas, Roteiro das Cartas de Aprendizado), escritos pelo PO; publicados na nova seção "Roteiros" do site (P-003)
 - Site público em `site/` (Astro Starlight): home com as 6 seções, menu, sumário, anterior/próximo, busca local em pt-BR, temas claro/escuro (P-009, D-077)
 - Página "Sobre e metodologia", aviso de conteúdo em 01–04 e 09, banner "incompleto" + `noindex` em 04, 05, 06, 08 e 10 (D-075, D-078)
 - Fonte "Planalto Diagrama" (derivada da Noto Sans Mono, OFL) para alinhar os diagramas ASCII (P-009)

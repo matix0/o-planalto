@@ -34,7 +34,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Setup Claude Code** | ✅ Concluído | P-008 |
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
-| **Arquivos 14-18** | ⏳ Pendentes | UI/UX, Fluxo, Manual, Roteiros |
+| **Arquivos 14-18** | ✅ Escritos | UI/UX, Fluxo, Manual, Roteiros (P-003) |
 | **GDD Completo** | ⏳ Pendente | — |
 | **Protótipo Técnico** | ⏳ Pendente | Bloqueado pelo GDD |
 | **Testes** | ⏳ Pendentes | Após protótipo |

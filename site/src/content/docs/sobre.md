@@ -9,7 +9,7 @@ O Planalto é um jogo educativo de cartas sobre política brasileira, para joven
 
 ## Documentos de trabalho
 
-Os 14 documentos deste site são de trabalho: mudam com frequência e ainda têm lacunas. O conteúdo ainda não passou pela validação com um educador, prevista antes do lançamento do jogo (D-048).
+Os 19 documentos deste site são de trabalho: mudam com frequência e ainda têm lacunas. O conteúdo ainda não passou pela validação com um educador, prevista antes do lançamento do jogo (D-048).
 
 ## Posições assumidas
 
