@@ -98,7 +98,7 @@ O ecossistema MCP para Godot está **maduro em 2026**. A pesquisa identificou m�
 | **yanhuifair/godot-mcp** | 281 ferramentas, 26 categorias | 4.6/4.7 | Cobertura abrangente |
 | **Godot MCP Pro** | 163 ferramentas | 4.7 | Integração com Claude Code, Cursor, Windsurf |
 
-**Recomendação:** **tugcantopaloglu/godot-mcp** (157 ferramentas, testado com Godot 4.7) ou **yanhuifair/godot-mcp** (281 ferramentas, cobertura abrangente).
+**Decisão:** **tugcantopaloglu/godot-mcp** (D-053), instalado por `git clone` + `npm run build` (não está no npm); configuração adiada para o P-005 (D-072). Ver `docs/13_ARQUITETURA_TECNICA.md` §13.2.5.
 
 ### 08.02.4. Agentes de IA: Claude Code como Principal
 
@@ -142,7 +142,7 @@ Existem frameworks prontos que aceleram o desenvolvimento de jogos de cartas em 
 │                                                             │
 │  1. INSTALAÇÃO                                              │
 │     └──▶ Godot 4.7 (download em godotengine.org)           │
-│     └──▶ MCP Server (pip install godot-editor-mcp)         │
+│     └──▶ MCP Server (git clone + npm run build)            │
 │     └──▶ Addon Godot (Asset Library ou GitHub)             │
 │     └──▶ Claude Code / Cursor / VS Code Copilot            │
 │                                                             │
