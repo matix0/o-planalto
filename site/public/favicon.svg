@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .frente { fill: #1a1d23; }
+    .fundo { fill: #1a1d23; opacity: 0.35; }
+    @media (prefers-color-scheme: dark) {
+      .frente, .fundo { fill: #f2f3f5; }
+    }
+  </style>
+  <rect class="fundo" x="8" y="2" width="16" height="21" rx="3"/>
+  <rect class="frente" x="6" y="8" width="20" height="22" rx="3"/>
+</svg>

@@ -1,5 +1,3 @@
-# 📄 13_ARQUITETURA_TECNICA.md
-
 # 13 — Arquitetura Técnica
 
 **Documento de Definição da Estrutura de Dados, Stack de Desenvolvimento e Sistemas do Jogo "O Planalto"**
@@ -932,43 +930,3 @@ O projeto usará **assets públicos e conteúdos liberados**. A pesquisa identif
 - SUMMER ENGINE. *Claude for Godot: How to Use Claude to Build Godot Games in 2026*. 2026.
 - TUGCANTOPALOGLU. *godot-mcp: 157 tools for AI-driven game development*. GitHub, 2026.
 - YANHUIFAIR. *godot-mcp: 281 tools, 26 categories, Godot 4.6/4.7 coverage*. npm, 2026.
-```
-
----
-
-## ✅ Documento 13 Finalizado
-
-**O que este documento entrega:**
-
-- ✅ Fundamentação teórica (arquitetura de jogos de cartas, Senhor Presidente, padrões de projeto)
-- ✅ Stack de desenvolvimento: **Godot 4.7 + MCP + Agentes de IA**
-- ✅ Recursos do Godot 4.7 relevantes para o projeto
-- ✅ Comparativo de servidores MCP disponíveis
-- ✅ Claude Code como agente principal, com boas práticas para GDScript
-- ✅ Frameworks de cartas para Godot
-- ✅ Fluxo de trabalho completo com MCP
-- ✅ Estrutura de dados completa (cartas, medidores, atores, turnos, finais)
-- ✅ Sistemas (sorteio, satisfação, eixo ideológico, relações entre medidores)
-- ✅ Formato de armazenamento
-- ✅ Diagramas de fluxo (geral, turno, carta, impeachment, eventos)
-- ✅ Estrutura de pastas do projeto
-- ✅ Assets públicos e conteúdos liberados
-- ✅ Considerações técnicas (performance, acessibilidade, localização, versionamento, exportação)
-- ✅ Referências bibliográficas
-
----
-
-## 📋 Status da Documentação
-
-| # | Arquivo | Status |
-| :--- | :--- | :--- |
-| 00 | `00_INDICE_GERAL.md` | ✅ Escrito |
-| 01 | `01_CONTEXTO_E_MOTIVACAO.md` | ✅ Escrito |
-| 02 | `02_IDENTIDADE_E_NOMENCLATURA.md` | ✅ Escrito |
-| 03 | `03_PESQUISAS_E_ESTUDOS.md` | ✅ Escrito |
-| 04 | `04_DESIGN_DO_JOGO.md` | ✅ Escrito |
-| 05 | `05_SISTEMAS_E_MECANICAS.md` | ✅ Escrito |
-| 06 | `06_REFERENCIAS_E_INSPIRACOES.md` | ✅ Escrito |
-| 07 | `07_HISTORICO_DE_DECISOES.md` | ✅ Escrito |
-| 08 | `08_PRODUCAO_E_PROXIMOS_PASSOS.md` | ✅ Escrito |
-| 13 | `13_ARQUITETURA_TECNICA.md` | ✅ Escrito |

@@ -32,6 +32,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Subagentes** | ✅ Definidos | 12 papéis |
 | **Comandos** | ✅ Definidos | 6 comandos (D-073) |
 | **Setup Claude Code** | ✅ Concluído | P-008 |
+| **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
 | **Arquivos 14-18** | ⏳ Pendentes | UI/UX, Fluxo, Manual, Roteiros |
 | **GDD Completo** | ⏳ Pendente | — |
@@ -92,6 +93,11 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-072 | MCP adiado para o P-005 | 2026-10-09 |
 | D-073 | 6 comandos | 2026-10-09 |
 | D-074 | Git com commit inicial | 2026-10-09 |
+| D-075 | Site com avisos de conteúdo | 2026-10-09 |
+| D-076 | Destaque tinta azul | 2026-10-09 |
+| D-077 | Site em Astro Starlight | 2026-10-09 |
+| D-078 | Docs truncados com aviso | 2026-10-09 |
+| D-079 | Guardrails do site | 2026-10-09 |
 
 ---
 
@@ -108,6 +114,9 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | RP-07 | Cartas inconsistentes | 🔴 Alto | Guia de estilo + validação |
 | RP-08 | Custo de tokens | 🟡 Ativo | Política de subagentes |
 | RT-08 | Godot instalado 4.6 ≠ stack 4.7 | 🟡 Ativo | Atualizar antes do P-005 ou rever D-052 |
+| RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟡 Ativo | Atualizar o Node para buildar `site/` localmente; o deploy no GitHub usa Node 24 |
+| RC-08 | Docs citam políticos reais (contra D-005) em período eleitoral | 🔴 Alto | Aviso de conteúdo (D-075); parecer jurídico pendente (`docs/07_HISTORICO_DE_DECISOES.md:180`) |
+| RC-09 | 5 docs truncados (04, 05, 06, 08, 10) | 🟡 Ativo | Aviso + `noindex` (D-078); recuperar originais |
 
 ---
 

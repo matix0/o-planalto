@@ -1,7 +1,3 @@
----
-permalink: /
----
-
 # O Planalto — Índice Geral
 
 **Jogo Educativo de Conscientização Política**

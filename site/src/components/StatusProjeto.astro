@@ -1,0 +1,32 @@
+---
+// Onde o projeto está, sem prometer jogo pronto (parecer PSI).
+// Fonte: gestao/estado.md e gestao/plano-de-acao.md (P-001 a P-006).
+const ETAPAS = [
+	{ estado: 'feito', rotulo: 'Feito', titulo: 'Design conceitual', detalhe: 'Medidores, modos, atores, 340 cartas e 26 finais' },
+	{ estado: 'feito', rotulo: 'Feito', titulo: 'Documentação', detalhe: '14 documentos; 5 em recuperação' },
+	{ estado: 'proximo', rotulo: 'Próximo', titulo: 'GDD completo', detalhe: 'Consolida todos os sistemas do jogo' },
+	{ estado: 'depois', rotulo: 'Depois', titulo: 'Protótipo jogável', detalhe: 'Godot, para web, celular e PC' },
+	{ estado: 'depois', rotulo: 'Depois', titulo: 'Testes', detalhe: '3 a 5 pessoas e validação com educador' },
+];
+---
+
+<section class="status not-content" aria-labelledby="status-titulo">
+	<div class="bloco-cabecalho">
+		<h2 id="status-titulo">Onde o projeto está</h2>
+		<p>O jogo ainda não está pronto para jogar.</p>
+	</div>
+	<ol class="etapas">
+		{
+			ETAPAS.map((etapa, i) => (
+				<li class={etapa.estado}>
+					<span class="rotulo">
+						<span class="marca" aria-hidden="true">{etapa.estado === 'feito' ? '✓' : i + 1}</span>
+						{etapa.rotulo}
+					</span>
+					<strong>{etapa.titulo}</strong>
+					<span class="detalhe">{etapa.detalhe}</span>
+				</li>
+			))
+		}
+	</ol>
+</section>

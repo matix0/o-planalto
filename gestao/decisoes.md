@@ -83,6 +83,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-072 | MCP adiado para a etapa 1 do P-005; `@cradial/godot-mcp` descartado (é o heichan2000/godot-mcp, não a D-053) | 2026-10-09 | `npm view` + escopo |
 | D-073 | 6 comandos: `/fechar-plano`, `/sync-tech`, `/sync-docs`, `/validate-cards`, `/validate-finals`, `/publish-docs`; `/generate-context` removido | 2026-10-09 | Redundante com `/init` e AIW |
 | D-074 | Repositório git (`main`) com commit inicial, sem remote | 2026-10-09 | Base para `git show` e `/fechar-plano` |
+| D-075 | Site publica os 14 docs com avisos: aviso de conteúdo em 01–04 e 09 + página "Sobre e metodologia" (texto aprovado pelo PO) | 2026-10-09 | Parecer PSI (P-009) |
+| D-076 | Cor de destaque do site: tinta azul (`#1D4E89` claro / `#6FA8DC` escuro), só em links, botões e foco | 2026-10-09 | Proposta TA (P-009) |
+| D-077 | Site em Astro Starlight na pasta `site/`, build e deploy por GitHub Actions; `docs/` segue como fonte | 2026-10-09 | Escolha do PO (P-009) |
+| D-078 | Docs truncados (04, 05, 06, 08, 10): aviso "incompleto", marca no menu e `noindex` até a recuperação | 2026-10-09 | Proposta UX (P-009) |
+| D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---
 
@@ -155,6 +160,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-072 | MCP adiado para o P-005 |
 | D-073 | 6 comandos |
 | D-074 | Git com commit inicial |
+| D-075 | Site com avisos de conteúdo |
+| D-076 | Destaque tinta azul |
+| D-077 | Site em Astro Starlight |
+| D-078 | Docs truncados com aviso |
+| D-079 | Guardrails do site |
 
 ---
 

@@ -1,0 +1,30 @@
+---
+title: O Planalto
+description: Documentação aberta de um jogo educativo de cartas sobre política brasileira, para jovens de 15 a 30 anos.
+template: splash
+tableOfContents: false
+editUrl: false
+prev: false
+next: false
+hero:
+  title: Toda escolha política tem um preço.
+  tagline: 'O Planalto é um jogo de cartas: você governa uma cidade-estado fictícia por quatro anos, e cada decisão mexe em oito medidores. Aqui está o projeto inteiro, da pesquisa à arquitetura técnica.'
+  image:
+    html: '<div class="deck" aria-hidden="true"><div class="c c1"></div><div class="c c2"></div><div class="c c3"><div class="c-topo"><span>Ano 1 de 4</span><span>Lua de mel</span></div><div><p class="c-titulo">Cada carta é uma decisão.</p><p class="c-texto">Arraste para um lado ou para o outro. Os medidores respondem.</p></div><ul class="c-medidores"><li>Dignidade</li><li>Consciência</li><li>Soberania</li><li>Segurança</li><li>Verdade</li><li>Capital Político</li><li>Caixa</li><li>Legitimidade</li></ul></div></div>'
+  actions:
+    - text: Começar pelo índice
+      link: /o-planalto/00-indice-geral/
+      variant: primary
+    - text: Como trabalhamos
+      link: /o-planalto/sobre/
+      variant: minimal
+---
+
+import SecoesHome from '../../components/SecoesHome.astro';
+import StatusProjeto from '../../components/StatusProjeto.astro';
+
+<p class="hero-nota">Jogo educativo em desenvolvimento. Para jovens de 15 a 30 anos, na escola e fora dela, em partidas de 30 a 40 minutos. Politização não é polarização.</p>
+
+<SecoesHome />
+
+<StatusProjeto />

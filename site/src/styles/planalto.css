@@ -1,0 +1,564 @@
+/*
+ * O Planalto — tema do site.
+ * Direção "documento com DNA de carta" e guardrails: D-076 (destaque tinta azul), D-079.
+ * Nenhuma das 7 cores partidárias (docs/02_IDENTIDADE_E_NOMENCLATURA.md:47-55) aparece na interface.
+ * Contrastes de texto calculados (WCAG 2.x): todos ≥ 4,5:1.
+ */
+
+/* Fonte derivada da Noto Sans Mono só para diagramas (┌─│▶), gerada por scripts/fonte-diagrama.py. */
+@font-face {
+	font-family: 'Planalto Diagrama';
+	src: url('../fonts/planalto-diagrama.woff2') format('woff2');
+	font-display: swap;
+	unicode-range: U+2190-21FF, U+2500-257F, U+25A0-25FF;
+}
+
+/* ---------- Tokens: tema escuro (padrão do Starlight) ---------- */
+:root {
+	--sl-color-white: #f2f3f5;
+	--sl-color-gray-1: #e3e6ea;
+	--sl-color-gray-2: #d5d9df;
+	--sl-color-gray-3: #aeb4bd;
+	--sl-color-gray-4: #7c8490;
+	--sl-color-gray-5: #2e333b;
+	--sl-color-gray-6: #1b1f25;
+	--sl-color-black: #14171c;
+
+	--sl-color-accent-low: #1d2a3a;
+	--sl-color-accent: #6fa8dc;
+	--sl-color-accent-high: #9cc4ea;
+
+	--sl-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--sl-font-mono: 'Noto Sans Mono', 'Planalto Diagrama', ui-monospace, SFMono-Regular, Menlo,
+		Consolas, monospace;
+	--sl-line-height: 1.65;
+	--sl-text-h1: 2.1rem;
+	--sl-text-h2: 1.55rem;
+	--sl-text-h3: 1.25rem;
+	--sl-text-h4: 1.075rem;
+	--sl-text-h5: 1rem;
+
+	--planalto-titulo: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--planalto-superficie: #1b1f25;
+	--planalto-ficha: #262b33;
+	--planalto-carta: #232831;
+	--planalto-carta-texto: #f2f3f5;
+	--planalto-carta-texto-2: #aeb4bd;
+	--planalto-carta-linha: #353c46;
+	--planalto-sombra-carta: 0 22px 44px -22px rgb(0 0 0 / 0.7);
+
+	--sl-color-banner-bg: #262b33;
+	--sl-color-banner-text: #f2f3f5;
+
+	--sl-badge-default-border: var(--sl-color-gray-4);
+	--sl-badge-default-bg: transparent;
+	--sl-badge-default-text: var(--sl-color-gray-3);
+}
+
+/* ---------- Tokens: tema claro ---------- */
+:root[data-theme='light'] {
+	--sl-color-white: #1a1d23;
+	--sl-color-gray-1: #262a31;
+	--sl-color-gray-2: #353a42;
+	--sl-color-gray-3: #4b5563;
+	--sl-color-gray-4: #646b76;
+	--sl-color-gray-5: #cdd2d9;
+	--sl-color-gray-6: #e2e5ea;
+	--sl-color-gray-7: #ffffff;
+	--sl-color-black: #f7f8fa;
+
+	--sl-color-accent-low: #e7eef7;
+	--sl-color-accent: #1d4e89;
+	--sl-color-accent-high: #163c6a;
+
+	--planalto-superficie: #ffffff;
+	--planalto-ficha: #eef0f3;
+	--planalto-carta: #1a1d23;
+	--planalto-carta-texto: #f2f3f5;
+	--planalto-carta-texto-2: #aeb4bd;
+	--planalto-carta-linha: #2e333b;
+	--planalto-sombra-carta: 0 22px 44px -22px rgb(8 10 14 / 0.55);
+
+	--sl-color-banner-bg: #eef0f3;
+	--sl-color-banner-text: #1a1d23;
+
+	--sl-badge-default-bg: transparent;
+	--sl-badge-default-text: var(--sl-color-gray-3);
+}
+
+@media (min-width: 50em) {
+	:root {
+		--sl-text-h1: 2.6rem;
+		--sl-text-h2: 1.8rem;
+		--sl-text-h3: 1.35rem;
+		--sl-text-h4: 1.125rem;
+	}
+}
+
+/* ---------- Tipografia ---------- */
+.site-title {
+	font-family: var(--planalto-titulo);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--sl-color-white);
+}
+
+h1#_top,
+.sl-markdown-content :is(h1, h2, h3, h4),
+.not-content h2,
+.not-content h3 {
+	font-family: var(--planalto-titulo);
+	letter-spacing: -0.015em;
+	text-wrap: balance;
+}
+
+h1#_top {
+	font-weight: 700;
+}
+
+.sl-markdown-content :is(h2, h3) {
+	font-weight: 700;
+}
+
+.sl-markdown-content h4 {
+	font-weight: 600;
+}
+
+/* Subtítulo em negrito logo no começo dos docs ("**Documento de…**"). */
+.sl-markdown-content > p:first-child > strong:only-child,
+.sl-markdown-content > .starlight-aside + p > strong:only-child {
+	display: block;
+	font-weight: 500;
+	font-size: var(--sl-text-lg);
+	color: var(--sl-color-gray-3);
+}
+
+/* ---------- Links e foco ---------- */
+.sl-markdown-content a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+.sl-markdown-content a:hover {
+	text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+	outline: 3px solid var(--sl-color-accent);
+	outline-offset: 2px;
+}
+
+/* ---------- Conteúdo dos docs ---------- */
+
+/* Medidores do jogo como fichas (marcados por scripts/sync-docs.mjs). */
+.sl-markdown-content code.medidor {
+	padding: 0.15em 0.6em;
+	border-radius: 999px;
+	background: var(--planalto-ficha);
+	color: var(--sl-color-white);
+	font-family: var(--sl-font);
+	font-size: 0.86em;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.sl-markdown-content table {
+	border: 1px solid var(--sl-color-hairline-light);
+	border-radius: 12px;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+}
+
+.sl-markdown-content :is(th, td) {
+	padding: 0.55rem 0.9rem;
+	border-bottom: 1px solid var(--sl-color-hairline-light);
+	border-inline: 0;
+	vertical-align: top;
+}
+
+.sl-markdown-content tr:last-child td {
+	border-bottom: 0;
+}
+
+.sl-markdown-content th {
+	background: var(--planalto-superficie);
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-2xs);
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.sl-markdown-content tbody tr:nth-child(even) {
+	background: color-mix(in srgb, var(--planalto-superficie) 55%, transparent);
+}
+
+/* Fichas (Campo | Descrição): primeira coluna como rótulo. */
+.sl-markdown-content td:first-child:has(> strong:only-child) {
+	width: 1%;
+	white-space: nowrap;
+	color: var(--sl-color-gray-3);
+}
+
+@media (max-width: 40rem) {
+	.sl-markdown-content :is(th, td) {
+		padding: 0.5rem 0.65rem;
+	}
+
+	.sl-markdown-content table:has(td:first-child > strong:only-child) thead {
+		display: none;
+	}
+
+	.sl-markdown-content table:has(td:first-child > strong:only-child) :is(tbody, tr, td) {
+		display: block;
+		width: auto;
+	}
+
+	.sl-markdown-content table:has(td:first-child > strong:only-child) td:first-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+		white-space: normal;
+		font-size: var(--sl-text-xs);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+}
+
+.sl-markdown-content blockquote {
+	border-inline-start: 3px solid var(--sl-color-gray-5);
+	color: var(--sl-color-gray-3);
+}
+
+/* ---------- Avisos, banner e badges: neutros, sem cores partidárias ---------- */
+.starlight-aside {
+	--sl-color-asides-text-accent: var(--sl-color-white);
+	--sl-color-asides-border: var(--sl-color-white);
+	background-color: var(--planalto-superficie);
+	border: 1px solid var(--sl-color-hairline-light);
+	border-inline-start: 4px solid var(--sl-color-asides-border);
+}
+
+.sl-banner {
+	text-align: start;
+	box-shadow: none;
+	border-bottom: 1px solid var(--sl-color-hairline-light);
+}
+
+.sl-badge.default {
+	border-style: dashed;
+	font-weight: 600;
+}
+
+/* ---------- Home ---------- */
+.hero {
+	padding-bottom: 2rem;
+}
+
+.hero .stack {
+	text-align: start;
+}
+
+.hero .copy {
+	align-items: flex-start;
+}
+
+.hero .actions {
+	justify-content: flex-start;
+}
+
+.hero > .hero-html {
+	order: 2;
+}
+
+.hero h1#_top {
+	font-weight: 800;
+	font-size: clamp(2.25rem, calc(1rem + 4.5vw), 4rem);
+	line-height: 1.04;
+	letter-spacing: -0.03em;
+}
+
+.hero .tagline {
+	color: var(--sl-color-gray-3);
+	font-size: clamp(1rem, calc(0.85rem + 0.6vw), 1.2rem);
+	line-height: 1.6;
+}
+
+.hero-nota {
+	max-width: 60ch;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-sm);
+}
+
+/* Baralho do hero: só CSS, sem imagem (D-007, D-079). Deslocamento só vertical: nenhum lado é destacado. */
+.deck {
+	position: relative;
+	width: 100%;
+	max-width: 15rem;
+	aspect-ratio: 5 / 7;
+	margin-inline: auto;
+	margin-bottom: 2.5rem;
+}
+
+.deck .c {
+	position: absolute;
+	inset: 0;
+	border-radius: 18px;
+	background: var(--planalto-carta);
+	border: 1px solid var(--planalto-carta-linha);
+}
+
+.deck .c1 {
+	transform: translateY(2.1rem) scale(0.9);
+	opacity: 0.3;
+}
+
+.deck .c2 {
+	transform: translateY(1.05rem) scale(0.95);
+	opacity: 0.6;
+}
+
+.deck .c3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1.4rem 1.25rem;
+	color: var(--planalto-carta-texto);
+	box-shadow: var(--planalto-sombra-carta);
+	text-align: start;
+}
+
+.deck .c-topo {
+	display: flex;
+	justify-content: space-between;
+	color: var(--planalto-carta-texto-2);
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.deck .c-titulo {
+	margin: 0 0 0.5rem;
+	font-family: var(--planalto-titulo);
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.15;
+	color: var(--planalto-carta-texto);
+}
+
+.deck .c-texto {
+	margin: 0;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: var(--planalto-carta-texto-2);
+}
+
+.deck .c-medidores {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.deck .c-medidores li {
+	margin: 0;
+	padding: 0.15rem 0.55rem;
+	border: 1px solid var(--planalto-carta-linha);
+	border-radius: 999px;
+	font-size: 0.72rem;
+	font-weight: 500;
+}
+
+.bloco-cabecalho {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 0.25rem 1.5rem;
+	margin-bottom: 1.25rem;
+}
+
+.bloco-cabecalho h2 {
+	margin: 0;
+	font-size: var(--sl-text-2xl);
+	font-weight: 700;
+	color: var(--sl-color-white);
+}
+
+.bloco-cabecalho p {
+	margin: 0;
+	color: var(--sl-color-gray-3);
+}
+
+.secoes,
+.status {
+	margin-top: 3.5rem;
+}
+
+.cartas {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+	gap: 1rem;
+}
+
+.carta {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 1.35rem 1.35rem 1.1rem;
+	border-radius: 16px;
+	background: var(--planalto-carta);
+	border: 1px solid var(--planalto-carta-linha);
+	color: var(--planalto-carta-texto);
+}
+
+.carta h3 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--planalto-carta-texto);
+}
+
+.carta > p {
+	margin: 0;
+	font-size: var(--sl-text-sm);
+	line-height: 1.5;
+	color: var(--planalto-carta-texto-2);
+}
+
+.carta ul {
+	display: grid;
+	gap: 0.1rem;
+	margin: auto 0 0;
+	padding: 0.75rem 0 0;
+	list-style: none;
+	border-top: 1px solid var(--planalto-carta-linha);
+}
+
+.carta li {
+	margin: 0;
+}
+
+.carta a {
+	display: flex;
+	align-items: baseline;
+	gap: 0.6rem;
+	padding: 0.3rem 0.4rem;
+	margin-inline: -0.4rem;
+	border-radius: 8px;
+	color: var(--planalto-carta-texto);
+	text-decoration: none;
+	font-size: var(--sl-text-sm);
+}
+
+.carta a:hover {
+	background: var(--planalto-carta-linha);
+}
+
+.carta a:hover .nome {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.carta a:focus-visible {
+	outline-color: var(--planalto-carta-texto);
+}
+
+.carta .num {
+	min-width: 2ch;
+	font-family: var(--sl-font-mono);
+	font-size: 0.75rem;
+	color: var(--planalto-carta-texto-2);
+}
+
+.carta .tag {
+	margin-inline-start: auto;
+	padding: 0 0.5rem;
+	border: 1px dashed currentColor;
+	border-radius: 999px;
+	color: var(--planalto-carta-texto-2);
+	font-size: 0.7rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.etapas {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var(--sl-color-hairline-light);
+	border-radius: 14px;
+	background: var(--planalto-superficie);
+	overflow: hidden;
+}
+
+.etapas li {
+	display: grid;
+	align-content: start;
+	gap: 0.3rem;
+	margin: 0;
+	padding: 1rem 1rem 1.15rem;
+	border-inline-end: 1px solid var(--sl-color-hairline-light);
+	border-bottom: 1px solid var(--sl-color-hairline-light);
+	margin-inline-end: -1px;
+	margin-bottom: -1px;
+}
+
+.etapas .rotulo {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+	font-weight: 600;
+}
+
+.etapas .marca {
+	display: inline-grid;
+	place-items: center;
+	width: 1.15rem;
+	height: 1.15rem;
+	border: 1.5px solid currentColor;
+	border-radius: 50%;
+	font-size: 0.65rem;
+}
+
+.etapas .feito .marca {
+	background: var(--sl-color-white);
+	border-color: var(--sl-color-white);
+	color: var(--sl-color-black);
+}
+
+.etapas strong {
+	font-family: var(--planalto-titulo);
+	font-weight: 600;
+	color: var(--sl-color-white);
+}
+
+.etapas .detalhe {
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-sm);
+	line-height: 1.45;
+}
+
+@media (min-width: 50rem) {
+	.deck {
+		max-width: 19rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition: none !important;
+	}
+}

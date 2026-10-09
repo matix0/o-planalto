@@ -18,6 +18,14 @@ Thumbs.db
 build/
 dist/
 
-# Claude Code (configuração pessoal e notas de sessão)
+# Claude Code (configuração pessoal, notas e preview de sessão)
 .claude/settings.local.json
 .claude/notas/
+.claude/launch.json
+
+# Site (Astro Starlight em site/)
+site/node_modules/
+site/dist/
+site/.astro/
+# Gerados por site/scripts/sync-docs.mjs a partir de docs/
+site/src/content/docs/[0-9][0-9]-*.md

@@ -10,6 +10,10 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Site público em `site/` (Astro Starlight): home com as 6 seções, menu, sumário, anterior/próximo, busca local em pt-BR, temas claro/escuro (P-009, D-077)
+- Página "Sobre e metodologia", aviso de conteúdo em 01–04 e 09, banner "incompleto" + `noindex` em 04, 05, 06, 08 e 10 (D-075, D-078)
+- Fonte "Planalto Diagrama" (derivada da Noto Sans Mono, OFL) para alinhar os diagramas ASCII (P-009)
+- Deploy por GitHub Actions (`.github/workflows/site.yml`)
 - 12 subagentes em `.claude/agents/` (P-008)
 - Comandos `/sync-tech`, `/sync-docs`, `/validate-cards`, `/validate-finals`, `/publish-docs` (P-008)
 - Regras `subagentes.md`, `verificacao.md`, `isolamento.md` (P-008)
@@ -28,9 +32,11 @@ Versionamento: [SemVer](https://semver.org/).
 - Stack: Godot 4.6 → Godot 4.7
 
 ### Removido
+- `docs/_config.yml` e front matter `permalink` do Jekyll (site agora é Starlight)
 - `.claude/rules/subagents.md` (duplicava `gestao/equipe.md`)
 
 ### Corrigido
+- `docs/12` e `docs/13`: título residual de chat (`# 📄 …md`); `docs/13`: bloco de código sem fechamento e resumo de chat no fim
 - Referências a `Docs/` inexistente (README, `/fechar-plano`, docs vivos)
 - `/fechar-plano`, `leitura.md`: blocos colados quebrados
 - `docs/13` §13.2.5: instalação do MCP (`@cradial` → tugcantopaloglu, D-072); §13.7: pasta `docs/`

@@ -32,7 +32,8 @@
 
 ## Documentação
 
-- `docs/` — 14 arquivos de documentação (00-13), publicados no GitHub Pages
+- `docs/` — 14 arquivos de documentação (00-13), fonte do site
+- `site/` — site público (Astro Starlight, D-077), gerado de `docs/`; metadados em `site/src/docs-map.mjs`
 - `gestao/` — 6 docs vivos (estado, decisões, planos, changelog, produção, equipe)
 
 ## Regras de Governança

@@ -196,6 +196,31 @@
 
 ---
 
+## P-009 — Design do Site (GitHub Pages)
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-09 |
+| **Conclusão** | — |
+| **Objetivo** | Redesenhar o site público da documentação com processo de design (UX, TA, PSI) |
+| **Decisões** | D-075 a D-079 |
+| **Notas** | `.claude/notas/P-009-design-pages/` (local) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Diagnóstico do site atual | ✅ | `.claude/notas/P-009-design-pages/00-briefing.md` |
+| 2 | Onda 1: UX, TA, PSI | ✅ | notas 02, 03, 04 |
+| 3 | Protótipo e decisões do PO | ✅ | protótipo (artifact) + D-075 a D-079 |
+| 4 | Implementar o site em `site/` (Starlight) | ✅ | `site/`, `.github/workflows/site.yml` |
+| 5 | Verificar: build, navegador, acessibilidade, zero requisições externas | ✅ | build local (17 páginas); navegador claro/escuro, desktop/celular |
+| 6 | Onda 2: PSI (textos) e QA (aceite) | ✅ | QA 9/9; PSI cancelado a pedido do PO (textos validados pelo PO) |
+| 7 | Aprovação dos textos pelo PO e publicação | 🟡 | textos validados; fonte do Pages = GitHub Actions; deploy em andamento |
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |

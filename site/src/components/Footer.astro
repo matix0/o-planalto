@@ -1,0 +1,39 @@
+---
+// Rodapé padrão do Starlight + nota de transparência (D-079): documento de trabalho,
+// uso de IA declarado e ausência de rastreamento.
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Default />
+<div class="planalto-rodape">
+	<p>
+		<strong>O Planalto</strong> é um projeto educativo independente, em desenvolvimento. Estes são
+		documentos de trabalho e trazem posições assumidas pelo projeto.{' '}
+		<a href={`${base}/sobre/`}>Veja como trabalhamos</a>.
+	</p>
+	<p>
+		Texto e código feitos com apoio de IA; nenhuma arte gerada por IA. Este site não usa cookies
+		nem rastreamento. Licença: a definir.
+	</p>
+</div>
+
+<style>
+	.planalto-rodape {
+		display: grid;
+		gap: 0.5rem;
+		margin-top: 2.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--sl-color-hairline-light);
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+	.planalto-rodape p {
+		margin: 0;
+		max-width: 72ch;
+	}
+	.planalto-rodape a {
+		color: var(--sl-color-text-accent);
+	}
+</style>

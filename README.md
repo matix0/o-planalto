@@ -20,7 +20,7 @@
 
 ## Documentação
 
-A documentação completa está em [`docs/`](./docs/) e é publicada via GitHub Pages.
+A documentação completa está em [`docs/`](./docs/) e é publicada via GitHub Pages pelo site em [`site/`](./site/) (Astro Starlight), gerado a partir de `docs/` a cada push no `main`.
 
 | # | Arquivo | Conteúdo |
 | :--- | :--- | :--- |
@@ -74,9 +74,10 @@ o-planalto/
 │   ├── changelog.md
 │   ├── producao.md
 │   └── equipe.md
-├── docs/              # Documentação (GitHub Pages)
-│   ├── _config.yml
-│   └── 00-13 (14 arquivos; 00 é a página inicial)
+├── docs/              # Documentação (fonte do site)
+│   └── 00-13 (14 arquivos)
+├── site/              # Site público (Astro Starlight)
+├── .github/workflows/ # Deploy do site no GitHub Pages
 ├── assets/            # Assets CC0 (P-005)
 ├── dados/             # Dados do jogo em JSON (P-005)
 ├── cenas/             # Cenas do Godot (P-005)

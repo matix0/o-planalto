@@ -1,5 +1,3 @@
-# 📄 12_FICHAS_DOS_MODOS.md
-
 # 12 — Fichas dos Modos
 
 **Documento de Perfil Detalhado dos 10 Modos Institucionais do Jogo "O Planalto"**
