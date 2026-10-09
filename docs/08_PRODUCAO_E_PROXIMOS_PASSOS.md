@@ -1,20 +1,95 @@
+# 08 — Produção e Próximos Passos
 
-### 08.2.2. Justificativa da Escolha da Stack
+**Documento de Planejamento de Produção do Jogo "O Planalto"**
 
-| Critério | Godot 4.7 + MCP | HTML/JS + MCP |
+Este documento consolida o planejamento de produção do jogo, incluindo a stack de desenvolvimento, a equipe, o cronograma, a validação pedagógica, as questões legais, a acessibilidade e a estratégia de distribuição. Cada seção apresenta a fundamentação teórica e prática que embasa cada decisão.
+
+---
+
+## 08.01 — Visão Geral da Produção
+
+### 08.01.1. Panorama de Produção
+
+| Elemento | Definição |
+| :--- | :--- |
+| **Stack** | Godot 4.7 + MCP + Agentes de IA |
+| **Plataformas** | Mobile, Web e PC |
+| **Equipe** | Mateus + colaboradores |
+| **Cronograma** | 6-7 dias para o protótipo |
+| **Validação** | Testes com 3-5 pessoas + educador |
+| **Distribuição** | Play Store, Web, itch.io |
+| **Modelo** | Gratuito (sem monetização interna) |
+| **Salvamento** | Sem salvamento de progresso |
+
+### 08.01.2. Princípios de Produção
+
+A produção do "O Planalto" segue cinco princípios fundamentais:
+
+| # | Princípio | Descrição |
 | :--- | :--- | :--- |
-| **Maturidade do ecossistema MCP** | ✅ Alta (120+ ferramentas) | ⚠️ Média (ferramentas limitadas) |
-| **Experiência do desenvolvedor** | ✅ Mateus já conhece Godot | ❌ Curva de aprendizado inicial |
-| **Arquivos legíveis por IA** | ✅ Tudo em texto plano (.tscn, .gd) | ✅ Tudo em texto plano (.js, .html) |
-| **Geração de código por IA** | ✅ Claude é muito bom em GDScript | ✅ Excelente em JavaScript |
-| **Multiplataforma** | ✅ Exporta para Windows, Web, Android, iOS | ⚠️ Web nativo, mobile requer empacotamento |
-| **Integração com editor visual** | ✅ MCP controla o editor diretamente | ❌ Sem editor visual |
-| **Assets públicos** | ✅ Compatível com todos os formatos | ✅ Compatível com todos os formatos |
-| **Comunidade de IA** | ✅ Adotado como "best engine for AI-assisted dev" | ⚠️ Crescendo, mas menos maduro |
+| 1 | **Escopo controlado** | O jogo é simples (arrastar cartas), então o desenvolvimento é rápido. |
+| 2 | **Iteração** | Os testes e validações são feitos em paralelo com o desenvolvimento. |
+| 3 | **Flexibilidade** | O cronograma pode ser ajustado conforme necessário. |
+| 4 | **Ética** | Sem dark patterns, sem monetização predatória, sem telemetria obrigatória. |
+| 5 | **Documentação** | Tudo é documentado para facilitar a manutenção e o onboarding. |
 
-**Conclusão:** **Godot 4.7 + MCP + Agentes de IA** é a escolha mais robusta para o desenvolvimento d'O Planalto.
+### 08.01.3. Fundamentação Teórica
 
-### 08.2.3. Servidores MCP Recomendados
+> "Um jogo educativo mal planejado é um jogo que nunca será usado." — Jesse Schell, *The Art of Game Design*
+
+O planejamento de produção é fundamental em projetos de jogos educativos por três razões:
+
+1. **Escopo controlado** — evita que o projeto cresça além do que é viável.
+2. **Prazos realistas** — permite que a equipe saiba o que esperar.
+3. **Qualidade garantida** — permite que os testes e validações sejam feitos.
+
+---
+
+## 08.02 — Stack de Desenvolvimento
+
+### 08.02.1. Visão Geral
+
+A stack de desenvolvimento é composta por três camadas:
+
+| Camada | Componente | Função |
+| :--- | :--- | :--- |
+| **Engine** | Godot 4.7 | Motor do jogo, editor visual, exportação multiplataforma |
+| **Protocolo** | MCP (*Model Context Protocol*) | Ponte entre o agente de IA e o editor Godot |
+| **Agente** | Claude Code / Cursor / VS Code Copilot | Agente de IA que escreve código, cria cenas e testa o jogo |
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              STACK DE DESENVOLVIMENTO                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │
+│  │   AGENTE    │◄──►│     MCP     │◄──►│   GODOT     │     │
+│  │  (Claude)   │    │   SERVER    │    │    4.7      │     │
+│  └─────────────┘    └─────────────┘    └─────────────┘     │
+│                                                             │
+│  O agente escreve     O MCP traduz      O Godot executa    │
+│  código e comandos    comandos em       e renderiza o      │
+│  em linguagem         chamadas à API    jogo em tempo      │
+│  natural              do editor         real               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 08.02.2. Godot 4.7: Recursos Relevantes
+
+O Godot 4.7 foi lançado em **18 de junho de 2026** e traz recursos importantes para o desenvolvimento assistido por IA e para a publicação multiplataforma.
+
+| Recurso | Descrição | Impacto no Projeto |
+| :--- | :--- | :--- |
+| **Asset Store nativo** | Loja de assets integrada ao editor | Facilita a instalação de addons MCP e assets |
+| **HDR output** | Suporte a alta faixa dinâmica | Melhora a qualidade visual das cartas |
+| **Control offset transforms** | Transformações de UI sem quebrar o layout | Facilita animações de cartas |
+| **GABE (Godot Android Build Environment)** | Exportação Gradle direto do Android | Permite exportar para Android sem PC |
+| **Android Editor estável** | Editor completo no Android | Desenvolvimento mobile sem desktop |
+
+### 08.02.3. MCP: Servidores Disponíveis
+
+O ecossistema MCP para Godot está **maduro em 2026**. A pesquisa identificou múltiplos servidores com diferentes níveis de funcionalidade.
 
 | Servidor MCP | Ferramentas | Godot | Destaques |
 | :--- | :--- | :--- | :--- |
@@ -25,17 +100,71 @@
 
 **Recomendação:** **tugcantopaloglu/godot-mcp** (157 ferramentas, testado com Godot 4.7) ou **yanhuifair/godot-mcp** (281 ferramentas, cobertura abrangente).
 
-### 08.2.4. Frameworks de Cartas para Godot
+### 08.02.4. Agentes de IA: Claude Code como Principal
+
+A pesquisa confirma que **Claude é "genuinamente um dos melhores modelos para escrever GDScript e C#"**, com menos deriva entre Godot 3 e Godot 4 do que ferramentas de autocomplete.
+
+| Agente | Integração MCP | Vantagens |
+| :--- | :--- | :--- |
+| **Claude Code** | Nativa | Melhor modelo para GDScript, terminal agêntico |
+| **Cursor** | Nativa | IDE completa com Claude integrado |
+| **VS Code Copilot** | Via MCP | Integração com editor popular |
+| **Windsurf** | Via MCP | IDE agêntica |
+| **Cline** | Via MCP | Agente open source |
+
+**Boas práticas para GDScript com Claude:**
+
+| Prática | Descrição |
+| :--- | :--- |
+| **Tipagem estática obrigatória** | Toda variável, parâmetro e retorno deve ser explicitamente tipado |
+| **Composição sobre herança** | Limitar herança de cena a uma camada |
+| **Sinais para comunicação** | Usar *signals* em vez de referências diretas entre nós |
+| **Guia de estilo oficial** | Seguir as convenções de nomenclatura e ordenação do Godot |
+
+### 08.02.5. Frameworks de Cartas para Godot
+
+Existem frameworks prontos que aceleram o desenvolvimento de jogos de cartas em Godot.
 
 | Framework | Destaques | Licença |
 | :--- | :--- | :--- |
-| **chun92/card-framework** | JSON Card Data, CardFactory, CardManager, sistema de eventos | MIT |
-| **Card Game Skeleton** | Workflow visual para design de cartas, gerenciamento de decks | MIT |
+| **chun92/card-framework** | JSON Card Data, CardFactory, CardManager | MIT |
+| **Card Game Skeleton** | Workflow visual para design de cartas | MIT |
 | **TRUCO** | Framework ECS multiplayer para jogos de cartas | MIT |
 
 **Recomendação:** **chun92/card-framework** — leve, flexível, com dados JSON e fábrica de cartas.
 
-### 08.2.5. Fundamentação Teórica
+### 08.02.6. Fluxo de Trabalho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              FLUXO DE TRABALHO COM GODOT + MCP              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  1. INSTALAÇÃO                                              │
+│     └──▶ Godot 4.7 (download em godotengine.org)           │
+│     └──▶ MCP Server (pip install godot-editor-mcp)         │
+│     └──▶ Addon Godot (Asset Library ou GitHub)             │
+│     └──▶ Claude Code / Cursor / VS Code Copilot            │
+│                                                             │
+│  2. CONFIGURAÇÃO                                            │
+│     └──▶ Habilitar addon nas configurações de plugins      │
+│     └──▶ Configurar cliente MCP (.mcp.json)                 │
+│     └──▶ Testar conexão (listar cenas do projeto)          │
+│                                                             │
+│  3. DESENVOLVIMENTO                                         │
+│     └──▶ Agente cria cenas, UI, scripts GDScript           │
+│     └──▶ Agente testa e itera (playtest control)           │
+│     └──▶ Desenvolvedor revisa e valida                      │
+│                                                             │
+│  4. PUBLICAÇÃO                                              │
+│     └──▶ Exportar para Web (HTML5/WASM)                    │
+│     └──▶ Exportar para Android (GABE ou PC)                │
+│     └──▶ Exportar para Windows (executável)                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 08.02.7. Fundamentação Teórica
 
 A escolha da stack se baseia em:
 
@@ -46,20 +175,20 @@ A escolha da stack se baseia em:
 
 > "Godot is quietly becoming the best engine for AI-assisted development." — Summer Engine, 2026
 
-### 08.2.6. Referências
+### 08.02.8. Referências
 
-- Godot Engine. *Godot 4.7 Release*. 2026.
-- godot-editor-mcp. *A generic, game-agnostic MCP server for AI-driven Godot development*. PyPI, 2026.
-- tugcantopaloglu/godot-mcp. *MCP server for full Godot 4.x engine control*. GitHub, 2026.
-- yanhuifair/godot-mcp. *281 tools, 26 categories, Godot 4.6/4.7 coverage*. npm, 2026.
-- Summer Engine. *Claude for Godot: How to Use Claude to Build Godot Games in 2026*. 2026.
-- chun92. *card-framework: A flexible and lightweight toolkit for building 2D card games in Godot*. GitHub, 2026.
+- GODOT ENGINE. *Godot 4.7 Release*. 2026.
+- GODOT MCP. *godot-editor-mcp*. PyPI, 2026.
+- TUGCANTOPALOGLU. *godot-mcp*. GitHub, 2026.
+- YANHUIFAIR. *godot-mcp*. npm, 2026.
+- SUMMER ENGINE. *Claude for Godot*. 2026.
+- CHUN92. *card-framework*. GitHub, 2026.
 
 ---
 
-## 08.3. Equipe e Funções
+## 08.03 — Equipe e Funções
 
-### 08.3.1. Estrutura da Equipe
+### 08.03.1. Estrutura da Equipe
 
 | Membro | Função | Responsabilidades |
 | :--- | :--- | :--- |
@@ -69,9 +198,9 @@ A escolha da stack se baseia em:
 | **Professor Alisson** | Revisão crítica | Auditoria de conteúdo, sugestões |
 | **Terceiros** | A definir | Arte, som, design |
 
-### 08.3.2. Funções Detalhadas
+### 08.03.2. Funções Detalhadas
 
-#### Mateus — Idealizador, Programação, Documentação
+**Mateus — Idealizador, Programação, Documentação**
 
 | Atribuição | Descrição |
 | :--- | :--- |
@@ -80,13 +209,13 @@ A escolha da stack se baseia em:
 | **Documentação** | Escrever e manter a documentação |
 | **Pesquisa** | Validar dados e fontes |
 
-#### Vini — A Definir
+**Vini — A Definir**
 
 | Atribuição | Descrição |
 | :--- | :--- |
 | **A definir** | Dependendo das habilidades e interesses |
 
-#### Professor Interlocutor — Validação Pedagógica
+**Professor Interlocutor — Validação Pedagógica**
 
 | Atribuição | Descrição |
 | :--- | :--- |
@@ -94,7 +223,7 @@ A escolha da stack se baseia em:
 | **Testes em sala** | Aplicar o jogo em sala de aula e coletar feedback |
 | **Validação pedagógica** | Validar se o jogo cumpre os objetivos de aprendizagem |
 
-#### Professor Alisson — Revisão Crítica
+**Professor Alisson — Revisão Crítica**
 
 | Atribuição | Descrição |
 | :--- | :--- |
@@ -102,7 +231,34 @@ A escolha da stack se baseia em:
 | **Sugestões** | Propor melhorias e correções |
 | **Revisão final** | Validar a versão final do jogo |
 
-### 08.3.3. Fundamentação Teórica
+### 08.03.3. Equipe de Agentes de IA (12 Papéis)
+
+Para o desenvolvimento assistido por IA, o projeto usa **12 subagentes especializados**:
+
+| Papel | Missão | Modelo |
+| :--- | :--- | :--- |
+| **GP** | Fases, escopo, MVP, riscos | Sonnet |
+| **GD** | Loops, regras, progressão, GDD | **Opus** |
+| **PSI** | Ética, manipulação, psicologia | **Opus** |
+| **GF** | Game feel, impacto emocional | Sonnet |
+| **UX** | Telas, HUD, acessibilidade | Sonnet |
+| **DEV** | Viabilidade, GDScript tipado | Sonnet |
+| **ARQ** | Arquitetura, ADRs, guardrails | **Opus** |
+| **ECO** | Economia, simulação | **Opus** |
+| **QA** | Testes, critérios de aceite | Sonnet |
+| **TA** | Assets CC0, shaders, VFX | Sonnet |
+| **SFX** | Áudio CC0, mixagem | Sonnet |
+| **AIW** | Prompts, CLAUDE.md, skills | Sonnet |
+
+**Princípios dos agentes:**
+
+1. Agentes **propõem**, nunca decidem.
+2. Divergência entre papéis vira trade-off para o PO.
+3. Escrita (Edit/Write) só na Fase 10, com ordem do PO.
+4. Máximo **3 subagentes em paralelo**.
+5. Notas incrementais desde o início.
+
+### 08.03.4. Fundamentação Teórica
 
 A estrutura da equipe se baseia em três princípios:
 
@@ -112,42 +268,77 @@ A estrutura da equipe se baseia em três princípios:
 
 > "Uma equipe bem estruturada é uma equipe que entrega." — Jesse Schell
 
-### 08.3.4. Referências
+### 08.03.5. Referências
 
 - SCHELL, Jesse. *The Art of Game Design: A Book of Lenses*. Boca Raton: CRC Press, 2008.
+- TIXHEAD REWORK. *Relatório de contexto consolidado*. 2026.
 
 ---
 
-## 08.4. Cronograma
+## 08.04 — Cronograma
 
-### 08.4.1. Visão Geral do Cronograma
+### 08.04.1. Visão Geral do Cronograma
 
 | Etapa | Prazo | Status |
 | :--- | :--- | :--- |
-| **Documentação** | Outubro 2026 | ✅ Concluída |
-| **Documentos de Apoio Críticos (09-12)** | Outubro 2026 | ⏳ A iniciar |
-| **Documentos de Apoio Importantes (14-18)** | Outubro-Novembro 2026 | ⏳ A iniciar |
+| **Documentação (00-13)** | Outubro 2026 | ✅ Concluída |
+| **Docs Vivos** | Outubro 2026 | ✅ Concluída |
+| **Setup Claude Code** | Outubro 2026 | ✅ Concluída |
+| **Arquivos 14-18** | Outubro-Novembro 2026 | ⏳ A iniciar |
 | **GDD Completo** | Novembro 2026 | ⏳ A iniciar |
 | **Protótipo Técnico** | Novembro 2026 (6-7 dias) | ⏳ A iniciar |
 | **Testes com 3-5 pessoas** | Novembro 2026 | ⏳ A iniciar |
 | **Validação com Educador** | Novembro 2026 | ⏳ A iniciar |
 | **Publicação** | Dezembro 2026 | ⏳ A iniciar |
 
-### 08.4.2. Estimativa de Esforço
+### 08.04.2. Estimativa de Esforço
 
 | Etapa | Esforço Estimado | Dias Úteis |
 | :--- | :--- | :--- |
-| **Documentos de Apoio Críticos (09-12)** | 4-5 dias | 4-5 |
-| **Documentos de Apoio Importantes (14-18)** | 5-6 dias | 5-6 |
+| **Arquivos 14-18** | 5-6 dias | 5-6 |
 | **GDD Completo** | 2-3 dias | 2-3 |
 | **Protótipo Técnico** | 6-7 dias | 6-7 |
 | **Testes** | 1-2 dias | 1-2 |
 | **Ajustes** | 2-3 dias | 2-3 |
 | **Validação** | 1-2 dias | 1-2 |
 | **Publicação** | 1 dia | 1 |
-| **Total** | **22-29 dias** | **22-29** |
+| **Total** | **18-24 dias** | **18-24** |
 
-### 08.4.3. Fundamentação Teórica
+### 08.04.3. Fases do Cronograma
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    CRONOGRAMA DE PRODUÇÃO                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  FASE 0 — DOCUMENTAÇÃO ✅                                   │
+│  └──▶ 14 arquivos (00-13)                                   │
+│                                                             │
+│  FASE 1 — DOCS VIVOS ✅                                     │
+│  └──▶ 6 arquivos (estado, decisões, planos, etc.)           │
+│                                                             │
+│  FASE 2 — SETUP ✅                                          │
+│  └──▶ Claude Code + MCP + GitHub Pages                      │
+│                                                             │
+│  FASE 3 — ARQUIVOS DE APOIO ⏳                              │
+│  └──▶ 14_UI_UX, 15_FLUXO, 16_MANUAL, 17_CARTAS, 18_APREND.  │
+│                                                             │
+│  FASE 4 — GDD COMPLETO ⏳                                   │
+│  └──▶ Consolidação de todos os sistemas                     │
+│                                                             │
+│  FASE 5 — PROTÓTIPO TÉCNICO ⏳                              │
+│  └──▶ Implementação em Godot 4.7                            │
+│                                                             │
+│  FASE 6 — TESTES ⏳                                         │
+│  └──▶ 3-5 pessoas + educador                                │
+│                                                             │
+│  FASE 7 — PUBLICAÇÃO ⏳                                     │
+│  └──▶ Play Store, Web, itch.io                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 08.04.4. Fundamentação Teórica
 
 O cronograma se baseia em três princípios:
 
@@ -157,16 +348,16 @@ O cronograma se baseia em três princípios:
 
 > "O cronograma deve ser um guia, não uma prisão." — Fred Brooks, *The Mythical Man-Month*
 
-### 08.4.4. Referências
+### 08.04.5. Referências
 
-- BROOKS, Fred. *The Mythical Man-Month: Essays on Software Engineering*. Boston: Addison-Wesley, 1975.
+- BROOKS, Fred. *The Mythical Man-Month*. Boston: Addison-Wesley, 1975.
 - SCHWABER, Ken; SUTHERLAND, Jeff. *The Scrum Guide*. 2020.
 
 ---
 
-## 08.5. Validação Pedagógica
+## 08.05 — Validação Pedagógica
 
-### 08.5.1. Metodologia de Validação
+### 08.05.1. Metodologia de Validação
 
 A validação pedagógica segue quatro etapas:
 
@@ -177,7 +368,7 @@ A validação pedagógica segue quatro etapas:
 | **3. Teste com alunos** | Verificar se o jogo é compreensível e engajador | Professor interlocutor |
 | **4. Ajustes** | Corrigir problemas identificados | Mateus |
 
-### 08.5.2. Métricas de Validação
+### 08.05.2. Métricas de Validação
 
 | Métrica | Descrição | Meta |
 | :--- | :--- | :--- |
@@ -187,7 +378,7 @@ A validação pedagógica segue quatro etapas:
 | **Recomendação** | O jogador recomendaria o jogo? | > 70% |
 | **Duração** | O jogo foi concluído em 30-40 minutos? | > 80% |
 
-### 08.5.3. Parcerias Potenciais
+### 08.05.3. Parcerias Potenciais
 
 | Parceiro | O que oferece | Status |
 | :--- | :--- | :--- |
@@ -196,7 +387,7 @@ A validação pedagógica segue quatro etapas:
 | **Escolas** | Testes em sala de aula | ⏳ A ser buscada |
 | **Universidades** | Divulgação | ⏳ A ser buscada |
 
-### 08.5.4. Fundamentação Teórica
+### 08.05.4. Fundamentação Teórica
 
 A validação pedagógica se baseia em três princípios:
 
@@ -206,7 +397,7 @@ A validação pedagógica se baseia em três princípios:
 
 > "A avaliação é uma ferramenta de aprendizagem, não um tribunal." — Paulo Freire
 
-### 08.5.5. Referências
+### 08.05.5. Referências
 
 - FREIRE, Paulo. *Pedagogia do Oprimido*. Rio de Janeiro: Paz e Terra, 1968.
 - SCRIVEN, Michael. *The Methodology of Evaluation*. 1967.
@@ -214,9 +405,9 @@ A validação pedagógica se baseia em três princípios:
 
 ---
 
-## 08.6. Questões Legais
+## 08.06 — Questões Legais
 
-### 08.6.1. Citações e Direitos Autorais
+### 08.06.1. Citações e Direitos Autorais
 
 | Item | Status | Recomendação |
 | :--- | :--- | :--- |
@@ -226,7 +417,7 @@ A validação pedagógica se baseia em três princípios:
 | **Citações de Darcy Ribeiro** | ✅ Domínio público | Usar com crédito |
 | **Citações de Josué de Castro** | ✅ Domínio público | Usar com crédito |
 
-### 08.6.2. Registro do Jogo
+### 08.06.2. Registro do Jogo
 
 | Item | Status | Recomendação |
 | :--- | :--- | :--- |
@@ -234,7 +425,7 @@ A validação pedagógica se baseia em três princípios:
 | **Direitos autorais** | ⏳ A ser feito | Registrar o código-fonte |
 | **Licença** | ⏳ A ser definida | Creative Commons ou MIT |
 
-### 08.6.3. Avisos de Conteúdo
+### 08.06.3. Avisos de Conteúdo
 
 | Item | Status | Recomendação |
 | :--- | :--- | :--- |
@@ -242,7 +433,7 @@ A validação pedagógica se baseia em três princípios:
 | **Classificação etária** | ⏳ A ser definida | Livre (pretendido) |
 | **Aviso de linguagem** | ⏳ A ser definido | Avisar sobre linguagem direta e brutal |
 
-### 08.6.4. Fundamentação Teórica
+### 08.06.4. Fundamentação Teórica
 
 As questões legais se baseiam em três princípios:
 
@@ -252,16 +443,16 @@ As questões legais se baseiam em três princípios:
 
 > "O direito autoral existe para proteger a criação, não para impedir a educação." — Lei 9.610/1998
 
-### 08.6.5. Referências
+### 08.06.5. Referências
 
 - Lei 9.610/1998. *Lei de Direitos Autorais*. Brasília: Congresso Nacional, 1998.
 - INPI. *Manual de Marcas*. Rio de Janeiro: INPI, 2026.
 
 ---
 
-## 08.7. Acessibilidade e Avisos
+## 08.07 — Acessibilidade e Avisos
 
-### 08.7.1. Recursos de Acessibilidade
+### 08.07.1. Recursos de Acessibilidade
 
 | Recurso | Status | Recomendação |
 | :--- | :--- | :--- |
@@ -271,7 +462,7 @@ As questões legais se baseiam em três princípios:
 | **Idioma** | ⏳ A ser definido | Português (principal), Inglês, Espanhol |
 | **Contraste** | ⏳ A ser definido | Alto contraste para legibilidade |
 
-### 08.7.2. Avisos de Conteúdo
+### 08.07.2. Avisos de Conteúdo
 
 | Aviso | Descrição | Onde |
 | :--- | :--- | :--- |
@@ -280,7 +471,7 @@ As questões legais se baseiam em três princípios:
 | **Violência** | O jogo aborda a violência policial | Tela inicial |
 | **Linguagem** | O jogo usa linguagem direta e brutal | Tela inicial |
 
-### 08.7.3. Fundamentação Teórica
+### 08.07.3. Fundamentação Teórica
 
 A acessibilidade se baseia em três princípios:
 
@@ -288,18 +479,18 @@ A acessibilidade se baseia em três princípios:
 2. **Inclusão** — o jogo deve incluir pessoas com deficiências.
 3. **Transparência** — o jogo deve avisar sobre conteúdos sensíveis.
 
-> "O design universal não é um luxo. É uma necessidade." — Ron Mace, arquiteto
+> "O design universal não é um luxo. É uma necessidade." — Ron Mace
 
-### 08.7.4. Referências
+### 08.07.4. Referências
 
 - MACE, Ron. *Universal Design: Housing for the Lifespan of All People*. 1988.
 - WCAG. *Web Content Accessibility Guidelines*. 2023.
 
 ---
 
-## 08.8. Estratégia de Distribuição
+## 08.08 — Estratégia de Distribuição
 
-### 08.8.1. Canais de Distribuição
+### 08.08.1. Canais de Distribuição
 
 | Canal | Público | Vantagens |
 | :--- | :--- | :--- |
@@ -310,7 +501,7 @@ A acessibilidade se baseia em três princípios:
 | **Universidades** | Estudantes | Público-alvo |
 | **Redes sociais** | Jovens | Divulgação |
 
-### 08.8.2. Estratégia de Divulgação
+### 08.08.2. Estratégia de Divulgação
 
 | Etapa | Descrição | Responsável |
 | :--- | :--- | :--- |
@@ -321,7 +512,7 @@ A acessibilidade se baseia em três princípios:
 | **5. Parcerias com escolas** | Testes em sala de aula | Professor interlocutor |
 | **6. Parcerias com mídia alternativa** | Carta Capital, Brasil de Fato, Mídia NINJA | Mateus |
 
-### 08.8.3. Fundamentação Teórica
+### 08.08.3. Fundamentação Teórica
 
 A distribuição se baseia em três princípios:
 
@@ -331,17 +522,17 @@ A distribuição se baseia em três princípios:
 
 > "A educação é um direito, não uma mercadoria." — Paulo Freire
 
-### 08.8.4. Referências
+### 08.08.4. Referências
 
-- FREIRE, Paulo. *Pedagogia da Oprimido*. Rio de Janeiro: Paz e Terra, 1968.
-- itch.io. *Publishing Guidelines*. 2026.
-- Google Play. *Publishing Guidelines*. 2026.
+- FREIRE, Paulo. *Pedagogia do Oprimido*. Rio de Janeiro: Paz e Terra, 1968.
+- ITCH.IO. *Publishing Guidelines*. 2026.
+- GOOGLE PLAY. *Publishing Guidelines*. 2026.
 
 ---
 
-## 08.9. Métricas de Sucesso
+## 08.09 — Métricas de Sucesso
 
-### 08.9.1. Métricas Quantitativas
+### 08.09.1. Métricas Quantitativas
 
 | Métrica | Meta | Prazo |
 | :--- | :--- | :--- |
@@ -351,7 +542,7 @@ A distribuição se baseia em três princípios:
 | **Engajamento** | 50% dos jogadores jogam mais de uma vez | 1 mês |
 | **Avaliação** | Nota média > 4.0 | 1 mês |
 
-### 08.9.2. Métricas Qualitativas
+### 08.09.2. Métricas Qualitativas
 
 | Métrica | Descrição | Prazo |
 | :--- | :--- | :--- |
@@ -360,7 +551,7 @@ A distribuição se baseia em três princípios:
 | **Cobertura de mídia** | Menções na mídia alternativa | 3 meses |
 | **Parcerias** | Parcerias com escolas e organizações | 3 meses |
 
-### 08.9.3. Fundamentação Teórica
+### 08.09.3. Fundamentação Teórica
 
 As métricas se baseiam em três princípios:
 
@@ -370,82 +561,136 @@ As métricas se baseiam em três princípios:
 
 > "O que não é medido não é gerenciado." — Peter Drucker
 
-### 08.9.4. Referências
+### 08.09.4. Referências
 
 - DRUCKER, Peter. *The Effective Executive*. New York: Harper & Row, 1966.
 - KIRKPATRICK, Donald. *Evaluating Training Programs*. 1959.
 
 ---
 
-## 08.10. Próximos Passos Imediatos
+## 08.10 — Riscos e Mitigações
 
-### 08.10.1. Lista de Próximos Passos
+### 08.10.1. Riscos de Processo com IA
+
+| ID | Risco | Impacto | Mitigação | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **RP-01** | Perda de contexto entre sessões | Alto | Docs vivos + `/fechar-plano` | 🟢 Mitigado |
+| **RP-02** | Alucinação técnica | Alto | Citar `arquivo:linha` ou `[não verificado]` | 🟡 Ativo |
+| **RP-03** | Decisão sem o PO | Alto | Log D-xxx | 🟢 Mitigado |
+| **RP-04** | Plano executado diferente | Médio | Auditoria do GP | 🟡 Ativo |
+| **RP-05** | Limite de uso em subagentes | Médio | Notas parciais; ondas menores | 🟡 Ativo |
+| **RP-06** | Dados desatualizados | Médio | Validação via `arquivo:linha` | 🟡 Ativo |
+| **RP-07** | Cartas inconsistentes | Alto | Guia de estilo + validação | 🔴 Alto |
+| **RP-08** | Custo de tokens | Médio | Política de subagentes | 🟡 Ativo |
+
+### 08.10.2. Riscos Técnicos
+
+| ID | Risco | Impacto | Mitigação | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **RT-01** | Godot 4.7 + MCP inexperiente | Alto | Seguir fluxo documentado | 🟡 Ativo |
+| **RT-02** | GDScript sem tipagem estática | Médio | Regra no `.claude/rules/` | 🟢 Mitigado |
+| **RT-03** | Estrutura de dados mal definida | Alto | Arquivo 13 completo | 🟢 Mitigado |
+| **RT-04** | Assets CC0 de baixa qualidade | Médio | Curadoria em Kenney/OpenGameArt | 🟡 Ativo |
+| **RT-05** | Performance em mobile | Médio | Testes desde o início | 🟡 Ativo |
+| **RT-06** | Exportação Web problemática | Médio | Testes em navegador | 🟡 Ativo |
+
+### 08.10.3. Riscos de Conteúdo
+
+| ID | Risco | Impacto | Mitigação | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **RC-01** | Conteúdo doutrinário | Alto | Revisão ética (PSI) | 🟡 Ativo |
+| **RC-02** | Uso de dados desatualizados | Alto | Validação com fontes 2026 | 🟡 Ativo |
+| **RC-03** | Citações erradas | Alto | Validação por historiador | 🟡 Ativo |
+| **RC-04** | Cartas desbalanceadas | Médio | Simulações | 🟡 Ativo |
+| **RC-05** | Finais inconsistentes | Médio | Validação cruzada | 🟡 Ativo |
+| **RC-06** | Tom inadequado | Médio | Guia de estilo | 🟢 Mitigado |
+
+### 08.10.4. Fundamentação Teórica
+
+O gerenciamento de riscos se baseia em três princípios:
+
+1. **Identificação precoce** — os riscos devem ser identificados antes que se tornem problemas.
+2. **Mitigação proativa** — os riscos devem ser mitigados antes que causem danos.
+3. **Monitoramento contínuo** — os riscos devem ser monitorados ao longo do projeto.
+
+### 08.10.5. Referências
+
+- TIXHEAD REWORK. *Relatório de contexto consolidado*. 2026.
+- PMI. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*. 2021.
+
+---
+
+## 08.11 — Próximos Passos Imediatos
+
+### 08.11.1. Lista de Próximos Passos
 
 | # | Passo | Responsável | Prazo |
 | :--- | :--- | :--- | :--- |
-| 1 | Escrever o arquivo 09 (Glossário) | Mateus | Imediato |
-| 2 | Escrever o arquivo 10 (Guia de Estilo) | Mateus | 1 dia |
-| 3 | Escrever o arquivo 11 (Fichas dos Atores) | Mateus | 2 dias |
-| 4 | Escrever o arquivo 12 (Fichas dos Modos) | Mateus | 2 dias |
-| 5 | Escrever os arquivos 14-18 (UI/UX, Fluxo, Manual, Roteiros) | Mateus | 5 dias |
+| 1 | Escrever `14_UI_UX_DESIGN.md` | Mateus | Imediato |
+| 2 | Escrever `15_FLUXO_DO_JOGO.md` | Mateus | 1 dia |
+| 3 | Escrever `16_MANUAL_DO_JOGADOR.md` | Mateus | 1 dia |
+| 4 | Escrever `17_ROTEIRO_DAS_CARTAS.md` | Mateus | 2 dias |
+| 5 | Escrever `18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | Mateus | 2 dias |
 | 6 | Escrever o GDD Completo | Mateus | 3 dias |
 | 7 | Montar o Protótipo Técnico | Mateus | 7 dias |
 | 8 | Testar com 3-5 pessoas | Mateus | 2 dias |
 | 9 | Validar com Educador | Professor interlocutor | 2 dias |
 | 10 | Publicar e Divulgar | Mateus | 1 dia |
 
-### 08.10.2. Fundamentação dos Próximos Passos
+### 08.11.2. Fundamentação dos Próximos Passos
 
-#### Escrever os Documentos de Apoio
+**Escrever os Arquivos 14-18**
 
-**Por que:** Os documentos de apoio (09 a 12) são críticos para garantir a consistência do jogo. Sem eles, as cartas e Cartas de Aprendizado podem ser inconsistentes.
+**Por que:** Os documentos de apoio (14 a 18) são críticos para garantir a consistência do jogo. Sem eles, as cartas e Cartas de Aprendizado podem ser inconsistentes.
 
-**Próximo passo:** Escrever o arquivo 09 (Glossário) e seguir a ordem de produção.
+**Próximo passo:** Escrever o arquivo 14 (UI/UX) e seguir a ordem.
 
-#### Escrever o GDD Completo
+**Escrever o GDD Completo**
 
 **Por que:** O GDD (Game Design Document) é o manual de desenvolvimento do jogo. Ele consolida todas as decisões de design.
 
 **Próximo passo:** Escrever o GDD após a conclusão dos documentos de apoio.
 
-#### Montar o Protótipo Técnico
+**Montar o Protótipo Técnico**
 
 **Por que:** O protótipo é a primeira versão jogável do jogo. Ele permite testar as mecânicas e validar o design.
 
 **Próximo passo:** Montar o protótipo após a conclusão do GDD.
 
-### 08.10.3. Referências
+### 08.11.3. Referências
 
 - SCHWABER, Ken; SUTHERLAND, Jeff. *The Scrum Guide*. 2020.
 - RIES, Eric. *The Lean Startup*. New York: Crown Business, 2011.
 
 ---
 
-## 08.11. Considerações Finais
+## 08.12 — Considerações Finais
 
-### 08.11.1. O Que Está Pronto
+### 08.12.1. O Que Está Pronto
 
 | Elemento | Status |
 | :--- | :--- |
-| **Documentação (00-08, 13)** | ✅ Concluída |
+| **Documentação (00-13)** | ✅ Concluída |
 | **Pesquisas (03)** | ✅ Concluída |
 | **Design (04)** | ✅ Concluído |
 | **Sistemas (05)** | ✅ Concluídos |
+| **Referências (06)** | ✅ Concluídas |
+| **Histórico (07)** | ✅ Concluído |
+| **Produção (08)** | ✅ Concluída |
 | **Stack (13)** | ✅ Definida |
 
-### 08.11.2. O Que Falta
+### 08.12.2. O Que Falta
 
 | Elemento | Status |
 | :--- | :--- |
-| **Documentos de Apoio (09-12)** | ⏳ A iniciar |
-| **Documentos de Apoio (14-18)** | ⏳ A iniciar |
+| **Arquivos 14-18** | ⏳ A iniciar |
 | **GDD Completo** | ⏳ A iniciar |
 | **Protótipo Técnico** | ⏳ A iniciar |
 | **Testes** | ⏳ A iniciar |
 | **Validação** | ⏳ A iniciar |
 | **Publicação** | ⏳ A iniciar |
 
-### 08.11.3. Mensagem Final
+### 08.12.3. Mensagem Final
 
 O projeto "O Planalto" está em um estágio avançado de design conceitual. A documentação está completa, o design está consolidado, os sistemas estão definidos. O próximo passo é transformar esse design em um produto jogável.
 
@@ -455,19 +700,45 @@ O projeto "O Planalto" está em um estágio avançado de design conceitual. A do
 
 ---
 
-## Referências
+## 08.13 — Referências
+
+### 08.13.1. Produção
 
 - BROOKS, Fred. *The Mythical Man-Month: Essays on Software Engineering*. Boston: Addison-Wesley, 1975.
 - DRUCKER, Peter. *The Effective Executive*. New York: Harper & Row, 1966.
-- FREIRE, Paulo. *Pedagogia do Oprimido*. Rio de Janeiro: Paz e Terra, 1968.
-- GODOT ENGINE. *Godot 4.7 Release*. 2026.
-- KIRKPATRICK, Donald. *Evaluating Training Programs*. 1959.
-- Lei 9.610/1998. *Lei de Direitos Autorais*. Brasília: Congresso Nacional, 1998.
-- MACE, Ron. *Universal Design: Housing for the Lifespan of All People*. 1988.
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
 - RIES, Eric. *The Lean Startup*. New York: Crown Business, 2011.
 - SCHELL, Jesse. *The Art of Game Design: A Book of Lenses*. Boca Raton: CRC Press, 2008.
 - SCHWABER, Ken; SUTHERLAND, Jeff. *The Scrum Guide*. 2020.
+
+### 08.13.2. Stack Técnica
+
+- GODOT ENGINE. *Godot 4.7 Release*. 2026.
+- GODOT MCP. *godot-editor-mcp*. PyPI, 2026.
+- TUGCANTOPALOGLU. *godot-mcp*. GitHub, 2026.
+- YANHUIFAIR. *godot-mcp*. npm, 2026.
+- SUMMER ENGINE. *Claude for Godot*. 2026.
+- CHUN92. *card-framework*. GitHub, 2026.
+
+### 08.13.3. Validação
+
+- FREIRE, Paulo. *Pedagogia do Oprimido*. Rio de Janeiro: Paz e Terra, 1968.
 - SCRIVEN, Michael. *The Methodology of Evaluation*. 1967.
-- Summer Engine. *Claude for Godot: How to Use Claude to Build Godot Games in 2026*. 2026.
+- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
+- KIRKPATRICK, Donald. *Evaluating Training Programs*. 1959.
+
+### 08.13.4. Legal e Acessibilidade
+
+- Lei 9.610/1998. *Lei de Direitos Autorais*. Brasília: Congresso Nacional, 1998.
+- INPI. *Manual de Marcas*. Rio de Janeiro: INPI, 2026.
+- MACE, Ron. *Universal Design: Housing for the Lifespan of All People*. 1988.
 - WCAG. *Web Content Accessibility Guidelines*. 2023.
+
+### 08.13.5. Riscos
+
+- TIXHEAD REWORK. *Relatório de contexto consolidado*. 2026.
+- PMI. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*. 2021.
+
+---
+
+**Última atualização:** Outubro de 2026
+**Versão:** 2.0 (completa)
