@@ -11,8 +11,6 @@ O Planalto é um jogo educativo de cartas sobre política brasileira, para joven
 
 Os 14 documentos deste site são de trabalho: mudam com frequência e ainda têm lacunas. O conteúdo ainda não passou pela validação com um educador, prevista antes do lançamento do jogo (D-048).
 
-Um documento está incompleto — o começo dele está faltando — e aparece marcados como **incompleto** no menu. O conteúdo está sendo recuperado.
-
 ## Posições assumidas
 
 O projeto quer conscientizar sem doutrinar: mostrar que toda escolha política tem um preço e que politização não é polarização. Isso não significa ausência de posição. Quando o projeto assume uma leitura, ela fica registrada no [histórico de decisões](/o-planalto/07-historico-de-decisoes/), para que você possa ver, discordar e contestar. Um exemplo: o jogo trata o impeachment de 2016 como golpe (D-022).

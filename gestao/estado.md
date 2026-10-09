@@ -116,7 +116,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | RT-08 | Godot instalado 4.6 ≠ stack 4.7 | 🟡 Ativo | Atualizar antes do P-005 ou rever D-052 |
 | RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟡 Ativo | Atualizar o Node para buildar `site/` localmente; o deploy no GitHub usa Node 24 |
 | RC-08 | Docs citam políticos reais (contra D-005) em período eleitoral | 🔴 Alto | Aviso de conteúdo (D-075); parecer jurídico pendente (`docs/07_HISTORICO_DE_DECISOES.md:180`) |
-| RC-09 | Doc 10 truncado; 04, 05, 06, 08 restaurados | 🟡 Ativo | Aviso + `noindex` (D-078); recuperar originais |
+| RC-09 | Docs truncados — todos restaurados | 🟡 Ativo | Aviso + `noindex` (D-078); recuperar originais |
 
 ---
 

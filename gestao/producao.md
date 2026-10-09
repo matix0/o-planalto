@@ -47,7 +47,7 @@
 | **RC-06** | Tom inadequado para o público | Médio | Média | Guia de estilo | 🟢 Mitigado |
 | **RC-07** | Termos técnicos mal explicados | Médio | Média | Glossário + Cartas de Aprendizado | 🟢 Mitigado |
 | **RC-08** | Docs públicos citam políticos reais (contra D-005) em período eleitoral (`docs/04_DESIGN_DO_JOGO.md:60-116`, `docs/03_PESQUISAS_E_ESTUDOS.md:499`) | Alto | Média | Aviso de conteúdo + "Sobre e metodologia" (D-075); parecer jurídico (`docs/07_HISTORICO_DE_DECISOES.md:180`) | 🔴 Alto |
-| **RC-09** | Doc 10 truncado no começo; 04, 05, 06 e 08 restaurados em 2026-10-09 | Alto | Alta | Aviso "incompleto" + `noindex` (D-078); recuperar originais | 🟡 Ativo |
+| **RC-09** | Docs truncados (04, 05, 06, 08, 10) | Alto | Alta | Todos restaurados em 2026-10-09 | 🟢 Resolvido |
 
 ---
 

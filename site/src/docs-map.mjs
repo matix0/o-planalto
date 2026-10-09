@@ -26,7 +26,7 @@ export const DOCS = [
 	{ arquivo: '07_HISTORICO_DE_DECISOES.md', slug: '07-historico-de-decisoes', titulo: '07 — Histórico de Decisões', curto: 'Histórico de decisões', secao: 'Produção e histórico', descricao: 'O que foi adotado, descartado e o que segue em aberto.' },
 	{ arquivo: '08_PRODUCAO_E_PROXIMOS_PASSOS.md', slug: '08-producao-e-proximos-passos', titulo: '08 — Produção e Próximos Passos', curto: 'Produção e próximos passos', secao: 'Produção e histórico', descricao: 'Stack, equipe, cronograma, validação, questões legais e distribuição.', aviso: true },
 	{ arquivo: '09_GLOSSARIO.md', slug: '09-glossario', titulo: '09 — Glossário', curto: 'Glossário', secao: 'Referência rápida', descricao: 'Termos institucionais, políticos e do jogo.', aviso: true },
-	{ arquivo: '10_GUIA_DE_ESTILO_E_TOM.md', slug: '10-guia-de-estilo-e-tom', titulo: '10 — Guia de Estilo e Tom', curto: 'Guia de estilo e tom', secao: 'Referência rápida', descricao: 'Checklist de qualidade para escrever as cartas.', incompleto: '10.10' },
+	{ arquivo: '10_GUIA_DE_ESTILO_E_TOM.md', slug: '10-guia-de-estilo-e-tom', titulo: '10 — Guia de Estilo e Tom', curto: 'Guia de estilo e tom', secao: 'Referência rápida', descricao: 'Tom, regras de escrita, diálogos, finais e checklists para escrever as cartas.', aviso: true },
 	{ arquivo: '13_ARQUITETURA_TECNICA.md', slug: '13-arquitetura-tecnica', titulo: '13 — Arquitetura Técnica', curto: 'Arquitetura técnica', secao: 'Técnico', descricao: 'Stack, estrutura de dados, sistemas e fluxos do jogo.' },
 ];
 
