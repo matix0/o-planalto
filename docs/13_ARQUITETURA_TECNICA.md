@@ -236,14 +236,12 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
   "opcao_esquerda": {
     "texto": "Nomear relator adversário",
-    "custo": { "Capital Político": -10 },
-    "efeitos": { "Soberania": 10 },
+    "efeitos": { "Capital Político": -10, "Soberania": 10 },
     "consequencia": "A lei passa. O povo paga a conta."
   },
   "opcao_direita": {
     "texto": "Aceitar as mudanças",
-    "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Integridade": -5 },
+    "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
   "aprendizado": {
@@ -288,8 +286,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 ```json
 {
   "texto": "Nomear relator adversário",
-  "custo": { "Capital Político": -10 },
-  "efeitos": { "Soberania": 10 },
+  "efeitos": { "Capital Político": -10, "Soberania": 10 },
   "consequencia": "A lei passa. O povo paga a conta."
 }
 ```
@@ -299,8 +296,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
 | `texto` | String | Texto da opção |
-| `custo` | Objeto | Medidores que são gastos (negativos) |
-| `efeitos` | Objeto | Medidores que são afetados (positivos ou negativos) |
+| `efeitos` | Objeto | Medidores afetados, com sinal (2-4 medidores). O custo da escolha é o efeito negativo em `Capital Político` ou `Caixa` (D-085) |
 | `consequencia` | String | Frase curta mostrada após a escolha |
 
 ### 13.3.3. Estrutura de um Medidor
@@ -505,8 +501,9 @@ funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
 | 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
 | 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
 | 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| 4 | **Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
+| 5 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
+| 6 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
 
 ### 13.4.2. Sistema de Satisfação dos Atores
 
@@ -643,14 +640,12 @@ funcao calcular_eixo(escolhas):
       "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
       "opcao_esquerda": {
         "texto": "Nomear relator adversário",
-        "custo": { "Capital Político": -10 },
-        "efeitos": { "Soberania": 10 },
+        "efeitos": { "Capital Político": -10, "Soberania": 10 },
         "consequencia": "A lei passa. O povo paga a conta."
       },
       "opcao_direita": {
         "texto": "Aceitar as mudanças",
-        "custo": { "Capital Político": 10, "Caixa": 10 },
-        "efeitos": { "Soberania": -15, "Integridade": -5 },
+        "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
         "consequencia": "O relator é adversário. O projeto avança."
       },
       "aprendizado": {

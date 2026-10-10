@@ -91,6 +91,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-081 | 24 atores do doc 11 em 4 categorias (Capital, Estado, Sociedade Civil, Mídia e Tecnologia), 3 cartas cada; baralho de 342 cartas (200 INST + 70 THEM + 72 ACT). Substitui D-019 e D-020 | 2026-10-10 | Escolha do PO; elenco já usado nos docs 10, 11, 16 e 17 |
 | D-082 | Cartas de ator usam o prefixo `ACT-XXX`; `ATOR-XXX` fica só para o ator | 2026-10-10 | Escolha do PO; evita ID repetido entre doc 11 e doc 17 |
 | D-083 | `Paixão Nacional` vira `Legitimidade` e `Aliança Externa` vira `Caixa` nas cartas e eventos; nenhum medidor novo | 2026-10-10 | Escolha do PO; mantém os 8 medidores (D-014) |
+| D-084 | Sorteio com 6 regras: Prioridade Narrativa, de Ator, de Medidor, de Modo, Variedade e Aleatoriedade Controlada | 2026-10-10 | Escolha do PO; une docs 04/13 e doc 12 |
+| D-085 | Opção de carta com campo único `efeitos` (com sinal); sem campo `custo` separado | 2026-10-10 | Escolha do PO; igual ao doc 17 |
+| D-086 | Novas consequências direitas para THEM-055, 060, 066, 067, 070 e ACT-057 | 2026-10-10 | Textos aprovados pelo PO |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---
@@ -172,6 +175,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-081 | 24 atores, 342 cartas |
 | D-082 | Prefixo `ACT-` nas cartas de ator |
 | D-083 | Sem medidores fora dos 8 |
+| D-084 | Sorteio com 6 regras |
+| D-085 | Campo único `efeitos` |
+| D-086 | Consequências de 6 cartas |
 
 ---
 

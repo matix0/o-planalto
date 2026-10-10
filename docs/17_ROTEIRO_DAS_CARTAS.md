@@ -4190,7 +4190,7 @@ text
 | **Consequência Esquerda** | "A arte indígena resiste." |
 | **Opção Direita** | Retirar |
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Integridade` -5 |
-| **Consequência Direita** | "A arte indígena resiste." |
+| **Consequência Direita** | "A exposição sai. A arte indígena volta para a margem." |
 | **Aprendizado** | Frase: "A arte indígena resiste." |
 
 ### THEM-056 — Rapper Preso
@@ -4270,7 +4270,7 @@ text
 | **Consequência Esquerda** | "A arte urbana resiste." |
 | **Opção Direita** | Manter preso |
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
-| **Consequência Direita** | "A arte urbana resiste." |
+| **Consequência Direita** | "O muro volta a ser cinza. O grafiteiro ganha ficha." |
 | **Aprendizado** | Frase: "A arte urbana resiste." |
 
 **Tema: Futebol**
@@ -4370,7 +4370,7 @@ text
 | **Consequência Esquerda** | "A memória da resistência é preservada." |
 | **Opção Direita** | Ignorar |
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
-| **Consequência Direita** | "A memória da resistência é preservada." |
+| **Consequência Direita** | "A data passa em branco. A memória fica com a torcida." |
 | **Aprendizado** | Frase: "A memória da resistência é preservada." |
 
 ### THEM-067 — Futebol para Paz nas Favelas
@@ -4386,7 +4386,7 @@ text
 | **Consequência Esquerda** | "O esporte transforma vidas." |
 | **Opção Direita** | Ignorar |
 | **Efeitos Direita** | `Caixa` +5, `Dignidade` -5, `Integridade` -5 |
-| **Consequência Direita** | "O esporte transforma vidas." |
+| **Consequência Direita** | "O campinho fecha. O tráfico recruta no lugar." |
 | **Aprendizado** | Frase: "O esporte transforma vidas." |
 
 ### THEM-068 — Criminalização de Torcidas
@@ -4434,7 +4434,7 @@ text
 | **Consequência Esquerda** | "O ídolo mobiliza as massas." |
 | **Opção Direita** | Recusar |
 | **Efeitos Direita** | `Legitimidade` -10, `Integridade` +5 |
-| **Consequência Direita** | "O ídolo mobiliza as massas." |
+| **Consequência Direita** | "O ídolo vai para a oposição. E leva a torcida." |
 | **Aprendizado** | Frase: "O ídolo mobiliza as massas." |
 
 ---
@@ -5424,7 +5424,7 @@ text
 | **Consequência Esquerda** | "A cultura periférica resiste." |
 | **Opção Direita** | Não financiar |
 | **Efeitos Direita** | `Caixa` +5, `Consciência` -5, `Integridade` -5 |
-| **Consequência Direita** | "A cultura periférica resiste." |
+| **Consequência Direita** | "O festival sai no improviso. Sem palco e sem som." |
 | **Aprendizado** | Frase: "A cultura periférica é resistência." |
 
 **Ator: Meta (Big Tech)**

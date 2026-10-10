@@ -293,8 +293,9 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 | **1. Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
 | **2. Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
 | **3. Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| **4. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| **5. Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| **4. Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
+| **5. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
+| **6. Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
 
 ### 04.03.7. Fundamentação Teórica
 

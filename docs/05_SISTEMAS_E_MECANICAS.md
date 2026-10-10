@@ -182,14 +182,12 @@ O sistema de medidores é baseado em:
   "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
   "opcao_esquerda": {
     "texto": "Nomear relator adversário",
-    "custo": { "Capital Político": -10 },
-    "efeitos": { "Soberania": 10 },
+    "efeitos": { "Capital Político": -10, "Soberania": 10 },
     "consequencia": "A lei passa. O povo paga a conta."
   },
   "opcao_direita": {
     "texto": "Aceitar as mudanças",
-    "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Integridade": -5 },
+    "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
   "aprendizado": {

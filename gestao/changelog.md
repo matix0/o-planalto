@@ -28,6 +28,9 @@ Versionamento: [SemVer](https://semver.org/).
 - 12 subagentes especializados
 
 ### Alterado
+- D-084: 6 regras de sorteio nos docs 04, 12 e 13
+- D-085: schema de opção sem `custo` (docs 05 e 13)
+- D-086: consequências novas em 6 cartas do doc 17
 - D-081: 24 atores do doc 11 e baralho de 342 cartas nos docs 00, 04, 05, 09, 11, 12, 13, 17, 18, `CLAUDE.md`, `estado.md` e site
 - D-082: cartas de ator renomeadas de `ATOR-` para `ACT-` (doc 17; cartas associadas do doc 11 e exemplo do doc 13 atualizados)
 - D-083: `Paixão Nacional` → `Legitimidade` e `Aliança Externa` → `Caixa` em 13 cartas e 2 eventos do doc 11
