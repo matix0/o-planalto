@@ -614,7 +614,7 @@ A rede pública perdeu **38.137 leitos de internação** ao longo de 20 anos. Os
 | :--- | :--- |
 | **Desemprego** | Quanto maior, menor a `Dignidade` e a `Legitimidade`. |
 | **Inflação** | Quanto maior, menor o `Caixa` e a `Dignidade`. |
-| **Juros** | Quanto maior, menor o `Caixa` e a `Prosperidade`. |
+| **Juros** | Quanto maior, menor o `Caixa` e a `Dignidade`. |
 
 ### 3. Conexão com o Jogo
 

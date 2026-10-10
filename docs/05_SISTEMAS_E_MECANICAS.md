@@ -30,7 +30,7 @@ O jogo "O Planalto" é composto por **9 sistemas interconectados**:
 │     └──▶ 24 atores com níveis de satisfação                 │
 │                                                             │
 │  5. SISTEMA DE EVENTOS ENCADEADOS                           │
-│     └──▶ 78 eventos com gatilhos de longo prazo             │
+│     └──▶ 108 eventos com gatilhos de longo prazo            │
 │                                                             │
 │  6. SISTEMA DE IMPEACHMENT                                  │
 │     └──▶ Cena de golpe em 5 cartas                          │
@@ -147,7 +147,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | :--- | :--- |
 | **Desemprego** | Quanto maior, menor a `Dignidade` e a `Legitimidade`. |
 | **Inflação** | Quanto maior, menor o `Caixa` e a `Dignidade`. |
-| **Juros** | Quanto maior, menor o `Caixa` e a `Prosperidade`. |
+| **Juros** | Quanto maior, menor o `Caixa` e a `Dignidade`. |
 
 ### 05.02.8. Fundamentação Teórica
 
@@ -273,10 +273,11 @@ funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
 | # | Regra | Descrição |
 | :--- | :--- | :--- |
 | 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
+| 2 | **Prioridade de Ator** | Se um ator está furioso (satisfação 0-20), ele aparece obrigatoriamente no próximo turno. Se está insatisfeito (21-40), aparece com alta probabilidade. |
 | 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| 4 | **Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
+| 5 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
+| 6 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
 
 ### 05.04.4. Fundamentação Teórica
 
@@ -316,22 +317,32 @@ funcao atualizar_satisfacao(ator, escolha):
 
 ### 05.05.4. Consequências da Insatisfação
 
-| Ator | Consequência se Insatisfeito |
+| Ator | Consequência se Insatisfeito (evento do Ano 3 no doc 11) |
 | :--- | :--- |
-| **Coronel** | Articula golpe ou fuga de capital |
-| **Tecnocrata** | Pede mais cortes ou sai do governo |
-| **Populista** | Convoca plebiscito ou ataca o Congresso |
-| **Miliciano** | Domina território ou ataca o governo |
-| **Pastor** | Faz campanha contra o governo |
-| **Banqueiro/Ruralista** | Chantageia o mercado |
-| **Professor** | Convoca greve |
-| **Médico do SUS** | Denuncia o colapso hospitalar |
-| **Coach Digital** | Faz campanha contra o governo |
-| **Jornalista Independente** | Denuncia escândalos |
-| **Artista Engajado** | Cria festival de resistência |
-| **Burocrata** | Trava o governo |
-| **Empresário da Saúde** | Pressiona por privatização |
-| **Reitor Privatista** | Pressiona por cortes |
+| **Latifundiários** | Ameaça invadir terra |
+| **Investidores da Faria Lima** | Fuga de capital |
+| **Construtoras** | Gentrificação |
+| **Empresariado Industrial** | Desindustrialização |
+| **Setor de Universidades Privadas** | Universidades sucateadas |
+| **Mercado** | Fuga de capital |
+| **Tecnocratas** | Pede mais cortes |
+| **Militares** | Golpe militar |
+| **Servidores Públicos Estatais** | Paralisia administrativa |
+| **Diplomatas do Itamaraty** | Crise diplomática |
+| **Líder da Câmara (Centrão)** | Impeachment |
+| **Pastores** | Censura aos costumes |
+| **Sindicato dos Professores** | Geração sem pensamento crítico |
+| **Profissionais da Saúde** | Mortalidade infantil |
+| **Líder Sindical** | Mobilização popular |
+| **Movimentos por Moradia (MTST)** | Ocupação de terreno |
+| **Movimentos sociais do campo (MST)** | Ocupação de fazenda |
+| **Movimentos sociais ambientais** | Tragédia ambiental |
+| **Artista Engajado** | Cultura silenciada |
+| **Meta (Big Tech)** | Desinformação total |
+| **Impérios Geopolíticos (China e EUA)** | Dependência da China |
+| **Coach Digital** | Políticas contra o governo |
+| **Jornalista Independente** | Escândalo internacional |
+| **Influenciador Progressista** | Contra-narrativa |
 
 ### 05.05.5. Fundamentação Teórica
 
@@ -345,24 +356,36 @@ O sistema de satisfação é baseado no **design de *Reigns***, onde cada facç�
 
 Os eventos encadeados são **consequências de decisões anteriores** que se manifestam 1-2 turnos depois. O jogador vê um aviso especial quando um evento é ativado. Ele não pode ser evitado.
 
-### 05.06.2. Eventos por Ator (42)
+### 05.06.2. Eventos por Ator (72)
+
+Eventos de cada ator conforme `docs/11_FICHAS_DOS_ATORES.md`, com os efeitos (D-090).
 
 | Ator | Evento 1 | Evento 2 | Evento 3 |
 | :--- | :--- | :--- | :--- |
-| **Coronel** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
-| **Tecnocrata** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
-| **Populista** | Convoca plebiscito (Ano 2) | Enfraquece Congresso (Ano 3) | Culto ao líder (Ano 4) |
-| **Miliciano** | Domina território (Ano 2) | Chacina policial (Ano 3) | Estado de Caos (Ano 4) |
-| **Pastor** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
-| **Banqueiro/Ruralista** | Chantagem do mercado (Ano 2) | Desmatamento acelerado (Ano 3) | Colônia Digital (Ano 4) |
-| **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
-| **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
+| **Latifundiários** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
+| **Investidores da Faria Lima** | Chantagem do mercado (Ano 2) | Fuga de capital (Ano 3) | Colônia Digital (Ano 4) |
+| **Construtoras** | Despejo de famílias (Ano 2) | Gentrificação (Ano 3) | Crise imobiliária (Ano 4) |
+| **Empresariado Industrial** | Demissões em massa (Ano 2) | Desindustrialização (Ano 3) | Colônia Digital (Ano 4) |
+| **Setor de Universidades Privadas** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
+| **Mercado** | Crise cambial (Ano 2) | Fuga de capital (Ano 3) | Colônia Digital (Ano 4) |
+| **Tecnocratas** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
+| **Militares** | Repressão a protestos (Ano 2) | Golpe militar (Ano 3) | Estado Policial (Ano 4) |
+| **Servidores Públicos Estatais** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
+| **Diplomatas do Itamaraty** | Pressão dos EUA (Ano 2) | Crise diplomática (Ano 3) | Colônia (Ano 4) |
+| **Líder da Câmara (Centrão)** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) | Hegemonia Autoritária (Ano 4) |
+| **Pastores** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
+| **Sindicato dos Professores** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
+| **Profissionais da Saúde** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
+| **Líder Sindical** | Greve geral (Ano 2) | Mobilização popular (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos por Moradia (MTST)** | Despejo de famílias (Ano 2) | Ocupação de terreno (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos sociais do campo (MST)** | Conflito no campo (Ano 2) | Ocupação de fazenda (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos sociais ambientais** | Desmatamento acelerado (Ano 2) | Tragédia ambiental (Ano 3) | Colônia Digital (Ano 4) |
+| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
+| **Meta (Big Tech)** | Derrubada de perfil (Ano 2) | Desinformação total (Ano 3) | Colônia Digital (Ano 4) |
+| **Impérios Geopolíticos (China e EUA)** | Pressão dos EUA (Ano 2) | Dependência da China (Ano 3) | Colônia (Ano 4) |
 | **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
 | **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
-| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
-| **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
-| **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
-| **Reitor Privatista** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
+| **Influenciador Progressista** | Campanha nas redes (Ano 2) | Contra-narrativa (Ano 3) | Cidadania Ativa (Ano 4) |
 
 ### 05.06.3. Eventos por Modo (20)
 
@@ -444,6 +467,8 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | **5. O Desfecho** | Se o jogador tiver apoio popular massivo, o golpe falha. | Legitimidade > 60 E Consciência > 50 = Absolvição |
 
 **Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
+
+**Cartas do modo (D-089):** as 5 fases são INST-141 a INST-145, em sequência fixa. INST-146 a INST-160 são cartas de reação, sorteadas entre as fases (roteiro no doc 17).
 
 ### 05.07.4. Fluxo do Impeachment
 

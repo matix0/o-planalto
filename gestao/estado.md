@@ -24,7 +24,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Cartas** | ✅ Roteirizadas | 342 no doc 17 (D-081) |
 | **Finais** | ✅ Consolidados | 26 finais |
 | **Impeachment** | ✅ Reformulado | Cena de golpe, a partir do Ano 2 |
-| **Eventos Encadeados** | ✅ Mapeados | 78 eventos |
+| **Eventos Encadeados** | ✅ Mapeados | 108 eventos (72 atores + 20 modos + 16 medidores, D-090) |
 | **Eixo Ideológico** | ✅ Definido | Modelo 9axes adaptado |
 | **Stack** | ✅ Definida | Godot 4.7 + MCP + Agentes de IA |
 | **Documentação** | ✅ Escrita | 14 arquivos em `docs/` |

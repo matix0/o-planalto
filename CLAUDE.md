@@ -26,6 +26,7 @@
 - **Modos:** 10 institucionais
 - **Atores:** 24 (4 categorias, D-081)
 - **Cartas:** 342 (200 INST + 70 THEM + 72 ACT)
+- **Eventos encadeados:** 108
 - **Finais:** 26
 - **Eixo Ideológico:** Modelo 9axes adaptado
 - **Cores Partidárias:** Vermelho, Azul, Verde, Amarelo, Roxo, Laranja, Preto

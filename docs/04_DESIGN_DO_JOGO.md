@@ -124,7 +124,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | :--- | :--- | :--- | :--- |
 | 1 | **Desemprego** | Taxa de desocupação | Quanto maior, menor a `Dignidade` e a `Legitimidade`. |
 | 2 | **Inflação** | Aumento generalizado dos preços | Quanto maior, menor o `Caixa` e a `Dignidade`. |
-| 3 | **Juros** | Taxa de juros da dívida pública | Quanto maior, menor o `Caixa` e a `Prosperidade`. |
+| 3 | **Juros** | Taxa de juros da dívida pública | Quanto maior, menor o `Caixa` e a `Dignidade`. |
 
 ### 04.02.4. Valores Iniciais
 
@@ -291,7 +291,7 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 | Regra | Descrição |
 | :--- | :--- |
 | **1. Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| **2. Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
+| **2. Prioridade de Ator** | Se um ator está furioso (satisfação 0-20), ele aparece obrigatoriamente no próximo turno. Se está insatisfeito (21-40), aparece com alta probabilidade. |
 | **3. Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
 | **4. Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
 | **5. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
@@ -526,7 +526,7 @@ O sistema de cartas é baseado no **design de *Reigns***, que utiliza um "saco d
 | 12 | Escândalo no STF | Blindagem institucional | Banco Master: 52 mensagens, CPI pediu impeachment |
 | 13 | Influenciador financiado por bets | Cachê da desgraça alheia | Blaze: R$ 330 mi, ofertas de R$ 10 mi por contrato |
 | 14 | Deepfake viral | Desinformação como arma | Crescimento de 308%, 554 vídeos nas eleições |
-| 15 | Coronel cobra favor | Clientelismo | Lei de Terras de 1850, coronelismo adaptado |
+| 15 | Latifundiário cobra o favor | Clientelismo | Lei de Terras de 1850, coronelismo adaptado |
 | 16 | Professor ameaça greve | Resistência cultural | Piso salarial desrespeitado, evasão de 8,5 mi |
 
 ### 04.07.3. Fundamentação Teórica
@@ -770,6 +770,8 @@ O impeachment não é negociação. É uma **cena de golpe**.
 
 **Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
 
+**Cartas do modo (D-089):** as 5 fases são INST-141 a INST-145, em sequência fixa. INST-146 a INST-160 são cartas de reação, sorteadas entre as fases (roteiro no doc 17).
+
 ### 04.12.4. Fundamentação Teórica
 
 O impeachment como **cena de golpe** é baseado na análise do impeachment de Dilma Rousseff em 2016, que foi amplamente interpretado como um **golpe parlamentar, jurídico e midiático**.
@@ -780,30 +782,42 @@ A pesquisa acadêmica confirma que o processo foi marcado por **fragilidade jur�
 
 ---
 
-## 04.13 — Eventos Encadeados (78 Mapeados)
+## 04.13 — Eventos Encadeados (108 Mapeados)
 
 ### 04.13.1. Conceito
 
 Os eventos encadeados são **consequências de decisões anteriores** que se manifestam 1-2 turnos depois. O jogador vê um aviso especial quando um evento é ativado. Ele não pode ser evitado.
 
-### 04.13.2. Eventos por Ator (42)
+### 04.13.2. Eventos por Ator (72)
+
+Eventos de cada ator conforme `docs/11_FICHAS_DOS_ATORES.md`, com os efeitos (D-090).
 
 | Ator | Evento 1 | Evento 2 | Evento 3 |
 | :--- | :--- | :--- | :--- |
-| **Coronel** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
-| **Tecnocrata** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
-| **Populista** | Convoca plebiscito (Ano 2) | Enfraquece Congresso (Ano 3) | Culto ao líder (Ano 4) |
-| **Miliciano** | Domina território (Ano 2) | Chacina policial (Ano 3) | Estado de Caos (Ano 4) |
-| **Pastor** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
-| **Banqueiro/Ruralista** | Chantagem do mercado (Ano 2) | Desmatamento acelerado (Ano 3) | Colônia Digital (Ano 4) |
-| **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
-| **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
+| **Latifundiários** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
+| **Investidores da Faria Lima** | Chantagem do mercado (Ano 2) | Fuga de capital (Ano 3) | Colônia Digital (Ano 4) |
+| **Construtoras** | Despejo de famílias (Ano 2) | Gentrificação (Ano 3) | Crise imobiliária (Ano 4) |
+| **Empresariado Industrial** | Demissões em massa (Ano 2) | Desindustrialização (Ano 3) | Colônia Digital (Ano 4) |
+| **Setor de Universidades Privadas** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
+| **Mercado** | Crise cambial (Ano 2) | Fuga de capital (Ano 3) | Colônia Digital (Ano 4) |
+| **Tecnocratas** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
+| **Militares** | Repressão a protestos (Ano 2) | Golpe militar (Ano 3) | Estado Policial (Ano 4) |
+| **Servidores Públicos Estatais** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
+| **Diplomatas do Itamaraty** | Pressão dos EUA (Ano 2) | Crise diplomática (Ano 3) | Colônia (Ano 4) |
+| **Líder da Câmara (Centrão)** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) | Hegemonia Autoritária (Ano 4) |
+| **Pastores** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
+| **Sindicato dos Professores** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
+| **Profissionais da Saúde** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
+| **Líder Sindical** | Greve geral (Ano 2) | Mobilização popular (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos por Moradia (MTST)** | Despejo de famílias (Ano 2) | Ocupação de terreno (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos sociais do campo (MST)** | Conflito no campo (Ano 2) | Ocupação de fazenda (Ano 3) | Cidadania Ativa (Ano 4) |
+| **Movimentos sociais ambientais** | Desmatamento acelerado (Ano 2) | Tragédia ambiental (Ano 3) | Colônia Digital (Ano 4) |
+| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
+| **Meta (Big Tech)** | Derrubada de perfil (Ano 2) | Desinformação total (Ano 3) | Colônia Digital (Ano 4) |
+| **Impérios Geopolíticos (China e EUA)** | Pressão dos EUA (Ano 2) | Dependência da China (Ano 3) | Colônia (Ano 4) |
 | **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
 | **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
-| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
-| **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
-| **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
-| **Reitor Privatista** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
+| **Influenciador Progressista** | Campanha nas redes (Ano 2) | Contra-narrativa (Ano 3) | Cidadania Ativa (Ano 4) |
 
 ### 04.13.3. Eventos por Modo (20)
 
@@ -852,10 +866,11 @@ O sistema de sorteio é **narrativamente orientado**, não matematicamente ponde
 | # | Regra | Descrição |
 | :--- | :--- | :--- |
 | 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
+| 2 | **Prioridade de Ator** | Se um ator está furioso (satisfação 0-20), ele aparece obrigatoriamente no próximo turno. Se está insatisfeito (21-40), aparece com alta probabilidade. |
 | 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| 4 | **Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
+| 5 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
+| 6 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
 
 ### 04.14.3. Fundamentação Teórica
 

@@ -83,7 +83,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Capital Político` < 40. |
 | **Cartas Associadas** | INST-001 a INST-020 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
-| **Conexão com Atores** | Coronel, Tecnocrata, Pastor, Banqueiro/Ruralista, Burocrata |
+| **Conexão com Atores** | Líder da Câmara (Centrão), Latifundiários, Pastores, Servidores Públicos Estatais, Mercado |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-007 (Bancadas), MOD-008 (Impeachment) |
 | **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, o relator do impeachment de Dilma admitiu que as pedaladas fiscais não configuravam crime. |
 
@@ -132,7 +132,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` < 30 ou `Dignidade` < 30. |
 | **Cartas Associadas** | INST-021 a INST-040 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Crise fiscal" (`Caixa` -15, `Dignidade` -10) · Ano 3: "Falência" (`Caixa` -20, `Capital Político` -15) |
-| **Conexão com Atores** | Tecnocrata, Médico do SUS, Professor, Banqueiro/Ruralista, Empresário da Saúde, Reitor Privatista |
+| **Conexão com Atores** | Tecnocratas, Mercado, Investidores da Faria Lima, Profissionais da Saúde, Sindicato dos Professores, Setor de Universidades Privadas |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-009 (Judiciário) |
 | **Fundamentação** | O orçamento público não é como o de casa. O governo pode gastar mais do que arrecada para investir e gerar arrecadação futura. O teto de gastos retirou R$ 37 bilhões do SUS entre 2018 e 2022. A expectativa de vida caiu de 76,2 para 72,8 anos. |
 
@@ -181,7 +181,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Consciência` < 30 ou `Integridade` < 30. |
 | **Cartas Associadas** | INST-041 a INST-060 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Geração sem pensamento crítico" (`Consciência` -15, `Integridade` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
-| **Conexão com Atores** | Professor, Artista Engajado, Pastor, Coach Digital, Reitor Privatista, Jornalista Independente |
+| **Conexão com Atores** | Sindicato dos Professores, Artista Engajado, Pastores, Coach Digital, Setor de Universidades Privadas, Jornalista Independente |
 | **Referências Cruzadas** | MOD-010 (Influenciador) |
 | **Fundamentação** | A Lei 13.415/2017 rebaixou Filosofia e Sociologia de "disciplinas obrigatórias" para "estudos e práticas". O "Escola sem Partido" criminaliza o debate crítico. A educação integral (CIEPs) ataca as causas do crime. |
 
@@ -230,7 +230,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Soberania` < 30. |
 | **Cartas Associadas** | INST-061 a INST-080 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Dependência externa" (`Soberania` -15, `Caixa` +10) · Ano 3: "Colônia" (`Soberania` -20, `Dignidade` -15) |
-| **Conexão com Atores** | Banqueiro/Ruralista, Tecnocrata, Ambientalista, Indígena |
+| **Conexão com Atores** | Diplomatas do Itamaraty, Impérios Geopolíticos (China e EUA), Empresariado Industrial, Movimentos sociais ambientais |
 | **Referências Cruzadas** | MOD-002 (Orçamento) |
 | **Fundamentação** | O BRICS busca reduzir a dependência do dólar com sistemas como BRICS Pay, BRICS Bridge e BRICS Clear. O Brasil importa 85% dos fertilizantes. A China também exerce domínio sobre o Brasil. A soberania não está à venda — está em disputa. |
 
@@ -279,7 +279,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Segurança` < 30 ou `Dignidade` < 30. |
 | **Cartas Associadas** | INST-081 a INST-100 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Rebelião em presídios" (`Segurança` -15, `Dignidade` -10) · Ano 3: "Estado de Caos" (`Segurança` -20, `Dignidade` -15) |
-| **Conexão com Atores** | Miliciano, Médico do SUS, Professor, Quilombola |
+| **Conexão com Atores** | Militares, Movimentos por Moradia (MTST), Profissionais da Saúde, Jornalista Independente |
 | **Referências Cruzadas** | MOD-009 (Judiciário) |
 | **Fundamentação** | A polícia matou 11 pessoas por dia em 2024. 86% eram negras. O Brasil é o 3º país que mais encarcera no mundo. 69% da população carcerária é negra. O encarceramento em massa não reduz a violência. |
 
@@ -328,7 +328,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` > 60 ou `Capital Político` < 40. |
 | **Cartas Associadas** | INST-101 a INST-120 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Escândalo de desvio" (`Caixa` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
-| **Conexão com Atores** | Coronel, Burocrata, Banqueiro/Ruralista, Pastor |
+| **Conexão com Atores** | Líder da Câmara (Centrão), Construtoras, Pastores, Latifundiários |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-007 (Bancadas) |
 | **Fundamentação** | As emendas parlamentares representam 0,9% do orçamento. Entre janeiro de 2024 e março de 2026, cem artistas acumularam mais de R$ 5 bilhões em cachês. O agronegócio recebeu 56 vezes mais recursos que a agricultura familiar. |
 
@@ -377,7 +377,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Capital Político` < 40. |
 | **Cartas Associadas** | INST-121 a INST-140 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Agenda conservadora avança" (`Consciência` -10, `Soberania` -5) · Ano 3: "Hegemonia Autoritária" (`Capital Político` +20, `Consciência` -20) |
-| **Conexão com Atores** | Coronel, Pastor, Banqueiro/Ruralista, Miliciano, Professor, Sindicalista |
+| **Conexão com Atores** | Latifundiários, Pastores, Militares, Líder Sindical, Movimentos sociais do campo (MST) |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-006 (Emendas) |
 | **Fundamentação** | A FPA tem 345 membros. A FPE tem 210 deputados. A FPSP tem 260+ integrantes. Quando atuam juntas, formam a bancada BBB. A FPA recebeu R$ 426 milhões em doações de campanha em 2014. |
 
@@ -455,6 +455,8 @@ Cada ficha contém:
 | INST-159 | Renunciar antes da condenação | Dignidade |
 | INST-160 | Aceitar a condenação | Resignação |
 
+**Cartas do modo (D-089):** as 5 fases são INST-141 a INST-145, em sequência fixa. INST-146 a INST-160 são cartas de reação, sorteadas entre as fases (roteiro no doc 17).
+
 **Citações de Referência:**
 
 - *"O impeachment não é justiça. É o Congresso te dando um recado."*
@@ -475,7 +477,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Integridade` < 30. |
 | **Cartas Associadas** | INST-161 a INST-180 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Escândalo no STF" (`Integridade` -15, `Consciência` -10) · Ano 3: "Crise institucional" (`Integridade` -20, `Capital Político` -15) |
-| **Conexão com Atores** | Jornalista Independente, Burocrata, Banqueiro/Ruralista |
+| **Conexão com Atores** | Jornalista Independente, Investidores da Faria Lima, Latifundiários, Servidores Públicos Estatais |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-010 (Influenciador) |
 | **Fundamentação** | A venda de sentenças é um mercado nacional. O Banco Master revelou 52 mensagens entre Vorcaro e Alexandre de Moraes. A CPI pediu impeachment de Toffoli, Moraes e Gilmar. A aposentadoria compulsória é uma forma de blindagem institucional. |
 
@@ -524,7 +526,7 @@ Cada ficha contém:
 | **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Integridade` < 30 ou `Consciência` < 30. |
 | **Cartas Associadas** | INST-181 a INST-200 (20 cartas) |
 | **Eventos Encadeados** | Ano 2: "Deepfake viral" (`Integridade` -15, `Consciência` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
-| **Conexão com Atores** | Coach Digital, Jornalista Independente, Influenciador Progressista, Pastor |
+| **Conexão com Atores** | Coach Digital, Meta (Big Tech), Jornalista Independente, Influenciador Progressista, Pastores |
 | **Referências Cruzadas** | MOD-003 (Currículo e Mídia) |
 | **Fundamentação** | A divulgação de conteúdos falsos com IA mais que triplicou entre 2024 e 2025. 554 vídeos deepfake foram publicados nas eleições de 2026. As bets financiam influenciadores com comissão sobre as perdas. O "cachê da desgraça alheia" é uma das formas mais perversas de exploração digital. |
 
@@ -589,26 +591,30 @@ Cada ficha contém:
 
 | Ator | Modos em que Aparece |
 | :--- | :--- |
-| **Coronel** | Congresso, Emendas, Bancadas |
-| **Tecnocrata** | Orçamento, Geopolítico |
-| **Populista** | Impeachment |
-| **Miliciano** | Prisional e Policial |
-| **Pastor** | Currículo e Mídia, Bancadas |
-| **Banqueiro/Ruralista** | Orçamento, Geopolítico, Emendas, Judiciário |
-| **Professor** | Currículo e Mídia, Orçamento |
-| **Médico do SUS** | Orçamento, Prisional e Policial |
-| **Coach Digital** | Influenciador |
-| **Jornalista Independente** | Currículo e Mídia, Judiciário, Influenciador |
-| **Artista Engajado** | Currículo e Mídia |
-| **Burocrata** | Congresso, Emendas, Judiciário |
-| **Empresário da Saúde** | Orçamento |
-| **Reitor Privatista** | Currículo e Mídia, Orçamento |
-| **Sindicalista** | Orçamento, Bancadas |
-| **Estudante** | Currículo e Mídia |
-| **Ambientalista** | Geopolítico, Prisional e Policial |
-| **Indígena** | Geopolítico, Judiciário |
-| **Quilombola** | Prisional e Policial, Judiciário |
-| **Influenciador Progressista** | Influenciador |
+| **Latifundiários** | Congresso, Emendas, Bancadas, Judiciário, Impeachment |
+| **Investidores da Faria Lima** | Orçamento, Judiciário, Impeachment |
+| **Construtoras** | Emendas, Impeachment |
+| **Empresariado Industrial** | Geopolítico, Impeachment |
+| **Setor de Universidades Privadas** | Orçamento, Currículo e Mídia, Impeachment |
+| **Mercado** | Congresso, Orçamento, Impeachment |
+| **Tecnocratas** | Orçamento, Impeachment |
+| **Militares** | Prisional e Policial, Bancadas, Impeachment |
+| **Servidores Públicos Estatais** | Congresso, Judiciário, Impeachment |
+| **Diplomatas do Itamaraty** | Geopolítico, Impeachment |
+| **Líder da Câmara (Centrão)** | Congresso, Emendas, Impeachment |
+| **Pastores** | Congresso, Currículo e Mídia, Emendas, Bancadas, Influenciador, Impeachment |
+| **Sindicato dos Professores** | Orçamento, Currículo e Mídia, Impeachment |
+| **Profissionais da Saúde** | Orçamento, Prisional e Policial, Impeachment |
+| **Líder Sindical** | Bancadas, Impeachment |
+| **Movimentos por Moradia (MTST)** | Prisional e Policial, Impeachment |
+| **Movimentos sociais do campo (MST)** | Bancadas, Impeachment |
+| **Movimentos sociais ambientais** | Geopolítico, Impeachment |
+| **Artista Engajado** | Currículo e Mídia, Impeachment |
+| **Meta (Big Tech)** | Influenciador, Impeachment |
+| **Impérios Geopolíticos (China e EUA)** | Geopolítico, Impeachment |
+| **Coach Digital** | Currículo e Mídia, Influenciador, Impeachment |
+| **Jornalista Independente** | Currículo e Mídia, Prisional e Policial, Judiciário, Influenciador, Impeachment |
+| **Influenciador Progressista** | Influenciador, Impeachment |
 
 ### 12.3.4. Modos por Tipo de Carta
 
@@ -658,7 +664,7 @@ Cada ficha contém:
 | Regra | Descrição |
 | :--- | :--- |
 | **1. Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| **2. Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
+| **2. Prioridade de Ator** | Se um ator está furioso (satisfação 0-20), ele aparece obrigatoriamente no próximo turno. Se está insatisfeito (21-40), aparece com alta probabilidade. |
 | **3. Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
 | **4. Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
 | **5. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |

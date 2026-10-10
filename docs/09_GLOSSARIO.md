@@ -179,7 +179,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Conjunto de partidos sem ideologia definida que trocam apoio político por cargos e benefícios.
 
-**No jogo:** O Centrão é representado pelo ator "Burocrata" e por cartas do Modo Emendas.
+**No jogo:** O Centrão é representado pelo ator "Líder da Câmara (Centrão)" e por cartas do Modo Emendas.
 
 **Fundamentação:** O Centrão é conhecido como "fiador da governabilidade". Sem ele, nenhum governo consegue aprovar leis.
 
@@ -287,7 +287,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Taxa cobrada pelo uso do dinheiro, que afeta o custo da dívida pública.
 
-**No jogo:** Os juros são um sub-medidor que afeta o `Caixa` e a `Prosperidade`.
+**No jogo:** Os juros são um sub-medidor que afeta o `Caixa` e a `Dignidade`.
 
 **Fundamentação:** Juros altos aumentam o custo da dívida pública e reduzem o investimento privado. Eles são usados para controlar a inflação.
 
@@ -601,7 +601,7 @@ O glossário está organizado em **sete categorias**:
 
 **No jogo:** Existem 24 atores, divididos em 4 categorias: Capital, Estado, Sociedade Civil e Mídia e Tecnologia.
 
-**Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Coronel, Tecnocrata, Populista, etc.).
+**Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Latifundiários, Tecnocratas, Pastores etc.).
 
 ### 09.8.8. Satisfação
 
@@ -615,7 +615,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Consequência de uma decisão anterior que se manifesta 1-2 turnos depois.
 
-**No jogo:** Existem 78 eventos encadeados mapeados.
+**No jogo:** Existem 108 eventos encadeados mapeados: 72 dos atores, 20 dos modos e 16 dos medidores.
 
 **Fundamentação:** O sistema de eventos encadeados é baseado no conceito de "Ripple Chains" do jogo *World Order*.
 

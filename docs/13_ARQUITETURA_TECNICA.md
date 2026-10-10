@@ -499,7 +499,7 @@ funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
 | # | Regra | Descrição |
 | :--- | :--- | :--- |
 | 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
+| 2 | **Prioridade de Ator** | Se um ator está furioso (satisfação 0-20), ele aparece obrigatoriamente no próximo turno. Se está insatisfeito (21-40), aparece com alta probabilidade. |
 | 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
 | 4 | **Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
 | 5 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
@@ -619,7 +619,7 @@ funcao calcular_eixo(escolhas):
 | `medidores.json` | JSON | Os 8 medidores + 3 sub-medidores |
 | `atores.json` | JSON | Os 24 atores |
 | `finais.json` | JSON | Os 26 finais |
-| `eventos.json` | JSON | Os 78 eventos encadeados |
+| `eventos.json` | JSON | Os 108 eventos encadeados |
 | `calibracao.json` | JSON | As 6 perguntas da calibração inicial |
 | `eixo_ideologico.json` | JSON | Configuração do eixo 9axes |
 | `dialogos.json` | JSON | Textos de interface (botões, mensagens) |

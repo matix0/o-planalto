@@ -54,7 +54,7 @@
 | **Cartas** | ✅ 342 roteirizadas |
 | **Finais** | ✅ 26 consolidados |
 | **Impeachment** | ✅ Cena de golpe |
-| **Eventos Encadeados** | ✅ 78 mapeados |
+| **Eventos Encadeados** | ✅ 108 mapeados |
 | **Eixo Ideológico** | ✅ Modelo 9axes |
 | **Stack** | ✅ Godot 4.7 + MCP + Agentes de IA |
 | **GDD Completo** | ⏳ A ser escrito |

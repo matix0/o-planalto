@@ -94,6 +94,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-084 | Sorteio com 6 regras: Prioridade Narrativa, de Ator, de Medidor, de Modo, Variedade e Aleatoriedade Controlada | 2026-10-10 | Escolha do PO; une docs 04/13 e doc 12 |
 | D-085 | Opção de carta com campo único `efeitos` (com sinal); sem campo `custo` separado | 2026-10-10 | Escolha do PO; igual ao doc 17 |
 | D-086 | Novas consequências direitas para THEM-055, 060, 066, 067, 070 e ACT-057 | 2026-10-10 | Textos aprovados pelo PO |
+| D-087 | Sub-medidor `Juros` reduz `Caixa` e `Dignidade` (sai `Prosperidade`, que não é medidor) | 2026-10-10 | Escolha do PO |
+| D-088 | Prioridade de Ator segue a tabela de satisfação: 0-20 obrigatório, 21-40 alta probabilidade | 2026-10-10 | Escolha do PO |
+| D-089 | Impeachment: INST-141 a 145 são a cena fixa; INST-146 a 160 são reações sorteadas entre as fases | 2026-10-10 | Escolha do PO |
+| D-090 | Eventos e conexões dos atores refeitos a partir do doc 11 (24 atores × 3 eventos); mapa modo × ator proposto e revisado pelo PO | 2026-10-10 | Escolha do PO; execução em andamento |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---
@@ -178,6 +182,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-084 | Sorteio com 6 regras |
 | D-085 | Campo único `efeitos` |
 | D-086 | Consequências de 6 cartas |
+| D-087 | Juros afetam Caixa e Dignidade |
+| D-088 | Satisfação por faixas |
+| D-089 | Impeachment: 5 fixas + 15 reações |
+| D-090 | Eventos e conexões pelos 24 atores |
 
 ---
 
