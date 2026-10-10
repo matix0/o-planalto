@@ -413,9 +413,9 @@ A validação pedagógica se baseia em três princípios:
 | :--- | :--- | :--- |
 | **Citações de Bolsonaro** | ⚠️ Risco de processo | Consultar advogado |
 | **Citações de Hitler/Mussolini** | ⚠️ Uso educacional | Contextualizar, evitar apologia |
-| **Citações de Lula, Brizola, Freire** | ✅ Domínio público | Usar com crédito |
-| **Citações de Darcy Ribeiro** | ✅ Domínio público | Usar com crédito |
-| **Citações de Josué de Castro** | ✅ Domínio público | Usar com crédito |
+| **Citações de Lula, Brizola, Freire** | ⚠️ Obra protegida (70 anos após a morte do autor) | Citação curta com crédito (Lei 9.610/1998, art. 46, III); obra inteira só com autorização |
+| **Citações de Darcy Ribeiro** | ⚠️ Obra protegida (70 anos após a morte do autor) | Citação curta com crédito (Lei 9.610/1998, art. 46, III); obra inteira só com autorização |
+| **Citações de Josué de Castro** | ⚠️ Obra protegida (70 anos após a morte do autor) | Citação curta com crédito (Lei 9.610/1998, art. 46, III); obra inteira só com autorização |
 
 ### 08.06.2. Registro do Jogo
 

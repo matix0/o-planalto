@@ -28,6 +28,7 @@ Versionamento: [SemVer](https://semver.org/).
 - 12 subagentes especializados
 
 ### Alterado
+- D-091: doc 08 deixa de dizer que obras de Lula, Brizola, Freire, Darcy Ribeiro e Josué de Castro estão em domínio público
 - D-087 a D-089: Juros afetam `Dignidade`; Prioridade de Ator por faixas de satisfação; impeachment com 5 cartas fixas e 15 de reação
 - D-090: eventos dos atores do doc 11 nos docs 04 e 05 (108 eventos no total) e mapa modo × ator no doc 12
 - D-084: 6 regras de sorteio nos docs 04, 12 e 13

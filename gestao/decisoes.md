@@ -98,6 +98,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-088 | Prioridade de Ator segue a tabela de satisfação: 0-20 obrigatório, 21-40 alta probabilidade | 2026-10-10 | Escolha do PO |
 | D-089 | Impeachment: INST-141 a 145 são a cena fixa; INST-146 a 160 são reações sorteadas entre as fases | 2026-10-10 | Escolha do PO |
 | D-090 | Eventos e conexões dos atores refeitos a partir do doc 11 (24 atores × 3 eventos); mapa modo × ator proposto e revisado pelo PO | 2026-10-10 | Escolha do PO; execução em andamento |
+| D-091 | Obras de Lula, Brizola, Freire, Darcy Ribeiro e Josué de Castro não estão em domínio público: só citação curta com crédito (Lei 9.610/1998, art. 46, III) | 2026-10-10 | Correção aprovada pelo PO; entra no parecer jurídico (RC-08) |
+| D-092 | Diferenças técnicas do doc 13 com o doc 04 (evento X+2, eixo ±1, sub-medidores fora do schema) ficam para o P-005 | 2026-10-10 | Escolha do PO; detalhe de implementação |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---
@@ -186,6 +188,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-088 | Satisfação por faixas |
 | D-089 | Impeachment: 5 fixas + 15 reações |
 | D-090 | Eventos e conexões pelos 24 atores |
+| D-091 | Citações protegidas por direito autoral |
+| D-092 | Ajustes do doc 13 no P-005 |
 
 ---
 
