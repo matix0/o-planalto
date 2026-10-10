@@ -21,13 +21,13 @@ O jogo "O Planalto" é composto por **9 sistemas interconectados**:
 │     └──▶ 8 medidores + 3 sub-medidores                      │
 │                                                             │
 │  2. SISTEMA DE CARTAS                                       │
-│     └──▶ 340 cartas + Cartas de Aprendizado                 │
+│     └──▶ 342 cartas + Cartas de Aprendizado                 │
 │                                                             │
 │  3. SISTEMA DE SORTEIO                                      │
 │     └──▶ Prioridade narrativa                               │
 │                                                             │
 │  4. SISTEMA DE SATISFAÇÃO DOS ATORES                        │
-│     └──▶ 20 atores com níveis de satisfação                 │
+│     └──▶ 24 atores com níveis de satisfação                 │
 │                                                             │
 │  5. SISTEMA DE EVENTOS ENCADEADOS                           │
 │     └──▶ 78 eventos com gatilhos de longo prazo             │
@@ -167,8 +167,8 @@ O sistema de medidores é baseado em:
 | :--- | :--- | :--- |
 | **Institucionais** | 200 (10 modos × 20) | INST-XXX |
 | **Temáticas** | 70 (7 temas × 10) | THEM-XXX |
-| **Atores** | 70 (14 atores × 5) | ATOR-XXX |
-| **Total** | **340** | — |
+| **Atores** | 72 (24 atores × 3) | ACT-XXX |
+| **Total** | **342** | — |
 
 ### 05.03.2. Estrutura de Cada Carta
 

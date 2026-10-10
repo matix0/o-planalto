@@ -346,39 +346,38 @@ Cada modo é uma **unidade de aprendizagem autônoma** que ensina um mecanismo i
 
 ### 04.05.1. Visão Geral
 
-O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada ator é uma caricatura de um tipo social brasileiro.
+O jogo possui **24 atores**, divididos em **4 categorias**: Capital (6), Estado (5), Sociedade Civil (8) e Mídia e Tecnologia (5). Cada ator é uma caricatura de um tipo social brasileiro e tem **3 cartas** (ACT-XXX). As fichas completas estão em `docs/11_FICHAS_DOS_ATORES.md` (D-081).
 
-### 04.05.2. Atores Base (14)
+### 04.05.2. Os 24 Atores
 
-| # | Ator | Arquétipo | Oferece | Cobra | Preço (Medidores) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Coronel** | Senhor de engenho, chefe local | Capital Político | Autonomia e impunidade | -Dignidade, -Integridade |
-| 2 | **Tecnocrata** | Planejador militar, economista | Caixa, Capital Político | Cortes sociais e privatizações | -Dignidade, -Soberania |
-| 3 | **Populista** | Líder carismático e messiânico | Legitimidade | Lealdade absoluta | -Consciência, -Capital Político |
-| 4 | **Miliciano** | Policial-bandido, senhor do território | Segurança (superficial) | Impunidade e controle econômico | -Dignidade, -Integridade, -Soberania |
-| 5 | **Pastor** | Imperador midiático da fé | Legitimidade, Capital Político | Censura e controle ideológico | -Consciência, -Integridade |
-| 6 | **Banqueiro/Ruralista** | Capital financeiro e agronegócio | Caixa, acesso a mercados | Privatizações e desregulamentação | -Dignidade, -Soberania |
-| 7 | **Professor** | Educador libertador e sucateado | Consciência, Legitimidade | Investimento e liberdade de cátedra | +Consciência, -Capital Político |
-| 8 | **Médico do SUS** | Sanitarista e resistência | Dignidade, Legitimidade | Investimento e fim do teto | +Dignidade, -Caixa |
-| 9 | **Coach Digital** | Novo pastor da prosperidade | Legitimidade, Capital Político | Desregulamentação e isenções | -Consciência, -Integridade |
-| 10 | **Jornalista Independente** | Imprensa alternativa e resistência | Integridade, Consciência | Liberdade de imprensa e proteção | +Integridade, -Capital Político |
-| 11 | **Artista Engajado** | Cultura como trincheira | Consciência, Paixão Nacional | Financiamento e liberdade de criação | +Consciência, -Capital Político |
-| 12 | **Burocrata** | Servidor público de carreira | Caixa, Capital Político | Estabilidade e aumento salarial | +Caixa, -Dignidade (se acomodar) |
-| 13 | **Empresário da Saúde** | Dono de hospitais e planos | Caixa, Capital Político | Privatização do SUS | -Dignidade |
-| 14 | **Reitor Privatista** | Financeirização do ensino | Caixa, Capital Político | Cortes na educação pública | -Consciência, -Dignidade |
-
-### 04.05.3. Atores de Expansão (6)
-
-| # | Ator | Oferece | Cobra | Preço |
+| # | Ator | Categoria | Oferece | Cobra |
 | :--- | :--- | :--- | :--- | :--- |
-| 15 | **Sindicalista** | Legitimidade, Consciência | Direitos trabalhistas | +Legitimidade, -Caixa |
-| 16 | **Estudante** | Consciência, Legitimidade | Educação, liberdade | +Consciência, -Capital Político |
-| 17 | **Ambientalista** | Soberania, Dignidade | Proteção ambiental | +Soberania, -Caixa |
-| 18 | **Indígena** | Soberania, Consciência | Demarcação de terras | +Soberania, -Capital Político |
-| 19 | **Quilombola** | Dignidade, Consciência | Titulação de terras | +Dignidade, -Capital Político |
-| 20 | **Influenciador Progressista** | Consciência, Integridade | Apoio nas redes | +Consciência, -Capital Político |
+| 1 | Latifundiários | Capital | Capital Político | Soberania |
+| 2 | Investidores da Faria Lima | Capital | Caixa | Dignidade |
+| 3 | Construtoras | Capital | Caixa | Dignidade |
+| 4 | Empresariado Industrial | Capital | Soberania | Dignidade |
+| 5 | Setor de Universidades Privadas | Capital | Caixa | Consciência |
+| 6 | Mercado | Capital | Caixa | Dignidade |
+| 7 | Tecnocratas | Estado | Caixa | Dignidade |
+| 8 | Militares | Estado | Segurança | Legitimidade |
+| 9 | Servidores Públicos Estatais | Estado | Soberania | Caixa |
+| 10 | Diplomatas do Itamaraty | Estado | Segurança | Capital Político |
+| 11 | Líder da Câmara (Centrão) | Estado | Capital Político | Legitimidade |
+| 12 | Pastores | Sociedade Civil | Legitimidade | Integridade |
+| 13 | Sindicato dos Professores | Sociedade Civil | Consciência | Caixa |
+| 14 | Profissionais da Saúde | Sociedade Civil | Dignidade | Caixa |
+| 15 | Líder Sindical | Sociedade Civil | Legitimidade | Capital Político |
+| 16 | Movimentos por Moradia (MTST) | Sociedade Civil | Dignidade | Capital Político |
+| 17 | Movimentos sociais do campo (MST) | Sociedade Civil | Dignidade | Capital Político |
+| 18 | Movimentos sociais ambientais | Sociedade Civil | Consciência | Caixa |
+| 19 | Artista Engajado | Sociedade Civil | Legitimidade | Segurança |
+| 20 | Meta (Big Tech) | Mídia e Tecnologia | Legitimidade | Consciência |
+| 21 | Impérios Geopolíticos (China e EUA) | Mídia e Tecnologia | Caixa | Soberania |
+| 22 | Coach Digital | Mídia e Tecnologia | Legitimidade | Consciência |
+| 23 | Jornalista Independente | Mídia e Tecnologia | Consciência | Capital Político |
+| 24 | Influenciador Progressista | Mídia e Tecnologia | Consciência | Capital Político |
 
-### 04.05.4. Sistema de Satisfação
+### 04.05.3. Sistema de Satisfação
 
 | Nível | Estado | O que Acontece |
 | :--- | :--- | :--- |
@@ -388,28 +387,38 @@ O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada
 | 61-80 | Satisfeito | Aparece com baixa probabilidade. Pode oferecer bônus. |
 | 81-100 | Aliado | Aparece apenas se necessário. Oferece apoio incondicional. |
 
-### 04.05.5. Fundamentação Teórica
+### 04.05.4. Fundamentação Teórica
 
 Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao longo da história:
 
 | Ator | Herança Histórica |
 | :--- | :--- |
-| Coronel | Senhor de engenho, coronel da Guarda Nacional |
-| Tecnocrata | Planejador militar, economista da ditadura |
-| Populista | Líder carismático, messiânico |
-| Miliciano | Capitão do mato, policial-bandido |
-| Pastor | Igreja colonial, poder religioso |
-| Banqueiro/Ruralista | Barões do café, capital financeiro |
-| Professor | Paulo Freire, educador libertador |
-| Médico do SUS | Sanitarista, Reforma Sanitária |
+| Latifundiários | Senhor de engenho, barão do café, dono de terras |
+| Investidores da Faria Lima | Capital financeiro, especulador, dono de fundos |
+| Construtoras | Especulação imobiliária, dono de empreiteiras |
+| Empresariado Industrial | Dono de fábrica, industrial, empreendedor |
+| Setor de Universidades Privadas | Financeirização do ensino |
+| Mercado | Capital especulativo, "mãos invisíveis" |
+| Tecnocratas | Planejador militar, economista, "salvador da pátria" |
+| Militares | Forças Armadas, capitão do mato, guardião da ordem |
+| Servidores Públicos Estatais | Servidor público de carreira, burocrata |
+| Diplomatas do Itamaraty | Política externa, diplomacia, soberania |
+| Líder da Câmara (Centrão) | Fisiologismo, presidencialismo de coalizão |
+| Pastores | Imperador midiático da fé |
+| Sindicato dos Professores | Educador libertador e sucateado |
+| Profissionais da Saúde | Sanitarista, médicos, enfermeiros, técnicos, agentes comunitários |
+| Líder Sindical | Trabalhadores organizados |
+| Movimentos por Moradia (MTST) | Luta urbana, direito à cidade |
+| Movimentos sociais do campo (MST) | Luta pela terra, reforma agrária |
+| Movimentos sociais ambientais | Proteção ambiental, ecologia |
+| Artista Engajado | Cultura como trincheira |
+| Meta (Big Tech) | Colonialismo digital |
+| Impérios Geopolíticos (China e EUA) | Imperialismo, potências estrangeiras |
 | Coach Digital | Novo pastor da prosperidade |
-| Jornalista Independente | Imprensa alternativa, Pasquim |
-| Artista Engajado | Tropicália, Chico Buarque |
-| Burocrata | Servidor público de carreira |
-| Empresário da Saúde | Mercantilização da saúde |
-| Reitor Privatista | Financeirização do ensino |
+| Jornalista Independente | Imprensa alternativa e resistência |
+| Influenciador Progressista | Nova esquerda digital |
 
-### 04.05.6. Referências
+### 04.05.5. Referências
 
 - CAMPBELL, Joseph. *The Hero with a Thousand Faces*. New York: Pantheon, 1949.
 - PROPP, Vladimir. *Morphology of the Folktale*. Austin: University of Texas Press, 1968.
@@ -425,8 +434,8 @@ Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao lo
 | :--- | :--- | :--- |
 | **Institucionais** | 200 (10 modos × 20) | INST-XXX |
 | **Temáticas** | 70 (7 temas × 10) | THEM-XXX |
-| **Atores** | 70 (14 atores × 5) | ATOR-XXX |
-| **Total** | **340** | — |
+| **Atores** | 72 (24 atores × 3) | ACT-XXX |
+| **Total** | **342** | — |
 
 ### 04.06.2. Estrutura de Cada Carta
 

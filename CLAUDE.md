@@ -24,8 +24,8 @@
 - **Medidores:** 8 + 3 sub-medidores
 - **Turnos:** 4 (4 anos)
 - **Modos:** 10 institucionais
-- **Atores:** 20 (14 base + 6 expansão)
-- **Cartas:** 340
+- **Atores:** 24 (4 categorias, D-081)
+- **Cartas:** 342 (200 INST + 70 THEM + 72 ACT)
 - **Finais:** 26
 - **Eixo Ideológico:** Modelo 9axes adaptado
 - **Cores Partidárias:** Vermelho, Azul, Verde, Amarelo, Roxo, Laranja, Preto
@@ -68,7 +68,7 @@ Próximo passo: [O que fazer em seguida]
 | `/fechar-plano` | Audita plano, registra decisões, atualiza changelog e estado |
 | `/sync-tech` | Sincroniza arquitetura técnica (arquivo 13) |
 | `/sync-docs` | Sincroniza toda a documentação (00-13) |
-| `/validate-cards` | Valida as 340 cartas |
+| `/validate-cards` | Valida as 342 cartas |
 | `/validate-finals` | Valida os 26 finais |
 | `/publish-docs` | Publica a documentação no GitHub Pages |
 

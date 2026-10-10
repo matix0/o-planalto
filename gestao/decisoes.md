@@ -88,6 +88,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-077 | Site em Astro Starlight na pasta `site/`, build e deploy por GitHub Actions; `docs/` segue como fonte | 2026-10-09 | Escolha do PO (P-009) |
 | D-078 | Docs truncados (04, 05, 06, 08, 10): aviso "incompleto", marca no menu e `noindex` até a recuperação | 2026-10-09 | Proposta UX (P-009) |
 | D-080 | Medidor `Verdade` renomeado para `Integridade`; final "Pós-Verdade Total" → "Desintegração" (citação de Goebbels substituída por adaptação). Conceito e regras mantidos | 2026-10-09 | Nome capturado pelo discurso político; validar com o Prof. Alisson |
+| D-081 | 24 atores do doc 11 em 4 categorias (Capital, Estado, Sociedade Civil, Mídia e Tecnologia), 3 cartas cada; baralho de 342 cartas (200 INST + 70 THEM + 72 ACT). Substitui D-019 e D-020 | 2026-10-10 | Escolha do PO; elenco já usado nos docs 10, 11, 16 e 17 |
+| D-082 | Cartas de ator usam o prefixo `ACT-XXX`; `ATOR-XXX` fica só para o ator | 2026-10-10 | Escolha do PO; evita ID repetido entre doc 11 e doc 17 |
+| D-083 | `Paixão Nacional` vira `Legitimidade` e `Aliança Externa` vira `Caixa` nas cartas e eventos; nenhum medidor novo | 2026-10-10 | Escolha do PO; mantém os 8 medidores (D-014) |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
 
 ---
@@ -166,6 +169,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-077 | Site em Astro Starlight |
 | D-078 | Docs truncados com aviso |
 | D-079 | Guardrails do site |
+| D-081 | 24 atores, 342 cartas |
+| D-082 | Prefixo `ACT-` nas cartas de ator |
+| D-083 | Sem medidores fora dos 8 |
 
 ---
 

@@ -1,8 +1,8 @@
 # 17 — Roteiro das Cartas
 
-**Documento de Roteiro das 340 Cartas do Jogo "O Planalto"**
+**Documento de Roteiro das 342 Cartas do Jogo "O Planalto"**
 
-Este documento define o texto final das 340 cartas do jogo, organizadas por modo e por tipo. Cada carta segue o formato padrão: título, problema, opções (esquerda/direita), efeitos nos medidores, consequências e Carta de Aprendizado.
+Este documento define o texto final das 342 cartas do jogo, organizadas por modo e por tipo. Cada carta segue o formato padrão: título, problema, opções (esquerda/direita), efeitos nos medidores, consequências e Carta de Aprendizado.
 
 ---
 
@@ -14,6 +14,7 @@ ID: [Código único]
 Título: [Nome curto da carta]
 Modo: [Modo institucional]
 Tipo: [Institucional, Temática, Ator]
+ID: INST-XXX, THEM-XXX ou ACT-XXX (D-082)
 Cor: [Cor partidária]
 Problema: [Descrição do dilema]
 Opção Esquerda: [Texto]
@@ -37,10 +38,8 @@ text
 | :--- | :--- | :--- |
 | **Institucionais** | 200 | INST-XXX |
 | **Temáticas** | 70 | THEM-XXX |
-| **Atores** | 70 | ATOR-XXX |
-| **Total** | **340** | — |
-
-> **Divergência pendente:** o roteiro de atores inserido tem **72 cartas** (24 atores × 3, conforme `docs/11_FICHAS_DOS_ATORES.md:53`), o que leva o baralho a **342**. A meta de 340 está mantida até decisão do PO.
+| **Atores** | 72 (24 atores × 3) | ACT-XXX |
+| **Total** | **342** | — |
 
 ### 17.01.3. Aprendizado nas Cartas
 
@@ -1260,7 +1259,7 @@ text
 | **Efeitos Esquerda** | `Soberania` +10, `Integridade` +5 |
 | **Consequência Esquerda** | "O Brasil mantém autonomia." |
 | **Opção Direita** | Aderir |
-| **Efeitos Direita** | `Aliança Externa` +10, `Soberania` -10, `Integridade` -5 |
+| **Efeitos Direita** | `Caixa` +10, `Soberania` -10, `Integridade` -5 |
 | **Consequência Direita** | "O Brasil se alinha." |
 | **Aprendizado** | Dados: "A OCDE é o clube dos países ricos." · Frase: "O Brasil se alinha ao Ocidente." |
 
@@ -4287,10 +4286,10 @@ text
 | **Cor** | Amarelo |
 | **Problema** | A seleção vai disputar a Copa. O governo quer usar o evento para propaganda. |
 | **Opção Esquerda** | Financiar o esporte de base |
-| **Efeitos Esquerda** | `Paixão Nacional` +10, `Dignidade` +5, `Caixa` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Dignidade` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O povo se orgulha." |
 | **Opção Direita** | Usar como propaganda |
-| **Efeitos Direita** | `Legitimidade` +10, `Paixão Nacional` +5, `Consciência` -5, `Integridade` -5 |
+| **Efeitos Direita** | `Legitimidade` +15, `Consciência` -5, `Integridade` -5 |
 | **Consequência Direita** | "O povo se une em torno da bandeira." |
 | **Aprendizado** | Frase: "O povo se une em torno da bandeira." |
 
@@ -4303,7 +4302,7 @@ text
 | **Cor** | Amarelo |
 | **Problema** | Jogadores querem se posicionar politicamente. A CBF ameaça punir. |
 | **Opção Esquerda** | Apoiar o direito de expressão |
-| **Efeitos Esquerda** | `Consciência` +10, `Paixão Nacional` +5, `Capital Político` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "Os jogadores se tornam vozes." |
 | **Opção Direita** | Apoiar a CBF |
 | **Efeitos Direita** | `Capital Político` +10, `Consciência` -10, `Integridade` -5 |
@@ -4319,10 +4318,10 @@ text
 | **Cor** | Amarelo |
 | **Problema** | Uma liga de futebol de várzea pede apoio para se organizar. |
 | **Opção Esquerda** | Financiar |
-| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Paixão Nacional` +10, `Caixa` -5, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Legitimidade` +10, `Caixa` -5 |
 | **Consequência Esquerda** | "A periferia se organiza." |
 | **Opção Direita** | Ignorar |
-| **Efeitos Direita** | `Caixa` +5, `Paixão Nacional` -5, `Consciência` -5, `Integridade` -5 |
+| **Efeitos Direita** | `Caixa` +5, `Legitimidade` -5, `Consciência` -5, `Integridade` -5 |
 | **Consequência Direita** | "O futebol do povo desaparece." |
 | **Aprendizado** | Frase: "O futebol do povo desaparece." |
 
@@ -4338,7 +4337,7 @@ text
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Caixa` -15, `Integridade` +5 |
 | **Consequência Esquerda** | "A educação é prioridade." |
 | **Opção Direita** | Construir o estádio |
-| **Efeitos Direita** | `Paixão Nacional` +5, `Caixa` -20, `Dignidade` -10, `Integridade` -5 |
+| **Efeitos Direita** | `Legitimidade` +5, `Caixa` -20, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "O estádio é construído." |
 | **Aprendizado** | Frase: "O estádio é construído. A escola não." |
 
@@ -4367,7 +4366,7 @@ text
 | **Cor** | Amarelo |
 | **Problema** | A Democracia Corinthiana é lembrada. O governo quer homenagear. |
 | **Opção Esquerda** | Homenagear |
-| **Efeitos Esquerda** | `Consciência` +10, `Paixão Nacional` +5, `Capital Político` -5, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -5, `Integridade` +5 |
 | **Consequência Esquerda** | "A memória da resistência é preservada." |
 | **Opção Direita** | Ignorar |
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
@@ -4383,7 +4382,7 @@ text
 | **Cor** | Amarelo |
 | **Problema** | O governo quer usar o futebol para promover a paz nas favelas. |
 | **Opção Esquerda** | Criar projetos |
-| **Efeitos Esquerda** | `Dignidade` +10, `Paixão Nacional` +5, `Caixa` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O esporte transforma vidas." |
 | **Opção Direita** | Ignorar |
 | **Efeitos Direita** | `Caixa` +5, `Dignidade` -5, `Integridade` -5 |
@@ -4399,10 +4398,10 @@ text
 | **Cor** | Preto |
 | **Problema** | Uma torcida organizada é criminalizada. O governo pode intervir. |
 | **Opção Esquerda** | Dialogar |
-| **Efeitos Esquerda** | `Consciência` +5, `Paixão Nacional` +5, `Capital Político` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +5, `Legitimidade` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O diálogo avança." |
 | **Opção Direita** | Reprimir |
-| **Efeitos Direita** | `Segurança` +5, `Paixão Nacional` -10, `Dignidade` -10, `Integridade` -5 |
+| **Efeitos Direita** | `Segurança` +5, `Legitimidade` -10, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "A repressão aumenta." |
 | **Aprendizado** | Frase: "A repressão aumenta." |
 
@@ -4415,7 +4414,7 @@ text
 | **Cor** | Amarelo |
 | **Problema** | O governo quer taxar as grandes fortunas para financiar o esporte. |
 | **Opção Esquerda** | Taxar |
-| **Efeitos Esquerda** | `Paixão Nacional` +10, `Caixa` +15, `Capital Político` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Caixa` +15, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O esporte é financiado." |
 | **Opção Direita** | Não taxar |
 | **Efeitos Direita** | `Caixa` -10, `Capital Político` +10, `Integridade` -5 |
@@ -4431,10 +4430,10 @@ text
 | **Cor** | Amarelo |
 | **Problema** | Um ídolo do futebol apoia o governo. A oposição reage. |
 | **Opção Esquerda** | Aceitar o apoio |
-| **Efeitos Esquerda** | `Legitimidade` +5, `Paixão Nacional` +5, `Integridade` -5 |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Integridade` -5 |
 | **Consequência Esquerda** | "O ídolo mobiliza as massas." |
 | **Opção Direita** | Recusar |
-| **Efeitos Direita** | `Legitimidade` -5, `Paixão Nacional` -5, `Integridade` +5 |
+| **Efeitos Direita** | `Legitimidade` -10, `Integridade` +5 |
 | **Consequência Direita** | "O ídolo mobiliza as massas." |
 | **Aprendizado** | Frase: "O ídolo mobiliza as massas." |
 
@@ -4444,7 +4443,7 @@ text
 
 **Ator: Latifundiários**
 
-### ATOR-001 — O Latifundiário Cobra o Favor
+### ACT-001 — O Latifundiário Cobra o Favor
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4460,7 +4459,7 @@ text
 | **Consequência Direita** | "O Latifundiário garante votos. Mas a impunidade aumenta." |
 | **Aprendizado** | Vivencia: "Você decidiu se cedia ou não ao Latifundiário." · Conceito: "O coronelismo é o clientelismo. O voto de cabresto ainda existe." · Dados: "A Lei de Terras de 1850 consolidou a concentração fundiária. O coronelismo se adaptou: do senhor de engenho ao dono da Faria Lima." · Fonte: "Darcy Ribeiro, 1995." · Frase: "O coronel não pede. Ele cobra. E a moeda é a lealdade." |
 
-### ATOR-002 — O Latifundiário Ameaça Invadir Terra
+### ACT-002 — O Latifundiário Ameaça Invadir Terra
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4476,7 +4475,7 @@ text
 | **Consequência Direita** | "A violência no campo aumenta." |
 | **Aprendizado** | Frase: "A violência no campo aumenta." |
 
-### ATOR-003 — O Latifundiário Pede Anistia
+### ACT-003 — O Latifundiário Pede Anistia
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4496,7 +4495,7 @@ text
 
 **Ator: Investidores da Faria Lima**
 
-### ATOR-004 — O Investidor Oferece Investimentos
+### ACT-004 — O Investidor Oferece Investimentos
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4512,7 +4511,7 @@ text
 | **Consequência Direita** | "A desigualdade aumenta." |
 | **Aprendizado** | Frase: "A desigualdade aumenta." |
 
-### ATOR-005 — O Investidor Ameaça Tirar o Dinheiro
+### ACT-005 — O Investidor Ameaça Tirar o Dinheiro
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4528,7 +4527,7 @@ text
 | **Consequência Direita** | "O rico continua rico." |
 | **Aprendizado** | Frase: "O rico continua rico." |
 
-### ATOR-006 — O Investidor Financia a Campanha
+### ACT-006 — O Investidor Financia a Campanha
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4548,7 +4547,7 @@ text
 
 **Ator: Construtoras**
 
-### ATOR-007 — A Construtora Quer Despejar Famílias
+### ACT-007 — A Construtora Quer Despejar Famílias
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4564,7 +4563,7 @@ text
 | **Consequência Direita** | "A comunidade é expulsa." |
 | **Aprendizado** | Frase: "A comunidade é expulsa." |
 
-### ATOR-008 — A Construtora Financia a Campanha
+### ACT-008 — A Construtora Financia a Campanha
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4580,7 +4579,7 @@ text
 | **Consequência Direita** | "A especulação avança." |
 | **Aprendizado** | Frase: "A especulação avança." |
 
-### ATOR-009 — A Construtora Quer Construir em Área Verde
+### ACT-009 — A Construtora Quer Construir em Área Verde
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4600,7 +4599,7 @@ text
 
 **Ator: Empresariado Industrial**
 
-### ATOR-010 — O Industrial Pede Proteção
+### ACT-010 — O Industrial Pede Proteção
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4616,7 +4615,7 @@ text
 | **Consequência Direita** | "A indústria fecha." |
 | **Aprendizado** | Frase: "A indústria fecha." |
 
-### ATOR-011 — O Industrial Ameaça Demitir
+### ACT-011 — O Industrial Ameaça Demitir
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4632,7 +4631,7 @@ text
 | **Consequência Direita** | "Os trabalhadores são demitidos." |
 | **Aprendizado** | Frase: "Os trabalhadores são demitidos." |
 
-### ATOR-012 — O Industrial Pede Desregulamentação
+### ACT-012 — O Industrial Pede Desregulamentação
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4652,7 +4651,7 @@ text
 
 **Ator: Setor de Universidades Privadas**
 
-### ATOR-013 — O Setor Quer Expandir o EAD
+### ACT-013 — O Setor Quer Expandir o EAD
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4668,7 +4667,7 @@ text
 | **Consequência Direita** | "A educação se massifica." |
 | **Aprendizado** | Frase: "A educação se massifica." |
 
-### ATOR-014 — O Setor Pressiona por Cortes
+### ACT-014 — O Setor Pressiona por Cortes
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4684,7 +4683,7 @@ text
 | **Consequência Direita** | "A universidade definha." |
 | **Aprendizado** | Frase: "A universidade definha." |
 
-### ATOR-015 — O Setor Financia Campanha
+### ACT-015 — O Setor Financia Campanha
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4704,7 +4703,7 @@ text
 
 **Ator: Mercado**
 
-### ATOR-016 — O Mercado Reage
+### ACT-016 — O Mercado Reage
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4720,7 +4719,7 @@ text
 | **Consequência Direita** | "O mercado manda." |
 | **Aprendizado** | Frase: "O mercado manda." |
 
-### ATOR-017 — O Mercado Ameaça Fuga de Capital
+### ACT-017 — O Mercado Ameaça Fuga de Capital
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4736,7 +4735,7 @@ text
 | **Consequência Direita** | "Os gastos sociais são cortados." |
 | **Aprendizado** | Frase: "Os gastos sociais são cortados." |
 
-### ATOR-018 — O Mercado Comemora
+### ACT-018 — O Mercado Comemora
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4756,7 +4755,7 @@ text
 
 **Ator: Tecnocratas**
 
-### ATOR-019 — O Tecnocrata Propõe Choque de Gestão
+### ACT-019 — O Tecnocrata Propõe Choque de Gestão
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4772,7 +4771,7 @@ text
 | **Consequência Direita** | "Os cortes sociais avançam." |
 | **Aprendizado** | Frase: "Os cortes sociais avançam." |
 
-### ATOR-020 — O Tecnocrata Pede Mais Cortes
+### ACT-020 — O Tecnocrata Pede Mais Cortes
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4788,7 +4787,7 @@ text
 | **Consequência Direita** | "A crise fiscal se aprofunda." |
 | **Aprendizado** | Frase: "A crise fiscal se aprofunda." |
 
-### ATOR-021 — O Tecnocrata Defende o Teto
+### ACT-021 — O Tecnocrata Defende o Teto
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4808,7 +4807,7 @@ text
 
 **Ator: Militares**
 
-### ATOR-022 — O Militar Pede Aumento
+### ACT-022 — O Militar Pede Aumento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4824,7 +4823,7 @@ text
 | **Consequência Direita** | "Os gastos militares aumentam." |
 | **Aprendizado** | Frase: "Os gastos militares aumentam." |
 
-### ATOR-023 — O Militar Ameaça Intervir
+### ACT-023 — O Militar Ameaça Intervir
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4840,7 +4839,7 @@ text
 | **Consequência Direita** | "A quartelada se aproxima." |
 | **Aprendizado** | Frase: "A quartelada se aproxima." |
 
-### ATOR-024 — O Militar Pede Anistia
+### ACT-024 — O Militar Pede Anistia
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4860,7 +4859,7 @@ text
 
 **Ator: Servidores Públicos Estatais**
 
-### ATOR-025 — O Servidor Ameaça Travar o Governo
+### ACT-025 — O Servidor Ameaça Travar o Governo
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4876,7 +4875,7 @@ text
 | **Consequência Direita** | "O governo trava." |
 | **Aprendizado** | Frase: "O governo trava." |
 
-### ATOR-026 — O Servidor Resiste a Reforma
+### ACT-026 — O Servidor Resiste a Reforma
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4892,7 +4891,7 @@ text
 | **Consequência Direita** | "O serviço público se privatiza." |
 | **Aprendizado** | Frase: "O serviço público se privatiza." |
 
-### ATOR-027 — O Servidor Quer Transparência
+### ACT-027 — O Servidor Quer Transparência
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4912,7 +4911,7 @@ text
 
 **Ator: Diplomatas do Itamaraty**
 
-### ATOR-028 — O Diplomata Pede Apoio ao BRICS
+### ACT-028 — O Diplomata Pede Apoio ao BRICS
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4928,7 +4927,7 @@ text
 | **Consequência Direita** | "A soberania recua." |
 | **Aprendizado** | Frase: "A soberania recua." |
 
-### ATOR-029 — O Diplomata Alerta Sobre Pressão dos EUA
+### ACT-029 — O Diplomata Alerta Sobre Pressão dos EUA
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4944,7 +4943,7 @@ text
 | **Consequência Direita** | "A subordinação avança." |
 | **Aprendizado** | Frase: "A subordinação avança." |
 
-### ATOR-030 — O Diplomata Defende a Soberania
+### ACT-030 — O Diplomata Defende a Soberania
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4964,7 +4963,7 @@ text
 
 **Ator: Líder da Câmara (Centrão)**
 
-### ATOR-031 — O Líder da Câmara Pede Emendas
+### ACT-031 — O Líder da Câmara Pede Emendas
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4980,7 +4979,7 @@ text
 | **Consequência Direita** | "O voto é comprado." |
 | **Aprendizado** | Frase: "O voto é comprado." |
 
-### ATOR-032 — O Líder da Câmara Quer Cargos
+### ACT-032 — O Líder da Câmara Quer Cargos
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -4996,7 +4995,7 @@ text
 | **Consequência Direita** | "O fisiologismo avança." |
 | **Aprendizado** | Frase: "O fisiologismo avança." |
 
-### ATOR-033 — O Líder da Câmara Chantageia
+### ACT-033 — O Líder da Câmara Chantageia
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5016,7 +5015,7 @@ text
 
 **Ator: Pastores**
 
-### ATOR-034 — O Pastor Pede Verbas
+### ACT-034 — O Pastor Pede Verbas
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5032,7 +5031,7 @@ text
 | **Consequência Direita** | "O Estado financia a fé." |
 | **Aprendizado** | Frase: "O Estado financia a fé." |
 
-### ATOR-035 — O Pastor Faz Pânico Moral
+### ACT-035 — O Pastor Faz Pânico Moral
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5048,7 +5047,7 @@ text
 | **Consequência Direita** | "O pânico moral avança." |
 | **Aprendizado** | Frase: "O pânico moral avança." |
 
-### ATOR-036 — O Pastor Quer Censurar a TV
+### ACT-036 — O Pastor Quer Censurar a TV
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5068,7 +5067,7 @@ text
 
 **Ator: Sindicato dos Professores**
 
-### ATOR-037 — O Professor Pede Aumento
+### ACT-037 — O Professor Pede Aumento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5084,7 +5083,7 @@ text
 | **Consequência Direita** | "A greve avança." |
 | **Aprendizado** | Frase: "A greve avança." |
 
-### ATOR-038 — O Professor Denuncia Sucateamento
+### ACT-038 — O Professor Denuncia Sucateamento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5100,7 +5099,7 @@ text
 | **Consequência Direita** | "A educação definha." |
 | **Aprendizado** | Frase: "A educação definha." |
 
-### ATOR-039 — O Professor Quer Liberdade de Cátedra
+### ACT-039 — O Professor Quer Liberdade de Cátedra
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5120,7 +5119,7 @@ text
 
 **Ator: Profissionais da Saúde**
 
-### ATOR-040 — O Profissional Denuncia Falta de Leitos
+### ACT-040 — O Profissional Denuncia Falta de Leitos
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5136,7 +5135,7 @@ text
 | **Consequência Direita** | "A saúde piora." |
 | **Aprendizado** | Frase: "A saúde piora." |
 
-### ATOR-041 — O Profissional Quer Revogar Privatização
+### ACT-041 — O Profissional Quer Revogar Privatização
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5152,7 +5151,7 @@ text
 | **Consequência Direita** | "A privatização continua." |
 | **Aprendizado** | Frase: "A privatização continua." |
 
-### ATOR-042 — O Profissional Pede Mais Contratações
+### ACT-042 — O Profissional Pede Mais Contratações
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5172,7 +5171,7 @@ text
 
 **Ator: Líder Sindical**
 
-### ATOR-043 — O Líder Sindical Pede Aumento
+### ACT-043 — O Líder Sindical Pede Aumento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5188,7 +5187,7 @@ text
 | **Consequência Direita** | "O trabalhador ganha menos." |
 | **Aprendizado** | Frase: "O trabalhador ganha menos." |
 
-### ATOR-044 — O Líder Sindical Convoca Greve
+### ACT-044 — O Líder Sindical Convoca Greve
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5204,7 +5203,7 @@ text
 | **Consequência Direita** | "A greve avança." |
 | **Aprendizado** | Frase: "A greve avança." |
 
-### ATOR-045 — O Líder Sindical Pede Fim da Escala 6x1
+### ACT-045 — O Líder Sindical Pede Fim da Escala 6x1
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5224,7 +5223,7 @@ text
 
 **Ator: MTST**
 
-### ATOR-046 — O MTST Ocupa um Terreno Vazio
+### ACT-046 — O MTST Ocupa um Terreno Vazio
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5240,7 +5239,7 @@ text
 | **Consequência Direita** | "A violência avança." |
 | **Aprendizado** | Frase: "A violência avança." |
 
-### ATOR-047 — O MTST Denuncia Despejo
+### ACT-047 — O MTST Denuncia Despejo
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5256,7 +5255,7 @@ text
 | **Consequência Direita** | "A violência continua." |
 | **Aprendizado** | Frase: "A violência continua." |
 
-### ATOR-048 — O MTST Pede Regularização
+### ACT-048 — O MTST Pede Regularização
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5276,7 +5275,7 @@ text
 
 **Ator: MST**
 
-### ATOR-049 — O MST Ocupa uma Fazenda
+### ACT-049 — O MST Ocupa uma Fazenda
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5292,7 +5291,7 @@ text
 | **Consequência Direita** | "A violência avança." |
 | **Aprendizado** | Frase: "A violência avança." |
 
-### ATOR-050 — O MST Pede Assentamento
+### ACT-050 — O MST Pede Assentamento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5308,7 +5307,7 @@ text
 | **Consequência Direita** | "A reforma agrária para." |
 | **Aprendizado** | Frase: "A reforma agrária para." |
 
-### ATOR-051 — O MST Quer Produzir Alimentos
+### ACT-051 — O MST Quer Produzir Alimentos
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5328,7 +5327,7 @@ text
 
 **Ator: Movimentos Ambientais**
 
-### ATOR-052 — O Ambientalista Denuncia Desmatamento
+### ACT-052 — O Ambientalista Denuncia Desmatamento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5344,7 +5343,7 @@ text
 | **Consequência Direita** | "O desmatamento avança." |
 | **Aprendizado** | Frase: "O desmatamento avança." |
 
-### ATOR-053 — O Ambientalista Denuncia Garimpo Ilegal
+### ACT-053 — O Ambientalista Denuncia Garimpo Ilegal
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5360,7 +5359,7 @@ text
 | **Consequência Direita** | "O garimpo avança." |
 | **Aprendizado** | Frase: "O garimpo avança." |
 
-### ATOR-054 — O Ambientalista Denuncia Agrotóxico
+### ACT-054 — O Ambientalista Denuncia Agrotóxico
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5380,7 +5379,7 @@ text
 
 **Ator: Artista Engajado**
 
-### ATOR-055 — O Artista Quer Financiamento
+### ACT-055 — O Artista Quer Financiamento
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5389,14 +5388,14 @@ text
 | **Cor** | Roxo |
 | **Problema** | O Artista quer financiamento para uma peça crítica ao governo. |
 | **Opção Esquerda** | Financiar |
-| **Efeitos Esquerda** | `Consciência` +10, `Paixão Nacional` +5, `Caixa` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "A arte resiste." |
 | **Opção Direita** | Censurar |
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Integridade` -10 |
 | **Consequência Direita** | "A arte é silenciada." |
 | **Aprendizado** | Frase: "A arte é silenciada." |
 
-### ATOR-056 — O Artista Denuncia Destruição Ambiental
+### ACT-056 — O Artista Denuncia Destruição Ambiental
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5412,7 +5411,7 @@ text
 | **Consequência Direita** | "A arte é censurada." |
 | **Aprendizado** | Frase: "A arte é censurada." |
 
-### ATOR-057 — O Artista Cria Festival Periférico
+### ACT-057 — O Artista Cria Festival Periférico
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5421,7 +5420,7 @@ text
 | **Cor** | Roxo |
 | **Problema** | O Artista quer criar um festival de cultura periférica. |
 | **Opção Esquerda** | Financiar |
-| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Paixão Nacional` +5, `Caixa` -10, `Integridade` +5 |
+| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Legitimidade` +5, `Caixa` -10 |
 | **Consequência Esquerda** | "A cultura periférica resiste." |
 | **Opção Direita** | Não financiar |
 | **Efeitos Direita** | `Caixa` +5, `Consciência` -5, `Integridade` -5 |
@@ -5432,7 +5431,7 @@ text
 
 **Ator: Meta (Big Tech)**
 
-### ATOR-058 — A Meta Oferece Alcance
+### ACT-058 — A Meta Oferece Alcance
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5448,7 +5447,7 @@ text
 | **Consequência Direita** | "A soberania digital é entregue." |
 | **Aprendizado** | Frase: "A soberania digital é entregue." |
 
-### ATOR-059 — A Meta Derruba Perfil de Jornalista
+### ACT-059 — A Meta Derruba Perfil de Jornalista
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5464,7 +5463,7 @@ text
 | **Consequência Direita** | "A censura avança." |
 | **Aprendizado** | Frase: "A censura avança." |
 
-### ATOR-060 — A Meta Financia Campanha
+### ACT-060 — A Meta Financia Campanha
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5484,7 +5483,7 @@ text
 
 **Ator: Impérios Geopolíticos**
 
-### ATOR-061 — A China Oferece Acordo
+### ACT-061 — A China Oferece Acordo
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5500,7 +5499,7 @@ text
 | **Consequência Direita** | "O Brasil perde." |
 | **Aprendizado** | Frase: "O Brasil perde." |
 
-### ATOR-062 — Os EUA Ameaçam Sanções
+### ACT-062 — Os EUA Ameaçam Sanções
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5516,7 +5515,7 @@ text
 | **Consequência Direita** | "A subordinação avança." |
 | **Aprendizado** | Frase: "A subordinação avança." |
 
-### ATOR-063 — A China Quer Comprar Terras
+### ACT-063 — A China Quer Comprar Terras
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5536,7 +5535,7 @@ text
 
 **Ator: Coach Digital**
 
-### ATOR-064 — O Coach Oferece Apoio
+### ACT-064 — O Coach Oferece Apoio
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5552,7 +5551,7 @@ text
 | **Consequência Direita** | "A meritocracia avança." |
 | **Aprendizado** | Frase: "A meritocracia avança." |
 
-### ATOR-065 — O Coach Faz Campanha contra o Governo
+### ACT-065 — O Coach Faz Campanha contra o Governo
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5568,7 +5567,7 @@ text
 | **Consequência Direita** | "A desinformação avança." |
 | **Aprendizado** | Frase: "A desinformação avança." |
 
-### ATOR-066 — O Coach É Financiado por Bets
+### ACT-066 — O Coach É Financiado por Bets
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5588,7 +5587,7 @@ text
 
 **Ator: Jornalista Independente**
 
-### ATOR-067 — O Jornalista Denuncia Escândalo
+### ACT-067 — O Jornalista Denuncia Escândalo
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5604,7 +5603,7 @@ text
 | **Consequência Direita** | "A imprensa é calada." |
 | **Aprendizado** | Frase: "A imprensa é calada." |
 
-### ATOR-068 — O Jornalista É Processado
+### ACT-068 — O Jornalista É Processado
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5620,7 +5619,7 @@ text
 | **Consequência Direita** | "A censura judicial avança." |
 | **Aprendizado** | Frase: "A censura judicial avança." |
 
-### ATOR-069 — O Jornalista É Ameaçado
+### ACT-069 — O Jornalista É Ameaçado
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5640,7 +5639,7 @@ text
 
 **Ator: Influenciador Progressista**
 
-### ATOR-070 — O Influenciador Oferece Apoio
+### ACT-070 — O Influenciador Oferece Apoio
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5656,7 +5655,7 @@ text
 | **Consequência Direita** | "A contra-narrativa recua." |
 | **Aprendizado** | Frase: "A contra-narrativa recua." |
 
-### ATOR-071 — O Influenciador Denuncia Fake News
+### ACT-071 — O Influenciador Denuncia Fake News
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5672,7 +5671,7 @@ text
 | **Consequência Direita** | "A mentira vence." |
 | **Aprendizado** | Frase: "A mentira vence." |
 
-### ATOR-072 — O Influenciador É Censurado
+### ACT-072 — O Influenciador É Censurado
 
 | Campo | Conteúdo |
 | :--- | :--- |
@@ -5696,8 +5695,8 @@ text
 | :--- | :--- | :--- | :--- |
 | **Institucionais** | 200 | 200 | Completas (10 modos × 20) |
 | **Temáticas** | 70 | 70 | Completas (7 temas × 10) |
-| **Atores** | 70 | 72 | Completas (24 atores × 3); ver divergência em 17.01.2 |
-| **Total** | **340** | **342** | Roteiro completo; validação pendente de correções |
+| **Atores** | 72 | 72 | Completas (24 atores × 3) |
+| **Total** | **342** | **342** | Roteiro completo |
 
 **Observação:** as cartas INST-143 a INST-200 (exceto 161 e 181) seguem os títulos de `docs/12_FICHAS_DOS_MODOS.md`. Para respeitar a D-005, os títulos com rótulo partidário ou nome de organização real foram neutralizados (ex.: "Youtuber espalha fake news", "Influenciador financiado pela facção").
 

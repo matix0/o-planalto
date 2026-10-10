@@ -1,5 +1,5 @@
 ---
-description: Valida as 340 cartas (estrutura, efeitos, consistência)
+description: Valida as 342 cartas (estrutura, efeitos, consistência)
 allowed-tools: Read, Grep, Glob
 ---
 

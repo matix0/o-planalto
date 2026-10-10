@@ -28,6 +28,9 @@ Versionamento: [SemVer](https://semver.org/).
 - 12 subagentes especializados
 
 ### Alterado
+- D-081: 24 atores do doc 11 e baralho de 342 cartas nos docs 00, 04, 05, 09, 11, 12, 13, 17, 18, `CLAUDE.md`, `estado.md` e site
+- D-082: cartas de ator renomeadas de `ATOR-` para `ACT-` (doc 17; cartas associadas do doc 11 e exemplo do doc 13 atualizados)
+- D-083: `Paixão Nacional` → `Legitimidade` e `Aliança Externa` → `Caixa` em 13 cartas e 2 eventos do doc 11
 - `/sync-docs`: correções mecânicas em 00, 02, 04, 05, 06, 08, 09, 13, `estado.md` e `CLAUDE.md` (soma dos valores iniciais 370, impeachment a partir do Ano 2 conforme D-023, 5 blocos na Carta de Aprendizado, D-051, D-053, D-072, status dos docs 14-18)
 - Docs vivos movidos de `docs/` para `gestao/` (D-071)
 - `CLAUDE.md` reescrito; estado carregado via `@gestao/estado.md` (P-008)

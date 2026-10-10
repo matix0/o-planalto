@@ -271,7 +271,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
-| `id` | String | Identificador único da carta (INST-001, THEM-001, ATOR-001) |
+| `id` | String | Identificador único da carta (INST-001, THEM-001, ACT-001) |
 | `titulo` | String | Título curto da carta |
 | `modo` | String | Modo institucional (Congresso, Orçamento, etc.) |
 | `tipo` | String | Tipo (Institucional, Temática, Ator, Evento) |
@@ -344,13 +344,13 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 ```json
 {
   "id": "ATOR-001",
-  "nome": "Coronel",
-  "arquetipo": "Senhor de engenho, chefe local",
+  "nome": "Latifundiários",
+  "arquetipo": "Senhor de engenho, barão do café, dono de terras",
   "satisfacao": 50,
   "oferece": ["Capital Político"],
   "cobra": ["Autonomia", "Impunidade"],
   "preco": { "Dignidade": -5, "Integridade": -5 },
-  "cartas": ["ATOR-001", "ATOR-002", "ATOR-003", "ATOR-004", "ATOR-005"],
+  "cartas": ["ACT-001", "ACT-002", "ACT-003"],
   "eventos_encadeados": [
     {
       "turno": 2,
@@ -392,7 +392,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "turno": 1,
   "ano": 1,
   "fase": "Lua de Mel",
-  "cartas_sorteadas": ["INST-001", "THEM-001", "ATOR-001"],
+  "cartas_sorteadas": ["INST-001", "THEM-001", "ACT-001"],
   "eventos_encadeados": ["EVEN-001"],
   "medidores_inicio": {
     "Dignidade": 45,
@@ -618,9 +618,9 @@ funcao calcular_eixo(escolhas):
 
 | Arquivo | Formato | Conteúdo |
 | :--- | :--- | :--- |
-| `cartas.json` | JSON | Todas as 340 cartas |
+| `cartas.json` | JSON | Todas as 342 cartas |
 | `medidores.json` | JSON | Os 8 medidores + 3 sub-medidores |
-| `atores.json` | JSON | Os 20 atores |
+| `atores.json` | JSON | Os 24 atores |
 | `finais.json` | JSON | Os 26 finais |
 | `eventos.json` | JSON | Os 78 eventos encadeados |
 | `calibracao.json` | JSON | As 6 perguntas da calibração inicial |

@@ -20,8 +20,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Medidores** | ✅ Definidos | 8 + 3 sub-medidores |
 | **Turnos** | ✅ Definidos | 4 turnos (4 anos) |
 | **Modos** | ✅ Definidos | 10 modos institucionais |
-| **Atores** | ✅ Definidos | 20 atores (14 base + 6 expansão) |
-| **Cartas** | ✅ Roteirizadas | 342 no doc 17 (meta: 340; divergência pendente com o PO) |
+| **Atores** | ✅ Definidos | 24 atores em 4 categorias (D-081) |
+| **Cartas** | ✅ Roteirizadas | 342 no doc 17 (D-081) |
 | **Finais** | ✅ Consolidados | 26 finais |
 | **Impeachment** | ✅ Reformulado | Cena de golpe, a partir do Ano 2 |
 | **Eventos Encadeados** | ✅ Mapeados | 78 eventos |

@@ -45,7 +45,7 @@ Cada ficha contém:
 | **Medo** | O que ele teme |
 | **Oferece** | O que ele dá ao jogador |
 | **Cobra** | O que ele exige em troca |
-| **Cartas Associadas** | As 5 cartas do ator |
+| **Cartas Associadas** | As 3 cartas do ator (ACT-XXX, roteiro no doc 17) |
 | **Eventos Encadeados** | Os 3 eventos que ele gera |
 | **Citações de Referência** | Frases que ele diria |
 | **Fundamentação** | Base histórica e teórica |
@@ -102,7 +102,7 @@ Cada ficha contém:
 | **Medo** | Perder o controle. Ver o Estado chegar à sua região. |
 | **Oferece** | `Capital Político` (votos, apoio no Congresso) |
 | **Cobra** | `Soberania` (autonomia, impunidade, controle sobre nomeações) |
-| **Cartas Associadas** | ATOR-001: "O Latifundiário cobra o favor" · ATOR-002: "O Latifundiário oferece votos" · ATOR-003: "O Latifundiário quer nomear o delegado" · ATOR-004: "O Latifundiário ameaça invadir terra" · ATOR-005: "O Latifundiário pede anistia" |
+| **Cartas Associadas** | ACT-001: "O Latifundiário cobra o favor" · ACT-002: "O Latifundiário ameaça invadir terra" · ACT-003: "O Latifundiário pede anistia" |
 | **Eventos Encadeados** | Ano 2: "Cobra favor" (`Capital Político` -10) · Ano 3: "Ameaça invadir terra" (`Soberania` -10, `Dignidade` -5) · Ano 4: "Milícia domina região" (`Segurança` -10, `Soberania` -10) |
 | **Citações** | *"Vossa Excelência sabe que sem mim não governa."* · *"O povo da minha terra me respeita. E o senhor?"* · *"Não me venha com essa de 'Estado laico'. Aqui quem manda sou eu."* |
 | **Fundamentação** | Herdeiro do senhor de engenho colonial e do coronel da Guarda Nacional. O coronelismo é o clientelismo. O voto de cabresto ainda existe: o coronel controla a vida e a morte de sua região. A Lei de Terras de 1850 consolidou a concentração fundiária. |
@@ -122,7 +122,7 @@ Cada ficha contém:
 | **Medo** | Perder dinheiro. Ver o governo taxar suas fortunas. |
 | **Oferece** | `Caixa` (investimentos, acesso a mercados) |
 | **Cobra** | `Dignidade` (cortes sociais, privatizações, desregulamentação) |
-| **Cartas Associadas** | ATOR-006: "O Investidor oferece investimentos" · ATOR-007: "O Investidor ameaça tirar o dinheiro" · ATOR-008: "O Investidor quer privatizar" · ATOR-009: "O Investidor pede isenção fiscal" · ATOR-010: "O Investidor financia a campanha" |
+| **Cartas Associadas** | ACT-004: "O Investidor oferece investimentos" · ACT-005: "O Investidor ameaça tirar o dinheiro" · ACT-006: "O Investidor financia a campanha" |
 | **Eventos Encadeados** | Ano 2: "Chantagem do mercado" (`Caixa` +10, `Soberania` -10) · Ano 3: "Fuga de capital" (`Caixa` -15, `Dignidade` -10) · Ano 4: "Colônia Digital" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"Se o governo não nos ouvir, o mercado reage."* · *"O Brasil é um país de oportunidades. Para quem tem capital."* · *"Cortar gastos sociais é 'responsabilidade fiscal'."* |
 | **Fundamentação** | Herdeiro do capital financeiro. A Faria Lima é o centro do poder econômico do país. O mercado financeiro lucra com a dívida pública e com a especulação. |
@@ -142,7 +142,7 @@ Cada ficha contém:
 | **Medo** | Ver o governo regular o mercado imobiliário. Perder lucros. |
 | **Oferece** | `Caixa` (investimentos, empregos) |
 | **Cobra** | `Dignidade` (desregulamentação, despejos, gentrificação) |
-| **Cartas Associadas** | ATOR-011: "A Construtora oferece investimento" · ATOR-012: "A Construtora quer despejar famílias" · ATOR-013: "A Construtora pede isenção fiscal" · ATOR-014: "A Construtora financia a campanha" · ATOR-015: "A Construtora quer construir em área verde" |
+| **Cartas Associadas** | ACT-007: "A Construtora quer despejar famílias" · ACT-008: "A Construtora financia a campanha" · ACT-009: "A Construtora quer construir em área verde" |
 | **Eventos Encadeados** | Ano 2: "Despejo de famílias" (`Dignidade` -10, `Legitimidade` -5) · Ano 3: "Gentrificação" (`Dignidade` -15, `Consciência` -10) · Ano 4: "Crise imobiliária" (`Caixa` -20, `Dignidade` -15) |
 | **Citações** | *"A cidade precisa crescer. E nós somos o crescimento."* · *"Terreno vazio é desperdício. Vamos construir."* · *"Quem não pode pagar, que mora mais longe."* |
 | **Fundamentação** | Herdeiro da especulação imobiliária. As construtoras lucram com a gentrificação e com o despejo de famílias pobres. O déficit habitacional no Brasil é de milhões de moradias. |
@@ -162,7 +162,7 @@ Cada ficha contém:
 | **Medo** | Ver a indústria nacional ser destruída pela concorrência estrangeira. |
 | **Oferece** | `Soberania` (indústria nacional, tecnologia) |
 | **Cobra** | `Dignidade` (protecionismo, subsídios, desregulamentação ambiental) |
-| **Cartas Associadas** | ATOR-016: "O Industrial pede proteção" · ATOR-017: "O Industrial quer subsidio" · ATOR-018: "O Industrial ameaça demitir" · ATOR-019: "O Industrial pede desregulamentação" · ATOR-020: "O Industrial financia a campanha" |
+| **Cartas Associadas** | ACT-010: "O Industrial pede proteção" · ACT-011: "O Industrial ameaça demitir" · ACT-012: "O Industrial pede desregulamentação" |
 | **Eventos Encadeados** | Ano 2: "Demissões em massa" (`Dignidade` -10, `Legitimidade` -5) · Ano 3: "Desindustrialização" (`Soberania` -15, `Dignidade` -10) · Ano 4: "Colônia Digital" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"O Brasil precisa de indústria. Sem indústria, não há soberania."* · *"O governo precisa nos proteger. Ou vamos fechar as portas."* · *"Empregos? Nós geramos. Mas precisamos de condições."* |
 | **Fundamentação** | Herdeiro da indústria nacional. A desindustrialização precoce destruiu milhões de empregos. O Brasil precisa de protecionismo para reconstruir sua indústria. |
@@ -182,7 +182,7 @@ Cada ficha contém:
 | **Medo** | Ver a universidade pública ser fortalecida. Perder alunos. |
 | **Oferece** | `Caixa` (investimento no setor) |
 | **Cobra** | `Consciência` (desregulamentação, isenções fiscais, cortes na educação pública) |
-| **Cartas Associadas** | ATOR-021: "O Setor oferece investimento" · ATOR-022: "O Setor quer expandir o EAD" · ATOR-023: "O Setor pressiona por cortes" · ATOR-024: "O Setor financia campanha" · ATOR-025: "O Setor quer lucrar com a universidade" |
+| **Cartas Associadas** | ACT-013: "O Setor quer expandir o EAD" · ACT-014: "O Setor pressiona por cortes" · ACT-015: "O Setor financia campanha" |
 | **Eventos Encadeados** | Ano 2: "EAD de baixa qualidade" (`Consciência` -10, `Dignidade` -5) · Ano 3: "Universidades sucateadas" (`Consciência` -15, `Dignidade` -10) · Ano 4: "Alienação Total" (`Consciência` -20, `Integridade` -15) |
 | **Citações** | *"A educação é um mercado. E nós somos os melhores."* · *"O EAD democratiza o ensino. Todo mundo pode estudar."* · *"A universidade pública é um luxo que o Brasil não pode pagar."* |
 | **Fundamentação** | Herdeiro da financeirização do ensino superior. Cogna e YDUQS são seus patronos. A educação se torna mercadoria, e o EAD de baixa qualidade massifica o ensino. |
@@ -202,7 +202,7 @@ Cada ficha contém:
 | **Medo** | Ver o governo intervir na economia. Perder confiança. |
 | **Oferece** | `Caixa` (estabilidade, investimentos) |
 | **Cobra** | `Dignidade` (austeridade, cortes, desregulamentação) |
-| **Cartas Associadas** | ATOR-026: "O Mercado reage" · ATOR-027: "O Mercado exige cortes" · ATOR-028: "O Mercado ameaça fuga de capital" · ATOR-029: "O Mercado pressiona o Congresso" · ATOR-030: "O Mercado comemora" |
+| **Cartas Associadas** | ACT-016: "O Mercado reage" · ACT-017: "O Mercado ameaça fuga de capital" · ACT-018: "O Mercado comemora" |
 | **Eventos Encadeados** | Ano 2: "Crise cambial" (`Caixa` -15, `Dignidade` -10) · Ano 3: "Fuga de capital" (`Caixa` -20, `Soberania` -10) · Ano 4: "Colônia Digital" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"O mercado não tem ideologia. Tem interesse."* · *"O Brasil precisa ser confiável. Para os investidores."* · *"Austeridade é o único caminho."* |
 | **Fundamentação** | O "Mercado" é uma construção discursiva que personifica o capital financeiro. Ele não tem rosto, mas tem poder. Suas reações podem derrubar governos. |
@@ -224,7 +224,7 @@ Cada ficha contém:
 | **Medo** | O descontrole fiscal. A inflação. A "irresponsabilidade" dos políticos. |
 | **Oferece** | `Caixa` (investimentos, empréstimos) |
 | **Cobra** | `Dignidade` (cortes sociais, privatizações, ajuste fiscal) |
-| **Cartas Associadas** | ATOR-031: "O Tecnocrata propõe choque de gestão" · ATOR-032: "O Tecnocrata pede mais cortes" · ATOR-033: "O Tecnocrata quer privatizar" · ATOR-034: "O Tecnocrata defende o teto de gastos" · ATOR-035: "O Tecnocrata pede corte no salário mínimo" |
+| **Cartas Associadas** | ACT-019: "O Tecnocrata propõe choque de gestão" · ACT-020: "O Tecnocrata pede mais cortes" · ACT-021: "O Tecnocrata defende o teto" |
 | **Eventos Encadeados** | Ano 2: "Propõe choque de gestão" (`Dignidade` -10, `Caixa` +10) · Ano 3: "Pede mais cortes" (`Dignidade` -15, `Caixa` +10) · Ano 4: "Crise fiscal" (`Caixa` -20, `Capital Político` -15) |
 | **Citações** | *"Os indicadores apontam para a necessidade de ajuste fiscal."* · *"O Estado não é uma empresa. Mas deveria ser."* · *"O povo não entende de economia. Por isso, precisa de nós."* |
 | **Fundamentação** | Herdeiro dos planejadores militares e economistas da ditadura. Figuras como Roberto Campos e Delfim Netto são seus patronos. O tecnocrata despreza o debate público e se apresenta como "salvador acima das paixões ideológicas". |
@@ -244,7 +244,7 @@ Cada ficha contém:
 | **Medo** | Ver a "subversão" tomar conta. Perder o poder. |
 | **Oferece** | `Segurança` (ordem, repressão, estabilidade) |
 | **Cobra** | `Legitimidade` (aumento de gastos, autonomia corporativa, repressão) |
-| **Cartas Associadas** | ATOR-036: "O Militar pede aumento" · ATOR-037: "O Militar quer reprimir protestos" · ATOR-038: "O Militar ameaça intervir" · ATOR-039: "O Militar pede anistia" · ATOR-040: "O Militar quer controlar a Amazônia" |
+| **Cartas Associadas** | ACT-022: "O Militar pede aumento" · ACT-023: "O Militar ameaça intervir" · ACT-024: "O Militar pede anistia" |
 | **Eventos Encadeados** | Ano 2: "Repressão a protestos" (`Dignidade` -15, `Integridade` -10) · Ano 3: "Golpe militar" (`Segurança` +20, `Dignidade` -20) · Ano 4: "Estado Policial" (`Segurança` +20, `Dignidade` -20) |
 | **Citações** | *"A ordem é a base da democracia. E nós somos a ordem."* · *"O Brasil precisa de mão firme. Não de politicagem."* · *"A segurança nacional está acima de tudo."* |
 | **Fundamentação** | Herdeiro dos capitães do mato e dos bandeirantes. As Forças Armadas foram o braço armado da ditadura. Hoje, são um poder moderador que ameaça a democracia. |
@@ -264,7 +264,7 @@ Cada ficha contém:
 | **Medo** | Perder o emprego. Ver o serviço público ser privatizado. |
 | **Oferece** | `Soberania` (controle do orçamento, conhecimento da máquina) |
 | **Cobra** | `Caixa` (estabilidade, aumento salarial, resistência à privatização) |
-| **Cartas Associadas** | ATOR-041: "O Servidor ameaça travar o governo" · ATOR-042: "O Servidor denuncia corrupção" · ATOR-043: "O Servidor resiste a reforma" · ATOR-044: "O Servidor quer transparência" · ATOR-045: "O Servidor ameaça vazar informações" |
+| **Cartas Associadas** | ACT-025: "O Servidor ameaça travar o governo" · ACT-026: "O Servidor resiste a reforma" · ACT-027: "O Servidor quer transparência" |
 | **Eventos Encadeados** | Ano 2: "Greve no serviço público" (`Caixa` -10, `Legitimidade` -5) · Ano 3: "Paralisia administrativa" (`Caixa` -15, `Capital Político` -10) · Ano 4: "Colapso do Estado" (`Caixa` -20, `Capital Político` -15) |
 | **Citações** | *"A máquina não para. Ou vocês negociam, ou ela trava."* · *"Eu não sou inimigo do povo. Eu sou o Estado."* · *"O servidor público é a linha de frente da resistência."* |
 | **Fundamentação** | Herdeiro do servidor público de carreira. O burocrata pode ser aliado (quando defende o serviço público) ou obstáculo (quando se acomoda). Ele é a engrenagem que trava o desmonte ou o freio que impede a transformação. |
@@ -284,8 +284,8 @@ Cada ficha contém:
 | **Medo** | Ver o Brasil se tornar um protetorado. Perder autonomia. |
 | **Oferece** | `Segurança` (estabilidade internacional, alianças) |
 | **Cobra** | `Capital Político` (autonomia, resistência à pressão externa) |
-| **Cartas Associadas** | ATOR-046: "O Diplomata pede apoio ao BRICS" · ATOR-047: "O Diplomata alerta sobre pressão dos EUA" · ATOR-048: "O Diplomata quer manter neutralidade" · ATOR-049: "O Diplomata negocia acordo comercial" · ATOR-050: "O Diplomata defende a soberania" |
-| **Eventos Encadeados** | Ano 2: "Pressão dos EUA" (`Soberania` -10, `Aliança Externa` +10) · Ano 3: "Crise diplomática" (`Soberania` -15, `Capital Político` -10) · Ano 4: "Colônia" (`Soberania` -20, `Dignidade` -15) |
+| **Cartas Associadas** | ACT-028: "O Diplomata pede apoio ao BRICS" · ACT-029: "O Diplomata alerta sobre pressão dos EUA" · ACT-030: "O Diplomata defende a soberania" |
+| **Eventos Encadeados** | Ano 2: "Pressão dos EUA" (`Soberania` -10, `Caixa` +10) · Ano 3: "Crise diplomática" (`Soberania` -15, `Capital Político` -10) · Ano 4: "Colônia" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"O Brasil não é colônia. É uma nação soberana."* · *"A neutralidade é uma escolha. Não uma fraqueza."* · *"O BRICS é a nossa alternativa."* |
 | **Fundamentação** | Herdeiro da diplomacia brasileira. O Itamaraty é responsável pela política externa. O Brasil sempre defendeu a soberania e a autonomia nacional. |
 
@@ -304,7 +304,7 @@ Cada ficha contém:
 | **Medo** | Perder o controle do Congresso. Ver o governo passar por cima. |
 | **Oferece** | `Capital Político` (apoio no Congresso, aprovação de leis) |
 | **Cobra** | `Legitimidade` (emendas, cargos, fisiologismo) |
-| **Cartas Associadas** | ATOR-051: "O Líder da Câmara pede emendas" · ATOR-052: "O Líder da Câmara quer cargos" · ATOR-053: "O Líder da Câmara ameaça travar a pauta" · ATOR-054: "O Líder da Câmara pede apoio" · ATOR-055: "O Líder da Câmara chantageia o governo" |
+| **Cartas Associadas** | ACT-031: "O Líder da Câmara pede emendas" · ACT-032: "O Líder da Câmara quer cargos" · ACT-033: "O Líder da Câmara chantageia" |
 | **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) · Ano 4: "Hegemonia Autoritária" (`Capital Político` +20, `Consciência` -20) |
 | **Citações** | *"O governo precisa de nós. E nós precisamos de emendas."* · *"A pauta sou eu quem define. Quer aprovar? Negocia."* · *"O Centrão não tem ideologia. Tem poder."* |
 | **Fundamentação** | Herdeiro do fisiologismo. O Centrão é o "fiador da governabilidade". Sem ele, nenhum governo consegue aprovar leis. Ele troca apoio por cargos e emendas. |
@@ -326,7 +326,7 @@ Cada ficha contém:
 | **Medo** | Perder o rebanho. Ver o Estado laico ser respeitado. |
 | **Oferece** | `Legitimidade` (votos, apoio popular) |
 | **Cobra** | `Integridade` (censura aos costumes, verbas para templos, controle ideológico) |
-| **Cartas Associadas** | ATOR-056: "O Pastor pede verbas para templos" · ATOR-057: "O Pastor quer censurar a TV" · ATOR-058: "O Pastor pede indicação para o STF" · ATOR-059: "O Pastor faz pânico moral" · ATOR-060: "O Pastor quer proibir o ensino de gênero" |
+| **Cartas Associadas** | ACT-034: "O Pastor pede verbas" · ACT-035: "O Pastor faz pânico moral" · ACT-036: "O Pastor quer censurar a TV" |
 | **Eventos Encadeados** | Ano 2: "Pânico moral" (`Consciência` -10, `Integridade` -5) · Ano 3: "Censura aos costumes" (`Consciência` -15, `Dignidade` -5) · Ano 4: "Ufanismo Vazio" (`Legitimidade` +20, `Consciência` -20) |
 | **Citações** | *"Deus quer que você defenda a família!"* · *"O Brasil é do Senhor Jesus!"* · *"Não me venha com essa de 'Estado laico'. O Brasil é cristão!"* |
 | **Fundamentação** | Herdeiro do poder religioso e midiático. A Igreja Universal opera uma máquina política sofisticada. Os evangélicos saltaram de 9% em 1991 para 27% em 2022. A Teologia da Prosperidade individualiza o sofrimento e culpa a vítima. |
@@ -346,7 +346,7 @@ Cada ficha contém:
 | **Medo** | Ver a educação ser destruída. Perder a liberdade de cátedra. |
 | **Oferece** | `Consciência` (formação crítica) |
 | **Cobra** | `Caixa` (investimento em educação, liberdade de cátedra, valorização salarial) |
-| **Cartas Associadas** | ATOR-061: "O Sindicato pede aumento" · ATOR-062: "O Sindicato denuncia o sucateamento" · ATOR-063: "O Sindicato quer liberdade de cátedra" · ATOR-064: "O Sindicato pede revogação do teto" · ATOR-065: "O Sindicato cria programa de leitura" |
+| **Cartas Associadas** | ACT-037: "O Professor pede aumento" · ACT-038: "O Professor denuncia sucateamento" · ACT-039: "O Professor quer liberdade de cátedra" |
 | **Eventos Encadeados** | Ano 2: "Greve nas escolas" (`Consciência` +5, `Legitimidade` -5) · Ano 3: "Geração sem pensamento crítico" (`Consciência` -15, `Integridade` -10) · Ano 4: "Alienação Total" (`Consciência` -20, `Integridade` -15) |
 | **Citações** | *"A educação é a única arma que o povo tem."* · *"Não me venham com 'Escola sem Partido'. A escola já é sem partido. O que falta é pensamento crítico."* · *"Enquanto a burguesia discute qual rei vai governar, nós ensinamos o povo a derrubar o trono."* |
 | **Fundamentação** | Herdeiro de Paulo Freire e Darcy Ribeiro. A Lei 13.415/2017 retirou a obrigatoriedade de Filosofia e Sociologia. O "Escola sem Partido" criminaliza o debate crítico. A educação integral ataca as causas do crime. |
@@ -366,7 +366,7 @@ Cada ficha contém:
 | **Medo** | Ver o SUS ser privatizado. Perder pacientes por falta de recursos. |
 | **Oferece** | `Dignidade` (saúde pública) |
 | **Cobra** | `Caixa` (investimento no SUS, fim do teto de gastos, valorização profissional) |
-| **Cartas Associadas** | ATOR-066: "O Profissional denuncia a falta de leitos" · ATOR-067: "O Profissional quer revogar a privatização" · ATOR-068: "O Profissional pede mais contratações" · ATOR-069: "O Profissional denuncia a precarização" · ATOR-070: "O Profissional cria programa de saúde mental" |
+| **Cartas Associadas** | ACT-040: "O Profissional denuncia falta de leitos" · ACT-041: "O Profissional quer revogar privatização" · ACT-042: "O Profissional pede mais contratações" |
 | **Eventos Encadeados** | Ano 2: "Colapso hospitalar" (`Dignidade` -15, `Legitimidade` -10) · Ano 3: "Mortalidade infantil" (`Dignidade` -20, `Legitimidade` -15) · Ano 4: "Barbárie" (`Dignidade` -20, `Legitimidade` -15) |
 | **Citações** | *"O hospital está sem remédios! O povo está morrendo!"* · *"O SUS é o maior sistema público de saúde do mundo. E vocês querem privatizar?"* · *"Eu não sou herói. Eu sou profissional de saúde. Mas o Estado não me deixa fazer meu trabalho."* |
 | **Fundamentação** | Herdeiro do sanitarismo e da Reforma Sanitária. O SUS perdeu R$ 37 bilhões com o teto de gastos. A expectativa de vida caiu de 76,2 para 72,8 anos. A saúde pública está sucateada. |
@@ -386,7 +386,7 @@ Cada ficha contém:
 | **Medo** | Ver os direitos trabalhistas serem retirados. Perder a base. |
 | **Oferece** | `Legitimidade` (mobilização) |
 | **Cobra** | `Capital Político` (direitos trabalhistas, aumento real do salário mínimo, reforma agrária) |
-| **Cartas Associadas** | ATOR-071: "O Líder Sindical pede aumento" · ATOR-072: "O Líder Sindical convoca greve" · ATOR-073: "O Líder Sindical pede fim da escala 6x1" · ATOR-074: "O Líder Sindical denuncia precarização" · ATOR-075: "O Líder Sindical pede apoio à reforma agrária" |
+| **Cartas Associadas** | ACT-043: "O Líder Sindical pede aumento" · ACT-044: "O Líder Sindical convoca greve" · ACT-045: "O Líder Sindical pede fim da escala 6x1" |
 | **Eventos Encadeados** | Ano 2: "Greve geral" (`Legitimidade` +10, `Caixa` -15) · Ano 3: "Mobilização popular" (`Legitimidade` +15, `Consciência` +10) · Ano 4: "Cidadania Ativa" (`Legitimidade` +20, `Consciência` +15) |
 | **Citações** | *"O trabalhador não é mercadoria. É gente."* · *"A greve é a arma do trabalhador. E nós vamos usar."* · *"Enquanto a burguesia explora, nós resistimos."* |
 | **Fundamentação** | Herdeiro do movimento sindical brasileiro. A CUT, a Força Sindical e as centrais sindicais são seus patronos. A greve é a arma do trabalhador. Os direitos trabalhistas são conquistas históricas. |
@@ -406,7 +406,7 @@ Cada ficha contém:
 | **Medo** | Ver as famílias despejadas. Perder a luta. |
 | **Oferece** | `Dignidade` (moradia, direito à cidade) |
 | **Cobra** | `Capital Político` (desapropriação, regularização fundiária, investimento em habitação) |
-| **Cartas Associadas** | ATOR-076: "O MTST ocupa um terreno vazio" · ATOR-077: "O MTST denuncia despejo" · ATOR-078: "O MTST pede regularização" · ATOR-079: "O MTST quer construir moradias" · ATOR-080: "O MTST pressiona o governo" |
+| **Cartas Associadas** | ACT-046: "O MTST ocupa um terreno vazio" · ACT-047: "O MTST denuncia despejo" · ACT-048: "O MTST pede regularização" |
 | **Eventos Encadeados** | Ano 2: "Despejo de famílias" (`Dignidade` -10, `Legitimidade` -5) · Ano 3: "Ocupação de terreno" (`Dignidade` +10, `Capital Político` -10) · Ano 4: "Cidadania Ativa" (`Dignidade` +20, `Legitimidade` +15) |
 | **Citações** | *"Moradia não é mercadoria. É direito."* · *"Enquanto uns acumulam imóveis vazios, outros dormem na rua."* · *"A cidade é nossa. E nós vamos ocupar."* |
 | **Fundamentação** | Herdeiro da luta por moradia. O MTST é um dos maiores movimentos sociais urbanos do Brasil. O déficit habitacional é de milhões de moradias. |
@@ -426,7 +426,7 @@ Cada ficha contém:
 | **Medo** | Ver a terra ser concentrada. Perder a luta. |
 | **Oferece** | `Dignidade` (terra, alimento, reforma agrária) |
 | **Cobra** | `Capital Político` (desapropriação, assentamentos, crédito agrícola) |
-| **Cartas Associadas** | ATOR-081: "O MST ocupa uma fazenda" · ATOR-082: "O MST denuncia despejo" · ATOR-083: "O MST pede assentamento" · ATOR-084: "O MST quer produzir alimentos" · ATOR-085: "O MST pressiona o governo" |
+| **Cartas Associadas** | ACT-049: "O MST ocupa uma fazenda" · ACT-050: "O MST pede assentamento" · ACT-051: "O MST quer produzir alimentos" |
 | **Eventos Encadeados** | Ano 2: "Conflito no campo" (`Dignidade` -10, `Soberania` -5) · Ano 3: "Ocupação de fazenda" (`Dignidade` +10, `Capital Político` -10) · Ano 4: "Cidadania Ativa" (`Dignidade` +20, `Legitimidade` +15) |
 | **Citações** | *"A terra é para quem trabalha nela."* · *"Enquanto uns acumulam latifúndios, outros passam fome."* · *"A reforma agrária é a mãe de todas as lutas."* |
 | **Fundamentação** | Herdeiro das Ligas Camponesas. O MST é o maior movimento social do Brasil, com mais de 1,5 milhão de membros. A reforma agrária nunca ocorreu de forma estrutural. |
@@ -446,7 +446,7 @@ Cada ficha contém:
 | **Medo** | Ver a floresta ser destruída. Ver o clima colapsar. |
 | **Oferece** | `Consciência` (consciência ambiental) |
 | **Cobra** | `Caixa` (proteção ambiental, demarcação de terras, combate ao desmatamento) |
-| **Cartas Associadas** | ATOR-086: "O Ambientalista denuncia desmatamento" · ATOR-087: "O Ambientalista pede fiscalização" · ATOR-088: "O Ambientalista denuncia garimpo ilegal" · ATOR-089: "O Ambientalista pede demarcação" · ATOR-090: "O Ambientalista denuncia agrotóxico" |
+| **Cartas Associadas** | ACT-052: "O Ambientalista denuncia desmatamento" · ACT-053: "O Ambientalista denuncia garimpo ilegal" · ACT-054: "O Ambientalista denuncia agrotóxico" |
 | **Eventos Encadeados** | Ano 2: "Desmatamento acelerado" (`Soberania` -15, `Dignidade` -10) · Ano 3: "Tragédia ambiental" (`Soberania` -20, `Dignidade` -15) · Ano 4: "Colônia Digital" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"A floresta não é um obstáculo. É a nossa casa."* · *"O agronegócio destrói a Amazônia e ainda chama de 'progresso'."* · *"Não existe soberania sem floresta em pé."* |
 | **Fundamentação** | Herdeiro do movimento ambientalista brasileiro. Chico Mendes e Marina Silva são seus patronos. O Brasil desmatou 62,2% mais na Amazônia em 2022. A fiscalização foi desmontada. |
@@ -466,7 +466,7 @@ Cada ficha contém:
 | **Medo** | Ver a cultura ser silenciada. Perder o financiamento. |
 | **Oferece** | `Legitimidade` (mobilização emocional) |
 | **Cobra** | `Segurança` (financiamento público, liberdade de criação, resistência à censura) |
-| **Cartas Associadas** | ATOR-091: "O Artista quer financiamento" · ATOR-092: "O Artista denuncia destruição ambiental" · ATOR-093: "O Artista quer usar a Lei Rouanet" · ATOR-094: "O Artista é atacado por blasfêmia" · ATOR-095: "O Artista cria festival periférico" |
+| **Cartas Associadas** | ACT-055: "O Artista quer financiamento" · ACT-056: "O Artista denuncia destruição ambiental" · ACT-057: "O Artista cria festival periférico" |
 | **Eventos Encadeados** | Ano 2: "Festival de resistência" (`Consciência` +10, `Legitimidade` +5) · Ano 3: "Cultura silenciada" (`Consciência` -15, `Integridade` -10) · Ano 4: "Perda de identidade" (`Consciência` -15, `Legitimidade` -15) |
 | **Citações** | *"A arte é uma arma. E eu não vou entregar a minha."* · *"Enquanto a burguesia dorme, nós cantamos."* · *"A cultura não é luxo. É resistência."* |
 | **Fundamentação** | Herdeiro de Chico Buarque, Ney Matogrosso, Glauber Rocha e os Racionais MC's. A arte é uma arma do povo contra a opressão. A Lei Rouanet é atacada, mas os maiores beneficiários são artistas bolsonaristas. |
@@ -488,7 +488,7 @@ Cada ficha contém:
 | **Medo** | Ver o governo regular suas atividades. Perder lucros. |
 | **Oferece** | `Legitimidade` (alcance, visibilidade) |
 | **Cobra** | `Consciência` (desregulamentação, isenções fiscais, controle da narrativa) |
-| **Cartas Associadas** | ATOR-096: "A Meta oferece alcance" · ATOR-097: "A Meta pede desregulamentação" · ATOR-098: "A Meta derruba perfil de jornalista" · ATOR-099: "A Meta espalha fake news" · ATOR-100: "A Meta financia campanha" |
+| **Cartas Associadas** | ACT-058: "A Meta oferece alcance" · ACT-059: "A Meta derruba perfil de jornalista" · ACT-060: "A Meta financia campanha" |
 | **Eventos Encadeados** | Ano 2: "Derrubada de perfil" (`Integridade` -10, `Consciência` -5) · Ano 3: "Desinformação total" (`Integridade` -15, `Consciência` -10) · Ano 4: "Colônia Digital" (`Soberania` -20, `Integridade` -15) |
 | **Citações** | *"Conectamos o mundo. E o mundo nos pertence."* · *"Não somos uma empresa de mídia. Somos uma plataforma."* · *"Se você não paga, você é o produto."* |
 | **Fundamentação** | Herdeiro do colonialismo digital. As big techs controlam a infraestrutura da vida digital. A soberania digital é uma questão de segurança nacional. |
@@ -508,8 +508,8 @@ Cada ficha contém:
 | **Medo** | Ver o Brasil se tornar soberano. Perder influência. |
 | **Oferece** | `Caixa` (investimentos, acordos comerciais) |
 | **Cobra** | `Soberania` (venda de recursos, alinhamento político, dependência) |
-| **Cartas Associadas** | ATOR-101: "A China oferece acordo" · ATOR-102: "Os EUA ameaçam sanções" · ATOR-103: "A China quer comprar terras" · ATOR-104: "Os EUA querem base militar" · ATOR-105: "O Brasil adere ao BRICS" |
-| **Eventos Encadeados** | Ano 2: "Pressão dos EUA" (`Soberania` -10, `Aliança Externa` +10) · Ano 3: "Dependência da China" (`Soberania` -15, `Caixa` +10) · Ano 4: "Colônia" (`Soberania` -20, `Dignidade` -15) |
+| **Cartas Associadas** | ACT-061: "A China oferece acordo" · ACT-062: "Os EUA ameaçam sanções" · ACT-063: "A China quer comprar terras" |
+| **Eventos Encadeados** | Ano 2: "Pressão dos EUA" (`Soberania` -10, `Caixa` +10) · Ano 3: "Dependência da China" (`Soberania` -15, `Caixa` +10) · Ano 4: "Colônia" (`Soberania` -20, `Dignidade` -15) |
 | **Citações** | *"O Brasil é um parceiro estratégico. Para nós."* · *"Quem controla os recursos, controla o futuro."* · *"A soberania é uma escolha. E o Brasil precisa escolher."* |
 | **Fundamentação** | Herdeiro do imperialismo. Os EUA e a China disputam influência sobre o Brasil. A soberania é a capacidade de decidir o próprio destino. |
 
@@ -528,7 +528,7 @@ Cada ficha contém:
 | **Medo** | Perder seguidores. Ver o governo regular suas atividades. |
 | **Oferece** | `Legitimidade` (apoio junto ao público jovem) |
 | **Cobra** | `Consciência` (desregulamentação, isenções fiscais, liberdade para lucrar com a desinformação) |
-| **Cartas Associadas** | ATOR-106: "O Coach oferece apoio" · ATOR-107: "O Coach faz campanha contra o governo" · ATOR-108: "O Coach quer desregulamentar o EAD" · ATOR-109: "O Coach é financiado por bets" · ATOR-110: "O Coach pede contratos públicos" |
+| **Cartas Associadas** | ACT-064: "O Coach oferece apoio" · ACT-065: "O Coach faz campanha contra o governo" · ACT-066: "O Coach é financiado por bets" |
 | **Eventos Encadeados** | Ano 2: "Influenciador eleito" (`Consciência` -10, `Integridade` -10) · Ano 3: "Políticas contra o governo" (`Legitimidade` -10, `Consciência` -10) · Ano 4: "Colapso da verdade" (`Integridade` -20, `Consciência` -15) |
 | **Citações** | *"Você pode ser rico! Basta querer!"* · *"Político é tudo igual. O que importa é você."* · *"A mentira repetida mil vezes vira verdade. E eu repito."* |
 | **Fundamentação** | Herdeiro do novo pastor da prosperidade. O Coach vende meritocracia e individualismo. Ele é financiado por bets, agronegócio e empresas de educação financeira. Ele é a cara da direita jovem e digital. |
@@ -548,7 +548,7 @@ Cada ficha contém:
 | **Medo** | Ser censurado. Ser morto. Ver a verdade ser enterrada. |
 | **Oferece** | `Consciência` (contra-narrativa) |
 | **Cobra** | `Capital Político` (liberdade de imprensa, proteção contra censura, acesso a dados públicos) |
-| **Cartas Associadas** | ATOR-111: "O Jornalista denuncia escândalo" · ATOR-112: "O Jornalista é processado" · ATOR-113: "O Jornalista quer acesso a dados" · ATOR-114: "O Jornalista é ameaçado" · ATOR-115: "O Jornalista denuncia fake news do governo" |
+| **Cartas Associadas** | ACT-067: "O Jornalista denuncia escândalo" · ACT-068: "O Jornalista é processado" · ACT-069: "O Jornalista é ameaçado" |
 | **Eventos Encadeados** | Ano 2: "Censura à imprensa" (`Integridade` -15, `Consciência` -10) · Ano 3: "Escândalo internacional" (`Integridade` -10, `Soberania` -10) · Ano 4: "Desintegração" (`Integridade` -20, `Consciência` -15) |
 | **Citações** | *"A verdade não pode ser censurada."* · *"Eu não sou herói. Eu sou jornalista. Mas o Estado não me deixa fazer meu trabalho."* · *"Quem controla a narrativa, controla o voto."* |
 | **Fundamentação** | Herdeiro da imprensa alternativa que resistiu à ditadura. A censura privada derruba perfis de jornalistas. A mídia alternativa (Mídia NINJA, Carta Capital, Quebrando o Tabu) resiste. |
@@ -568,7 +568,7 @@ Cada ficha contém:
 | **Medo** | Ver a verdade ser enterrada. Perder a relevância. |
 | **Oferece** | `Consciência` (formação política) |
 | **Cobra** | `Capital Político` (apoio nas redes, financiamento, liberdade de expressão) |
-| **Cartas Associadas** | ATOR-116: "O Influenciador oferece apoio" · ATOR-117: "O Influenciador denuncia fake news" · ATOR-118: "O Influenciador pede financiamento" · ATOR-119: "O Influenciador é censurado" · ATOR-120: "O Influenciador cria campanha" |
+| **Cartas Associadas** | ACT-070: "O Influenciador oferece apoio" · ACT-071: "O Influenciador denuncia fake news" · ACT-072: "O Influenciador é censurado" |
 | **Eventos Encadeados** | Ano 2: "Campanha nas redes" (`Consciência` +10, `Integridade` +10) · Ano 3: "Contra-narrativa" (`Consciência` +15, `Integridade` +15) · Ano 4: "Cidadania Ativa" (`Consciência` +20, `Integridade` +20) |
 | **Citações** | *"A gente não é 'esquerda'. A gente é a favor da vida."* · *"Você não precisa ser de esquerda. Só precisa pensar."* · *"A verdade é uma arma. E nós vamos usá-la."* |
 | **Fundamentação** | Herdeiro da nova esquerda digital. A Mídia NINJA, o Quebrando o Tabu e os influenciadores progressistas são seus patronos. Ele combate a desinformação nas redes. |

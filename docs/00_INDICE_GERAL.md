@@ -31,13 +31,13 @@
 | `08_PRODUCAO_E_PROXIMOS_PASSOS.md` | Plataforma, equipe, cronograma, validação, legal |
 | `09_GLOSSARIO.md` | Termos |
 | `10_GUIA_DE_ESTILO_E_TOM.md` | Regras de escrita |
-| `11_FICHAS_DOS_ATORES.md` | 20 atores |
+| `11_FICHAS_DOS_ATORES.md` | 24 atores |
 | `12_FICHAS_DOS_MODOS.md` | 10 modos |
 | `13_ARQUITETURA_TECNICA.md` | Stack, estrutura de dados, sistemas, fluxos |
 | `14_UI_UX_DESIGN.md` | Telas, HUD, interações e acessibilidade |
 | `15_FLUXO_DO_JOGO.md` | Fluxo completo de uma partida |
 | `16_MANUAL_DO_JOGADOR.md` | Guia para jogar |
-| `17_ROTEIRO_DAS_CARTAS.md` | Roteiro das 340 cartas |
+| `17_ROTEIRO_DAS_CARTAS.md` | Roteiro das 342 cartas |
 | `18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | Roteiro das Cartas de Aprendizado |
 
 ---
@@ -50,8 +50,8 @@
 | **Medidores** | ✅ 8 + 3 sub-medidores |
 | **Turnos** | ✅ 4 turnos |
 | **Modos** | ✅ 10 modos |
-| **Atores** | ✅ 14 + 6 de expansão |
-| **Cartas** | ✅ 340 inventariadas |
+| **Atores** | ✅ 24 atores em 4 categorias |
+| **Cartas** | ✅ 342 roteirizadas |
 | **Finais** | ✅ 26 consolidados |
 | **Impeachment** | ✅ Cena de golpe |
 | **Eventos Encadeados** | ✅ 78 mapeados |

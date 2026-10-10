@@ -567,7 +567,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Unidade de decisão do jogo. Cada carta apresenta um problema e duas opções.
 
-**No jogo:** Existem 340 cartas, divididas em institucionais, temáticas e de atores.
+**No jogo:** Existem 342 cartas, divididas em institucionais, temáticas e de atores.
 
 **Fundamentação:** O sistema de cartas é inspirado no *Reigns*, que usa um "saco de cartas" que aumenta e diminui conforme o estado do reino.
 
@@ -599,7 +599,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Personagem que interage com o jogador, oferecendo apoio ou fazendo exigências.
 
-**No jogo:** Existem 20 atores, divididos em 14 base e 6 de expansão.
+**No jogo:** Existem 24 atores, divididos em 4 categorias: Capital, Estado, Sociedade Civil e Mídia e Tecnologia.
 
 **Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Coronel, Tecnocrata, Populista, etc.).
 

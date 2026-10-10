@@ -1,8 +1,8 @@
 # 18 — Roteiro das Cartas de Aprendizado
 
-**Documento de Roteiro das 340 Cartas de Aprendizado do Jogo "O Planalto"**
+**Documento de Roteiro das 342 Cartas de Aprendizado do Jogo "O Planalto"**
 
-Este documento define o texto final das 340 Cartas de Aprendizado do jogo, organizadas por modo e por tipo. Cada Carta de Aprendizado segue o formato padrão de 5 blocos: vivencia, conceito, dados, fonte e frase de impacto.
+Este documento define o texto final das 342 Cartas de Aprendizado do jogo, organizadas por modo e por tipo. Cada Carta de Aprendizado segue o formato padrão de 5 blocos: vivencia, conceito, dados, fonte e frase de impacto.
 
 ---
 
@@ -3929,7 +3929,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-*(... continuando com as demais cartas do Modo Impeachment e todos os outros modos. O documento completo tem 340 Cartas de Aprendizado.)*
+*(... continuando com as demais cartas do Modo Impeachment e todos os outros modos. O documento completo tem 342 Cartas de Aprendizado.)*
 
 ---
 
@@ -3939,8 +3939,8 @@ As Cartas de Aprendizado seguem **6 princípios**:
 | :--- | :--- | :--- |
 | **Institucionais** | 200 | Em desenvolvimento |
 | **Temáticas** | 70 | Em desenvolvimento |
-| **Atores** | 70 | Em desenvolvimento |
-| **Total** | **340** | — |
+| **Atores** | 72 | Em desenvolvimento |
+| **Total** | **342** | — |
 
 **Observação:** Este documento está em desenvolvimento. As Cartas de Aprendizado listadas acima são exemplos do formato. O roteiro completo será preenchido gradualmente, seguindo a estrutura definida.
 
