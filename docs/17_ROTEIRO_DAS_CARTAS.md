@@ -1374,7 +1374,7 @@ text
 | **Problema** | A polícia matou 11 pessoas por dia em 2024. 86% eram negras. |
 | **Opção Esquerda** | Investigar e punir |
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Integridade` +5, `Capital Político` -10 |
-| **Consequência Esquerda** | "A impunidade policial continua." |
+| **Consequência Esquerda** | "A justiça é feita." |
 | **Opção Direita** | Defender a polícia |
 | **Efeitos Direita** | `Segurança` +5, `Dignidade` -15, `Integridade` -5 |
 | **Consequência Direita** | "A impunidade policial continua." |
@@ -2352,6 +2352,294 @@ text
 | **Consequência Direita** | "A comissão suaviza o parecer. Mas o povo percebe a compra de votos." |
 | **Aprendizado** | Vivencia: "Você decidiu se denunciava o golpe ou negociava nos bastidores." · Conceito: "A comissão especial emite um parecer em até 5 sessões. Se aprovado por maioria simples, o processo vai a plenário." · Dados: "Em 2016, o relator foi Antonio Anastasia, que admitiu que as pedaladas não configuravam crime. Mesmo assim, o processo seguiu." · Fonte: "Revista Acervo, 2025." · Frase: "A comissão é uma farsa. Mas a farsa tem poder." |
 
+### INST-143 — A Votação na Câmara
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | A Votação na Câmara |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | A Câmara vota a abertura do processo. A oposição precisa de 342 votos. Faltam 20. |
+| **Opção Esquerda** | Mobilizar a base |
+| **Efeitos Esquerda** | `Capital Político` -15, `Caixa` -20, `Legitimidade` +5 |
+| **Consequência Esquerda** | "A base segura os votos. Mas cada voto teve preço." |
+| **Opção Direita** | Respeitar o voto de cada deputado |
+| **Efeitos Direita** | `Integridade` +10, `Capital Político` -10, `Legitimidade` -10 |
+| **Consequência Direita** | "Cada deputado vota com a própria conta. O processo avança." |
+| **Aprendizado** | Vivencia: "Você decidiu se mobilizava a base ou respeitava a consciência de cada parlamentar." · Conceito: "A Câmara autoriza a instauração do processo por 2/3 dos votos (342 deputados)." · Dados: "Em 2016, Dilma perdeu a votação por 367 votos a 137. A pergunta não era se ela tinha cometido crime, mas se tinha apoio político." · Fonte: "Câmara dos Deputados, 2016." · Frase: "O impeachment não é justiça. É o Congresso te dando um recado." |
+
+### INST-144 — O Julgamento no Senado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | O Julgamento no Senado |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | O processo chega ao Senado. O presidente do STF comanda a sessão. São precisos 54 votos para condenar. |
+| **Opção Esquerda** | Lutar até o fim |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Você se defende na tribuna. O Senado ouve, mas já decidiu." |
+| **Opção Direita** | Renunciar ao mandato |
+| **Efeitos Direita** | `Legitimidade` -15, `Capital Político` +5, `Consciência` -5 |
+| **Consequência Direita** | "Você sai antes do fim. O julgamento fica sem a sua voz." |
+| **Aprendizado** | Vivencia: "Você decidiu se renunciava ou lutava até o fim." · Conceito: "O Senado julga o presidente sob a presidência do STF. A condenação exige 2/3 dos votos (54 senadores)." · Dados: "Em 2016, Dilma foi condenada por 61 votos a 20. Mas manteve seus direitos políticos. O processo foi vendido como rigoroso, mas era político." · Fonte: "Senado Federal, 2016." · Frase: "O impeachment é um julgamento político, não jurídico." |
+
+### INST-145 — O Desfecho
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | O Desfecho |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | O Senado vota. O resultado sai em minutos. Você ainda pode reagir. |
+| **Opção Esquerda** | Lutar pela absolvição |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +10, `Capital Político` -20 |
+| **Consequência Esquerda** | "Você vira símbolo de resistência. Mas o Congresso não perdoa." |
+| **Opção Direita** | Aceitar a condenação |
+| **Efeitos Direita** | `Legitimidade` -20, `Consciência` -10 |
+| **Consequência Direita** | "Você deixa o Planalto. O golpe se consuma sem resistência." |
+| **Aprendizado** | Vivencia: "Você decidiu se aceitava a absolvição ou a condenação." · Conceito: "O impeachment é um julgamento político, não jurídico. A condenação não exige prova de crime, mas sim a perda de sustentação política." · Dados: "Em 2016, Dilma foi condenada por pedaladas fiscais. O próprio relator admitiu que não eram crime. Foi um golpe institucional." · Fonte: "Revista Acervo, 2025." · Frase: "O golpe foi consumado. A democracia foi ferida." |
+
+### INST-146 — Negociar com Presidente da Câmara
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Negociar com Presidente da Câmara |
+| **Modo** | Impeachment |
+| **Cor** | Amarelo |
+| **Problema** | O presidente da Câmara pode engavetar o pedido de impeachment. Em troca, quer o controle de um ministério. |
+| **Opção Esquerda** | Recusar a chantagem |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "O pedido avança. Mas você não se vendeu." |
+| **Opção Direita** | Entregar o ministério |
+| **Efeitos Direita** | `Capital Político` +15, `Integridade` -15, `Legitimidade` -5 |
+| **Consequência Direita** | "O pedido vai para a gaveta. E fica lá enquanto você pagar." |
+| **Aprendizado** | Dados: "Só o presidente da Câmara decide se um pedido de impeachment anda. A lei não fixa prazo para isso." · Frase: "A gaveta do presidente da Câmara é a arma mais poderosa de Brasília." |
+
+### INST-147 — Mobilizar a Base
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mobilizar a Base |
+| **Modo** | Impeachment |
+| **Cor** | Amarelo |
+| **Problema** | Sua base está rachando. Os líderes pedem emendas e cargos para votar contra o impeachment. |
+| **Opção Esquerda** | Cobrar lealdade sem pagar |
+| **Efeitos Esquerda** | `Integridade` +5, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Alguns ficam. Outros já negociam com o vice." |
+| **Opção Direita** | Liberar emendas e cargos |
+| **Efeitos Direita** | `Caixa` -25, `Capital Político` +15, `Integridade` -10 |
+| **Consequência Direita** | "A base volta. Até a próxima fatura." |
+| **Aprendizado** | Dados: "No presidencialismo de coalizão, o governo precisa de maioria no Congresso. E maioria custa caro." · Frase: "A base não é aliada. É cliente." |
+
+### INST-148 — Apelar ao Povo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Apelar ao Povo |
+| **Modo** | Impeachment |
+| **Cor** | Vermelho |
+| **Problema** | O impeachment avança. Você pode ir à TV e pedir apoio direto da população. |
+| **Opção Esquerda** | Fazer um pronunciamento |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O povo ouve. O Congresso se sente ameaçado." |
+| **Opção Direita** | Manter o silêncio |
+| **Efeitos Direita** | `Capital Político` +5, `Legitimidade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O silêncio vira manchete: 'Governo acuado'." |
+| **Aprendizado** | Dados: "O impeachment é julgado pelo Congresso, não pelo povo. Mas a pressão popular muda votos." · Frase: "Quem não fala com o povo deixa outros falarem por você." |
+
+### INST-149 — Confiar na Base
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Confiar na Base |
+| **Modo** | Impeachment |
+| **Cor** | Amarelo |
+| **Problema** | Os líderes garantem 200 votos contra o impeachment. Você não tem como conferir. |
+| **Opção Esquerda** | Contar voto por voto |
+| **Efeitos Esquerda** | `Capital Político` +5, `Integridade` +5, `Caixa` -10 |
+| **Consequência Esquerda** | "Você descobre a traição a tempo. Faltam 30 votos." |
+| **Opção Direita** | Confiar nos líderes |
+| **Efeitos Direita** | `Capital Político` -15, `Legitimidade` -5 |
+| **Consequência Direita** | "No dia da votação, a base some." |
+| **Aprendizado** | Dados: "Para barrar o processo na Câmara, o governo precisa de 172 deputados. Em 2016, teve 137 votos contra a abertura." · Frase: "Base que não se conta é base que já foi." |
+
+### INST-150 — Renunciar
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Renunciar |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | Ministros sugerem que você renuncie antes da votação. Assim, evita a humilhação. |
+| **Opção Esquerda** | Ficar e enfrentar |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Você fica. O processo segue, mas a luta também." |
+| **Opção Direita** | Renunciar |
+| **Efeitos Direita** | `Legitimidade` -15, `Capital Político` +10, `Consciência` -10 |
+| **Consequência Direita** | "Você sai. O vice assume no dia seguinte." |
+| **Aprendizado** | Dados: "Em 1992, um presidente renunciou durante o julgamento. O Senado o condenou mesmo assim: 8 anos sem direitos políticos." · Frase: "Renunciar não apaga o julgamento. Só tira você da sala." |
+
+### INST-151 — Denunciar o Golpe
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Denunciar o Golpe |
+| **Modo** | Impeachment |
+| **Cor** | Roxo |
+| **Problema** | O processo não aponta crime de responsabilidade. Juristas falam em golpe parlamentar. |
+| **Opção Esquerda** | Denunciar o golpe em rede nacional |
+| **Efeitos Esquerda** | `Consciência` +15, `Legitimidade` +5, `Capital Político` -20 |
+| **Consequência Esquerda** | "A palavra 'golpe' toma as ruas. O Congresso fecha as portas." |
+| **Opção Direita** | Evitar a palavra 'golpe' |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Integridade` -5 |
+| **Consequência Direita** | "Você fala em 'respeito às instituições'. Ninguém entende nada." |
+| **Aprendizado** | Dados: "A Lei 1.079/1950 define os crimes de responsabilidade. Sem crime, não há base para impeachment." · Frase: "Impeachment sem crime tem outro nome." |
+
+### INST-152 — Negociar com o Senado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Negociar com o Senado |
+| **Modo** | Impeachment |
+| **Cor** | Amarelo |
+| **Problema** | Faltam 6 senadores para barrar a condenação. Eles pedem obras em seus estados. |
+| **Opção Esquerda** | Recusar a barganha |
+| **Efeitos Esquerda** | `Integridade` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "Os senadores votam contra você. Mas sem cheque." |
+| **Opção Direita** | Liberar as obras |
+| **Efeitos Direita** | `Caixa` -30, `Capital Político` +10, `Integridade` -10 |
+| **Consequência Direita** | "Os votos aparecem. As obras, talvez." |
+| **Aprendizado** | Dados: "A condenação exige 54 dos 81 senadores. Bastam 28 votos para barrar." · Frase: "No Senado, cada voto tem endereço." |
+
+### INST-153 — Mobilizar Manifestações
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mobilizar Manifestações |
+| **Modo** | Impeachment |
+| **Cor** | Roxo |
+| **Problema** | Movimentos sociais oferecem levar 1 milhão às ruas contra o impeachment. Em troca, pedem compromisso com suas pautas. |
+| **Opção Esquerda** | Assumir o compromisso |
+| **Efeitos Esquerda** | `Legitimidade` +15, `Consciência` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "As ruas se enchem. O Congresso sente a pressão." |
+| **Opção Direita** | Agradecer e recusar |
+| **Efeitos Direita** | `Capital Político` +5, `Legitimidade` -10 |
+| **Consequência Direita** | "As ruas ficam vazias. O Congresso respira aliviado." |
+| **Aprendizado** | Dados: "Em 1992, as ruas pediram a saída do presidente. Em 2016, as ruas se dividiram." · Frase: "Quem tem a rua tem o que negociar." |
+
+### INST-154 — Aceitar o Resultado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aceitar o Resultado |
+| **Modo** | Impeachment |
+| **Cor** | Amarelo |
+| **Problema** | A Câmara aprovou a abertura. Aliados pedem que você aceite o rito e evite uma crise. |
+| **Opção Esquerda** | Contestar o processo |
+| **Efeitos Esquerda** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Você contesta cada etapa. O país discute o rito." |
+| **Opção Direita** | Aceitar o rito em silêncio |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Legitimidade` -5 |
+| **Consequência Direita** | "O rito segue sem barulho. E sem você." |
+| **Aprendizado** | Dados: "Se o Senado instaura o processo, o presidente é afastado por até 180 dias." · Frase: "Aceitar calado também é escolher." |
+
+### INST-155 — Lutar Até o Fim
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Lutar até o Fim |
+| **Modo** | Impeachment |
+| **Cor** | Roxo |
+| **Problema** | Você está afastado do cargo. O vice governa. Restam 180 dias para o julgamento. |
+| **Opção Esquerda** | Percorrer o país em sua defesa |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Consciência` +10, `Caixa` -10 |
+| **Consequência Esquerda** | "Você fala em praças lotadas. O Senado olha as pesquisas." |
+| **Opção Direita** | Esperar o julgamento em casa |
+| **Efeitos Direita** | `Capital Político` +5, `Legitimidade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O país esquece você. O vice ocupa o espaço." |
+| **Aprendizado** | Dados: "Se o julgamento não termina em 180 dias, o presidente volta ao cargo." · Frase: "A luta não acaba no afastamento." |
+
+### INST-156 — Pedir Apoio Internacional
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pedir Apoio Internacional |
+| **Modo** | Impeachment |
+| **Cor** | Azul |
+| **Problema** | Governos estrangeiros oferecem declarações contra o impeachment. A oposição fala em 'interferência externa'. |
+| **Opção Esquerda** | Aceitar as declarações |
+| **Efeitos Esquerda** | `Legitimidade` +5, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O mundo olha para o Brasil. O Congresso se irrita." |
+| **Opção Direita** | Recusar ajuda de fora |
+| **Efeitos Direita** | `Soberania` +5, `Legitimidade` -5 |
+| **Consequência Direita** | "O processo segue em casa. Sem testemunhas de fora." |
+| **Aprendizado** | Dados: "Organismos internacionais acompanham crises democráticas. Mas não podem barrar um processo do Congresso." · Frase: "Democracia ferida chama atenção. Mas não chama socorro." |
+
+### INST-157 — Acionar o STF
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Acionar o STF |
+| **Modo** | Impeachment |
+| **Cor** | Azul |
+| **Problema** | O rito do impeachment tem falhas. Seus advogados querem levar o caso ao STF. |
+| **Opção Esquerda** | Acionar o STF |
+| **Efeitos Esquerda** | `Integridade` +5, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O STF ajusta o rito. Mas não entra no mérito." |
+| **Opção Direita** | Deixar com o Congresso |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -5, `Legitimidade` -5 |
+| **Consequência Direita** | "O Congresso define as regras do próprio jogo." |
+| **Aprendizado** | Dados: "Em 2015, o STF definiu o rito do impeachment. Mas não julga se houve crime: isso cabe ao Senado." · Frase: "O STF cuida do rito. O mérito é político." |
+
+### INST-158 — Convocar Plebiscito
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Convocar Plebiscito |
+| **Modo** | Impeachment |
+| **Cor** | Roxo |
+| **Problema** | Você propõe um plebiscito: o povo decide se o seu mandato continua. O Congresso precisa aprovar. |
+| **Opção Esquerda** | Enviar a proposta |
+| **Efeitos Esquerda** | `Legitimidade` +10, `Consciência` +10, `Capital Político` -20 |
+| **Consequência Esquerda** | "O Congresso engaveta. Mas a ideia ganha as ruas." |
+| **Opção Direita** | Desistir da ideia |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Legitimidade` -5 |
+| **Consequência Direita** | "O impeachment segue. O povo assiste de fora." |
+| **Aprendizado** | Dados: "Só o Congresso pode convocar plebiscito. O último nacional foi em 1993, sobre a forma de governo." · Frase: "Quando o povo não decide, alguém decide por ele." |
+
+### INST-159 — Renunciar Antes da Condenação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Renunciar Antes da Condenação |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | A condenação é certa. Renunciar agora preserva sua biografia. Ficar expõe o processo. |
+| **Opção Esquerda** | Ficar até o voto final |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +10, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Cada senador terá que dizer o voto em voz alta." |
+| **Opção Direita** | Renunciar antes do voto |
+| **Efeitos Direita** | `Capital Político` +5, `Legitimidade` -10, `Consciência` -10 |
+| **Consequência Direita** | "Você sai antes. O processo some das manchetes." |
+| **Aprendizado** | Dados: "Na votação final, cada senador declara o voto em sessão aberta. O registro fica para a história." · Frase: "Quem vota em golpe precisa assinar embaixo." |
+
+### INST-160 — Aceitar a Condenação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aceitar a Condenação |
+| **Modo** | Impeachment |
+| **Cor** | Preto |
+| **Problema** | O Senado condenou. Você pode recorrer ao STF ou passar a faixa ao vice. |
+| **Opção Esquerda** | Recorrer ao STF |
+| **Efeitos Esquerda** | `Integridade` +5, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O STF recebe o recurso. E arquiva em silêncio." |
+| **Opção Direita** | Passar a faixa |
+| **Efeitos Direita** | `Legitimidade` -15, `Consciência` -5 |
+| **Consequência Direita** | "O vice assume. O país segue como se nada tivesse acontecido." |
+| **Aprendizado** | Dados: "Em 2016, a presidenta perdeu o mandato, mas manteve os direitos políticos. Os dois votos foram separados." · Frase: "O mandato acaba. A memória, não." |
+
 ---
 
 ## 17.10 — Cartas do Modo Judiciário (20)
@@ -2372,6 +2660,310 @@ text
 | **Consequência Direita** | "O caso é arquivado. Mas o povo vê que a justiça é diferente para os poderosos." |
 | **Aprendizado** | Vivencia: "Você decidiu se apoiava ou defendia um ministro do STF investigado." · Conceito: "A blindagem institucional protege magistrados corruptos com aposentadoria integral." · Dados: "O Banco Master revelou 52 mensagens entre Vorcaro e Alexandre de Moraes. A CPI pediu impeachment de Toffoli, Moraes e Gilmar." · Fonte: "Polícia Federal, 2026." · Frase: "A justiça é seletiva. Para os pobres, a prisão. Para os ricos, a blindagem." |
 
+### INST-162 — Desembargador Vendendo Sentenças
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Desembargador vendendo sentenças |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | A PF flagra um desembargador vendendo decisões ao agronegócio. O tribunal quer resolver 'internamente'. |
+| **Opção Esquerda** | Exigir investigação pública |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "O caso vira escândalo. A toga perde o brilho." |
+| **Opção Direita** | Respeitar a decisão do tribunal |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O desembargador se aposenta. Com salário integral." |
+| **Aprendizado** | Dados: "A Operação Gemini (2026) achou R$ 14,6 milhões com um desembargador que vendia decisões ao agro." · Frase: "A punição máxima do juiz corrupto é a aposentadoria." |
+
+### INST-163 — STF Declara Lei Inconstitucional
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | STF declara lei inconstitucional |
+| **Modo** | Judiciário |
+| **Cor** | Azul |
+| **Problema** | O STF derruba uma lei aprovada pelo seu governo. Aliados querem limitar os poderes do tribunal. |
+| **Opção Esquerda** | Acatar a decisão |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "A lei cai. A democracia funciona, mesmo contra você." |
+| **Opção Direita** | Limitar o STF |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -15, `Legitimidade` -5 |
+| **Consequência Direita** | "O tribunal perde força. Hoje contra eles. Amanhã, contra você." |
+| **Aprendizado** | Dados: "O controle de constitucionalidade é um freio: o STF pode anular leis que contrariam a Constituição." · Frase: "Freio que só funciona contra o adversário não é freio." |
+
+### INST-164 — Juiz Bloqueia Política Social
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juiz bloqueia política social |
+| **Modo** | Judiciário |
+| **Cor** | Vermelho |
+| **Problema** | Um juiz suspende um programa de renda. Milhões de famílias ficam sem pagamento. |
+| **Opção Esquerda** | Recorrer à instância superior |
+| **Efeitos Esquerda** | `Dignidade` +5, `Integridade` +5, `Capital Político` -5 |
+| **Consequência Esquerda** | "O tribunal derruba a liminar em duas semanas. A fome não espera." |
+| **Opção Direita** | Descumprir a decisão |
+| **Efeitos Direita** | `Dignidade` +10, `Integridade` -15, `Legitimidade` -5 |
+| **Consequência Direita** | "As famílias recebem. Você vira réu por desobediência." |
+| **Aprendizado** | Dados: "A liminar de um único juiz pode suspender uma política nacional até o recurso ser julgado." · Frase: "A caneta de um juiz pesa mais que milhões de votos." |
+
+### INST-165 — PF Prende Governador Aliado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | PF prende governador aliado |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | A PF prende um governador da sua base por desvio na saúde. Seu partido pede que você o defenda. |
+| **Opção Esquerda** | Defender a investigação |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Você perde um aliado. O povo vê que a lei vale para todos." |
+| **Opção Direita** | Atacar a PF |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -15, `Consciência` -10 |
+| **Consequência Direita** | "O partido agradece. O povo anota." |
+| **Aprendizado** | Dados: "A PF é polícia de Estado, não de governo. Ela investiga aliados e adversários." · Frase: "Aliado preso não é perseguição. É investigação." |
+
+### INST-166 — Prisão em Segunda Instância
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Prisão em segunda instância |
+| **Modo** | Judiciário |
+| **Cor** | Azul |
+| **Problema** | O Congresso quer prender condenados em segunda instância. Juristas dizem que isso fere a Constituição. |
+| **Opção Esquerda** | Defender o fim dos recursos |
+| **Efeitos Esquerda** | `Integridade` +5, `Dignidade` +5, `Segurança` -5, `Capital Político` -10 |
+| **Consequência Esquerda** | "A Constituição é respeitada. A sensação de impunidade cresce." |
+| **Opção Direita** | Apoiar a prisão antecipada |
+| **Efeitos Direita** | `Segurança` +10, `Capital Político` +10, `Dignidade` -10 |
+| **Consequência Direita** | "As prisões aumentam. E o preso pobre não tem como recorrer." |
+| **Aprendizado** | Dados: "Em 2019, o STF decidiu que a prisão só vale depois de esgotados todos os recursos." · Frase: "A pressa em prender sempre pega o pobre primeiro." |
+
+### INST-167 — Habeas Corpus para Banqueiro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Habeas corpus para banqueiro |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | Um banqueiro preso por fraude é solto em 24 horas. Um jovem pobre segue preso há meses por furto. |
+| **Opção Esquerda** | Denunciar a seletividade |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O caso vira debate nacional. O tribunal reage." |
+| **Opção Direita** | Não comentar decisão judicial |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Dignidade` -5 |
+| **Consequência Direita** | "O banqueiro viaja. O jovem continua esperando." |
+| **Aprendizado** | Dados: "O habeas corpus protege qualquer pessoa de prisão ilegal. Na prática, chega antes a quem paga bons advogados." · Frase: "A lei é igual. O acesso a ela, não." |
+
+### INST-168 — PF Investiga Ministro do STF
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | PF investiga ministro do STF |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | A PF pede para investigar um ministro do STF. Só o próprio STF pode autorizar. |
+| **Opção Esquerda** | Apoiar a investigação |
+| **Efeitos Esquerda** | `Integridade` +15, `Consciência` +10, `Capital Político` -20 |
+| **Consequência Esquerda** | "O STF entra em crise. A lei chega ao topo." |
+| **Opção Direita** | Pedir 'prudência' |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O pedido dorme na gaveta do tribunal." |
+| **Aprendizado** | Dados: "Ministros do STF têm foro no próprio STF: são julgados pelos colegas." · Frase: "Quem julga a si mesmo raramente se condena." |
+
+### INST-169 — CNJ Afasta Juiz
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | CNJ afasta juiz |
+| **Modo** | Judiciário |
+| **Cor** | Azul |
+| **Problema** | O CNJ afasta um juiz acusado de assédio. A associação de magistrados fala em 'ataque à independência'. |
+| **Opção Esquerda** | Apoiar o CNJ |
+| **Efeitos Esquerda** | `Integridade` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O juiz é afastado. A toga deixa de ser escudo." |
+| **Opção Direita** | Defender a magistratura |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -10, `Dignidade` -5 |
+| **Consequência Direita** | "O juiz volta. As vítimas desistem de denunciar." |
+| **Aprendizado** | Dados: "O CNJ foi criado em 2004 para controlar o Judiciário. Sua pena máxima é a aposentadoria compulsória." · Frase: "Controle externo assusta quem tem algo a esconder." |
+
+### INST-170 — Mais Ministros no STF
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mais ministros no STF |
+| **Modo** | Judiciário |
+| **Cor** | Preto |
+| **Problema** | Aliados propõem aumentar de 11 para 15 os ministros do STF. Você indicaria os novos. |
+| **Opção Esquerda** | Rejeitar a proposta |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O STF segue com 11. Suas pautas seguem travadas." |
+| **Opção Direita** | Aumentar o STF |
+| **Efeitos Direita** | `Capital Político` +15, `Integridade` -20, `Legitimidade` -10 |
+| **Consequência Direita** | "Você ganha a maioria. E ensina o próximo governo a fazer igual." |
+| **Aprendizado** | Dados: "Em 1965, a ditadura aumentou o STF de 11 para 16 ministros para controlar o tribunal." · Frase: "Quem enche o tribunal hoje entrega o modelo ao próximo." |
+
+### INST-171 — Juiz Bloqueia Demarcação Indígena
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juiz bloqueia demarcação indígena |
+| **Modo** | Judiciário |
+| **Cor** | Verde |
+| **Problema** | Um juiz suspende a demarcação de uma terra indígena a pedido de fazendeiros. Os indígenas acampam em Brasília. |
+| **Opção Esquerda** | Recorrer e receber os indígenas |
+| **Efeitos Esquerda** | `Dignidade` +10, `Soberania` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O recurso anda. Os indígenas são ouvidos no Planalto." |
+| **Opção Direita** | Aceitar a suspensão |
+| **Efeitos Direita** | `Capital Político` +10, `Dignidade` -10, `Soberania` -5 |
+| **Consequência Direita** | "Os fazendeiros comemoram. Os conflitos voltam." |
+| **Aprendizado** | Dados: "A Constituição de 1988 mandou demarcar as terras indígenas em 5 anos. O prazo venceu em 1993." · Frase: "A Constituição mandou demarcar. O atraso tem dono." |
+
+### INST-172 — Julgamento do Marco Temporal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Julgamento do Marco Temporal |
+| **Modo** | Judiciário |
+| **Cor** | Verde |
+| **Problema** | O STF vai julgar o Marco Temporal. A bancada ruralista pressiona você a defender a tese. |
+| **Opção Esquerda** | Defender os direitos indígenas |
+| **Efeitos Esquerda** | `Dignidade` +10, `Soberania` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "O STF derruba a tese. A bancada promete revanche." |
+| **Opção Direita** | Apoiar a tese ruralista |
+| **Efeitos Direita** | `Capital Político` +15, `Dignidade` -10, `Integridade` -5 |
+| **Consequência Direita** | "A bancada aplaude. Os indígenas perdem aliados." |
+| **Aprendizado** | Dados: "Em 2023, o STF rejeitou o Marco Temporal. Meses depois, o Congresso aprovou a tese em lei." · Frase: "Quando o STF diz não, o Congresso tenta de novo." |
+
+### INST-173 — Juíza Ameaçada por Milícias
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juíza ameaçada por milícias |
+| **Modo** | Judiciário |
+| **Cor** | Preto |
+| **Problema** | Uma juíza que condenou milicianos recebe ameaças de morte. Ela pede proteção federal. |
+| **Opção Esquerda** | Garantir proteção federal |
+| **Efeitos Esquerda** | `Segurança` +5, `Integridade` +10, `Caixa` -10 |
+| **Consequência Esquerda** | "A juíza segue trabalhando. A milícia recua." |
+| **Opção Direita** | Deixar com o estado |
+| **Efeitos Direita** | `Caixa` +5, `Segurança` -10, `Integridade` -10 |
+| **Consequência Direita** | "A juíza abandona o caso. O medo vence." |
+| **Aprendizado** | Dados: "Em 2011, uma juíza foi assassinada no Rio por policiais que ela julgava." · Frase: "Juiz com medo não julga. Obedece." |
+
+### INST-174 — Homofobia É Crime
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Homofobia é crime |
+| **Modo** | Judiciário |
+| **Cor** | Vermelho |
+| **Problema** | O STF equipara a homofobia ao racismo. A bancada religiosa pede que você reaja. |
+| **Opção Esquerda** | Apoiar a decisão |
+| **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "A decisão vale. A violência passa a ter nome na lei." |
+| **Opção Direita** | Criticar o STF |
+| **Efeitos Direita** | `Capital Político` +10, `Dignidade` -10, `Integridade` -5 |
+| **Consequência Direita** | "A bancada aplaude. Os agressores também." |
+| **Aprendizado** | Dados: "Em 2019, o STF decidiu que homofobia e transfobia são crimes, como o racismo." · Frase: "Ódio não é opinião. É crime." |
+
+### INST-175 — Tribunal de Contas Aprova Contas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tribunal de Contas aprova contas |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | O Tribunal de Contas aprova as contas de um governador aliado, mesmo com obras superfaturadas. |
+| **Opção Esquerda** | Pedir revisão das contas |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "As contas voltam à análise. O aliado se irrita." |
+| **Opção Direita** | Comemorar a aprovação |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -10, `Caixa` -5 |
+| **Consequência Direita** | "As obras seguem caras. E aprovadas." |
+| **Aprendizado** | Dados: "Nos Tribunais de Contas dos estados, 4 dos 7 conselheiros são indicados pela Assembleia Legislativa." · Frase: "Quem fiscaliza foi indicado por quem é fiscalizado." |
+
+### INST-176 — Prisão de Banqueiro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Prisão de banqueiro |
+| **Modo** | Judiciário |
+| **Cor** | Laranja |
+| **Problema** | A Justiça manda prender um banqueiro que fraudou bilhões. O mercado ameaça reagir. |
+| **Opção Esquerda** | Apoiar a prisão |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Caixa` -10 |
+| **Consequência Esquerda** | "O banqueiro é preso. A bolsa cai um dia e volta." |
+| **Opção Direita** | Pedir 'cautela' com o mercado |
+| **Efeitos Direita** | `Caixa` +5, `Integridade` -10, `Consciência` -10 |
+| **Consequência Direita** | "O banqueiro responde solto. A fraude vira 'erro de gestão'." |
+| **Aprendizado** | Dados: "O caso Banco Master bloqueou R$ 5,7 bilhões e revelou R$ 758 milhões em ativos sem lastro." · Frase: "Quando o rico vai preso, o mercado chama de risco." |
+
+### INST-177 — Juiz Recebe Propina
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juiz recebe propina |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | Um juiz é flagrado recebendo propina. A punição prevista é aposentadoria com salário integral. |
+| **Opção Esquerda** | Propor o fim da aposentadoria-punição |
+| **Efeitos Esquerda** | `Integridade` +15, `Consciência` +5, `Capital Político` -20 |
+| **Consequência Esquerda** | "A magistratura reage. O povo apoia." |
+| **Opção Direita** | Deixar a lei como está |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O juiz se aposenta. E recebe todo mês." |
+| **Aprendizado** | Dados: "A aposentadoria compulsória é a punição mais comum para magistrados corruptos." · Frase: "No Brasil, o juiz corrupto é punido com férias eternas." |
+
+### INST-178 — Porte de Drogas Descriminalizado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Porte de drogas descriminalizado |
+| **Modo** | Judiciário |
+| **Cor** | Preto |
+| **Problema** | O STF decide que portar maconha para uso pessoal não é crime. A bancada da bala quer reverter. |
+| **Opção Esquerda** | Defender a decisão |
+| **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência Esquerda** | "Menos jovens presos por um cigarro." |
+| **Opção Direita** | Apoiar a reversão |
+| **Efeitos Direita** | `Capital Político` +10, `Segurança` +5, `Dignidade` -10 |
+| **Consequência Direita** | "A lei endurece. As prisões enchem de novo." |
+| **Aprendizado** | Dados: "Em 2024, o STF fixou 40 gramas de maconha como limite para separar usuário de traficante." · Frase: "Sem critério, quem decide é a cor da pele." |
+
+### INST-179 — PF Prende Lobista do STJ
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | PF prende lobista do STJ |
+| **Modo** | Judiciário |
+| **Cor** | Amarelo |
+| **Problema** | A PF prende um lobista que vendia acesso a ministros do STJ. A lista de clientes é longa. |
+| **Opção Esquerda** | Apoiar a investigação |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "A lista vaza. Aliados aparecem nela." |
+| **Opção Direita** | Pedir sigilo |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -15 |
+| **Consequência Direita** | "A lista some. O lobista volta ao trabalho." |
+| **Aprendizado** | Dados: "A venda de decisões já foi flagrada em vários tribunais: TJ-ES (2008) e TJ-BA (2019)." · Frase: "Onde a decisão tem preço, a justiça vira leilão." |
+
+### INST-180 — Ouvidoria Externa do Judiciário
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ouvidoria externa do Judiciário |
+| **Modo** | Judiciário |
+| **Cor** | Azul |
+| **Problema** | Você propõe uma ouvidoria externa, com cidadãos, para fiscalizar o Judiciário. Os juízes resistem. |
+| **Opção Esquerda** | Enviar a proposta |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "O debate começa. Os tribunais se fecham." |
+| **Opção Direita** | Recuar |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -5, `Consciência` -5 |
+| **Consequência Direita** | "O Judiciário segue fiscalizando a si mesmo." |
+| **Aprendizado** | Dados: "O CNJ tem 15 membros. Só 2 vagas são de cidadãos, indicados pela Câmara e pelo Senado." · Frase: "Poder sem fiscal vira privilégio." |
+
 ---
 
 ## 17.11 — Cartas do Modo Influenciador (20)
@@ -2391,6 +2983,310 @@ text
 | **Efeitos Direita** | `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10 |
 | **Consequência Direita** | "O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores." |
 | **Aprendizado** | Vivencia: "Você decidiu se aceitava ou recusava o apoio de um influenciador financiado por bets." · Conceito: "As bets financiam influenciadores com comissão sobre as perdas dos seguidores. O 'cachê da desgraça alheia' é uma das formas mais perversas de exploração digital." · Dados: "A Blaze destinou R$ 330 milhões à propaganda. Ofertas a influenciadores chegaram a R$ 10 milhões por contrato." · Fonte: "Piauí, 2024." · Frase: "O influenciador lucra com a sua perda. E você aplaude." |
+
+### INST-182 — Influenciadora Apoiada por Bets
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora apoiada por bets |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma influenciadora quer ser candidata pelo seu partido. A campanha dela é paga por uma casa de apostas. |
+| **Opção Esquerda** | Vetar a candidatura |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O partido perde votos. Mas não vira vitrine de bet." |
+| **Opção Direita** | Aceitar a candidata |
+| **Efeitos Direita** | `Capital Político` +10, `Legitimidade` +5, `Integridade` -15 |
+| **Consequência Direita** | "Ela é eleita. A bet ganha uma deputada." |
+| **Aprendizado** | Dados: "A Blaze destinou R$ 330 milhões à propaganda. Ofertas a influenciadores chegaram a R$ 10 milhões por contrato." · Frase: "A bet não patrocina. Ela investe." |
+
+### INST-183 — Youtuber Espalha Fake News
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Youtuber espalha fake news |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Um youtuber diz que o governo vai confiscar a poupança. O vídeo tem 5 milhões de visualizações. |
+| **Opção Esquerda** | Desmentir com dados |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +10, `Caixa` -5 |
+| **Consequência Esquerda** | "O desmentido chega a menos gente. Mas chega." |
+| **Opção Direita** | Processar o youtuber |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -5, `Consciência` -5, `Legitimidade` -5 |
+| **Consequência Direita** | "Ele vira mártir da 'censura'. O vídeo dobra." |
+| **Aprendizado** | Dados: "78% dos brasileiros caem em fake news que mexem com as emoções." · Frase: "A mentira corre. A verdade precisa de pernas." |
+
+### INST-184 — Influenciadora Promove Bet
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora promove bet |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma influenciadora ensina seguidores a 'ganhar dinheiro' com apostas. Ela recebe parte do que eles perdem. |
+| **Opção Esquerda** | Proibir propaganda de bets |
+| **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Caixa` -10 |
+| **Consequência Esquerda** | "Os anúncios somem. A arrecadação cai." |
+| **Opção Direita** | Apenas exigir um aviso |
+| **Efeitos Direita** | `Caixa` +10, `Dignidade` -10, `Consciência` -5 |
+| **Consequência Direita** | "O aviso aparece em letra miúda. As perdas continuam." |
+| **Aprendizado** | Dados: "As bets pagam influenciadores com comissão sobre as perdas dos seguidores: o 'cachê da desgraça alheia'." · Frase: "Quando o seguidor perde, o influenciador ganha." |
+
+### INST-185 — Streamer Critica o Governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Streamer critica o governo |
+| **Modo** | Influenciador |
+| **Cor** | Amarelo |
+| **Problema** | Um streamer com 3 milhões de seguidores critica sua política econômica. Aliados querem derrubar o canal. |
+| **Opção Esquerda** | Responder ao vivo no canal dele |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +5, `Capital Político` -5 |
+| **Consequência Esquerda** | "O debate bate recorde. Nem todos concordam, mas todos ouvem." |
+| **Opção Direita** | Pedir a remoção do canal |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -15, `Consciência` -10 |
+| **Consequência Direita** | "O canal cai. A crítica se espalha em mil outros." |
+| **Aprendizado** | Dados: "A liberdade de expressão protege a crítica ao governo. Inclusive a crítica injusta." · Frase: "Governo que cala crítico confessa fraqueza." |
+
+### INST-186 — Influenciadora Eleita Deputada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora eleita deputada |
+| **Modo** | Influenciador |
+| **Cor** | Amarelo |
+| **Problema** | Uma influenciadora eleita com 1 milhão de votos oferece apoio. Ela nunca leu um projeto de lei. |
+| **Opção Esquerda** | Aceitar e oferecer formação |
+| **Efeitos Esquerda** | `Capital Político` +10, `Consciência` +5, `Caixa` -5 |
+| **Consequência Esquerda** | "Ela aprende o básico. E leva o debate aos seguidores." |
+| **Opção Direita** | Tratar só como voto |
+| **Efeitos Direita** | `Capital Político` +10, `Consciência` -10, `Integridade` -5 |
+| **Consequência Direita** | "Ela vota como mandam. E posta o que dá curtida." |
+| **Aprendizado** | Dados: "Candidatos muito votados ajudam a eleger outros do partido. É o efeito do quociente eleitoral." · Frase: "Seguidor não é eleitor consciente. Ainda." |
+
+### INST-187 — Influenciador Financiado Pelo Agro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciador financiado pelo agro |
+| **Modo** | Influenciador |
+| **Cor** | Verde |
+| **Problema** | Um influenciador diz que agrotóxico é 'remédio de planta'. Quem paga os vídeos é uma fabricante. |
+| **Opção Esquerda** | Exigir aviso de publicidade |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +10, `Capital Político` -10 |
+| **Consequência Esquerda** | "O selo de publicidade aparece. O encanto diminui." |
+| **Opção Direita** | Ignorar |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Dignidade` -5 |
+| **Consequência Direita** | "O vídeo viraliza. O veneno ganha nome bonito." |
+| **Aprendizado** | Dados: "O Brasil é o país que mais usa agrotóxicos no mundo." · Frase: "Publicidade disfarçada é mentira com roteiro." |
+
+### INST-188 — Rede de Influenciadores da Igreja
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Rede de influenciadores da igreja |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma igreja paga 200 influenciadores para atacar a educação sexual nas escolas. |
+| **Opção Esquerda** | Expor o financiamento |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "A rede é exposta. A igreja fala em perseguição." |
+| **Opção Direita** | Ignorar a campanha |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Integridade` -5 |
+| **Consequência Direita** | "O pânico moral domina o debate." |
+| **Aprendizado** | Dados: "Pânico moral é criar medo sobre um tema para mobilizar pessoas, como no falso 'kit gay'." · Frase: "O medo mobiliza. A informação liberta." |
+
+### INST-189 — Influenciador Pede Cargos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciador pede cargos |
+| **Modo** | Influenciador |
+| **Cor** | Amarelo |
+| **Problema** | Um influenciador aliado quer um cargo na comunicação do governo. Ele nunca trabalhou com comunicação pública. |
+| **Opção Esquerda** | Recusar o cargo |
+| **Efeitos Esquerda** | `Integridade` +10, `Capital Político` -5, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Ele fica magoado. E posta indiretas." |
+| **Opção Direita** | Dar o cargo |
+| **Efeitos Direita** | `Legitimidade` +5, `Capital Político` +5, `Integridade` -10 |
+| **Consequência Direita** | "Ele assume. A comunicação vira palco pessoal." |
+| **Aprendizado** | Dados: "Cargos de confiança dispensam concurso. Por isso viram moeda de troca." · Frase: "Cargo público não é prêmio por curtida." |
+
+### INST-190 — Influenciadora contra Vacinação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora contra vacinação |
+| **Modo** | Influenciador |
+| **Cor** | Vermelho |
+| **Problema** | Uma influenciadora diz que vacinas causam doenças. Os casos de sarampo voltam a subir. |
+| **Opção Esquerda** | Lançar campanha de vacinação |
+| **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +10, `Caixa` -10 |
+| **Consequência Esquerda** | "As filas voltam aos postos." |
+| **Opção Direita** | Evitar a polêmica |
+| **Efeitos Direita** | `Caixa` +5, `Dignidade` -15, `Consciência` -5 |
+| **Consequência Direita** | "O sarampo volta às escolas." |
+| **Aprendizado** | Dados: "Em 2019, o Brasil perdeu o certificado de país livre do sarampo." · Frase: "Mentira sobre vacina mata devagar." |
+
+### INST-191 — Elogio Pago ao Governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Elogio pago ao governo |
+| **Modo** | Influenciador |
+| **Cor** | Amarelo |
+| **Problema** | Uma agência oferece 500 influenciadores para elogiar seu governo. Ninguém diria que é publicidade. |
+| **Opção Esquerda** | Recusar a oferta |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Seu governo fala com a própria voz." |
+| **Opção Direita** | Contratar a rede |
+| **Efeitos Direita** | `Legitimidade` +10, `Caixa` -15, `Integridade` -15 |
+| **Consequência Direita** | "Os elogios bombam. Até alguém achar o contrato." |
+| **Aprendizado** | Dados: "Uma 'fazenda' de 255 perfis coordenados alcançou 58 milhões de visualizações." · Frase: "Elogio comprado é propaganda com máscara." |
+
+### INST-192 — Influenciadora Presa por Lavagem
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora presa por lavagem |
+| **Modo** | Influenciador |
+| **Cor** | Amarelo |
+| **Problema** | Uma influenciadora aliada é presa por lavar dinheiro de bets. Os seguidores pedem que você a defenda. |
+| **Opção Esquerda** | Deixar a Justiça agir |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Os seguidores se revoltam. A lei segue." |
+| **Opção Direita** | Defender a influenciadora |
+| **Efeitos Direita** | `Legitimidade` +5, `Integridade` -15, `Consciência` -5 |
+| **Consequência Direita** | "Ela agradece nos stories. A investigação anota." |
+| **Aprendizado** | Dados: "A CPI das Bets pediu o indiciamento de 16 pessoas. O relatório foi rejeitado por 4 votos a 3." · Frase: "Fama não é inocência." |
+
+### INST-193 — Apoio em Troca de Isenção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Apoio em troca de isenção |
+| **Modo** | Influenciador |
+| **Cor** | Laranja |
+| **Problema** | Influenciadores de finanças prometem apoio se você isentar de impostos os cursos que eles vendem. |
+| **Opção Esquerda** | Recusar a isenção |
+| **Efeitos Esquerda** | `Integridade` +10, `Caixa` +5, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Eles viram oposição. O imposto fica." |
+| **Opção Direita** | Conceder a isenção |
+| **Efeitos Direita** | `Legitimidade` +10, `Caixa` -10, `Integridade` -10 |
+| **Consequência Direita** | "Os cursos bombam. O Estado arrecada menos." |
+| **Aprendizado** | Dados: "Isenção fiscal é dinheiro público que deixa de entrar. Alguém paga a diferença." · Frase: "Todo benefício fiscal tem alguém pagando a conta." |
+
+### INST-194 — Rede de Influenciadores das Bets
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Rede de influenciadores das bets |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma rede de influenciadores das bets usa contas laranjas para movimentar milhões. A Receita pede ação. |
+| **Opção Esquerda** | Bloquear as contas |
+| **Efeitos Esquerda** | `Integridade` +10, `Caixa` +10, `Capital Político` -15 |
+| **Consequência Esquerda** | "O dinheiro para. A bancada das bets reage." |
+| **Opção Direita** | Esperar a CPI |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -10, `Caixa` -5 |
+| **Consequência Direita** | "A CPI termina sem culpados. O dinheiro segue." |
+| **Aprendizado** | Dados: "A CPI das Bets foi instalada em 2025 para investigar apostas online e lavagem de dinheiro." · Frase: "Lavagem com filtro bonito continua lavagem." |
+
+### INST-195 — Fake News contra o STF
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fake news contra o STF |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Influenciadores espalham um vídeo falso de um ministro do STF. Nos comentários, pedem 'intervenção'. |
+| **Opção Esquerda** | Acionar a PF |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "Os autores são identificados. A mentira perde força." |
+| **Opção Direita** | Ficar em silêncio |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -10, `Consciência` -10 |
+| **Consequência Direita** | "O vídeo vira 'prova'. A democracia sangra." |
+| **Aprendizado** | Dados: "Pelo menos 554 deepfakes circularam no 1º turno das eleições de 2026." · Frase: "Atacar o tribunal com mentira é ensaio de golpe." |
+
+### INST-196 — Influenciadora Promove Reforma Agrária
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora promove reforma agrária |
+| **Modo** | Influenciador |
+| **Cor** | Roxo |
+| **Problema** | Uma influenciadora do MST mostra assentamentos produtivos. Ela pede apoio do governo para ampliar o projeto. |
+| **Opção Esquerda** | Apoiar o projeto |
+| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "O campo aparece na tela. O agro reclama." |
+| **Opção Direita** | Manter distância |
+| **Efeitos Direita** | `Capital Político` +5, `Consciência` -5 |
+| **Consequência Direita** | "O vídeo fica nos mesmos seguidores." |
+| **Aprendizado** | Dados: "A agricultura familiar produz cerca de 70% dos alimentos consumidos no Brasil." · Frase: "Quem planta comida também precisa de palco." |
+
+### INST-197 — Influenciador Pede Impeachment
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciador pede impeachment |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Um influenciador da oposição convoca seguidores a pedir seu impeachment. A live reúne 2 milhões de pessoas. |
+| **Opção Esquerda** | Responder com prestação de contas |
+| **Efeitos Esquerda** | `Consciência` +10, `Integridade` +5, `Caixa` -5 |
+| **Consequência Esquerda** | "Você mostra números. Parte do público escuta." |
+| **Opção Direita** | Atacar o influenciador |
+| **Efeitos Direita** | `Capital Político` +5, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência Direita** | "A briga vira o assunto. O pedido ganha força." |
+| **Aprendizado** | Dados: "Qualquer cidadão pode protocolar um pedido de impeachment. Mas quem vota são os deputados." · Frase: "Live não derruba presidente. Mas empurra deputado." |
+
+### INST-198 — Eleita com Apoio das Bets
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Eleita com apoio das bets |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma deputada eleita com dinheiro de bets vira relatora do projeto que regula as apostas. |
+| **Opção Esquerda** | Pedir que ela deixe a relatoria |
+| **Efeitos Esquerda** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência Esquerda** | "Ela sai. A bancada das bets ameaça travar a pauta." |
+| **Opção Direita** | Aceitar a relatoria |
+| **Efeitos Direita** | `Capital Político` +10, `Integridade` -15, `Dignidade` -5 |
+| **Consequência Direita** | "O projeto sai sob medida para as bets." |
+| **Aprendizado** | Dados: "Conflito de interesses é decidir sobre algo em que você tem ganho pessoal." · Frase: "Quem é pago pelas bets não regula bets." |
+
+### INST-199 — Influenciador Financiado Pela Facção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciador financiado pela facção |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | A PF descobre que um influenciador é pago por uma facção para lavar dinheiro. Ele tem 8 milhões de seguidores. |
+| **Opção Esquerda** | Seguir o dinheiro |
+| **Efeitos Esquerda** | `Integridade` +10, `Segurança` +5, `Capital Político` -5 |
+| **Consequência Esquerda** | "A rede financeira cai. A facção perde uma lavanderia." |
+| **Opção Direita** | Prender e fazer espetáculo |
+| **Efeitos Direita** | `Segurança` +10, `Dignidade` -5, `Consciência` -5 |
+| **Consequência Direita** | "A prisão vira show. O dinheiro some antes." |
+| **Aprendizado** | Dados: "O crime organizado usa empresas e perfis legais para lavar dinheiro." · Frase: "Seguir o dinheiro dói mais que algemar." |
+
+### INST-200 — Influenciadora Apoia Redução da Maioridade
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Influenciadora apoia redução da maioridade |
+| **Modo** | Influenciador |
+| **Cor** | Preto |
+| **Problema** | Uma influenciadora pede a redução da maioridade penal após um crime. O vídeo tem milhões de visualizações. |
+| **Opção Esquerda** | Debater com dados |
+| **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Legitimidade` -5 |
+| **Consequência Esquerda** | "Os dados chegam. A raiva demora a passar." |
+| **Opção Direita** | Aderir à campanha |
+| **Efeitos Direita** | `Legitimidade` +10, `Segurança` +5, `Dignidade` -10 |
+| **Consequência Direita** | "Você ganha curtidas. Os presídios ganham adolescentes." |
+| **Aprendizado** | Dados: "O Brasil é o 3º país que mais encarcera. 69% da população carcerária é negra." · Frase: "Punir com raiva não protege ninguém." |
 
 ---
 
@@ -2560,6 +3456,8 @@ text
 
 **Tema: Direitos Indígenas**
 
+**Tema: Direitos Indígenas**
+
 ### THEM-011 — Marco Temporal (STF)
 
 | Campo | Conteúdo |
@@ -2719,6 +3617,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
 | **Consequência Direita** | "A educação recua." |
 | **Aprendizado** | Frase: "A educação indígena avança." |
+
+**Tema: Saúde**
 
 **Tema: Saúde**
 
@@ -2884,6 +3784,8 @@ text
 
 **Tema: Educação**
 
+**Tema: Educação**
+
 ### THEM-031 — Universidades Sucateadas
 
 | Campo | Conteúdo |
@@ -3043,6 +3945,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "A cultura indígena é ameaçada." |
 | **Aprendizado** | Frase: "A cultura indígena resiste." |
+
+**Tema: Segurança**
 
 **Tema: Segurança**
 
@@ -3208,6 +4112,8 @@ text
 
 **Tema: Cultura**
 
+**Tema: Cultura**
+
 ### THEM-051 — Corte na Cultura (3)
 
 | Campo | Conteúdo |
@@ -3367,6 +4273,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
 | **Consequência Direita** | "A arte urbana resiste." |
 | **Aprendizado** | Frase: "A arte urbana resiste." |
+
+**Tema: Futebol**
 
 **Tema: Futebol**
 
@@ -3586,6 +4494,8 @@ text
 
 **Ator: Investidores da Faria Lima**
 
+**Ator: Investidores da Faria Lima**
+
 ### ATOR-004 — O Investidor Oferece Investimentos
 
 | Campo | Conteúdo |
@@ -3633,6 +4543,8 @@ text
 | **Efeitos Direita** | `Caixa` +20, `Capital Político` +10, `Integridade` -15 |
 | **Consequência Direita** | "A corrupção se instala." |
 | **Aprendizado** | Frase: "A corrupção se instala." |
+
+**Ator: Construtoras**
 
 **Ator: Construtoras**
 
@@ -3686,6 +4598,8 @@ text
 
 **Ator: Empresariado Industrial**
 
+**Ator: Empresariado Industrial**
+
 ### ATOR-010 — O Industrial Pede Proteção
 
 | Campo | Conteúdo |
@@ -3733,6 +4647,8 @@ text
 | **Efeitos Direita** | `Caixa` +15, `Soberania` -10, `Integridade` -10 |
 | **Consequência Direita** | "O meio ambiente é destruído." |
 | **Aprendizado** | Frase: "O meio ambiente é destruído." |
+
+**Ator: Setor de Universidades Privadas**
 
 **Ator: Setor de Universidades Privadas**
 
@@ -3786,6 +4702,8 @@ text
 
 **Ator: Mercado**
 
+**Ator: Mercado**
+
 ### ATOR-016 — O Mercado Reage
 
 | Campo | Conteúdo |
@@ -3833,6 +4751,8 @@ text
 | **Efeitos Direita** | `Dignidade` +10, `Caixa` -10, `Integridade` +5 |
 | **Consequência Direita** | "A austeridade recua." |
 | **Aprendizado** | Frase: "A austeridade recua." |
+
+**Ator: Tecnocratas**
 
 **Ator: Tecnocratas**
 
@@ -3886,6 +4806,8 @@ text
 
 **Ator: Militares**
 
+**Ator: Militares**
+
 ### ATOR-022 — O Militar Pede Aumento
 
 | Campo | Conteúdo |
@@ -3933,6 +4855,8 @@ text
 | **Efeitos Direita** | `Capital Político` +15, `Consciência` -15, `Integridade` -10 |
 | **Consequência Direita** | "A impunidade se instala." |
 | **Aprendizado** | Frase: "A impunidade se instala." |
+
+**Ator: Servidores Públicos Estatais**
 
 **Ator: Servidores Públicos Estatais**
 
@@ -3986,6 +4910,8 @@ text
 
 **Ator: Diplomatas do Itamaraty**
 
+**Ator: Diplomatas do Itamaraty**
+
 ### ATOR-028 — O Diplomata Pede Apoio ao BRICS
 
 | Campo | Conteúdo |
@@ -4033,6 +4959,8 @@ text
 | **Efeitos Direita** | `Soberania` -5, `Integridade` -5 |
 | **Consequência Direita** | "A soberania é ignorada." |
 | **Aprendizado** | Frase: "A soberania é ignorada." |
+
+**Ator: Líder da Câmara (Centrão)**
 
 **Ator: Líder da Câmara (Centrão)**
 
@@ -4086,6 +5014,8 @@ text
 
 **Ator: Pastores**
 
+**Ator: Pastores**
+
 ### ATOR-034 — O Pastor Pede Verbas
 
 | Campo | Conteúdo |
@@ -4133,6 +5063,8 @@ text
 | **Efeitos Direita** | `Capital Político` +10, `Consciência` -15, `Integridade` -10 |
 | **Consequência Direita** | "A TV é censurada." |
 | **Aprendizado** | Frase: "A TV é censurada." |
+
+**Ator: Sindicato dos Professores**
 
 **Ator: Sindicato dos Professores**
 
@@ -4186,6 +5118,8 @@ text
 
 **Ator: Profissionais da Saúde**
 
+**Ator: Profissionais da Saúde**
+
 ### ATOR-040 — O Profissional Denuncia Falta de Leitos
 
 | Campo | Conteúdo |
@@ -4233,6 +5167,8 @@ text
 | **Efeitos Direita** | `Caixa` +5, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "A saúde piora." |
 | **Aprendizado** | Frase: "A saúde piora." |
+
+**Ator: Líder Sindical**
 
 **Ator: Líder Sindical**
 
@@ -4286,6 +5222,8 @@ text
 
 **Ator: MTST**
 
+**Ator: MTST**
+
 ### ATOR-046 — O MTST Ocupa um Terreno Vazio
 
 | Campo | Conteúdo |
@@ -4333,6 +5271,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "A moradia é negada." |
 | **Aprendizado** | Frase: "A moradia é negada." |
+
+**Ator: MST**
 
 **Ator: MST**
 
@@ -4386,6 +5326,8 @@ text
 
 **Ator: Movimentos Ambientais**
 
+**Ator: Movimentos Ambientais**
+
 ### ATOR-052 — O Ambientalista Denuncia Desmatamento
 
 | Campo | Conteúdo |
@@ -4433,6 +5375,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
 | **Consequência Direita** | "O veneno avança." |
 | **Aprendizado** | Frase: "O veneno avança." |
+
+**Ator: Artista Engajado**
 
 **Ator: Artista Engajado**
 
@@ -4486,6 +5430,8 @@ text
 
 **Ator: Meta (Big Tech)**
 
+**Ator: Meta (Big Tech)**
+
 ### ATOR-058 — A Meta Oferece Alcance
 
 | Campo | Conteúdo |
@@ -4533,6 +5479,8 @@ text
 | **Efeitos Direita** | `Caixa` +20, `Capital Político` +10, `Integridade` -15 |
 | **Consequência Direita** | "A corrupção se instala." |
 | **Aprendizado** | Frase: "A corrupção se instala." |
+
+**Ator: Impérios Geopolíticos**
 
 **Ator: Impérios Geopolíticos**
 
@@ -4586,6 +5534,8 @@ text
 
 **Ator: Coach Digital**
 
+**Ator: Coach Digital**
+
 ### ATOR-064 — O Coach Oferece Apoio
 
 | Campo | Conteúdo |
@@ -4636,6 +5586,8 @@ text
 
 **Ator: Jornalista Independente**
 
+**Ator: Jornalista Independente**
+
 ### ATOR-067 — O Jornalista Denuncia Escândalo
 
 | Campo | Conteúdo |
@@ -4683,6 +5635,8 @@ text
 | **Efeitos Direita** | `Capital Político` +5, `Consciência` -10, `Integridade` -10 |
 | **Consequência Direita** | "A imprensa é ameaçada." |
 | **Aprendizado** | Frase: "A imprensa é ameaçada." |
+
+**Ator: Influenciador Progressista**
 
 **Ator: Influenciador Progressista**
 
@@ -4740,12 +5694,12 @@ text
 
 | Tipo | Previstas | Roteirizadas | Status |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 200 | 144 | INST-001 a INST-140 completas; Impeachment, Judiciário e Influenciador só com exemplos (INST-141, 142, 161, 181) |
+| **Institucionais** | 200 | 200 | Completas (10 modos × 20) |
 | **Temáticas** | 70 | 70 | Completas (7 temas × 10) |
 | **Atores** | 70 | 72 | Completas (24 atores × 3); ver divergência em 17.01.2 |
-| **Total** | **340** | **286** | Em desenvolvimento |
+| **Total** | **340** | **342** | Roteiro completo; validação pendente de correções |
 
-**Observação:** faltam 56 cartas institucionais (INST-143 a 160, 162 a 180, 182 a 200).
+**Observação:** as cartas INST-143 a INST-200 (exceto 161 e 181) seguem os títulos de `docs/12_FICHAS_DOS_MODOS.md`. Para respeitar a D-005, os títulos com rótulo partidário ou nome de organização real foram neutralizados (ex.: "Youtuber espalha fake news", "Influenciador financiado pela facção").
 
 ---
 
@@ -4759,5 +5713,5 @@ text
 ---
 
 **Última atualização:** Outubro de 2026
-**Versão:** 1.1 (em desenvolvimento)
+**Versão:** 1.2 (em desenvolvimento)
 
