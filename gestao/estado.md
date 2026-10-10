@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-09
+**Última atualização:** 2026-10-10
 **Fase atual:** Setup de documentação (Fase 0-3 concluídas)
 **Próxima fase:** Escrita dos arquivos 14-18 e GDD
 
@@ -21,7 +21,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Turnos** | ✅ Definidos | 4 turnos (4 anos) |
 | **Modos** | ✅ Definidos | 10 modos institucionais |
 | **Atores** | ✅ Definidos | 20 atores (14 base + 6 expansão) |
-| **Cartas** | ✅ Inventariadas | 340 cartas |
+| **Cartas** | ✅ Roteirizadas | 342 no doc 17 (meta: 340; divergência pendente com o PO) |
 | **Finais** | ✅ Consolidados | 26 finais |
 | **Impeachment** | ✅ Reformulado | Cena de golpe, a partir do Ano 2 |
 | **Eventos Encadeados** | ✅ Mapeados | 78 eventos |
@@ -67,11 +67,11 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 | Fase | Artefato | Status | Prazo |
 | :--- | :--- | :--- | :--- |
-| **14. UI/UX Design** | `docs/14_UI_UX_DESIGN.md` | ⏳ Pendente | — |
-| **15. Fluxo do Jogo** | `docs/15_FLUXO_DO_JOGO.md` | ⏳ Pendente | — |
-| **16. Manual do Jogador** | `docs/16_MANUAL_DO_JOGADOR.md` | ⏳ Pendente | — |
-| **17. Roteiro das Cartas** | `docs/17_ROTEIRO_DAS_CARTAS.md` | ⏳ Pendente | — |
-| **18. Roteiro das Cartas de Aprendizado** | `docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | ⏳ Pendente | — |
+| **14. UI/UX Design** | `docs/14_UI_UX_DESIGN.md` | ✅ Escrito | P-003 |
+| **15. Fluxo do Jogo** | `docs/15_FLUXO_DO_JOGO.md` | ✅ Escrito | P-003 |
+| **16. Manual do Jogador** | `docs/16_MANUAL_DO_JOGADOR.md` | ✅ Escrito | P-003 |
+| **17. Roteiro das Cartas** | `docs/17_ROTEIRO_DAS_CARTAS.md` | ✅ Escrito | P-003 |
+| **18. Roteiro das Cartas de Aprendizado** | `docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md` | ✅ Escrito | P-003 |
 | **19. Personas** | `docs/19_PERSONAS.md` | ⏳ Pendente | — |
 | **20. Protocolo de Testes** | `docs/20_PROTOCOLO_DE_TESTES.md` | ⏳ Pendente | — |
 | **21. Plano de Divulgação** | `docs/21_PLANO_DE_DIVULGACAO.md` | ⏳ Pendente | — |

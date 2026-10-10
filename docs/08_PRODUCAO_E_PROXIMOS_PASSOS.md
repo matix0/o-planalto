@@ -284,7 +284,7 @@ A estrutura da equipe se baseia em três princípios:
 | **Documentação (00-13)** | Outubro 2026 | ✅ Concluída |
 | **Docs Vivos** | Outubro 2026 | ✅ Concluída |
 | **Setup Claude Code** | Outubro 2026 | ✅ Concluída |
-| **Arquivos 14-18** | Outubro-Novembro 2026 | ⏳ A iniciar |
+| **Arquivos 14-18** | Outubro 2026 | ✅ Concluída |
 | **GDD Completo** | Novembro 2026 | ⏳ A iniciar |
 | **Protótipo Técnico** | Novembro 2026 (6-7 dias) | ⏳ A iniciar |
 | **Testes com 3-5 pessoas** | Novembro 2026 | ⏳ A iniciar |
@@ -318,9 +318,9 @@ A estrutura da equipe se baseia em três princípios:
 │  └──▶ 6 arquivos (estado, decisões, planos, etc.)           │
 │                                                             │
 │  FASE 2 — SETUP ✅                                          │
-│  └──▶ Claude Code + MCP + GitHub Pages                      │
+│  └──▶ Claude Code + GitHub Pages (MCP adiado, D-072)        │
 │                                                             │
-│  FASE 3 — ARQUIVOS DE APOIO ⏳                              │
+│  FASE 3 — ARQUIVOS DE APOIO ✅                              │
 │  └──▶ 14_UI_UX, 15_FLUXO, 16_MANUAL, 17_CARTAS, 18_APREND.  │
 │                                                             │
 │  FASE 4 — GDD COMPLETO ⏳                                   │

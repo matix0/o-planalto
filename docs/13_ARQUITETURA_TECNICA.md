@@ -128,7 +128,7 @@ O ecossistema MCP para Godot está **maduro em 2026**. A pesquisa identificou m�
 | **Godot MCP Toolkit** | 112 ferramentas | 4.7 | Playtest control, ClassDB, 150+ operações |
 | **godot-mcp-enhanced** | 33 ferramentas / 199 ações | 4.5-4.7 | Arquitetura de 3 camadas (headless + editor + game bridge) |
 
-**Recomendação:** **tugcantopaloglu/godot-mcp** (157 ferramentas, testado com Godot 4.7) ou **yanhuifair/godot-mcp** (281 ferramentas, cobertura abrangente).
+**Escolha (D-053):** **tugcantopaloglu/godot-mcp** (157 ferramentas, testado com Godot 4.7). O **yanhuifair/godot-mcp** (281 ferramentas) foi avaliado como alternativa.
 
 ### 13.2.4. Agentes de IA: Claude Code como Principal
 
@@ -756,6 +756,8 @@ funcao calcular_eixo(escolhas):
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+O diagrama mostra só o gatilho principal. Os 3 gatilhos e a regra "a partir do Ano 2" (D-023) estão em `docs/04_DESIGN_DO_JOGO.md` §04.12.2.
 
 ### 13.6.5. Fluxo dos Eventos Encadeados
 

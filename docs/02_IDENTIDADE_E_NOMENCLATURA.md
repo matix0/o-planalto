@@ -4,7 +4,7 @@
 
 ## 2.1. Nome do Jogo
 
-**"O Planalto"** — nome provisório adotado.
+**"O Planalto"** — nome definitivo (D-051).
 
 ### Justificativa
 

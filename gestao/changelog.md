@@ -10,6 +10,7 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Doc 17: INST-143 a 200 escritas (Impeachment, Judiciário, Influenciador); roteiro completo com 342 cartas
 - Doc 17: 282 cartas inseridas pelo PO (INST-001 a 140, THEM-001 a 070, ATOR-001 a 072), em tabela; total roteirizado 286 de 340. Faltam INST-143 a 200, exceto 161 e 181
 - Docs 14–18 (UI/UX, Fluxo, Manual, Roteiro das Cartas, Roteiro das Cartas de Aprendizado), escritos pelo PO; publicados na nova seção "Roteiros" do site (P-003)
 - Site público em `site/` (Astro Starlight): home com as 6 seções, menu, sumário, anterior/próximo, busca local em pt-BR, temas claro/escuro (P-009, D-077)
@@ -27,6 +28,7 @@ Versionamento: [SemVer](https://semver.org/).
 - 12 subagentes especializados
 
 ### Alterado
+- `/sync-docs`: correções mecânicas em 00, 02, 04, 05, 06, 08, 09, 13, `estado.md` e `CLAUDE.md` (soma dos valores iniciais 370, impeachment a partir do Ano 2 conforme D-023, 5 blocos na Carta de Aprendizado, D-051, D-053, D-072, status dos docs 14-18)
 - Docs vivos movidos de `docs/` para `gestao/` (D-071)
 - `CLAUDE.md` reescrito; estado carregado via `@gestao/estado.md` (P-008)
 - `00_INDICE_GERAL.md` virou página inicial do Pages e lista 00-13 (P-008)

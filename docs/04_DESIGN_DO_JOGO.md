@@ -139,7 +139,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 380 pontos.
+**Total:** 370 pontos.
 
 **Justificativa:** O jogador começa com uma situação difícil, mas não impossível. Há margem para errar e aprender.
 
@@ -222,7 +222,7 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 | Turno | Ano | Fase | Foco | Cartas |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Ano 1 | Lua de Mel | Apresentação dos medidores e atores | 6-8 |
-| 2 | Ano 2 | A Realidade Bate | Eventos encadeados, pressão dos atores | 6-8 |
+| 2 | Ano 2 | A Realidade Bate | Eventos encadeados, pressão dos atores; impeachment já pode ser acionado (D-023) | 6-8 |
 | 3 | Ano 3 | A Crise | Impeachment pode ser acionado | 6-8 |
 | 4 | Ano 4 | O Desfecho | Finais se definem, eixo ideológico revelado | 6-8 |
 
@@ -241,6 +241,7 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 
 - Medidores começam a cair.
 - Eventos encadeados do Ano 1 aparecem.
+- Impeachment pode ser acionado (D-023).
 - Multiplicador: ×0.75.
 - Limiar de proteção: 20.
 
@@ -487,7 +488,7 @@ O sistema de cartas é baseado no **design de *Reigns***, que utiliza um "saco d
 
 ## 04.07 — Cartas de Aprendizado
 
-### 04.07.1. Estrutura (4 Blocos)
+### 04.07.1. Estrutura (5 Blocos)
 
 | Bloco | Conteúdo | Função |
 | :--- | :--- | :--- |
@@ -869,7 +870,7 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 380 pontos.
+**Total:** 370 pontos.
 
 ### 04.15.2. Multiplicador de Dificuldade
 

@@ -575,7 +575,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Card explicativo que aparece após cada decisão, ensinando o conceito por trás da escolha.
 
-**No jogo:** Cada carta tem uma Carta de Aprendizado com 4 blocos: vivencia, conceito, dados reais e fonte.
+**No jogo:** Cada carta tem uma Carta de Aprendizado com 5 blocos: vivencia, conceito, dados reais, fonte e frase de impacto.
 
 **Fundamentação:** As Cartas de Aprendizado são baseadas em três princípios pedagógicos: Aprendizagem Experiencial, Educação Dialógica e Microlearning.
 
@@ -591,7 +591,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Período do jogo com características próprias.
 
-**No jogo:** Existem 4 fases: Lua de Mel, Realidade Bate, Crise e Desfecho.
+**No jogo:** Existem 4 fases: Lua de Mel, A Realidade Bate, A Crise e O Desfecho.
 
 **Fundamentação:** As fases se baseiam no Scaffolding (Wood, Bruner e Ross) e na Zona de Desenvolvimento Proximal (Vygotsky).
 

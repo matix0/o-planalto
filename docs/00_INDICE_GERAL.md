@@ -64,8 +64,8 @@
 
 ## Próximos Passos
 
-1. Escrever os documentos de apoio críticos (09, 10, 11, 12)
-2. Escrever os documentos de apoio importantes (14 a 18)
+1. ✅ Escrever os documentos de apoio críticos (09, 10, 11, 12)
+2. ✅ Escrever os documentos de apoio importantes (14 a 18)
 3. Escrever o GDD completo
 4. Montar o protótipo técnico
 5. Testar com 3-5 pessoas

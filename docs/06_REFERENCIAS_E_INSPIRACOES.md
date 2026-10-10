@@ -338,7 +338,7 @@ O usuário responde a 12 afirmações, posicionando-se em uma escala (concordo t
 
 | Momento | Aplicação |
 | :--- | :--- |
-| **Calibração Inicial** | 6 perguntas (uma para cada medidor) definem os valores iniciais personalizados. |
+| **Calibração Inicial** | 6 perguntas (cada uma ligada a 1 ou 2 medidores) definem os valores iniciais personalizados. |
 | **Calibração Final** | Gráfico de afinidade entre o "país construído" e os cenários políticos gerados. |
 
 **Fundamentação Teórica:**
