@@ -10,6 +10,7 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Doc 17: 282 cartas inseridas pelo PO (INST-001 a 140, THEM-001 a 070, ATOR-001 a 072), em tabela; total roteirizado 286 de 340. Faltam INST-143 a 200, exceto 161 e 181
 - Docs 14–18 (UI/UX, Fluxo, Manual, Roteiro das Cartas, Roteiro das Cartas de Aprendizado), escritos pelo PO; publicados na nova seção "Roteiros" do site (P-003)
 - Site público em `site/` (Astro Starlight): home com as 6 seções, menu, sumário, anterior/próximo, busca local em pt-BR, temas claro/escuro (P-009, D-077)
 - Página "Sobre e metodologia", aviso de conteúdo em 01–04 e 09, banner "incompleto" + `noindex` em 04, 05, 06, 08 e 10 (D-075, D-078)
