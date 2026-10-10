@@ -339,11 +339,11 @@ text
 | **Consequência Direita** | "A tortura é esquecida." |
 | **Aprendizado** | Dados: "A Comissão da Verdade documentou 434 mortes." · Frase: "A memória é a garantia de que não volta." |
 
-### INST-019 — Educação Financeira em Vez de Filosofia
+### INST-019 — Finanças no Lugar da Filosofia
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | Educação financeira em vez de Filosofia |
+| **Título** | Finanças no lugar da Filosofia |
 | **Modo** | Congresso |
 | **Cor** | Roxo |
 | **Problema** | O Senado quer obrigar o ensino de 'educação financeira' em vez de Filosofia. |
@@ -712,7 +712,7 @@ text
 | **Consequência Esquerda** | "Os professores comemoram. Mas o Congresso ameaça retaliar." |
 | **Opção Direita** | Apoiar a proposta |
 | **Efeitos Direita** | `Capital Político` +15, `Consciência` -15, `Integridade` -10 |
-| **Consequência Direita** | "A lei passa. Os alunos aprenderão 'educação financeira' em vez de pensar criticamente." |
+| **Consequência Direita** | "A lei passa. O pensamento crítico sai da sala de aula." |
 | **Aprendizado** | Vivencia: "Você decidiu se vetava ou apoiava a retirada de Filosofia e Sociologia do currículo." · Conceito: "A Lei 13.415/2017 rebaixou Filosofia e Sociologia de 'disciplinas obrigatórias' para 'estudos e práticas'." · Dados: "A retirada dessas disciplinas é a desativação do pensamento crítico. Sem Sociologia, o aluno não entende como a sociedade funciona. Sem Filosofia, não aprende a questionar argumentos." · Fonte: "Ministério da Educação, 2017." · Frase: "Sem pensamento crítico, o povo é presa fácil do pânico moral e da desinformação." |
 
 ### INST-042 — Concessão de TV para Pastor
@@ -827,11 +827,11 @@ text
 | **Consequência Direita** | "A comunidade fica sem voz." |
 | **Aprendizado** | Dados: "A TV comunitária é um espaço de resistência." · Frase: "A voz da comunidade não é ouvida." |
 
-### INST-049 — Educação Financeira em Vez de Sociologia
+### INST-049 — Finanças no Lugar da Sociologia
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | Educação financeira em vez de Sociologia |
+| **Título** | Finanças no lugar da Sociologia |
 | **Modo** | Currículo e Mídia |
 | **Cor** | Roxo |
 | **Problema** | O Congresso quer obrigar o ensino de 'educação financeira' em vez de Sociologia. |
@@ -923,11 +923,11 @@ text
 | **Consequência Direita** | "A censura privada continua." |
 | **Aprendizado** | Dados: "A FENAJ denunciou censura privada da Meta." · Frase: "A censura é a arma dos que não têm argumentos." |
 
-### INST-055 — Darcy Ribeiro e Paulo Freire no Currículo
+### INST-055 — Darcy e Freire no Currículo
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | Darcy Ribeiro e Paulo Freire no currículo |
+| **Título** | Darcy e Freire no currículo |
 | **Modo** | Currículo e Mídia |
 | **Cor** | Roxo |
 | **Problema** | O MEC quer incluir Darcy Ribeiro e Paulo Freire no currículo. |
@@ -2146,7 +2146,7 @@ text
 | **Título** | Isenção para agro |
 | **Modo** | Bancadas |
 | **Cor** | Verde |
-| **Problema** | A bancada do agronegócio pede isenção de impostos para exportação. |
+| **Problema** | O agro bate recorde de exportação e pede para não pagar imposto sobre o que vende lá fora. |
 | **Opção Esquerda** | Recusar |
 | **Efeitos Esquerda** | `Soberania` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O agro paga imposto." |
@@ -2226,7 +2226,7 @@ text
 | **Título** | Legalização de cassinos |
 | **Modo** | Bancadas |
 | **Cor** | Preto |
-| **Problema** | A bancada das bets quer legalizar cassinos online. |
+| **Problema** | Um projeto quer liberar cassinos em resorts. A bancada das bets promete apoio em troca. |
 | **Opção Esquerda** | Proibir |
 | **Efeitos Esquerda** | `Consciência` +5, `Capital Político` -15, `Integridade` +5 |
 | **Consequência Esquerda** | "A jogatina recua." |
@@ -2653,7 +2653,7 @@ text
 | **Problema** | A imprensa revela que um ministro do STF tem 52 mensagens de um banqueiro investigado. A oposição pede impeachment. |
 | **Opção Esquerda** | Apoiar a investigação |
 | **Efeitos Esquerda** | `Consciência` +15, `Legitimidade` +10, `Capital Político` -30, `Integridade` +15 |
-| **Consequência Esquerda** | "O ministro é investigado. O STF entra em crise. Mas o povo vê que a lei vale para todos." |
+| **Consequência Esquerda** | "O ministro é investigado. O STF treme, mas a lei vale para todos." |
 | **Opção Direita** | Defender o ministro |
 | **Efeitos Direita** | `Capital Político` -20, `Consciência` -15, `Integridade` -15 |
 | **Consequência Direita** | "O caso é arquivado. Mas o povo vê que a justiça é diferente para os poderosos." |
@@ -3676,7 +3676,7 @@ text
 | **Título** | CAPS fecham |
 | **Modo** | Temática (Saúde) |
 | **Cor** | Vermelho |
-| **Problema** | A saúde mental no SUS está sucateada. Os CAPS fecham. |
+| **Problema** | Um paciente morre amarrado numa comunidade terapêutica. Os CAPS da cidade estão fechados. |
 | **Opção Esquerda** | Investir |
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "A luta antimanicomial avança." |
@@ -3988,7 +3988,7 @@ text
 | **Título** | Desmilitarização (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | O governo quer desmilitarizar a polícia. A corporação resiste. |
+| **Problema** | A PM mata um jovem numa abordagem. Movimentos pedem que a polícia deixe de ser militar. |
 | **Opção Esquerda** | Desmilitarizar |
 | **Efeitos Esquerda** | `Dignidade` +10, `Segurança` -5, `Capital Político` -20, `Integridade` +5 |
 | **Consequência Esquerda** | "A polícia se democratiza." |
@@ -4020,7 +4020,7 @@ text
 | **Título** | Redução da maioridade (3) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | O governo quer reduzir a maioridade penal. Especialistas discordam. |
+| **Problema** | Um adolescente de 16 anos comete um crime que choca o país. A TV pede redução da maioridade. |
 | **Opção Esquerda** | Vetar |
 | **Efeitos Esquerda** | `Consciência` +5, `Dignidade` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "Os jovens não são presos." |
@@ -4036,7 +4036,7 @@ text
 | **Título** | Sistema prisional (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | O sistema prisional é um celeiro de facções. |
+| **Problema** | Uma rebelião deixa 30 mortos num presídio. As facções disputam o controle das celas. |
 | **Opção Esquerda** | Ressocialização |
 | **Efeitos Esquerda** | `Dignidade` +10, `Segurança` -5, `Caixa` -15, `Integridade` +5 |
 | **Consequência Esquerda** | "A ressocialização avança." |
@@ -4052,7 +4052,7 @@ text
 | **Título** | Redução de danos (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | O governo quer criar um programa de redução de danos. |
+| **Problema** | As mortes por overdose dobram na capital. Médicos pedem salas de uso seguro. |
 | **Opção Esquerda** | Criar |
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "As mortes caem." |
@@ -4068,7 +4068,7 @@ text
 | **Título** | População carcerária negra (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | Uma pesquisa mostra que 69% da população carcerária é negra. |
+| **Problema** | Um jovem negro passa 3 anos preso por engano. O caso mostra a cor das prisões. |
 | **Opção Esquerda** | Criar cotas |
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "O racismo é enfrentado." |
@@ -4084,7 +4084,7 @@ text
 | **Título** | Taxação de armas (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | O governo quer taxar as armas para reduzir a violência. |
+| **Problema** | A venda de armas bate recorde. O governo pode criar um imposto sobre armas e munição. |
 | **Opção Esquerda** | Taxar |
 | **Efeitos Esquerda** | `Dignidade` +10, `Segurança` -5, `Capital Político` -15, `Integridade` +5 |
 | **Consequência Esquerda** | "Menos armas." |
@@ -4100,7 +4100,7 @@ text
 | **Título** | Policial vende armas (2) |
 | **Modo** | Temática (Segurança) |
 | **Cor** | Preto |
-| **Problema** | Um policial é flagrado vendendo armas para facções. |
+| **Problema** | Armas somem do depósito da polícia e reaparecem com uma facção. |
 | **Opção Esquerda** | Punir |
 | **Efeitos Esquerda** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "A corrupção é combatida." |
@@ -4216,7 +4216,7 @@ text
 | **Título** | Programa de leitura (2) |
 | **Modo** | Temática (Cultura) |
 | **Cor** | Roxo |
-| **Problema** | O governo quer criar um programa de leitura nas periferias. |
+| **Problema** | Uma biblioteca comunitária na favela vai fechar. Os moradores pedem um programa de leitura. |
 | **Opção Esquerda** | Criar |
 | **Efeitos Esquerda** | `Consciência` +10, `Dignidade` +5, `Caixa` -10, `Integridade` +5 |
 | **Consequência Esquerda** | "A leitura chega." |
@@ -4511,11 +4511,11 @@ text
 | **Consequência Direita** | "A desigualdade aumenta." |
 | **Aprendizado** | Frase: "A desigualdade aumenta." |
 
-### ACT-005 — O Investidor Ameaça Tirar o Dinheiro
+### ACT-005 — Investidor Ameaça Tirar Dinheiro
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Investidor ameaça tirar o dinheiro |
+| **Título** | Investidor ameaça tirar dinheiro |
 | **Modo** | Ator (Investidores da Faria Lima) |
 | **Cor** | Laranja |
 | **Problema** | O Investidor ameaça tirar o dinheiro do país se o governo taxar as grandes fortunas. |
@@ -4579,11 +4579,11 @@ text
 | **Consequência Direita** | "A especulação avança." |
 | **Aprendizado** | Frase: "A especulação avança." |
 
-### ACT-009 — A Construtora Quer Construir em Área Verde
+### ACT-009 — Construtora Mira Área Verde
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | A Construtora quer construir em área verde |
+| **Título** | Construtora mira área verde |
 | **Modo** | Ator (Construtoras) |
 | **Cor** | Verde |
 | **Problema** | A Construtora quer construir em uma área verde protegida. |
@@ -4651,11 +4651,11 @@ text
 
 **Ator: Setor de Universidades Privadas**
 
-### ACT-013 — O Setor Quer Expandir o EAD
+### ACT-013 — Setor Quer Expandir o EAD
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Setor quer expandir o EAD |
+| **Título** | Setor quer expandir o EAD |
 | **Modo** | Ator (Setor de Universidades Privadas) |
 | **Cor** | Laranja |
 | **Problema** | O Setor quer expandir o EAD de baixa qualidade. |
@@ -4719,11 +4719,11 @@ text
 | **Consequência Direita** | "O mercado manda." |
 | **Aprendizado** | Frase: "O mercado manda." |
 
-### ACT-017 — O Mercado Ameaça Fuga de Capital
+### ACT-017 — Mercado Ameaça Fuga de Capital
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Mercado ameaça fuga de capital |
+| **Título** | Mercado ameaça fuga de capital |
 | **Modo** | Ator (Mercado) |
 | **Cor** | Laranja |
 | **Problema** | O Mercado ameaça fuga de capital se o governo não cortar gastos. |
@@ -4755,11 +4755,11 @@ text
 
 **Ator: Tecnocratas**
 
-### ACT-019 — O Tecnocrata Propõe Choque de Gestão
+### ACT-019 — Tecnocrata Propõe Choque de Gestão
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Tecnocrata propõe choque de gestão |
+| **Título** | Tecnocrata propõe choque de gestão |
 | **Modo** | Ator (Tecnocratas) |
 | **Cor** | Amarelo |
 | **Problema** | O Tecnocrata propõe cortar 30% do orçamento da saúde e educação. |
@@ -4859,11 +4859,11 @@ text
 
 **Ator: Servidores Públicos Estatais**
 
-### ACT-025 — O Servidor Ameaça Travar o Governo
+### ACT-025 — Servidor Ameaça Travar o Governo
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Servidor ameaça travar o governo |
+| **Título** | Servidor ameaça travar o governo |
 | **Modo** | Ator (Servidores Públicos Estatais) |
 | **Cor** | Azul |
 | **Problema** | O Servidor ameaça travar o governo se não receber aumento. |
@@ -4911,11 +4911,11 @@ text
 
 **Ator: Diplomatas do Itamaraty**
 
-### ACT-028 — O Diplomata Pede Apoio ao BRICS
+### ACT-028 — Diplomata Pede Apoio ao BRICS
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Diplomata pede apoio ao BRICS |
+| **Título** | Diplomata pede apoio ao BRICS |
 | **Modo** | Ator (Diplomatas do Itamaraty) |
 | **Cor** | Azul |
 | **Problema** | O Diplomata pede apoio ao BRICS em uma votação internacional. |
@@ -4927,11 +4927,11 @@ text
 | **Consequência Direita** | "A soberania recua." |
 | **Aprendizado** | Frase: "A soberania recua." |
 
-### ACT-029 — O Diplomata Alerta Sobre Pressão dos EUA
+### ACT-029 — Diplomata Alerta: Pressão dos EUA
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Diplomata alerta sobre pressão dos EUA |
+| **Título** | Diplomata alerta: pressão dos EUA |
 | **Modo** | Ator (Diplomatas do Itamaraty) |
 | **Cor** | Azul |
 | **Problema** | O Diplomata alerta sobre pressão dos EUA para alinhamento político. |
@@ -4963,11 +4963,11 @@ text
 
 **Ator: Líder da Câmara (Centrão)**
 
-### ACT-031 — O Líder da Câmara Pede Emendas
+### ACT-031 — Centrão Pede Emendas
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Líder da Câmara pede emendas |
+| **Título** | Centrão pede emendas |
 | **Modo** | Ator (Líder da Câmara (Centrão)) |
 | **Cor** | Amarelo |
 | **Problema** | O Líder da Câmara pede emendas para sua base em troca de apoio. |
@@ -4979,11 +4979,11 @@ text
 | **Consequência Direita** | "O voto é comprado." |
 | **Aprendizado** | Frase: "O voto é comprado." |
 
-### ACT-032 — O Líder da Câmara Quer Cargos
+### ACT-032 — Centrão Quer Cargos
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Líder da Câmara quer cargos |
+| **Título** | Centrão quer cargos |
 | **Modo** | Ator (Líder da Câmara (Centrão)) |
 | **Cor** | Amarelo |
 | **Problema** | O Líder da Câmara quer cargos no governo em troca de apoio. |
@@ -5047,11 +5047,11 @@ text
 | **Consequência Direita** | "O pânico moral avança." |
 | **Aprendizado** | Frase: "O pânico moral avança." |
 
-### ACT-036 — O Pastor Quer Censurar a TV
+### ACT-036 — Pastor Quer Censurar a TV
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Pastor quer censurar a TV |
+| **Título** | Pastor quer censurar a TV |
 | **Modo** | Ator (Pastores) |
 | **Cor** | Preto |
 | **Problema** | O Pastor quer censurar a TV pública. |
@@ -5099,11 +5099,11 @@ text
 | **Consequência Direita** | "A educação definha." |
 | **Aprendizado** | Frase: "A educação definha." |
 
-### ACT-039 — O Professor Quer Liberdade de Cátedra
+### ACT-039 — Professor Defende Liberdade de Cátedra
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Professor quer liberdade de cátedra |
+| **Título** | Professor defende liberdade de cátedra |
 | **Modo** | Ator (Sindicato dos Professores) |
 | **Cor** | Roxo |
 | **Problema** | O Professor quer liberdade de cátedra para discutir política. |
@@ -5119,11 +5119,11 @@ text
 
 **Ator: Profissionais da Saúde**
 
-### ACT-040 — O Profissional Denuncia Falta de Leitos
+### ACT-040 — Profissional Denuncia Falta de Leitos
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Profissional denuncia falta de leitos |
+| **Título** | Profissional denuncia falta de leitos |
 | **Modo** | Ator (Profissionais da Saúde) |
 | **Cor** | Vermelho |
 | **Problema** | O Profissional da Saúde denuncia a falta de leitos e insumos. |
@@ -5203,11 +5203,11 @@ text
 | **Consequência Direita** | "A greve avança." |
 | **Aprendizado** | Frase: "A greve avança." |
 
-### ACT-045 — O Líder Sindical Pede Fim da Escala 6x1
+### ACT-045 — Fim da Escala 6x1
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Líder Sindical pede fim da escala 6x1 |
+| **Título** | Fim da escala 6x1 |
 | **Modo** | Ator (Líder Sindical) |
 | **Cor** | Vermelho |
 | **Problema** | O Líder Sindical pede o fim da escala 6x1. |
@@ -5223,11 +5223,11 @@ text
 
 **Ator: MTST**
 
-### ACT-046 — O MTST Ocupa um Terreno Vazio
+### ACT-046 — MTST Ocupa Terreno Vazio
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O MTST ocupa um terreno vazio |
+| **Título** | MTST ocupa terreno vazio |
 | **Modo** | Ator (MTST) |
 | **Cor** | Roxo |
 | **Problema** | O MTST ocupa um terreno vazio em uma área nobre. |
@@ -5447,11 +5447,11 @@ text
 | **Consequência Direita** | "A soberania digital é entregue." |
 | **Aprendizado** | Frase: "A soberania digital é entregue." |
 
-### ACT-059 — A Meta Derruba Perfil de Jornalista
+### ACT-059 — Meta Derruba Perfil de Jornalista
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | A Meta derruba perfil de jornalista |
+| **Título** | Meta derruba perfil de jornalista |
 | **Modo** | Ator (Meta (Big Tech)) |
 | **Cor** | Preto |
 | **Problema** | A Meta derruba o perfil de um jornalista independente. |
@@ -5490,7 +5490,7 @@ text
 | **Título** | A China oferece acordo |
 | **Modo** | Ator (Impérios Geopolíticos) |
 | **Cor** | Azul |
-| **Problema** | A China oferece um acordo comercial sem exigências políticas. |
+| **Problema** | A China oferece comprar a safra de soja por 10 anos, com preço fixo e sem exigências políticas. |
 | **Opção Esquerda** | Aceitar |
 | **Efeitos Esquerda** | `Caixa` +15, `Soberania` +5, `Integridade` +5 |
 | **Consequência Esquerda** | "O acordo é fechado." |
@@ -5522,7 +5522,7 @@ text
 | **Título** | A China quer comprar terras |
 | **Modo** | Ator (Impérios Geopolíticos) |
 | **Cor** | Verde |
-| **Problema** | A China quer comprar terras brasileiras para produção de soja. |
+| **Problema** | Uma estatal chinesa quer comprar 500 mil hectares no Cerrado. O dono das terras já aceitou. |
 | **Opção Esquerda** | Limitar |
 | **Efeitos Esquerda** | `Soberania` +10, `Capital Político` -5, `Integridade` +5 |
 | **Consequência Esquerda** | "A soberania alimentar resiste." |
@@ -5551,11 +5551,11 @@ text
 | **Consequência Direita** | "A meritocracia avança." |
 | **Aprendizado** | Frase: "A meritocracia avança." |
 
-### ACT-065 — O Coach Faz Campanha contra o Governo
+### ACT-065 — Coach Faz Campanha contra Governo
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Coach faz campanha contra o governo |
+| **Título** | Coach faz campanha contra governo |
 | **Modo** | Ator (Coach Digital) |
 | **Cor** | Preto |
 | **Problema** | O Coach faz campanha contra o governo. |
@@ -5567,11 +5567,11 @@ text
 | **Consequência Direita** | "A desinformação avança." |
 | **Aprendizado** | Frase: "A desinformação avança." |
 
-### ACT-066 — O Coach É Financiado por Bets
+### ACT-066 — Coach Financiado por Bets
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | O Coach é financiado por bets |
+| **Título** | Coach financiado por bets |
 | **Modo** | Ator (Coach Digital) |
 | **Cor** | Preto |
 | **Problema** | O Coach é financiado por bets e promove jogos de azar. |
