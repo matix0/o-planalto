@@ -98,6 +98,11 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-077 | Site em Astro Starlight | 2026-10-09 |
 | D-078 | Docs truncados com aviso | 2026-10-09 |
 | D-079 | Guardrails do site | 2026-10-09 |
+| D-081–D-084 | Regras do protótipo visual (conflitos, lacunas, ícones, citações reais) | 2026-10-10 |
+| D-085 | 24 atores do doc 11 (revisa D-019) | 2026-10-10 |
+| D-086–D-091 | Dignidade #4CAF50, faixas 0-20…81-100, 5 blocos, topo da carta, sem números, impeachment em PT-BR | 2026-10-10 |
+| D-092 | Cidade-estado: Brasa | 2026-10-10 |
+| D-093–D-097 | Evento X+2, erros literais, rodapé em conflito, descartados riscados, cor da barra | 2026-10-10 |
 
 ---
 
@@ -130,4 +135,4 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 **Bloqueios:** Nenhum.
 
-**Aguardando:** Ordem do PO.
+**Aguardando:** Revisão do PO no protótipo visual (P-010, https://claude.ai/artifact/AggP7JVxpGQ7H6UvdSShz8).

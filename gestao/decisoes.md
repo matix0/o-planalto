@@ -89,6 +89,23 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-078 | Docs truncados (04, 05, 06, 08, 10): aviso "incompleto", marca no menu e `noindex` até a recuperação | 2026-10-09 | Proposta UX (P-009) |
 | D-080 | Medidor `Verdade` renomeado para `Integridade`; final "Pós-Verdade Total" → "Desintegração" (citação de Goebbels substituída por adaptação). Conceito e regras mantidos | 2026-10-09 | Nome capturado pelo discurso político; validar com o Prof. Alisson |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
+| D-081 | Protótipo visual: conflitos entre docs são decididos pelo PO caso a caso antes das telas | 2026-10-10 | Escolha do PO (P-010) |
+| D-082 | Protótipo visual: lacunas (doc cita, não desenha) viram proposta marcada "PROPOSTA — não documentado", só com tokens documentados | 2026-10-10 | Escolha do PO (P-010) |
+| D-083 | Ícones do protótipo: emojis do doc 14.05 como marcadores provisórios (`14:454-504` × `14:514`) | 2026-10-10 | D-007; escolha do PO (P-010) |
+| D-084 | Citações de pessoas reais nos finais: literais + aviso de conteúdo; conflito com D-005 segue no RC-08 | 2026-10-10 | Escolha do PO (P-010) |
+| D-085 | Elenco: os 24 atores do doc 11 (`11:53-80`), não os 20 do doc 04 (`04:350-378`); revisa D-019 | 2026-10-10 | Docs 10, 14 e 16 já usam os 24 (P-010) |
+| D-086 | Cor do medidor Dignidade: `#4CAF50` (`13:320`), não `#2E7D32` (`14:85`) | 2026-10-10 | Escolha do PO (P-010) |
+| D-087 | Faixas de risco: 0-20 / 21-40 / 41-60 / 61-80 / 81-100 (`04:146-154`), não limiares 30/80 (`13:316-317`) | 2026-10-10 | Escolha do PO (P-010) |
+| D-088 | Carta de Aprendizado com 5 blocos (vivência, conceito, dados, fonte, frase), não 4 (`07:61`, `09:578`) | 2026-10-10 | Docs 04, 10, 16, 18 (P-010) |
+| D-089 | Topo da carta: título Poppins Bold 24px + ator Poppins Bold 16px cinza-claro (`14:151` + `14:706`) | 2026-10-10 | Escolha do PO (P-010) |
+| D-090 | Custo e efeitos fundidos, sem números na carta (`17:56`, `14:275-276`), não separados (`13:286-304`, `04:442-445`) | 2026-10-10 | Escolha do PO (P-010) |
+| D-091 | Tela de impeachment em PT-BR: "PROCESSO DE IMPEACHMENT" / "VOTAÇÃO" (`14:368-370` estava em inglês) | 2026-10-10 | Idioma do jogo (`04:26`) (P-010) |
+| D-092 | Nome da cidade-estado: **Brasa** (substitui "Vila Nova ou Aurora", D-006) | 2026-10-10 | Decisão do PO (P-010) |
+| D-093 | Evento encadeado aparece sempre 2 turnos depois (X+2, `15:349`), não "1-2 turnos" (`04:776`) | 2026-10-10 | Escolha do PO (P-010) |
+| D-094 | Erros aparentes de conteúdo (`17:57/62`, `17:283/286`, `14:307`) ficam literais com selo "erro aparente" até o doc ser corrigido | 2026-10-10 | Escolha do PO (P-010) |
+| D-095 | Rodapé "ANO 1 — MÊS 3/48 💰 R$ 500M" (`14:280`) fica literal com selo de conflito até o GDD | 2026-10-10 | Escolha do PO (P-010) |
+| D-096 | "Aliança Externa" e "Paixão Nacional" (descartados, `07:114-115`) aparecem riscados com nota onde os docs ainda os citam | 2026-10-10 | Escolha do PO (P-010) |
+| D-097 | Barra do medidor na cor do medidor (`14:81-92`); a cor da faixa (`16:82-90`) vai no número | 2026-10-10 | Escolha do PO (P-010) |
 
 ---
 

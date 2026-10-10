@@ -227,6 +227,33 @@
 
 ---
 
+## P-010 — Protótipo Visual (Design System)
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Em andamento (aguarda revisão do PO) |
+| **Início** | 2026-10-10 |
+| **Conclusão** | — |
+| **Objetivo** | Transcrever em protótipo visual tudo o que `docs/00-18` definem, como insumo do GDD (P-004) |
+| **Decisões** | D-081 a D-097 |
+| **Artefato** | https://claude.ai/artifact/AggP7JVxpGQ7H6UvdSShz8 (privado; compartilhar pelo menu Share) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Refinar o pedido e ler o projeto inteiro (docs 00-18, `gestao/`, `.claude/`, `site/`) | ✅ | prompt refinado aprovado no plano |
+| 2 | Levantar conflitos e lacunas; decisões do PO caso a caso | ✅ | D-081 a D-097 |
+| 3 | Extrair o conteúdo dos docs (22 cartas, 145 aprendizados, 26 finais, 24 atores, 10 modos, 6 perguntas) | ✅ | artefato: `components/bundle.js`, seções 04-08 |
+| 4 | Tokens (cores, tipografia com Poppins/Inter OFL, carta, durações) | ✅ | artefato: `tokens.json` |
+| 5 | 23 componentes/telas + cover + fluxo jogável | ✅ | previews renderizados sem erro no Chromium; partida completa jogada 2× |
+| 6 | Inventário para o GDD (lacunas, sincronização, contraste) | ✅ | artefato: seção "Inventário para o GDD" |
+| 7 | Revisão do PO | ⏳ | — |
+
+**Pendências geradas:** sincronizar docs 04, 06, 09, 12, 13, 14, 16 com D-085…D-093 (`/sync-docs`); 12 pares de cor abaixo do contraste mínimo (inventário); logo, silhueta e biblioteca de ícones CC0; 318 cartas sem texto.
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |
