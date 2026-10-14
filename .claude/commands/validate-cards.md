@@ -16,8 +16,10 @@ allowed-tools: Read, Grep, Glob
 1. **Estrutura:** Cada carta tem título, problema, opções, efeitos, consequência, Carta de Aprendizado.
 2. **IDs únicos:** Cada carta tem um ID único.
 3. **Efeitos:** Cada opção afeta 2-4 medidores.
-4. **Cores:** Cada carta tem uma cor partidária.
+4. **Cores:** Cada opção (`opcao_a`, `opcao_b`) tem uma cor partidária (D-092); não há cor neutra.
 5. **Consistência:** Verificar se o tom está alinhado com `docs/10_GUIA_DE_ESTILO_E_TOM.md`.
+6. **Aprendizado:** O campo `Aprendizado` aponta um `APR-xxx` que existe no doc 18 (D-090).
+7. **Saldo por cor:** Somar os efeitos por cor e por medidor e reportar cores que só ganham ou só perdem um medidor (D-092; validação do ECO).
 
 ## Relatório
 

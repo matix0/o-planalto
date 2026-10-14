@@ -6,7 +6,7 @@
 
 ## Sobre o Projeto
 
-**O Planalto** é um jogo educativo digital de curta duração (30-40 minutos) que busca **conscientizar politicamente** sem doutrinar. O jogador assume o papel de governante de uma cidade-estado fictícia e precisa tomar decisões que afetam a vida da população.
+**O Planalto** é um jogo educativo digital de curta duração (~15 minutos) que busca **conscientizar politicamente** sem doutrinar. O jogador é o Presidente do Brasil e precisa tomar decisões que afetam a vida da população.
 
 **Objetivo central:** Mostrar que toda escolha política tem um preço, e que politização ≠ polarização.
 
@@ -31,7 +31,7 @@
 | `08_PRODUCAO_E_PROXIMOS_PASSOS.md` | Plataforma, equipe, cronograma, validação, legal |
 | `09_GLOSSARIO.md` | Termos |
 | `10_GUIA_DE_ESTILO_E_TOM.md` | Regras de escrita |
-| `11_FICHAS_DOS_ATORES.md` | 20 atores |
+| `11_FICHAS_DOS_ATORES.md` | 24 atores |
 | `12_FICHAS_DOS_MODOS.md` | 10 modos |
 | `13_ARQUITETURA_TECNICA.md` | Stack, estrutura de dados, sistemas, fluxos |
 | `14_UI_UX_DESIGN.md` | Telas, HUD, interações e acessibilidade |

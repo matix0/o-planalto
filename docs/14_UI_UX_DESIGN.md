@@ -1,824 +1,309 @@
 # 14 — UI/UX Design
 
-**Documento de Design de Interface e Experiência do Usuário do Jogo "O Planalto"**
+**Interface e experiência do jogador em "O Planalto"**
 
-Este documento define a interface do usuário (UI) e a experiência do usuário (UX) do jogo, incluindo wireframes, fluxo de telas, paleta de cores, tipografia, ícones, layout das cartas, feedback visual, animações e acessibilidade. Cada seção apresenta a fundamentação teórica e prática que embasa cada decisão.
-
----
-
-## 14.01 — Fundamentação Teórica
-
-### 14.01.1. Por Que UI/UX é Essencial
-
-A interface e a experiência do usuário são essenciais em jogos educativos por três razões:
-
-1. **Acessibilidade** — uma interface clara permite que qualquer pessoa jogue, independentemente de familiaridade com tecnologia.
-2. **Engajamento** — uma experiência fluida mantém o jogador envolvido.
-3. **Aprendizado** — uma interface que comunica bem facilita a compreensão dos conceitos.
-
-> "O design não é apenas o que parece e o que sente. O design é como funciona." — Steve Jobs
-
-### 14.01.2. Princípios de Design
-
-O design do "O Planalto" segue **7 princípios fundamentais**:
-
-| # | Princípio | Descrição |
-| :--- | :--- | :--- |
-| 1 | **Simplicidade** | Um gesto (arrastar) controla tudo. Sem menus complexos. |
-| 2 | **Clareza** | Cada informação é visível e legível em menos de 3 segundos. |
-| 3 | **Feedback imediato** | Cada ação tem uma resposta visual clara. |
-| 4 | **Consistência** | Todas as telas seguem o mesmo padrão visual. |
-| 5 | **Acessibilidade** | O jogo é jogável por pessoas com diferentes habilidades. |
-| 6 | **Brasilidade** | A identidade visual remete ao Brasil sem estereótipos. |
-| 7 | **Minimalismo** | Sem elementos desnecessários. Foco no conteúdo. |
-
-### 14.01.3. Metodologia de Design
-
-O design foi construído com base em:
-
-| Fonte | Contribuição |
-| :--- | :--- |
-| **Análise de *Reigns*** | Mecânica de swipe, layout de carta única |
-| **Análise de *Senhor Presidente*** | Modularidade temática, ícones de facções |
-| **Pedagogia freiriana** | Linguagem dialógica, acessível |
-| **Design de jogos sérios** | Microlearning, clareza, impacto |
-| **Comentários do Professor Alisson** | Ajustes de cores, tipografia, acessibilidade |
-
-### 14.01.4. Referências
-
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
-- KRUG, Steve. *Don't Make Me Think*. San Francisco: New Riders, 2000.
-- LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
-- SALEN, Katie; ZIMMERMAN, Eric. *Rules of Play: Game Design Fundamentals*. Cambridge: MIT Press, 2003.
+Este documento define as telas, o HUD, a carta, o gesto de arrastar, as animações e a acessibilidade do jogo. Foi **reescrito do zero no P-010** (2026-10-13): a versão anterior trazia telas, números e citações inventados. Tudo aqui vem de decisão do PO ou do GDD (`gdd/GDD.md`); o que ainda não foi decidido está em §14.13.
 
 ---
 
-## 14.02 — Paleta de Cores
+## 14.01 — Princípios
 
-### 14.02.1. Paleta Principal
+Os pilares do GDD (§2) aplicados à interface:
 
-A paleta principal é composta por **3 cores** que remetem à esperança, confiança e neutralidade:
-
-| Cor | HEX | Uso | Significado |
-| :--- | :--- | :--- | :--- |
-| **Verde** | `#2E7D32` | Cor primária, esperança, Brasil | Esperança, natureza, povo |
-| **Azul** | `#1565C0` | Cor secundária, confiança, instituições | Confiança, estabilidade, instituições |
-| **Cinza** | `#37474F` | Cor terciária, neutralidade, fundo | Neutralidade, seriedade |
-
-### 14.02.2. Paleta Secundária
-
-A paleta secundária é usada para **alertas e destaques**:
-
-| Cor | HEX | Uso | Significado |
-| :--- | :--- | :--- | :--- |
-| **Vermelho** | `#C62828` | Alerta, perigo, urgência | Urgência, perigo, crise |
-| **Amarelo** | `#F9A825` | Destaque, coletividade, atenção | Atenção, coletividade, povo |
-| **Laranja** | `#EF6C00` | Destaque secundário | Mudança, transformação |
-| **Roxo** | `#6A1B9A` | Destaque especial | Resistência, transformação |
-
-### 14.02.3. Paleta de Medidores
-
-Cada medidor tem uma cor própria que o identifica visualmente:
-
-| Medidor | Cor | HEX | Significado |
-| :--- | :--- | :--- | :--- |
-| **Dignidade** | Verde | `#2E7D32` | Direitos básicos |
-| **Consciência** | Roxo | `#6A1B9A` | Pensamento crítico |
-| **Soberania** | Azul-escuro | `#0D47A1` | Autonomia nacional |
-| **Segurança** | Azul-claro | `#1976D2` | Proteção |
-| **Integridade** | Ciano | `#00838F` | Debate público |
-| **Caixa** | Amarelo | `#F9A825` | Dinheiro |
-| **Capital Político** | Laranja | `#EF6C00` | Apoio no Congresso |
-| **Legitimidade** | Vermelho | `#C62828` | Apoio popular |
-
-### 14.02.4. Paleta de Cores Partidárias
-
-As cores partidárias sinalizam a inclinação política das cartas:
-
-| Cor | HEX | Espectro | Referência |
-| :--- | :--- | :--- | :--- |
-| **Vermelho** | `#C62828` | Esquerda | PT, PDT, PSOL |
-| **Azul** | `#1565C0` | Centro-direita | PSDB, PSB |
-| **Verde** | `#2E7D32` | Agronegócio | Bancada ruralista |
-| **Amarelo** | `#F9A825` | Centro | MDB, Centrão |
-| **Roxo** | `#6A1B9A` | Esquerda radical | PSOL, PSTU |
-| **Laranja** | `#EF6C00` | Direita liberal | NOVO, Republicanos |
-| **Preto** | `#212121` | Extrema-direita | PL, bolsonarismo |
-
-### 14.02.5. Fundo e Contraste
-
-| Elemento | Cor | HEX |
-| :--- | :--- | :--- |
-| **Fundo principal** | Cinza-escuro | `#263238` |
-| **Fundo das cartas** | Cinza-médio | `#37474F` |
-| **Texto principal** | Branco | `#FFFFFF` |
-| **Texto secundário** | Cinza-claro | `#B0BEC5` |
-| **Bordas** | Cinza-médio | `#546E7A` |
-
-### 14.02.6. Fundamentação Teórica
-
-A escolha das cores se baseia em:
-
-1. **Psicologia das Cores (Eva Heller)** — cada cor tem um significado universal.
-2. **Comunicação Política (Norberto Bobbio)** — as cores comunicam posicionamentos antes do texto.
-3. **Acessibilidade (WCAG)** — contraste mínimo de 4.5:1 para texto.
-
-> "As cores não são apenas um elemento estético. Elas comunicam valores e posicionamentos políticos antes mesmo que o leitor processe o texto." — Norberto Bobbio
-
-### 14.02.7. Referências
-
-- BOBBIO, Norberto. *Direita e Esquerda: Razões e Significados de uma Distinção Política*. São Paulo: UNESP, 1995.
-- HELLER, Eva. *A Psicologia das Cores*. São Paulo: G. Gili, 2013.
-- WCAG. *Web Content Accessibility Guidelines*. 2023.
+| Pilar | Na interface |
+| :--- | :--- |
+| **Consequência > Escolha** | Durante o arraste não há pista sobre os medidores; o efeito só aparece depois da escolha (§14.05) |
+| **Simplicidade > Complexidade** | Um gesto (arrastar) controla a carta e a calibração; sem menus profundos |
+| **Vivência > Explicação** | A Carta de Aprendizado é curta; o detalhe fica em "saiba mais" (§14.07) |
+| **Ambos os lados > Um lado** | Sem rótulo "esquerda/direita"; o lado de cada opção é sorteado (§14.04) |
+| **Reflexão > Resposta** | Números dos medidores só aparecem no final (§14.09) |
 
 ---
 
-## 14.03 — Tipografia
+## 14.02 — Orientação e Layout
 
-### 14.03.1. Fontes Utilizadas
-
-O jogo usa **2 fontes** principais:
-
-| Uso | Fonte | Justificativa |
-| :--- | :--- | :--- |
-| **Títulos** | Poppins | Moderna, geométrica, legível |
-| **Corpo** | Inter | Legível em telas pequenas, neutra |
-
-### 14.03.2. Tamanhos de Fonte
-
-| Elemento | Tamanho | Peso |
-| :--- | :--- | :--- |
-| **Título da carta** | 24px | Bold (700) |
-| **Problema da carta** | 18px | Regular (400) |
-| **Opções** | 16px | Medium (500) |
-| **Consequências** | 14px | Italic (400) |
-| **Medidores (números)** | 14px | Bold (700) |
-| **Medidores (nomes)** | 12px | Regular (400) |
-| **Carta de Aprendizado (título)** | 20px | Bold (700) |
-| **Carta de Aprendizado (corpo)** | 16px | Regular (400) |
-| **Finais (título)** | 28px | Bold (700) |
-| **Finais (citação)** | 18px | Italic (400) |
-| **Finais (autor)** | 14px | Regular (400) |
-
-### 14.03.3. Regras de Tipografia
-
-| Regra | Descrição |
+| Item | Definição |
 | :--- | :--- |
-| **Maiúsculas** | Usar apenas em títulos e rótulos curtos |
-| **Itálico** | Usar para citações e consequências |
-| **Negrito** | Usar para destaque de palavras-chave |
-| **Espaçamento** | 1.5 entre linhas para corpo de texto |
-| **Alinhamento** | Alinhado à esquerda (nunca justificado) |
-| **Comprimento de linha** | Máximo 60 caracteres por linha |
+| **Orientação** | Retrato (vertical) |
+| **Mobile** | Tela cheia |
+| **PC e Web** | Coluna central em retrato; laterais vazias ou decoradas |
 
-### 14.03.4. Fundamentação Teórica
+**Estrutura da tela de jogo (de cima para baixo):**
 
-A escolha tipográfica se baseia em:
+```
+┌───────────────────────────────┐
+│  HUD — 8 ícones de medidor    │
+├───────────────────────────────┤
+│                               │
+│   Retrato de quem fala        │
+│   Nome do ator / instituição  │
+│                               │
+│   Problema (2 linhas)         │
+│                               │
+│   [carta arrastável]          │
+│                               │
+├───────────────────────────────┤
+│  Ano · Fase · carta X/Y       │
+└───────────────────────────────┘
+```
 
-1. **Legibilidade** — Poppins e Inter são fontes sem serifa, legíveis em telas pequenas.
-2. **Modernidade** — ambas são fontes contemporâneas, alinhadas com o público jovem.
-3. **Acessibilidade** — ambas têm boa legibilidade em diferentes tamanhos.
-
-> "A tipografia é a arte de tornar a linguagem visível." — Robert Bringhurst, *The Elements of Typographic Style*
-
-### 14.03.5. Referências
-
-- BRINGHURST, Robert. *The Elements of Typographic Style*. Vancouver: Hartley & Marks, 1992.
-- LUPTON, Ellen. *Thinking with Type*. New York: Princeton Architectural Press, 2004.
+O rodapé mostra só ano, fase e posição no turno (ex.: "Ano 1 · Lua de Mel · 3/7"). Não há meses nem dinheiro em reais: o `Caixa` é um medidor de 0 a 100.
 
 ---
 
-## 14.04 — Wireframes das Telas
+## 14.03 — HUD dos Medidores
 
-### 14.04.1. Tela Inicial
-
-┌─────────────────────────────────────────────────────────────┐
-│ │
-│ O PLANALTO │
-│ │
-│ [Logo do jogo — ícone estilizado] │
-│ │
-│ │
-│ ► INICIAR JOGO │
-│ │
-│ ⚙ CONFIGURAÇÕES │
-│ │
-│ ℹ SOBRE O JOGO │
-│ │
-│ │
-│ │
-│ "Você decide. Mas alguém vai pagar a conta." │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
+| Item | Definição |
 | :--- | :--- |
-| **Título** | "O PLANALTO" em Poppins Bold, 48px, verde |
-| **Logo** | Ícone estilizado do Palácio do Planalto |
-| **Botão Iniciar** | Botão retangular, verde, com ícone de play |
-| **Botão Configurações** | Botão secundário, cinza |
-| **Botão Sobre** | Botão secundário, cinza |
-| **Frase** | Frase de impacto, itálico, cinza-claro |
+| **Forma** | 8 ícones que "enchem" (preenchimento proporcional ao valor) |
+| **Números** | Não aparecem durante a partida; só na tela final (§14.09) |
+| **Cor** | Muda conforme a faixa do medidor (paleta própria, §14.11.3) |
+| **Ordem** | Sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e Poder (Caixa, Capital Político, Legitimidade) — GDD §6.1.1 |
 
-### 14.04.2. Tela de Calibração Inicial
+**Ícones (GDD §10.4):**
 
-┌─────────────────────────────────────────────────────────────┐
-│ CALIBRAÇÃO INICIAL 1/6 │
-├─────────────────────────────────────────────────────────────┤
-│ │
-│ O governo deve priorizar segurança ou prevenção? │
-│ │
-│ ┌─────────────────────┐ ┌─────────────────────┐ │
-│ │ │ │ │ │
-│ │ SEGURANÇA │ │ PREVENÇÃO │ │
-│ │ │ │ │ │
-│ └─────────────────────┘ └─────────────────────┘ │
-│ │
-│ │
-│ [PULAR CALIBRAÇÃO] │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
+| Medidor | Ícone |
 | :--- | :--- |
-| **Indicador de progresso** | "1/6" no canto superior direito |
-| **Pergunta** | Poppins Bold, 24px, branco |
-| **Opções** | Dois botões grandes, lado a lado |
-| **Botão pular** | Botão pequeno, cinza, canto inferior direito |
-
-### 14.04.3. Tela Principal (Carta)
-
-┌─────────────────────────────────────────────────────────────┐
-│ DIGNIDADE CONSCIÊNCIA SOBERANIA SEGURANÇA │
-│ ████████░░ ██████░░░░ ███████░░░ ████████░░ │
-│ │
-│ INTEGRIDADE CAIXA CAP. POLÍTICO LEGITIMIDADE │
-│ ███████░░░ ██████░░░░ ████████░░ ███████░░░ │
-├─────────────────────────────────────────────────────────────┤
-│ │
-│ ┌─────────────────────────────────────────────────────┐ │
-│ │ [Borda colorida — cor partidária] │ │
-│ │ │ │
-│ │ MINISTRO DA ECONOMIA │ │
-│ │ │ │
-│ │ "Senhor Presidente, a inflação está subindo. │ │
-│ │ Precisamos conter os preços." │ │
-│ │ │ │
-│ │ ◀ ESQUERDA DIREITA ▶ │ │
-│ │ Congelar preços Aumentar juros │ │
-│ │ │ │
-│ └─────────────────────────────────────────────────────┘ │
-│ │
-│ ANO 1 — MÊS 3/48 💰 R$ 500M │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
-| :--- | :--- |
-| **Barra de medidores** | Topo da tela, 8 medidores com barras |
-| **Carta** | Centro da tela, com borda colorida |
-| **Personagem** | Nome do ator (ex: MINISTRO DA ECONOMIA) |
-| **Problema** | Texto do dilema |
-| **Opções** | Esquerda (◀) e Direita (▶) |
-| **Rodapé** | Ano, mês, dinheiro |
-
-### 14.04.4. Tela de Consequência
-
-┌─────────────────────────────────────────────────────────────┐
-│ DIGNIDADE CONSCIÊNCIA SOBERANIA SEGURANÇA │
-│ ████████░░ ██████░░░░ ███████░░░ ████████░░ │
-├─────────────────────────────────────────────────────────────┤
-│ │
-│ │
-│ CONSEQUÊNCIA │
-│ │
-│ │
-│ "Os preços congelados, mas as lojas │
-│ ficaram sem produtos." │
-│ │
-│ │
-│ │
-│ │
-│ [ CONTINUAR ] │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
-| :--- | :--- |
-| **Barra de medidores** | Topo da tela (atualizada) |
-| **Título** | "CONSEQUÊNCIA" em Poppins Bold |
-| **Texto** | Frase curta, itálico, centralizado |
-| **Botão** | "CONTINUAR" para avançar |
-
-### 14.04.5. Tela de Carta de Aprendizado
-
-┌─────────────────────────────────────────────────────────────┐
-│ CARTA DE APRENDIZADO │
-├─────────────────────────────────────────────────────────────┤
-│ │
-│ O QUE VOCÊ ACABOU DE VIVENCIAR: │
-│ Você decidiu se aceitava ou não as mudanças do relator. │
-│ │
-│ O CONCEITO POR TRÁS: │
-│ O relator tem poder de alterar o texto de um projeto. │
-│ Isso se chama "poder de agenda". │
-│ │
-│ DADOS REAIS: │
-│ A Eletrobras investiu apenas 1/5 do prometido após a │
-│ privatização. 5 mil concursados foram demitidos. │
-│ │
-│ FONTE: Agência Senado, 2026. │
-│ │
-│ "O relator tem poder. Quem controla a pauta, controla o país."│
-│ │
-│ [ CONTINUAR ] │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
-| :--- | :--- |
-| **Título** | "CARTA DE APRENDIZADO" |
-| **Blocos** | Vivencia, Conceito, Dados, Fonte |
-| **Frase de impacto** | Citação final em itálico |
-| **Botão** | "CONTINUAR" para avançar |
-
-### 14.04.6. Tela de Impeachment
-
-┌─────────────────────────────────────────────────────────────┐
-│ │
-│ IMPEACHMENT PROCESS! │
-│ │
-│ VOTING │
-│ │
-│ │
-│ [Silhueta Humana] │
-│ │
-│ │
-│ ┌─────────────┐ ┌─────────────┐ │
-│ │ 112 │ │ 62 │ │
-│ │ (VERDE) │ │ (VERMELHO) │ │
-│ └─────────────┘ └─────────────┘ │
-│ │
-│ │
-│ A favor: 112 Contra: 62 │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
-| :--- | :--- |
-| **Título** | "IMPEACHMENT PROCESS!" |
-| **Subtítulo** | "VOTING" |
-| **Figura** | Silhueta humana |
-| **Placar** | Dois retângulos (verde e vermelho) |
-| **Texto** | Contagem de votos |
-
-### 14.04.7. Tela de Final
-
-┌─────────────────────────────────────────────────────────────┐
-│ │
-│ │
-│ BARBÁRIE │
-│ │
-│ │
-│ O povo é reduzido à mera sobrevivência. │
-│ A vida não vale nada. │
-│ O Estado não existe mais para o povo. │
-│ │
-│ │
-│ "O povo é o que há de mais reles. │
-│ Seu destino é ser uma mera força de trabalho, │
-│ um carvão humano que se queima na produção." │
-│ │
-│ — Darcy Ribeiro │
-│ │
-│ │
-│ [ JOGAR NOVAMENTE ] [ COMPARTILHAR ] │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-**Elementos:**
-
-| Elemento | Descrição |
-| :--- | :--- |
-| **Título** | Nome do final (ex: "BARBÁRIE") |
-| **Descrição** | 3 linhas sobre o final |
-| **Citação** | Frase de impacto em itálico |
-| **Autor** | Nome do autor |
-| **Botões** | "JOGAR NOVAMENTE" e "COMPARTILHAR" |
-
-### 14.04.8. Fundamentação Teórica
-
-Os wireframes foram construídos com base em:
-
-1. **Hierarquia Visual** — o que é mais importante aparece primeiro.
-2. **Lei de Fitts** — botões maiores e mais próximos são mais fáceis de clicar.
-3. **Princípio da Proximidade** — elementos relacionados ficam juntos.
-
-### 14.04.9. Referências
-
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
-- KRUG, Steve. *Don't Make Me Think*. San Francisco: New Riders, 2000.
-- LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
+| Dignidade | Casa |
+| Consciência | Livro |
+| Soberania | Bandeira |
+| Segurança | Escudo |
+| Integridade | Lupa |
+| Caixa | Moeda |
+| Capital Político | Congresso |
+| Legitimidade | Povo |
 
 ---
 
-## 14.05 — Ícones
+## 14.04 — A Carta
 
-### 14.05.1. Ícones dos Medidores
+### 14.04.1. Quem fala
 
-| Medidor | Ícone | Descrição Visual |
-| :--- | :--- | :--- |
-| **Dignidade** | 🏠 | Casa (moradia, direitos) |
-| **Consciência** | 📚 | Livro (educação, pensamento) |
-| **Soberania** | 🇧🇷 | Bandeira (autonomia nacional) |
-| **Segurança** | 🛡️ | Escudo (proteção) |
-| **Integridade** | 🔍 | Lupa (verdade, transparência) |
-| **Caixa** | 💰 | Moeda (dinheiro) |
-| **Capital Político** | 🏛️ | Congresso (poder político) |
-| **Legitimidade** | 👥 | Povo (apoio popular) |
+A carta mostra o **retrato e o nome de quem apresenta o problema**: um dos **24 atores** (`docs/11_FICHAS_DOS_ATORES.md`) ou uma **instituição** dos 10 modos (ex.: Câmara, Senado, STF). Não há outros personagens (D-087: o jogador é o Presidente; a carta fala com ele).
 
-### 14.05.2. Ícones dos Atores
+### 14.04.2. Opções e lado
 
-| Ator | Ícone | Descrição Visual |
-| :--- | :--- | :--- |
-| **Latifundiários** | 🌾 | Trigo (terra) |
-| **Investidores da Faria Lima** | 📈 | Gráfico (mercado financeiro) |
-| **Construtoras** | 🏗️ | Construção (especulação) |
-| **Empresariado Industrial** | 🏭 | Fábrica (indústria) |
-| **Setor de Universidades Privadas** | 🎓 | Diploma (ensino privado) |
-| **Mercado** | 💹 | Gráfico crescente (capital) |
-| **Tecnocratas** | 📊 | Gráfico (planejamento) |
-| **Militares** | 🎖️ | Medalha (hierarquia) |
-| **Servidores Públicos** | 🏛️ | Prédio público (Estado) |
-| **Diplomatas do Itamaraty** | 🌐 | Globo (política externa) |
-| **Líder da Câmara** | 🗳️ | Urna (Congresso) |
-| **Pastores** | ✝️ | Cruz (religião) |
-| **Sindicato dos Professores** | 📚 | Livro (educação) |
-| **Profissionais da Saúde** | 🩺 | Estetoscópio (saúde) |
-| **Líder Sindical** | ✊ | Punho erguido (trabalhadores) |
-| **MTST** | 🏘️ | Casa (moradia) |
-| **MST** | 🌱 | Planta (terra) |
-| **Movimentos Ambientais** | 🌳 | Árvore (meio ambiente) |
-| **Artista Engajado** | 🎨 | Paleta (arte) |
-| **Meta** | 📱 | Celular (tecnologia) |
-| **Impérios Geopolíticos** | 🌍 | Mundo (geopolítica) |
-| **Coach Digital** | 💪 | Braço forte (meritocracia) |
-| **Jornalista Independente** | 📰 | Jornal (imprensa) |
-| **Influenciador Progressista** | 📢 | Megafone (redes sociais) |
-
-### 14.05.3. Ícones de Interface
-
-| Elemento | Ícone | Descrição |
-| :--- | :--- | :--- |
-| **Iniciar** | ▶ | Play |
-| **Configurações** | ⚙ | Engrenagem |
-| **Sobre** | ℹ | Informação |
-| **Continuar** | → | Seta |
-| **Jogar Novamente** | ↺ | Seta circular |
-| **Compartilhar** | ↗ | Seta para fora |
-| **Pular** | ⏭ | Avançar |
-
-### 14.05.4. Estilo dos Ícones
-
-| Característica | Descrição |
+| Regra | Definição |
 | :--- | :--- |
-| **Estilo** | Vetorial, minimalista |
-| **Cor** | Branco ou cinza-claro |
-| **Fundo** | Transparente |
-| **Tamanho** | 24x24px (interface), 32x32px (medidores) |
-| **Biblioteca** | Font Awesome (CC0) ou similar |
+| **Duas opções** | `opcao_a` e `opcao_b` nos dados (doc 13, doc 17) |
+| **Lado sorteado** | A cada partida, o jogo sorteia qual opção vai para cada lado |
+| **Sem rótulo** | O jogo nunca escreve "esquerda", "direita", "◀" ou "▶" (D-084) |
+| **Texto revelado** | O texto da opção aparece só enquanto o jogador arrasta para aquele lado |
 
-### 14.05.5. Fundamentação Teórica
+### 14.04.3. Borda partidária
 
-A escolha dos ícones se baseia em:
+Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a borda da carta muda para a cor de quem propõe a opção daquele lado.
 
-1. **Reconhecimento Imediato** — ícones universais (casa, livro, escudo) são reconhecidos rapidamente.
-2. **Consistência Visual** — todos os ícones seguem o mesmo estilo.
-3. **Acessibilidade** — ícones com contraste alto e descrição textual.
+- Toda opção tem cor; não há borda neutra.
+- A borda tem **contorno branco de 2-3 px** em todas as cores, para garantir contraste (§14.11.2).
+- As cores e o significado de cada uma estão em §14.11.2.
 
-### 14.05.6. Referências
+### 14.04.4. Gesto
 
-- LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
-- FONT AWESOME. *Free Icons*. 2026.
+| Ação | Resposta |
+| :--- | :--- |
+| Arrastar | A carta acompanha o dedo e inclina; o texto da opção e a cor da borda aparecem. Nenhuma pista sobre os medidores |
+| Soltar antes do limite | A carta volta ao centro |
+| Soltar além do limite | A escolha é confirmada e a carta sai pelo lado |
 
----
-
-## 14.06 — Feedback Visual
-
-### 14.06.1. Feedback das Barras de Medidores
-
-| Ação | Feedback Visual | Duração |
-| :--- | :--- | :--- |
-| **Medidor sobe** | Barra enche com animação verde | 0.5s |
-| **Medidor desce** | Barra esvazia com animação vermelha | 0.5s |
-| **Medidor crítico** | Barra pisca em vermelho | Contínuo |
-| **Medidor extremo** | Barra pisca em azul | Contínuo |
-
-### 14.06.2. Feedback das Cartas
-
-| Ação | Feedback Visual | Duração |
-| :--- | :--- | :--- |
-| **Arrastar para esquerda** | Carta inclina para esquerda | Contínuo |
-| **Arrastar para direita** | Carta inclina para direita | Contínuo |
-| **Soltar carta** | Carta desaparece para o lado escolhido | 0.3s |
-| **Nova carta** | Carta aparece do centro | 0.3s |
-
-### 14.06.3. Feedback dos Botões
-
-| Ação | Feedback Visual | Duração |
-| :--- | :--- | :--- |
-| **Hover** | Botão muda de cor (mais claro) | 0.2s |
-| **Click** | Botão escurece | 0.1s |
-| **Desabilitado** | Botão fica cinza | — |
-
-### 14.06.4. Feedback dos Eventos Encadeados
-
-| Ação | Feedback Visual | Duração |
-| :--- | :--- | :--- |
-| **Evento ativado** | Tela pisca em amarelo | 0.5s |
-| **Aviso especial** | Mensagem aparece no topo | 3s |
-| **Efeito aplicado** | Medidores piscam | 0.5s |
-
-### 14.06.5. Fundamentação Teórica
-
-O feedback visual se baseia em:
-
-1. **Feedback Imediato (Norman)** — o usuário deve saber imediatamente o resultado de sua ação.
-2. **Reforço Positivo** — animações de sucesso reforçam o comportamento.
-3. **Alerta Visual** — cores de alerta (vermelho, amarelo) chamam atenção para problemas.
-
-> "O feedback é a informação que o usuário recebe sobre o resultado de sua ação." — Donald Norman
-
-### 14.06.6. Referências
-
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
-- SALEN, Katie; ZIMMERMAN, Eric. *Rules of Play: Game Design Fundamentals*. Cambridge: MIT Press, 2003.
+O limite de arraste fica para o protótipo (§14.13).
 
 ---
 
-## 14.07 — Animações
+## 14.05 — Pontos de Efeito
 
-### 14.07.1. Animações de Transição
+**Durante o arraste não há pista** sobre os medidores (decisão do PO, 2026-10-13). **Depois de soltar a carta**, aparece um ponto sobre cada medidor que mudou, enquanto o ícone enche ou esvazia.
 
-| Transição | Descrição | Duração |
-| :--- | :--- | :--- |
-| **Tela inicial → Calibração** | Fade out/in | 0.5s |
-| **Calibração → Jogo** | Slide da esquerda | 0.5s |
-| **Carta → Consequência** | Fade out/in | 0.3s |
-| **Consequência → Carta de Aprendizado** | Slide de baixo | 0.3s |
-| **Carta de Aprendizado → Próxima Carta** | Fade out/in | 0.3s |
-| **Jogo → Final** | Fade para preto | 1.0s |
+| Tamanho do ponto | Efeito |
+| :--- | :--- |
+| **Pequeno** | Até 10 pontos |
+| **Grande** | Acima de 10 pontos |
 
-### 14.07.2. Animações de Elementos
+O ponto **não indica direção**; a direção aparece no próprio ícone, que enche ou esvazia.
+
+---
+
+## 14.06 — Consequência
+
+Depois da escolha, aparece a **frase de consequência** (1 linha) sobre o HUD já atualizado. A tela **espera o toque** do jogador para seguir.
+
+---
+
+## 14.07 — Carta de Aprendizado
+
+| Camada | Conteúdo |
+| :--- | :--- |
+| **Resumo (sempre)** | Conceito por trás (bloco 2) + frase de impacto (bloco 5) |
+| **"Saiba mais" (ao tocar)** | O que você vivenciou (1), dados reais (3) e fonte (4) |
+
+O texto vem do doc 18 (D-090). Dado sem fonte verificada não aparece no jogo (D-091).
+
+---
+
+## 14.08 — Impeachment
+
+Cena especial, separada do fluxo normal de cartas.
+
+| Fase (GDD §6.5.2) | Tela |
+| :--- | :--- |
+| 1. O Pedido | Carta com moldura de crise |
+| 2. A Comissão | Carta + placar da comissão especial |
+| 3. A Votação | Carta + placar da Câmara: 513 deputados, 342 votos (2/3) para autorizar |
+| 4. O Julgamento | Carta + placar do Senado: 81 senadores, 54 votos (2/3) para condenar |
+| 5. O Desfecho | Absolvição ou condenação |
+
+- Transição de entrada: corte dramático; tela escurece e os placares entram em sequência (§14.10).
+- Como os votos de cada placar são calculados fica para o GDD do sistema de Impeachment (§14.13).
+
+---
+
+## 14.09 — Tela Final
+
+| Elemento | Conteúdo |
+| :--- | :--- |
+| **Nome do final** | Um dos 26 finais |
+| **Descrição** | Curta |
+| **Citação** | Frase e autor (doc 04; nomes reais mantidos — D-083) |
+| **Epílogo** | Eventos encadeados que voltariam depois do Ano 4 |
+| **Eixo ideológico** | Gráfico de radar com os 4 eixos (GDD §6.6) |
+| **Medidores** | Valores finais dos 8 medidores, agora com números |
+| **Botões** | Jogar novamente · Compartilhar |
+
+Medidor em 0 leva a esta tela **na hora** (D-089).
+
+---
+
+## 14.10 — Animações e Transições
+
+Proposta do GF aprovada pelo PO (2026-10-13). **Todas as durações devem ser validadas no protótipo**; a API de animação do Godot não foi conferida `[não verificado]`.
+
+### 14.10.1. Animações
 
 | Elemento | Animação | Duração |
 | :--- | :--- | :--- |
-| **Medidores** | Preenchimento da barra | 0.5s |
-| **Cartas** | Entrada do centro | 0.3s |
-| **Botões** | Hover e click | 0.2s |
-| **Ícones** | Pulso em alertas | 0.5s |
-| **Texto** | Aparecimento letra por letra | 0.05s por letra |
+| Medidor muda de valor | Preenchimento sobe ou desce suavemente | 300-500 ms |
+| Medidor muda de faixa | Troca de cor + pulso (escala 1,0 → 1,1 → 1,0) | 200 ms (pulso) + 250 ms (cor) |
+| Pontos sobre os medidores | Surgem com "pop" e somem | 400-600 ms, 100 ms após soltar |
+| Borda partidária | Muda de cor junto com o arraste | Contínua |
+| Texto da opção | Fade + leve deslize (8-12 px) | 150 ms |
+| Carta sai | Desliza e some para o lado escolhido | 250-350 ms |
+| Consequência | Fade-in; espera o toque | — |
+| Carta de Aprendizado | Sobe de baixo, como uma folha | 300 ms |
+| Aviso de evento encadeado | Destaque na borda da tela + ícone | 400 ms |
+| Medidor chega a 0 | Ícone se estilhaça; corte para o final | 500-800 ms |
+| Impeachment | Tela escurece; placares em sequência | 1,5-2,5 s |
+| Calibração | Igual à carta, sem pontos | Igual à carta |
 
-### 14.07.3. Princípios de Animação
+### 14.10.2. Transições
 
-O design das animações segue os **12 princípios de animação da Disney**:
-
-| # | Princípio | Aplicação no Jogo |
+| De → Para | Transição | Duração |
 | :--- | :--- | :--- |
-| 1 | **Squash and Stretch** | Botões comprimem ao clicar |
-| 2 | **Anticipation** | Carta inclina antes de sair |
-| 3 | **Staging** | Foco no elemento principal |
-| 4 | **Straight Ahead / Pose to Pose** | Animações frame a frame |
-| 5 | **Follow Through / Overlapping** | Elementos continuam após a ação |
-| 6 | **Slow In / Slow Out** | Animações começam e terminam devagar |
-| 7 | **Arc** | Elementos se movem em arcos |
-| 8 | **Secondary Action** | Elementos secundários reforçam a ação |
-| 9 | **Timing** | Duração adequada para cada ação |
-| 10 | **Exaggeration** | Ênfase em ações importantes |
-| 11 | **Solid Drawing** | Elementos com volume e peso |
-| 12 | **Appeal** | Animações agradáveis e envolventes |
+| Menu → Calibração | Fade | 300 ms |
+| Calibração → Ano 1 | Fade com leve zoom | 400 ms |
+| Virada de ano | Cartão "Ano X" | 600-800 ms |
+| Jogo → Impeachment | Corte dramático | ≥ 500 ms |
+| Jogo → Final | Fade para preto, depois o texto | ≥ 500 ms + pausa |
 
-### 14.07.4. Fundamentação Teórica
+### 14.10.3. Reduzir movimento
 
-As animações se baseiam em:
-
-1. **12 Princípios da Disney** — os princípios clássicos de animação.
-2. **Teoria do Flow (Csikszentmihalyi)** — animações suaves mantêm o jogador no flow.
-3. **Feedback Visual (Norman)** — animações são feedback.
-
-### 14.07.5. Referências
-
-- THOMAS, Frank; JOHNSTON, Ollie. *The Illusion of Life: Disney Animation*. New York: Hyperion, 1981.
-- CSIKSZENTMIHALYI, Mihaly. *Flow: The Psychology of Optimal Experience*. New York: Harper & Row, 1990.
+Opção nas configurações. Remove pulsos, "pop", deslizes, zoom e flash. Mantém fades curtos e o preenchimento dos medidores (é informação, não decoração).
 
 ---
 
-## 14.08 — Acessibilidade
+## 14.11 — Paleta e Tipografia
 
-### 14.08.1. Recursos de Acessibilidade
+### 14.11.1. Paleta da interface (GDD §10.1)
 
-| Recurso | Descrição |
+| Uso | Cor | HEX |
+| :--- | :--- | :--- |
+| Primária | Verde | `#2E7D32` |
+| Secundária | Azul | `#1565C0` |
+| Terciária | Cinza | `#37474F` |
+| Alerta | Vermelho | `#C62828` |
+| Destaque | Amarelo | `#F9A825` |
+| Fundo | Cinza-escuro | `#263238` |
+| Fundo da carta | Cinza-médio | `#37474F` |
+| Texto | Branco | `#FFFFFF` |
+| Texto secundário | Cinza-claro | `#B0BEC5` |
+
+**Contraste do texto (calculado pelo TA, WCAG):** branco sobre `#263238` 13,24:1; branco sobre `#37474F` 9,65:1; `#B0BEC5` sobre `#263238` 6,94:1; `#B0BEC5` sobre `#37474F` 5,06:1. Todos passam AA.
+
+### 14.11.2. Cores partidárias (D-030, D-092)
+
+Mantidas pelo PO com referência a partidos reais.
+
+| Cor | HEX | Espectro | Referência |
+| :--- | :--- | :--- | :--- |
+| Vermelho | `#C62828` | Esquerda | PT, PDT, PSOL |
+| Azul | `#1565C0` | Centro-direita | PSDB, PSB |
+| Verde | `#2E7D32` | Agronegócio | Bancada ruralista |
+| Amarelo | `#F9A825` | Centro | MDB, Centrão |
+| Roxo | `#6A1B9A` | Esquerda radical | PSOL, PSTU |
+| Laranja | `#EF6C00` | Direita liberal | NOVO, Republicanos |
+| Preto | `#212121` | Extrema-direita | PL, bolsonarismo |
+
+**Contraste da borda sobre `#263238` (TA):** Amarelo 6,72:1 e Laranja 4,30:1 passam o mínimo de 3:1; Verde 2,58, Vermelho 2,36, Azul 2,30, Roxo 1,41 e Preto 1,22 não passam. Por isso **toda borda partidária tem contorno branco de 2-3 px**.
+
+### 14.11.3. Cores das faixas dos medidores
+
+Paleta própria, separada das cores partidárias e da paleta da interface. Escala única de ciano, do escuro (crítico) ao claro (extremo). O claro **não** significa "bom": 81-100 é instável (GDD §5.2). Proposta do TA, aprovada pelo PO (2026-10-13).
+
+| Faixa | Significado (GDD §5.2) | HEX | Contraste sobre `#263238` |
+| :--- | :--- | :--- | :--- |
+| 0-20 | Crítico | `#0097A7` | 3,78:1 |
+| 21-40 | Baixo | `#00ACC1` | 4,83:1 |
+| 41-60 | Médio | `#26C6DA` | 6,41:1 |
+| 61-80 | Alto | `#4DD0E1` | 7,20:1 |
+| 81-100 | Extremo | `#80DEEA` | 8,55:1 |
+
+Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido + "!"; 21-40 hachura densa; 41-60 pontilhado; 61-80 hachura leve; 81-100 contorno vazado + "?".
+
+### 14.11.4. Tipografia
+
+| Uso | Fonte |
 | :--- | :--- |
-| **Modo daltônico** | Padrões além de cores (ícones, formas) |
-| **Tamanho de texto ajustável** | 3 tamanhos (pequeno, médio, grande) |
-| **Leitor de tela** | Descrições de áudio para as cartas |
-| **Alto contraste** | Modo de alto contraste para baixa visão |
-| **Navegação por teclado** | Suporte a teclado para PC |
+| Títulos | Poppins |
+| Corpo | Inter |
 
-### 14.08.2. Modo Daltônico
+**Tamanhos de texto (configuração):** 16, 20 e 24 px; **padrão 18 px** (revisa GDD §10.2 e §10.5). A escala dos títulos fica para o protótipo (§14.13).
 
-| Elemento | Cor Padrão | Modo Daltônico |
-| :--- | :--- | :--- |
-| **Medidor positivo** | Verde | ✅ + padrão de bolinhas |
-| **Medidor neutro** | Amarelo | ⚠️ + padrão de listras |
-| **Medidor negativo** | Vermelho | ❌ + padrão de cruzes |
-| **Cores partidárias** | Cores | Padrões distintos para cada espectro |
+---
 
-### 14.08.3. Tamanho de Texto
+## 14.12 — Telas de Apoio
 
-| Tamanho | Descrição |
+| Tela | Conteúdo |
 | :--- | :--- |
-| **Pequeno** | 14px (padrão) |
-| **Médio** | 18px |
-| **Grande** | 22px |
+| **Inicial** | Título, avisos de conteúdo (GDD §14.3), Iniciar, Configurações, Sobre |
+| **Tutorial** | 3-4 telas curtas antes da calibração: arrastar, medidores, pontos de efeito, Carta de Aprendizado (texto no doc 16) |
+| **Calibração** | 6 perguntas, uma por tela, respondidas **arrastando** como as cartas (doc 15) |
+| **Configurações** | Áudio e as opções de acessibilidade de §14.12.1 |
+| **Sobre** | Créditos e licenças (doc 16) |
 
-### 14.08.4. Leitor de Tela
+### 14.12.1. Acessibilidade
 
-| Elemento | Descrição |
+| Recurso | Status |
 | :--- | :--- |
-| **Cartas** | Texto lido em voz alta |
-| **Medidores** | Nome e valor lidos |
-| **Botões** | Nome e função lidos |
-| **Consequências** | Texto lido em voz alta |
-
-### 14.08.5. Fundamentação Teórica
-
-A acessibilidade se baseia em:
-
-1. **Design Universal (Ron Mace)** — o design deve ser acessível ao maior número possível de pessoas.
-2. **WCAG** — diretrizes de acessibilidade para conteúdo web.
-3. **Inclusão** — o jogo deve incluir pessoas com deficiências.
-
-> "O design universal não é um luxo. É uma necessidade." — Ron Mace
-
-### 14.08.6. Referências
-
-- MACE, Ron. *Universal Design: Housing for the Lifespan of All People*. 1988.
-- WCAG. *Web Content Accessibility Guidelines*. 2023.
+| Tamanho de texto (16/20/24) | Planejado (GDD §10.5) |
+| Reduzir movimento | Planejado (proposta GF aprovada) |
+| Alto contraste | Planejado (GDD §10.5) |
+| Navegação por teclado (PC) | Planejado (GDD §10.5) |
+| Leitor de tela | Planejado; suporte no Godot `[não verificado]` |
+| Modo daltônico (padrões nos medidores + símbolo do partido na carta) | **Depois do MVP** |
 
 ---
 
-## 14.09 — Layout das Cartas
+## 14.13 — Pendências
 
-### 14.09.1. Estrutura da Carta
-
-┌─────────────────────────────────────────────────────────────┐
-│ [Borda colorida — cor partidária — 4px] │
-│ │
-│ ┌─────────────────────────────────────────────────────┐ │
-│ │ │ │
-│ │ [NOME DO ATOR] │ │
-│ │ Poppins Bold, 16px, cinza-claro │ │
-│ │ │ │
-│ │ [PROBLEMA] │ │
-│ │ Inter Regular, 18px, branco │ │
-│ │ │ │
-│ │ ◀ ESQUERDA DIREITA ▶ │ │
-│ │ [OPÇÃO A] [OPÇÃO B] │ │
-│ │ Inter Medium, 16px Inter Medium, 16px │ │
-│ │ │ │
-│ └─────────────────────────────────────────────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────┘
-text
-
-
-### 14.09.2. Dimensões da Carta
-
-| Elemento | Dimensão |
-| :--- | :--- |
-| **Largura** | 100% da tela (mobile), 600px (PC) |
-| **Altura** | 60% da tela (mobile), 400px (PC) |
-| **Padding** | 24px |
-| **Borda** | 4px (cor partidária) |
-| **Border-radius** | 16px |
-| **Sombra** | 0 4px 12px rgba(0,0,0,0.3) |
-
-### 14.09.3. Cores da Carta
-
-| Elemento | Cor | HEX |
+| # | Pendência | Dono |
 | :--- | :--- | :--- |
-| **Fundo** | Cinza-médio | `#37474F` |
-| **Borda** | Cor partidária | Variável |
-| **Nome do ator** | Cinza-claro | `#B0BEC5` |
-| **Problema** | Branco | `#FFFFFF` |
-| **Opções** | Branco | `#FFFFFF` |
-
-### 14.09.4. Fundamentação Teórica
-
-O layout das cartas se baseia em:
-
-1. **Hierarquia Visual** — nome do ator, problema, opções.
-2. **Lei de Fitts** — botões grandes e próximos.
-3. **Contraste** — texto claro em fundo escuro.
-
-### 14.09.5. Referências
-
-- LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
+| 1 | Limite de arraste para confirmar a escolha | Protótipo (GF/DEV) |
+| 2 | Fórmula dos votos nos placares do impeachment | GDD de Impeachment |
+| 3 | Escala dos títulos para cada tamanho de texto | Protótipo (UX) |
+| 4 | Estilo dos retratos: geométricos simples ou arte vetorizada, CC0 ou feitos à mão, sem IA generativa (D-007) | TA + PO |
+| 5 | Validação das durações de animação no Godot | Protótipo (DEV) |
+| 6 | Modo daltônico | Pós-MVP |
 
 ---
 
-## 14.10 — Checklist de Qualidade
-
-### 14.10.1. Para UI
-
-| # | Item | ✅ |
-| :--- | :--- | :--- |
-| 1 | A interface é clara em menos de 3 segundos? | ☐ |
-| 2 | As cores têm contraste adequado? | ☐ |
-| 3 | A tipografia é legível em mobile? | ☐ |
-| 4 | Os ícones são reconhecíveis? | ☐ |
-| 5 | Os botões são grandes o suficiente? | ☐ |
-| 6 | O feedback visual é imediato? | ☐ |
-| 7 | As animações são suaves? | ☐ |
-| 8 | O layout é consistente? | ☐ |
-| 9 | A navegação é intuitiva? | ☐ |
-| 10 | O jogo é acessível? | ☐ |
-
-### 14.10.2. Para UX
-
-| # | Item | ✅ |
-| :--- | :--- | :--- |
-| 1 | O jogador entende o objetivo do jogo? | ☐ |
-| 2 | O jogador entende as mecânicas? | ☐ |
-| 3 | O jogador se sente engajado? | ☐ |
-| 4 | O jogador aprende algo novo? | ☐ |
-| 5 | O jogador quer jogar novamente? | ☐ |
-| 6 | O jogo é frustrante demais? | ☐ |
-| 7 | O jogo é fácil demais? | ☐ |
-| 8 | O jogo respeita o tempo do jogador? | ☐ |
-| 9 | O jogo é acessível? | ☐ |
-| 10 | O jogo cumpre seu objetivo educativo? | ☐ |
-
----
-
-## 14.11 — Referências
-
-### 14.11.1. Design
-
-- BRINGHURST, Robert. *The Elements of Typographic Style*. Vancouver: Hartley & Marks, 1992.
-- HELLER, Eva. *A Psicologia das Cores*. São Paulo: G. Gili, 2013.
-- KRUG, Steve. *Don't Make Me Think*. San Francisco: New Riders, 2000.
-- LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
-- LUPTON, Ellen. *Thinking with Type*. New York: Princeton Architectural Press, 2004.
-- NORMAN, Donald. *The Design of Everyday Things*. New York: Basic Books, 1988.
-
-### 14.11.2. Animação
-
-- THOMAS, Frank; JOHNSTON, Ollie. *The Illusion of Life: Disney Animation*. New York: Hyperion, 1981.
-
-### 14.11.3. Acessibilidade
-
-- MACE, Ron. *Universal Design: Housing for the Lifespan of All People*. 1988.
-- WCAG. *Web Content Accessibility Guidelines*. 2023.
-
-### 14.11.4. Design de Jogos
-
-- ALLIOT, François. *Reigns: Design Philosophy*. 2016.
-- SALEN, Katie; ZIMMERMAN, Eric. *Rules of Play: Game Design Fundamentals*. Cambridge: MIT Press, 2003.
-- CSIKSZENTMIHALYI, Mihaly. *Flow: The Psychology of Optimal Experience*. New York: Harper & Row, 1990.
-
-### 14.11.5. Comunicação Política
-
-- BOBBIO, Norberto. *Direita e Esquerda: Razões e Significados de uma Distinção Política*. São Paulo: UNESP, 1995.
-
----
-
-**Última atualização:** Outubro de 2026
-**Versão:** 1.0 (completa)
+**Última atualização:** 2026-10-13 (P-010)
+**Versão:** 2.0 (reescrita)

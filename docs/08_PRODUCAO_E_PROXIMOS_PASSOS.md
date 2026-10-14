@@ -376,7 +376,7 @@ A validação pedagógica segue quatro etapas:
 | **Engajamento** | O jogador se sentiu engajado? | > 70% |
 | **Aprendizado** | O jogador aprendeu algo novo? | > 80% |
 | **Recomendação** | O jogador recomendaria o jogo? | > 70% |
-| **Duração** | O jogo foi concluído em 30-40 minutos? | > 80% |
+| **Duração** | O jogo foi concluído em ~15 minutos (12-18)? | > 80% |
 
 ### 08.05.3. Parcerias Potenciais
 

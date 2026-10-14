@@ -136,7 +136,7 @@ A escolha por **Godot 4.7 + MCP + Agentes de IA** se justifica por:
 
 A escolha por **singleplayer** e **sem salvamento de progresso** se justifica por:
 
-1. **Foco na experiência** — o jogador completa a jornada em uma sessão (30-40 minutos).
+1. **Foco na experiência** — o jogador completa a jornada em uma sessão (~15 minutos, D-088).
 2. **Reflexão imediata** — o impacto das escolhas é sentido na hora, sem interrupções.
 3. **Simplicidade técnica** — sem necessidade de servidores ou sistemas de save.
 
@@ -146,7 +146,7 @@ A escolha por **singleplayer** e **sem salvamento de progresso** se justifica po
 
 | Item | Definição |
 | :--- | :--- |
-| **Duração** | 30-40 minutos |
+| **Duração** | ~15 minutos (D-088; antes 30-40, D-010) |
 | **Turnos** | 4 turnos (4 anos) |
 | **Cartas por turno** | 6-8 |
 | **Total de cartas jogadas** | 24-32 |
@@ -154,9 +154,9 @@ A escolha por **singleplayer** e **sem salvamento de progresso** se justifica po
 
 ### Fundamentação da Duração
 
-A duração de **30-40 minutos** foi escolhida com base em:
+A duração de **~15 minutos** (D-088, que revisa os 30-40 minutos da D-010) se apoia em:
 
-1. **Pesquisas sobre atenção** — jovens de 15 a 30 anos mantêm atenção focada por 30-40 minutos em atividades interativas.
+1. **Pesquisas sobre atenção** — jovens de 15 a 30 anos mantêm atenção focada por 30-40 minutos em atividades interativas `[não verificado]`.
 2. **Contexto escolar** — uma aula tem 50 minutos, então o jogo cabe em uma sessão.
 3. **Curva de aprendizado** — tempo suficiente para apresentar todos os modos e atores.
 

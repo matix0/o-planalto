@@ -232,27 +232,22 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "titulo": "Privatização da estatal",
   "modo": "Congresso",
   "tipo": "Institucional",
-  "cor": "laranja",
   "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
-  "opcao_esquerda": {
+  "opcao_a": {
     "texto": "Nomear relator adversário",
+    "cor": "vermelho",
     "custo": { "Capital Político": -10 },
     "efeitos": { "Soberania": 10 },
-    "consequencia": "A lei passa. O povo paga a conta."
-  },
-  "opcao_direita": {
-    "texto": "Aceitar as mudanças",
-    "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
-  "aprendizado": {
-    "vivencia": "Você decidiu se aceitava ou não as mudanças do relator.",
-    "conceito": "Poder de agenda",
-    "dados_reais": "A Eletrobras investiu apenas 1/5 do prometido após a privatização.",
-    "fonte": "Agência Senado",
-    "frase_impacto": "O relator tem poder. Quem controla a pauta, controla o país."
+  "opcao_b": {
+    "texto": "Aceitar as mudanças",
+    "cor": "laranja",
+    "custo": { "Capital Político": 10, "Caixa": 10 },
+    "efeitos": { "Soberania": -15, "Integridade": -5 },
+    "consequencia": "A lei passa. O povo paga a conta."
   },
+  "aprendizado_id": "APR-001",
   "pre_requisitos": {
     "ano_minimo": 1,
     "modo_nao_jogado": true
@@ -275,11 +270,10 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | `titulo` | String | Título curto da carta |
 | `modo` | String | Modo institucional (Congresso, Orçamento, etc.) |
 | `tipo` | String | Tipo (Institucional, Temática, Ator, Evento) |
-| `cor` | String | Cor partidária (vermelho, azul, verde, amarelo, roxo, laranja, preto) |
 | `problema` | String | Descrição do dilema |
-| `opcao_esquerda` | Objeto | Opção de esquerda |
-| `opcao_direita` | Objeto | Opção de direita |
-| `aprendizado` | Objeto | Carta de Aprendizado |
+| `opcao_a` | Objeto | Primeira opção; o jogo sorteia o lado em que aparece (D-084) |
+| `opcao_b` | Objeto | Segunda opção |
+| `aprendizado_id` | String | Código da Carta de Aprendizado no doc 18 (D-090), ex.: `APR-001` |
 | `pre_requisitos` | Objeto | Condições para a carta aparecer |
 | `eventos_encadeados` | Array | Eventos que a carta gera |
 
@@ -288,9 +282,10 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 ```json
 {
   "texto": "Nomear relator adversário",
+  "cor": "vermelho",
   "custo": { "Capital Político": -10 },
   "efeitos": { "Soberania": 10 },
-  "consequencia": "A lei passa. O povo paga a conta."
+  "consequencia": "O relator é adversário. O projeto avança."
 }
 ```
 
@@ -299,6 +294,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
 | `texto` | String | Texto da opção |
+| `cor` | String | Cor partidária de quem propõe a opção (vermelho, azul, verde, amarelo, roxo, laranja, preto) — D-092 |
 | `custo` | Objeto | Medidores que são gastos (negativos) |
 | `efeitos` | Objeto | Medidores que são afetados (positivos ou negativos) |
 | `consequencia` | String | Frase curta mostrada após a escolha |
@@ -336,7 +332,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | `limiar_extremo` | Int | Limite para efeitos extremos (80) |
 | `final_zero` | String | Final se chegar a 0 |
 | `final_cem` | String | Final se chegar a 100 |
-| `cor` | String | Cor do medidor na interface |
+| `cor` | String | Não usado: a cor do ícone vem da faixa do valor (doc 14 §14.11.3) |
 | `icone` | String | Ícone do medidor |
 
 ### 13.3.4. Estrutura de um Ator
@@ -545,29 +541,7 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 | **Sociedade** | Conservadorismo | Progressismo | -10 a +10 |
 | **Estado** | Autoritarismo | Liberdade | -10 a +10 |
 
-**Algoritmo:**
-
-```
-funcao calcular_eixo(escolhas):
-    eixo = {
-        "economia": 0,
-        "diplomacia": 0,
-        "sociedade": 0,
-        "estado": 0
-    }
-    
-    for escolha in escolhas:
-        if escolha.opcao == "esquerda":
-            eixo["economia"] -= 1
-            eixo["sociedade"] += 1
-            eixo["estado"] += 1
-        elif escolha.opcao == "direita":
-            eixo["economia"] += 1
-            eixo["sociedade"] -= 1
-            eixo["estado"] -= 1
-    
-    return normalizar(eixo, -10, 10)
-```
+**Algoritmo:** pendente (GDD §16.4, P-9). Regra fixa: os pontos de cada eixo vêm dos dados da opção escolhida, **nunca do lado do arraste** (D-084; o lado é sorteado). O algoritmo antigo, que pontuava por "esquerda/direita", foi removido no P-010.
 
 **Revelação Final:**
 
@@ -620,7 +594,7 @@ funcao calcular_eixo(escolhas):
 | :--- | :--- | :--- |
 | `cartas.json` | JSON | Todas as 340 cartas |
 | `medidores.json` | JSON | Os 8 medidores + 3 sub-medidores |
-| `atores.json` | JSON | Os 20 atores |
+| `atores.json` | JSON | Os 24 atores |
 | `finais.json` | JSON | Os 26 finais |
 | `eventos.json` | JSON | Os 78 eventos encadeados |
 | `calibracao.json` | JSON | As 6 perguntas da calibração inicial |
@@ -639,27 +613,22 @@ funcao calcular_eixo(escolhas):
       "titulo": "Privatização da estatal",
       "modo": "Congresso",
       "tipo": "Institucional",
-      "cor": "laranja",
       "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
-      "opcao_esquerda": {
+      "opcao_a": {
         "texto": "Nomear relator adversário",
+        "cor": "vermelho",
         "custo": { "Capital Político": -10 },
         "efeitos": { "Soberania": 10 },
-        "consequencia": "A lei passa. O povo paga a conta."
-      },
-      "opcao_direita": {
-        "texto": "Aceitar as mudanças",
-        "custo": { "Capital Político": 10, "Caixa": 10 },
-        "efeitos": { "Soberania": -15, "Integridade": -5 },
         "consequencia": "O relator é adversário. O projeto avança."
       },
-      "aprendizado": {
-        "vivencia": "Você decidiu se aceitava ou não as mudanças do relator.",
-        "conceito": "Poder de agenda",
-        "dados_reais": "A Eletrobras investiu apenas 1/5 do prometido após a privatização.",
-        "fonte": "Agência Senado",
-        "frase_impacto": "O relator tem poder. Quem controla a pauta, controla o país."
+      "opcao_b": {
+        "texto": "Aceitar as mudanças",
+        "cor": "laranja",
+        "custo": { "Capital Político": 10, "Caixa": 10 },
+        "efeitos": { "Soberania": -15, "Integridade": -5 },
+        "consequencia": "A lei passa. O povo paga a conta."
       },
+      "aprendizado_id": "APR-001",
       "pre_requisitos": {
         "ano_minimo": 1,
         "modo_nao_jogado": true

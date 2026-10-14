@@ -27,7 +27,7 @@ O jogo "O Planalto" é composto por **9 sistemas interconectados**:
 │     └──▶ Prioridade narrativa                               │
 │                                                             │
 │  4. SISTEMA DE SATISFAÇÃO DOS ATORES                        │
-│     └──▶ 20 atores com níveis de satisfação                 │
+│     └──▶ 24 atores com níveis de satisfação                 │
 │                                                             │
 │  5. SISTEMA DE EVENTOS ENCADEADOS                           │
 │     └──▶ 78 eventos com gatilhos de longo prazo             │

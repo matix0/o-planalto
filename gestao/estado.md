@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-09
+**Última atualização:** 2026-10-14
 **Fase atual:** Setup de documentação (Fase 0-3 concluídas)
 **Próxima fase:** Escrita dos arquivos 14-18 e GDD
 
@@ -20,7 +20,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Medidores** | ✅ Definidos | 8 + 3 sub-medidores |
 | **Turnos** | ✅ Definidos | 4 turnos (4 anos) |
 | **Modos** | ✅ Definidos | 10 modos institucionais |
-| **Atores** | ✅ Definidos | 20 atores (14 base + 6 expansão) |
+| **Atores** | ✅ Definidos | 24 atores (D-085) |
 | **Cartas** | ✅ Inventariadas | 340 cartas |
 | **Finais** | ✅ Consolidados | 26 finais |
 | **Impeachment** | ✅ Reformulado | Cena de golpe, a partir do Ano 2 |
@@ -34,8 +34,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Setup Claude Code** | ✅ Concluído | P-008 |
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
-| **Arquivos 14-18** | ✅ Escritos | UI/UX, Fluxo, Manual, Roteiros (P-003) |
-| **GDD Completo** | ⏳ Pendente | — |
+| **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
+| **GDD Completo** | 🟡 Rascunho 1.2 | `gdd/GDD.md` (D-081); pendências em §16.4 |
 | **Protótipo Técnico** | ⏳ Pendente | Bloqueado pelo GDD |
 | **Testes** | ⏳ Pendentes | Após protótipo |
 | **Publicação** | ⏳ Pendente | Após validação |
@@ -98,6 +98,18 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-077 | Site em Astro Starlight | 2026-10-09 |
 | D-078 | Docs truncados com aviso | 2026-10-09 |
 | D-079 | Guardrails do site | 2026-10-09 |
+| D-081 | GDD mestre em `gdd/` | 2026-10-13 |
+| D-082 | Sem limiares de proteção | 2026-10-13 |
+| D-083 | Nomes reais mantidos (revisa D-005) | 2026-10-13 |
+| D-084 | Swipe sem rótulo ideológico | 2026-10-13 |
+| D-085 | 24 atores | 2026-10-13 |
+| D-086 | Cenário é o Brasil (revisa D-006) | 2026-10-13 |
+| D-087 | Jogador é Presidente | 2026-10-13 |
+| D-088 | Partida de ~15 min (revisa D-010) | 2026-10-13 |
+| D-089 | Medidor em 0 encerra na hora | 2026-10-13 |
+| D-090 | Doc 18 é a fonte dos Aprendizados | 2026-10-13 |
+| D-091 | Dados só com fonte verificada | 2026-10-13 |
+| D-092 | Cor partidária por opção | 2026-10-13 |
 
 ---
 
@@ -122,7 +134,12 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**Escrever os arquivos 14-18** (UI/UX, Fluxo, Manual, Roteiros) antes do GDD.
+**P-011 — Kit do GDD:** GDDs de sistema (Finais, Impeachment, Eixo, Medidores) para resolver as pendências do GDD §16.4.
+
+**Pendências do P-010:**
+- Cartas que invertam o "moral por cor" (com PSI).
+- 5 Cartas de Aprendizado sem dado verificado (002, 041, 061, 121, ATOR-001).
+- Finais: medidor em 100; nenhuma condição atendida; desempate.
 
 **Pendências do P-009:**
 - Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).

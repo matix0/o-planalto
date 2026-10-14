@@ -616,7 +616,7 @@ Cada ficha contém:
 | :--- | :--- | :--- |
 | **Institucional** | Todos os 10 modos | 200 cartas |
 | **Temática** | 7 temas transversais | 70 cartas |
-| **Ator** | 20 atores | 70 cartas |
+| **Ator** | 24 atores | 70 cartas |
 | **Total** | — | **340 cartas** |
 
 ---

@@ -599,7 +599,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Personagem que interage com o jogador, oferecendo apoio ou fazendo exigências.
 
-**No jogo:** Existem 20 atores, divididos em 14 base e 6 de expansão.
+**No jogo:** Existem 24 atores (D-085).
 
 **Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Coronel, Tecnocrata, Populista, etc.).
 
@@ -661,7 +661,7 @@ O glossário está organizado em **sete categorias**:
 
 ### 09.8.15. Cor Partidária
 
-**Definição:** Cor que sinaliza a inclinação política de uma carta.
+**Definição:** Cor que sinaliza quem propõe cada opção de uma carta (D-092): cada opção tem a sua cor, e a borda da carta mostra essa cor enquanto o jogador arrasta.
 
 **No jogo:** Existem 7 cores partidárias: Vermelho (esquerda), Azul (centro-direita), Verde (agronegócio), Amarelo (centro), Roxo (esquerda radical), Laranja (direita liberal) e Preto (extrema-direita).
 

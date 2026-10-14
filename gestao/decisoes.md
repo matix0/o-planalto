@@ -89,6 +89,18 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-078 | Docs truncados (04, 05, 06, 08, 10): aviso "incompleto", marca no menu e `noindex` até a recuperação | 2026-10-09 | Proposta UX (P-009) |
 | D-080 | Medidor `Verdade` renomeado para `Integridade`; final "Pós-Verdade Total" → "Desintegração" (citação de Goebbels substituída por adaptação). Conceito e regras mantidos | 2026-10-09 | Nome capturado pelo discurso político; validar com o Prof. Alisson |
 | D-079 | Guardrails do site: "documento com DNA de carta", sem cores partidárias na UI, fontes auto-hospedadas, zero rastreamento, só tipografia/CSS como gráfico, uso de IA declarado | 2026-10-09 | Convergência UX/TA/PSI (P-009) |
+| D-081 | GDD 1.1 salvo em `gdd/GDD.md` como documento mestre, status Rascunho, fora do site | 2026-10-13 | Escolha do PO (revisão do GDD) |
+| D-082 | Limiares de proteção por ano removidos; medidor em 0 encerra o jogo em qualquer ano | 2026-10-13 | Escolha do PO; pisos anulavam impeachment e regra de morte |
+| D-083 | Nomes reais mantidos como estão (atores e citações dos finais); revisa D-005. RC-08 segue ativo | 2026-10-13 | Escolha do PO; parecer jurídico pendente |
+| D-084 | Esquerda/direita é conceito interno do swipe; a UI nunca rotula nem associa o lado a ideologia — mostra só o texto e o efeito da opção | 2026-10-13 | Escolha do PO; pilar 4 |
+| D-085 | 24 atores (14 base + 6 expansão + 4 adicionais); substitui D-019 | 2026-10-13 | Escolha do PO; alinha com `docs/11_FICHAS_DOS_ATORES.md:5` |
+| D-086 | Cenário é o Brasil explícito; sai Vila Nova/Aurora; revisa D-006 | 2026-10-13 | Escolha do PO (P-010, rodada 1) |
+| D-087 | O jogador é Presidente da República (tratamento neutro "Presidente") | 2026-10-13 | Escolha do PO (P-010, rodada 2) |
+| D-088 | Partida de ~15 min, com 6-8 cartas por turno; revisa D-010 | 2026-10-13 | Escolha do PO (P-010, rodada 5); 30-40 min não fechava com D-017 |
+| D-089 | Medidor em 0 encerra a partida na hora; finais de combinação são checados no fim do Ano 4 | 2026-10-13 | Escolha do PO (P-010, rodada 5) |
+| D-090 | Doc 18 é a fonte única das Cartas de Aprendizado; o doc 17 só aponta `APR-xxx` (ID = número da carta) | 2026-10-13 | Escolha do PO (P-010, rodada 6) |
+| D-091 | Dado só entra no jogo com fonte verificada (link); sem verificação fica `[não verificado]` | 2026-10-13 | Escolha do PO (P-010, rodada 1) |
+| D-092 | Cor partidária por opção (cada lado da carta tem a cor de quem propõe); o ECO valida o saldo de efeitos por cor; detalha D-030 | 2026-10-13 | Escolha do PO (P-010); evita "lado certo" |
 
 ---
 
@@ -99,8 +111,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | ID | Decisão |
 | :--- | :--- |
 | D-004 | Tom direto, humano e levemente irônico |
-| D-005 | Sem nomes de políticos reais |
-| D-006 | Cenário fictício |
+| D-005 | Sem nomes de políticos reais (revisada por D-083) |
+| D-083 | Nomes reais mantidos |
+| D-006 | Cenário fictício (revisada por D-086) |
+| D-086 | Cenário é o Brasil |
+| D-087 | Jogador é Presidente |
 | D-031 | Fontes: Poppins + Inter |
 | D-032 | Paleta primária |
 | D-033 | Ícones minimalistas |
@@ -112,18 +127,26 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | :--- | :--- |
 | D-002 | Inspiração em *Reigns* |
 | D-009 | Público-alvo |
-| D-010 | Duração |
+| D-010 | Duração (revisada por D-088) |
+| D-088 | Partida de ~15 min |
+| D-089 | Medidor em 0 encerra na hora |
+| D-090 | Doc 18 é a fonte dos Aprendizados |
+| D-091 | Dados só com fonte verificada |
 | D-014 | 8 medidores |
 | D-015 | 3 sub-medidores |
 | D-016 | 4 turnos |
 | D-018 | 10 modos |
-| D-019 | 20 atores |
+| D-019 | 20 atores (substituída por D-085) |
+| D-082 | Sem limiares de proteção |
+| D-084 | Swipe sem rótulo ideológico |
+| D-085 | 24 atores |
 | D-020 | 340 cartas |
 | D-021 | 26 finais |
 | D-022 | Impeachment como golpe |
 | D-024 | 78 eventos |
 | D-027 | Eixo 9axes |
 | D-030 | Cores partidárias |
+| D-092 | Cor por opção |
 
 ### Técnica
 
@@ -166,6 +189,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-077 | Site em Astro Starlight |
 | D-078 | Docs truncados com aviso |
 | D-079 | Guardrails do site |
+| D-081 | GDD mestre em `gdd/` |
 
 ---
 
@@ -184,4 +208,4 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 
 ---
 
-**Última atualização:** 2026-10-09
+**Última atualização:** 2026-10-13

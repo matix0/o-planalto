@@ -18,7 +18,7 @@ Este documento define o design completo do jogo, incluindo a premissa, os medido
 | **Inspiração principal** | *Reigns* (Nerial, 2016) |
 | **Inspiração secundária** | *Senhor Presidente* (Icon Games, 2016) |
 | **Público-alvo** | Jovens de 15 a 30 anos, periféricos e estudantes |
-| **Duração** | 30-40 minutos |
+| **Duração** | ~15 minutos (D-088) |
 | **Plataformas** | Mobile, Web e PC |
 | **Stack** | Godot 4.7 + MCP + Agentes de IA |
 | **Salvamento** | Sem salvamento de progresso |
@@ -27,7 +27,7 @@ Este documento define o design completo do jogo, incluindo a premissa, os medido
 
 ### 04.01.2. Premissa
 
-O jogador assume o papel de **governante de uma cidade-estado fictícia** chamada **Vila Nova** (ou **Aurora**). Durante **4 anos de mandato**, ele precisa tomar decisões que afetam a vida da população, equilibrando forças políticas, econômicas e sociais.
+O jogador é o **Presidente do Brasil** (D-087). Durante **4 anos de mandato**, toma decisões que afetam a vida da população, equilibrando forças políticas, econômicas e sociais.
 
 O jogo não busca doutrinar. Busca **conscientizar**: mostrar que toda escolha política tem um preço, e que **politização ≠ polarização**.
 
@@ -46,23 +46,11 @@ O jogo busca:
 5. Promover a **soberania nacional**, a **dignidade** e a **consciência crítica**.
 6. Ensinar, de forma prática, como funcionam as instituições brasileiras: Congresso, STF, orçamento público, mídia, bancadas.
 
-### 04.01.4. Cenário Fictício
+### 04.01.4. Cenário: Brasil
 
-A escolha por uma **cidade-estado fictícia** se justifica por três razões:
+O jogo se passa no **Brasil**, com instituições, dados e atores reais (D-086, que revisa a D-006). O cenário fictício (Vila Nova/Aurora) foi abandonado em 2026-10-13: por ser um jogo educativo, o PO decidiu usar o cenário real. Risco associado: RC-08 (nomes reais; parecer jurídico pendente).
 
-| Razão | Descrição |
-| :--- | :--- |
-| **Evita polarização** | Sem nomes reais, o jogador não se sente atacado. |
-| **Permite alegorias** | É possível falar de privatização da Eletrobras sem citar a Eletrobras. |
-| **Protege o jogo juridicamente** | Sem nomes reais, não há risco de processos. |
-
-**Elementos do cenário:**
-
-- **Nome:** Vila Nova (ou Aurora)
-- **População:** Fictícia, mas com problemas reais (desigualdade, violência, desemprego)
-- **Economia:** Mista (indústria, agronegócio, serviços)
-- **Território:** Centro urbano, periferia, zona rural, área estratégica
-- **Instituições:** Congresso, Judiciário, mídia, bancadas
+**Instituições em jogo:** Presidência, Congresso (Câmara e Senado), STF, mídia, bancadas.
 
 ### 04.01.5. Fundamentação Teórica
 
@@ -345,39 +333,40 @@ Cada modo é uma **unidade de aprendizagem autônoma** que ensina um mecanismo i
 
 ### 04.05.1. Visão Geral
 
-O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada ator é uma caricatura de um tipo social brasileiro.
+O jogo possui **24 atores** (D-085), em quatro categorias: Capital, Estado, Sociedade Civil, e Mídia e Tecnologia. A ficha completa de cada um está em `docs/11_FICHAS_DOS_ATORES.md`, que é a fonte do elenco.
 
-### 04.05.2. Atores Base (14)
+### 04.05.2. Os 24 Atores
 
-| # | Ator | Arquétipo | Oferece | Cobra | Preço (Medidores) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Coronel** | Senhor de engenho, chefe local | Capital Político | Autonomia e impunidade | -Dignidade, -Integridade |
-| 2 | **Tecnocrata** | Planejador militar, economista | Caixa, Capital Político | Cortes sociais e privatizações | -Dignidade, -Soberania |
-| 3 | **Populista** | Líder carismático e messiânico | Legitimidade | Lealdade absoluta | -Consciência, -Capital Político |
-| 4 | **Miliciano** | Policial-bandido, senhor do território | Segurança (superficial) | Impunidade e controle econômico | -Dignidade, -Integridade, -Soberania |
-| 5 | **Pastor** | Imperador midiático da fé | Legitimidade, Capital Político | Censura e controle ideológico | -Consciência, -Integridade |
-| 6 | **Banqueiro/Ruralista** | Capital financeiro e agronegócio | Caixa, acesso a mercados | Privatizações e desregulamentação | -Dignidade, -Soberania |
-| 7 | **Professor** | Educador libertador e sucateado | Consciência, Legitimidade | Investimento e liberdade de cátedra | +Consciência, -Capital Político |
-| 8 | **Médico do SUS** | Sanitarista e resistência | Dignidade, Legitimidade | Investimento e fim do teto | +Dignidade, -Caixa |
-| 9 | **Coach Digital** | Novo pastor da prosperidade | Legitimidade, Capital Político | Desregulamentação e isenções | -Consciência, -Integridade |
-| 10 | **Jornalista Independente** | Imprensa alternativa e resistência | Integridade, Consciência | Liberdade de imprensa e proteção | +Integridade, -Capital Político |
-| 11 | **Artista Engajado** | Cultura como trincheira | Consciência, Paixão Nacional | Financiamento e liberdade de criação | +Consciência, -Capital Político |
-| 12 | **Burocrata** | Servidor público de carreira | Caixa, Capital Político | Estabilidade e aumento salarial | +Caixa, -Dignidade (se acomodar) |
-| 13 | **Empresário da Saúde** | Dono de hospitais e planos | Caixa, Capital Político | Privatização do SUS | -Dignidade |
-| 14 | **Reitor Privatista** | Financeirização do ensino | Caixa, Capital Político | Cortes na educação pública | -Consciência, -Dignidade |
-
-### 04.05.3. Atores de Expansão (6)
-
-| # | Ator | Oferece | Cobra | Preço |
+| # | Ator | Categoria | Oferece | Cobra |
 | :--- | :--- | :--- | :--- | :--- |
-| 15 | **Sindicalista** | Legitimidade, Consciência | Direitos trabalhistas | +Legitimidade, -Caixa |
-| 16 | **Estudante** | Consciência, Legitimidade | Educação, liberdade | +Consciência, -Capital Político |
-| 17 | **Ambientalista** | Soberania, Dignidade | Proteção ambiental | +Soberania, -Caixa |
-| 18 | **Indígena** | Soberania, Consciência | Demarcação de terras | +Soberania, -Capital Político |
-| 19 | **Quilombola** | Dignidade, Consciência | Titulação de terras | +Dignidade, -Capital Político |
-| 20 | **Influenciador Progressista** | Consciência, Integridade | Apoio nas redes | +Consciência, -Capital Político |
+| 1 | Latifundiários | Capital | Capital Político | Soberania |
+| 2 | Investidores da Faria Lima | Capital | Caixa | Dignidade |
+| 3 | Construtoras | Capital | Caixa | Dignidade |
+| 4 | Empresariado Industrial | Capital | Soberania | Dignidade |
+| 5 | Setor de Universidades Privadas | Capital | Caixa | Consciência |
+| 6 | Mercado | Capital | Caixa | Dignidade |
+| 7 | Tecnocratas | Estado | Caixa | Dignidade |
+| 8 | Militares | Estado | Segurança | Legitimidade |
+| 9 | Servidores Públicos Estatais | Estado | Soberania | Caixa |
+| 10 | Diplomatas do Itamaraty | Estado | Segurança | Capital Político |
+| 11 | Líder da Câmara (Centrão) | Estado | Capital Político | Legitimidade |
+| 12 | Pastores | Sociedade Civil | Legitimidade | Integridade |
+| 13 | Sindicato dos Professores | Sociedade Civil | Consciência | Caixa |
+| 14 | Profissionais da Saúde | Sociedade Civil | Dignidade | Caixa |
+| 15 | Líder Sindical | Sociedade Civil | Legitimidade | Capital Político |
+| 16 | Movimentos por Moradia (MTST) | Sociedade Civil | Dignidade | Capital Político |
+| 17 | Movimentos sociais do campo (MST) | Sociedade Civil | Dignidade | Capital Político |
+| 18 | Movimentos sociais ambientais | Sociedade Civil | Consciência | Caixa |
+| 19 | Artista Engajado | Sociedade Civil | Legitimidade | Segurança |
+| 20 | Meta (Big Tech) | Mídia e Tecnologia | Legitimidade | Consciência |
+| 21 | Impérios Geopolíticos (China e EUA) | Mídia e Tecnologia | Caixa | Soberania |
+| 22 | Coach Digital | Mídia e Tecnologia | Legitimidade | Consciência |
+| 23 | Jornalista Independente | Mídia e Tecnologia | Consciência | Capital Político |
+| 24 | Influenciador Progressista | Mídia e Tecnologia | Consciência | Capital Político |
 
-### 04.05.4. Sistema de Satisfação
+Fonte: `docs/11_FICHAS_DOS_ATORES.md:55-80`. O elenco anterior (20 atores: Coronel, Tecnocrata, Populista, Miliciano…) foi substituído no P-010.
+
+### 04.05.3. Sistema de Satisfação
 
 | Nível | Estado | O que Acontece |
 | :--- | :--- | :--- |
@@ -387,9 +376,12 @@ O jogo possui **20 atores**, divididos em **14 base** e **6 de expansão**. Cada
 | 61-80 | Satisfeito | Aparece com baixa probabilidade. Pode oferecer bônus. |
 | 81-100 | Aliado | Aparece apenas se necessário. Oferece apoio incondicional. |
 
-### 04.05.5. Fundamentação Teórica
+### 04.05.4. Fundamentação Teórica
 
-Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao longo da história:
+Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao longo da história.
+
+> A tabela abaixo é do **elenco anterior** (antes da D-085). A herança histórica dos 24 atores atuais está no doc 11.
+
 
 | Ator | Herança Histórica |
 | :--- | :--- |
@@ -408,7 +400,7 @@ Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao lo
 | Empresário da Saúde | Mercantilização da saúde |
 | Reitor Privatista | Financeirização do ensino |
 
-### 04.05.6. Referências
+### 04.05.5. Referências
 
 - CAMPBELL, Joseph. *The Hero with a Thousand Faces*. New York: Pantheon, 1949.
 - PROPP, Vladimir. *Morphology of the Folktale*. Austin: University of Texas Press, 1968.

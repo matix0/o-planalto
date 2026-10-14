@@ -1,14 +1,21 @@
 # 16 — Manual do Jogador
 
-**Guia Completo para Jogar "O Planalto"**
+**Guia para jogar "O Planalto"**
 
-Bem-vindo a **O Planalto**. Este manual explica como jogar, o que cada elemento significa e como suas escolhas afetam o país que você vai governar.
+Este documento tem duas partes:
+
+- **Parte A — Guia completo:** para jogadores e professores, fora do jogo (site, material de aula).
+- **Parte B — Tutorial no jogo:** o texto das 3-4 telas curtas que aparecem antes da calibração (doc 14 §14.12).
+
+**Revisado no P-010** (2026-10-13) para corrigir alucinações da versão anterior.
 
 ---
 
+# Parte A — Guia Completo
+
 ## 16.01 — O Que É Este Jogo
 
-**O Planalto** é um jogo educativo de conscientização política. Você assume o papel de **governante de uma cidade-estado fictícia** chamada **Vila Nova** e precisa tomar decisões que afetam a vida da população durante **4 anos de mandato**.
+**O Planalto** é um jogo educativo de conscientização política. Você é o **Presidente do Brasil** e toma decisões que afetam a vida da população durante **4 anos de mandato**.
 
 O objetivo não é "ganhar" ou "perder". É **entender** que toda escolha política tem um preço — e que alguém sempre paga a conta.
 
@@ -18,48 +25,36 @@ O objetivo não é "ganhar" ou "perder". É **entender** que toda escolha polít
 
 ## 16.02 — Como Jogar
 
-### 16.02.1. A Mecânica Básica
+### 16.02.1. A mecânica básica
 
-O jogo é simples: você **arrasta cartas** para a **esquerda** ou para a **direita**.
+Cada carta traz um problema. Você **arrasta a carta para um lado ou para o outro** para escolher uma das duas opções.
 
-| Ação | O que significa |
-| :--- | :--- |
-| **Arrastar para ESQUERDA (◀)** | Escolher a opção A (geralmente mais social, coletiva) |
-| **Arrastar para DIREITA (▶)** | Escolher a opção B (geralmente mais individual, pragmática) |
+- Enquanto você arrasta, aparece o texto da opção daquele lado e a borda da carta ganha a cor de quem propõe aquela opção.
+- O lado de cada opção muda a cada partida. Não existe "lado certo".
+- **Não há resposta certa ou errada.** Toda opção tem consequências.
 
-**Não há resposta certa ou errada.** Cada opção tem consequências. Cabe a você decidir o que priorizar.
+### 16.02.2. O fluxo de uma carta
 
-### 16.02.2. O Fluxo de uma Carta
+1. Uma carta aparece com um problema.
+2. Você arrasta para um lado e solta.
+3. Pontos aparecem sobre os medidores que mudaram, e eles enchem ou esvaziam.
+4. Você lê a consequência e toca para seguir.
+5. A Carta de Aprendizado explica o conceito por trás. Toque em "saiba mais" para ver dados e fontes.
+6. Uma nova carta aparece.
 
-    Uma carta aparece com um problema
-
-    Você lê o problema
-
-    Você arrasta para esquerda ou direita
-
-    Você vê a consequência da sua escolha
-
-    Você lê a Carta de Aprendizado (o conceito por trás)
-
-    Uma nova carta aparece
-
-text
-
-
-### 16.02.3. A Duração
+### 16.02.3. A duração
 
 - **4 turnos** (4 anos de mandato)
-- **6-8 cartas por turno**
-- **24-32 cartas no total**
-- **30-40 minutos de jogo**
+- **6-8 cartas por turno** (24-32 cartas por partida)
+- **Cerca de 15 minutos**
 
 ---
 
 ## 16.03 — Os Medidores
 
-No topo da tela, você vê **8 medidores**. Eles representam o estado do país.
+No topo da tela ficam **8 ícones de medidor**. Eles enchem e esvaziam conforme o estado do país. Durante a partida não há números; os valores aparecem no final.
 
-### 16.03.1. Indicadores Sociais (5)
+### 16.03.1. Indicadores sociais (5)
 
 | Medidor | O que mede | Se chegar a 0 |
 | :--- | :--- | :--- |
@@ -69,7 +64,7 @@ No topo da tela, você vê **8 medidores**. Eles representam o estado do país.
 | **Segurança** | Proteção e ordem pública | Autogestão Popular |
 | **Integridade** | Integridade do debate público e das instituições | Desintegração |
 
-### 16.03.2. Recursos de Poder (3)
+### 16.03.2. Recursos de poder (3)
 
 | Medidor | O que mede | Se chegar a 0 |
 | :--- | :--- | :--- |
@@ -77,49 +72,45 @@ No topo da tela, você vê **8 medidores**. Eles representam o estado do país.
 | **Capital Político** | Apoio no Congresso | Impeachment |
 | **Legitimidade** | Apoio popular | Revolta Popular |
 
-### 16.03.3. Como Ler os Medidores
+### 16.03.3. Como ler os medidores
 
-Cada medidor tem uma **barra colorida** que mostra o valor atual (0 a 100).
+A cor do ícone muda conforme a faixa, numa escala de ciano do escuro ao claro (doc 14 §14.11.3).
 
-| Cor | Faixa | Significado |
-| :--- | :--- | :--- |
-| 🔴 **Vermelho** | 0-20 | Crítico — risco iminente de final catastrófico |
-| 🟠 **Laranja** | 21-40 | Baixo — situação preocupante |
-| 🟡 **Amarelo** | 41-60 | Médio — equilíbrio instável |
-| 🟢 **Verde** | 61-80 | Alto — situação favorável |
-| 🔵 **Azul** | 81-100 | Extremo — pode ser bom ou ruim |
+| Faixa | Significado |
+| :--- | :--- |
+| 0-20 | Crítico — risco de final catastrófico |
+| 21-40 | Baixo — situação preocupante |
+| 41-60 | Médio — equilíbrio instável |
+| 61-80 | Alto — situação favorável |
+| 81-100 | Extremo — pode ser bom ou ruim |
 
-**Atenção:** Se qualquer medidor chegar a **0**, o jogo termina com um final catastrófico. Se chegar a **100**, pode gerar um final extremo (bom ou ruim, dependendo do medidor).
+**Atenção:** se qualquer medidor chegar a **0**, o mandato termina **na hora** com um final catastrófico.
 
 ---
 
 ## 16.04 — As Cartas
 
-### 16.04.1. Estrutura de uma Carta
+### 16.04.1. O que você vê
 
-┌─────────────────────────────────────────┐
-│ CARTA: [Título] │
-│ [Cor partidária na borda] │
-│ │
-│ [Descrição do problema] │
-│ │
-│ ◀ ESQUERDA DIREITA ▶ │
-│ [Opção A] [Opção B] │
-│ │
-│ CONSEQUÊNCIA: CONSEQUÊNCIA: │
-│ [Frase curta] [Frase curta] │
-│ │
-│ CARTA DE APRENDIZADO: │
-│ [Explicação do conceito] │
-└─────────────────────────────────────────┘
-text
+```
+┌─────────────────────────────────┐
+│  [Retrato de quem fala]         │
+│  NOME DO ATOR OU INSTITUIÇÃO    │
+│                                 │
+│  Descrição do problema          │
+│                                 │
+│  (ao arrastar: texto da opção   │
+│   e cor de quem a propõe)       │
+└─────────────────────────────────┘
+```
 
+A consequência e a Carta de Aprendizado só aparecem **depois** da sua escolha.
 
-### 16.04.2. As Cores das Cartas
+### 16.04.2. As cores
 
-Cada carta tem uma **cor na borda** que sinaliza sua inclinação política:
+Cada **opção** tem a cor do campo político que a propõe. Ao arrastar, a borda da carta mostra essa cor.
 
-| Cor | Espectro | Significado |
+| Cor | Espectro | Exemplos de temas |
 | :--- | :--- | :--- |
 | **Vermelho** | Esquerda | Direitos trabalhistas, assistência social |
 | **Azul** | Centro-direita | Estabilidade econômica, reformas |
@@ -129,23 +120,23 @@ Cada carta tem uma **cor na borda** que sinaliza sua inclinação política:
 | **Laranja** | Direita liberal | Privatização, desregulamentação |
 | **Preto** | Extrema-direita | Censura, militarização, pânico moral |
 
-**Importante:** A cor **não** indica se a escolha é certa ou errada. Indica apenas a origem da proposta.
+**Importante:** a cor **não** indica se a escolha é certa ou errada. Indica apenas quem propõe aquela opção.
 
 ---
 
 ## 16.05 — As Cartas de Aprendizado
 
-Após cada decisão, você vê uma **Carta de Aprendizado**. Ela tem 5 blocos:
+Depois de cada decisão aparece a **Carta de Aprendizado**. Você vê primeiro o resumo e pode abrir o resto em "saiba mais".
 
-| Bloco | O que contém |
-| :--- | :--- |
-| **1. O que você vivenciou** | Resumo da decisão que você tomou |
-| **2. O conceito por trás** | Explicação do mecanismo institucional |
-| **3. Dados reais** | Números e fatos da realidade brasileira |
-| **4. Fonte** | Origem dos dados |
-| **5. Frase de impacto** | Reflexão final |
+| Bloco | O que contém | Onde aparece |
+| :--- | :--- | :--- |
+| **1. O que você vivenciou** | Resumo da decisão que você tomou | Saiba mais |
+| **2. O conceito por trás** | Explicação do mecanismo institucional | Resumo |
+| **3. Dados reais** | Números e fatos da realidade brasileira | Saiba mais |
+| **4. Fonte** | Origem dos dados | Saiba mais |
+| **5. Frase de impacto** | Reflexão final | Resumo |
 
-**Por que isso importa:** O jogo não quer que você decore conceitos. Ele quer que você **vivencie** e **reflita**. A Carta de Aprendizado conecta a experiência com o conhecimento.
+Só entram no jogo dados com fonte verificada.
 
 ---
 
@@ -153,33 +144,29 @@ Após cada decisão, você vê uma **Carta de Aprendizado**. Ela tem 5 blocos:
 
 O jogo tem **4 turnos**, cada um representando **1 ano de mandato**.
 
-### 16.06.1. As Fases do Jogo
-
 | Turno | Ano | Fase | O que acontece |
 | :--- | :--- | :--- | :--- |
-| **1** | Ano 1 | Lua de Mel | O governo começa. Medidores altos. |
+| **1** | Ano 1 | Lua de Mel | O governo começa. Medidores em nível médio. |
 | **2** | Ano 2 | A Realidade Bate | Os problemas emergem. Eventos encadeados aparecem. |
 | **3** | Ano 3 | A Crise | O impeachment pode ser acionado. |
 | **4** | Ano 4 | O Desfecho | Os finais se definem. |
 
-### 16.06.2. A Dificuldade Aumenta
+### 16.06.1. A dificuldade aumenta
 
 | Ano | Multiplicador | O que significa |
 | :--- | :--- | :--- |
-| **Ano 1** | ×0.25 | Consequências leves |
-| **Ano 2** | ×0.75 | Consequências moderadas |
-| **Ano 3** | ×1.0 | Consequências normais |
-| **Ano 4** | ×1.5 | Consequências graves |
-
-**O que isso significa na prática:** No Ano 1, um erro custa pouco. No Ano 4, o mesmo erro custa muito.
+| **Ano 1** | ×0,25 | Consequências leves |
+| **Ano 2** | ×0,75 | Consequências moderadas |
+| **Ano 3** | ×1,0 | Consequências normais |
+| **Ano 4** | ×1,5 | Consequências graves |
 
 ---
 
 ## 16.07 — Os Atores
 
-Ao longo do jogo, você interage com **24 atores** — cada um representando um setor da sociedade.
+Ao longo do jogo, você interage com **24 atores**, cada um representando um setor da sociedade.
 
-### 16.07.1. Categorias de Atores
+### 16.07.1. Categorias
 
 | Categoria | Atores |
 | :--- | :--- |
@@ -188,9 +175,7 @@ Ao longo do jogo, você interage com **24 atores** — cada um representando um 
 | **Sociedade Civil** | Pastores, Sindicato dos Professores, Profissionais da Saúde, Líder Sindical, MTST, MST, Movimentos Ambientais, Artista Engajado |
 | **Mídia e Tecnologia** | Meta (Big Tech), Impérios Geopolíticos, Coach Digital, Jornalista Independente, Influenciador Progressista |
 
-### 16.07.2. O Que os Atores Oferecem e Cobram
-
-Cada ator **oferece** algo em troca de algo que **cobra**:
+### 16.07.2. O que oferecem e cobram (exemplos)
 
 | Ator | Oferece | Cobra |
 | :--- | :--- | :--- |
@@ -200,11 +185,9 @@ Cada ator **oferece** algo em troca de algo que **cobra**:
 | **Sindicato dos Professores** | Consciência | Caixa |
 | **Militares** | Segurança | Legitimidade |
 
-**Estratégia:** Você não pode agradar a todos. Precisa escolher quais alianças fazer.
+Fonte: `docs/11_FICHAS_DOS_ATORES.md:55-80`.
 
-### 16.07.3. A Satisfação dos Atores
-
-Cada ator tem um **nível de satisfação** (0 a 100):
+### 16.07.3. A satisfação dos atores
 
 | Nível | Estado | O que acontece |
 | :--- | :--- | :--- |
@@ -218,73 +201,71 @@ Cada ator tem um **nível de satisfação** (0 a 100):
 
 ## 16.08 — Os Eventos Encadeados
 
-Algumas decisões têm **consequências de longo prazo**. Elas aparecem **2 turnos depois**.
+Algumas decisões voltam **1 ou 2 turnos depois**. Quando um evento é ativado, aparece um **aviso especial**. Os que cairiam depois do Ano 4 aparecem no epílogo do final.
 
 | Exemplo | Consequência |
 | :--- | :--- |
-| Você corta a verba da saúde no Ano 1 | No Ano 3, uma epidemia atinge a periferia |
-| Você investe em educação no Ano 1 | No Ano 3, jovens criam uma cooperativa |
-| Você privatiza a água no Ano 2 | No Ano 4, as tarifas aumentam e há protestos |
-
-**Como saber:** Quando um evento encadeado é ativado, um **aviso especial** aparece na tela.
+| Você corta a verba da saúde | Mais tarde, uma epidemia atinge a periferia |
+| Você investe em educação | Mais tarde, jovens criam uma cooperativa |
+| Você privatiza a água | Mais tarde, as tarifas aumentam |
 
 ---
 
 ## 16.09 — O Impeachment
 
-Se o **Capital Político** e a **Legitimidade** caírem muito, o Congresso pode iniciar um **impeachment**.
+A partir do Ano 2, o Congresso pode abrir um **impeachment**. Ele vira uma cena especial, com placares na comissão, na Câmara e no Senado.
 
-### 16.09.1. Quando o Impeachment é Acionado
+### 16.09.1. Quando é acionado
 
 | Condição | Descrição |
 | :--- | :--- |
-| **Gatilho Principal** | `Legitimidade` < 20 E `Capital Político` < 20 |
-| **Gatilho Alternativo** | 3 decisões consecutivas contra o Congresso |
-| **Gatilho de Crise** | `Consciência` < 20 E `Integridade` < 20 |
+| **Gatilho principal** | `Legitimidade` < 20 E `Capital Político` < 20 |
+| **Gatilho alternativo** | 3 decisões consecutivas contra o Congresso |
+| **Gatilho de crise** | `Consciência` < 20 E `Integridade` < 20 |
 
-### 16.09.2. Como Sobreviver
+### 16.09.2. As 5 fases
 
-| Fase | Como Sobreviver |
+| Fase | Para sobreviver |
 | :--- | :--- |
-| **1. O Pedido** | Apelar ao povo (Legitimidade > 60) ou confiar na base (Capital Político > 50) |
-| **2. A Comissão** | Denunciar o golpe (Integridade > 60) ou negociar (Caixa > 60) |
-| **3. A Votação** | Convocar manifestações (Legitimidade > 70) ou aceitar |
-| **4. O Julgamento** | Renunciar (Consciência > 60) ou lutar até o fim |
-| **5. O Desfecho** | Legitimidade > 60 E Consciência > 50 = Absolvição |
+| **1. O Pedido** | `Legitimidade` > 60 ou `Capital Político` > 50 |
+| **2. A Comissão** | `Integridade` > 60 ou `Caixa` > 60 |
+| **3. A Votação** | `Legitimidade` > 70 |
+| **4. O Julgamento** | `Consciência` > 60 |
+| **5. O Desfecho** | `Legitimidade` > 60 E `Consciência` > 50 = absolvição |
 
-**Atenção:** Se `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
+**Atenção:** se `Consciência` < 30 E `Integridade` < 30, o impeachment é **automático**.
 
 ---
 
 ## 16.10 — Os Finais
 
-O jogo tem **26 finais**, divididos em 6 categorias.
-
-### 16.10.1. Categorias de Finais
+O jogo tem **26 finais**, em 6 categorias.
 
 | Categoria | Quantidade | O que representa |
 | :--- | :--- | :--- |
 | **Catástrofe** | 7 | Falência de um medidor |
 | **Captura** | 3 | Captura do Estado por projeto autoritário |
 | **Perda da Democracia** | 5 | Erosão democrática |
-| **Extermínio e Exploração** | 2 | Projeto bolsonarista |
+| **Extermínio e Exploração** | 2 | O Estado passa a eliminar ou explorar parte da população |
 | **Fortalecimento** | 5 | Democracia fortalecida |
-| **Cuidado e Soberania** | 4 | Projeto lulista |
+| **Cuidado e Soberania** | 4 | O Estado cuida da população e protege a soberania |
 
-### 16.10.2. Exemplos de Finais
+### 16.10.1. Exemplos
 
 | Final | Condição | Citação |
 | :--- | :--- | :--- |
 | **Barbárie** | Dignidade = 0 | "O povo é o que há de mais reles..." (Darcy Ribeiro) |
-| **Desintegração** | Integridade = 0 | "A integridade do debate público foi destruída..." |
+| **Desintegração** | Integridade = 0 | `[pendente]` |
 | **Revolta Popular** | Legitimidade = 0 | "Liberdade ainda que tardia." (Inconfidência Mineira) |
 | **Estado Policial** | Segurança = 100 | "Brasil, ame-o ou deixe-o." (Ditadura Militar) |
 | **Genocídio Institucionalizado** | Dignidade < 20, Integridade < 20, Consciência < 30, Segurança > 80 | "E daí? Lamento. Quer que eu faça o quê? Eu não sou coveiro." (Bolsonaro) |
 | **República Soberana e Popular** | Dignidade > 80, Consciência > 70, Soberania > 70, Integridade > 70 | "A educação é o único caminho para emancipar o homem." (Brizola) |
 
-### 16.10.3. O Eixo Ideológico
+Citações e condições: `docs/04_DESIGN_DO_JOGO.md:550-587`.
 
-Ao final do jogo, você vê um **gráfico de radar** com 4 eixos:
+### 16.10.2. O eixo ideológico
+
+No final, um **gráfico de radar** mostra 4 eixos:
 
 | Eixo | Extremo A | Extremo B |
 | :--- | :--- | :--- |
@@ -293,48 +274,33 @@ Ao final do jogo, você vê um **gráfico de radar** com 4 eixos:
 | **Sociedade** | Conservadorismo | Progressismo |
 | **Estado** | Autoritarismo | Liberdade |
 
-**O que significa:** O jogo revela o **padrão de valores** que guiou seu governo — sem rótulos binários.
+O jogo revela o **padrão de valores** que guiou seu governo, sem rótulos binários.
 
 ---
 
-## 16.11 — Dicas para Jogar
+## 16.11 — Dicas
 
-### 16.11.1. Dicas Gerais
-
-| # | Dica |
-| :--- | :--- |
-| 1 | **Não tente agradar a todos.** É impossível. |
-| 2 | **Monitore os medidores críticos.** Se um estiver abaixo de 30, priorize. |
-| 3 | **Pense no longo prazo.** Algumas decisões têm consequências 2 turnos depois. |
-| 4 | **Leia as Cartas de Aprendizado.** Elas explicam o porquê das consequências. |
-| 5 | **Não tenha medo de errar.** O erro faz parte do aprendizado. |
-| 6 | **Preste atenção nos atores.** Cada um tem uma voz e um interesse. |
-| 7 | **O equilíbrio é a chave.** Extremos geralmente levam a finais catastróficos. |
-| 8 | **Jogue mais de uma vez.** Cada partida é diferente. |
-
-### 16.11.2. O Que NÃO Fazer
-
-| # | O que evitar |
-| :--- | :--- |
-| 1 | Ignorar os medidores críticos |
-| 2 | Agradar apenas um lado |
-| 3 | Tomar decisões impulsivas |
-| 4 | Pular as Cartas de Aprendizado |
-| 5 | Desistir na primeira derrota |
+1. Medidor em 0 encerra o mandato na hora.
+2. Algumas decisões voltam 1 ou 2 anos depois, como eventos encadeados.
+3. A partir do Ano 2, `Capital Político` e `Legitimidade` baixos podem abrir um impeachment.
+4. As consequências pesam mais a cada ano (de ×0,25 no Ano 1 a ×1,5 no Ano 4).
+5. Atores insatisfeitos aparecem com mais frequência.
+6. A cor da borda mostra quem propõe cada opção. O lado de cada opção muda a cada partida.
+7. Toque em "saiba mais" para ver dados e fontes.
+8. Cada partida sorteia cartas diferentes.
 
 ---
 
 ## 16.12 — Acessibilidade
 
-O jogo oferece os seguintes recursos de acessibilidade:
-
-| Recurso | Descrição |
+| Recurso | Status |
 | :--- | :--- |
-| **Modo daltônico** | Padrões além de cores |
-| **Tamanho de texto ajustável** | 3 tamanhos (pequeno, médio, grande) |
-| **Leitor de tela** | Descrições de áudio para as cartas |
-| **Alto contraste** | Modo de alto contraste para baixa visão |
-| **Navegação por teclado** | Suporte a teclado para PC |
+| Tamanho de texto (16/20/24 px) | Planejado |
+| Reduzir movimento | Planejado |
+| Alto contraste | Planejado |
+| Navegação por teclado (PC) | Planejado |
+| Leitor de tela | Planejado |
+| Modo daltônico | Depois da primeira versão |
 
 ---
 
@@ -348,31 +314,32 @@ Este jogo aborda temas sensíveis, incluindo:
 - Desigualdade social
 - Corrupção
 
-**Classificação:** Livre (mas recomendado para maiores de 12 anos).
+
+**Classificação:** Livre (recomendado para maiores de 12 anos).
 
 ---
 
 ## 16.14 — Perguntas Frequentes
 
-### 16.14.1. O jogo é sobre o Brasil?
+### O jogo é sobre o Brasil?
 
-Não diretamente. O jogo se passa em uma **cidade-estado fictícia** chamada Vila Nova. Mas os temas, os dados e as consequências são baseados na **realidade brasileira**.
+Sim. Você é o Presidente do Brasil, e os temas, dados e instituições são brasileiros.
 
-### 16.14.2. O jogo é de esquerda ou de direita?
+### O jogo é de esquerda ou de direita?
 
 Nem um, nem outro. O jogo **não doutrina**. Ele mostra as consequências de **ambos os lados**. Você decide o que priorizar.
 
-### 16.14.3. Posso jogar mais de uma vez?
+### Posso jogar mais de uma vez?
 
-Sim. Cada partida é diferente. As cartas são sorteadas aleatoriamente, e suas escolhas afetam o final.
+Sim. As cartas são sorteadas, o lado das opções muda e suas escolhas levam a finais diferentes.
 
-### 16.14.4. O jogo é difícil?
+### O jogo é difícil?
 
-O jogo é **fácil de jogar, mas difícil de dominar**. Você pode errar, mas cada erro ensina algo.
+É fácil de jogar e difícil de dominar. Você pode errar, e cada erro ensina algo.
 
-### 16.14.5. O jogo tem salvamento?
+### O jogo tem salvamento?
 
-Não. Cada partida é uma sessão completa de 30-40 minutos.
+Não. Cada partida é uma sessão completa de cerca de 15 minutos.
 
 ---
 
@@ -386,7 +353,7 @@ Não. Cada partida é uma sessão completa de 30-40 minutos.
 | **Validação Pedagógica** | Professor interlocutor |
 | **Revisão Crítica** | Professor Alisson |
 | **Engine** | Godot 4.7 |
-| **Assets** | CC0 (Kenney, OpenGameArt, FreeMusicArchive) |
+| **Assets** | Kenney (CC0) e outros; a licença de cada asset fica listada na tela Sobre |
 
 ---
 
@@ -399,6 +366,18 @@ Não. Cada partida é uma sessão completa de 30-40 minutos.
 
 ---
 
-**Última atualização:** Outubro de 2026
-**Versão:** 1.0
+# Parte B — Tutorial no Jogo
 
+Quatro telas curtas antes da calibração (texto aprovado pelo PO, 2026-10-13).
+
+| Tela | Texto |
+| :--- | :--- |
+| **1. Arrastar** | "Você é o Presidente. Cada carta traz um problema. Arraste para um lado ou para o outro para decidir." |
+| **2. Medidores** | "No topo estão os 8 medidores do país. Se um deles zerar, seu mandato acaba na hora." |
+| **3. Pontos de efeito** | "Depois de decidir, pontos mostram quais medidores mudaram. Toda escolha tem custo." |
+| **4. Carta de Aprendizado** | "Depois de cada decisão, a Carta de Aprendizado explica o que está por trás. Toque em 'saiba mais' para ver dados e fontes." |
+
+---
+
+**Última atualização:** 2026-10-13 (P-010)
+**Versão:** 1.1 (revisada)

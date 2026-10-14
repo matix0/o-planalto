@@ -10,6 +10,25 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- `gdd/GDD.md` 1.2 — documento mestre do GDD, fora do site (D-081)
+- Doc 14 reescrito do zero: retrato, HUD de ícones, cor por opção, pontos de efeito, animações (GF), paleta ciano das faixas (TA), cena de impeachment (P-010)
+- Doc 16 em duas partes: guia completo + tutorial de 4 telas (P-010)
+- Doc 18: APR-161, APR-181, APR-THEM-001, APR-ATOR-001; seção "Rascunho" com 127 APRs; links verificados em 17 das 22 cartas (D-091)
+- Decisões D-081 a D-092
+
+### Alterado
+- Cenário passa a ser o Brasil, jogador é o Presidente (D-086, D-087); partida de ~15 min (D-088); medidor em 0 encerra na hora (D-089)
+- Doc 17: Opção A/B com lado sorteado e cor por opção (D-084, D-092); Aprendizado aponta `APR-xxx` (D-090); 22 cartas
+- Doc 13: esquema da carta com `opcao_a`/`opcao_b`, `cor` por opção e `aprendizado_id`; eixo por lado removido (vira pendência P-9)
+- Doc 04: elenco substituído pelos 24 atores do doc 11 (D-085); docs 00, 02, 05, 08, 09, 12 alinhados
+- `/validate-cards`: regras de cor por opção, APR e saldo por cor
+
+### Corrigido
+- Alucinações dos docs 14-18 (P-010): fatos errados (Anastasia, expectativa de vida, Marco Temporal, salário mínimo, juros, mortes por polícia, Master), consequências trocadas/duplicadas, limiares removidos (D-082)
+
+### Removido
+- Limiares de proteção por ano (D-082); rótulos "esquerda/direita" e "projeto bolsonarista/lulista" do manual
+
 - Docs 14–18 (UI/UX, Fluxo, Manual, Roteiro das Cartas, Roteiro das Cartas de Aprendizado), escritos pelo PO; publicados na nova seção "Roteiros" do site (P-003)
 - Site público em `site/` (Astro Starlight): home com as 6 seções, menu, sumário, anterior/próximo, busca local em pt-BR, temas claro/escuro (P-009, D-077)
 - Página "Sobre e metodologia", aviso de conteúdo em 01–04 e 09, banner "incompleto" + `noindex` em 04, 05, 06, 08 e 10 (D-075, D-078)

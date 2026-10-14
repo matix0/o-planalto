@@ -67,6 +67,7 @@
 | **Início** | 2026-10 |
 | **Conclusão** | 2026-10-09 |
 | **Objetivo** | Escrever UI/UX, Fluxo, Manual, Roteiros |
+| **Nota** | Docs gerados com alucinações; revisados no P-010 |
 
 ### Etapas
 
@@ -224,6 +225,34 @@
 - Parecer jurídico e revisão do conteúdo com políticos reais à luz da D-005 (RC-08).
 - GD: eixo ideológico calculado pelo lado do arrasto (`docs/13_ARQUITETURA_TECNICA.md:560-569`).
 - Atualizar o Node local para ≥ 22.12 (RT-09).
+
+---
+
+## P-010 — Revisão dos docs 14-18
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | ✅ Concluído |
+| **Início** | 2026-10-13 |
+| **Conclusão** | 2026-10-14 |
+| **Objetivo** | Corrigir as alucinações dos docs 14-18 (P-003) a partir do questionário respondido pelo PO |
+| **Decisões** | D-086 a D-092 |
+| **Notas** | `.claude/notas/revisao-docs-14-18.md` (local) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 0 | Questionário (6 rodadas) e registro das decisões | ✅ | notas; D-086 a D-092 |
+| 1 | Reescrever o doc 14 do zero | ✅ | P-010 |
+| 2 | Corrigir o doc 15 | ✅ | P-010 |
+| 3 | Corrigir o doc 16 (guia externo + tutorial) | ✅ | P-010 |
+| 4 | Corrigir o doc 17 (22 cartas, cor por opção via ECO) | ✅ | P-010 |
+| 5 | Corrigir o doc 18 (fonte única, rascunho, `[não verificado]`) | ✅ | P-010 |
+| 6 | Verificar na web os dados das 22 cartas (aprovação do PO por dado) | ✅ | P-010 |
+| 7 | Cascata: GDD, docs 00/02/04/05/09/12/13, `/validate-cards`, site | ✅ | P-010 |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
 
 ---
 

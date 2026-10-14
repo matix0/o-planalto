@@ -24,7 +24,7 @@
 - **Medidores:** 8 + 3 sub-medidores
 - **Turnos:** 4 (4 anos)
 - **Modos:** 10 institucionais
-- **Atores:** 20 (14 base + 6 expansão)
+- **Atores:** 24 (14 base + 6 expansão + 4 adicionais — D-085)
 - **Cartas:** 340
 - **Finais:** 26
 - **Eixo Ideológico:** Modelo 9axes adaptado
