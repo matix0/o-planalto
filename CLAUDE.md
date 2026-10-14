@@ -71,6 +71,9 @@ Próximo passo: [O que fazer em seguida]
 | `/validate-cards` | Valida as 340 cartas |
 | `/validate-finals` | Valida os 26 finais |
 | `/publish-docs` | Publica a documentação no GitHub Pages |
+| `/mapear-sistemas` | Mapeia sistemas, dependências e ordem dos GDDs (P-011) |
+| `/gdd-sistema` | Escreve o GDD de um sistema, seção por seção (P-011) |
+| `/revisar-gdds` | Revisão cruzada dos GDDs (só relatório) (P-011) |
 
 ## Subagentes
 

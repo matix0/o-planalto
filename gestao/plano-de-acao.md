@@ -256,6 +256,33 @@
 
 ---
 
+## P-011 — Kit do GDD
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-14 |
+| **Conclusão** | — |
+| **Objetivo** | Adaptar regra e comandos do Claude Code Game Studios (MIT) e escrever os GDDs de sistema que resolvem as pendências do GDD §16.4 |
+| **Decisões** | D-063 (resolvida), D-093 |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Regra `.claude/rules/design-docs.md` (8 seções obrigatórias), adaptada em PT-BR | ✅ | `.claude/rules/design-docs.md` |
+| 2 | Comandos `/mapear-sistemas`, `/gdd-sistema`, `/revisar-gdds` | ✅ | `.claude/commands/` |
+| 3 | `/mapear-sistemas` → `gdd/sistemas/00_INDICE.md` | ⏳ | — |
+| 4 | GDD de Medidores (P-8) | ⏳ | — |
+| 5 | GDD de Finais (P-3, medidor em 100, sem condição) | ⏳ | — |
+| 6 | GDD de Impeachment (P-1, placares) | ⏳ | — |
+| 7 | GDD do Eixo Ideológico (P-9) | ⏳ | — |
+| 8 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |
