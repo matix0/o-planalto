@@ -103,6 +103,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-092 | Cor partidária por opção (cada lado da carta tem a cor de quem propõe); o ECO valida o saldo de efeitos por cor; detalha D-030 | 2026-10-13 | Escolha do PO (P-010); evita "lado certo" |
 | D-063 | Formato do GDD: documento mestre `gdd/GDD.md` + um arquivo por sistema em `gdd/sistemas/` com índice | 2026-10-14 | Escolha do PO (P-011) |
 | D-093 | Kit do GDD adaptado do Claude Code Game Studios (Donchitos, licença MIT); crédito vai para o doc 23 quando ele existir | 2026-10-14 | Escolha do PO (P-011) |
+| D-094 | Sub-medidores (Desemprego, Inflação, Juros) removidos; temas econômicos ficam nas cartas e nas Cartas de Aprendizado; revisa D-015 | 2026-10-14 | Escolha do PO (GDD 01 Medidores, P-011) |
 
 ---
 
@@ -135,7 +136,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-090 | Doc 18 é a fonte dos Aprendizados |
 | D-091 | Dados só com fonte verificada |
 | D-014 | 8 medidores |
-| D-015 | 3 sub-medidores |
+| D-015 | 3 sub-medidores (revisada por D-094) |
+| D-094 | Sub-medidores removidos |
 | D-016 | 4 turnos |
 | D-018 | 10 modos |
 | D-019 | 20 atores (substituída por D-085) |

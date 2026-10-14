@@ -272,8 +272,8 @@
 | :--- | :--- | :--- | :--- |
 | 1 | Regra `.claude/rules/design-docs.md` (8 seções obrigatórias), adaptada em PT-BR | ✅ | `.claude/rules/design-docs.md` |
 | 2 | Comandos `/mapear-sistemas`, `/gdd-sistema`, `/revisar-gdds` | ✅ | `.claude/commands/` |
-| 3 | `/mapear-sistemas` → `gdd/sistemas/00_INDICE.md` | ⏳ | — |
-| 4 | GDD de Medidores (P-8) | ⏳ | — |
+| 3 | `/mapear-sistemas` → `gdd/sistemas/00_INDICE.md` | ✅ | 10 sistemas |
+| 4 | GDD de Medidores (P-8) | ✅ | `gdd/sistemas/01_medidores.md`; D-094 |
 | 5 | GDD de Finais (P-3, medidor em 100, sem condição) | ⏳ | — |
 | 6 | GDD de Impeachment (P-1, placares) | ⏳ | — |
 | 7 | GDD do Eixo Ideológico (P-9) | ⏳ | — |

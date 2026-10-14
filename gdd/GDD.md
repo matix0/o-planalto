@@ -320,13 +320,9 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 | 7 | **Capital Político** | Poder | Impeachment | Governabilidade Democrática |
 | 8 | **Legitimidade** | Poder | Revolta Popular | Apoio Popular Crítico |
 
-#### 6.1.2. Os 3 Sub-medidores
+#### 6.1.2. Sub-medidores
 
-| Sub-medidor | Efeito |
-| :--- | :--- |
-| **Desemprego** | ↑ Desemprego → ↓ `Dignidade`, ↓ `Legitimidade` |
-| **Inflação** | ↑ Inflação → ↓ `Caixa`, ↓ `Dignidade` |
-| **Juros** | ↑ Juros → ↓ `Caixa`, ↓ `Prosperidade` |
+Removidos (D-094). Detalhe do sistema de medidores: `gdd/sistemas/01_medidores.md`.
 
 #### 6.1.3. Relações entre Medidores
 
@@ -480,7 +476,7 @@ ator.satisfacao = clamp(0, 100)
 | :--- | :--- |
 | **Carta de Recuperação** | Restaura um medidor em crise |
 | **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
-| **Bônus por Equilíbrio** | Todos os medidores > 40 → +5 em todos |
+| **Bônus por Equilíbrio** | Todos os medidores > 45 → +3 em todos, 1× por turno |
 | **Segunda Chance** | Medidor em 10 → escolha crítica para recuperá-lo |
 
 ---
@@ -755,14 +751,14 @@ Exportação: Web, Android, Windows
 | Medidor | Valor |
 | :--- | :--- |
 | Dignidade | 45 |
-| Consciência | 35 |
+| Consciência | 40 |
 | Soberania | 40 |
 | Segurança | 50 |
 | Integridade | 40 |
 | Caixa | 55 |
 | Capital Político | 50 |
 | Legitimidade | 55 |
-| **Total** | **380** |
+| **Total** | **385** |
 
 ### 13.2. Multiplicador de Dificuldade
 
@@ -933,12 +929,12 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-3 | Medidor em 0 encerra na hora (D-089). Pendentes: desempate entre finais, dois medidores zerando no mesmo swipe, final por medidor em 100, final quando nenhuma condição é atendida | §9 |
 | P-4 | Cartas obrigatórias podem passar de 8 por turno; "remover do mesmo modo" ambíguo | §6.2.2 |
 | P-5 | Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
-| P-6 | `Prosperidade` citada como medidor, mas é nome de final | §6.1.2 |
+| P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |
 | P-7 | MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
-| P-8 | Fórmulas: multiplicador vale para todos os efeitos ou só negativos? Ordem das relações por turno? Frequência do bônus por equilíbrio? | §6.1.3, §7.2, §13.2 |
+| P-8 | ✅ Resolvida: `gdd/sistemas/01_medidores.md` §3-4 | §6.1.3, §7.2, §13.2 |
 | P-9 | Eixo ideológico: como cada escolha pontua os 4 eixos; revelação usa medidores, não eixos | §6.6, §9.2 |
 | P-10 | Atores: satisfação inicial; critério de "atende/contraria" | §6.3 |
-| P-11 | Calibração: valores por resposta; revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
+| P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
 | P-12 | "Sessão parcial (se pausado)" × sem salvamento; risco no mobile | §4.4 |
 | P-13 | ✅ Resolvida: 22 cartas escritas; 22 Cartas de Aprendizado ligadas e 127 em rascunho (P-010) | §8.1, §8.4 |
 | P-14 | Faltam casos-limite, parâmetros de ajuste e critérios de aceite testáveis | todo |

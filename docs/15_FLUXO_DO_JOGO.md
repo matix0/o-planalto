@@ -64,16 +64,16 @@ Os avisos de conteúdo aparecem na tela inicial (GDD §14.3).
 
 ## 15.04 — Calibração Inicial
 
-Seis perguntas, uma por tela, respondidas **arrastando**, como as cartas (doc 14 §14.12). Ao final, os medidores iniciais (GDD §13.1) são ajustados.
+Seis perguntas (±5 cada, GDD 01 Medidores), uma por tela, respondidas **arrastando**, como as cartas (doc 14 §14.12). Ao final, os medidores iniciais (GDD §13.1) são ajustados.
 
 | # | Pergunta | Resposta A | Efeito A | Resposta B | Efeito B |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | "O governo deve priorizar segurança ou prevenção?" | Segurança | `Segurança` +10, `Dignidade` −10 | Prevenção | `Dignidade` +10, `Segurança` −10 |
-| 2 | "O Brasil deve se alinhar aos EUA ou ao BRICS?" | EUA | `Soberania` −10 | BRICS | `Soberania` +10 |
-| 3 | "O Estado deve investir em educação ou cortar gastos?" | Educação | `Consciência` +10, `Caixa` −10 | Cortar | `Caixa` +10, `Consciência` −10 |
-| 4 | "A mídia deve ser livre ou regulada?" | Livre | `Integridade` +10 | Regulada | `Integridade` −10 |
-| 5 | "O governo deve taxar grandes fortunas?" | Sim | `Dignidade` +10, `Caixa` −10 | Não | `Caixa` +10, `Dignidade` −10 |
-| 6 | "O povo deve participar das decisões?" | Sim | `Legitimidade` +10, `Consciência` +10 | Não | `Capital Político` +10, `Consciência` −10 |
+| 1 | "O governo deve priorizar segurança ou prevenção?" | Segurança | `Segurança` +5, `Dignidade` −5 | Prevenção | `Dignidade` +5, `Segurança` −5 |
+| 2 | "O Brasil deve se alinhar aos EUA ou ao BRICS?" | EUA | `Soberania` −5 | BRICS | `Soberania` +5 |
+| 3 | "O Estado deve investir em educação ou cortar gastos?" | Educação | `Consciência` +5, `Caixa` −5 | Cortar | `Caixa` +5, `Consciência` −5 |
+| 4 | "A mídia deve ser livre ou regulada?" | Livre | `Integridade` +5 | Regulada | `Integridade` −5 |
+| 5 | "O governo deve taxar grandes fortunas?" | Sim | `Dignidade` +5, `Caixa` −5 | Não | `Caixa` +5, `Dignidade` −5 |
+| 6 | "O povo deve participar das decisões?" | Sim | `Legitimidade` +5, `Consciência` +5 | Não | `Capital Político` +5, `Consciência` −5 |
 
 A pergunta 6 foi corrigida no P-010 (antes: "Sim → `Consciência` −10"). O GDD (§16.4, P-11) mantém a pendência de revisão da pergunta 2 pelo PSI.
 
@@ -104,7 +104,7 @@ ABERTURA DO TURNO (cartão "Ano X — Fase")
 
 Não há limiares de proteção por ano (D-082).
 
-**Pendência:** a ordem entre as relações entre medidores e o gatilho de impeachment no fechamento do turno não está definida (GDD §16.4, P-8).
+**Ordem do fechamento do turno** (`gdd/sistemas/01_medidores.md` §3.4): relações, limiares e bônus de uma vez → medidor em 0 → carta de emergência para medidor ≤ 10 → gatilho de impeachment.
 
 ---
 
