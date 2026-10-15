@@ -10,6 +10,12 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Kit do GDD (P-011, D-093, adaptado do Claude Code Game Studios, MIT): regra `.claude/rules/design-docs.md` e comandos `/mapear-sistemas`, `/gdd-sistema`, `/revisar-gdds`
+- `gdd/sistemas/`: índice de 10 sistemas (D-063) e GDDs 01 Medidores, 02 Finais, 03 Impeachment, 04 Eixo — 8 seções cada, com simulações do ECO e pareceres do GD
+- Citações dos finais verificadas na web (17 com fonte; 4 com fonte fraca aceita; 5 sem citação)
+- Campos `Teste A/B` nas cartas da cena de impeachment e `Eixo A/B` nas 22 cartas; vetores de eixo na calibração
+- Decisões D-094 a D-096
+
 - `gdd/GDD.md` 1.2 — documento mestre do GDD, fora do site (D-081)
 - Doc 14 reescrito do zero: retrato, HUD de ícones, cor por opção, pontos de efeito, animações (GF), paleta ciano das faixas (TA), cena de impeachment (P-010)
 - Doc 16 em duas partes: guia completo + tutorial de 4 telas (P-010)
@@ -17,6 +23,10 @@ Versionamento: [SemVer](https://semver.org/).
 - Decisões D-081 a D-092
 
 ### Alterado
+- Sub-medidores removidos (D-094); Consciência inicial 40; calibração ±5; bônus por equilíbrio +3 com todos > 45; fim do Ano 4 sem fechamento
+- 27 finais (D-096): +Paralisia Fiscal, +Mandato Comum, −Protecionismo Soberano; finais em 100 só os 3 de Captura (≥ 95); `Capital Político` em 0 abre o impeachment (D-095)
+- Impeachment: cena de 5 cartas extras com testes por opção e apoio; absolvição ~37% no gatilho principal
+- Eixo: vetor por opção, radar de 8 pontas "disse × governou", revelação dupla
 - Cenário passa a ser o Brasil, jogador é o Presidente (D-086, D-087); partida de ~15 min (D-088); medidor em 0 encerra na hora (D-089)
 - Doc 17: Opção A/B com lado sorteado e cor por opção (D-084, D-092); Aprendizado aponta `APR-xxx` (D-090); 22 cartas
 - Doc 13: esquema da carta com `opcao_a`/`opcao_b`, `cor` por opção e `aprendizado_id`; eixo por lado removido (vira pendência P-9)
@@ -24,6 +34,8 @@ Versionamento: [SemVer](https://semver.org/).
 - `/validate-cards`: regras de cor por opção, APR e saldo por cor
 
 ### Corrigido
+- Doc 12: relatores do impeachment de 2016 e "52 mensagens" (P-011)
+- GDD mestre: trechos desatualizados apontados pelo `/revisar-gdds`
 - Alucinações dos docs 14-18 (P-010): fatos errados (Anastasia, expectativa de vida, Marco Temporal, salário mínimo, juros, mortes por polícia, Master), consequências trocadas/duplicadas, limiares removidos (D-082)
 
 ### Removido

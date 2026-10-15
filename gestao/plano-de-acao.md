@@ -260,11 +260,12 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🟡 Em andamento |
+| **Status** | ✅ Concluído |
 | **Início** | 2026-10-14 |
-| **Conclusão** | — |
+| **Conclusão** | 2026-10-15 |
 | **Objetivo** | Adaptar regra e comandos do Claude Code Game Studios (MIT) e escrever os GDDs de sistema que resolvem as pendências do GDD §16.4 |
-| **Decisões** | D-063 (resolvida), D-093 |
+| **Decisões** | D-063 (resolvida), D-093 a D-096 |
+| **Notas** | `.claude/notas/P-011-kit-gdd.md` (local) |
 
 ### Etapas
 
@@ -277,7 +278,7 @@
 | 5 | GDD de Finais (P-3, medidor em 100, sem condição) | ✅ | `gdd/sistemas/02_finais.md`; D-095, D-096 |
 | 6 | GDD de Impeachment (P-1, placares) | ✅ | `gdd/sistemas/03_impeachment.md` |
 | 7 | GDD do Eixo Ideológico (P-9) | ✅ | `gdd/sistemas/04_eixo.md` |
-| 8 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
+| 8 | `/revisar-gdds` e atualização do GDD mestre | ✅ | Veredito ATENÇÃO; 6 correções aplicadas no GDD mestre e no GDD 03 |
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
 

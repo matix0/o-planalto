@@ -253,7 +253,7 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 
 ### 5.2. Mecânica de Medidores
 
-**Descrição:** 8 medidores principais + 3 sub-medidores econômicos. Cada decisão afeta 2–4 medidores.
+**Descrição:** 8 medidores principais (sub-medidores removidos — D-094). Cada decisão afeta 2–4 medidores. Regras completas: `gdd/sistemas/01_medidores.md`.
 
 | Faixa | Valor | Significado |
 | :--- | :--- | :--- |
@@ -263,7 +263,7 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 | 🟢 Alto | 61–80 | Situação favorável |
 | 🔵 Extremo | 81–100 | Pode ser bom ou ruim |
 
-**Regra de morte:** Se qualquer medidor chegar a **0**, o jogo termina com final catastrófico imediato, em qualquer ano (sem limiares de proteção — D-082).
+**Regra de morte:** Se qualquer medidor chegar a **0**, o jogo termina com final catastrófico imediato, em qualquer ano (sem limiares de proteção — D-082). Exceção: `Capital Político` em 0 abre a cena de impeachment (D-095).
 
 ### 5.3. Mecânica de Cartas
 
@@ -457,7 +457,7 @@ Detalhado em `gdd/sistemas/03_impeachment.md` (P-011). Resumo: 4 gatilhos (princ
 | **Carta de Recuperação** | Restaura um medidor em crise |
 | **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
 | **Bônus por Equilíbrio** | Todos os medidores > 45 → +3 em todos, 1× por turno |
-| **Segunda Chance** | Medidor em 10 → escolha crítica para recuperá-lo |
+| **Segunda Chance** | Medidor ≤ 10 no fechamento do turno → próxima carta é de emergência para ele, 1× por medidor (`gdd/sistemas/01_medidores.md` §3.4) |
 
 ---
 
@@ -541,7 +541,7 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 | **Barbárie** | Dignidade = 0 | Darcy Ribeiro |
 | **Alienação Total** | Consciência = 0 | MV Bill |
 | **Colônia** | Soberania = 0 | Milton Santos |
-| **Impeachment** | Capital Político = 0 | Dilma Rousseff |
+| **Impeachment** | Condenação na cena de impeachment (D-095; GDD 03) | Dilma Rousseff |
 | **Revolta Popular** | Legitimidade = 0 | Inconfidência Mineira |
 | **Estado Policial** | Segurança = 100 | Ditadura Militar |
 | **Genocídio Institucionalizado** | Combinação | Jair Bolsonaro |
@@ -686,6 +686,7 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
   "opcao_a": {
     "texto": "...",
     "cor": "vermelho",
+    "eixo": [-1, 0, 0, 0],
     "custo": { "Capital Político": -10 },
     "efeitos": { "Soberania": 10 },
     "consequencia": "..."

@@ -35,7 +35,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
-| **GDD Completo** | 🟡 Rascunho 1.2 | `gdd/GDD.md` (D-081); pendências em §16.4 |
+| **GDD Completo** | 🟡 Rascunho 1.2 + 4 GDDs de sistema | `gdd/GDD.md` + `gdd/sistemas/01-04` (P-011); faltam 05-10 |
 | **Protótipo Técnico** | ⏳ Pendente | Bloqueado pelo GDD |
 | **Testes** | ⏳ Pendentes | Após protótipo |
 | **Publicação** | ⏳ Pendente | Após validação |
@@ -110,6 +110,10 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-090 | Doc 18 é a fonte dos Aprendizados | 2026-10-13 |
 | D-091 | Dados só com fonte verificada | 2026-10-13 |
 | D-092 | Cor partidária por opção | 2026-10-13 |
+| D-093 | Kit do GDD do CCGS (MIT) | 2026-10-14 |
+| D-094 | Sub-medidores removidos | 2026-10-14 |
+| D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
+| D-096 | 27 finais | 2026-10-14 |
 
 ---
 
@@ -134,12 +138,18 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**P-011 — Kit do GDD:** GDDs de sistema (Finais, Impeachment, Eixo, Medidores) para resolver as pendências do GDD §16.4.
+**P-012 — GDDs de sistema 05-10:** Cartas, Atores, Eventos, Sorteio, Desinformação, Estado da partida (`/gdd-sistema`, ordem em `gdd/sistemas/00_INDICE.md`).
+
+**Pendências do P-011:**
+- Cartas que invertam o "moral" por cor e por eixo (íntegra = Mercado/Conservadorismo/Autoritarismo) e mais Diplomacia (≥ 15%), com PSI.
+- Citações para 5 finais sem fonte (Barbárie, Autogestão, Golpe Militar, República Soberana, Fome).
+- Texto das cartas das fases 3-5 do impeachment.
+- Recalcular absolvição com apoio ≥ 3 (Capital em 0).
+- Doc 05: limiares de proteção e sub-medidores (`/sync-docs`).
+- Revisão PSI da pergunta "EUA vs. BRICS" (P-11).
 
 **Pendências do P-010:**
-- Cartas que invertam o "moral por cor" (com PSI).
 - 5 Cartas de Aprendizado sem dado verificado (002, 041, 061, 121, ATOR-001).
-- Finais: medidor em 100; nenhuma condição atendida; desempate.
 
 **Pendências do P-009:**
 - Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).

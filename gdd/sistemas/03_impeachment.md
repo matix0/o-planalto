@@ -77,7 +77,7 @@ Diferença entre gatilhos aceita como intencional pelo PO. Sempre A ou sempre B 
 
 ## 6. Dependências
 
-01 Medidores (passo 6 do fechamento; valores) · 02 Finais (condenação; cena antes dos finais no Ano 4) · 05 Cartas (as 5 cartas da cena) · 10 Estado da partida. Cada um deve citar o 03 de volta.
+01 Medidores (passo 6 do fechamento; valores) · 02 Finais (condenação; cena antes dos finais no Ano 4) · 04 Eixo (as cartas da cena pontuam os eixos) · 05 Cartas (as 5 cartas da cena) · 10 Estado da partida. Cada um deve citar o 03 de volta.
 
 ## 7. Parâmetros de ajuste
 
