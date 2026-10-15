@@ -276,7 +276,7 @@
 | 4 | GDD de Medidores (P-8) | ✅ | `gdd/sistemas/01_medidores.md`; D-094 |
 | 5 | GDD de Finais (P-3, medidor em 100, sem condição) | ✅ | `gdd/sistemas/02_finais.md`; D-095, D-096 |
 | 6 | GDD de Impeachment (P-1, placares) | ✅ | `gdd/sistemas/03_impeachment.md` |
-| 7 | GDD do Eixo Ideológico (P-9) | ⏳ | — |
+| 7 | GDD do Eixo Ideológico (P-9) | ✅ | `gdd/sistemas/04_eixo.md` |
 | 8 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.

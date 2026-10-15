@@ -11,7 +11,7 @@ Cada sistema tem um GDD próprio em `gdd/sistemas/`, escrito com `/gdd-sistema`.
 | 01 | Medidores | `01_medidores.md` | 8 medidores (sub-medidores removidos, D-094), relações, turnos e fases (multiplicador, recuperação), calibração inicial | — | P-6, P-8, P-11 | ✅ |
 | 02 | Finais | `02_finais.md` | 27 finais, prioridade, epílogo | 01, 08, 04 | P-3, P-1 (parte) | ✅ |
 | 03 | Impeachment | `03_impeachment.md` | Gatilhos, cena de 5 fases, placares | 01, 07, 02 | P-1 | ✅ |
-| 04 | Eixo ideológico | `04_eixo.md` | 4 eixos, pontuação, revelação final | 05, 01 | P-9 | ⏳ |
+| 04 | Eixo ideológico | `04_eixo.md` | 4 eixos, pontuação, revelação final | 05, 01 | P-9 | ✅ |
 | 05 | Cartas | `05_cartas.md` | Estrutura, opções A/B, sorteio do lado, cor por opção e saldo por cor | 01 | — | ⏳ |
 | 06 | Sorteio | `06_sorteio.md` | Prioridade narrativa, cartas obrigatórias | 01, 05, 07, 08 | P-4 | ⏳ |
 | 07 | Satisfação dos atores | `07_atores.md` | Níveis, atualização, consequências | 01, 05 | P-10 | ⏳ |

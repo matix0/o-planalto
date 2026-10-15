@@ -295,6 +295,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | :--- | :--- | :--- |
 | `texto` | String | Texto da opção |
 | `cor` | String | Cor partidária de quem propõe a opção (vermelho, azul, verde, amarelo, roxo, laranja, preto) — D-092 |
+| `eixo` | Array[4] | Pontos [Economia, Diplomacia, Sociedade, Estado], inteiros −2 a +2 (`gdd/sistemas/04_eixo.md`) |
 | `custo` | Objeto | Medidores que são gastos (negativos) |
 | `efeitos` | Objeto | Medidores que são afetados (positivos ou negativos) |
 | `consequencia` | String | Frase curta mostrada após a escolha |
@@ -541,7 +542,7 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 | **Sociedade** | Conservadorismo | Progressismo | -10 a +10 |
 | **Estado** | Autoritarismo | Liberdade | -10 a +10 |
 
-**Algoritmo:** pendente (GDD §16.4, P-9). Regra fixa: os pontos de cada eixo vêm dos dados da opção escolhida, **nunca do lado do arraste** (D-084; o lado é sorteado). O algoritmo antigo, que pontuava por "esquerda/direita", foi removido no P-010.
+**Algoritmo:** `gdd/sistemas/04_eixo.md` §4 (média dos valores ≠ 0 × 5). Antes: pendente (P-9). Regra fixa: os pontos de cada eixo vêm dos dados da opção escolhida, **nunca do lado do arraste** (D-084; o lado é sorteado). O algoritmo antigo, que pontuava por "esquerda/direita", foi removido no P-010.
 
 **Revelação Final:**
 

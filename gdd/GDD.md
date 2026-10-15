@@ -419,7 +419,7 @@ Detalhado em `gdd/sistemas/03_impeachment.md` (P-011). Resumo: 4 gatilhos (princ
 | **Sociedade** | Conservadorismo | Progressismo |
 | **Estado** | Autoritarismo | Liberdade |
 
-**Cálculo:** Cada escolha soma pontos em um dos extremos. No final, é gerado um gráfico de radar. Os pontos ficam nos dados da carta, nunca no lado do swipe (D-084).
+**Cálculo:** cada opção tem um vetor de −2 a +2 por eixo; posição = média dos valores ≠ 0 × 5. Radar de 8 pontas com "o que você disse" (calibração) × "como você governou". Detalhe: `gdd/sistemas/04_eixo.md`.
 
 ### 6.7. Sistema de Calibração
 
@@ -550,7 +550,7 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 
 ### 9.2. Eixo Ideológico
 
-**Revelação:** Gráfico de radar com 4 eixos.
+**Revelação:** radar de 8 pontas (disse × governou) + texto do eixo predominante (`gdd/sistemas/04_eixo.md` §3.3) + o texto dos medidores abaixo ("o país que você construiu").
 
 | Padrão | Revelação |
 | :--- | :--- |
@@ -915,7 +915,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |
 | P-7 | MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
 | P-8 | ✅ Resolvida: `gdd/sistemas/01_medidores.md` §3-4 | §6.1.3, §7.2, §13.2 |
-| P-9 | Eixo ideológico: como cada escolha pontua os 4 eixos; revelação usa medidores, não eixos | §6.6, §9.2 |
+| P-9 | ✅ Resolvida: `gdd/sistemas/04_eixo.md` | §6.6, §9.2 |
 | P-10 | Atores: satisfação inicial; critério de "atende/contraria" | §6.3 |
 | P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
 | P-12 | "Sessão parcial (se pausado)" × sem salvamento; risco no mobile | §4.4 |

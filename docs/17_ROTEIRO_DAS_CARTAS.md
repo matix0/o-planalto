@@ -24,6 +24,7 @@ Opção B: [Texto]
 Cor B: [Cor partidária de quem propõe a opção B]
 Efeitos B: [Medidores afetados]
 Consequência B: [Frase curta]
+Eixo A / Eixo B: [Eco, Dip, Soc, Est], −2 a +2 (GDD 04)
 Aprendizado: [APR-xxx — texto no doc 18]
 ```
 
@@ -64,9 +65,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Nomear relator adversário |
 | **Efeitos A** | `Capital Político` -10, `Soberania` +10 |
 | **Consequência A** | "O relator é adversário. O projeto avança." |
+| **Eixo A** | [-1, 0, 0, 0] |
 | **Opção B** | Aceitar as mudanças |
 | **Efeitos B** | `Capital Político` +10, `Soberania` -15, `Caixa` +10, `Integridade` -5 |
 | **Consequência B** | "A lei passa. O povo paga a conta." |
+| **Eixo B** | [+1, 0, 0, 0] |
 | **Aprendizado** | APR-001 (doc 18) |
 
 ### INST-002 — Retirada de Direitos Trabalhistas
@@ -81,9 +84,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Mobilizar senadores aliados |
 | **Efeitos A** | `Capital Político` -20, `Dignidade` +10, `Integridade` +5 |
 | **Consequência A** | "Os direitos são mantidos. O Congresso reclama." |
+| **Eixo A** | [-2, 0, 0, 0] |
 | **Opção B** | Deixar o Senado decidir |
 | **Efeitos B** | `Dignidade` -10, `Capital Político` +5, `Integridade` -5 |
 | **Consequência B** | "Os direitos são retirados. O Congresso aplaude." |
+| **Eixo B** | [+1, 0, 0, 0] |
 | **Aprendizado** | APR-002 (doc 18) |
 
 ### INST-003 — CPI contra o Governo
@@ -98,9 +103,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Apoiar a CPI |
 | **Efeitos A** | `Consciência` +10, `Integridade` +10, `Capital Político` -15 |
 | **Consequência A** | "A CPI é instalada. O governo é investigado." |
+| **Eixo A** | [0, 0, 0, +1] |
 | **Opção B** | Negociar o engavetamento |
 | **Efeitos B** | `Caixa` -20, `Capital Político` +10, `Integridade` -10 |
 | **Consequência B** | "A CPI é arquivada. O povo não sabe de nada." |
+| **Eixo B** | [0, 0, 0, -1] |
 | **Aprendizado** | APR-003 (doc 18) |
 
 ### INST-004 — Indicação para o STF
@@ -115,9 +122,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Indicar um nome técnico |
 | **Efeitos A** | `Capital Político` -10, `Consciência` +5, `Integridade` +5 |
 | **Consequência A** | "O nome é aprovado. O STF ganha um técnico." |
+| **Eixo A** | [0, 0, 0, +1] |
 | **Opção B** | Insistir no nome político |
 | **Efeitos B** | `Capital Político` -20, `Legitimidade` -5, `Integridade` -5 |
 | **Consequência B** | "O Senado rejeita. O governo sai enfraquecido." |
+| **Eixo B** | [0, 0, 0, -1] |
 | **Aprendizado** | APR-004 (doc 18) |
 
 ### INST-005 — Marco Temporal
@@ -132,9 +141,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Vetar o projeto |
 | **Efeitos A** | `Soberania` +10, `Dignidade` +10, `Capital Político` -15 |
 | **Consequência A** | "Os indígenas mantêm suas terras." |
+| **Eixo A** | [0, 0, +2, 0] |
 | **Opção B** | Apoiar o projeto |
 | **Efeitos B** | `Capital Político` +15, `Soberania` -10, `Dignidade` -10, `Integridade` -5 |
 | **Consequência B** | "Os indígenas perdem. O agronegócio comemora." |
+| **Eixo B** | [+1, 0, -1, 0] |
 | **Aprendizado** | APR-005 (doc 18) |
 
 ### INST-006 — Aumento do Próprio Salário
@@ -149,9 +160,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Vetar o aumento |
 | **Efeitos A** | `Legitimidade` +10, `Capital Político` -20 |
 | **Consequência A** | "O povo aplaude. O Congresso reclama." |
+| **Eixo A** | [0, 0, 0, 0] |
 | **Opção B** | Apoiar o aumento |
 | **Efeitos B** | `Capital Político` +15, `Legitimidade` -15, `Integridade` -5 |
 | **Consequência B** | "O povo vê que a casta política se protege." |
+| **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-006 (doc 18) |
 
 *(As demais 14 cartas do Modo Congresso ainda não foram escritas.)*
@@ -172,9 +185,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Cortar da dívida |
 | **Efeitos A** | `Capital Político` -20, `Caixa` +30, `Integridade` +5 |
 | **Consequência A** | "Os credores entram em pânico. O Congresso bloqueia. Mas o povo aplaude." |
+| **Eixo A** | [-2, 0, 0, 0] |
 | **Opção B** | Cortar da saúde |
 | **Efeitos B** | `Dignidade` -15, `Caixa` +20, `Integridade` -5 |
 | **Consequência B** | "A fila do hospital aumenta. A mortalidade infantil sobe." |
+| **Eixo B** | [+2, 0, 0, 0] |
 | **Aprendizado** | APR-021 (doc 18) |
 
 ### INST-022 — Dívida Pública
@@ -189,9 +204,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Renegociar a dívida |
 | **Efeitos A** | `Soberania` +10, `Caixa` +20, `Capital Político` -15 |
 | **Consequência A** | "Os credores reagem. Mas o governo respira." |
+| **Eixo A** | [-1, 0, 0, 0] |
 | **Opção B** | Pagar em dia |
 | **Efeitos B** | `Caixa` -20, `Capital Político` +10, `Dignidade` -5 |
 | **Consequência B** | "Os credores ficam satisfeitos. O povo paga a conta." |
+| **Eixo B** | [+1, 0, 0, 0] |
 | **Aprendizado** | APR-022 (doc 18) |
 
 ---
@@ -210,9 +227,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Vetar a proposta |
 | **Efeitos A** | `Consciência` +15, `Integridade` +10, `Capital Político` -20 |
 | **Consequência A** | "Os professores comemoram. Mas o Congresso ameaça retaliar." |
+| **Eixo A** | [0, 0, +1, 0] |
 | **Opção B** | Apoiar a proposta |
 | **Efeitos B** | `Capital Político` +15, `Consciência` -15, `Integridade` -10 |
 | **Consequência B** | "A lei passa. Os alunos aprenderão 'educação financeira' em vez de pensar criticamente." |
+| **Eixo B** | [0, 0, -2, 0] |
 | **Aprendizado** | APR-041 (doc 18) |
 
 ### INST-042 — Concessão de TV para Pastor
@@ -227,9 +246,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Renovar com pluralidade |
 | **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -10 |
 | **Consequência A** | "A emissora aceita, mas faz campanha velada contra você." |
+| **Eixo A** | [0, 0, +1, -1] |
 | **Opção B** | Renovar sem condições |
 | **Efeitos B** | `Capital Político` +15, `Consciência` -15, `Integridade` -10 |
 | **Consequência B** | "A TV elogia seu governo. Mas o que ela mostra não é a realidade." |
+| **Eixo B** | [0, 0, -1, 0] |
 | **Aprendizado** | APR-042 (doc 18) |
 
 ---
@@ -248,9 +269,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Aderir |
 | **Efeitos A** | `Soberania` +15, `Integridade` +5, `Caixa` -5 |
 | **Consequência A** | "O Brasil reduz a dependência do dólar. Mas os EUA ameaçam tarifas." |
+| **Eixo A** | [0, -1, 0, 0] |
 | **Opção B** | Recusar |
 | **Efeitos B** | `Caixa` +10, `Soberania` -15, `Integridade` -5 |
 | **Consequência B** | "Os EUA elogiam o Brasil. Mas o país continua vulnerável a sanções." |
+| **Eixo B** | [0, +1, 0, 0] |
 | **Aprendizado** | APR-061 (doc 18) |
 
 ### INST-062 — Venda de Lítio
@@ -265,9 +288,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Desenvolver com o BRICS |
 | **Efeitos A** | `Soberania` +15, `Caixa` -10, `Integridade` +5 |
 | **Consequência A** | "O lítio fica no Brasil. A cadeia produtiva se desenvolve." |
+| **Eixo A** | [-1, -1, 0, 0] |
 | **Opção B** | Vender |
 | **Efeitos B** | `Caixa` +25, `Soberania` -20, `Integridade` -10 |
 | **Consequência B** | "O lítio vai embora. O país importa tecnologia." |
+| **Eixo B** | [+1, +1, 0, 0] |
 | **Aprendizado** | APR-062 (doc 18) |
 
 ---
@@ -286,9 +311,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Investir em prevenção |
 | **Efeitos A** | `Dignidade` +10, `Segurança` -5, `Caixa` -15, `Integridade` +5 |
 | **Consequência A** | "A população sente que 'nada foi feito'. Mas, aos poucos, menos jovens entram no sistema." |
+| **Eixo A** | [0, 0, +1, +1] |
 | **Opção B** | Aumentar o encarceramento |
 | **Efeitos B** | `Segurança` +10, `Dignidade` -15, `Caixa` -20, `Integridade` -5 |
 | **Consequência B** | "Mais presos. Mais facções. O crime organizado se fortalece." |
+| **Eixo B** | [0, 0, -1, -2] |
 | **Aprendizado** | APR-081 (doc 18) |
 
 ### INST-082 — Polícia Mata 17 por Dia
@@ -303,9 +330,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Investigar e punir |
 | **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Integridade` +5, `Capital Político` -10 |
 | **Consequência A** | "A investigação começa. As famílias das vítimas finalmente são ouvidas." |
+| **Eixo A** | [0, 0, +1, +1] |
 | **Opção B** | Defender a polícia |
 | **Efeitos B** | `Segurança` +5, `Dignidade` -15, `Integridade` -5 |
 | **Consequência B** | "A impunidade policial continua." |
+| **Eixo B** | [0, 0, -1, -2] |
 | **Aprendizado** | APR-082 (doc 18) |
 
 ---
@@ -324,9 +353,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Redirecionar para o hospital |
 | **Efeitos A** | `Dignidade` +15, `Capital Político` -10, `Integridade` +5 |
 | **Consequência A** | "O hospital recebe os recursos. O show é cancelado." |
+| **Eixo A** | [0, 0, 0, 0] |
 | **Opção B** | Manter o show |
 | **Efeitos B** | `Capital Político` +10, `Dignidade` -15, `Integridade` -5 |
 | **Consequência B** | "O show acontece. O hospital fecha." |
+| **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-101 (doc 18) |
 
 ---
@@ -345,9 +376,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Recusar |
 | **Efeitos A** | `Capital Político` -15, `Soberania` +5, `Legitimidade` +5, `Integridade` +10 |
 | **Consequência A** | "A bancada BBB se une contra você. Mas o meio ambiente é preservado." |
+| **Eixo A** | [-1, 0, +1, 0] |
 | **Opção B** | Aceitar |
 | **Efeitos B** | `Capital Político` +20, `Soberania` -10, `Dignidade` -10, `Integridade` -10 |
 | **Consequência B** | "A lei passa. Mais desmatamento, mais armas. Mas o pacote fiscal é aprovado." |
+| **Eixo B** | [+1, 0, -1, 0] |
 | **Aprendizado** | APR-121 (doc 18) |
 
 ---
@@ -367,10 +400,12 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Teste A** | `Consciência` > 45 (apoio +1) |
 | **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Segurança` -5 |
 | **Consequência A** | "As ruas se enchem. Mas o Congresso se sente atacado." |
+| **Eixo A** | [0, 0, 0, +1] |
 | **Opção B** | Confiar na base |
 | **Teste B** | `Caixa` > 45 (apoio +1) |
 | **Efeitos B** | `Capital Político` +10, `Caixa` -10 |
 | **Consequência B** | "A base está rachada. Alguns aliados já negociam com a oposição." |
+| **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-141 (doc 18) |
 
 *Regras da cena: `gdd/sistemas/03_impeachment.md` (efeitos ×1, sem multiplicador do ano).*
@@ -388,10 +423,12 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Teste A** | `Integridade` > 45 (apoio +1) |
 | **Efeitos A** | `Integridade` +5, `Consciência` +5, `Segurança` -5 |
 | **Consequência A** | "A denúncia ganha força nas ruas. Mas o Congresso ignora." |
+| **Eixo A** | [0, 0, 0, 0] |
 | **Opção B** | Negociar nos bastidores |
 | **Teste B** | `Capital Político` > 25 (apoio +1) |
 | **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
 | **Consequência B** | "A comissão suaviza o parecer. Mas o povo percebe a compra de votos." |
+| **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-142 (doc 18) |
 
 ---
@@ -412,9 +449,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Apoiar a investigação |
 | **Efeitos A** | `Consciência` +15, `Legitimidade` +10, `Capital Político` -30, `Integridade` +15 |
 | **Consequência A** | "O ministro é investigado. O STF entra em crise. Mas o povo vê que a lei vale para todos." |
+| **Eixo A** | [0, 0, 0, +1] |
 | **Opção B** | Defender o ministro |
 | **Efeitos B** | `Capital Político` -20, `Consciência` -15, `Integridade` -15 |
 | **Consequência B** | "O caso é arquivado. Mas o povo vê que a justiça é diferente para os poderosos." |
+| **Eixo B** | [0, 0, 0, -1] |
 | **Aprendizado** | APR-161 (doc 18) |
 
 ---
@@ -433,9 +472,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Recusar |
 | **Efeitos A** | `Consciência` +10, `Integridade` +5, `Legitimidade` -10 |
 | **Consequência A** | "O influenciador faz campanha contra você. Mas sua consciência está limpa." |
+| **Eixo A** | [0, 0, 0, 0] |
 | **Opção B** | Aceitar |
 | **Efeitos B** | `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10 |
 | **Consequência B** | "O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores." |
+| **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-181 (doc 18) |
 
 ---
@@ -454,9 +495,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Assentar as famílias |
 | **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Capital Político` -15 |
 | **Consequência A** | "A terra é repartida. O agro protesta." |
+| **Eixo A** | [-2, 0, +1, 0] |
 | **Opção B** | Ordenar o despejo |
 | **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Integridade` -5 |
 | **Consequência B** | "A polícia despeja as famílias. O agro comemora." |
+| **Eixo B** | [+2, 0, 0, -1] |
 | **Aprendizado** | APR-THEM-001 (doc 18) |
 
 ---
@@ -475,9 +518,11 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Opção A** | Recusar |
 | **Efeitos A** | `Capital Político` -15, `Dignidade` +10, `Integridade` +5 |
 | **Consequência A** | "O Latifundiário fica furioso. Mas a dignidade é preservada." |
+| **Eixo A** | [0, 0, 0, +1] |
 | **Opção B** | Aceitar |
 | **Efeitos B** | `Capital Político` +20, `Dignidade` -15, `Integridade` -10 |
 | **Consequência B** | "O Latifundiário garante votos. Mas a impunidade aumenta." |
+| **Eixo B** | [0, 0, 0, -2] |
 | **Aprendizado** | APR-ATOR-001 (doc 18) |
 
 ---

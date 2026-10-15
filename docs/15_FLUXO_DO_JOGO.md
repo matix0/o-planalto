@@ -64,16 +64,16 @@ Os avisos de conteúdo aparecem na tela inicial (GDD §14.3).
 
 ## 15.04 — Calibração Inicial
 
-Seis perguntas (±5 cada, GDD 01 Medidores), uma por tela, respondidas **arrastando**, como as cartas (doc 14 §14.12). Ao final, os medidores iniciais (GDD §13.1) são ajustados.
+Seis perguntas (±5 cada, GDD 01 Medidores; vetores de eixo pelo GDD 04 formam o traçado "o que você disse"), uma por tela, respondidas **arrastando**, como as cartas (doc 14 §14.12). Ao final, os medidores iniciais (GDD §13.1) são ajustados.
 
-| # | Pergunta | Resposta A | Efeito A | Resposta B | Efeito B |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | "O governo deve priorizar segurança ou prevenção?" | Segurança | `Segurança` +5, `Dignidade` −5 | Prevenção | `Dignidade` +5, `Segurança` −5 |
-| 2 | "O Brasil deve se alinhar aos EUA ou ao BRICS?" | EUA | `Soberania` −5 | BRICS | `Soberania` +5 |
-| 3 | "O Estado deve investir em educação ou cortar gastos?" | Educação | `Consciência` +5, `Caixa` −5 | Cortar | `Caixa` +5, `Consciência` −5 |
-| 4 | "A mídia deve ser livre ou regulada?" | Livre | `Integridade` +5 | Regulada | `Integridade` −5 |
-| 5 | "O governo deve taxar grandes fortunas?" | Sim | `Dignidade` +5, `Caixa` −5 | Não | `Caixa` +5, `Dignidade` −5 |
-| 6 | "O povo deve participar das decisões?" | Sim | `Legitimidade` +5, `Consciência` +5 | Não | `Capital Político` +5, `Consciência` −5 |
+| # | Pergunta | Resposta A | Efeito A | Eixo A | Resposta B | Efeito B | Eixo B |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | "O governo deve priorizar segurança ou prevenção?" | Segurança | `Segurança` +5, `Dignidade` −5 | [0, 0, -1, -1] | Prevenção | `Dignidade` +5, `Segurança` −5 | [0, 0, +1, +1] |
+| 2 | "O Brasil deve se alinhar aos EUA ou ao BRICS?" | EUA | `Soberania` −5 | [0, +1, 0, 0] | BRICS | `Soberania` +5 | [0, -1, 0, 0] |
+| 3 | "O Estado deve investir em educação ou cortar gastos?" | Educação | `Consciência` +5, `Caixa` −5 | [-1, 0, 0, 0] | Cortar | `Caixa` +5, `Consciência` −5 | [+1, 0, 0, 0] |
+| 4 | "A mídia deve ser livre ou regulada?" | Livre | `Integridade` +5 | [0, 0, 0, +2] | Regulada | `Integridade` −5 | [0, 0, 0, -1] |
+| 5 | "O governo deve taxar grandes fortunas?" | Sim | `Dignidade` +5, `Caixa` −5 | [-2, 0, 0, 0] | Não | `Caixa` +5, `Dignidade` −5 | [+2, 0, 0, 0] |
+| 6 | "O povo deve participar das decisões?" | Sim | `Legitimidade` +5, `Consciência` +5 | [0, 0, 0, +2] | Não | `Capital Político` +5, `Consciência` −5 | [0, 0, 0, -2] |
 
 A pergunta 6 foi corrigida no P-010 (antes: "Sim → `Consciência` −10"). O GDD (§16.4, P-11) mantém a pendência de revisão da pergunta 2 pelo PSI.
 

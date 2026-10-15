@@ -165,7 +165,7 @@ Cena especial, separada do fluxo normal de cartas.
 | **Descrição** | Curta |
 | **Citação** | Frase e autor (doc 04; nomes reais mantidos — D-083) |
 | **Epílogo** | Eventos encadeados que voltariam depois do Ano 4 |
-| **Eixo ideológico** | Gráfico de radar com os 4 eixos (GDD §6.6) |
+| **Eixo ideológico** | Radar de 8 pontas com dois traçados ("o que você disse" × "como você governou") + texto do eixo predominante (`gdd/sistemas/04_eixo.md`) |
 | **Medidores** | Valores finais dos 8 medidores, agora com números |
 | **Botões** | Jogar novamente · Compartilhar |
 
