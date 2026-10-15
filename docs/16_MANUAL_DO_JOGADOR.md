@@ -219,21 +219,27 @@ A partir do Ano 2, o Congresso pode abrir um **impeachment**. Ele vira uma cena 
 
 | Condição | Descrição |
 | :--- | :--- |
-| **Gatilho principal** | `Legitimidade` < 20 E `Capital Político` < 20 |
-| **Gatilho alternativo** | 3 decisões consecutivas contra o Congresso |
-| **Gatilho de crise** | `Consciência` < 20 E `Integridade` < 20 |
+| **Gatilho principal** | `Legitimidade` < 20 E `Capital Político` < 20 (a partir do Ano 2) |
+| **Gatilho de crise** | `Consciência` < 20 E `Integridade` < 20 (a partir do Ano 2) |
+| **Gatilho alternativo** | 3 decisões seguidas que tiram `Capital Político` (a partir do Ano 2) |
+| **Sem base** | `Capital Político` chega a 0, em qualquer ano |
 
 ### 16.09.2. As 5 fases
 
-| Fase | Para sobreviver |
-| :--- | :--- |
-| **1. O Pedido** | `Legitimidade` > 60 ou `Capital Político` > 50 |
-| **2. A Comissão** | `Integridade` > 60 ou `Caixa` > 60 |
-| **3. A Votação** | `Legitimidade` > 70 |
-| **4. O Julgamento** | `Consciência` > 60 |
-| **5. O Desfecho** | `Legitimidade` > 60 E `Consciência` > 50 = absolvição |
+Cada fase é uma carta com uma opção ligada ao povo e outra ligada ao Congresso. Cada opção tem um teste: passar no teste conta como apoio.
 
-**Atenção:** se `Consciência` < 30 E `Integridade` < 30, o impeachment é **automático**.
+| Fase | Opção A (povo): teste | Opção B (Congresso): teste |
+| :--- | :--- | :--- |
+| **1. O Pedido** | `Consciência` > 45 | `Caixa` > 45 |
+| **2. A Comissão** | `Integridade` > 45 | `Capital Político` > 25 |
+| **3. A Votação** | `Consciência` > 55 | `Capital Político` > 35 |
+| **4. O Julgamento** | `Dignidade` > 50 | `Capital Político` > 40 |
+| **5. O Desfecho** | `Legitimidade` > 45 | `Integridade` > 51 |
+
+- Com 2 apoios ou mais nas fases 1 a 4 (3 se você perdeu toda a base) e o teste do Desfecho, você é **absolvido**.
+- Escolher sempre o mesmo lado quase nunca funciona: é preciso combinar rua e plenário.
+- Se a cena começa com `Consciência` e `Integridade` abaixo de 15, a condenação é **automática**.
+- O impeachment só acontece uma vez por partida.
 
 ---
 

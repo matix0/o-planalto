@@ -139,7 +139,8 @@ EXIBIR CARTA (lado de cada opção sorteado)
 | Condição | Regra |
 | :--- | :--- |
 | **Principal** | `Legitimidade` < 20 E `Capital Político` < 20 |
-| **Alternativo** | 3 decisões consecutivas contra o Congresso |
+| **Alternativo** | 3 opções seguidas que tiram `Capital Político` |
+| **Capital em 0** | `Capital Político` = 0, em qualquer ano (D-095) |
 | **Crise** | `Integridade` < 20 E `Consciência` < 20 |
 
 ### 15.07.2. A cena
@@ -154,17 +155,18 @@ GATILHO
                           └─▶ 5. O DESFECHO ─▶ ABSOLVIÇÃO ou CONDENAÇÃO
 ```
 
-| Fase | O que acontece | Condição de sobrevivência (GDD §6.5.2) |
+| Fase | Opção A (povo): teste | Opção B (Congresso): teste |
 | :--- | :--- | :--- |
-| **1. O Pedido** | O pedido é aceito na Câmara | `Legitimidade` > 60 ou `Capital Político` > 50 |
-| **2. A Comissão** | Comissão especial dá parecer | `Integridade` > 60 ou `Caixa` > 60 |
-| **3. A Votação** | Câmara vota a autorização | `Legitimidade` > 70 |
-| **4. O Julgamento** | Senado julga | `Consciência` > 60 |
-| **5. O Desfecho** | Resultado final | `Legitimidade` > 60 E `Consciência` > 50 |
+| **1. O Pedido** | `Consciência` > 45 | `Caixa` > 45 |
+| **2. A Comissão** | `Integridade` > 45 | `Capital Político` > 25 |
+| **3. A Votação** | `Consciência` > 55 | `Capital Político` > 35 |
+| **4. O Julgamento** | `Dignidade` > 50 | `Capital Político` > 40 |
+| **5. O Desfecho** | `Legitimidade` > 45 | `Integridade` > 51 |
 
-Se `Consciência` < 30 E `Integridade` < 30, o impeachment é automático (GDD §6.5.2).
-
-**Pendências:** a fórmula dos votos nos placares (GDD de Impeachment); a relação entre esta cena e o final "Impeachment" por `Capital Político` = 0 (GDD §16.4, P-1).
+- Cada fase é uma carta extra com duas opções; o teste usa o valor antes do efeito; teste vencido nas fases 1-4 = +1 apoio. Efeitos sem multiplicador do ano.
+- Absolvição: apoio ≥ 2 (≥ 3 se a cena abriu por `Capital Político` = 0) e teste do Desfecho; senão, condenação. Absolvido: `Capital Político` = máx(atual; 20), `Legitimidade` +10.
+- Condenação automática se a cena começa com `Consciência` < 15 E `Integridade` < 15. A cena ocorre 1× por partida.
+- Regras completas, efeitos e placares: `gdd/sistemas/03_impeachment.md`.
 
 **Referências:** Revista Acervo (Arquivo Nacional), *Os sentidos do golpe*, 2025; ROCHA, Daniel França da, *Golpe versus impeachment*, UFPE, 2021 `[não verificado]`.
 

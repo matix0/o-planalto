@@ -85,7 +85,7 @@ Cada ficha contém:
 | **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
 | **Conexão com Atores** | Coronel, Tecnocrata, Pastor, Banqueiro/Ruralista, Burocrata |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-007 (Bancadas), MOD-008 (Impeachment) |
-| **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, o relator do impeachment de Dilma admitiu que as pedaladas fiscais não configuravam crime. |
+| **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, os relatores do impeachment de Dilma (Jovair Arantes na Câmara, Antonio Anastasia no Senado) apontaram crime de responsabilidade e votaram pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. |
 
 **Cartas do Modo:**
 
@@ -428,7 +428,7 @@ Cada ficha contém:
 | **Eventos Encadeados** | Ano 3: "Processo instaurado" (`Capital Político` -15, `Legitimidade` -10) · Ano 4: "Condenação ou absolvição" (`Legitimidade` -30 ou +20) |
 | **Conexão com Atores** | Todos os atores |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-009 (Judiciário) |
-| **Fundamentação** | O impeachment de Dilma Rousseff em 2016 foi um golpe parlamentar, jurídico e midiático. O relator Antonio Anastasia admitiu que as pedaladas fiscais não configuravam crime. A contradição central foi que Dilma perdeu o mandato, mas manteve seus direitos políticos. |
+| **Fundamentação** | O impeachment de Dilma Rousseff em 2016 foi um golpe parlamentar, jurídico e midiático. O relator no Senado, Antonio Anastasia, apontou crime de responsabilidade e votou pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. A contradição central foi que Dilma perdeu o mandato, mas manteve seus direitos políticos. |
 
 **Cartas do Modo:**
 
@@ -477,7 +477,7 @@ Cada ficha contém:
 | **Eventos Encadeados** | Ano 2: "Escândalo no STF" (`Integridade` -15, `Consciência` -10) · Ano 3: "Crise institucional" (`Integridade` -20, `Capital Político` -15) |
 | **Conexão com Atores** | Jornalista Independente, Burocrata, Banqueiro/Ruralista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-010 (Influenciador) |
-| **Fundamentação** | A venda de sentenças é um mercado nacional. O Banco Master revelou 52 mensagens entre Vorcaro e Alexandre de Moraes. A CPI pediu impeachment de Toffoli, Moraes e Gilmar. A aposentadoria compulsória é uma forma de blindagem institucional. |
+| **Fundamentação** | A venda de sentenças é um mercado nacional. O relatório da Polícia Federal sobre o celular de Daniel Vorcaro (Banco Master) mostra 28 mensagens enviadas a um telefone atribuído a Alexandre de Moraes, em dezembro de 2025 ([Poder360, 2026](https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/)); corrigido no P-011. A aposentadoria compulsória é uma forma de blindagem institucional. |
 
 **Cartas do Modo:**
 

@@ -406,27 +406,7 @@ ator.satisfacao = clamp(0, 100)
 
 ### 6.5. Sistema de Impeachment
 
-#### 6.5.1. Gatilhos
-
-| Condição | Descrição |
-| :--- | :--- |
-| **Principal** | `Legitimidade` < 20 E `Capital Político` < 20 |
-| **Alternativo** | 3 decisões consecutivas contra o Congresso |
-| **Crise** | `Integridade` < 20 E `Consciência` < 20 |
-
-**Ano mínimo:** Ano 2.
-
-#### 6.5.2. Estrutura (5 cartas)
-
-| Fase | Sobrevivência |
-| :--- | :--- |
-| 1. O Pedido | `Legitimidade` > 60 ou `Capital Político` > 50 |
-| 2. A Comissão | `Integridade` > 60 ou `Caixa` > 60 |
-| 3. A Votação | `Legitimidade` > 70 |
-| 4. O Julgamento | `Consciência` > 60 |
-| 5. O Desfecho | `Legitimidade` > 60 E `Consciência` > 50 |
-
-**Se `Consciência` < 30 E `Integridade` < 30 → impeachment automático.**
+Detalhado em `gdd/sistemas/03_impeachment.md` (P-011). Resumo: 4 gatilhos (principal, crise, alternativo a partir do Ano 2; `Capital Político` em 0 em qualquer ano — D-095); cena de 5 cartas extras, 1× por partida; cada opção tem um teste; fases vencidas viram apoio; absolvição com apoio ≥ 2 (≥ 3 se abriu por Capital em 0) e teste do Desfecho; condenação automática com Consciência < 15 e Integridade < 15.
 
 ### 6.6. Sistema de Eixo Ideológico
 

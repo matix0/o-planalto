@@ -275,7 +275,7 @@
 | 3 | `/mapear-sistemas` → `gdd/sistemas/00_INDICE.md` | ✅ | 10 sistemas |
 | 4 | GDD de Medidores (P-8) | ✅ | `gdd/sistemas/01_medidores.md`; D-094 |
 | 5 | GDD de Finais (P-3, medidor em 100, sem condição) | ✅ | `gdd/sistemas/02_finais.md`; D-095, D-096 |
-| 6 | GDD de Impeachment (P-1, placares) | ⏳ | — |
+| 6 | GDD de Impeachment (P-1, placares) | ✅ | `gdd/sistemas/03_impeachment.md` |
 | 7 | GDD do Eixo Ideológico (P-9) | ⏳ | — |
 | 8 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
 

@@ -364,12 +364,16 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Cor B** | Amarelo |
 | **Problema** | A oposição protocolou um pedido de impeachment. O presidente da Câmara, seu adversário, aceita o pedido em 48 horas. |
 | **Opção A** | Apelar ao povo |
-| **Efeitos A** | `Legitimidade` -10, `Consciência` +10, `Capital Político` -15 |
+| **Teste A** | `Consciência` > 45 (apoio +1) |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Segurança` -5 |
 | **Consequência A** | "As ruas se enchem. Mas o Congresso se sente atacado." |
 | **Opção B** | Confiar na base |
-| **Efeitos B** | `Capital Político` -10, `Legitimidade` -5, `Consciência` +5 |
+| **Teste B** | `Caixa` > 45 (apoio +1) |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10 |
 | **Consequência B** | "A base está rachada. Alguns aliados já negociam com a oposição." |
 | **Aprendizado** | APR-141 (doc 18) |
+
+*Regras da cena: `gdd/sistemas/03_impeachment.md` (efeitos ×1, sem multiplicador do ano).*
 
 ### INST-142 — A Comissão
 
@@ -381,16 +385,20 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Cor B** | Amarelo |
 | **Problema** | O presidente da Câmara aceitou o pedido. Uma comissão especial foi formada. O relator é seu adversário. |
 | **Opção A** | Denunciar o golpe |
-| **Efeitos A** | `Capital Político` -15, `Consciência` +15, `Integridade` +10, `Legitimidade` +5 |
+| **Teste A** | `Integridade` > 45 (apoio +1) |
+| **Efeitos A** | `Integridade` +5, `Consciência` +5, `Segurança` -5 |
 | **Consequência A** | "A denúncia ganha força nas ruas. Mas o Congresso ignora." |
 | **Opção B** | Negociar nos bastidores |
-| **Efeitos B** | `Caixa` -40, `Capital Político` -10, `Legitimidade` +5, `Integridade` -10 |
+| **Teste B** | `Capital Político` > 25 (apoio +1) |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
 | **Consequência B** | "A comissão suaviza o parecer. Mas o povo percebe a compra de votos." |
 | **Aprendizado** | APR-142 (doc 18) |
 
 ---
 
 ## 17.10 — Cartas do Modo Judiciário (20)
+
+*Regras da cena: `gdd/sistemas/03_impeachment.md` (efeitos ×1, sem multiplicador do ano).*
 
 ### INST-161 — Ministro do STF com 28 Mensagens
 
