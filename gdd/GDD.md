@@ -309,16 +309,16 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 
 #### 6.1.1. Os 8 Medidores Principais
 
-| # | Medidor | Categoria | Final se 0 | Final se 100 |
+| # | Medidor | Categoria | Final se 0 (na hora) | Final se ≥ 95 no fim do Ano 4 (D-096) |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Dignidade** | Social | Barbárie | Dependência Assistencialista |
-| 2 | **Consciência** | Social | Alienação Total | Revolução Permanente |
-| 3 | **Soberania** | Social | Colônia | Isolacionismo Paranoico |
+| 1 | **Dignidade** | Social | Barbárie | — |
+| 2 | **Consciência** | Social | Alienação Total | — |
+| 3 | **Soberania** | Social | Colônia | — |
 | 4 | **Segurança** | Social | Autogestão Popular | Estado Policial |
-| 5 | **Integridade** | Social | Desintegração | Transparência Totalitária |
-| 6 | **Caixa** | Poder | Paralisia Fiscal | Prosperidade Compartilhada |
-| 7 | **Capital Político** | Poder | Impeachment | Governabilidade Democrática |
-| 8 | **Legitimidade** | Poder | Revolta Popular | Apoio Popular Crítico |
+| 5 | **Integridade** | Social | Desintegração | — |
+| 6 | **Caixa** | Poder | Paralisia Fiscal | — |
+| 7 | **Capital Político** | Poder | Cena de impeachment (D-095) | Hegemonia Autoritária |
+| 8 | **Legitimidade** | Poder | Revolta Popular | Ufanismo Vazio |
 
 #### 6.1.2. Sub-medidores
 
@@ -536,22 +536,25 @@ Cada carta tem uma Carta de Aprendizado com 5 blocos:
 
 ### 8.5. Finais
 
-**Total:** 26 finais em 6 categorias.
+**Total:** 27 finais em 7 categorias (D-096). Regras, prioridade e citações verificadas: `gdd/sistemas/02_finais.md`.
 
 | Categoria | Qtd | Exemplos |
 | :--- | :--- | :--- |
-| Catástrofe | 7 | Barbárie, Alienação Total, Colônia |
+| Catástrofe | 8 | Barbárie, Paralisia Fiscal, Colônia |
 | Captura | 3 | Estado Policial, Hegemonia Autoritária |
 | Perda da Democracia | 5 | Golpe Militar, Autoritarismo Eleitoral |
 | Extermínio | 2 | Genocídio Institucionalizado |
 | Fortalecimento | 5 | República Soberana e Popular |
-| Cuidado e Soberania | 4 | Fome como Escolha Política |
+| Cuidado e Soberania | 3 | Fome como Escolha Política |
+| Neutro | 1 | Mandato Comum |
 
 ---
 
 ## 9. Finais e Eixo Ideológico
 
 ### 9.1. Condições de Finais (amostra)
+
+Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/02_finais.md` §3.5.
 
 | Final | Condição | Citação |
 | :--- | :--- | :--- |
@@ -924,9 +927,9 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 
 | ID | Pendência | Seção |
 | :--- | :--- | :--- |
-| P-1 | Dois impeachments: final instantâneo (`Capital Político` = 0) e sistema de 5 cartas — falta prioridade | §6.5, §9.1 |
+| P-1 | ✅ Resolvida: `Capital Político` em 0 abre a cena (D-095); detalhes da cena no GDD 03 | §6.5, §9.1 |
 | P-2 | ✅ Resolvida: partida de ~15 min (D-088) | §1.1, §4.2 |
-| P-3 | Medidor em 0 encerra na hora (D-089). Pendentes: desempate entre finais, dois medidores zerando no mesmo swipe, final por medidor em 100, final quando nenhuma condição é atendida | §9 |
+| P-3 | ✅ Resolvida: `gdd/sistemas/02_finais.md` (D-096) | §9 |
 | P-4 | Cartas obrigatórias podem passar de 8 por turno; "remover do mesmo modo" ambíguo | §6.2.2 |
 | P-5 | Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
 | P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |

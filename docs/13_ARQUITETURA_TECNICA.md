@@ -595,7 +595,7 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 | `cartas.json` | JSON | Todas as 340 cartas |
 | `medidores.json` | JSON | Os 8 medidores + 3 sub-medidores |
 | `atores.json` | JSON | Os 24 atores |
-| `finais.json` | JSON | Os 26 finais |
+| `finais.json` | JSON | Os 27 finais |
 | `eventos.json` | JSON | Os 78 eventos encadeados |
 | `calibracao.json` | JSON | As 6 perguntas da calibração inicial |
 | `eixo_ideologico.json` | JSON | Configuração do eixo 9axes |

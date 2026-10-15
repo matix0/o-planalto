@@ -104,6 +104,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-063 | Formato do GDD: documento mestre `gdd/GDD.md` + um arquivo por sistema em `gdd/sistemas/` com índice | 2026-10-14 | Escolha do PO (P-011) |
 | D-093 | Kit do GDD adaptado do Claude Code Game Studios (Donchitos, licença MIT); crédito vai para o doc 23 quando ele existir | 2026-10-14 | Escolha do PO (P-011) |
 | D-094 | Sub-medidores (Desemprego, Inflação, Juros) removidos; temas econômicos ficam nas cartas e nas Cartas de Aprendizado; revisa D-015 | 2026-10-14 | Escolha do PO (GDD 01 Medidores, P-011) |
+| D-095 | `Capital Político` em 0 não encerra a partida: abre a cena de impeachment em qualquer ano; o final "Impeachment" vem da condenação. Exceção à D-089 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011; resolve P-1 em parte) |
+| D-096 | 27 finais: +Paralisia Fiscal (Caixa = 0), +Mandato Comum (neutro), −#26 Protecionismo Soberano (duplicado); finais por medidor em 100 só os 3 de Captura, com ≥ 95 no fim do Ano 4; prioridade por categoria; revisa D-021 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011) |
 
 ---
 
@@ -132,7 +134,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-009 | Público-alvo |
 | D-010 | Duração (revisada por D-088) |
 | D-088 | Partida de ~15 min |
-| D-089 | Medidor em 0 encerra na hora |
+| D-089 | Medidor em 0 encerra na hora (exceção: D-095) |
+| D-095 | Capital Político em 0 abre o impeachment |
 | D-090 | Doc 18 é a fonte dos Aprendizados |
 | D-091 | Dados só com fonte verificada |
 | D-014 | 8 medidores |
@@ -145,7 +148,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-084 | Swipe sem rótulo ideológico |
 | D-085 | 24 atores |
 | D-020 | 340 cartas |
-| D-021 | 26 finais |
+| D-021 | 26 finais (revisada por D-096) |
+| D-096 | 27 finais |
 | D-022 | Impeachment como golpe |
 | D-024 | 78 eventos |
 | D-027 | Eixo 9axes |

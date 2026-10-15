@@ -639,7 +639,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Desfecho do jogo, que depende das escolhas do jogador.
 
-**No jogo:** Existem 26 finais, divididos em 6 categorias: Catástrofe, Captura, Perda da Democracia, Extermínio, Fortalecimento e Cuidado.
+**No jogo:** Existem 27 finais, divididos em 7 categorias: Catástrofe, Captura, Perda da Democracia, Extermínio, Fortalecimento, Cuidado e Neutro (D-096).
 
 **Fundamentação:** Os finais foram construídos para cobrir todas as possibilidades de governo.
 

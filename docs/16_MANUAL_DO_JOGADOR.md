@@ -239,16 +239,17 @@ A partir do Ano 2, o Congresso pode abrir um **impeachment**. Ele vira uma cena 
 
 ## 16.10 — Os Finais
 
-O jogo tem **26 finais**, em 6 categorias.
+O jogo tem **27 finais**, em 7 categorias.
 
 | Categoria | Quantidade | O que representa |
 | :--- | :--- | :--- |
-| **Catástrofe** | 7 | Falência de um medidor |
+| **Catástrofe** | 8 | Falência de um medidor |
 | **Captura** | 3 | Captura do Estado por projeto autoritário |
 | **Perda da Democracia** | 5 | Erosão democrática |
 | **Extermínio e Exploração** | 2 | O Estado passa a eliminar ou explorar parte da população |
 | **Fortalecimento** | 5 | Democracia fortalecida |
-| **Cuidado e Soberania** | 4 | O Estado cuida da população e protege a soberania |
+| **Cuidado e Soberania** | 3 | O Estado cuida da população e protege a soberania |
+| **Neutro** | 1 | Mandato Comum: o país segue como estava |
 
 ### 16.10.1. Exemplos
 

@@ -218,16 +218,17 @@ FIM DO ANO 4
 | Nenhuma condição atendida no fim do Ano 4 | **Pendente** — GDD de Finais |
 | Mais de um final possível ao mesmo tempo | **Pendente** — GDD §16.4, P-3 |
 
-### 15.09.1. Os 26 Finais
+### 15.09.1. Os 27 Finais (D-096)
 
 | Categoria | Quantidade | Exemplos |
 | :--- | :--- | :--- |
-| **Catástrofe** | 7 | Barbárie, Alienação Total, Colônia |
+| **Catástrofe** | 8 | Barbárie, Paralisia Fiscal, Colônia |
 | **Captura** | 3 | Estado Policial, Hegemonia Autoritária |
 | **Perda da Democracia** | 5 | Autoritarismo Eleitoral, Golpe Militar |
 | **Extermínio e Exploração** | 2 | Genocídio Institucionalizado |
 | **Fortalecimento** | 5 | República Soberana e Popular |
-| **Cuidado e Soberania** | 4 | Fome como Escolha Política |
+| **Cuidado e Soberania** | 3 | Fome como Escolha Política |
+| **Neutro** | 1 | Mandato Comum |
 
 ---
 

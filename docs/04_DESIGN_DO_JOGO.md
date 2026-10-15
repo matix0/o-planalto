@@ -95,18 +95,20 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 
 ### 04.02.2. Os 8 Medidores Principais
 
-| # | Medidor | Categoria | O que mede | Final se chegar a 0 | Final se chegar a 100 |
+| # | Medidor | Categoria | O que mede | Final se chegar a 0 (na hora) | Final se ≥ 95 no fim do Ano 4 (D-096) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Dignidade** | Indicador Social | Acesso a direitos básicos: saúde, educação, moradia, alimentação, lazer | Barbárie | Dependência Assistencialista |
-| 2 | **Consciência** | Indicador Social | Politização, pensamento crítico, educação, acesso à informação | Alienação Total | Revolução Permanente |
-| 3 | **Soberania** | Indicador Social | Autonomia nacional: controle de recursos, independência geopolítica, BRICS | Colônia | Isolacionismo Paranoico |
+| 1 | **Dignidade** | Indicador Social | Acesso a direitos básicos: saúde, educação, moradia, alimentação, lazer | Barbárie | — |
+| 2 | **Consciência** | Indicador Social | Politização, pensamento crítico, educação, acesso à informação | Alienação Total | — |
+| 3 | **Soberania** | Indicador Social | Autonomia nacional: controle de recursos, independência geopolítica, BRICS | Colônia | — |
 | 4 | **Segurança** | Indicador Social | Percepção de proteção e ordem, mas também segurança humana | Autogestão Popular | Estado Policial |
-| 5 | **Integridade** | Indicador Social | Integridade do debate público, confiança nas instituições, resistência à desinformação | Desintegração | Transparência Totalitária |
-| 6 | **Caixa** | Recurso de Poder | Dinheiro disponível para investir | Paralisia Fiscal | Prosperidade Compartilhada |
-| 7 | **Capital Político** | Recurso de Poder | Apoio no Congresso, capacidade de aprovar leis | Impeachment | Governabilidade Democrática |
-| 8 | **Legitimidade** | Recurso de Poder | Apoio popular direto, confiança da população | Revolta Popular | Apoio Popular Crítico |
+| 5 | **Integridade** | Indicador Social | Integridade do debate público, confiança nas instituições, resistência à desinformação | Desintegração | — |
+| 6 | **Caixa** | Recurso de Poder | Dinheiro disponível para investir | Paralisia Fiscal | — |
+| 7 | **Capital Político** | Recurso de Poder | Apoio no Congresso, capacidade de aprovar leis | Abre a cena de impeachment (D-095) | Hegemonia Autoritária |
+| 8 | **Legitimidade** | Recurso de Poder | Apoio popular direto, confiança da população | Revolta Popular | Ufanismo Vazio |
 
 ### 04.02.3. Os 3 Sub-medidores Econômicos
+
+> **Removidos pela D-094** (2026-10-14). Tabela mantida como histórico.
 
 | # | Sub-medidor | O que mede | Efeito |
 | :--- | :--- | :--- | :--- |
@@ -520,20 +522,21 @@ As Cartas de Aprendizado são baseadas em **três princípios pedagógicos**:
 
 ---
 
-## 04.08 — Finais (26 Consolidados)
+## 04.08 — Finais (27 — D-096)
 
 ### 04.08.1. Visão Geral
 
-O jogo possui **26 finais**, divididos em 6 categorias:
+O jogo possui **27 finais**, divididos em 7 categorias (D-096). Regras de prioridade, momento de checagem e citações verificadas: `gdd/sistemas/02_finais.md` (as citações abaixo são as originais; várias não foram confirmadas).
 
 | Categoria | Quantidade | Descrição |
 | :--- | :--- | :--- |
-| **Catástrofe** | 7 | Falência de um medidor |
+| **Catástrofe** | 8 | Falência de um medidor (na hora; Capital Político em 0 abre o impeachment — D-095) |
 | **Captura** | 3 | Captura do Estado por projeto autoritário |
 | **Perda da Democracia** | 5 | Erosão democrática |
 | **Extermínio e Exploração** | 2 | Projeto bolsonarista |
 | **Fortalecimento** | 5 | Democracia fortalecida |
-| **Cuidado e Soberania** | 4 | Projeto lulista |
+| **Cuidado e Soberania** | 3 | Projeto lulista |
+| **Neutro** | 1 | Mandato Comum: nenhum outro final atendido no fim do Ano 4 |
 
 ### 04.08.2. 💀 CATÁSTROFE (7)
 
@@ -546,8 +549,11 @@ O jogo possui **26 finais**, divididos em 6 categorias:
 | 5 | **Desintegração** | Integridade = 0 | *"A integridade do debate público foi destruída. Não há mais critério de verdade."* | Adaptação |
 | 6 | **Impeachment** | Capital Político = 0 | *"Uma condenação política exige obrigatoriamente a ocorrência de um crime de responsabilidade..."* | Dilma Rousseff |
 | 7 | **Revolta Popular** | Legitimidade = 0 | *"Liberdade ainda que tardia."* | Inconfidência Mineira |
+| — | **Paralisia Fiscal** | Caixa = 0 | *"O bem que o Estado pode fazer é limitado; o mal, infinito."* | Roberto Campos (fonte fraca) |
 
 ### 04.08.3. 👑 CAPTURA (3)
+
+Checadas no fim do Ano 4, com o medidor ≥ 95 (D-096).
 
 | # | Final | Condição | Citação | Autor |
 | :--- | :--- | :--- | :--- | :--- |
@@ -589,11 +595,10 @@ O jogo possui **26 finais**, divididos em 6 categorias:
 | 23 | **Cuidado como Política de Estado** | Dignidade > 80, Integridade > 70, Consciência > 70, Segurança > 50 | *"Quero mostrar ao mundo que é possível cuidar do povo pobre."* | Luiz Inácio Lula da Silva |
 | 24 | **Soberania que Alimenta** | Soberania > 80, Dignidade > 70, Integridade > 60, Caixa > 50 | *"Ninguém é pobre porque quer..."* | Luiz Inácio Lula da Silva |
 | 25 | **Fome como Escolha Política** | Dignidade > 80, Consciência > 70, Soberania > 60 | *"A fome não é um problema de produção, mas de distribuição."* | Josué de Castro |
-| 26 | **Protecionismo Soberano** | Soberania > 80, Caixa > 60, Dignidade > 60 | *"Queremos um Brasil forte e independente."* | Leonel Brizola |
 
 ### 04.08.8. Fundamentação Teórica
 
-Os 26 finais foram construídos para cobrir **todas as possibilidades** de governo:
+Os 27 finais foram construídos para cobrir **todas as possibilidades** de governo:
 
 1. **Catástrofes** — representam a falência de um medidor.
 2. **Capturas** — representam a captura do Estado por um projeto autoritário.

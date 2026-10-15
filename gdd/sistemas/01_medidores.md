@@ -40,6 +40,8 @@ Tabela base (`gdd/GDD.md` §13.1): Dignidade 45 · Consciência 40 · Soberania 
 5. Medidor ≤ 10 → a próxima carta é de emergência para ele, 1× por medidor por partida (escolha da carta: GDD 06 Sorteio).
 6. Checa o gatilho de impeachment (GDD 03).
 
+**Fim do Ano 4:** depois da última carta não há os passos 1-5; só o passo 6 (gatilho de impeachment), seguido dos finais (`gdd/sistemas/02_finais.md` §3.3).
+
 ### 3.5. Repetição
 
 Toda relação e todo limiar valem a cada fim de turno enquanto a condição durar.
@@ -131,4 +133,5 @@ Faixas seguras revisadas pelo ECO (2026-10-14).
 6. Fechamento com Dignidade 28 → Consciência −5, independente da ordem das relações.
 7. Todos os medidores > 45 no fechamento → todos +3.
 8. Medidor em 9 no fechamento → próxima carta de emergência para ele; de novo em 9 depois → sem emergência.
+10. Após a última carta do Ano 4 não há relações nem bônus; só o gatilho de impeachment.
 9. As 64 combinações da calibração, sem cartas, não zeram nenhum medidor em 4 fechamentos.
