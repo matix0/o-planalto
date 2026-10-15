@@ -238,14 +238,16 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
     "cor": "vermelho",
     "custo": { "Capital Político": -10 },
     "efeitos": { "Soberania": 10 },
-    "consequencia": "O relator é adversário. O projeto avança."
+    "consequencia": "O relator é adversário. O projeto avança.",
+    "eixo": [-1, 0, 0, 0]
   },
   "opcao_b": {
     "texto": "Aceitar as mudanças",
     "cor": "laranja",
     "custo": { "Capital Político": 10, "Caixa": 10 },
     "efeitos": { "Soberania": -15, "Integridade": -5 },
-    "consequencia": "A lei passa. O povo paga a conta."
+    "consequencia": "A lei passa. O povo paga a conta.",
+    "eixo": [1, 0, 0, 0]
   },
   "aprendizado_id": "APR-001",
   "pre_requisitos": {
@@ -310,8 +312,6 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "valor_atual": 45,
   "valor_minimo": 0,
   "valor_maximo": 100,
-  "limiar_critico": 30,
-  "limiar_extremo": 80,
   "final_zero": "Barbárie",
   "final_cem": "Dependência Assistencialista",
   "cor": "#4CAF50",
@@ -329,8 +329,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 | `valor_atual` | Int | Valor atual (muda durante o jogo) |
 | `valor_minimo` | Int | Valor mínimo (0) |
 | `valor_maximo` | Int | Valor máximo (100) |
-| `limiar_critico` | Int | Limite para alertas (30) |
-| `limiar_extremo` | Int | Limite para efeitos extremos (80) |
+| — | — | Sem campos de limiar: a cor e o significado vêm da faixa do valor (0-20 crítico, 21-40 baixo, 41-60 médio, 61-80, 81-100; doc 14 §14.11.3). Os únicos limiares com efeito são os 2 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4) |
 | `final_zero` | String | Final se chegar a 0 |
 | `final_cem` | String | Final se chegar a 100 |
 | `cor` | String | Não usado: a cor do ícone vem da faixa do valor (doc 14 §14.11.3) |
@@ -393,7 +392,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "eventos_encadeados": ["EVEN-001"],
   "medidores_inicio": {
     "Dignidade": 45,
-    "Consciência": 35,
+    "Consciência": 40,
     "Soberania": 40,
     "Segurança": 50,
     "Integridade": 40,
@@ -403,7 +402,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   },
   "medidores_fim": {
     "Dignidade": 45,
-    "Consciência": 35,
+    "Consciência": 40,
     "Soberania": 50,
     "Segurança": 50,
     "Integridade": 35,
@@ -572,18 +571,20 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 | Cadeia | Descrição |
 | :--- | :--- |
 | **Cadeia da Barbárie** | Dignidade cai → Consciência cai → Legitimidade sobe → Capital Político sobe → Soberania cai. |
-| **Cadeia da Revolta** | Dignidade cai → Consciência sobe → Legitimidade cai → Capital Político cai → Impeachment. |
+| **Cadeia da Revolta** | Dignidade cai → Consciência sobe → Legitimidade cai → Capital Político cai → abre a cena de impeachment (D-095). |
 | **Cadeia da Dependência** | Soberania cai → Caixa sobe → Dignidade cai → Consciência cai → Integridade cai → Desintegração. |
 | **Cadeia da Resistência** | Consciência sobe → Integridade sobe → Dignidade sobe → Soberania sobe → Legitimidade sobe → República Soberana. |
 
-**Efeitos Não-Lineares (Limiares):**
+**Efeitos Não-Lineares (Limiares):** só 2 vigentes, aplicados no fechamento do turno.
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
-| **Consciência < 15** | O povo não reage a nenhuma crise. |
-| **Soberania < 15** | O país se torna um protetorado. |
-| **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
+| **Integridade < 20** | −1 em cada um dos outros 7 medidores |
+| **Legitimidade > 90** | Consciência −10 |
+
+**Bônus por equilíbrio:** no fechamento do turno, se todos os 8 medidores estão > 45, todos ganham +3 (1× por turno).
+
+Detalhes: `gdd/sistemas/01_medidores.md`.
 
 ---
 
@@ -594,7 +595,7 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 | Arquivo | Formato | Conteúdo |
 | :--- | :--- | :--- |
 | `cartas.json` | JSON | Todas as 340 cartas |
-| `medidores.json` | JSON | Os 8 medidores + 3 sub-medidores |
+| `medidores.json` | JSON | Os 8 medidores (sub-medidores removidos, D-094) |
 | `atores.json` | JSON | Os 24 atores |
 | `finais.json` | JSON | Os 27 finais |
 | `eventos.json` | JSON | Os 78 eventos encadeados |
@@ -620,14 +621,16 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
         "cor": "vermelho",
         "custo": { "Capital Político": -10 },
         "efeitos": { "Soberania": 10 },
-        "consequencia": "O relator é adversário. O projeto avança."
+        "consequencia": "O relator é adversário. O projeto avança.",
+        "eixo": [-1, 0, 0, 0]
       },
       "opcao_b": {
         "texto": "Aceitar as mudanças",
         "cor": "laranja",
         "custo": { "Capital Político": 10, "Caixa": 10 },
         "efeitos": { "Soberania": -15, "Integridade": -5 },
-        "consequencia": "A lei passa. O povo paga a conta."
+        "consequencia": "A lei passa. O povo paga a conta.",
+        "eixo": [1, 0, 0, 0]
       },
       "aprendizado_id": "APR-001",
       "pre_requisitos": {
@@ -699,7 +702,7 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  EXIBIR PROBLEMA                                            │
-│  └──▶ JOGADOR ARRASTA PARA ESQUERDA OU DIREITA             │
+│  └──▶ JOGADOR ARRASTA (lado de cada opção sorteado)        │
 │       └──▶ APLICAR EFEITOS NOS MEDIDORES                   │
 │            └──▶ EXIBIR CONSEQUÊNCIA                        │
 │                 └──▶ EXIBIR CARTA DE APRENDIZADO           │
@@ -716,7 +719,9 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 │                    FLUXO DO IMPEACHMENT                     │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  GATILHO (Legitimidade < 20 E Capital Político < 20)       │
+│  GATILHO (1 dos 4; a cena ocorre 1× por partida)           │
+│  └──▶ Consciência < 15 E Integridade < 15?                 │
+│       └──▶ SIM: CONDENAÇÃO AUTOMÁTICA                      │
 │  └──▶ CARTA 1 (O Pedido)                                   │
 │       └──▶ CARTA 2 (A Comissão)                            │
 │            └──▶ CARTA 3 (A Votação)                        │
@@ -726,6 +731,20 @@ O eixo ideológico é calculado a partir das escolhas do jogador, usando o model
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+| Gatilho | Condição | Desde |
+| :--- | :--- | :--- |
+| Principal | Legitimidade < 20 E Capital Político < 20 | Ano 2 |
+| Crise | Integridade < 20 E Consciência < 20 | Ano 2 |
+| Alternativo | 3 opções seguidas com efeito negativo em Capital Político | Ano 2 |
+| Capital em 0 | Capital Político = 0 (D-095) | Ano 1 |
+
+- Cada opção das fases 1-4 tem um teste de medidor; teste vencido = +1 apoio.
+- Desfecho: absolvição se apoio ≥ 2 (≥ 3 com Capital em 0) e o teste da opção escolhida passar; senão, condenação.
+- Condenação automática se a cena começa com Consciência < 15 E Integridade < 15.
+- A cena ocorre 1× por partida.
+
+Detalhes: `gdd/sistemas/03_impeachment.md`.
 
 ### 13.6.5. Fluxo dos Eventos Encadeados
 

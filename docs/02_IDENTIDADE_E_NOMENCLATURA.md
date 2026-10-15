@@ -54,7 +54,9 @@ Pesquisas sobre naming de jogos sérios mostram que títulos eficazes:
 | **Laranja** | Direita liberal | NOVO, Republicanos |
 | **Preto** | Extrema-direita | PL, bolsonarismo |
 
-**Como funciona:** Cada carta tem uma **borda colorida** que sinaliza sua inclinação. O jogador aprende a associar cores a espectros políticos sem que o jogo use rótulos explícitos.
+**Cor por opção (D-092):** a cor não é da carta inteira. Cada lado da carta tem a cor de quem propõe aquela opção.
+
+**Como funciona:** enquanto o jogador arrasta, a **borda da carta** ganha a cor de quem propõe a opção daquele lado. O jogador aprende a associar cores a espectros políticos sem que o jogo use rótulos explícitos.
 
 ### Fundamentação Teórica sobre Cores na Comunicação Política
 

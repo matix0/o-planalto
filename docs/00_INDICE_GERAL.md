@@ -47,7 +47,7 @@
 | Elemento | Status |
 | :--- | :--- |
 | **Nome** | ✅ "O Planalto" |
-| **Medidores** | ✅ 8 + 3 sub-medidores |
+| **Medidores** | ✅ 8 medidores (D-094) |
 | **Turnos** | ✅ 4 turnos |
 | **Modos** | ✅ 10 modos |
 | **Atores** | ✅ 14 + 6 de expansão |

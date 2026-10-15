@@ -1,13 +1,13 @@
 # 01 — Medidores
 
-**Sistema:** 01 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 8 medidores, 3 sub-medidores, relações, turnos e fases, calibração inicial
+**Sistema:** 01 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 8 medidores, relações, turnos e fases, calibração inicial
 **Status:** ✅ Aprovado pelo PO (2026-10-14) · **Pendências:** P-6, P-8, P-11
 
 ---
 
 ## 1. Visão geral
 
-Os medidores são o estado do país. São **8 medidores principais**, de 0 a 100 — 5 sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e 3 de poder (Caixa, Capital Político, Legitimidade) — e **3 sub-medidores econômicos** (Desemprego, Inflação, Juros). Cada opção de carta muda de 2 a 4 medidores, ajustada pelo multiplicador do ano; no fim de cada turno, as relações entre medidores são aplicadas. Os valores iniciais vêm da tabela base mais a calibração inicial. Medidor em 0 encerra a partida na hora (D-089).
+Os medidores são o estado do país. São **8 medidores principais**, de 0 a 100 — 5 sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e 3 de poder (Caixa, Capital Político, Legitimidade). Não há sub-medidores (D-094). Cada opção de carta muda de 2 a 4 medidores, ajustada pelo multiplicador do ano; no fim de cada turno, as relações entre medidores são aplicadas. Os valores iniciais vêm da tabela base mais a calibração inicial. Medidor em 0 encerra a partida na hora (D-089), exceto `Capital Político`, que abre o impeachment (D-095).
 
 ## 2. Fantasia do jogador
 

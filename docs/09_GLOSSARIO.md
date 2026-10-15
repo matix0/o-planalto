@@ -279,7 +279,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Aumento generalizado dos preços, que reduz o poder de compra da moeda.
 
-**No jogo:** A inflação é um sub-medidor que afeta o `Caixa` e a `Dignidade`.
+**No jogo:** Não é medidor nem sub-medidor (removidos pela D-094); o tema aparece nas cartas e nas Cartas de Aprendizado.
 
 **Fundamentação:** A inflação corrói o poder de compra da população. Ela é especialmente prejudicial para os mais pobres.
 
@@ -287,7 +287,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Taxa cobrada pelo uso do dinheiro, que afeta o custo da dívida pública.
 
-**No jogo:** Os juros são um sub-medidor que afeta o `Caixa` e a `Prosperidade`.
+**No jogo:** Não é medidor nem sub-medidor (removidos pela D-094); o tema aparece nas cartas e nas Cartas de Aprendizado.
 
 **Fundamentação:** Juros altos aumentam o custo da dívida pública e reduzem o investimento privado. Eles são usados para controlar a inflação.
 
@@ -295,7 +295,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Situação de pessoas que não têm trabalho, mas estão disponíveis para trabalhar.
 
-**No jogo:** O desemprego é um sub-medidor que afeta a `Dignidade` e a `Legitimidade`.
+**No jogo:** Não é medidor nem sub-medidor (removidos pela D-094); o tema aparece nas cartas e nas Cartas de Aprendizado.
 
 **Fundamentação:** O desemprego é um dos principais problemas sociais do Brasil. Ele afeta diretamente a dignidade e a qualidade de vida da população.
 
@@ -559,9 +559,9 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Indicador secundário que afeta os medidores principais.
 
-**No jogo:** Existem 3 sub-medidores: Desemprego, Inflação e Juros.
+**No jogo:** **Removidos pela D-094.** O jogo tem só os 8 medidores; Desemprego, Inflação e Juros seguem apenas como conceitos econômicos (09.4.5-09.4.7).
 
-**Fundamentação:** Os sub-medidores foram sugeridos pelo Professor Alisson para dar mais riqueza à dinâmica econômica.
+**Fundamentação:** Os sub-medidores (hoje removidos) foram sugeridos pelo Professor Alisson para dar mais riqueza à dinâmica econômica.
 
 ### 09.8.3. Carta
 
@@ -663,7 +663,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Cor que sinaliza quem propõe cada opção de uma carta (D-092): cada opção tem a sua cor, e a borda da carta mostra essa cor enquanto o jogador arrasta.
 
-**No jogo:** Existem 7 cores partidárias: Vermelho (esquerda), Azul (centro-direita), Verde (agronegócio), Amarelo (centro), Roxo (esquerda radical), Laranja (direita liberal) e Preto (extrema-direita).
+**No jogo:** Existem 7 cores partidárias: Vermelho (esquerda), Azul (centro-direita), Verde (agronegócio), Amarelo (centro), Roxo (esquerda radical), Laranja (direita liberal) e Preto (extrema-direita). A cor é **por opção**, não por carta (D-092).
 
 **Fundamentação:** As cores foram escolhidas com base na psicologia das cores e na comunicação política.
 
@@ -760,7 +760,7 @@ O glossário está organizado em **sete categorias**:
 | Cor Partidária | Jogo | 09.8.15 |
 | Crime de Responsabilidade | Jurídico | 09.5.1 |
 | Déficit | Econômico | 09.4.4 |
-| Desemprego | Econômico | 09.4.7 |
+| Desemprego | Econômico (conceito) | 09.4.7 |
 | Desindustrialização | Econômico | 09.4.10 |
 | Despolitização | Social | 09.6.7 |
 | Dívida Pública | Econômico | 09.4.2 |
@@ -778,8 +778,8 @@ O glossário está organizado em **sete categorias**:
 | Governabilidade | Político | 09.3.6 |
 | Habeas Corpus | Jurídico | 09.5.2 |
 | Impeachment | Político | 09.3.7 |
-| Inflação | Econômico | 09.4.5 |
-| Juros | Econômico | 09.4.6 |
+| Inflação | Econômico (conceito) | 09.4.5 |
+| Juros | Econômico (conceito) | 09.4.6 |
 | Maioria Qualificada | Institucional | 09.2.10 |
 | Maioria Silenciosa | Social | 09.6.8 |
 | Maioria Simples | Institucional | 09.2.9 |
@@ -807,7 +807,7 @@ O glossário está organizado em **sete categorias**:
 | Satisfação | Jogo | 09.8.8 |
 | Senado Federal | Institucional | 09.2.3 |
 | Servidão Afetiva | Social | 09.6.1 |
-| Sub-medidor | Jogo | 09.8.2 |
+| Sub-medidor (removido, D-094) | Jogo | 09.8.2 |
 | Superávit | Econômico | 09.4.3 |
 | Suspeição | Jurídico | 09.5.3 |
 | Teoria do Flow | Teórico | 09.7.6 |

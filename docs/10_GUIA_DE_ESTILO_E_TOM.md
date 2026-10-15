@@ -78,8 +78,8 @@ O tom do jogo é **direto, humano e levemente irônico**.
 | Contexto | Tom | Exemplo |
 | :--- | :--- | :--- |
 | **Problema da carta** | Direto, factual | "O Congresso analisa um projeto de privatização." |
-| **Opção de esquerda** | Propositivo, social | "Vou investir em programas sociais." |
-| **Opção de direita** | Pragmático, individual | "Vou aumentar o policiamento." |
+| **Opção A** | Propositivo, social | "Vou investir em programas sociais." |
+| **Opção B** | Pragmático, individual | "Vou aumentar o policiamento." |
 | **Consequência** | Irônico, brutal | "A lei passa. O povo paga a conta." |
 | **Carta de Aprendizado** | Didático, acessível | "O relator tem poder de agenda. Quem controla a pauta, controla o país." |
 | **Final negativo** | Sombrio, brutal | "O povo é reduzido à mera sobrevivência." |
@@ -101,7 +101,7 @@ O tom do jogo é **direto, humano e levemente irônico**.
 | :--- | :--- | :--- |
 | **Título da carta** | 5 palavras | Legibilidade em mobile |
 | **Problema da carta** | 2 linhas (máx. 140 caracteres) | Leitura rápida |
-| **Opção (esquerda/direita)** | 1 linha (máx. 60 caracteres) | Cabe no botão |
+| **Opção (A/B)** | 1 linha (máx. 60 caracteres) | Cabe no botão |
 | **Consequência** | 1 linha (máx. 80 caracteres) | Impacto rápido |
 | **Carta de Aprendizado (vivencia)** | 2 linhas | Contexto |
 | **Carta de Aprendizado (conceito)** | 3 linhas | Explicação |
@@ -165,11 +165,11 @@ O tom do jogo é **direto, humano e levemente irônico**.
 ```
 ┌─────────────────────────────────────────┐
 │  TÍTULO (5 palavras)                    │
-│  [Cor partidária na borda]              │
+│  [Cor da opção na borda, ao arrastar]   │
 │                                         │
 │  PROBLEMA (2 linhas)                    │
 │                                         │
-│  ◀ ESQUERDA           DIREITA ▶         │
+│  (lado de cada opção sorteado)          │
 │  [OPÇÃO A (1 linha)]  [OPÇÃO B (1 linha)]│
 │                                         │
 │  CONSEQUÊNCIA:        CONSEQUÊNCIA:     │
@@ -179,6 +179,10 @@ O tom do jogo é **direto, humano e levemente irônico**.
 │  [VIVENCIA + CONCEITO + DADOS + FONTE]  │
 └─────────────────────────────────────────┘
 ```
+
+> O lado (esquerda/direita na tela) de cada opção é sorteado a cada partida (D-084); nos exemplos, "Opção A" e "Opção B" são nomes internos.
+
+**Campos no roteiro** (`docs/17_ROTEIRO_DAS_CARTAS.md` §17.01.1): além do texto acima, cada carta registra `Cor A` / `Cor B` (cor de quem propõe cada opção, D-092), `Eixo A` / `Eixo B` (vetor [Eco, Dip, Soc, Est], −2 a +2; `gdd/sistemas/04_eixo.md`) e `Aprendizado: APR-xxx` (texto no doc 18, D-090).
 
 ### 10.04.2. O Título
 
@@ -215,11 +219,12 @@ O tom do jogo é **direto, humano e levemente irônico**.
 **Regras:**
 - Máximo 1 linha (60 caracteres).
 - Cada opção representa uma solução típica de um espectro político.
-- Sem rótulos explícitos ("esquerda", "direita").
+- Sem rótulos explícitos de espectro político.
+- A e B são nomes internos: o jogo sorteia o lado de cada opção a cada partida e nunca o escreve na carta (D-084).
 
 **Exemplos:**
 
-| Carta | Opção Esquerda | Opção Direita |
+| Carta | Opção A | Opção B |
 | :--- | :--- | :--- |
 | Privatização | "Nomear relator adversário" | "Aceitar as mudanças" |
 | Assaltos | "Investir em programas sociais" | "Aumentar o policiamento" |
@@ -236,7 +241,7 @@ O tom do jogo é **direto, humano e levemente irônico**.
 
 **Exemplos:**
 
-| Carta | Consequência Esquerda | Consequência Direita |
+| Carta | Consequência A | Consequência B |
 | :--- | :--- | :--- |
 | Privatização | "A lei passa. O povo paga a conta." | "O relator é adversário. O projeto avança." |
 | Assaltos | "A comunidade ganhou um centro cultural. Mas a sensação de insegurança continua." | "A polícia ocupa o bairro. As abordagens violentas aumentam." |
@@ -244,7 +249,7 @@ O tom do jogo é **direto, humano e levemente irônico**.
 
 ### 10.04.6. Cores Partidárias
 
-Cada carta tem uma **cor de borda** que sinaliza sua inclinação:
+Cada **opção** tem a cor partidária de quem a propõe (sem cor neutra). Ao arrastar, a borda da carta mostra a cor da opção daquele lado (D-092; `docs/17_ROTEIRO_DAS_CARTAS.md` §17.01.2). A tabela abaixo orienta a escolha da cor de cada opção:
 
 | Cor | Espectro | Quando usar |
 | :--- | :--- | :--- |
@@ -528,7 +533,7 @@ Cada ator tem uma **voz própria** que reflete seu arquétipo:
 │  de energia. O relator quer mudar o texto para beneficiar   │
 │  uma empresa doadora.                                       │
 │                                                             │
-│  ◀ ESQUERDA                       DIREITA ▶                 │
+│  Opção A                          Opção B                   │
 │  Nomear relator adversário        Aceitar as mudanças       │
 │                                                             │
 │  CONSEQUÊNCIA:                    CONSEQUÊNCIA:             │
@@ -558,7 +563,7 @@ Cada ator tem uma **voz própria** que reflete seu arquétipo:
 │  O hospital público está sem médicos e sem leitos.          │
 │  A população protesta. O governo precisa agir.              │
 │                                                             │
-│  ◀ ESQUERDA                       DIREITA ▶                 │
+│  Opção A                          Opção B                   │
 │  Investir no SUS                  Privatizar a gestão       │
 │                                                             │
 │  CONSEQUÊNCIA:                    CONSEQUÊNCIA:             │
@@ -587,7 +592,7 @@ Cada ator tem uma **voz própria** que reflete seu arquétipo:
 │  O Latifundiário oferece 50 mil votos em troca de controle  │
 │  total sobre a nomeação de juízes e delegados em sua região.│
 │                                                             │
-│  ◀ ESQUERDA                       DIREITA ▶                 │
+│  Opção A                          Opção B                   │
 │  Recusar                          Aceitar                   │
 │                                                             │
 │  CONSEQUÊNCIA:                    CONSEQUÊNCIA:             │
@@ -662,7 +667,7 @@ Cada ator tem uma **voz própria** que reflete seu arquétipo:
 | 2 | O problema tem no máximo 2 linhas? | ☐ |
 | 3 | As opções têm no máximo 1 linha cada? | ☐ |
 | 4 | As consequências têm no máximo 1 linha cada? | ☐ |
-| 5 | A carta tem uma cor partidária na borda? | ☐ |
+| 5 | Cada opção tem uma cor partidária (Cor A / Cor B)? | ☐ |
 | 6 | A carta tem uma Carta de Aprendizado? | ☐ |
 | 7 | O texto está na voz ativa? | ☐ |
 | 8 | O texto está no presente do indicativo? | ☐ |

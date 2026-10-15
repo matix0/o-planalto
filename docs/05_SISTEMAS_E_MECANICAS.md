@@ -18,7 +18,7 @@ O jogo "O Planalto" é composto por **9 sistemas interconectados**:
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  1. SISTEMA DE MEDIDORES                                    │
-│     └──▶ 8 medidores + 3 sub-medidores                      │
+│     └──▶ 8 medidores (D-094)                                │
 │                                                             │
 │  2. SISTEMA DE CARTAS                                       │
 │     └──▶ 340 cartas + Cartas de Aprendizado                 │
@@ -83,14 +83,13 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | :--- | :--- | :--- |
 | **Indicadores Sociais** | 5 | Dignidade, Consciência, Soberania, Segurança, Integridade |
 | **Recursos de Poder** | 3 | Caixa, Capital Político, Legitimidade |
-| **Sub-medidores Econômicos** | 3 | Desemprego, Inflação, Juros |
 
 ### 05.02.2. Valores Iniciais
 
 | Medidor | Valor Inicial | Justificativa |
 | :--- | :--- | :--- |
 | Dignidade | 45 | O país tem problemas sociais graves, mas não está falido |
-| Consciência | 35 | A despolitização é a regra |
+| Consciência | 40 | A despolitização é a regra |
 | Soberania | 40 | Dependência externa, mas com margem de manobra |
 | Segurança | 50 | Violência urbana, mas não é caos total |
 | Integridade | 40 | Desinformação crescente |
@@ -98,7 +97,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | Capital Político | 50 | Congresso fragmentado, mas com base |
 | Legitimidade | 55 | O povo está esperançoso (Lua de Mel) |
 
-**Total:** 380 pontos.
+**Total:** 385 pontos.
 
 ### 05.02.3. Faixas de Risco
 
@@ -123,6 +122,8 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | **Capital Político** | Caixa | Direta | Quando Capital Político < 30, Caixa -10. |
 | **Legitimidade** | Capital Político | Direta | Quando Legitimidade < 30, Capital Político -10. |
 
+**Aplicação:** as relações de cascata são aplicadas no fechamento do turno, de uma vez, sem multiplicador do ano. A relação Integridade < 30 (perdas de Consciência dobradas) age nas cartas, na hora. Detalhes: `gdd/sistemas/01_medidores.md` (§3.4).
+
 ### 05.02.5. Cadeias de Consequências
 
 | Cadeia | Descrição |
@@ -136,18 +137,14 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
-| **Consciência < 15** | O povo não reage a nenhuma crise. |
-| **Soberania < 15** | O país se torna um protetorado. |
-| **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
+| **Integridade < 20** | Os outros 7 medidores perdem 1 ponto no fechamento do turno. |
+| **Legitimidade > 90** | O povo idolatra o governante. Consciência −10 no fechamento do turno. |
+
+Detalhes: `gdd/sistemas/01_medidores.md`.
 
 ### 05.02.7. Sub-medidores Econômicos
 
-| Sub-medidor | Efeito |
-| :--- | :--- |
-| **Desemprego** | Quanto maior, menor a `Dignidade` e a `Legitimidade`. |
-| **Inflação** | Quanto maior, menor o `Caixa` e a `Dignidade`. |
-| **Juros** | Quanto maior, menor o `Caixa` e a `Prosperidade`. |
+**Removidos pela D-094.** Os temas econômicos (desemprego, inflação, juros) ficam nas cartas e nas Cartas de Aprendizado.
 
 ### 05.02.8. Fundamentação Teórica
 
@@ -167,7 +164,7 @@ O sistema de medidores é baseado em:
 | :--- | :--- | :--- |
 | **Institucionais** | 200 (10 modos × 20) | INST-XXX |
 | **Temáticas** | 70 (7 temas × 10) | THEM-XXX |
-| **Atores** | 70 (14 atores × 5) | ATOR-XXX |
+| **Atores** | 70 cartas de ator, distribuídas entre os 24 atores | ATOR-XXX |
 | **Total** | **340** | — |
 
 ### 05.03.2. Estrutura de Cada Carta
@@ -178,20 +175,22 @@ O sistema de medidores é baseado em:
   "titulo": "Privatização da estatal",
   "modo": "Congresso",
   "tipo": "Institucional",
-  "cor": "laranja",
   "problema": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
-  "opcao_esquerda": {
+  "opcao_a": {
     "texto": "Nomear relator adversário",
+    "cor": "vermelho",
     "custo": { "Capital Político": -10 },
     "efeitos": { "Soberania": 10 },
     "consequencia": "A lei passa. O povo paga a conta."
   },
-  "opcao_direita": {
+  "opcao_b": {
     "texto": "Aceitar as mudanças",
+    "cor": "laranja",
     "custo": { "Capital Político": 10, "Caixa": 10 },
     "efeitos": { "Soberania": -15, "Integridade": -5 },
     "consequencia": "O relator é adversário. O projeto avança."
   },
+  "aprendizado_id": "APR-001",
   "aprendizado": {
     "vivencia": "Você decidiu se aceitava ou não as mudanças do relator.",
     "conceito": "Poder de agenda",
@@ -213,6 +212,8 @@ O sistema de medidores é baseado em:
 }
 ```
 
+Cada opção (`opcao_a`/`opcao_b`) traz também sua `cor` (D-092) e seu vetor de `eixo` (−2..+2 por eixo). Esquema completo: `docs/13_ARQUITETURA_TECNICA.md` §13.3.1.
+
 ### 05.03.3. Cores Partidárias
 
 | Cor | Espectro | Referência |
@@ -224,6 +225,8 @@ O sistema de medidores é baseado em:
 | **Roxo** | Esquerda radical | PSOL, PSTU |
 | **Laranja** | Direita liberal | NOVO, Republicanos |
 | **Preto** | Extrema-direita | PL, bolsonarismo |
+
+**Regra vigente:** a cor é **por opção** (D-092) — cada opção mostra quem a propõe. O lado do swipe não indica ideologia (D-084).
 
 ### 05.03.4. Fundamentação Teórica
 
@@ -427,25 +430,24 @@ O impeachment não é negociação. É uma **cena de golpe**.
 
 ### 05.07.2. Gatilho de Acionamento
 
-| Condição | Descrição |
-| :--- | :--- |
-| **Gatilho Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 |
-| **Gatilho Alternativo** | O jogador tomou **3 decisões consecutivas** que contrariaram a maioria do Congresso |
-| **Gatilho de Crise** | `Integridade` < 20 **E** `Consciência` < 20 |
+| Gatilho | Condição | A partir de |
+| :--- | :--- | :--- |
+| **Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 | Ano 2 |
+| **Crise** | `Integridade` < 20 **E** `Consciência` < 20 | Ano 2 |
+| **Alternativo** | 3 opções seguidas com efeito negativo em `Capital Político` | Ano 2 |
+| **Capital em 0** | `Capital Político` = 0 (D-095) | Ano 1 |
 
-**Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3.
+**Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3 (exceto Capital em 0, que vale em qualquer ano).
 
 ### 05.07.3. Estrutura (5 Cartas)
 
-| Fase | O que Acontece | Condição de Sobrevivência |
-| :--- | :--- | :--- |
-| **1. O Pedido** | A oposição protocola. O presidente da Câmara aceita. | Apelar ao povo (Legitimidade > 60) ou confiar na base (Capital Político > 50) |
-| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Integridade > 60) ou negociar (Caixa > 60) |
-| **3. A Votação** | Câmara vota. Resultado depende do apoio popular. | Convocar manifestações (Legitimidade > 70) ou aceitar |
-| **4. O Julgamento** | Senado julga. Resultado depende da correlação de forças. | Renunciar (Consciência > 60) ou lutar até o fim |
-| **5. O Desfecho** | Se o jogador tiver apoio popular massivo, o golpe falha. | Legitimidade > 60 E Consciência > 50 = Absolvição |
+- A cena tem **5 cartas extras** (não contam nas cartas do turno).
+- Fases 1-4: cada opção tem um teste; teste vencido = +1 apoio.
+- Desfecho: **absolvição** se apoio ≥ 2 (≥ 3 se a cena abriu por `Capital Político` = 0) e o teste da opção passar; senão, **condenação**.
+- `Consciência` < 15 **E** `Integridade` < 15 no início → **condenação automática**.
+- No máximo **1 impeachment por partida**.
 
-**Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
+Detalhes: `gdd/sistemas/03_impeachment.md`.
 
 ### 05.07.4. Fluxo do Impeachment
 
@@ -454,7 +456,7 @@ O impeachment não é negociação. É uma **cena de golpe**.
 │                    FLUXO DO IMPEACHMENT                     │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  GATILHO (Legitimidade < 20 E Capital Político < 20)       │
+│  GATILHO (principal, crise, alternativo ou Capital em 0)    │
 │  └──▶ CARTA 1 (O Pedido)                                   │
 │       └──▶ CARTA 2 (A Comissão)                            │
 │            └──▶ CARTA 3 (A Votação)                        │
@@ -477,10 +479,11 @@ A pesquisa acadêmica confirma que o processo foi marcado por **fragilidade jur�
 
 ## 05.08 — Sistema de Eixo Ideológico
 
-### 05.08.1. Abordagem Anterior (Descartada)
+### 05.08.1. Abordagens Anteriores (Descartadas)
 
 - "Você escolheu 15 soluções de esquerda e 9 de direita"
 - Rotulava o jogador, reforçava a polarização
+- Pontuar o eixo pelo **lado** do swipe (esquerda/direita) — descartado: o lado não indica ideologia (D-084)
 
 ### 05.08.2. Nova Abordagem (Adotada)
 
@@ -497,27 +500,11 @@ A pesquisa acadêmica confirma que o processo foi marcado por **fragilidade jur�
 
 ### 05.08.3. Algoritmo de Cálculo
 
-```
-funcao calcular_eixo(escolhas):
-    eixo = {
-        "economia": 0,
-        "diplomacia": 0,
-        "sociedade": 0,
-        "estado": 0
-    }
-    
-    for escolha in escolhas:
-        if escolha.opcao == "esquerda":
-            eixo["economia"] -= 1
-            eixo["sociedade"] += 1
-            eixo["estado"] += 1
-        elif escolha.opcao == "direita":
-            eixo["economia"] += 1
-            eixo["sociedade"] -= 1
-            eixo["estado"] -= 1
-    
-    return normalizar(eixo, -10, 10)
-```
+- Cada opção de carta traz um **vetor** de −2 a +2 por eixo.
+- `pos(eixo) = (Σ valores ≠ 0 / nº de opções com valor ≠ 0 nesse eixo) × 5`; nenhuma opção tocou o eixo → `pos = 0`. Faixa: −10 a +10.
+- No final, um **radar** mostra dois traçados: "o que você disse" (calibração) × "como você governou" (cartas).
+
+Detalhes: `gdd/sistemas/04_eixo.md`.
 
 ### 05.08.4. Revelação Final
 
@@ -592,11 +579,11 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 
 > **Carta:** *"Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas."*
 >
-> **◀ ESQUERDA (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
+> **Opção A (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
 > - **Efeitos:** `Consciência` +10, `Integridade` +5, `Legitimidade` -10
 > - **Consequência:** *"O influenciador faz campanha contra você. Mas sua consciência está limpa."*
 >
-> **DIREITA ▶ (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
+> **Opção B (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
 > - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10
 > - **Consequência:** *"O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores."*
 >
@@ -615,7 +602,7 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 | Medidor | Valor Inicial |
 | :--- | :--- |
 | Dignidade | 45 |
-| Consciência | 35 |
+| Consciência | 40 |
 | Soberania | 40 |
 | Segurança | 50 |
 | Integridade | 40 |
@@ -623,7 +610,7 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 380 pontos.
+**Total:** 385 pontos.
 
 ### 05.11.2. Multiplicador de Dificuldade
 
@@ -636,12 +623,7 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 
 ### 05.11.3. Limiares de Proteção
 
-| Ano | Limite Mínimo | O que Acontece |
-| :--- | :--- | :--- |
-| Ano 1 | 30 | Nenhum medidor cai abaixo de 30 |
-| Ano 2 | 20 | Nenhum medidor cai abaixo de 20 |
-| Ano 3 | 10 | Nenhum medidor cai abaixo de 10 |
-| Ano 4 | 0 | Sem proteção |
+**Removidos pela D-082.** Nenhum piso por ano; medidor em 0 encerra a partida (D-089). O multiplicador do ano (05.11.2) segue vigente.
 
 ### 05.11.4. Mecanismos de Recuperação
 
@@ -649,8 +631,8 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 | :--- | :--- |
 | **Carta de Recuperação** | Restaura um medidor em crise |
 | **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
-| **Bônus por Equilíbrio** | Se todos os medidores > 40, ganha +5 em todos |
-| **Segunda Chance** | Se um medidor chega a 10, oferece escolha crítica para recuperá-lo |
+| **Bônus por Equilíbrio** | +3 em todos se todos > 45, 1× por turno |
+| **Segunda Chance** | Medidor ≤ 10 no fechamento → a próxima carta é de emergência para ele, 1× por medidor |
 
 ### 05.11.5. Fundamentação Teórica
 

@@ -91,7 +91,7 @@ A curva de dificuldade progressiva (Lua de Mel → Realidade Bate → Crise → 
 
 ### 04.02.1. Visão Geral
 
-O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada medidor representa uma dimensão da luta política.
+O jogo possui **8 medidores principais**. Os sub-medidores foram removidos (D-094). Cada medidor representa uma dimensão da luta política.
 
 ### 04.02.2. Os 8 Medidores Principais
 
@@ -121,7 +121,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | Medidor | Valor Inicial |
 | :--- | :--- |
 | Dignidade | 45 |
-| Consciência | 35 |
+| Consciência | 40 |
 | Soberania | 40 |
 | Segurança | 50 |
 | Integridade | 40 |
@@ -129,7 +129,7 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 380 pontos.
+**Total:** 385 pontos (Consciência 40 — GDD 01).
 
 **Justificativa:** O jogador começa com uma situação difícil, mas não impossível. Há margem para errar e aprender.
 
@@ -181,14 +181,14 @@ O jogo possui **8 medidores principais** e **3 sub-medidores econômicos**. Cada
 
 | Limiar | Efeito |
 | :--- | :--- |
-| **Integridade < 20** | Todos os outros medidores perdem 1 ponto por turno. |
-| **Consciência < 15** | O povo não reage a nenhuma crise. |
-| **Soberania < 15** | O país se torna um protetorado. |
-| **Legitimidade > 90** | O povo idolatra o governante. Consciência -10 por turno. |
+| **Integridade < 20** | Os outros 7 medidores perdem 1 ponto a cada fechamento de turno. |
+| **Legitimidade > 90** | Consciência −10 a cada fechamento de turno. |
+
+Detalhes: `gdd/sistemas/01_medidores.md`.
 
 ### 04.02.10. Fundamentação Teórica
 
-A escolha por **8 medidores + 3 sub-medidores** se baseia em:
+A escolha por **8 medidores** (sem sub-medidores, D-094) se baseia em:
 
 1. **Teoria dos Sistemas Complexos** — jogos sérios funcionam melhor quando múltiplas variáveis interagem.
 2. **Design de *Reigns*** — o jogo original usa 4 medidores; o nosso expande para 8 para cobrir mais dimensões.
@@ -225,28 +225,24 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 - Medidores começam em valores médios.
 - Consequências são leves (multiplicador ×0.25).
 - Atores se apresentam.
-- Limiar de proteção: 30 (nenhum medidor cai abaixo de 30).
 
 **Ano 2 — A Realidade Bate**
 
 - Medidores começam a cair.
 - Eventos encadeados do Ano 1 aparecem.
 - Multiplicador: ×0.75.
-- Limiar de proteção: 20.
 
 **Ano 3 — A Crise**
 
 - Medidores estão baixos.
 - Impeachment pode ser acionado.
 - Multiplicador: ×1.0.
-- Limiar de proteção: 10.
 
 **Ano 4 — O Desfecho**
 
 - Medidores definem o final.
 - Eixo ideológico é revelado.
 - Multiplicador: ×1.5.
-- Limiar de proteção: 0 (sem proteção).
 
 ### 04.03.3. Multiplicador de Dificuldade
 
@@ -259,12 +255,9 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 
 ### 04.03.4. Limiares de Proteção
 
-| Ano | Limite Mínimo | O que Acontece |
-| :--- | :--- | :--- |
-| Ano 1 | 30 | Nenhum medidor cai abaixo de 30 |
-| Ano 2 | 20 | Nenhum medidor cai abaixo de 20 |
-| Ano 3 | 10 | Nenhum medidor cai abaixo de 10 |
-| Ano 4 | 0 | Sem proteção |
+Sem limiares de proteção (D-082); suavização pelo multiplicador do ano e pela carta de emergência (GDD 01).
+
+Detalhes: `gdd/sistemas/01_medidores.md`.
 
 ### 04.03.5. Mecanismos de Recuperação
 
@@ -272,8 +265,8 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 | :--- | :--- |
 | **Carta de Recuperação** | Restaura um medidor em crise |
 | **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
-| **Bônus por Equilíbrio** | Se todos os medidores > 40, ganha +5 em todos |
-| **Segunda Chance** | Se um medidor chega a 10, oferece escolha crítica para recuperá-lo |
+| **Bônus por Equilíbrio** | Se todos os medidores > 45, +3 em todos, 1× por turno (GDD 01) |
+| **Segunda Chance** | Medidor ≤ 10 no fechamento → próxima carta é de emergência para ele, 1× por medidor (GDD 01) |
 
 ### 04.03.6. Sorteio (Prioridade Narrativa)
 
@@ -418,7 +411,7 @@ Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao lo
 | :--- | :--- | :--- |
 | **Institucionais** | 200 (10 modos × 20) | INST-XXX |
 | **Temáticas** | 70 (7 temas × 10) | THEM-XXX |
-| **Atores** | 70 (14 atores × 5) | ATOR-XXX |
+| **Atores** | 70 cartas de ator, distribuídas entre os 24 atores | ATOR-XXX |
 | **Total** | **340** | — |
 
 ### 04.06.2. Estrutura de Cada Carta
@@ -426,12 +419,12 @@ Cada ator é uma **caricatura de um tipo social brasileiro** que se repete ao lo
 ```
 ┌─────────────────────────────────────────┐
 │  CARTA: [Título]                        │
-│  [Cor partidária na borda]              │
+│  [Borda: cor de quem propõe a opção]    │
 │                                         │
 │  [Descrição do problema]                │
 │                                         │
-│  ◀ ESQUERDA           DIREITA ▶         │
 │  [Opção A]            [Opção B]         │
+│  (lado sorteado, sem rótulo)            │
 │                                         │
 │  CUSTO: X             CUSTO: Y          │
 │  EFEITOS:             EFEITOS:          │
@@ -617,6 +610,7 @@ Cada final tem uma **citação de impacto**, escolhida para ser um "soco no est�
 
 - "Você escolheu 15 soluções de esquerda e 9 de direita"
 - Rotulava o jogador, reforçava a polarização
+- Vigente: a pontuação vem do vetor de eixo de cada opção. Detalhes: `gdd/sistemas/04_eixo.md`.
 
 ### 04.09.2. Nova Abordagem (Adotada)
 
@@ -710,11 +704,11 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 
 > **Carta:** *"Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas."*
 >
-> **◀ ESQUERDA (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
+> **Opção A (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
 > - **Efeitos:** `Consciência` +10, `Integridade` +5, `Legitimidade` -10
 > - **Consequência:** *"O influenciador faz campanha contra você. Mas sua consciência está limpa."*
 >
-> **DIREITA ▶ (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
+> **Opção B (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
 > - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10
 > - **Consequência:** *"O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores."*
 >
@@ -734,29 +728,18 @@ O impeachment não é negociação. É uma **cena de golpe**.
 
 **Comentário do Professor Alisson:** *"Acho que poderia ser a partir do ano 2."*
 
-### 04.12.2. Gatilho de Acionamento
+### 04.12.2. Regra Vigente (Resumo)
 
-| Condição | Descrição |
-| :--- | :--- |
-| **Gatilho Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 |
-| **Gatilho Alternativo** | O jogador tomou **3 decisões consecutivas** que contrariaram a maioria do Congresso |
-| **Gatilho de Crise** | `Integridade` < 20 **E** `Consciência` < 20 |
+- Gatilhos a partir do **Ano 2**; `Capital Político` em 0 também abre a cena (D-095).
+- Cena de **5 cartas extras** (não contam nas 6-8 do turno).
+- Cada opção tem um teste de medidor; fases vencidas viram "apoio".
+- Absolvição: apoio ≥ 2 (≥ 3 se a cena abriu por `Capital Político` em 0) e teste do Desfecho aprovado.
+- Condenação automática se a cena começa com `Consciência` < 15 e `Integridade` < 15.
+- Ocorre **1× por partida**.
 
-**Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3.
+Detalhes: `gdd/sistemas/03_impeachment.md`.
 
-### 04.12.3. Estrutura (5 Cartas)
-
-| Fase | O que Acontece | Condição de Sobrevivência |
-| :--- | :--- | :--- |
-| **1. O Pedido** | A oposição protocola. O presidente da Câmara aceita. | Apelar ao povo (Legitimidade > 60) ou confiar na base (Capital Político > 50) |
-| **2. A Comissão** | Comissão formada por adversários. Relator inimigo. | Denunciar o golpe (Integridade > 60) ou negociar (Caixa > 60) |
-| **3. A Votação** | Câmara vota. Resultado depende do apoio popular. | Convocar manifestações (Legitimidade > 70) ou aceitar |
-| **4. O Julgamento** | Senado julga. Resultado depende da correlação de forças. | Renunciar (Consciência > 60) ou lutar até o fim |
-| **5. O Desfecho** | Se o jogador tiver apoio popular massivo, o golpe falha. | Legitimidade > 60 E Consciência > 50 = Absolvição |
-
-**Observação:** Se o jogador tiver `Consciência` < 30 E `Integridade` < 30, o impeachment é **automaticamente consumado**.
-
-### 04.12.4. Fundamentação Teórica
+### 04.12.3. Fundamentação Teórica
 
 O impeachment como **cena de golpe** é baseado na análise do impeachment de Dilma Rousseff em 2016, que foi amplamente interpretado como um **golpe parlamentar, jurídico e midiático**.
 
@@ -858,7 +841,7 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | Medidor | Valor Inicial |
 | :--- | :--- |
 | Dignidade | 45 |
-| Consciência | 35 |
+| Consciência | 40 |
 | Soberania | 40 |
 | Segurança | 50 |
 | Integridade | 40 |
@@ -866,7 +849,7 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 380 pontos.
+**Total:** 385 pontos (Consciência 40 — GDD 01).
 
 ### 04.15.2. Multiplicador de Dificuldade
 
@@ -879,12 +862,9 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 
 ### 04.15.3. Limiares de Proteção
 
-| Ano | Limite Mínimo | O que Acontece |
-| :--- | :--- | :--- |
-| Ano 1 | 30 | Nenhum medidor cai abaixo de 30 |
-| Ano 2 | 20 | Nenhum medidor cai abaixo de 20 |
-| Ano 3 | 10 | Nenhum medidor cai abaixo de 10 |
-| Ano 4 | 0 | Sem proteção |
+Sem limiares de proteção (D-082); suavização pelo multiplicador do ano e pela carta de emergência (GDD 01).
+
+Detalhes: `gdd/sistemas/01_medidores.md`.
 
 ### 04.15.4. Mecanismos de Recuperação
 
@@ -892,8 +872,8 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | :--- | :--- |
 | **Carta de Recuperação** | Restaura um medidor em crise |
 | **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
-| **Bônus por Equilíbrio** | Se todos os medidores > 40, ganha +5 em todos |
-| **Segunda Chance** | Se um medidor chega a 10, oferece escolha crítica para recuperá-lo |
+| **Bônus por Equilíbrio** | Se todos os medidores > 45, +3 em todos, 1× por turno (GDD 01) |
+| **Segunda Chance** | Medidor ≤ 10 no fechamento → próxima carta é de emergência para ele, 1× por medidor (GDD 01) |
 
 ### 04.15.5. Fundamentação Teórica
 

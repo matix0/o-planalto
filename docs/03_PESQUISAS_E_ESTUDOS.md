@@ -620,6 +620,8 @@ A rede pública perdeu **38.137 leitos de internação** ao longo de 20 anos. Os
 
 Esses sub-medidores afetam os medidores principais, criando uma **dinâmica econômica** mais rica. O jogador sente o peso da economia no dia a dia do governo.
 
+> **Atualização (D-094):** os sub-medidores foram removidos do jogo; os temas econômicos ficam nos efeitos das cartas e nas Cartas de Aprendizado.
+
 ### Referências
 
 - Alisson, Professor. *Comentários sobre o Livro do Projeto*. 2026.

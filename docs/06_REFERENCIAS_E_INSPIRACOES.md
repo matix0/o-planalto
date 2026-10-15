@@ -89,6 +89,8 @@ Documentar referências é fundamental por três razões:
 
 Reigns é um jogo de estratégia minimalista onde o jogador assume o papel de um monarca que toma decisões arrastando cartas para a esquerda (recusar) ou direita (aceitar). Cada decisão afeta **quatro medidores** (Igreja, Povo, Exército, Tesouro). Se qualquer medidor chegar a zero, o reinado termina.
 
+**No O Planalto:** o jogador arrasta a carta para um lado ou outro, mas as opções A/B não têm rótulo e o lado é sorteado (D-084).
+
 **Como funciona:**
 
 | Elemento | Descrição |
@@ -103,7 +105,7 @@ Reigns é um jogo de estratégia minimalista onde o jogador assume o papel de um
 
 | Aplicação | Descrição |
 | :--- | :--- |
-| **Mecânica central** | O jogo usa a mesma mecânica de arrastar cartas para esquerda/direita. |
+| **Mecânica central** | O jogo usa o gesto de arrastar a carta para um lado ou outro; as opções A/B não têm rótulo e o lado é sorteado (D-084). |
 | **Sistema de cartas** | O "saco de cartas" que aumenta e diminui conforme o estado do reino inspira o nosso sistema de sorteio. |
 | **Consequências em 4 pilares** | O design de "consequências em 4 pilares" é expandido para 8 medidores no nosso jogo. |
 | **Filosofia de simplicidade** | Um gesto simples controla um jogo complexo. |
@@ -198,7 +200,7 @@ Zona Eleitoral é um jogo de estratégia por turnos onde o jogador assume o pape
 
 | Aplicação | Descrição |
 | :--- | :--- |
-| **Validação do cenário fictício** | A escolha por um cenário fictício (Tubaúba) valida a nossa decisão de criar "Vila Nova" ou "Aurora". |
+| **Validação do cenário fictício** | A escolha por um cenário fictício (Tubaúba) validou a ideia inicial de um cenário fictício. Nota: o cenário passou a ser o Brasil (D-086). |
 | **Foco em gestão de recursos** | A mecânica de gerenciar recursos e tomar decisões estratégicas é uma inspiração para o nosso Modo Orçamento. |
 | **Modelo de premiação** | Ser premiado no Games for Change Latin America é um objetivo de validação. |
 
