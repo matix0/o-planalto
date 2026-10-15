@@ -46,7 +46,7 @@
 | **Missão** | Motivação, recompensas, veto a dark patterns, ética |
 | **Modelo** | **Opus** |
 | **Ferramentas** | Leitura |
-| **Responsabilidades** | Avaliar impacto psicológico; vetar manipulação; garantir ética; revisar conteúdo sensível |
+| **Responsabilidades** | Avaliar impacto psicológico; vetar manipulação e dark patterns; garantir ética; revisar conteúdo sensível. Não cobra neutralidade ideológica (D-097) |
 
 ---
 

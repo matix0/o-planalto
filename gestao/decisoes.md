@@ -106,6 +106,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-094 | Sub-medidores (Desemprego, Inflação, Juros) removidos; temas econômicos ficam nas cartas e nas Cartas de Aprendizado; revisa D-015 | 2026-10-14 | Escolha do PO (GDD 01 Medidores, P-011) |
 | D-095 | `Capital Político` em 0 não encerra a partida: abre a cena de impeachment em qualquer ano; o final "Impeachment" vem da condenação. Exceção à D-089 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011; resolve P-1 em parte) |
 | D-096 | 27 finais: +Paralisia Fiscal (Caixa = 0), +Mandato Comum (neutro), −#26 Protecionismo Soberano (duplicado); finais por medidor em 100 só os 3 de Captura, com ≥ 95 no fim do Ano 4; prioridade por categoria; revisa D-021 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011) |
+| D-097 | Intenção de design: o jogo tem alinhamento progressista e de esquerda, não explicitado ao jogador. Toda escolha continua tendo custo (pilar 1). Textos voltados ao jogador ficam como estão. Não se busca neutralizar o "moral" por cor ou eixo; Diplomacia ≥ 15% continua. O PSI revisa ética e manipulação, não neutralidade. Registro só em docs internos | 2026-10-15 | Escolha do PO |
 
 ---
 

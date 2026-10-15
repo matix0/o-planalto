@@ -141,7 +141,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 **P-012 — GDDs de sistema 05-10:** Cartas, Atores, Eventos, Sorteio, Desinformação, Estado da partida (`/gdd-sistema`, ordem em `gdd/sistemas/00_INDICE.md`).
 
 **Pendências do P-011:**
-- Cartas que invertam o "moral" por cor e por eixo (íntegra = Mercado/Conservadorismo/Autoritarismo) e mais Diplomacia (≥ 15%), com PSI.
+- Mais cartas de Diplomacia (≥ 15% por eixo). A neutralização do "moral" por cor e eixo foi cancelada (D-097); toda opção mantém custo real.
 - Citações para 5 finais sem fonte (Barbárie, Autogestão, Golpe Militar, República Soberana, Fome).
 - Texto das cartas das fases 3-5 do impeachment.
 - Recalcular absolvição com apoio ≥ 3 (Capital em 0).

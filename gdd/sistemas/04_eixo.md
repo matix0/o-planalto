@@ -81,4 +81,4 @@ A revelação dos medidores continua com os textos de `gdd/GDD.md` §9.2.
 
 ## Pendência de roteiro
 
-Parecer do GD (2026-10-15): a opção "íntegra" quase sempre puxa para Coletivismo, Progressismo ou Liberdade — o eixo passa a medir moral. Criar cartas em que a opção íntegra seja Mercado, Conservadorismo ou Autoritarismo, e mais cartas de Diplomacia (≥ 15% por eixo), com PSI. Junto da pendência "moral por cor" do P-010.
+Parecer do GD (2026-10-15): a opção "íntegra" quase sempre puxa para Coletivismo, Progressismo ou Liberdade — o eixo passa a medir moral. **Atualizado (D-097):** a neutralização foi cancelada pelo PO; fica só a meta de mais cartas de Diplomacia (≥ 15% por eixo). Toda opção mantém custo real.
