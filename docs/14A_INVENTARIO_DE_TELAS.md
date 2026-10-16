@@ -108,6 +108,8 @@ Estrutura, de cima para baixo: HUD (C-01) → quem fala (C-03) → problema → 
 | T-06.6 | Carta de ator | Quem fala = um dos 24 atores (retrato em silhueta + nome) | ⏳ |
 | T-06.7 | Carta de instituição | Quem fala = instituição do modo (ex.: Câmara, Senado, STF) | ⏳ |
 | T-06.8 | Carta do modo Influenciador | Mesmo layout; o tratamento visual próprio, se houver, está `[a definir]` | ⏳ |
+| T-06.9 | Toque numa metade (alternativa ao arraste) | Revela a opção daquele lado: texto + borda, sem rótulo de lado (D-145) | ⏳ |
+| T-06.10 | Segundo toque na mesma metade | Confirma; a carta sai pelo lado (D-145) | ⏳ |
 
 Conteúdo de exemplo (`docs/17_ROTEIRO_DAS_CARTAS.md:55-71`): "Privatização da estatal" · "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora." · "Nomear relator adversário" (vermelho) × "Aceitar as mudanças" (laranja).
 
@@ -229,7 +231,7 @@ Fonte: doc 14 §14.02.
 | C-01 | Ícone de medidor | 8 ícones (casa, livro, bandeira, escudo, lupa, moeda, Congresso, povo); preenchimento proporcional; 5 faixas de cor; pulso na troca de faixa; estilhaço no 0; versão com número (só na T-10) | doc 14 §14.03, §14.10.1, §14.11.3 | ⏳ |
 | C-02 | HUD | 8 C-01 na ordem: Sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e Poder (Caixa, Capital Político, Legitimidade) | doc 14 §14.03 | ⏳ |
 | C-03 | Quem fala | Retrato em silhueta + nome; ator ou instituição | doc 14 §14.04.1; D-142 | ⏳ |
-| C-04 | Carta arrastável | Parada; arrastando (inclinada); voltando ao centro; saindo pelo lado | doc 14 §14.04.4 | ⏳ |
+| C-04 | Carta arrastável | Parada; arrastando (inclinada); voltando ao centro; saindo pelo lado; opção revelada por toque (D-145) | doc 14 §14.04.4 | ⏳ |
 | C-05 | Borda partidária | 7 cores (vermelho, azul, verde, amarelo, roxo, laranja, preto), sempre com contorno branco de 2-3 px | doc 14 §14.11.2 | ⏳ |
 | C-06 | Texto da opção | Oculto; revelado (fade + deslize de 8-12 px) | doc 14 §14.04.2, §14.10.1 | ⏳ |
 | C-07 | Rodapé | "Ano X · Fase · carta n/7" | doc 14 §14.02 | ⏳ |
@@ -299,7 +301,7 @@ Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 fai
 
 | # | Pendência | Afeta | Fonte |
 | :--- | :--- | :--- | :--- |
-| 1 | Limite de arraste para confirmar a escolha | T-06.4, T-06.5, C-04 | doc 14 §14.13 #1 |
+| 1 | Ajuste fino do limite de arraste (inicial: 40% da largura ou 700 px/s, D-146) e cancelamento do toque (D-145) | T-06.4, T-06.5, T-06.9, C-04 | doc 14 §14.13 #1 |
 | 2 | Escala dos títulos para cada tamanho de texto | T-15 | doc 14 §14.13 #3 |
 | 3 | Estilo final dos retratos (hoje, silhueta) | C-03 | doc 14 §14.13 #4; D-142 |
 | 4 | Como abrir o menu de pausa | T-11 | não definido nos docs |
@@ -311,7 +313,7 @@ Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 fai
 
 ---
 
-**Total:** 16 telas (61 estados e variantes), 21 componentes, 8 fluxos.
+**Total:** 16 telas (63 estados e variantes), 21 componentes, 8 fluxos.
 
 **Última atualização:** 2026-10-16 (P-005)
 **Versão:** 1.0

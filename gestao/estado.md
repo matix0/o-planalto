@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-145–D-147 | Alternativa ao arraste, limite de arraste, varredura UI/UX refeita | 2026-10-16 |
 | D-144 | Doc 14A — inventário de telas e componentes | 2026-10-16 |
 | D-143 | GDD no site (revisa D-081) | 2026-10-16 |
 | D-130–D-142 | P-005 (Godot 4.7.2, MCP, testes headless, escopo, EN, `jogo/`, JSON, licenças, retratos) | 2026-10-16 |

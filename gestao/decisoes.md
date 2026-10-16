@@ -154,6 +154,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-142 | Retratos: silhueta genérica com nome até o TA propor o estilo (doc 14 §14.13 #4) | 2026-10-16 | Escolha do PO (P-005) |
 | D-143 | GDD no site: mestre + índice + 10 sistemas, numa seção "GDD"; aviso de conteúdo (D-075) só no mestre e no 02 Finais (revisa D-081, "fora do site") | 2026-10-16 | Escolha do PO |
 | D-144 | Inventário de telas e componentes como anexo do doc 14 (`docs/14A_INVENTARIO_DE_TELAS.md`), no site, em Design do jogo | 2026-10-16 | Escolha do PO |
+| D-145 | Alternativa ao arraste (WCAG 2.2, 2.5.7, nível AA): tocar numa metade da carta revela a opção daquele lado (texto + borda); um segundo toque na mesma metade confirma. Sem rótulo de lado (D-084). Cancelamento `[a definir]` | 2026-10-16 | Escolha do PO; https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html |
+| D-146 | Limite de arraste inicial: 40% da largura da carta ou flick de 700 px/s (padrões do `Dismissible` do Flutter), ajustável no protótipo | 2026-10-16 | Escolha do PO; https://raw.githubusercontent.com/flutter/flutter/master/packages/flutter/lib/src/widgets/dismissible.dart |
+| D-147 | Relatório de varredura de UI/UX (1ª rodada) descartado: sem URLs, números sem fonte e 6 conflitos com decisões; nova rodada com prompt reforçado | 2026-10-16 | Escolha do PO; verificação de 5 afirmações |
 
 ---
 
@@ -250,6 +253,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-142 | Retratos em silhueta |
 | D-143 | GDD no site |
 | D-144 | Doc 14A inventário de telas |
+| D-145 | Alternativa ao arraste por toque |
+| D-146 | Limite de arraste 40% / 700 px/s |
+| D-147 | Varredura UI/UX refeita |
 
 ### Técnica
 

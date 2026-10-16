@@ -105,8 +105,12 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 | Arrastar | A carta acompanha o dedo e inclina; o texto da opção e a cor da borda aparecem. Nenhuma pista sobre os medidores |
 | Soltar antes do limite | A carta volta ao centro |
 | Soltar além do limite | A escolha é confirmada e a carta sai pelo lado |
+| Tocar numa metade da carta (alternativa ao arraste) | Revela a opção daquele lado: texto e cor da borda, como no arraste |
+| Tocar de novo na mesma metade | A escolha é confirmada e a carta sai pelo lado |
 
-O limite de arraste fica para o protótipo (§14.13).
+**Limite de arraste (D-146):** 40% da largura da carta ou flick de 700 px/s, valores iniciais a ajustar no protótipo.
+
+**Alternativa ao arraste (D-145):** exigida pelo WCAG 2.2, critério 2.5.7 (nível AA). Não mostra rótulo de lado (D-084). Como cancelar uma opção revelada fica para o protótipo (§14.13).
 
 ---
 
@@ -287,6 +291,7 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 | Reduzir movimento | Planejado (proposta GF aprovada) |
 | Alto contraste | Planejado (GDD §10.5) |
 | Navegação por teclado (PC) | Planejado (GDD §10.5) |
+| Escolha sem arrastar (toque em 2 passos, D-145) | Planejado (WCAG 2.2, 2.5.7) |
 | Leitor de tela | Planejado; suporte no Godot `[não verificado]` |
 | Modo daltônico (padrões nos medidores + símbolo do partido na carta) | **Depois do MVP** |
 
@@ -296,7 +301,7 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 
 | # | Pendência | Dono |
 | :--- | :--- | :--- |
-| 1 | Limite de arraste para confirmar a escolha | Protótipo (GF/DEV) |
+| 1 | Limite de arraste: valor inicial 40% / 700 px/s (D-146); ajuste fino e cancelamento do toque (D-145) | Protótipo (GF/DEV) |
 | 2 | Fórmula dos votos nos placares do impeachment | GDD de Impeachment |
 | 3 | Escala dos títulos para cada tamanho de texto | Protótipo (UX) |
 | 4 | Estilo dos retratos: geométricos simples ou arte vetorizada, CC0 ou feitos à mão, sem IA generativa (D-007) | TA + PO |
