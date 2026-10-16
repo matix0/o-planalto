@@ -104,12 +104,12 @@ Estrutura, de cima para baixo: HUD (C-01) → quem fala (C-03) → problema → 
 | T-06.2 | Arrastando para um lado | Carta inclina; texto da opção + borda na cor dela | ⏳ |
 | T-06.3 | Arrastando para o outro lado | Idem, com a outra opção e a outra cor | ⏳ |
 | T-06.4 | Soltou antes do limite | Carta volta ao centro; nada muda | ⏳ |
-| T-06.5 | Soltou além do limite | Carta sai pelo lado escolhido | ⏳ |
+| T-06.5 | Soltou além do limite | Carta sai pelo lado escolhido. O flick só confirma se o texto já apareceu ou a carta andou 20-25% (D-153) | ⏳ |
 | T-06.6 | Carta de ator | Quem fala = um dos 24 atores (retrato em silhueta + nome) | ⏳ |
 | T-06.7 | Carta de instituição | Quem fala = instituição do modo (ex.: Câmara, Senado, STF) | ⏳ |
 | T-06.8 | Carta do modo Influenciador | Mesmo layout; o tratamento visual próprio, se houver, está `[a definir]` | ⏳ |
 | T-06.9 | Toque numa metade (alternativa ao arraste) | Revela a opção daquele lado: texto + borda, sem rótulo de lado (D-145) | ⏳ |
-| T-06.10 | Segundo toque na mesma metade | Confirma; a carta sai pelo lado (D-145) | ⏳ |
+| T-06.10 | Segundo toque na mesma metade | Confirma, só depois de 0,5 s do 1º toque (D-157); a carta sai pelo lado (D-145). Tocar a outra metade troca; tocar fora cancela | ⏳ |
 
 Conteúdo de exemplo (`docs/17_ROTEIRO_DAS_CARTAS.md:55-71`): "Privatização da estatal" · "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora." · "Nomear relator adversário" (vermelho) × "Aceitar as mudanças" (laranja).
 
@@ -174,7 +174,7 @@ Fonte: doc 15 §15.02; `gdd/sistemas/10_estado_partida.md` §3.3.
 | T-11.1 | Menu aberto | Continuar, Configurações, Abandonar mandato | ⏳ |
 | T-11.2 | Confirmação de abandono | Modal (C-14): leva ao final "Renúncia" (na calibração: T-03.4) | ⏳ |
 
-Como o jogador abre o menu (botão e posição) está `[a definir]`.
+Botão de pausa no rodapé, à direita, alvo de 48×48 dp, fora da área de arraste; Esc no PC (D-150).
 
 ### T-12 — Configurações
 
@@ -182,7 +182,7 @@ Fonte: doc 14 §14.12-14.12.1; doc 14 §14.10.3.
 
 | Código | Estado | Conteúdo | Status |
 | :--- | :--- | :--- | :--- |
-| T-12.1 | Padrão | Áudio (controles `[a definir]`), tamanho do texto (16 / 20 / 24), reduzir movimento, alto contraste | ⏳ |
+| T-12.1 | Padrão | Áudio (controles `[a definir]`), tamanho do texto (16 / 20 / 24), reduzir movimento, alto contraste, sensibilidade do arraste 25–40% (D-158) | ⏳ |
 
 ### T-13 — Sobre
 
@@ -210,7 +210,7 @@ Fonte: doc 14 §14.12.1.
 | T-15.2 | T-06 com texto 24 px | ⏳ |
 | T-15.3 | T-06 em alto contraste | ⏳ |
 | T-15.4 | T-08.2 com texto 24 px (pior caso de texto longo) | ⏳ |
-| T-15.5 | Foco de teclado em T-01 e T-06 (PC) | ⏳ |
+| T-15.5 | Foco de teclado em T-01 e T-06 (PC): setas revelam a metade, Enter confirma, Esc cancela (D-156) | ⏳ |
 
 ### T-16 — Layout PC e Web
 
@@ -232,13 +232,13 @@ Fonte: doc 14 §14.02.
 | C-02 | HUD | 8 C-01 na ordem: Sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e Poder (Caixa, Capital Político, Legitimidade) | doc 14 §14.03 | ⏳ |
 | C-03 | Quem fala | Retrato em silhueta + nome; ator ou instituição | doc 14 §14.04.1; D-142 | ⏳ |
 | C-04 | Carta arrastável | Parada; arrastando (inclinada); voltando ao centro; saindo pelo lado; opção revelada por toque (D-145) | doc 14 §14.04.4 | ⏳ |
-| C-05 | Borda partidária | 7 cores (vermelho, azul, verde, amarelo, roxo, laranja, preto), sempre com contorno branco de 2-3 px | doc 14 §14.11.2 | ⏳ |
+| C-05 | Borda partidária | 7 cores (vermelho, azul, verde, amarelo, roxo, laranja, preto), sempre com contorno branco de 2-3 px dos dois lados da faixa (D-156) | doc 14 §14.11.2 | ⏳ |
 | C-06 | Texto da opção | Oculto; revelado (fade + deslize de 8-12 px) | doc 14 §14.04.2, §14.10.1 | ⏳ |
 | C-07 | Rodapé | "Ano X · Fase · carta n/7" | doc 14 §14.02 | ⏳ |
-| C-08 | Ponto de efeito | Pequeno (até 10); grande (mais de 10); sem direção | doc 14 §14.05 | ⏳ |
-| C-09 | Folha de Aprendizado | Resumo; "saiba mais" aberto; link de fonte | doc 14 §14.07 | ⏳ |
+| C-08 | Ponto de efeito | Pequeno (até 10: círculo branco sólido ~6 dp); grande (mais de 10: ~10 dp + anel ~14 dp); sem direção (D-156) | doc 14 §14.05 | ⏳ |
+| C-09 | Folha de Aprendizado | Modal com fundo escurecido (D-160); resumo; "saiba mais" aberto; link de fonte | doc 14 §14.07 | ⏳ |
 | C-10 | Moldura de crise | Carta de impeachment | doc 14 §14.08 | ⏳ |
-| C-11 | Placar | Comissão; Câmara (342 / 513); Senado (54 / 81); resultado alcançado × não alcançado | doc 14 §14.08; `gdd/sistemas/03_impeachment.md` §3.3 | ⏳ |
+| C-11 | Placar | Comissão; Câmara (342 / 513); Senado (54 / 81); resultado alcançado × não alcançado; barra branco × escuro hachurado com linha de quórum, sem verde nem vermelho (D-156) | doc 14 §14.08; `gdd/sistemas/03_impeachment.md` §3.3 | ⏳ |
 | C-12 | Bloco de citação | Frase + autor; ausente | doc 14 §14.09; D-091 | ⏳ |
 | C-13 | Radar ideológico | 8 pontas (4 eixos × 2 polos); dois traçados, "o que você disse" × "como você governou" | doc 14 §14.09; `gdd/sistemas/04_eixo.md` | ⏳ |
 | C-14 | Modal de confirmação | Novo mandato; abandonar (calibração); abandonar (partida) | doc 15 §15.03; `gdd/sistemas/10_estado_partida.md` §3.3 | ⏳ |
@@ -301,15 +301,16 @@ Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 fai
 
 | # | Pendência | Afeta | Fonte |
 | :--- | :--- | :--- | :--- |
-| 1 | Ajuste fino do limite de arraste (inicial: 40% da largura ou 700 px/s, D-146) e cancelamento do toque (D-145) | T-06.4, T-06.5, T-06.9, C-04 | doc 14 §14.13 #1 |
+| 1 | Ajuste fino do limite de arraste (inicial: 40% da largura ou 700 px/s, D-146), trava do flick (D-153) e `screen_velocity` × `velocity` (D-154); cancelamento do toque resolvido (D-157) | T-06.4, T-06.5, T-06.9, C-04 | doc 14 §14.13 #1 |
 | 2 | Escala dos títulos para cada tamanho de texto | T-15 | doc 14 §14.13 #3 |
 | 3 | Estilo final dos retratos (hoje, silhueta) | C-03 | doc 14 §14.13 #4; D-142 |
-| 4 | Como abrir o menu de pausa | T-11 | não definido nos docs |
+| 4 | ~~Como abrir o menu de pausa~~ — resolvido: botão no rodapé à direita + Esc (D-150) | T-11 | D-150 |
 | 5 | Controles de áudio | T-12, C-20 | não definido nos docs |
 | 6 | Tratamento visual do modo Influenciador | T-06.8 | não definido nos docs |
 | 7 | Conteúdo de "Compartilhar" | T-10.1 | não definido nos docs |
 | 8 | Tamanho das pranchetas (mobile e PC) | Todas | não definido nos docs |
 | 9 | Modo daltônico | C-01, C-05 | pós-MVP (doc 14 §14.13 #6) |
+| 10 | Leitor de tela no Android e no iOS | Todas | aguardando suporte do Godot (D-152) |
 
 ---
 

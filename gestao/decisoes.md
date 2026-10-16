@@ -157,6 +157,19 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-145 | Alternativa ao arraste (WCAG 2.2, 2.5.7, nível AA): tocar numa metade da carta revela a opção daquele lado (texto + borda); um segundo toque na mesma metade confirma. Sem rótulo de lado (D-084). Cancelamento `[a definir]` | 2026-10-16 | Escolha do PO; https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html |
 | D-146 | Limite de arraste inicial: 40% da largura da carta ou flick de 700 px/s (padrões do `Dismissible` do Flutter), ajustável no protótipo | 2026-10-16 | Escolha do PO; https://raw.githubusercontent.com/flutter/flutter/master/packages/flutter/lib/src/widgets/dismissible.dart |
 | D-147 | Relatório de varredura de UI/UX (1ª rodada) descartado: sem URLs, números sem fonte e 6 conflitos com decisões; nova rodada com prompt reforçado | 2026-10-16 | Escolha do PO; verificação de 5 afirmações |
+| D-148 | Varredura UI/UX, 2ª rodada: `relatorio1.md` aproveitado com 9 correções (stack Godot, citações do Reigns e do CoD, Bang Wong, escala 200%, AccessKit); `relatorio2.md` descartado (URLs incompletas, radar como medidores, placar com cores partidárias). 3ª rodada só para lacunas | 2026-10-16 | Escolha do PO; verificação de 7 afirmações |
+| D-149 | Escala de texto até 200% (XAG 101): testar no protótipo (ex.: 18/24/30/36 px) antes de mudar a escala 16/20/24 | 2026-10-16 | Escolha do PO; https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/101 |
+| D-150 | Botão de pausa no rodapé, à direita, alvo de 48×48 dp, fora da área de arraste; tecla Esc no PC | 2026-10-16 | Escolha do PO; https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107 |
+| D-151 | Cores partidárias mantêm os hex do doc 14 §14.11.2; modo daltônico (pós-MVP) só acrescenta padrões na borda e nos medidores | 2026-10-16 | Escolha do PO |
+| D-152 | Leitor de tela no Android e no iOS: aguardar o suporte do Godot (AccessKit hoje só no desktop); sem autonarração por TTS por enquanto. `accessibility_name`/`accessibility_description` preenchidos nos Controls para o PC | 2026-10-16 | Escolha do PO; https://docs.godotengine.org/en/stable/classes/class_displayserver.html |
+| D-153 | Trava do flick: o flick de 700 px/s só confirma se o texto daquela opção já apareceu ou se a carta já andou 20-25% da largura (valor a ajustar no protótipo) | 2026-10-16 | Escolha do PO; GAG (leitura no ritmo do jogador) |
+| D-154 | Velocidade do toque: testar `InputEventScreenDrag.screen_velocity` × `velocity` no protótipo antes de fixar | 2026-10-16 | Escolha do PO; https://docs.godotengine.org/en/stable/classes/class_inputeventscreendrag.html |
+| D-155 | Relatórios da varredura de UI/UX guardados em `.claude/notas/varredura-uiux/` (relatorio1 corrigido, relatorio2 descartado, relatorio3 com ressalvas); 4ª rodada (pesquisa profunda) em andamento pelo PO | 2026-10-16 | Escolha do PO |
+| D-156 | Varredura UI/UX encerrada após a 4ª rodada (`.claude/notas/varredura-uiux/relatorio4.md`, 12 ressalvas). Aproveitados: ponto de efeito por forma (pequeno 6 dp sólido; grande 10 dp + anel de 14 dp); filete branco dos dois lados da faixa partidária; teclado no PC (setas revelam a metade, Enter confirma, Esc cancela); leitor de tela do PC anuncia a faixa do medidor sem número; placar branco × escuro hachurado com linha de quórum | 2026-10-16 | Escolha do PO |
+| D-157 | Intervalo de 0,5 s entre o 1º toque (revela) e a aceitação do 2º (confirma) | 2026-10-16 | Escolha do PO; GAG (Avançado) https://gameaccessibilityguidelines.com/full-list/ |
+| D-158 | Sensibilidade do arraste ajustável nas Configurações: limite de 25% a 40% da largura (padrão 40%, D-146) | 2026-10-16 | Escolha do PO; https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107 |
+| D-159 | Cor primária da interface passa a ser neutra (branco `#FFFFFF`) no lugar do verde `#2E7D32`, que coincide com a cor partidária do agronegócio | 2026-10-16 | Escolha do PO |
+| D-160 | Folha de Aprendizado modal, com fundo escurecido (scrim), para evitar disparar a próxima carta sem querer | 2026-10-16 | Escolha do PO |
 
 ---
 
@@ -256,6 +269,19 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-145 | Alternativa ao arraste por toque |
 | D-146 | Limite de arraste 40% / 700 px/s |
 | D-147 | Varredura UI/UX refeita |
+| D-148 | Relatório 1 aproveitado, 2 descartado |
+| D-149 | Escala 200% a testar |
+| D-150 | Pausa no rodapé + Esc |
+| D-151 | Hex partidários mantidos |
+| D-152 | Leitor de tela mobile aguarda o Godot |
+| D-153 | Trava do flick |
+| D-154 | screen_velocity × velocity |
+| D-155 | Relatórios em notas; 4ª rodada |
+| D-156 | Varredura UI/UX encerrada |
+| D-157 | Intervalo de 0,5 s no toque duplo |
+| D-158 | Sensibilidade do arraste 25–40% |
+| D-159 | Primária neutra (branco) |
+| D-160 | Folha de Aprendizado modal |
 
 ### Técnica
 

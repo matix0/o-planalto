@@ -96,6 +96,7 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 
 - Toda opção tem cor; não há borda neutra.
 - A borda tem **contorno branco de 2-3 px** em todas as cores, para garantir contraste (§14.11.2).
+- O filete branco fica **dos dois lados** da faixa partidária, porque roxo e preto quase somem contra o fundo da carta (D-156).
 - As cores e o significado de cada uma estão em §14.11.2.
 
 ### 14.04.4. Gesto
@@ -110,7 +111,11 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 
 **Limite de arraste (D-146):** 40% da largura da carta ou flick de 700 px/s, valores iniciais a ajustar no protótipo.
 
-**Alternativa ao arraste (D-145):** exigida pelo WCAG 2.2, critério 2.5.7 (nível AA). Não mostra rótulo de lado (D-084). Como cancelar uma opção revelada fica para o protótipo (§14.13).
+**Trava do flick (D-153):** o flick só confirma se o texto daquela opção já apareceu ou se a carta já andou 20-25% da largura, para o jogador não decidir sem ler. Qual medida de velocidade usar no Godot (`screen_velocity` ou `velocity`) é testado no protótipo (D-154).
+
+**Alternativa ao arraste (D-145):** exigida pelo WCAG 2.2, critério 2.5.7 (nível AA). Não mostra rótulo de lado (D-084). Tocar a outra metade troca a opção revelada; tocar fora da carta cancela; sem tempo limite. O 2º toque só é aceito 0,5 s depois do 1º (D-157).
+
+**Sensibilidade (D-158):** nas Configurações, o jogador pode baixar o limite de arraste de 40% até 25% da largura.
 
 ---
 
@@ -122,6 +127,8 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 | :--- | :--- |
 | **Pequeno** | Até 10 pontos |
 | **Grande** | Acima de 10 pontos |
+
+Os dois diferem também pela forma (D-156): o pequeno é um círculo branco sólido (~6 dp); o grande é um círculo de ~10 dp com anel externo (~14 dp). Valores a validar nos wireframes.
 
 O ponto **não indica direção**; a direção aparece no próprio ícone, que enche ou esvazia.
 
@@ -140,6 +147,8 @@ Depois da escolha, aparece a **frase de consequência** (1 linha) sobre o HUD j�
 | **Resumo (sempre)** | Conceito por trás (bloco 2) + frase de impacto (bloco 5) |
 | **"Saiba mais" (ao tocar)** | O que você vivenciou (1), dados reais (3) e fonte (4) |
 
+A folha é **modal**, com fundo escurecido, para que um toque na folha não dispare a próxima carta (D-160).
+
 O texto vem do doc 18 (D-090). Dado sem fonte verificada não aparece no jogo (D-091).
 
 ---
@@ -155,6 +164,8 @@ Cena especial, separada do fluxo normal de cartas.
 | 3. A Votação | Carta + placar da Câmara: 513 deputados, 342 votos (2/3) para autorizar |
 | 4. O Julgamento | Carta + placar do Senado: 81 senadores, 54 votos (2/3) para condenar |
 | 5. O Desfecho | Absolvição ou condenação |
+
+**Placares (D-156):** barra com os votos favoráveis em branco e os contrários em fundo escuro hachurado, mais uma linha fixa marcando o quórum (342 ou 54) e o número grande. Nunca verde nem vermelho, que são cores partidárias.
 
 - Transição de entrada: corte dramático; tela escurece e os placares entram em sequência (§14.10).
 - Como os votos de cada placar são calculados fica para o GDD do sistema de Impeachment (§14.13).
@@ -220,7 +231,7 @@ Opção nas configurações. Remove pulsos, "pop", deslizes, zoom e flash. Mant�
 
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
-| Primária | Verde | `#2E7D32` |
+| Primária | Branco (neutro — D-159) | `#FFFFFF` |
 | Secundária | Azul | `#1565C0` |
 | Terciária | Cinza | `#37474F` |
 | Alerta | Vermelho | `#C62828` |
@@ -290,9 +301,9 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 | Tamanho de texto (16/20/24) | Planejado (GDD §10.5) |
 | Reduzir movimento | Planejado (proposta GF aprovada) |
 | Alto contraste | Planejado (GDD §10.5) |
-| Navegação por teclado (PC) | Planejado (GDD §10.5) |
+| Navegação por teclado (PC) | Planejado (GDD §10.5): setas revelam a metade, Enter confirma, Esc cancela (D-156) |
 | Escolha sem arrastar (toque em 2 passos, D-145) | Planejado (WCAG 2.2, 2.5.7) |
-| Leitor de tela | Planejado; suporte no Godot `[não verificado]` |
+| Leitor de tela | PC: `accessibility_name`/`accessibility_description` nos Controls (AccessKit, Godot 4.5+); cada medidor anuncia a faixa ("faixa 2 de 5"), nunca o número (D-156). Android e iOS: aguardando suporte do Godot (D-152) |
 | Modo daltônico (padrões nos medidores + símbolo do partido na carta) | **Depois do MVP** |
 
 ---
@@ -301,7 +312,7 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 
 | # | Pendência | Dono |
 | :--- | :--- | :--- |
-| 1 | Limite de arraste: valor inicial 40% / 700 px/s (D-146); ajuste fino e cancelamento do toque (D-145) | Protótipo (GF/DEV) |
+| 1 | Limite de arraste: valor inicial 40% / 700 px/s (D-146); ajuste fino, trava do flick (D-153) e medida de velocidade (D-154); cancelamento do toque resolvido (D-157) | Protótipo (GF/DEV) |
 | 2 | Fórmula dos votos nos placares do impeachment | GDD de Impeachment |
 | 3 | Escala dos títulos para cada tamanho de texto | Protótipo (UX) |
 | 4 | Estilo dos retratos: geométricos simples ou arte vetorizada, CC0 ou feitos à mão, sem IA generativa (D-007) | TA + PO |

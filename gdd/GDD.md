@@ -545,7 +545,7 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
-| Primária | Verde | `#2E7D32` |
+| Primária | Branco (neutro — D-159) | `#FFFFFF` |
 | Secundária | Azul | `#1565C0` |
 | Terciária | Cinza | `#37474F` |
 | Alerta | Vermelho | `#C62828` |
