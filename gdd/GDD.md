@@ -911,7 +911,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-1 | ✅ Resolvida: `Capital Político` em 0 abre a cena (D-095); detalhes da cena no GDD 03 | §6.5, §9.1 |
 | P-2 | ✅ Resolvida: partida de ~15 min (D-088) | §1.1, §4.2 |
 | P-3 | ✅ Resolvida: `gdd/sistemas/02_finais.md` (D-096) | §9 |
-| P-4 | Cartas obrigatórias podem passar de 8 por turno; "remover do mesmo modo" ambíguo | §6.2.2 |
+| P-4 | ✅ Resolvida: `gdd/sistemas/06_sorteio.md` (teto de 3 obrigatórias; 1 por modo nas sorteadas) | §6.2.2 |
 | P-5 | Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
 | P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |
 | P-7 | MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |

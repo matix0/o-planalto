@@ -38,7 +38,7 @@ Satisfação inteira de 0 a 100; começa em 50 para todos.
 | Satisfeito | 61-80 | Oferta |
 | Aliado | 81-100 | Oferta |
 
-- Só a carta da função do nível atual pode sair; a chance por nível é do GDD 06.
+- Só a carta da função do nível atual pode sair. Furioso torna o ataque obrigatório no turno seguinte; as demais funções têm peso igual (`gdd/sistemas/06_sorteio.md` §3.3-3.4).
 - Ator sem carta de oferta não tem carta sorteável em Satisfeito e Aliado.
 
 ### 3.3. Atualização
@@ -51,7 +51,7 @@ Satisfação inteira de 0 a 100; começa em 50 para todos.
 
 - 70 cartas `ATOR-xxx`: 22 atores × 3 (ataque, exigência, oferta) + 2 atores × 2 (ataque, exigência).
 - A carta de um ator cita esse ator nas duas opções.
-- Cada carta de ator sai no máximo 1 vez por partida `[a confirmar no GDD 06]`.
+- Cada carta de ator sai no máximo 1 vez por partida (`gdd/sistemas/06_sorteio.md` §3.1).
 
 ### 3.5. Pendência
 
@@ -95,7 +95,7 @@ Os 2 atores sem carta de oferta: escolha do PO ao escrever as cartas deles no do
 | :--- | :--- | :--- |
 | 01 Medidores | Recebe o efeito da carta de oferta (Boa Vontade) | ✅ `gdd/sistemas/01_medidores.md:51,105` |
 | 05 Cartas | Campo `atores`, passo 2b, exceção da Boa Vontade | ✅ `gdd/sistemas/05_cartas.md` §3.3, §3.5, §6 |
-| 06 Sorteio | Lê nível e função da carta; define a chance por nível e o "1× por partida" | ⏳ a escrever |
+| 06 Sorteio | Lê nível e função da carta; ataque obrigatório; "1× por partida" | ✅ `gdd/sistemas/06_sorteio.md` §3 |
 | 10 Estado da partida | Guarda `s(a)` dos 24 atores | ⏳ a escrever |
 
 O GDD 07 não lê os medidores: a satisfação só muda pelo campo `atores`.

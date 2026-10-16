@@ -122,6 +122,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-110 | Atraso relativo de 1 ou 2 turnos por evento; destino depois do Ano 4 vai ao epílogo, sem efeito | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
 | D-111 | 0 ou 1 evento por opção (campo `eventos` na opção): `texto`, `atraso`, `efeitos` (1-3 medidores, ±5 a ±30, sem exigir custo); inevitável | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
 | D-112 | Evento dispara no início do turno de destino, antes da primeira carta, na ordem de agendamento, com o multiplicador do ano | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
+| D-113 | Nenhuma carta se repete na partida; 7 cartas por turno, 28 por partida (revisa o "6–8" do GDD §5.4) | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
+| D-114 | Até 3 obrigatórias por turno, prioridade emergência → ator Furioso → medidor < 30; a emergência conta para o teto mas não é limitada; excedente descartado e rechecado no turno seguinte. Resolve P-4 | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
+| D-115 | Carta ligada ao medidor M: alguma opção com efeito positivo em M; usada pela emergência, pelo medidor < 30 e pela "recuperação" | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
+| D-116 | Vagas sorteadas com peso igual, máx. 1 por modo (relaxa se faltar carta), escolhidas uma a uma na exibição; obrigatórias isentas do modo | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
+| D-117 | Único pré-requisito da carta: `ano_minimo` (sai `modo_nao_jogado`); com baralho curto, a partida fica curta, sem repetir cartas | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
 
 ---
 
@@ -186,6 +191,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-110 | Atraso de 1-2 turnos |
 | D-111 | Evento na opção |
 | D-112 | Disparo no início do turno |
+| D-113 | 7 cartas por turno, sem repetição |
+| D-114 | Teto de 3 obrigatórias |
+| D-115 | Carta ligada a medidor |
+| D-116 | Sorteio com peso igual e 1 por modo |
+| D-117 | Só `ano_minimo` |
 
 ### Técnica
 

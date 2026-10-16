@@ -301,7 +301,7 @@
 | 1 | GDD 05 Cartas | ✅ | `gdd/sistemas/05_cartas.md` |
 | 2 | GDD 07 Atores (P-10) | ✅ | `gdd/sistemas/07_atores.md` |
 | 3 | GDD 08 Eventos | ✅ | `gdd/sistemas/08_eventos.md` |
-| 4 | GDD 06 Sorteio (P-4) | ⏳ | — |
+| 4 | GDD 06 Sorteio (P-4) | ✅ | `gdd/sistemas/06_sorteio.md` |
 | 5 | GDD 09 Desinformação | ⏳ | — |
 | 6 | GDD 10 Estado da partida (P-12) | ⏳ | — |
 | 7 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |

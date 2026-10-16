@@ -101,7 +101,7 @@ Carta de recuperação → GDD 06 Sorteio. Evento de boa vontade → GDD 07 Ator
 | 03 Impeachment | Gatilhos leem os medidores; o fechamento do turno chama o gatilho |
 | 04 Eixo | Revelação final |
 | 05 Cartas | Fornece os efeitos de cada opção |
-| 06 Sorteio | Recebe o pedido de carta de emergência; medidor < 30 puxa cartas ligadas |
+| 06 Sorteio | Recebe o pedido de carta de emergência; medidor < 30 puxa cartas ligadas (`gdd/sistemas/06_sorteio.md` §3.2-3.3) |
 | 07 Atores | Evento de boa vontade aplica efeito nos medidores |
 | 08 Eventos | Aplica efeitos nos medidores |
 | 10 Estado da partida | Executa o efeito da carta e o fechamento do turno |
