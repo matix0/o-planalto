@@ -39,8 +39,9 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `texto` | 1 linha |
 | `cor` | Uma das 7 cores partidárias; sem cor neutra (D-092) |
 | `eixo` | `[Eco, Dip, Soc, Est]`, inteiros −2 a +2 (`gdd/sistemas/04_eixo.md` §3.2) |
-| `efeitos` | Campo único, com sinal. De 2 a 4 medidores; ≥ 1 negativo (D-097); valores múltiplos de 5, de ±5 a ±30 |
+| `efeitos` | Campo único, com sinal. De 2 a 4 medidores; ≥ 1 negativo (D-097), exceto uma opção da carta de oferta de ator (Boa Vontade, `gdd/sistemas/07_atores.md` §5); valores múltiplos de 5, de ±5 a ±30 |
 | `consequencia` | Frase curta, mostrada após a escolha |
+| `atores` | `{ "ACT-xxx": ±1 }`, de 0 a 3 atores; a carta de um ator o cita nas duas opções (`gdd/sistemas/07_atores.md` §3.3-3.4) |
 
 ### 3.4. Lado e exibição
 
@@ -54,6 +55,7 @@ Ao soltar a carta, nesta ordem:
 
 1. Aplica os `efeitos` nos medidores (GDD 01).
 2. Soma o `eixo` ao traçado "como você governou" (GDD 04).
+   2b. Atualiza a satisfação dos atores citados em `atores` (GDD 07).
 3. Agenda os `eventos_encadeados` (GDD 08).
 4. Mostra a `consequencia` e, depois, a Carta de Aprendizado.
 
@@ -97,7 +99,7 @@ Ao soltar a carta, nesta ordem:
 | 03 Impeachment | Cartas do tipo `Impeachment` (§3.1) | ✅ `gdd/sistemas/03_impeachment.md:80` |
 | 04 Eixo | Lê o `eixo` de cada opção | ✅ `gdd/sistemas/04_eixo.md` §6 |
 | 06 Sorteio | Lê `pre_requisitos`, `modo` e `tipo` | ⏳ a escrever |
-| 07 Atores | Lê as cartas ATOR e as opções que atendem/contrariam o ator | ⏳ a escrever |
+| 07 Atores | Lê o campo `atores` e as cartas ATOR | ✅ `gdd/sistemas/07_atores.md` §3 |
 | 08 Eventos | Lê `eventos_encadeados` | ⏳ a escrever |
 | 09 Desinformação | Usa as cartas do modo Influenciador | ⏳ a escrever |
 | 10 Estado da partida | Executa a resolução (§3.5) | ⏳ a escrever |

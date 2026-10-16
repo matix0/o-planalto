@@ -113,6 +113,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-101 | Tipo `Impeachment` (cartas da cena, fora das 340, com campo `teste`); tipo "Evento" removido — eventos não são cartas | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
 | D-102 | Carta só entra no baralho com a Carta de Aprendizado aprovada (hoje 22 jogáveis) | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
 | D-103 | As duas opções de uma carta têm cores distintas; opção que zera medidor aplica todos os efeitos e o eixo antes do final | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-104 | Ator usa o código `ACT-xxx`; carta segue `ATOR-xxx` | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
+| D-105 | 70 cartas ATOR: 22 atores × 3 (ataque, exigência, oferta) + 2 × 2 (sem oferta); o nível do ator decide qual função pode sair | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
+| D-106 | Campo explícito `atores` por opção (0-3 atores, ±1); ±1 = ±10 de satisfação; carta de ator cita o ator nas duas opções. Resolve P-10 | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
+| D-107 | Satisfação inicial 50 para todos; campo `preco` removido; tabela de consequências do doc 05 removida | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
+| D-108 | Evento de Boa Vontade: na carta de oferta (Satisfeito e Aliado), uma opção pode ter 0 efeitos negativos — única exceção à D-098 | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
 
 ---
 
@@ -168,6 +173,11 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-101 | Tipo Impeachment |
 | D-102 | Carta exige Aprendizado aprovado |
 | D-103 | Cores distintas por carta |
+| D-104 | Ator `ACT-xxx` |
+| D-105 | Cartas de ator por função |
+| D-106 | Campo `atores` |
+| D-107 | Satisfação inicial 50 |
+| D-108 | Boa Vontade na carta de oferta |
 
 ### Técnica
 

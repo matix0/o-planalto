@@ -917,7 +917,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-7 | MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
 | P-8 | ✅ Resolvida: `gdd/sistemas/01_medidores.md` §3-4 | §6.1.3, §7.2, §13.2 |
 | P-9 | ✅ Resolvida: `gdd/sistemas/04_eixo.md` | §6.6, §9.2 |
-| P-10 | Atores: satisfação inicial; critério de "atende/contraria" | §6.3 |
+| P-10 | ✅ Resolvida: `gdd/sistemas/07_atores.md` (satisfação inicial 50; campo `atores` por opção) | §6.3 |
 | P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
 | P-12 | "Sessão parcial (se pausado)" × sem salvamento; risco no mobile | §4.4 |
 | P-13 | ✅ Resolvida: 22 cartas escritas; 22 Cartas de Aprendizado ligadas e 127 em rascunho (P-010) | §8.1, §8.4 |
