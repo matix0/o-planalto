@@ -35,6 +35,7 @@
 | `12_FICHAS_DOS_MODOS.md` | 10 modos |
 | `13_ARQUITETURA_TECNICA.md` | Stack, estrutura de dados, sistemas, fluxos |
 | `14_UI_UX_DESIGN.md` | Telas, HUD, interações e acessibilidade |
+| `14A_INVENTARIO_DE_TELAS.md` | Inventário de telas, estados, componentes e fluxos (anexo do 14) |
 | `15_FLUXO_DO_JOGO.md` | Fluxo completo de uma partida |
 | `16_MANUAL_DO_JOGADOR.md` | Guia para jogar |
 | `17_ROTEIRO_DAS_CARTAS.md` | Roteiro das 340 cartas |
