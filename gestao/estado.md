@@ -32,7 +32,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Subagentes** | ✅ Definidos | 12 papéis |
 | **Comandos** | ✅ Definidos | 6 comandos (D-073) |
 | **Setup Claude Code** | ✅ Concluído | P-008 |
-| **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/; GDD incluído (D-143), falta publicar |
+| **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/; GDD publicado (D-143) |
 | **MCP Godot** | ✅ Instalado | `~/.local/share/godot-mcp`, `.mcp.json` (D-131, D-132) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
 | **GDD Completo** | ✅ 2.0 aprovado | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011 a P-013); P-5 e P-7 ficam com o protótipo |
