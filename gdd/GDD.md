@@ -602,7 +602,7 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 | **Estilo** | Minimalista, vetorial, geométrico |
 | **Paleta** | Verde, azul, cinza (principal); vermelho, amarelo (secundária) |
 | **Cartas** | Fundo escuro, texto branco, borda colorida |
-| **Ícones** | Font Awesome ou similar (CC0) |
+| **Ícones** | Só CC0, ex.: Kenney (D-140) |
 | **Animações** | Swipe + feedback visual + transições suaves |
 
 ### 11.2. Restrição Fundamental
@@ -887,7 +887,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-2 | ✅ Resolvida: partida de ~15 min (D-088) | §1.1, §4.2 |
 | P-3 | ✅ Resolvida: `gdd/sistemas/02_finais.md` (D-096) | §9 |
 | P-4 | ✅ Resolvida: `gdd/sistemas/06_sorteio.md` (teto de 3 obrigatórias; 1 por modo nas sorteadas) | §6.2.2 |
-| P-5 | Fora do GDD (com o protótipo): Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
+| P-5 | ✅ Fechada (D-140): ícones só CC0; fontes Google Fonts (OFL) com crédito. Freesound/FMA: usar só itens CC0 | §11.1, §11.3 |
 | P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |
 | P-7 | Fora do GDD (com o protótipo): MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
 | P-8 | ✅ Resolvida: `gdd/sistemas/01_medidores.md` §3-4 | §6.1.3, §7.2, §13.2 |

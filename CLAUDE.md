@@ -12,7 +12,7 @@
 | **Público-alvo** | Jovens de 15 a 30 anos, periféricos e estudantes |
 | **Stack** | Godot 4.7 + MCP + Agentes de IA |
 | **Plataformas** | Mobile, Web e PC |
-| **Assets** | Apenas CC0 e domínio público |
+| **Assets** | CC0 e domínio público; fontes Google Fonts (OFL) com crédito (D-140) |
 
 ## Idioma
 
