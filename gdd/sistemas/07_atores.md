@@ -23,9 +23,8 @@ O jogador governa cercado de gente que quer algo dele. Cada ator tem rosto, voz,
 | `nome`, `categoria`, `arquetipo` | Das fichas do doc 11; `categoria` é uma das 4 (`gdd/GDD.md:496-501`) |
 | `oferece` / `cobra` | Medidores das fichas; guia de escrita, sem regra no jogo |
 | `cartas` | 3 IDs `ATOR-xxx`, um por função (§3.4); 2 IDs para os 2 atores sem oferta |
-| `eventos_encadeados` | Declarado aqui; regras no GDD 08 |
 
-O campo `preco` foi removido: o custo fica nos `efeitos` das cartas (D-098).
+O campo `preco` foi removido: o custo fica nos `efeitos` das cartas (D-098). O ator não tem eventos próprios: eventos vêm só das opções (`gdd/sistemas/08_eventos.md` §1).
 
 ### 3.2. Satisfação e níveis
 
@@ -97,7 +96,6 @@ Os 2 atores sem carta de oferta: escolha do PO ao escrever as cartas deles no do
 | 01 Medidores | Recebe o efeito da carta de oferta (Boa Vontade) | ✅ `gdd/sistemas/01_medidores.md:51,105` |
 | 05 Cartas | Campo `atores`, passo 2b, exceção da Boa Vontade | ✅ `gdd/sistemas/05_cartas.md` §3.3, §3.5, §6 |
 | 06 Sorteio | Lê nível e função da carta; define a chance por nível e o "1× por partida" | ⏳ a escrever |
-| 08 Eventos | Lê `eventos_encadeados` do ator | ⏳ a escrever |
 | 10 Estado da partida | Guarda `s(a)` dos 24 atores | ⏳ a escrever |
 
 O GDD 07 não lê os medidores: a satisfação só muda pelo campo `atores`.

@@ -118,6 +118,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-106 | Campo explícito `atores` por opção (0-3 atores, ±1); ±1 = ±10 de satisfação; carta de ator cita o ator nas duas opções. Resolve P-10 | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
 | D-107 | Satisfação inicial 50 para todos; campo `preco` removido; tabela de consequências do doc 05 removida | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
 | D-108 | Evento de Boa Vontade: na carta de oferta (Satisfeito e Aliado), uma opção pode ter 0 efeitos negativos — única exceção à D-098 | 2026-10-16 | Escolha do PO (GDD 07 Atores, P-012) |
+| D-109 | Eventos vêm só das opções das cartas; saem as tabelas fixas por ator, modo e medidor; atores sem eventos próprios. Revisa D-024 (78 eventos) | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
+| D-110 | Atraso relativo de 1 ou 2 turnos por evento; destino depois do Ano 4 vai ao epílogo, sem efeito | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
+| D-111 | 0 ou 1 evento por opção (campo `eventos` na opção): `texto`, `atraso`, `efeitos` (1-3 medidores, ±5 a ±30, sem exigir custo); inevitável | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
+| D-112 | Evento dispara no início do turno de destino, antes da primeira carta, na ordem de agendamento, com o multiplicador do ano | 2026-10-16 | Escolha do PO (GDD 08 Eventos, P-012) |
 
 ---
 
@@ -163,7 +167,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-021 | 26 finais (revisada por D-096) |
 | D-096 | 27 finais |
 | D-022 | Impeachment como golpe |
-| D-024 | 78 eventos |
+| D-024 | 78 eventos (revisada por D-109) |
 | D-027 | Eixo 9axes |
 | D-030 | Cores partidárias |
 | D-092 | Cor por opção |
@@ -178,6 +182,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-106 | Campo `atores` |
 | D-107 | Satisfação inicial 50 |
 | D-108 | Boa Vontade na carta de oferta |
+| D-109 | Eventos só das opções |
+| D-110 | Atraso de 1-2 turnos |
+| D-111 | Evento na opção |
+| D-112 | Disparo no início do turno |
 
 ### Técnica
 

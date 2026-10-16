@@ -30,7 +30,6 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `opcao_a` / `opcao_b` | §3.3 |
 | `aprendizado_id` | `APR-xxx`, mesmo número da carta; texto no doc 18 (D-090) |
 | `pre_requisitos` | Declarado aqui; regras no GDD 06 |
-| `eventos_encadeados` | Declarado aqui; regras no GDD 08 |
 
 ### 3.3. Opção
 
@@ -42,6 +41,7 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `efeitos` | Campo único, com sinal. De 2 a 4 medidores; ≥ 1 negativo (D-097), exceto uma opção da carta de oferta de ator (Boa Vontade, `gdd/sistemas/07_atores.md` §5); valores múltiplos de 5, de ±5 a ±30 |
 | `consequencia` | Frase curta, mostrada após a escolha |
 | `atores` | `{ "ACT-xxx": ±1 }`, de 0 a 3 atores; a carta de um ator o cita nas duas opções (`gdd/sistemas/07_atores.md` §3.3-3.4) |
+| `eventos` | 0 ou 1 evento encadeado (`gdd/sistemas/08_eventos.md` §3.1) |
 
 ### 3.4. Lado e exibição
 
@@ -56,7 +56,7 @@ Ao soltar a carta, nesta ordem:
 1. Aplica os `efeitos` nos medidores (GDD 01).
 2. Soma o `eixo` ao traçado "como você governou" (GDD 04).
    2b. Atualiza a satisfação dos atores citados em `atores` (GDD 07).
-3. Agenda os `eventos_encadeados` (GDD 08).
+3. Agenda o evento da opção (GDD 08).
 4. Mostra a `consequencia` e, depois, a Carta de Aprendizado.
 
 ## 4. Fórmulas
@@ -100,7 +100,7 @@ Ao soltar a carta, nesta ordem:
 | 04 Eixo | Lê o `eixo` de cada opção | ✅ `gdd/sistemas/04_eixo.md` §6 |
 | 06 Sorteio | Lê `pre_requisitos`, `modo` e `tipo` | ⏳ a escrever |
 | 07 Atores | Lê o campo `atores` e as cartas ATOR | ✅ `gdd/sistemas/07_atores.md` §3 |
-| 08 Eventos | Lê `eventos_encadeados` | ⏳ a escrever |
+| 08 Eventos | Lê o campo `eventos` da opção | ✅ `gdd/sistemas/08_eventos.md` §3 |
 | 09 Desinformação | Usa as cartas do modo Influenciador | ⏳ a escrever |
 | 10 Estado da partida | Executa a resolução (§3.5) | ⏳ a escrever |
 | 02 Finais | Recebe o fim imediato (§5) | ❌ não cita o 05 — ajuste na etapa 7 do P-012 |
