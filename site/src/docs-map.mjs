@@ -1,4 +1,4 @@
-// Fonte única dos metadados do site: título, seção, avisos e estado de cada doc em `docs/`.
+// Fonte única dos metadados do site: título, seção, avisos e estado de cada doc em `docs/` e `gdd/`.
 // Usado pelo script de sincronização (scripts/sync-docs.mjs), pelo menu (astro.config.mjs)
 // e pelos cards da home (src/components/SecoesHome.astro).
 
@@ -10,10 +10,12 @@ export const SECOES = [
 	{ nome: 'Referência rápida', resumo: 'Glossário e guia de estilo para quem escreve as cartas.' },
 	{ nome: 'Roteiros', resumo: 'As 340 cartas e suas Cartas de Aprendizado.' },
 	{ nome: 'Técnico', resumo: 'Stack, estrutura de dados e fluxos do protótipo.' },
+	{ nome: 'GDD', resumo: 'O Game Design Document: o mestre e os 10 sistemas, com as regras completas.' },
 ];
 
 // `aviso`: o doc cita pessoas ou partidos reais e posições assumidas (D-075).
 // `incompleto`: o começo do doc está faltando; valor = primeira seção completa (D-078).
+// `pasta`: pasta de origem a partir da raiz do repositório (padrão `docs`); `num`: número exibido no menu.
 export const DOCS = [
 	{ arquivo: '00_INDICE_GERAL.md', slug: '00-indice-geral', titulo: '00 — Índice Geral', curto: 'Índice geral', secao: 'Visão geral', descricao: 'Visão geral do projeto O Planalto e mapa da documentação.' },
 	{ arquivo: '01_CONTEXTO_E_MOTIVACAO.md', slug: '01-contexto-e-motivacao', titulo: '01 — Contexto e Motivação', curto: 'Contexto e motivação', secao: 'Visão geral', descricao: 'Origem, objetivo, público e tom do jogo.', aviso: true },
@@ -34,6 +36,18 @@ export const DOCS = [
 	{ arquivo: '17_ROTEIRO_DAS_CARTAS.md', slug: '17-roteiro-das-cartas', titulo: '17 — Roteiro das Cartas', curto: 'Roteiro das cartas', secao: 'Roteiros', descricao: 'Roteiro das cartas do jogo (22 de 340 escritas).', aviso: true },
 	{ arquivo: '18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md', slug: '18-roteiro-das-cartas-de-aprendizado', titulo: '18 — Roteiro das Cartas de Aprendizado', curto: 'Cartas de aprendizado', secao: 'Roteiros', descricao: 'Roteiro das Cartas de Aprendizado, por modo.', aviso: true },
 	{ arquivo: '13_ARQUITETURA_TECNICA.md', slug: '13-arquitetura-tecnica', titulo: '13 — Arquitetura Técnica', curto: 'Arquitetura técnica', secao: 'Técnico', descricao: 'Stack, estrutura de dados, sistemas e fluxos do jogo.' },
+	{ pasta: 'gdd', arquivo: 'GDD.md', slug: 'gdd', num: 'GDD', titulo: 'GDD — Game Design Document', curto: 'GDD mestre', secao: 'GDD', descricao: 'Documento mestre do jogo: pilares, loop, sistemas, conteúdo, arte, áudio e balanceamento.', aviso: true },
+	{ pasta: 'gdd/sistemas', arquivo: '00_INDICE.md', slug: 'gdd-00-indice', titulo: 'GDD 00 — Índice de Sistemas', curto: 'Índice de sistemas', secao: 'GDD', descricao: 'Os 10 sistemas do jogo, suas dependências e a ordem de escrita dos GDDs.' },
+	{ pasta: 'gdd/sistemas', arquivo: '01_medidores.md', slug: 'gdd-01-medidores', titulo: 'GDD 01 — Medidores', curto: 'Medidores', secao: 'GDD', descricao: 'Os 8 medidores, as relações entre eles, o fechamento do turno e a calibração.' },
+	{ pasta: 'gdd/sistemas', arquivo: '02_finais.md', slug: 'gdd-02-finais', titulo: 'GDD 02 — Finais', curto: 'Finais', secao: 'GDD', descricao: 'Os 28 finais, a prioridade entre eles, as citações e o epílogo.', aviso: true },
+	{ pasta: 'gdd/sistemas', arquivo: '03_impeachment.md', slug: 'gdd-03-impeachment', titulo: 'GDD 03 — Impeachment', curto: 'Impeachment', secao: 'GDD', descricao: 'Gatilhos, a cena de 5 fases, os testes e os placares.' },
+	{ pasta: 'gdd/sistemas', arquivo: '04_eixo.md', slug: 'gdd-04-eixo', titulo: 'GDD 04 — Eixo Ideológico', curto: 'Eixo ideológico', secao: 'GDD', descricao: 'Os 4 eixos, a pontuação das opções e a revelação final.' },
+	{ pasta: 'gdd/sistemas', arquivo: '05_cartas.md', slug: 'gdd-05-cartas', titulo: 'GDD 05 — Cartas', curto: 'Cartas', secao: 'GDD', descricao: 'Estrutura da carta, opções, sorteio do lado, cores e resolução.' },
+	{ pasta: 'gdd/sistemas', arquivo: '06_sorteio.md', slug: 'gdd-06-sorteio', titulo: 'GDD 06 — Sorteio', curto: 'Sorteio', secao: 'GDD', descricao: 'Elegibilidade, cartas obrigatórias, variedade e sorteio do turno.' },
+	{ pasta: 'gdd/sistemas', arquivo: '07_atores.md', slug: 'gdd-07-atores', titulo: 'GDD 07 — Satisfação dos Atores', curto: 'Satisfação dos atores', secao: 'GDD', descricao: 'Níveis de satisfação, atualização e cartas dos 24 atores.' },
+	{ pasta: 'gdd/sistemas', arquivo: '08_eventos.md', slug: 'gdd-08-eventos', titulo: 'GDD 08 — Eventos Encadeados', curto: 'Eventos encadeados', secao: 'GDD', descricao: 'Eventos agendados pelas opções, atraso, aviso e epílogo.' },
+	{ pasta: 'gdd/sistemas', arquivo: '09_desinformacao.md', slug: 'gdd-09-desinformacao', titulo: 'GDD 09 — Desinformação', curto: 'Desinformação', secao: 'GDD', descricao: 'O modo Influenciador, as 6 técnicas e a inoculação.' },
+	{ pasta: 'gdd/sistemas', arquivo: '10_estado_partida.md', slug: 'gdd-10-estado-partida', titulo: 'GDD 10 — Estado da Partida', curto: 'Estado da partida', secao: 'GDD', descricao: 'Máquina de estados, fim imediato, abandono e salvamento.' },
 ];
 
-export const numero = (doc) => doc.arquivo.slice(0, 2);
+export const numero = (doc) => doc.num ?? doc.arquivo.slice(0, 2);

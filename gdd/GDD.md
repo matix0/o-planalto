@@ -685,7 +685,7 @@ o-planalto/
 ├── scripts/        # .gd
 ├── addons/         # MCP
 ├── docs/           # Documentação
-├── gdd/            # GDD mestre (fora do site)
+├── gdd/            # GDD mestre e sistemas (também no site, D-143)
 └── gestao/         # Docs vivos
 ```
 

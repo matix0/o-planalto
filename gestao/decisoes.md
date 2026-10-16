@@ -152,6 +152,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-140 | Licenças (fecha P-5): ícones só CC0 (ex.: Kenney; o Font Awesome sai); fontes do Google Fonts (OFL) permitidas, com crédito e aviso de licença na tela Sobre | 2026-10-16 | Escolha do PO (P-005) |
 | D-141 | Soma dos valores iniciais do `gdd/GDD.md` §13.1 corrigida de 385 para 375 no próximo `/sync-docs` (valores mantidos) | 2026-10-16 | Escolha do PO (P-005); conferido no teste `jogo/tests/test_data.gd` |
 | D-142 | Retratos: silhueta genérica com nome até o TA propor o estilo (doc 14 §14.13 #4) | 2026-10-16 | Escolha do PO (P-005) |
+| D-143 | GDD no site: mestre + índice + 10 sistemas, numa seção "GDD"; aviso de conteúdo (D-075) só no mestre e no 02 Finais (revisa D-081, "fora do site") | 2026-10-16 | Escolha do PO |
 
 ---
 
@@ -246,6 +247,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-140 | Ícones CC0; fontes OFL com crédito |
 | D-141 | Soma inicial 375 |
 | D-142 | Retratos em silhueta |
+| D-143 | GDD no site |
 
 ### Técnica
 

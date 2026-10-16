@@ -32,7 +32,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Subagentes** | ✅ Definidos | 12 papéis |
 | **Comandos** | ✅ Definidos | 6 comandos (D-073) |
 | **Setup Claude Code** | ✅ Concluído | P-008 |
-| **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
+| **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/; GDD incluído (D-143), falta publicar |
 | **MCP Godot** | ✅ Instalado | `~/.local/share/godot-mcp`, `.mcp.json` (D-131, D-132) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
 | **GDD Completo** | ✅ 2.0 aprovado | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011 a P-013); P-5 e P-7 ficam com o protótipo |
@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-143 | GDD no site (revisa D-081) | 2026-10-16 |
 | D-130–D-142 | P-005 (Godot 4.7.2, MCP, testes headless, escopo, EN, `jogo/`, JSON, licenças, retratos) | 2026-10-16 |
 | D-124–D-129 | P-013 (balanceamento, eventos, finais, GDD 2.0) | 2026-10-16 |
 | D-098–D-103 | GDD 05 Cartas | 2026-10-16 |

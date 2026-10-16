@@ -1,11 +1,13 @@
 ---
+import { DOCS } from '../docs-map.mjs';
+
 // Onde o projeto está, sem prometer jogo pronto (parecer PSI).
 // Fonte: gestao/estado.md e gestao/plano-de-acao.md (P-001 a P-006).
 const ETAPAS = [
-	{ estado: 'feito', rotulo: 'Feito', titulo: 'Design conceitual', detalhe: 'Medidores, modos, atores, 340 cartas e 26 finais' },
-	{ estado: 'feito', rotulo: 'Feito', titulo: 'Documentação', detalhe: '19 documentos, dos fundamentos aos roteiros' },
-	{ estado: 'proximo', rotulo: 'Próximo', titulo: 'GDD completo', detalhe: 'Consolida todos os sistemas do jogo' },
-	{ estado: 'depois', rotulo: 'Depois', titulo: 'Protótipo jogável', detalhe: 'Godot, para web, celular e PC' },
+	{ estado: 'feito', rotulo: 'Feito', titulo: 'Design conceitual', detalhe: 'Medidores, modos, atores, 340 cartas e 28 finais' },
+	{ estado: 'feito', rotulo: 'Feito', titulo: 'Documentação', detalhe: `${DOCS.length} documentos, dos fundamentos ao GDD` },
+	{ estado: 'feito', rotulo: 'Feito', titulo: 'GDD completo', detalhe: 'Versão 2.0: o mestre e os 10 sistemas' },
+	{ estado: 'proximo', rotulo: 'Em andamento', titulo: 'Protótipo jogável', detalhe: 'Godot, para web, celular e PC' },
 	{ estado: 'depois', rotulo: 'Depois', titulo: 'Testes', detalhe: '3 a 5 pessoas e validação com educador' },
 ];
 ---

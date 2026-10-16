@@ -1,17 +1,16 @@
-// Copia `docs/*.md` (fonte de verdade, legível no GitHub) para a coleção do Starlight,
+// Copia `docs/*.md` e o GDD (`gdd/`), fontes de verdade legíveis no GitHub, para a coleção do Starlight,
 // acrescentando o front matter que o Starlight exige. Os arquivos gerados não vão para o git.
 //
 // - O título vem de `src/docs-map.mjs`; o H1 do próprio doc sai do corpo (o Starlight já mostra o título).
-// - Anterior/próximo seguem a ordem numérica 00–13, mesmo com o menu agrupado por seções.
+// - Anterior/próximo seguem a ordem numérica dos docs (00–18) e depois a do GDD, mesmo com o menu agrupado por seções.
 // - Docs com `aviso` ganham um aviso de conteúdo no topo; docs `incompleto` ganham banner e `noindex`.
 
 import { readFile, writeFile, readdir, rm, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { DOCS } from '../src/docs-map.mjs';
+import { DOCS, numero } from '../src/docs-map.mjs';
 
 const raiz = path.resolve(fileURLToPath(import.meta.url), '../../..');
-const origem = path.join(raiz, 'docs');
 const destino = path.join(raiz, 'site/src/content/docs');
 const BASE = '/o-planalto';
 
@@ -49,15 +48,20 @@ function limparCorpo(texto) {
 	return linhas.join('\n').trimEnd() + '\n';
 }
 
-const ordemNumerica = [...DOCS].sort((a, b) => a.arquivo.localeCompare(b.arquivo));
+// Docs de `docs/` em ordem numérica; o GDD vem depois, na ordem de `DOCS`.
+const pasta = (doc) => doc.pasta ?? 'docs';
+const ordemNumerica = [
+	...DOCS.filter((doc) => pasta(doc) === 'docs').sort((a, b) => a.arquivo.localeCompare(b.arquivo)),
+	...DOCS.filter((doc) => pasta(doc) !== 'docs'),
+];
 
 await mkdir(destino, { recursive: true });
 for (const nome of await readdir(destino)) {
-	if (/^\d{2}-.*\.md$/.test(nome)) await rm(path.join(destino, nome));
+	if (/^(\d{2}-|gdd).*\.md$/.test(nome)) await rm(path.join(destino, nome));
 }
 
 for (const [i, doc] of ordemNumerica.entries()) {
-	const texto = await readFile(path.join(origem, doc.arquivo), 'utf8');
+	const texto = await readFile(path.join(raiz, pasta(doc), doc.arquivo), 'utf8');
 	const anterior = ordemNumerica[i - 1];
 	const proximo = ordemNumerica[i + 1];
 	const fm = [
@@ -65,7 +69,7 @@ for (const [i, doc] of ordemNumerica.entries()) {
 		`title: ${yaml(doc.titulo)}`,
 		`description: ${yaml(doc.descricao)}`,
 		'sidebar:',
-		`  label: ${yaml(`${doc.arquivo.slice(0, 2)} · ${doc.curto}`)}`,
+		`  label: ${yaml(`${numero(doc)} · ${doc.curto}`)}`,
 	];
 	if (doc.incompleto) {
 		fm.push('  badge:', '    text: incompleto', '    variant: default');
@@ -74,7 +78,7 @@ for (const [i, doc] of ordemNumerica.entries()) {
 	}
 	fm.push(anterior ? `prev:\n  link: ${yaml(`${BASE}/${anterior.slug}/`)}\n  label: ${yaml(anterior.titulo)}` : 'prev: false');
 	fm.push(proximo ? `next:\n  link: ${yaml(`${BASE}/${proximo.slug}/`)}\n  label: ${yaml(proximo.titulo)}` : 'next: false');
-	fm.push(`editUrl: ${yaml(`https://github.com/matix0/o-planalto/blob/main/docs/${doc.arquivo}`)}`);
+	fm.push(`editUrl: ${yaml(`https://github.com/matix0/o-planalto/blob/main/${pasta(doc)}/${doc.arquivo}`)}`);
 	fm.push('---', '');
 
 	const corpo = marcarMedidores(limparCorpo(texto));
@@ -82,4 +86,4 @@ for (const [i, doc] of ordemNumerica.entries()) {
 	await writeFile(path.join(destino, `${doc.slug}.md`), saida);
 }
 
-console.log(`sync-docs: ${DOCS.length} documentos de docs/ → site/src/content/docs/`);
+console.log(`sync-docs: ${DOCS.length} documentos de docs/ e gdd/ → site/src/content/docs/`);
