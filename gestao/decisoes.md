@@ -107,6 +107,12 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-095 | `Capital Político` em 0 não encerra a partida: abre a cena de impeachment em qualquer ano; o final "Impeachment" vem da condenação. Exceção à D-089 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011; resolve P-1 em parte) |
 | D-096 | 27 finais: +Paralisia Fiscal (Caixa = 0), +Mandato Comum (neutro), −#26 Protecionismo Soberano (duplicado); finais por medidor em 100 só os 3 de Captura, com ≥ 95 no fim do Ano 4; prioridade por categoria; revisa D-021 | 2026-10-14 | Escolha do PO (GDD 02 Finais, P-011) |
 | D-097 | Intenção de design: o jogo tem alinhamento progressista e de esquerda, não explicitado ao jogador. Toda escolha continua tendo custo (pilar 1). Textos voltados ao jogador ficam como estão. Não se busca neutralizar o "moral" por cor ou eixo; Diplomacia ≥ 15% continua. O PSI revisa ética e manipulação, não neutralidade. Registro só em docs internos | 2026-10-15 | Escolha do PO |
+| D-098 | Campo único `efeitos` com sinal (substitui `custo` + `efeitos`); cada opção mexe em 2-4 medidores, ≥ 1 negativo, múltiplos de 5 de ±5 a ±30 | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-099 | O lado de cada opção é sorteado com 50% a cada exibição da carta | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-100 | Custo real por cor: toda cor tem saldo negativo em ≥ 1 medidor no baralho; o resto é só relatório do ECO | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-101 | Tipo `Impeachment` (cartas da cena, fora das 340, com campo `teste`); tipo "Evento" removido — eventos não são cartas | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-102 | Carta só entra no baralho com a Carta de Aprendizado aprovada (hoje 22 jogáveis) | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
+| D-103 | As duas opções de uma carta têm cores distintas; opção que zera medidor aplica todos os efeitos e o eixo antes do final | 2026-10-16 | Escolha do PO (GDD 05 Cartas, P-012) |
 
 ---
 
@@ -156,6 +162,12 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-027 | Eixo 9axes |
 | D-030 | Cores partidárias |
 | D-092 | Cor por opção |
+| D-098 | Campo único `efeitos` |
+| D-099 | Lado sorteado por exibição |
+| D-100 | Custo real por cor |
+| D-101 | Tipo Impeachment |
+| D-102 | Carta exige Aprendizado aprovado |
+| D-103 | Cores distintas por carta |
 
 ### Técnica
 

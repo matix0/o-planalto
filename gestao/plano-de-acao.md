@@ -284,6 +284,32 @@
 
 ---
 
+## P-012 — GDDs de sistema 05-10
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-15 |
+| **Objetivo** | Escrever os GDDs de sistema 05-10 com `/gdd-sistema`, na ordem de `gdd/sistemas/00_INDICE.md:27` |
+| **Escopo** | Só os GDDs 05-10; pendências do P-009, P-010 e P-011 ficam fora |
+| **Notas** | `.claude/notas/P-012-gdds-05-10.md` (local); cartas antigas do P-003 em `.claude/notas/cartas-P-003-nao-verificado.md` (só consulta, não versionado) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | GDD 05 Cartas | ✅ | `gdd/sistemas/05_cartas.md` |
+| 2 | GDD 07 Atores (P-10) | ⏳ | — |
+| 3 | GDD 08 Eventos | ⏳ | — |
+| 4 | GDD 06 Sorteio (P-4) | ⏳ | — |
+| 5 | GDD 09 Desinformação | ⏳ | — |
+| 6 | GDD 10 Estado da partida (P-12) | ⏳ | — |
+| 7 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |
