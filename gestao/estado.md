@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-14
+**Última atualização:** 2026-10-16
 **Fase atual:** Setup de documentação (Fase 0-3 concluídas)
 **Próxima fase:** Escrita dos arquivos 14-18 e GDD
 
@@ -22,9 +22,9 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Modos** | ✅ Definidos | 10 modos institucionais |
 | **Atores** | ✅ Definidos | 24 atores (D-085) |
 | **Cartas** | ✅ Inventariadas | 340 cartas |
-| **Finais** | ✅ Consolidados | 27 finais (D-096) |
+| **Finais** | ✅ Consolidados | 28 finais (D-096, D-122) |
 | **Impeachment** | ✅ Reformulado | Cena de golpe, a partir do Ano 2 |
-| **Eventos Encadeados** | ✅ Mapeados | 78 eventos |
+| **Eventos Encadeados** | ✅ Redefinidos | Só das opções das cartas (D-109) |
 | **Eixo Ideológico** | ✅ Definido | Modelo 9axes adaptado |
 | **Stack** | ✅ Definida | Godot 4.7 + MCP + Agentes de IA |
 | **Documentação** | ✅ Escrita | 14 arquivos em `docs/` |
@@ -35,7 +35,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
-| **GDD Completo** | 🟡 Rascunho 1.2 + 4 GDDs de sistema | `gdd/GDD.md` + `gdd/sistemas/01-04` (P-011); faltam 05-10 |
+| **GDD Completo** | 🟡 Rascunho 1.2 + 10 GDDs de sistema | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011, P-012); abertas no §16.4: P-5, P-7, P-11 |
 | **Protótipo Técnico** | ⏳ Pendente | Bloqueado pelo GDD |
 | **Testes** | ⏳ Pendentes | Após protótipo |
 | **Publicação** | ⏳ Pendente | Após validação |
@@ -113,7 +113,13 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-093 | Kit do GDD do CCGS (MIT) | 2026-10-14 |
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
-| D-096 | 27 finais | 2026-10-14 |
+| D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-098–D-103 | GDD 05 Cartas | 2026-10-16 |
+| D-104–D-108 | GDD 07 Atores | 2026-10-16 |
+| D-109–D-112 | GDD 08 Eventos | 2026-10-16 |
+| D-113–D-117 | GDD 06 Sorteio | 2026-10-16 |
+| D-118–D-120 | GDD 09 Desinformação | 2026-10-16 |
+| D-121–D-123 | GDD 10 Estado da partida | 2026-10-16 |
 
 ---
 
@@ -138,7 +144,15 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**P-012 — GDDs de sistema 05-10:** Cartas, Atores, Eventos, Sorteio, Desinformação, Estado da partida (`/gdd-sistema`, ordem em `gdd/sistemas/00_INDICE.md`).
+**`/sync-docs`:** aplicar os "Ajustes para outros docs" dos GDDs 05-10 (docs 05, 11, 12, 13, 15; `CLAUDE.md`: 28 finais, eventos, atores `ACT`).
+
+**Pendências do P-012:**
+- Citação e categoria do final "Renúncia" (`gdd/sistemas/02_finais.md` §3.1).
+- Escolher os 2 atores sem carta de oferta (`gdd/sistemas/07_atores.md` §3.5).
+- Proporção de opções com evento, com o ECO (`gdd/sistemas/08_eventos.md` §7).
+- Faixas seguras dos GDDs 05-10 sem simulação do ECO `[não verificado]`.
+- Gravação local em Godot web/mobile `[não verificado]` (P-005).
+- Baralho jogável: 22 cartas (D-102) → partida curta até o doc 17/18 avançar.
 
 **Pendências do P-011:**
 - Mais cartas de Diplomacia (≥ 15% por eixo). A neutralização do "moral" por cor e eixo foi cancelada (D-097); toda opção mantém custo real.

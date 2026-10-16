@@ -7,7 +7,7 @@
 
 ## 1. Visão geral
 
-24 atores (`ACT-001` a `ACT-024`, D-085) em 4 categorias — Capital, Estado, Sociedade Civil, Mídia e Tecnologia (`gdd/GDD.md:492-501`). Cada ator tem satisfação de 0 a 100, que começa em 50, e um nível (Furioso a Aliado) que muda a chance de suas cartas aparecerem e o que ele faz (`gdd/GDD.md:375-383`). A satisfação muda quando o jogador escolhe uma opção cujo campo `atores` cita o ator: cada opção diz, de forma explícita, quem atende (+1) e quem contraria (−1). Os atores têm 70 cartas próprias (`ATOR-xxx`): 22 atores com 3 e 2 atores com 2.
+24 atores (`ACT-001` a `ACT-024`, D-085) em 4 categorias — Capital, Estado, Sociedade Civil, Mídia e Tecnologia (`gdd/GDD.md` §8.3). Cada ator tem satisfação de 0 a 100, que começa em 50, e um nível (Furioso a Aliado) que muda a chance de suas cartas aparecerem e o que ele faz (`gdd/GDD.md` §6.3). A satisfação muda quando o jogador escolhe uma opção cujo campo `atores` cita o ator: cada opção diz, de forma explícita, quem atende (+1) e quem contraria (−1). Os atores têm 70 cartas próprias (`ATOR-xxx`): 22 atores com 3 e 2 atores com 2.
 
 ## 2. Fantasia do jogador
 
@@ -20,7 +20,7 @@ O jogador governa cercado de gente que quer algo dele. Cada ator tem rosto, voz,
 | Campo | Regra |
 | :--- | :--- |
 | `id` | `ACT-001` a `ACT-024`, único |
-| `nome`, `categoria`, `arquetipo` | Das fichas do doc 11; `categoria` é uma das 4 (`gdd/GDD.md:496-501`) |
+| `nome`, `categoria`, `arquetipo` | Das fichas do doc 11; `categoria` é uma das 4 (`gdd/GDD.md` §8.3) |
 | `oferece` / `cobra` | Medidores das fichas; guia de escrita, sem regra no jogo |
 | `cartas` | 3 IDs `ATOR-xxx`, um por função (§3.4); 2 IDs para os 2 atores sem oferta |
 
@@ -82,7 +82,7 @@ Os 2 atores sem carta de oferta: escolha do PO ao escrever as cartas deles no do
 | Opção cita o mesmo ator 2×, `id` inexistente ou > 3 atores | `/validate-cards` reprova; no jogo, a carta é excluída do baralho e o erro vai ao log |
 | Carta de ator não cita esse ator numa das opções | `/validate-cards` reprova |
 | Opção zera um medidor | Atores atualizados no passo 2b, antes do final (`gdd/sistemas/05_cartas.md` §5) |
-| Carta de oferta (Satisfeito ou Aliado) — Evento de Boa Vontade (`gdd/GDD.md:458`, `gdd/sistemas/01_medidores.md:51`) | Uma opção pode ter 0 efeitos negativos; única exceção à `gdd/sistemas/05_cartas.md` §3.3 |
+| Carta de oferta (Satisfeito ou Aliado) — Evento de Boa Vontade (`gdd/GDD.md` §7.2, `gdd/sistemas/01_medidores.md:51`) | Uma opção pode ter 0 efeitos negativos; única exceção à `gdd/sistemas/05_cartas.md` §3.3 |
 | Atores no fim do Ano 4 | A satisfação não entra nos finais (GDD 02) |
 
 ## 6. Dependências
@@ -110,7 +110,7 @@ O GDD 07 não lê os medidores: a satisfação só muda pelo campo `atores`.
 | Faixas dos níveis | 20 / 40 / 60 / 80 | ±5 em cada corte | Tempo do ator em cada função de carta |
 | Cartas por ator | 3 (2 para 2 atores) | Fixo (D-020) | Total de 70 cartas ATOR |
 
-Passo e faixas: `gdd/GDD.md:377-392`. Ritmo: ⌈30 / `P`⌉ (de 50 a 20). Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
+Passo e faixas: `gdd/GDD.md` §6.3. Ritmo: ⌈30 / `P`⌉ (de 50 a 20). Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
 
 ## 8. Critérios de aceite
 

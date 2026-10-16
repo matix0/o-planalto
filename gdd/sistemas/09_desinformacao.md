@@ -7,7 +7,7 @@
 
 ## 1. Visão geral
 
-Sistema de conteúdo: as 20 cartas do modo Influenciador (INST-181 a INST-200, `docs/12_FICHAS_DOS_MODOS.md`), cada uma ensinando uma de 6 técnicas de manipulação, indicada no campo `tecnica` (`docs/05_SISTEMAS_E_MECANICAS.md` §05.10.2). A inoculação (McGuire, 1964; van der Linden, 2022, `gdd/GDD.md:431`) acontece pela exposição na carta, pela escolha e pela Carta de Aprendizado, que nomeia a técnica. Não há mecânica nova: o peso nos medidores está no GDD 01 (`Integridade` < 30 dobra a perda de `Consciência`) e a frequência em crise vem do sorteio (carta ligada a medidor < 30, GDD 06).
+Sistema de conteúdo: as 20 cartas do modo Influenciador (INST-181 a INST-200, `docs/12_FICHAS_DOS_MODOS.md`), cada uma ensinando uma de 6 técnicas de manipulação, indicada no campo `tecnica` (`docs/05_SISTEMAS_E_MECANICAS.md` §05.10.2). A inoculação (McGuire, 1964; van der Linden, 2022, `gdd/GDD.md` §6.8) acontece pela exposição na carta, pela escolha e pela Carta de Aprendizado, que nomeia a técnica. Não há mecânica nova: o peso nos medidores está no GDD 01 (`Integridade` < 30 dobra a perda de `Consciência`) e a frequência em crise vem do sorteio (carta ligada a medidor < 30, GDD 06).
 
 ## 2. Fantasia do jogador
 
@@ -33,7 +33,7 @@ Valem também todas as regras do GDD 05 (2-4 efeitos, ≥ 1 negativo, cor, eixo,
 
 ### 3.3. Guia de escrita (não é regra)
 
-| Reação | Custo típico (`gdd/GDD.md:437`) |
+| Reação | Custo típico (`gdd/GDD.md` §6.8) |
 | :--- | :--- |
 | Aceitar | Perde `Integridade` e `Consciência`; ganha alcance (`Legitimidade` ou `Capital Político`) |
 | Recusar | Perde `Legitimidade` |
@@ -91,7 +91,7 @@ Valem também todas as regras do GDD 05 (2-4 efeitos, ≥ 1 negativo, cor, eixo,
 | Cartas do modo | 20 | Fixo (D-020) | Exposição às técnicas |
 | Número de técnicas | 6 | 4-8 | Variedade pedagógica; > 8 não cabe na cobertura mínima |
 | Cobertura mínima por técnica | 2 | 1-3 | 3 × 6 = 18 em 20 deixa quase nenhuma folga |
-| Dobro da `Consciência` | ×2 com `Integridade` < 30 | ×1,5 a ×2 | Peso da desinformação; ajustado só no GDD 01 (`gdd/sistemas/01_medidores.md:124`) |
+| Dobro da `Consciência` | ×2 com `Integridade` < 30 | ×1,5 a ×2 | Peso da desinformação; ajustado só no GDD 01 (`gdd/sistemas/01_medidores.md` §7) |
 
 Técnicas: `docs/05_SISTEMAS_E_MECANICAS.md` §05.10.2; cobertura: decisão do PO no P-012. Faixas seguras: proposta aprovada pelo PO (2026-10-16) `[não verificado]`.
 

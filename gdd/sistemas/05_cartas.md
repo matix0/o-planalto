@@ -7,11 +7,11 @@
 
 ## 1. Visão geral
 
-A carta é a unidade de decisão do jogo: 340 cartas — 200 institucionais (INST), 70 temáticas (THEM) e 70 de atores (ATOR) (`gdd/GDD.md:466-475`). Cada carta traz um problema e duas opções (`opcao_a` / `opcao_b`), cada uma com texto, cor partidária, vetor de eixo, efeitos nos medidores e consequência (`gdd/GDD.md:677-702`). O lado de cada opção é sorteado a cada partida e nunca recebe rótulo ideológico (D-084); a cor é a de quem propõe a opção (D-092). O ECO valida o saldo de efeitos por cor, e toda opção tem custo real em algum medidor (D-097).
+A carta é a unidade de decisão do jogo: 340 cartas — 200 institucionais (INST), 70 temáticas (THEM) e 70 de atores (ATOR) (`gdd/GDD.md` §8.1). Cada carta traz um problema e duas opções (`opcao_a` / `opcao_b`), cada uma com texto, cor partidária, vetor de eixo, efeitos nos medidores e consequência (`gdd/GDD.md` §12.2). O lado de cada opção é sorteado a cada partida e nunca recebe rótulo ideológico (D-084); a cor é a de quem propõe a opção (D-092). O ECO valida o saldo de efeitos por cor, e toda opção tem custo real em algum medidor (D-097).
 
 ## 2. Fantasia do jogador
 
-O jogador sente o peso de decidir sozinho, com um gesto, um problema sem resposta limpa: as duas opções são legítimas e as duas custam algo (pilares 2 e 4). Como o lado é sorteado e não tem rótulo, ele escolhe pelo conteúdo, não por reflexo ideológico (D-084). A cor mostra quem propõe cada saída, e ele aprende que toda proposta tem dono e interesse (D-092). O sentido da escolha só chega depois: na consequência, na Carta de Aprendizado e no radar do final (pilares 1 e 5, `gdd/GDD.md:98-114`).
+O jogador sente o peso de decidir sozinho, com um gesto, um problema sem resposta limpa: as duas opções são legítimas e as duas custam algo (pilares 2 e 4). Como o lado é sorteado e não tem rótulo, ele escolhe pelo conteúdo, não por reflexo ideológico (D-084). A cor mostra quem propõe cada saída, e ele aprende que toda proposta tem dono e interesse (D-092). O sentido da escolha só chega depois: na consequência, na Carta de Aprendizado e no radar do final (pilares 1 e 5, `gdd/GDD.md` §2).
 
 ## 3. Regras detalhadas
 
@@ -86,7 +86,7 @@ Ao soltar a carta, nesta ordem:
 | Carta solta antes do limite de arraste | Volta ao centro; nada é aplicado (`docs/14_UI_UX_DESIGN.md:106`) |
 | Mesma cor em A e B | Proibido; `/validate-cards` reprova |
 | Dado inválido (cor fora das 7, eixo fora de −2..+2, efeitos fora da §3.3, `id` repetido) | `/validate-cards` reprova; no jogo, a carta é excluída do baralho e o erro vai ao log |
-| Aprendizado em rascunho ou sem fonte (D-091) | A carta não entra no baralho até o texto ser aprovado. Hoje: 22 cartas jogáveis (`gdd/GDD.md:923`) |
+| Aprendizado em rascunho ou sem fonte (D-091) | A carta não entra no baralho até o texto ser aprovado. Hoje: 22 cartas jogáveis (`gdd/GDD.md` §16.4) |
 | Cartas elegíveis esgotadas | GDD 06 Sorteio |
 
 ## 6. Dependências

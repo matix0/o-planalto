@@ -10,6 +10,10 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- `gdd/sistemas/`: GDDs 05 Cartas, 06 Sorteio, 07 Atores, 08 Eventos, 09 Desinformação, 10 Estado da partida — 8 seções cada (P-012); os 10 sistemas concluídos
+- Final "Renúncia" (28º, ao abandonar o mandato), salvamento automático e "Continuar" (D-121, D-122)
+- Campos de carta: `atores`, `eventos` (na opção), `tecnica` e `reacao` (modo Influenciador); tipo `Impeachment`
+- Decisões D-098 a D-123
 - Kit do GDD (P-011, D-093, adaptado do Claude Code Game Studios, MIT): regra `.claude/rules/design-docs.md` e comandos `/mapear-sistemas`, `/gdd-sistema`, `/revisar-gdds`
 - `gdd/sistemas/`: índice de 10 sistemas (D-063) e GDDs 01 Medidores, 02 Finais, 03 Impeachment, 04 Eixo — 8 seções cada, com simulações do ECO e pareceres do GD
 - Citações dos finais verificadas na web (17 com fonte; 4 com fonte fraca aceita; 5 sem citação)
@@ -23,6 +27,11 @@ Versionamento: [SemVer](https://semver.org/).
 - Decisões D-081 a D-092
 
 ### Alterado
+- Campo único `efeitos` com sinal (sai `custo`); lado sorteado a cada exibição; custo real por cor (D-098 a D-100)
+- Atores com código `ACT-xxx`, satisfação inicial 50, cartas por função (ataque, exigência, oferta) (D-104 a D-108)
+- Eventos só das opções, atraso de 1-2 turnos, disparo no início do turno; tabelas fixas removidas (D-109 a D-112, revisa D-024)
+- Sorteio: 7 cartas por turno, sem repetição, teto de 3 obrigatórias, 1 por modo (D-113 a D-117; resolve P-4)
+- GDD mestre §4.2, §4.4, §5.3, §5.4, §6.2-6.4, §6.8, §7.2, §8.5, §12.2 alinhados aos GDDs de sistema
 - Sub-medidores removidos (D-094); Consciência inicial 40; calibração ±5; bônus por equilíbrio +3 com todos > 45; fim do Ano 4 sem fechamento
 - 27 finais (D-096): +Paralisia Fiscal, +Mandato Comum, −Protecionismo Soberano; finais em 100 só os 3 de Captura (≥ 95); `Capital Político` em 0 abre o impeachment (D-095)
 - Impeachment: cena de 5 cartas extras com testes por opção e apoio; absolvição ~37% no gatilho principal

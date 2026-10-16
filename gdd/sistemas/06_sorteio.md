@@ -27,7 +27,7 @@ Carta elegível cumpre tudo:
 
 ### 3.2. Carta ligada
 
-Carta ligada ao medidor M: alguma opção tem efeito positivo em M. A "carta de recuperação" (`gdd/GDD.md:457`) é uma carta ligada.
+Carta ligada ao medidor M: alguma opção tem efeito positivo em M. A "carta de recuperação" (`gdd/GDD.md` §7.2) é uma carta ligada.
 
 ### 3.3. Início do turno
 
@@ -78,7 +78,7 @@ A emergência conta para o teto: com `Em` ≥ 3, nenhuma carta de ator ou de med
 | Obrigatória deixa de ser elegível antes de aparecer | Elegibilidade checada de novo na exibição; se falhar, a vaga vai ao sorteio |
 | Faltam elegíveis para completar 7 (hoje 22 jogáveis para 28 vagas, D-102) | O turno termina com as cartas que houver e fecha normalmente; no Ano 4, finais (GDD 02). Partida curta aceita pelo PO |
 | Turno sem nenhuma elegível | Fecha sem cartas; eventos e fechamento acontecem normalmente |
-| Fim do Ano 4 com medidor ≤ 10 | Sem emergência: o mandato acabou (`gdd/sistemas/02_finais.md:101`) |
+| Fim do Ano 4 com medidor ≤ 10 | Sem emergência: o mandato acabou (`gdd/sistemas/02_finais.md` §5) |
 | Cena de impeachment no meio do turno | Depois da cena, o turno continua com as vagas restantes |
 | Fim imediato (medidor em 0) | O sorteio para; as cartas restantes não aparecem |
 
@@ -105,12 +105,12 @@ A emergência conta para o teto: com `Em` ≥ 3, nenhuma carta de ator ou de med
 | :--- | :--- | :--- | :--- |
 | Cartas por turno `N` | 7 | 6-8 | Duração da partida (D-088, ~15 min); 28 cartas |
 | Teto de obrigatórias `T` | 3 | 2-4 | Pressão × variedade; 4 em 7 = mais da metade do turno em cobrança (pilar 2) |
-| Limite do medidor obrigatório | < 30 | 25-35 | Quando a crise puxa cartas; acima da emergência (≤ 10, `gdd/sistemas/01_medidores.md:123`) |
+| Limite do medidor obrigatório | < 30 | 25-35 | Quando a crise puxa cartas; acima da emergência (≤ 10, `gdd/sistemas/01_medidores.md` §7) |
 | Limite por modo (sorteadas) | 1 | 1-2 | Variedade de assuntos no turno |
 | Peso das sorteadas | Igual | Fixo | Sorteio "narrativo, não ponderado" (`docs/05_SISTEMAS_E_MECANICAS.md` §05.04.1) |
 | `ano_minimo` | 1-4 | 1-4 | Concentra cartas de crise nos anos finais |
 
-Atuais: decisões do PO no P-012; limite de 30 de `gdd/GDD.md:347`. Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
+Atuais: decisões do PO no P-012; limite de 30 de `gdd/GDD.md` §6.2.1. Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
 
 ## 8. Critérios de aceite
 

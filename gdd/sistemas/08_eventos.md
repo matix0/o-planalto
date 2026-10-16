@@ -7,11 +7,11 @@
 
 ## 1. Visão geral
 
-Evento encadeado é a consequência atrasada de uma escolha. Cada opção de carta pode agendar eventos (campo `eventos`); só os da opção escolhida entram na fila. Cada evento dispara 1 ou 2 turnos depois, no início do turno, antes da primeira carta: aparece numa tela de aviso e aplica seus efeitos nos medidores com o multiplicador do ano (`gdd/sistemas/01_medidores.md:28`). Não pode ser evitado. Eventos que cairiam depois do Ano 4 vão para o epílogo do final (`gdd/sistemas/02_finais.md:102`).
+Evento encadeado é a consequência atrasada de uma escolha. Cada opção de carta pode agendar eventos (campo `eventos`); só os da opção escolhida entram na fila. Cada evento dispara 1 ou 2 turnos depois, no início do turno, antes da primeira carta: aparece numa tela de aviso e aplica seus efeitos nos medidores com o multiplicador do ano (`gdd/sistemas/01_medidores.md:28`). Não pode ser evitado. Eventos que cairiam depois do Ano 4 vão para o epílogo do final (`gdd/sistemas/02_finais.md` §5).
 
 ## 2. Fantasia do jogador
 
-O jogador sente que o passado cobra a conta: uma decisão esquecida volta um ou dois anos depois, num aviso que ele não pode impedir. Aprende que política pública tem efeito retardado — cortar hoje vira epidemia amanhã; investir hoje vira cooperativa depois (`gdd/GDD.md:399-403`) — e que o epílogo herda o que ele plantou (pilar 1). O aviso chega antes da próxima decisão, para ligar causa e efeito antes de escolher de novo (pilar 3, ciclo de Kolb, `gdd/GDD.md:112`).
+O jogador sente que o passado cobra a conta: uma decisão esquecida volta um ou dois anos depois, num aviso que ele não pode impedir. Aprende que política pública tem efeito retardado — cortar hoje vira epidemia amanhã; investir hoje vira cooperativa depois (`gdd/GDD.md` §6.4) — e que o epílogo herda o que ele plantou (pilar 1). O aviso chega antes da próxima decisão, para ligar causa e efeito antes de escolher de novo (pilar 3, ciclo de Kolb, `gdd/GDD.md` §2.1).
 
 ## 3. Regras detalhadas
 
@@ -41,7 +41,7 @@ No início de cada turno, antes da primeira carta, na ordem de agendamento:
 
 ### 3.4. Epílogo
 
-Eventos com destino depois do Ano 4, ou ainda na fila quando a partida termina, aparecem como lista de `texto` no epílogo de qualquer final, sem aplicar efeitos (`gdd/sistemas/02_finais.md:102`).
+Eventos com destino depois do Ano 4, ou ainda na fila quando a partida termina, aparecem como lista de `texto` no epílogo de qualquer final, sem aplicar efeitos (`gdd/sistemas/02_finais.md` §5).
 
 ## 4. Fórmulas
 
@@ -86,7 +86,7 @@ Como `D` ≥ 2, o multiplicador ×0,25 do Ano 1 nunca se aplica a eventos.
 | Sistema | Uso | Cita o 08? |
 | :--- | :--- | :--- |
 | 01 Medidores | Recebe os efeitos dos eventos | ✅ `gdd/sistemas/01_medidores.md:106` |
-| 02 Finais | Epílogo com os eventos pendentes | ✅ `gdd/sistemas/02_finais.md:102,107` |
+| 02 Finais | Epílogo com os eventos pendentes | ✅ `gdd/sistemas/02_finais.md` §5-6 |
 | 05 Cartas | Campo `eventos` na opção; passo 3 da §3.5 | ✅ `gdd/sistemas/05_cartas.md` §3.3, §3.5, §6 |
 | 03 Impeachment | Cartas da cena sem eventos; a cena interrompe o disparo (§5) | ✅ `gdd/sistemas/03_impeachment.md` §6 |
 | 06 Sorteio | Eventos disparam antes da primeira carta do turno | ⏳ a escrever |
