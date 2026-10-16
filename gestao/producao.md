@@ -30,7 +30,7 @@
 | **RT-05** | Performance em mobile | Médio | Baixa | Testes desde o início | 🟡 Ativo |
 | **RT-06** | Exportação Web problemática | Médio | Média | Testes em navegador | 🟡 Ativo |
 | **RT-07** | Compatibilidade entre plataformas | Médio | Média | Testes em 3 plataformas | 🟡 Ativo |
-| **RT-08** | Godot instalado é 4.6.stable, stack prevê 4.7 (D-052) — fonte: `godot --version` | Médio | Alta | Atualizar antes do P-005 ou rever D-052 | 🟡 Ativo |
+| **RT-08** | Godot instalado é 4.6.stable, stack prevê 4.7 (D-052) — fonte: `godot --version` | Médio | Alta | Atualizar antes do P-005 ou rever D-052 | 🟢 Fechado (D-130) |
 | **RT-09** | Node local 22.11; o site (Astro 7) exige ≥ 22.12 (`npm view astro@7 engines`) | Baixo | Alta | Atualizar o Node para build local; o deploy no GitHub usa Node 24 | 🟡 Ativo |
 
 ---

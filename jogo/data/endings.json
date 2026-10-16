@@ -1,0 +1,612 @@
+[
+  {
+    "id": "END-001",
+    "name": "Barbárie",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "dignity",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "Socialismo ou barbárie.",
+    "author": "Rosa Luxemburgo (Brochura de Junius, 1915)",
+    "source": "https://www.marxists.org/francais/luxembur/junius/"
+  },
+  {
+    "id": "END-002",
+    "name": "Alienação Total",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "awareness",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "Não é moda, quem pensa incomoda / … não vira massa de manobra",
+    "author": "MV Bill (\"Só Deus Pode Me Julgar\")",
+    "source": "https://www.letras.mus.br/blog/frases-mv-bill/"
+  },
+  {
+    "id": "END-003",
+    "name": "Colônia",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "sovereignty",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "Em lugar do cidadão formou-se um consumidor, que aceita ser chamado de usuário.",
+    "author": "Milton Santos (O Espaço do Cidadão, 1987)",
+    "source": "https://vitruvius.com.br/revistas/read/arquitextos/23.268/8604"
+  },
+  {
+    "id": "END-004",
+    "name": "Autogestão Popular",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "security",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "A emancipação dos trabalhadores deve ser obra dos próprios trabalhadores.",
+    "author": "Estatutos da AIT (1864)",
+    "source": "https://www.marxists.org/archive/marx/iwma/documents/1864/rules.htm"
+  },
+  {
+    "id": "END-005",
+    "name": "Desintegração",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "integrity",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": null,
+    "author": null,
+    "source": null
+  },
+  {
+    "id": "END-006",
+    "name": "Paralisia Fiscal",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "treasury",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "O bem que o Estado pode fazer é limitado; o mal, infinito.",
+    "author": "Roberto Campos (Na virada do milênio, 1999)",
+    "source": "https://pt.wikiquote.org/wiki/Roberto_Campos"
+  },
+  {
+    "id": "END-007",
+    "name": "Impeachment",
+    "category": "catastrophe",
+    "trigger": "impeachment",
+    "conditions": [],
+    "quote": "Uma condenação política exige obrigatoriamente a ocorrência de um crime de responsabilidade…",
+    "author": "Dilma Rousseff (Senado, 29/08/2016)",
+    "source": "https://agenciabrasil.ebc.com.br/politica/noticia/2016-08/confira-integra-do-discurso-de-dilma-em-julgamento-do-impeachment-no-senado"
+  },
+  {
+    "id": "END-008",
+    "name": "Revolta Popular",
+    "category": "catastrophe",
+    "trigger": "instant",
+    "conditions": [
+      {
+        "meter": "legitimacy",
+        "op": "==",
+        "value": 0
+      }
+    ],
+    "quote": "Liberdade ainda que tardia.",
+    "author": "Lema da Inconfidência Mineira",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Minas_Gerais"
+  },
+  {
+    "id": "END-009",
+    "name": "Estado Policial",
+    "category": "capture",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "security",
+        "op": ">=",
+        "value": 95
+      }
+    ],
+    "quote": "Brasil, ame-o ou deixe-o.",
+    "author": "Slogan do governo Médici",
+    "source": "https://periodicos.ufpe.br/revistas/pedaletra/article/view/245311"
+  },
+  {
+    "id": "END-010",
+    "name": "Hegemonia Autoritária",
+    "category": "capture",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "political_capital",
+        "op": ">=",
+        "value": 95
+      }
+    ],
+    "quote": "Tudo no Estado, nada fora do Estado, nada contra o Estado.",
+    "author": "Mussolini (28/10/1925)",
+    "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
+  },
+  {
+    "id": "END-011",
+    "name": "Ufanismo Vazio",
+    "category": "capture",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "legitimacy",
+        "op": ">=",
+        "value": 95
+      }
+    ],
+    "quote": "Crer, obedecer, combater.",
+    "author": "Lema fascista",
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_Fascist_Italy"
+  },
+  {
+    "id": "END-012",
+    "name": "Autoritarismo Eleitoral",
+    "category": "democracy_loss",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "awareness",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "integrity",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "legitimacy",
+        "op": ">",
+        "value": 70
+      }
+    ],
+    "quote": null,
+    "author": null,
+    "source": null
+  },
+  {
+    "id": "END-013",
+    "name": "Golpe Militar",
+    "category": "democracy_loss",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "security",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "dignity",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "awareness",
+        "op": "<",
+        "value": 30
+      }
+    ],
+    "quote": "Temos ódio à ditadura. Ódio e nojo.",
+    "author": "Ulysses Guimarães (promulgação da Constituição, 05/10/1988)",
+    "source": "https://acervodigital.cedec.org.br/wp-content/uploads/2022/09/Ulysses-Guimaraes-discurso-na-data-da-promulgacao-da-Constituicao.pdf"
+  },
+  {
+    "id": "END-014",
+    "name": "Golpe Institucional",
+    "category": "democracy_loss",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "political_capital",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "awareness",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "sovereignty",
+        "op": "<",
+        "value": 30
+      }
+    ],
+    "quote": "Já temi a minha morte duas vezes, hoje temo a morte da democracia.",
+    "author": "Dilma Rousseff (Senado, 29/08/2016)",
+    "source": "https://www12.senado.leg.br/noticias/materias/2016/08/30/dilma-fala-ao-senado-e-diz-temer-a-201cmorte-da-democracia201d-1"
+  },
+  {
+    "id": "END-015",
+    "name": "Populismo Autoritário",
+    "category": "democracy_loss",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "legitimacy",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "awareness",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "integrity",
+        "op": "<",
+        "value": 30
+      }
+    ],
+    "quote": "Você não é nada, seu povo é tudo.",
+    "author": "Propaganda nazista",
+    "source": "https://www.dhm.de/lemo/kapitel/ns-regime/innenpolitik/volksgemeinschaft"
+  },
+  {
+    "id": "END-016",
+    "name": "Colônia Digital",
+    "category": "democracy_loss",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "sovereignty",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "integrity",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "dignity",
+        "op": "<",
+        "value": 30
+      }
+    ],
+    "quote": "Nossos dados são extraídos, monetizados e usados para concentrar o poder político e econômico nas mãos de um punhado de bilionários.",
+    "author": "Lula (Barcelona, 17/04/2026)",
+    "source": "https://www.brasildefato.com.br/2026/04/17/lula-critica-big-techs-e-avanco-da-extrema-direita-durante-a-1a-cupula-brasil-espanha/"
+  },
+  {
+    "id": "END-017",
+    "name": "Genocídio Institucionalizado",
+    "category": "extermination",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "dignity",
+        "op": "<",
+        "value": 20
+      },
+      {
+        "meter": "integrity",
+        "op": "<",
+        "value": 20
+      },
+      {
+        "meter": "awareness",
+        "op": "<",
+        "value": 30
+      },
+      {
+        "meter": "security",
+        "op": ">",
+        "value": 80
+      }
+    ],
+    "quote": "E daí? Lamento. Quer que eu faça o quê?",
+    "author": "Jair Bolsonaro (28/04/2020)",
+    "source": "https://www.cartacapital.com.br/politica/retrospectiva-as-piores-declaracoes-de-bolsonaro-durante-a-pandemia/"
+  },
+  {
+    "id": "END-018",
+    "name": "Exploração Necropolítica",
+    "category": "extermination",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "sovereignty",
+        "op": "<",
+        "value": 20
+      },
+      {
+        "meter": "dignity",
+        "op": "<",
+        "value": 20
+      },
+      {
+        "meter": "treasury",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "integrity",
+        "op": "<",
+        "value": 30
+      }
+    ],
+    "quote": "Índio já tem terra demais, vamos tratá-los como seres humanos…",
+    "author": "Jair Bolsonaro (2018)",
+    "source": "https://ihu.unisinos.br/publicacoes/78-noticias/575956-nem-um-centimetro-a-mais-para-terras-indigenas-diz-bolsonaro"
+  },
+  {
+    "id": "END-019",
+    "name": "República Soberana e Popular",
+    "category": "strengthening",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "sovereignty",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "integrity",
+        "op": ">",
+        "value": 70
+      }
+    ],
+    "quote": "Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição.",
+    "author": "Constituição Federal de 1988, art. 1º, parágrafo único",
+    "source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+  },
+  {
+    "id": "END-020",
+    "name": "Democracia Participativa",
+    "category": "strengthening",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "integrity",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 60
+      },
+      {
+        "meter": "legitimacy",
+        "op": ">",
+        "value": 60
+      }
+    ],
+    "quote": "Ninguém liberta ninguém, ninguém se liberta sozinho: os homens se libertam em comunhão.",
+    "author": "Paulo Freire (Pedagogia do Oprimido)",
+    "source": "http://www.projetomemoria.art.br/PauloFreire/pensamento/02_pensamento_pedagogia_do_oprimido.html"
+  },
+  {
+    "id": "END-021",
+    "name": "Desenvolvimento Soberano",
+    "category": "strengthening",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "sovereignty",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "treasury",
+        "op": ">",
+        "value": 60
+      },
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 60
+      }
+    ],
+    "quote": "Queremos um Brasil forte e independente.",
+    "author": "Leonel Brizola (28/08/1961)",
+    "source": "https://www.brasildefato.com.br/2021/08/21/resistiremos-ate-o-fim-anuncia-brizola-a-espera-do-bombardeio-do-piratini/"
+  },
+  {
+    "id": "END-022",
+    "name": "Cidadania Ativa e Mobilizada",
+    "category": "strengthening",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "integrity",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "legitimacy",
+        "op": ">",
+        "value": 70
+      }
+    ],
+    "quote": "A democracia não é só o direito de votar.",
+    "author": "Lula",
+    "source": "https://pt.org.br/lula-a-democracia-nao-e-so-o-direito-de-votar-mas-tambem-ajudar-a-governar/"
+  },
+  {
+    "id": "END-023",
+    "name": "Paz Social e Justiça",
+    "category": "strengthening",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "security",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 60
+      }
+    ],
+    "quote": "Sem justiça, a paz será impossível.",
+    "author": "Dom Helder Câmara (Oslo, 1974)",
+    "source": "https://domheldercamara.org.br/2018/01/05/dom-helder-o-profeta-dos-direitos-humanos/"
+  },
+  {
+    "id": "END-024",
+    "name": "Cuidado como Política de Estado",
+    "category": "care_sovereignty",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "integrity",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "security",
+        "op": ">",
+        "value": 50
+      }
+    ],
+    "quote": "Quero mostrar ao mundo que é possível cuidar do povo pobre.",
+    "author": "Lula",
+    "source": "https://pt.org.br/quero-mostrar-que-e-possivel-cuidar-do-povo-pobre-afirma-lula/"
+  },
+  {
+    "id": "END-025",
+    "name": "Soberania que Alimenta",
+    "category": "care_sovereignty",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "sovereignty",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "integrity",
+        "op": ">",
+        "value": 60
+      },
+      {
+        "meter": "treasury",
+        "op": ">",
+        "value": 50
+      }
+    ],
+    "quote": "Ninguém faz opção pela pobreza.",
+    "author": "Lula (paráfrase de entrevista, 2023)",
+    "source": "https://www.aosfatos.org/noticias/lula-contexto-brasileiros-pobres/"
+  },
+  {
+    "id": "END-026",
+    "name": "Fome como Escolha Política",
+    "category": "care_sovereignty",
+    "trigger": "end_of_term",
+    "conditions": [
+      {
+        "meter": "dignity",
+        "op": ">",
+        "value": 80
+      },
+      {
+        "meter": "awareness",
+        "op": ">",
+        "value": 70
+      },
+      {
+        "meter": "sovereignty",
+        "op": ">",
+        "value": 60
+      }
+    ],
+    "quote": "Quem tem fome tem pressa.",
+    "author": "Herbert de Souza, Betinho (Ação da Cidadania, 1993)",
+    "source": "https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/eventos-no-rio-homenageiam-betinho-nos-20-anos-de-sua-morte"
+  },
+  {
+    "id": "END-027",
+    "name": "Mandato Comum",
+    "category": "neutral",
+    "trigger": "end_of_term",
+    "conditions": [],
+    "quote": "Só há duas opções nesta vida: se resignar ou se indignar.",
+    "author": "Darcy Ribeiro (atribuída)",
+    "source": "https://pt.wikiquote.org/wiki/Darcy_Ribeiro"
+  },
+  {
+    "id": "END-028",
+    "name": "Renúncia",
+    "category": "exit",
+    "trigger": "exit",
+    "conditions": [],
+    "quote": "Forças terríveis levantaram-se contra mim…",
+    "author": "Jânio Quadros (carta-renúncia, 25/08/1961)",
+    "source": "https://www12.senado.leg.br/noticias/especiais/arquivo-s/ha-60-anos-congresso-aceitou-renuncia-e-abortou-golpe-de-janio-quadros"
+  }
+]

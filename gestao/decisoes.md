@@ -139,6 +139,16 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-127 | Final "Renúncia" na categoria própria "Saída" (citação: Jânio Quadros, 1961); os 28 finais têm citação ou adaptação aprovada | 2026-10-16 | Escolha do PO (P-013) |
 | D-128 | Atores sem carta de oferta: Impérios Geopolíticos e Diplomatas do Itamaraty (sobreposição com o modo Geopolítico). Pergunta "EUA × BRICS" mantida, sem revisão do PSI (fecha P-11) | 2026-10-16 | Escolha do PO (P-013) |
 | D-129 | GDD mestre versão 2.0, status Aprovado (regras completas; cartas por amostra). P-5 e P-7 ficam com o protótipo | 2026-10-16 | Escolha do PO (P-013) |
+| D-130 | Godot 4.7.2 confirmado (mantém D-052); o PO instala e o 4.6 fica guardado para rollback (`godot --version` = 4.7.2.stable.official.ed1daf0bf; fecha RT-08) | 2026-10-16 | Escolha do PO (P-005) |
+| D-131 | MCP `tugcantopaloglu/godot-mcp` instalado em `~/.local/share/godot-mcp` (commit 88f0fbc), fora do repositório; não exige addon | 2026-10-16 | Escolha do PO (P-005); README do servidor |
+| D-132 | MCP registrado em `.mcp.json` no projeto, com `${GODOT_MCP_DIR}` e `${GODOT_PATH}` definidos no `~/.bashrc`, com padrão absoluto (`${VAR:-…}`) porque o app desktop não lê o `~/.bashrc` | 2026-10-16 | Escolha do PO (P-005); `docs/13_ARQUITETURA_TECNICA.md` §13.2.5 |
+| D-133 | Autoload `mcp_interaction_server.gd` em `tools/mcp/`, só em debug e excluído dos presets de exportação; a porta 9090 não vai para o build (fecha P-7) | 2026-10-16 | Escolha do PO (P-005) |
+| D-134 | Testes só via Godot headless por enquanto; runner (GUT/gdUnit4) fica para depois (D-068 parcial) | 2026-10-16 | Escolha do PO (P-005) |
+| D-135 | Escopo do protótipo: todos os sistemas, com dados fictícios | 2026-10-16 | Escolha do PO (P-005) |
+| D-136 | Chaves, IDs, nomes de arquivo e código em EN (segue o `CLAUDE.md`); texto exibido ao jogador em PT-BR. Docs 13 e GDD §12 a ajustar no `/sync-tech` | 2026-10-16 | Escolha do PO (P-005) |
+| D-137 | Projeto Godot na subpasta `jogo/` (fora do alcance de `site/`, `docs/`, `gdd/`) | 2026-10-16 | Escolha do PO (P-005) |
+| D-138 | Dados em JSON (doc 13 §13.5), não em `.tres` | 2026-10-16 | Escolha do PO (P-005) |
+| D-139 | Dados do protótipo: medidores, atores e finais reais; ~40 cartas fictícias cobrindo os 10 modos, eventos, atores e desinformação | 2026-10-16 | Escolha do PO (P-005) |
 
 ---
 
@@ -220,6 +230,16 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-127 | Categoria Saída |
 | D-128 | Atores sem oferta; P-11 mantida |
 | D-129 | GDD 2.0 aprovado |
+| D-130 | Godot 4.7.2 |
+| D-131 | MCP instalado |
+| D-132 | `.mcp.json` no projeto |
+| D-133 | Autoload MCP só em debug |
+| D-134 | Testes headless |
+| D-135 | Protótipo com dados fictícios |
+| D-136 | Código e chaves em EN |
+| D-137 | Projeto em `jogo/` |
+| D-138 | Dados em JSON |
+| D-139 | ~40 cartas fictícias |
 
 ### Técnica
 
@@ -275,7 +295,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-065 | Versão do save (se houver) | ⏳ Pendente |
 | D-066 | Chaves de i18n | ⏳ Pendente |
 | D-067 | Licença definitiva | ⏳ Pendente |
-| D-068 | Estratégia de testes | ⏳ Pendente |
+| D-068 | Estratégia de testes | 🟡 Parcial (D-134) |
 | D-069 | Parcerias confirmadas | ⏳ Pendente |
 | D-070 | Publicação inicial | ⏳ Pendente |
 

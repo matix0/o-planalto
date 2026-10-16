@@ -33,10 +33,10 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Comandos** | ✅ Definidos | 6 comandos (D-073) |
 | **Setup Claude Code** | ✅ Concluído | P-008 |
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
-| **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
+| **MCP Godot** | ✅ Instalado | `~/.local/share/godot-mcp`, `.mcp.json` (D-131, D-132) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
 | **GDD Completo** | ✅ 2.0 aprovado | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011 a P-013); P-5 e P-7 ficam com o protótipo |
-| **Protótipo Técnico** | ⏳ Pendente | Desbloqueado; fica para o fim (decisão do PO) |
+| **Protótipo Técnico** | 🔄 Em andamento | P-005: etapa 2 concluída (dados JSON em `jogo/`); próxima: etapa 3 (cartas) |
 | **Testes** | ⏳ Pendentes | Após protótipo |
 | **Publicação** | ⏳ Pendente | Após validação |
 
@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-130–D-139 | P-005 (Godot 4.7.2, MCP, testes headless, escopo, EN, `jogo/`, JSON) | 2026-10-16 |
 | D-124–D-129 | P-013 (balanceamento, eventos, finais, GDD 2.0) | 2026-10-16 |
 | D-098–D-103 | GDD 05 Cartas | 2026-10-16 |
 | D-104–D-108 | GDD 07 Atores | 2026-10-16 |
@@ -136,7 +137,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | RP-06 | Dados desatualizados | 🟡 Ativo | Validação via `arquivo:linha` |
 | RP-07 | Cartas inconsistentes | 🔴 Alto | Guia de estilo + validação |
 | RP-08 | Custo de tokens | 🟡 Ativo | Política de subagentes |
-| RT-08 | Godot instalado 4.6 ≠ stack 4.7 | 🟡 Ativo | Atualizar antes do P-005 ou rever D-052 |
+| RT-08 | Godot instalado 4.6 ≠ stack 4.7 | 🟢 Fechado | 4.7.2 ativo (D-130); 4.6 guardado |
 | RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟢 Fechado | Node 22.23.3 via `n` (2026-10-16) |
 | RC-08 | Docs citam políticos reais (contra D-005) em período eleitoral | 🔴 Alto | Aviso de conteúdo (D-075); parecer jurídico pendente (`docs/07_HISTORICO_DE_DECISOES.md:180`) |
 | RC-09 | Docs truncados — todos restaurados | 🟢 Fechado | Originais truncados desde o 1º commit, sem recuperação; docs restaurados (P-013) |

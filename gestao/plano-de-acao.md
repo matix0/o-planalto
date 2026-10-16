@@ -106,17 +106,17 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | ⏳ Pendente (bloqueado pelo P-004) |
-| **Início** | — |
+| **Status** | 🔄 Em andamento |
+| **Início** | 2026-10-16 |
 | **Conclusão** | — |
-| **Objetivo** | Implementar o jogo em Godot 4.7 |
+| **Objetivo** | Implementar o jogo em Godot 4.7 — todos os sistemas, dados fictícios (D-135) |
 
 ### Etapas
 
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
-| 1 | Configurar Godot 4.7 + MCP | ⏳ | — |
-| 2 | Implementar estrutura de dados (JSON) | ⏳ | — |
+| 1 | Configurar Godot 4.7 + MCP | 🔄 Godot 4.7.2 ok; conexão do MCP a conferir após reiniciar o app | D-130 a D-134, `.mcp.json` |
+| 2 | Implementar estrutura de dados (JSON) | ✅ | `jogo/data/*.json`, `jogo/scripts/game_data.gd`, `jogo/tests/test_data.gd` (headless OK); D-136 a D-139 |
 | 3 | Implementar sistema de cartas | ⏳ | — |
 | 4 | Implementar medidores | ⏳ | — |
 | 5 | Implementar sistema de sorteio | ⏳ | — |

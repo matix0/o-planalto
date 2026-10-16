@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "godot": {
+      "command": "node",
+      "args": ["${GODOT_MCP_DIR:-/home/tix/.local/share/godot-mcp}/build/index.js"],
+      "env": { "GODOT_PATH": "${GODOT_PATH:-/home/tix/.local/bin/godot}" }
+    }
+  }
+}
