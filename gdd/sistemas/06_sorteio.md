@@ -95,8 +95,8 @@ A emergência conta para o teto: com `Em` ≥ 3, nenhuma carta de ator ou de med
 | 07 Atores | Nível → obrigatória; "1× por partida" | ✅ `gdd/sistemas/07_atores.md` §3.2, §3.4, §6 |
 | 08 Eventos | Disparo antes da primeira carta | ✅ `gdd/sistemas/08_eventos.md:73,92` |
 | 09 Desinformação | Cartas do modo puxadas por medidor < 30 | ✅ `gdd/sistemas/09_desinformacao.md` §3.4 |
-| 02 Finais | Fim do Ano 4 sem emergência; turno curto | ❌ não cita o 06 — ajuste na etapa 7 do P-012 |
-| 03 Impeachment | Cartas da cena fora das 7 | ❌ não cita o 06 — ajuste na etapa 7 do P-012 |
+| 02 Finais | Fim do Ano 4 sem emergência; turno curto | ✅ `gdd/sistemas/02_finais.md` §6 |
+| 03 Impeachment | Cartas da cena fora das 7 | ✅ `gdd/sistemas/03_impeachment.md` §6 |
 | 10 Estado da partida | Guarda cartas jogadas; chama o sorteio a cada carta | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
 
 ## 7. Parâmetros de ajuste

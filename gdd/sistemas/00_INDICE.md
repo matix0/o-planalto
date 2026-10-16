@@ -9,7 +9,7 @@ Cada sistema tem um GDD próprio em `gdd/sistemas/`, escrito com `/gdd-sistema`.
 | # | Sistema | Arquivo | Inclui | Depende de | Pendências (GDD §16.4) | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 01 | Medidores | `01_medidores.md` | 8 medidores (sub-medidores removidos, D-094), relações, turnos e fases (multiplicador, recuperação), calibração inicial | — | P-6, P-8, P-11 | ✅ |
-| 02 | Finais | `02_finais.md` | 27 finais, prioridade, epílogo | 01, 08, 04 | P-3, P-1 (parte) | ✅ |
+| 02 | Finais | `02_finais.md` | 28 finais, prioridade, epílogo | 01, 08, 04 | P-3, P-1 (parte) | ✅ |
 | 03 | Impeachment | `03_impeachment.md` | Gatilhos, cena de 5 fases, placares | 01, 07, 02 | P-1 | ✅ |
 | 04 | Eixo ideológico | `04_eixo.md` | 4 eixos, pontuação, revelação final | 05, 01 | P-9 | ✅ |
 | 05 | Cartas | `05_cartas.md` | Estrutura, opções A/B, sorteio do lado, cor por opção e saldo por cor | 01 | — | ✅ |

@@ -24,11 +24,11 @@ O jogador sente o cerco: o processo é político, não jurídico. Sobreviver exi
 | Alternativo | 3 opções seguidas com efeito negativo em `Capital Político` | Ano 2 |
 | Capital em 0 | `Capital Político` = 0 (D-095) | Ano 1 |
 
-Os gatilhos de medidor são checados no passo 6 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4); `Capital Político` = 0 e o alternativo, logo após a carta.
+Os gatilhos de medidor são checados no passo 6 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4); `Capital Político` = 0 e o alternativo, logo após a carta ou o evento (`gdd/sistemas/08_eventos.md` §5).
 
 ### 3.2. A cena
 
-1. Começa logo após o gatilho; são 5 cartas **extras** (não contam nas 6-8 do turno).
+1. Começa logo após o gatilho; são 5 cartas **extras** (não contam nas 7 do turno, D-113).
 2. Se começa com `Consciência` < 15 E `Integridade` < 15 → **condenação automática**.
 3. Fases 1-4: o teste da opção escolhida usa o valor **antes** do efeito da carta; teste vencido = +1 apoio. Efeitos **sem** multiplicador do ano (×1).
 4. Desfecho (fase 5): **absolvição** se apoio ≥ 2 (≥ 3 quando a cena abriu por `Capital Político` = 0) **e** o teste da opção escolhida passar; senão, **condenação**.
@@ -77,7 +77,7 @@ Diferença entre gatilhos aceita como intencional pelo PO. Sempre A ou sempre B 
 
 ## 6. Dependências
 
-01 Medidores (passo 6 do fechamento; valores) · 02 Finais (condenação; cena antes dos finais no Ano 4) · 04 Eixo (as cartas da cena pontuam os eixos) · 05 Cartas (as 5 cartas da cena) · 10 Estado da partida. Cada um deve citar o 03 de volta.
+01 Medidores (passo 6 do fechamento; valores) · 02 Finais (condenação; cena antes dos finais no Ano 4) · 04 Eixo (as cartas da cena pontuam os eixos) · 05 Cartas (as 5 cartas da cena) · 06 Sorteio (cartas da cena fora das 7) · 08 Eventos (cartas da cena sem eventos; a cena interrompe o disparo) · 10 Estado da partida. Cada um deve citar o 03 de volta.
 
 ## 7. Parâmetros de ajuste
 

@@ -304,7 +304,7 @@
 | 4 | GDD 06 Sorteio (P-4) | ✅ | `gdd/sistemas/06_sorteio.md` |
 | 5 | GDD 09 Desinformação | ✅ | `gdd/sistemas/09_desinformacao.md` |
 | 6 | GDD 10 Estado da partida (P-12) | ✅ | `gdd/sistemas/10_estado_partida.md` |
-| 7 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
+| 7 | `/revisar-gdds` e atualização do GDD mestre | ✅ | Veredito ATENÇÃO; 8 correções nos GDDs de sistema; GDD mestre §4.2, §4.4, §5.3, §5.4, §6.2-6.4, §6.8, §7.2, §8.5, §12.2; P-14 |
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
 

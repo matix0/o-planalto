@@ -215,7 +215,7 @@ Aprovada pelo PO no P-010 (doc 15 §15.02.1).
 | **Efeitos + consequência** | 2–3 s |
 | **Carta de Aprendizado (resumo)** | 5–8 s |
 | **Total por carta** | ≈ 15–22 s |
-| **Turno (6–8 cartas)** | 2–3 min |
+| **Turno (7 cartas, D-113)** | 2–3 min |
 | **Partida** | ≈ 12–18 min |
 
 ### 4.3. Loop Macro
@@ -229,9 +229,9 @@ Calibração → Turno 1 → Turno 2 → Turno 3 → Turno 4 → Final + Eixo
 | Sessão | Duração | O que acontece |
 | :--- | :--- | :--- |
 | **Sessão completa** | ~15 min | Uma partida inteira |
-| **Sessão parcial** | 5–10 min | Um turno (se pausado) |
+| **Sessão interrompida** | — | Salvamento automático após cada carta; ao reabrir, "Continuar" retoma no mesmo ponto |
 
-**Nota:** O jogo **não tem salvamento**. Cada partida é uma sessão completa.
+**Salvamento (D-121):** automático e invisível, 1 partida salva, apagada no final; nenhuma escolha pode ser desfeita. "Abandonar mandato" leva ao final "Renúncia" (D-122). Entre partidas, só as configurações (D-123). Detalhe: `gdd/sistemas/10_estado_partida.md`.
 
 ---
 
@@ -271,11 +271,11 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 - **Título** (5 palavras)
 - **Problema** (2 linhas)
 - **Duas opções** (1 linha cada)
-- **Efeitos** (medidores afetados)
+- **Efeitos** (2–4 medidores, campo único com sinal, ≥ 1 negativo — D-098)
 - **Consequência** (1 linha)
 - **Carta de Aprendizado** (5 blocos)
 
-**Composição:** 340 cartas (200 institucionais + 70 temáticas + 70 de atores).
+**Composição:** 340 cartas (200 institucionais + 70 temáticas + 70 de atores). Regras completas: `gdd/sistemas/05_cartas.md`.
 
 ### 5.4. Mecânica de Turnos
 
@@ -283,10 +283,10 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 
 | Turno | Ano | Fase | Cartas |
 | :--- | :--- | :--- | :--- |
-| 1 | Ano 1 | Lua de Mel | 6–8 |
-| 2 | Ano 2 | Realidade Bate | 6–8 |
-| 3 | Ano 3 | Crise | 6–8 |
-| 4 | Ano 4 | Desfecho | 6–8 |
+| 1 | Ano 1 | Lua de Mel | 7 |
+| 2 | Ano 2 | Realidade Bate | 7 |
+| 3 | Ano 3 | Crise | 7 |
+| 4 | Ano 4 | Desfecho | 7 |
 
 ### 5.5. Mecânica de Calibração
 
@@ -339,62 +339,34 @@ Removidos (D-094). Detalhe do sistema de medidores: `gdd/sistemas/01_medidores.m
 
 ### 6.2. Sistema de Sorteio
 
-#### 6.2.1. Regras (Prioridade Narrativa)
+Detalhado em `gdd/sistemas/06_sorteio.md` (P-012). Resumo:
 
 | # | Regra | Descrição |
 | :--- | :--- | :--- |
-| 1 | **Prioridade Narrativa** | Consequências de decisões anteriores aparecem obrigatoriamente no turno certo |
-| 2 | **Prioridade de Ator** | Ator com satisfação < 30 aparece obrigatoriamente |
-| 3 | **Prioridade de Medidor** | Medidor < 30 → cartas relacionadas aparecem |
-| 4 | **Variedade** | Um modo não aparece duas vezes no mesmo turno |
-| 5 | **Aleatoriedade Controlada** | Restante é sorteado aleatoriamente |
+| 1 | **Elegibilidade** | Aprendizado aprovado (D-102), não jogada (sem repetição, D-113), `ano_minimo` alcançado (D-117), carta de ator na função do nível atual |
+| 2 | **Obrigatórias** | Até 3 por turno: emergência (medidor ≤ 10) → ataque de ator Furioso → carta ligada a medidor < 30 (D-114, D-115) |
+| 3 | **Variedade** | Nas vagas sorteadas, máx. 1 carta por modo; relaxa se faltar carta (D-116) |
+| 4 | **Peso igual** | As vagas restantes até 7 são sorteadas uma a uma, com peso igual |
 
-#### 6.2.2. Algoritmo (pseudocódigo)
-
-```
-funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
-    cartas_disponiveis = filtrar(cartas_jogadas, turno)
-
-    para evento em eventos_encadeados:
-        se evento.turno == turno:
-            adicionar_carta_obrigatoria(evento.carta)
-
-    para ator em atores:
-        se ator.satisfacao < 30:
-            adicionar_carta_obrigatoria(ator.cartas[0])
-
-    para medidor em medidores:
-        se medidor.valor < 30:
-            adicionar_carta_obrigatoria(medidor.cartas_relacionadas)
-
-    remover_cartas_do_mesmo_modo(cartas_disponiveis)
-
-    return sortear_aleatoriamente(cartas_disponiveis, 6-8)
-```
+Eventos encadeados não são cartas: disparam antes do sorteio (D-112).
 
 ### 6.3. Sistema de Satisfação dos Atores
 
-| Nível | Estado | Comportamento |
+Detalhado em `gdd/sistemas/07_atores.md` (P-012). Satisfação 0–100, começa em 50 (D-107).
+
+| Nível | Faixa | Carta do ator sorteável |
 | :--- | :--- | :--- |
-| 0–20 | Furioso | Aparece obrigatoriamente. Pode atacar. |
-| 21–40 | Insatisfeito | Alta probabilidade. Faz exigências. |
-| 41–60 | Neutro | Aparece normalmente. |
-| 61–80 | Satisfeito | Baixa probabilidade. Oferece bônus. |
-| 81–100 | Aliado | Apoio incondicional. |
+| Furioso | 0–20 | Ataque (obrigatória no turno seguinte) |
+| Insatisfeito | 21–40 | Exigência |
+| Neutro | 41–60 | Exigência |
+| Satisfeito | 61–80 | Oferta (Boa Vontade, D-108) |
+| Aliado | 81–100 | Oferta (Boa Vontade, D-108) |
 
-**Algoritmo:**
-
-```
-se escolha.atende_ator(ator):
-    ator.satisfacao += 10
-senão se escolha.contraria_ator(ator):
-    ator.satisfacao -= 10
-ator.satisfacao = clamp(0, 100)
-```
+**Atualização (D-106):** cada opção traz `atores: { "ACT-xxx": ±1 }` (0–3 atores); ±1 = ±10 de satisfação, limitado a 0–100.
 
 ### 6.4. Sistema de Eventos Encadeados
 
-**Descrição:** Decisões geram consequências 1–2 turnos depois.
+**Descrição:** Decisões geram consequências 1–2 turnos depois. Detalhado em `gdd/sistemas/08_eventos.md` (P-012).
 
 | Exemplo | Efeito (1 ou 2 turnos depois, definido por evento) |
 | :--- | :--- |
@@ -402,7 +374,7 @@ ator.satisfacao = clamp(0, 100)
 | Privatizar a água | Aumento de tarifas (`Dignidade` −10) |
 | Investir em educação | Cooperativa jovem (`Dignidade` +10) |
 
-**Total:** 78 eventos mapeados. Eventos que cairiam depois do Ano 4 aparecem no epílogo do final.
+Eventos vêm só das opções das cartas (0 ou 1 por opção, D-109, D-111); disparam no início do turno de destino, com o multiplicador do ano (D-110, D-112). Eventos que cairiam depois do Ano 4 aparecem no epílogo do final. A contagem de 78 (D-024) foi revisada pela D-109.
 
 ### 6.5. Sistema de Impeachment
 
@@ -434,8 +406,10 @@ Detalhado em `gdd/sistemas/03_impeachment.md` (P-011). Resumo: 4 gatilhos (princ
 | :--- | :--- |
 | **Exposição Controlada** | Jogador é exposto a narrativa manipulada |
 | **Escolha** | Decide como reagir |
-| **Consequência** | Aceitar → perde `Integridade` e `Consciência`; Recusar → perde `Legitimidade`; Investigar → perde `Capital Político`, ganha `Integridade` |
-| **Aprendizado** | Explica a técnica |
+| **Consequência** | Cada carta opõe duas reações (`reacao`: aceitar, recusar, investigar); a opção `aceitar` perde `Integridade` ou `Consciência` (D-120). Custos típicos: guia de escrita em `gdd/sistemas/09_desinformacao.md` §3.3 |
+| **Aprendizado** | Nomeia a técnica (campo `tecnica`, 1 de 6, D-119) |
+
+Sistema de conteúdo, sem mecânica nova (D-118). Detalhe: `gdd/sistemas/09_desinformacao.md`.
 
 ---
 
@@ -454,8 +428,8 @@ Detalhado em `gdd/sistemas/03_impeachment.md` (P-011). Resumo: 4 gatilhos (princ
 
 | Mecanismo | Como funciona |
 | :--- | :--- |
-| **Carta de Recuperação** | Restaura um medidor em crise |
-| **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
+| **Carta de Recuperação** | Carta ligada ao medidor em crise (opção com efeito positivo nele), obrigatória com medidor < 30 (D-115, `gdd/sistemas/06_sorteio.md`) |
+| **Evento de Boa Vontade** | Carta de oferta de ator Satisfeito/Aliado: uma opção sem efeito negativo (D-108, `gdd/sistemas/07_atores.md`) |
 | **Bônus por Equilíbrio** | Todos os medidores > 45 → +3 em todos, 1× por turno |
 | **Segunda Chance** | Medidor ≤ 10 no fechamento do turno → próxima carta é de emergência para ele, 1× por medidor (`gdd/sistemas/01_medidores.md` §3.4) |
 
@@ -516,7 +490,7 @@ Cada carta tem uma Carta de Aprendizado com 5 blocos:
 
 ### 8.5. Finais
 
-**Total:** 27 finais em 7 categorias (D-096). Regras, prioridade e citações verificadas: `gdd/sistemas/02_finais.md`.
+**Total:** 28 finais (D-096; +Renúncia, D-122). Regras, prioridade e citações verificadas: `gdd/sistemas/02_finais.md`.
 
 | Categoria | Qtd | Exemplos |
 | :--- | :--- | :--- |
@@ -527,6 +501,7 @@ Cada carta tem uma Carta de Aprendizado com 5 blocos:
 | Fortalecimento | 5 | República Soberana e Popular |
 | Cuidado e Soberania | 3 | Fome como Escolha Política |
 | Neutro | 1 | Mandato Comum |
+| `[pendente]` | 1 | Renúncia (ao abandonar o mandato) |
 
 ---
 
@@ -687,18 +662,18 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
     "texto": "...",
     "cor": "vermelho",
     "eixo": [-1, 0, 0, 0],
-    "custo": { "Capital Político": -10 },
-    "efeitos": { "Soberania": 10 },
+    "efeitos": { "Capital Político": -10, "Soberania": 10 },
+    "atores": { "ACT-001": -1 },
+    "eventos": [],
     "consequencia": "..."
   },
   "opcao_b": { ... },
   "aprendizado_id": "APR-001",
-  "pre_requisitos": { ... },
-  "eventos_encadeados": [ ... ]
+  "pre_requisitos": { "ano_minimo": 1 }
 }
 ```
 
-`opcao_a` / `opcao_b` são chaves internas; o jogo sorteia o lado de cada uma e nunca escreve "esquerda/direita" (D-084). Cada opção tem sua cor (D-092); o texto da Carta de Aprendizado fica no doc 18 (D-090). Esquema completo: doc 13 §13.3.
+`opcao_a` / `opcao_b` são chaves internas; o jogo sorteia o lado de cada uma e nunca escreve "esquerda/direita" (D-084). Cada opção tem sua cor (D-092); o texto da Carta de Aprendizado fica no doc 18 (D-090). Campo único `efeitos` (D-098); `atores` (D-106); `eventos` na opção (D-111); só `ano_minimo` (D-117). Regras: `gdd/sistemas/05_cartas.md` §3.
 
 ### 12.3. Estrutura de Pastas
 
@@ -921,7 +896,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
 | P-12 | ✅ Resolvida: `gdd/sistemas/10_estado_partida.md` (salvamento automático, 1 partida) | §4.4 |
 | P-13 | ✅ Resolvida: 22 cartas escritas; 22 Cartas de Aprendizado ligadas e 127 em rascunho (P-010) | §8.1, §8.4 |
-| P-14 | Faltam casos-limite, parâmetros de ajuste e critérios de aceite testáveis | todo |
+| P-14 | ✅ Resolvida: os 10 GDDs de sistema têm as 8 seções (`.claude/rules/design-docs.md`) | todo |
 
 ### 16.5. Controle de Versões
 

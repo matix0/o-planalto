@@ -78,8 +78,8 @@ Ao soltar a carta, nesta ordem:
 
 | Caso | O que acontece |
 | :--- | :--- |
-| Opção leva medidor a 0 (exceto `Capital Político`) | Aplica todos os efeitos da opção e soma o eixo; então final catastrófico (D-089). Eventos, consequência e Aprendizado não ocorrem |
-| Dois ou mais medidores em 0 juntos | Prioridade do GDD 02 (`gdd/sistemas/02_finais.md:41`) |
+| Opção leva medidor a 0 (exceto `Capital Político`) | Aplica todos os efeitos da opção, soma o eixo e atualiza os atores (passo 2b); então final catastrófico (D-089). Eventos, consequência e Aprendizado não ocorrem |
+| Dois ou mais medidores em 0 juntos | Vale o que mais perdeu nessa carta (`gdd/sistemas/02_finais.md` §3.2) |
 | `Capital Político` em 0 | Abre o impeachment (D-095, GDD 03) após o passo 2 da §3.5 |
 | Ganho em medidor já em 100 | Limita a 100 (`gdd/sistemas/01_medidores.md:31`); final por medidor em 100: GDD 02 |
 | Opção sem nenhum ganho | Permitida: a regra exige ≥ 1 negativo, não ≥ 1 positivo (§3.3) |
@@ -105,7 +105,7 @@ Ao soltar a carta, nesta ordem:
 | 08 Eventos | Lê o campo `eventos` da opção | ✅ `gdd/sistemas/08_eventos.md` §3 |
 | 09 Desinformação | Campos `tecnica` e `reacao` no modo Influenciador | ✅ `gdd/sistemas/09_desinformacao.md` §3 |
 | 10 Estado da partida | Executa a resolução (§3.5) | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
-| 02 Finais | Recebe o fim imediato (§5) | ❌ não cita o 05 — ajuste na etapa 7 do P-012 |
+| 02 Finais | Recebe o fim imediato (§5) | ✅ `gdd/sistemas/02_finais.md` §6 |
 
 ## 7. Parâmetros de ajuste
 

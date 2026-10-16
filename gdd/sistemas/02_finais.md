@@ -30,8 +30,8 @@ O jogador descobre "o país que construiu": o final é a soma das escolhas, não
 
 ### 3.2. Catástrofe na hora
 
-- Medidor em 0 após uma carta ou um fechamento de turno → final da Catástrofe desse medidor (`gdd/sistemas/01_medidores.md` §3.3-3.4).
-- Dois ou mais em 0 na mesma carta → vale o medidor que mais perdeu nessa carta; empate pela ordem de `gdd/GDD.md` §6.1.1.
+- Medidor em 0 após uma carta, um evento (GDD 08) ou um fechamento de turno → final da Catástrofe desse medidor (`gdd/sistemas/01_medidores.md` §3.3-3.4).
+- Dois ou mais em 0 na mesma carta ou evento → vale o medidor que mais perdeu nessa carta; empate pela ordem de `gdd/GDD.md` §6.1.1.
 - `Capital Político` em 0 → cena de impeachment (GDD 03), não final direto (D-095).
 - "Abandonar mandato" → Renúncia na hora, sem passar pela prioridade; tela completa (`gdd/sistemas/10_estado_partida.md` §3.3).
 
@@ -107,7 +107,7 @@ Finais com "—" são exibidos sem citação até o PO indicar uma com fonte. As
 
 ## 6. Dependências
 
-01 Medidores (valores, medidor em 0, fim do Ano 4 sem fechamento) · 03 Impeachment (cena, condenação) · 04 Eixo (revelação na tela final) · 08 Eventos (epílogo) · 10 Estado da partida (aciona o fim). Cada um deve citar o 02 de volta.
+01 Medidores (valores, medidor em 0, fim do Ano 4 sem fechamento) · 03 Impeachment (cena, condenação) · 04 Eixo (revelação na tela final) · 08 Eventos (epílogo) · 05 Cartas (fim imediato, `gdd/sistemas/05_cartas.md` §5) · 06 Sorteio (fim do Ano 4 sem emergência; turno curto) · 10 Estado da partida (aciona o fim; Renúncia). Cada um deve citar o 02 de volta.
 
 ## 7. Parâmetros de ajuste
 
