@@ -32,6 +32,7 @@ Versionamento: [SemVer](https://semver.org/).
 - Eventos só das opções, atraso de 1-2 turnos, disparo no início do turno; tabelas fixas removidas (D-109 a D-112, revisa D-024)
 - Sorteio: 7 cartas por turno, sem repetição, teto de 3 obrigatórias, 1 por modo (D-113 a D-117; resolve P-4)
 - GDD mestre §4.2, §4.4, §5.3, §5.4, §6.2-6.4, §6.8, §7.2, §8.5, §12.2 alinhados aos GDDs de sistema
+- `/sync-docs`: docs 00, 02, 04, 05, 07 (nota), 08, 09, 11, 12, 13, 14, 15, `CLAUDE.md` e `/validate-finals` alinhados às D-098 a D-123 (atores `ACT-xxx`, 7 cartas, 28 finais, eventos nas opções, salvamento)
 - Sub-medidores removidos (D-094); Consciência inicial 40; calibração ±5; bônus por equilíbrio +3 com todos > 45; fim do Ano 4 sem fechamento
 - 27 finais (D-096): +Paralisia Fiscal, +Mandato Comum, −Protecionismo Soberano; finais em 100 só os 3 de Captura (≥ 95); `Capital Político` em 0 abre o impeachment (D-095)
 - Impeachment: cena de 5 cartas extras com testes por opção e apoio; absolvição ~37% no gatilho principal

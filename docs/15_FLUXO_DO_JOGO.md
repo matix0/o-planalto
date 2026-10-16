@@ -30,8 +30,11 @@ TELA INICIAL
                           └─▶ TURNO 4 (Ano 4 — Desfecho)
                                └─▶ FINAL + EIXO IDEOLÓGICO
 
-Em qualquer carta: medidor em 0 ──▶ FINAL CATASTRÓFICO (na hora)
-A partir do Ano 2: gatilho de impeachment ──▶ CENA DE IMPEACHMENT
+Em qualquer carta ou evento: medidor em 0 ──▶ FINAL CATASTRÓFICO (na hora)
+Gatilho de impeachment (Capital Político em 0 em qualquer ano) ──▶ CENA DE IMPEACHMENT
+Menu de pausa: "Abandonar mandato" ──▶ FINAL "RENÚNCIA" (na calibração: volta ao início, sem final)
+
+Estados e salvamento automático: gdd/sistemas/10_estado_partida.md
 ```
 
 ### 15.02.1. Duração (aprovada pelo PO, 2026-10-13)
@@ -41,7 +44,7 @@ A partir do Ano 2: gatilho de impeachment ──▶ CENA DE IMPEACHMENT
 | **Tela inicial** | 10-20 s |
 | **Tutorial** | 30-45 s |
 | **Calibração** | ~1 min |
-| **Turno (6-8 cartas)** | 2-3 min cada; 8-12 min nos 4 turnos |
+| **Turno (7 cartas, D-113)** | 2-3 min cada; 8-12 min nos 4 turnos |
 | **Impeachment (se houver)** | 1-2 min |
 | **Final + eixo** | 1-2 min |
 | **Total** | **≈ 12-18 min** |
@@ -54,7 +57,8 @@ A partir do Ano 2: gatilho de impeachment ──▶ CENA DE IMPEACHMENT
 
 | Ação | O que acontece |
 | :--- | :--- |
-| **Iniciar** | Tutorial → Calibração |
+| **Continuar** | Só se houver partida salva: retoma no ponto exato (D-121) |
+| **Novo mandato** | Tutorial → Calibração; com partida salva, pede confirmação e a apaga sem final |
 | **Configurações** | Áudio e acessibilidade (doc 14 §14.12.1) |
 | **Sobre** | Créditos e licenças |
 
@@ -85,12 +89,13 @@ A pergunta 6 foi corrigida no P-010 (antes: "Sim → `Consciência` −10"). O G
 
 ```
 ABERTURA DO TURNO (cartão "Ano X — Fase")
- └─▶ SORTEIO DE 6-8 CARTAS (GDD §6.2)
-      └─▶ CARTA 1 ─▶ ... ─▶ CARTA N   (fluxo de §15.06)
-           └─▶ FECHAMENTO DO TURNO
-                ├─▶ relações entre medidores (GDD §6.1.3)
-                ├─▶ gatilho de impeachment? (a partir do Ano 2)
-                └─▶ próximo turno, ou FINAL se for o Ano 4
+ └─▶ EVENTOS ENCADEADOS do turno (§15.08)
+      └─▶ OBRIGATÓRIAS (até 3) + SORTEIO até 7 CARTAS (gdd/sistemas/06_sorteio.md)
+           └─▶ CARTA 1 ─▶ ... ─▶ CARTA 7   (fluxo de §15.06)
+                └─▶ FECHAMENTO DO TURNO (gdd/sistemas/01_medidores.md §3.4)
+                     ├─▶ relações entre medidores
+                     ├─▶ gatilho de impeachment?
+                     └─▶ próximo turno, ou FINAL se for o Ano 4
 ```
 
 ### 15.05.1. As 4 Fases
@@ -175,17 +180,17 @@ GATILHO
 ## 15.08 — Fluxo dos Eventos Encadeados
 
 ```
-DECISÃO (Turno X)
- └─▶ REGISTRAR EVENTO com atraso de 1 ou 2 turnos (definido em cada evento)
-      ├─▶ cai até o Ano 4: no turno certo, AVISO ESPECIAL + EFEITOS
+DECISÃO (Turno X) — só a opção escolhida agenda o seu evento (0 ou 1)
+ └─▶ AGENDAR com atraso de 1 ou 2 turnos (definido em cada evento)
+      ├─▶ cai até o Ano 4: início do turno, antes da 1ª carta, AVISO + EFEITOS (× multiplicador do ano)
       └─▶ passa do Ano 4: entra no EPÍLOGO da tela final
 ```
 
 | Regra | Definição |
 | :--- | :--- |
-| **Atraso** | 1 ou 2 turnos, definido nos dados de cada evento (`docs/04_DESIGN_DO_JOGO.md:776`) |
+| **Atraso** | 1 ou 2 turnos, definido nos dados de cada evento (`gdd/sistemas/08_eventos.md` §3, D-110) |
 | **Aviso** | Destaque na borda da tela + ícone (doc 14 §14.10) |
-| **Evitável?** | Não (`docs/04_DESIGN_DO_JOGO.md:776`) |
+| **Evitável?** | Não (D-111) |
 | **Depois do Ano 4** | Aparece no epílogo do final |
 
 ### 15.08.1. Exemplos
@@ -197,7 +202,7 @@ DECISÃO (Turno X)
 | Cortar o Bolsa Família | Fome volta ao mapa | `Dignidade` −20, `Legitimidade` −15 |
 | Investir em educação | Jovens criam cooperativa | `Dignidade` +10, `Caixa` +5 |
 
-**Pendência:** os efeitos destes exemplos diferem dos do GDD §6.4 (ex.: epidemia sem `Segurança` −10 no GDD); conferir no doc 05 antes do protótipo.
+**Pendência:** os efeitos destes exemplos diferem dos do GDD §6.4 (ex.: epidemia sem `Segurança` −10 no GDD). Pela D-111, um evento mexe em 1-3 medidores; os valores finais saem da escrita das cartas no doc 17.
 
 ---
 
@@ -205,7 +210,8 @@ DECISÃO (Turno X)
 
 ```
 DURANTE A PARTIDA
- └─▶ MEDIDOR EM 0 ──▶ FINAL CATASTRÓFICO (na hora — D-089)
+ ├─▶ MEDIDOR EM 0 ──▶ FINAL CATASTRÓFICO (na hora — D-089)
+ └─▶ "ABANDONAR MANDATO" ──▶ RENÚNCIA (na hora — D-122)
 
 FIM DO ANO 4
  └─▶ VERIFICAR FINAIS DE COMBINAÇÃO (GDD §9.1)
@@ -216,11 +222,11 @@ FIM DO ANO 4
 | :--- | :--- |
 | Medidor em 0 | Final catastrófico na hora |
 | Finais de combinação | Checados no fim do Ano 4 |
-| Medidor em 100 (finais "se 100") | **Pendente** — GDD de Finais |
-| Nenhuma condição atendida no fim do Ano 4 | **Pendente** — GDD de Finais |
-| Mais de um final possível ao mesmo tempo | **Pendente** — GDD §16.4, P-3 |
+| Medidor em 100 (finais "se 100") | Só os 3 de Captura, com ≥ 95 no fim do Ano 4 (`gdd/sistemas/02_finais.md`) |
+| Nenhuma condição atendida no fim do Ano 4 | Mandato Comum (`gdd/sistemas/02_finais.md`) |
+| Mais de um final possível ao mesmo tempo | Prioridade por categoria (`gdd/sistemas/02_finais.md` §3.3) |
 
-### 15.09.1. Os 27 Finais (D-096)
+### 15.09.1. Os 28 Finais (D-096, D-122)
 
 | Categoria | Quantidade | Exemplos |
 | :--- | :--- | :--- |
@@ -231,6 +237,7 @@ FIM DO ANO 4
 | **Fortalecimento** | 5 | República Soberana e Popular |
 | **Cuidado e Soberania** | 3 | Fome como Escolha Política |
 | **Neutro** | 1 | Mandato Comum |
+| `[pendente]` | 1 | Renúncia (ao abandonar o mandato) |
 
 ---
 

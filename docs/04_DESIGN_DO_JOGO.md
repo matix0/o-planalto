@@ -21,7 +21,7 @@ Este documento define o design completo do jogo, incluindo a premissa, os medido
 | **Duração** | ~15 minutos (D-088) |
 | **Plataformas** | Mobile, Web e PC |
 | **Stack** | Godot 4.7 + MCP + Agentes de IA |
-| **Salvamento** | Sem salvamento de progresso |
+| **Salvamento** | Automático e invisível, 1 partida, sem desfazer (D-121) |
 | **Classificação etária** | Livre |
 | **Idioma** | Português (Brasil) |
 
@@ -211,10 +211,10 @@ O jogo é dividido em **4 turnos**, cada um representando **1 ano de mandato**.
 
 | Turno | Ano | Fase | Foco | Cartas |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Ano 1 | Lua de Mel | Apresentação dos medidores e atores | 6-8 |
-| 2 | Ano 2 | A Realidade Bate | Eventos encadeados, pressão dos atores | 6-8 |
-| 3 | Ano 3 | A Crise | Impeachment pode ser acionado | 6-8 |
-| 4 | Ano 4 | O Desfecho | Finais se definem, eixo ideológico revelado | 6-8 |
+| 1 | Ano 1 | Lua de Mel | Apresentação dos medidores e atores | 7 |
+| 2 | Ano 2 | A Realidade Bate | Eventos encadeados, pressão dos atores | 7 |
+| 3 | Ano 3 | A Crise | Impeachment pode ser acionado | 7 |
+| 4 | Ano 4 | O Desfecho | Finais se definem, eixo ideológico revelado | 7 |
 
 **Total de cartas jogadas:** 24-32.
 
@@ -263,8 +263,8 @@ Detalhes: `gdd/sistemas/01_medidores.md`.
 
 | Mecanismo | Como Funciona |
 | :--- | :--- |
-| **Carta de Recuperação** | Restaura um medidor em crise |
-| **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
+| **Carta de Recuperação** | Carta ligada ao medidor em crise, obrigatória com medidor < 30 (D-115) |
+| **Evento de Boa Vontade** | Carta de oferta de ator Satisfeito/Aliado: uma opção sem efeito negativo (D-108) |
 | **Bônus por Equilíbrio** | Se todos os medidores > 45, +3 em todos, 1× por turno (GDD 01) |
 | **Segunda Chance** | Medidor ≤ 10 no fechamento → próxima carta é de emergência para ele, 1× por medidor (GDD 01) |
 
@@ -272,11 +272,12 @@ Detalhes: `gdd/sistemas/01_medidores.md`.
 
 | Regra | Descrição |
 | :--- | :--- |
-| **1. Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| **2. Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
-| **3. Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| **4. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| **5. Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| **1. Elegibilidade** | Aprendizado aprovado, carta ainda não jogada, `ano_minimo` alcançado, carta de ator na função do nível atual (D-102, D-113, D-117) |
+| **2. Obrigatórias** | Até 3 por turno: emergência (medidor ≤ 10) → ataque de ator Furioso → carta ligada a medidor < 30 (D-114, D-115) |
+| **3. Variedade** | Nas vagas sorteadas, máx. 1 carta por modo; relaxa se faltar carta (D-116) |
+| **4. Peso igual** | As vagas restantes até 7 são sorteadas uma a uma, com peso igual |
+
+Regras completas: `gdd/sistemas/06_sorteio.md`. Eventos encadeados não são cartas: disparam antes do sorteio (D-112).
 
 ### 04.03.7. Fundamentação Teórica
 
@@ -519,7 +520,7 @@ As Cartas de Aprendizado são baseadas em **três princípios pedagógicos**:
 
 ### 04.08.1. Visão Geral
 
-O jogo possui **27 finais**, divididos em 7 categorias (D-096). Regras de prioridade, momento de checagem e citações verificadas: `gdd/sistemas/02_finais.md` (as citações abaixo são as originais; várias não foram confirmadas).
+O jogo possui **28 finais** (D-096; +Renúncia ao abandonar o mandato, D-122). Regras de prioridade, momento de checagem e citações verificadas: `gdd/sistemas/02_finais.md` (as citações abaixo são as originais; várias não foram confirmadas).
 
 | Categoria | Quantidade | Descrição |
 | :--- | :--- | :--- |
@@ -591,7 +592,7 @@ Checadas no fim do Ano 4, com o medidor ≥ 95 (D-096).
 
 ### 04.08.8. Fundamentação Teórica
 
-Os 27 finais foram construídos para cobrir **todas as possibilidades** de governo:
+Os finais foram construídos para cobrir **todas as possibilidades** de governo:
 
 1. **Catástrofes** — representam a falência de um medidor.
 2. **Capturas** — representam a captura do Estado por um projeto autoritário.
@@ -731,7 +732,7 @@ O impeachment não é negociação. É uma **cena de golpe**.
 ### 04.12.2. Regra Vigente (Resumo)
 
 - Gatilhos a partir do **Ano 2**; `Capital Político` em 0 também abre a cena (D-095).
-- Cena de **5 cartas extras** (não contam nas 6-8 do turno).
+- Cena de **5 cartas extras** (não contam nas 7 do turno, D-113).
 - Cada opção tem um teste de medidor; fases vencidas viram "apoio".
 - Absolvição: apoio ≥ 2 (≥ 3 se a cena abriu por `Capital Político` em 0) e teste do Desfecho aprovado.
 - Condenação automática se a cena começa com `Consciência` < 15 e `Integridade` < 15.
@@ -749,82 +750,33 @@ A pesquisa acadêmica confirma que o processo foi marcado por **fragilidade jur�
 
 ---
 
-## 04.13 — Eventos Encadeados (78 Mapeados)
+## 04.13 — Eventos Encadeados
 
-### 04.13.1. Conceito
+Eventos são **consequências de decisões anteriores** que se manifestam 1-2 turnos depois, num aviso que não pode ser evitado. Regras completas: `gdd/sistemas/08_eventos.md`.
 
-Os eventos encadeados são **consequências de decisões anteriores** que se manifestam 1-2 turnos depois. O jogador vê um aviso especial quando um evento é ativado. Ele não pode ser evitado.
-
-### 04.13.2. Eventos por Ator (42)
-
-| Ator | Evento 1 | Evento 2 | Evento 3 |
-| :--- | :--- | :--- | :--- |
-| **Coronel** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
-| **Tecnocrata** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
-| **Populista** | Convoca plebiscito (Ano 2) | Enfraquece Congresso (Ano 3) | Culto ao líder (Ano 4) |
-| **Miliciano** | Domina território (Ano 2) | Chacina policial (Ano 3) | Estado de Caos (Ano 4) |
-| **Pastor** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
-| **Banqueiro/Ruralista** | Chantagem do mercado (Ano 2) | Desmatamento acelerado (Ano 3) | Colônia Digital (Ano 4) |
-| **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
-| **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
-| **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
-| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
-| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
-| **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
-| **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
-| **Reitor Privatista** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
-
-### 04.13.3. Eventos por Modo (20)
-
-| Modo | Evento 1 | Evento 2 |
-| :--- | :--- | :--- |
-| **Congresso** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) |
-| **Orçamento** | Crise fiscal (Ano 2) | Falência (Ano 3) |
-| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Desintegração (Ano 3) |
-| **Geopolítico** | Dependência externa (Ano 2) | Colônia (Ano 3) |
-| **Prisional e Policial** | Rebelião em presídios (Ano 2) | Estado de Caos (Ano 3) |
-| **Emendas** | Escândalo de desvio (Ano 2) | Impeachment (Ano 3) |
-| **Bancadas** | Agenda conservadora avança (Ano 2) | Hegemonia Autoritária (Ano 3) |
-| **Impeachment** | Processo instaurado (Ano 3) | Condenação ou absolvição (Ano 4) |
-| **Judiciário** | Escândalo no STF (Ano 2) | Crise institucional (Ano 3) |
-| **Influenciador** | Deepfake viral (Ano 2) | Desintegração (Ano 3) |
-
-### 04.13.4. Eventos por Medidor (16)
-
-| Medidor | Evento 1 | Evento 2 |
-| :--- | :--- | :--- |
-| **Dignidade** | Epidemia na periferia (Ano 2) | Barbárie (Ano 3) |
-| **Consciência** | Geração alienada (Ano 2) | Alienação Total (Ano 3) |
-| **Soberania** | Dependência externa (Ano 2) | Colônia (Ano 3) |
-| **Segurança** | Chacina policial (Ano 2) | Autogestão Popular (Ano 3) |
-| **Integridade** | Desinformação total (Ano 2) | Desintegração (Ano 3) |
-| **Caixa** | Crise fiscal (Ano 2) | Paralisia (Ano 3) |
-| **Capital Político** | Perda de apoio no Congresso (Ano 2) | Impeachment (Ano 3) |
-| **Legitimidade** | Revolta popular (Ano 2) | Queda do governo (Ano 3) |
-
-### 04.13.5. Fundamentação Teórica
-
-O sistema de eventos encadeados é baseado no conceito de **"Ripple Chains"** (Cadeias de Ondas) do jogo *World Order*, que mostra como "uma única força cascateia através da nação".
-
-No *Reigns*, o sistema de cartas é descrito como "um saco que aumenta e diminui de conteúdo", onde cartas são removidas se não se encaixam no estado atual.
+- Vêm só das opções das cartas: 0 ou 1 por opção (D-109, D-111).
+- Disparam no início do turno de destino, antes da primeira carta, com o multiplicador do ano (D-110, D-112).
+- Destino depois do Ano 4 → epílogo do final.
+- As antigas tabelas fixas (42 por ator, 20 por modo, 16 por medidor — 78 eventos, D-024) foram removidas (D-109).
 
 ---
 
-## 04.14 — Pesos e Gatilhos (Prioridade Narrativa)
+## 04.14 — Pesos e Gatilhos
 
 ### 04.14.1. Conceito
 
-O sistema de sorteio é **narrativamente orientado**, não matematicamente ponderado. As cartas aparecem porque a história exige, não porque um cálculo de probabilidade determinou.
+O sistema de sorteio é **narrativamente orientado**, não matematicamente ponderado: cartas obrigatórias aparecem porque a história exige; o resto tem peso igual.
 
 ### 04.14.2. Regras de Sorteio
 
-| # | Regra | Descrição |
-| :--- | :--- | :--- |
-| 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
-| 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| Regra | Descrição |
+| :--- | :--- |
+| **1. Elegibilidade** | Aprendizado aprovado, carta ainda não jogada, `ano_minimo` alcançado, carta de ator na função do nível atual (D-102, D-113, D-117) |
+| **2. Obrigatórias** | Até 3 por turno: emergência (medidor ≤ 10) → ataque de ator Furioso → carta ligada a medidor < 30 (D-114, D-115) |
+| **3. Variedade** | Nas vagas sorteadas, máx. 1 carta por modo; relaxa se faltar carta (D-116) |
+| **4. Peso igual** | As vagas restantes até 7 são sorteadas uma a uma, com peso igual |
+
+Regras completas: `gdd/sistemas/06_sorteio.md`. Eventos encadeados não são cartas: disparam antes do sorteio (D-112).
 
 ### 04.14.3. Fundamentação Teórica
 

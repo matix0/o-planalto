@@ -161,7 +161,7 @@ Cena especial, separada do fluxo normal de cartas.
 
 | Elemento | Conteúdo |
 | :--- | :--- |
-| **Nome do final** | Um dos 27 finais (D-096) |
+| **Nome do final** | Um dos 28 finais (D-096, D-122) |
 | **Descrição** | Curta |
 | **Citação** | Frase e autor (doc 04; nomes reais mantidos — D-083) |
 | **Epílogo** | Eventos encadeados que voltariam depois do Ano 4 |

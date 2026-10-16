@@ -601,7 +601,7 @@ O glossário está organizado em **sete categorias**:
 
 **No jogo:** Existem 24 atores (D-085).
 
-**Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Coronel, Tecnocrata, Populista, etc.).
+**Fundamentação:** Cada ator é uma caricatura de um tipo social brasileiro (Latifundiários, Tecnocratas, Pastores etc.; 24 atores, D-085).
 
 ### 09.8.8. Satisfação
 
@@ -615,7 +615,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Consequência de uma decisão anterior que se manifesta 1-2 turnos depois.
 
-**No jogo:** Existem 78 eventos encadeados mapeados.
+**No jogo:** Vêm só das opções das cartas (0 ou 1 por opção) e disparam no início do turno de destino (D-109 a D-112).
 
 **Fundamentação:** O sistema de eventos encadeados é baseado no conceito de "Ripple Chains" do jogo *World Order*.
 
@@ -639,7 +639,7 @@ O glossário está organizado em **sete categorias**:
 
 **Definição:** Desfecho do jogo, que depende das escolhas do jogador.
 
-**No jogo:** Existem 27 finais, divididos em 7 categorias: Catástrofe, Captura, Perda da Democracia, Extermínio, Fortalecimento, Cuidado e Neutro (D-096).
+**No jogo:** Existem 28 finais: Catástrofe, Captura, Perda da Democracia, Extermínio, Fortalecimento, Cuidado, Neutro e a Renúncia, ao abandonar o mandato (D-096, D-122).
 
 **Fundamentação:** Os finais foram construídos para cobrir todas as possibilidades de governo.
 

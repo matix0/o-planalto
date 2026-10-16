@@ -113,7 +113,7 @@ O minimalismo no design de cartas serve a três propósitos:
 | **Modo** | Singleplayer |
 | **Engine principal** | Godot 4.7 + MCP + Agentes de IA |
 | **Engine alternativa** | HTML/JS (caso seja mais prático) |
-| **Salvamento** | Sem salvamento de progresso |
+| **Salvamento** | Automático e invisível, 1 partida, sem desfazer (D-121) |
 | **Publicação** | Play Store, Web, itch.io |
 
 ### Justificativa da Escolha de Plataforma
@@ -134,13 +134,14 @@ A escolha por **Godot 4.7 + MCP + Agentes de IA** se justifica por:
 4. **Comunidade de IA** — Godot é adotado como "best engine for AI-assisted development".
 5. **Open source** — sem custos de licenciamento.
 
-### Fundamentação sobre Singleplayer e Sem Salvamento
+### Fundamentação sobre Singleplayer e Salvamento Automático
 
-A escolha por **singleplayer** e **sem salvamento de progresso** se justifica por:
+A escolha por **singleplayer** com **salvamento automático e invisível** (D-121) se justifica por:
 
 1. **Foco na experiência** — o jogador completa a jornada em uma sessão (~15 minutos, D-088).
-2. **Reflexão imediata** — o impacto das escolhas é sentido na hora, sem interrupções.
-3. **Simplicidade técnica** — sem necessidade de servidores ou sistemas de save.
+2. **Mobile sem perda** — se o app fechar, "Continuar" retoma no mesmo ponto; só 1 partida salva, apagada no final.
+3. **Sem desfazer** — a escolha é salva antes da consequência; não há como voltar atrás (pilar 1).
+4. **Simplicidade técnica** — gravação local, sem servidores; entre partidas, só as configurações (D-123).
 
 ---
 
@@ -150,7 +151,7 @@ A escolha por **singleplayer** e **sem salvamento de progresso** se justifica po
 | :--- | :--- |
 | **Duração** | ~15 minutos (D-088; antes 30-40, D-010) |
 | **Turnos** | 4 turnos (4 anos) |
-| **Cartas por turno** | 6-8 |
+| **Cartas por turno** | 7 (D-113) |
 | **Total de cartas jogadas** | 24-32 |
 | **Mecânica** | Arrastar cartas para esquerda ou direita |
 

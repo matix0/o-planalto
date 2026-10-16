@@ -24,13 +24,13 @@ O jogo "O Planalto" é composto por **9 sistemas interconectados**:
 │     └──▶ 340 cartas + Cartas de Aprendizado                 │
 │                                                             │
 │  3. SISTEMA DE SORTEIO                                      │
-│     └──▶ Prioridade narrativa                               │
+│     └──▶ 7 cartas por turno; até 3 obrigatórias             │
 │                                                             │
 │  4. SISTEMA DE SATISFAÇÃO DOS ATORES                        │
 │     └──▶ 24 atores com níveis de satisfação                 │
 │                                                             │
 │  5. SISTEMA DE EVENTOS ENCADEADOS                           │
-│     └──▶ 78 eventos com gatilhos de longo prazo             │
+│     └──▶ Consequências das opções, 1-2 turnos depois        │
 │                                                             │
 │  6. SISTEMA DE IMPEACHMENT                                  │
 │     └──▶ Cena de golpe em 5 cartas                          │
@@ -179,40 +179,27 @@ O sistema de medidores é baseado em:
   "opcao_a": {
     "texto": "Nomear relator adversário",
     "cor": "vermelho",
-    "custo": { "Capital Político": -10 },
-    "efeitos": { "Soberania": 10 },
-    "consequencia": "A lei passa. O povo paga a conta."
+    "eixo": [-1, 0, 0, 0],
+    "efeitos": { "Capital Político": -10, "Soberania": 10 },
+    "atores": {},
+    "eventos": [],
+    "consequencia": "O relator é adversário. O projeto avança."
   },
   "opcao_b": {
     "texto": "Aceitar as mudanças",
     "cor": "laranja",
-    "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Integridade": -5 },
-    "consequencia": "O relator é adversário. O projeto avança."
+    "eixo": [1, 0, 0, 0],
+    "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
+    "atores": {},
+    "eventos": [],
+    "consequencia": "A lei passa. O povo paga a conta."
   },
   "aprendizado_id": "APR-001",
-  "aprendizado": {
-    "vivencia": "Você decidiu se aceitava ou não as mudanças do relator.",
-    "conceito": "Poder de agenda",
-    "dados_reais": "A Eletrobras investiu apenas 1/5 do prometido após a privatização.",
-    "fonte": "Agência Senado",
-    "frase_impacto": "O relator tem poder. Quem controla a pauta, controla o país."
-  },
-  "pre_requisitos": {
-    "ano_minimo": 1,
-    "modo_nao_jogado": true
-  },
-  "eventos_encadeados": [
-    {
-      "turno_gatilho": 2,
-      "evento": "Aumento de tarifas de energia",
-      "efeitos": { "Dignidade": -10, "Soberania": -5 }
-    }
-  ]
+  "pre_requisitos": { "ano_minimo": 1 }
 }
 ```
 
-Cada opção (`opcao_a`/`opcao_b`) traz também sua `cor` (D-092) e seu vetor de `eixo` (−2..+2 por eixo). Esquema completo: `docs/13_ARQUITETURA_TECNICA.md` §13.3.1.
+Campo único `efeitos`, com sinal (D-098); `atores` (D-106); `eventos` na opção (D-111); só `ano_minimo` (D-117). Valores do exemplo: `docs/17_ROTEIRO_DAS_CARTAS.md` (INST-001). Regras completas: `gdd/sistemas/05_cartas.md`; esquema: `docs/13_ARQUITETURA_TECNICA.md` §13.3.1.
 
 ### 05.03.3. Cores Partidárias
 
@@ -236,187 +223,51 @@ O sistema de cartas é baseado no **design de *Reigns***, que utiliza um "saco d
 
 ---
 
-## 05.04 — Sistema de Sorteio (Prioridade Narrativa)
+## 05.04 — Sistema de Sorteio
 
-### 05.04.1. Conceito
+Regras completas: `gdd/sistemas/06_sorteio.md` (D-113 a D-117).
 
-O sistema de sorteio é **narrativamente orientado**, não matematicamente ponderado. As cartas aparecem porque a história exige, não porque um cálculo de probabilidade determinou.
+- 7 cartas por turno, 28 por partida, sem repetir carta.
+- Elegíveis: Aprendizado aprovado (D-102), `ano_minimo` alcançado, carta de ator na função do nível atual.
+- Até 3 obrigatórias por turno: emergência (medidor ≤ 10) → ataque de ator Furioso → carta ligada a medidor < 30. Carta ligada = alguma opção com efeito positivo no medidor.
+- Vagas restantes: peso igual, no máximo 1 carta por modo (relaxa se faltar carta).
+- Eventos encadeados não são cartas: disparam antes do sorteio.
 
-### 05.04.2. Algoritmo de Sorteio
-
-```
-funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
-    # 1. Filtrar cartas disponíveis
-    cartas_disponiveis = filtrar_cartas(cartas_jogadas, turno)
-    
-    # 2. Prioridade narrativa
-    for evento in eventos_encadeados:
-        if evento.turno == turno:
-            adicionar_carta_obrigatoria(evento.carta)
-    
-    # 3. Prioridade de ator
-    for ator in atores:
-        if ator.satisfacao < 30:
-            adicionar_carta_obrigatoria(ator.cartas[0])
-    
-    # 4. Prioridade de medidor
-    for medidor in medidores:
-        if medidor.valor_atual < 30:
-            adicionar_carta_obrigatoria(medidor.cartas_relacionadas)
-    
-    # 5. Variedade
-    remover_cartas_do_mesmo_modo(cartas_disponiveis)
-    
-    # 6. Aleatoriedade controlada
-    cartas_sorteadas = sortear_aleatoriamente(cartas_disponiveis, 6-8)
-    
-    return cartas_sorteadas
-```
-
-### 05.04.3. Regras de Sorteio
-
-| # | Regra | Descrição |
-| :--- | :--- | :--- |
-| 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
-| 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
-
-### 05.04.4. Fundamentação Teórica
-
-O sistema de *Reigns* é descrito como "um saco que aumenta e diminui de conteúdo". No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente ponderado.
+O *Reigns* usa "um saco que aumenta e diminui de conteúdo"; aqui o sorteio é **narrativamente orientado**, não ponderado.
 
 ---
 
 ## 05.05 — Sistema de Satisfação dos Atores
 
-### 05.05.1. Conceito
+Regras completas: `gdd/sistemas/07_atores.md` (D-104 a D-108).
 
-Cada ator tem um **nível de satisfação** (0-100) que sobe ou desce conforme as decisões do jogador.
-
-### 05.05.2. Níveis de Satisfação
-
-| Nível | Estado | O que Acontece |
+| Nível | Faixa | Carta do ator sorteável |
 | :--- | :--- | :--- |
-| 0-20 | Furioso | Aparece obrigatoriamente. Pode atacar o governo. |
-| 21-40 | Insatisfeito | Aparece com alta probabilidade. Pode fazer exigências. |
-| 41-60 | Neutro | Aparece normalmente. |
-| 61-80 | Satisfeito | Aparece com baixa probabilidade. Pode oferecer bônus. |
-| 81-100 | Aliado | Aparece apenas se necessário. Oferece apoio incondicional. |
+| Furioso | 0-20 | Ataque (obrigatória no turno seguinte) |
+| Insatisfeito | 21-40 | Exigência |
+| Neutro | 41-60 | Exigência |
+| Satisfeito | 61-80 | Oferta |
+| Aliado | 81-100 | Oferta |
 
-### 05.05.3. Algoritmo de Atualização
+- Satisfação começa em 50 para os 24 atores (`ACT-001` a `ACT-024`).
+- Cada opção traz `atores: { "ACT-xxx": ±1 }` (0-3 atores); ±1 = ±10 de satisfação.
+- 70 cartas ATOR: 22 atores × 3 (ataque, exigência, oferta) + 2 × 2 (sem oferta).
+- Evento de Boa Vontade: na carta de oferta, uma opção pode não ter efeito negativo (D-108).
 
-```
-funcao atualizar_satisfacao(ator, escolha):
-    if escolha.atende_ator(ator):
-        ator.satisfacao += 10
-    elif escolha.contraria_ator(ator):
-        ator.satisfacao -= 10
-    else:
-        ator.satisfacao += 0
-    
-    ator.satisfacao = clamp(ator.satisfacao, 0, 100)
-```
-
-### 05.05.4. Consequências da Insatisfação
-
-| Ator | Consequência se Insatisfeito |
-| :--- | :--- |
-| **Coronel** | Articula golpe ou fuga de capital |
-| **Tecnocrata** | Pede mais cortes ou sai do governo |
-| **Populista** | Convoca plebiscito ou ataca o Congresso |
-| **Miliciano** | Domina território ou ataca o governo |
-| **Pastor** | Faz campanha contra o governo |
-| **Banqueiro/Ruralista** | Chantageia o mercado |
-| **Professor** | Convoca greve |
-| **Médico do SUS** | Denuncia o colapso hospitalar |
-| **Coach Digital** | Faz campanha contra o governo |
-| **Jornalista Independente** | Denuncia escândalos |
-| **Artista Engajado** | Cria festival de resistência |
-| **Burocrata** | Trava o governo |
-| **Empresário da Saúde** | Pressiona por privatização |
-| **Reitor Privatista** | Pressiona por cortes |
-
-### 05.05.5. Fundamentação Teórica
-
-O sistema de satisfação é baseado no **design de *Reigns***, onde cada facção (Igreja, Povo, Exército, Tesouro) tem um nível de satisfação que afeta o reinado.
+Base: as facções de *Reigns* (Igreja, Povo, Exército, Tesouro).
 
 ---
 
 ## 05.06 — Sistema de Eventos Encadeados
 
-### 05.06.1. Conceito
+Regras completas: `gdd/sistemas/08_eventos.md` (D-109 a D-112).
 
-Os eventos encadeados são **consequências de decisões anteriores** que se manifestam 1-2 turnos depois. O jogador vê um aviso especial quando um evento é ativado. Ele não pode ser evitado.
+- Eventos vêm só das opções das cartas: 0 ou 1 por opção, com `texto`, `atraso` (1 ou 2 turnos) e `efeitos`.
+- Disparam no início do turno de destino, antes da primeira carta, com o multiplicador do ano; não podem ser evitados.
+- Destino depois do Ano 4 → epílogo do final, sem efeito.
+- As antigas tabelas fixas por ator, modo e medidor (78 eventos, D-024) foram removidas (D-109).
 
-### 05.06.2. Eventos por Ator (42)
-
-| Ator | Evento 1 | Evento 2 | Evento 3 |
-| :--- | :--- | :--- | :--- |
-| **Coronel** | Cobra favor (Ano 2) | Ameaça invadir terra (Ano 3) | Milícia domina região (Ano 4) |
-| **Tecnocrata** | Propõe choque de gestão (Ano 2) | Pede mais cortes (Ano 3) | Crise fiscal (Ano 4) |
-| **Populista** | Convoca plebiscito (Ano 2) | Enfraquece Congresso (Ano 3) | Culto ao líder (Ano 4) |
-| **Miliciano** | Domina território (Ano 2) | Chacina policial (Ano 3) | Estado de Caos (Ano 4) |
-| **Pastor** | Pânico moral (Ano 2) | Censura aos costumes (Ano 3) | Ufanismo Vazio (Ano 4) |
-| **Banqueiro/Ruralista** | Chantagem do mercado (Ano 2) | Desmatamento acelerado (Ano 3) | Colônia Digital (Ano 4) |
-| **Professor** | Greve nas escolas (Ano 2) | Geração sem pensamento crítico (Ano 3) | Alienação Total (Ano 4) |
-| **Médico do SUS** | Colapso hospitalar (Ano 2) | Mortalidade infantil (Ano 3) | Barbárie (Ano 4) |
-| **Coach Digital** | Influenciador eleito (Ano 2) | Políticas contra o governo (Ano 3) | Colapso da verdade (Ano 4) |
-| **Jornalista Independente** | Censura à imprensa (Ano 2) | Escândalo internacional (Ano 3) | Desintegração (Ano 4) |
-| **Artista Engajado** | Festival de resistência (Ano 2) | Cultura silenciada (Ano 3) | Perda de identidade (Ano 4) |
-| **Burocrata** | Greve no serviço público (Ano 2) | Paralisia administrativa (Ano 3) | Colapso do Estado (Ano 4) |
-| **Empresário da Saúde** | Planos de saúde sobem (Ano 2) | Hospitais lotados (Ano 3) | Barbárie (Ano 4) |
-| **Reitor Privatista** | EAD de baixa qualidade (Ano 2) | Universidades sucateadas (Ano 3) | Alienação Total (Ano 4) |
-
-### 05.06.3. Eventos por Modo (20)
-
-| Modo | Evento 1 | Evento 2 |
-| :--- | :--- | :--- |
-| **Congresso** | CPI contra o governo (Ano 2) | Impeachment (Ano 3) |
-| **Orçamento** | Crise fiscal (Ano 2) | Falência (Ano 3) |
-| **Currículo e Mídia** | Geração sem pensamento crítico (Ano 2) | Desintegração (Ano 3) |
-| **Geopolítico** | Dependência externa (Ano 2) | Colônia (Ano 3) |
-| **Prisional e Policial** | Rebelião em presídios (Ano 2) | Estado de Caos (Ano 3) |
-| **Emendas** | Escândalo de desvio (Ano 2) | Impeachment (Ano 3) |
-| **Bancadas** | Agenda conservadora avança (Ano 2) | Hegemonia Autoritária (Ano 3) |
-| **Impeachment** | Processo instaurado (Ano 3) | Condenação ou absolvição (Ano 4) |
-| **Judiciário** | Escândalo no STF (Ano 2) | Crise institucional (Ano 3) |
-| **Influenciador** | Deepfake viral (Ano 2) | Desintegração (Ano 3) |
-
-### 05.06.4. Eventos por Medidor (16)
-
-| Medidor | Evento 1 | Evento 2 |
-| :--- | :--- | :--- |
-| **Dignidade** | Epidemia na periferia (Ano 2) | Barbárie (Ano 3) |
-| **Consciência** | Geração alienada (Ano 2) | Alienação Total (Ano 3) |
-| **Soberania** | Dependência externa (Ano 2) | Colônia (Ano 3) |
-| **Segurança** | Chacina policial (Ano 2) | Autogestão Popular (Ano 3) |
-| **Integridade** | Desinformação total (Ano 2) | Desintegração (Ano 3) |
-| **Caixa** | Crise fiscal (Ano 2) | Paralisia (Ano 3) |
-| **Capital Político** | Perda de apoio no Congresso (Ano 2) | Impeachment (Ano 3) |
-| **Legitimidade** | Revolta popular (Ano 2) | Queda do governo (Ano 3) |
-
-### 05.06.5. Fluxo dos Eventos Encadeados
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                FLUXO DOS EVENTOS ENCADEADOS                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  DECISÃO (Turno X)                                          │
-│  └──▶ REGISTRAR EVENTO (Turno X+2)                         │
-│       └──▶ NO TURNO X+2:                                   │
-│            └──▶ EXIBIR AVISO ESPECIAL                      │
-│                 └──▶ APLICAR EFEITOS                       │
-│                      └──▶ CONTINUAR JOGO                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 05.06.6. Fundamentação Teórica
-
-O sistema de eventos encadeados é baseado no conceito de **"Ripple Chains"** (Cadeias de Ondas) do jogo *World Order*, que mostra como "uma única força cascateia através da nação".
+Base: as "Ripple Chains" de *World Order* — "uma única força cascateia através da nação".
 
 ---
 
@@ -568,22 +419,24 @@ O Modo Influenciador ensina como a desinformação é financiada, como os influe
 
 ### 05.10.3. Mecânica de Resistência (Teoria da Inoculação)
 
+Sistema de conteúdo, sem mecânica nova (D-118). Regras: `gdd/sistemas/09_desinformacao.md`.
+
 | Elemento | Definição |
 | :--- | :--- |
-| **Exposição Controlada** | O jogador é exposto a uma narrativa manipulada |
-| **Escolha** | O jogador decide como reagir |
-| **Consequência** | Se aceitar, perde `Integridade` e `Consciência`. Se recusar, perde `Legitimidade`. Se investigar, perde `Capital Político`, mas ganha `Integridade`. |
-| **Carta de Aprendizado** | Explica a técnica e como reconhecê-la |
+| **Exposição** | A carta do modo mostra uma técnica (campo `tecnica`, 1 de 6, D-119) |
+| **Escolha** | As duas opções opõem duas reações (`reacao`: aceitar, recusar, investigar, D-120) |
+| **Consequência** | A opção `aceitar` perde `Integridade` ou `Consciência`. Custos típicos (guia): recusar perde `Legitimidade`; investigar perde `Capital Político` e ganha `Integridade` |
+| **Carta de Aprendizado** | Nomeia a técnica e ensina a reconhecê-la |
 
 ### 05.10.4. Exemplo de Carta
 
 > **Carta:** *"Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas."*
 >
-> **Opção A (Recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
+> **Opção A (`reacao`: recusar):** *"Não vou me aliar a quem lucra com a miséria alheia."*
 > - **Efeitos:** `Consciência` +10, `Integridade` +5, `Legitimidade` -10
 > - **Consequência:** *"O influenciador faz campanha contra você. Mas sua consciência está limpa."*
 >
-> **Opção B (Aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
+> **Opção B (`reacao`: aceitar):** *"Vou aceitar. Preciso de alcance nas redes."*
 > - **Efeitos:** `Capital Político` +10, `Legitimidade` +15, `Consciência` -15, `Integridade` -10
 > - **Consequência:** *"O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores."*
 >
@@ -629,8 +482,8 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 
 | Mecanismo | Como Funciona |
 | :--- | :--- |
-| **Carta de Recuperação** | Restaura um medidor em crise |
-| **Evento de Boa Vontade** | Ator oferece ajuda sem cobrar |
+| **Carta de Recuperação** | Carta ligada ao medidor em crise, obrigatória com medidor < 30 (D-115, `gdd/sistemas/06_sorteio.md`) |
+| **Evento de Boa Vontade** | Carta de oferta de ator Satisfeito/Aliado: uma opção sem efeito negativo (D-108) |
 | **Bônus por Equilíbrio** | +3 em todos se todos > 45, 1× por turno |
 | **Segunda Chance** | Medidor ≤ 10 no fechamento → a próxima carta é de emergência para ele, 1× por medidor |
 

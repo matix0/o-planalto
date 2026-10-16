@@ -40,9 +40,8 @@ Cada ficha contém:
 | **O que ensina** | Conceitos institucionais |
 | **Medidor Principal** | Qual medidor é mais afetado |
 | **Medidores Secundários** | Outros medidores afetados |
-| **Gatilhos de Aparição** | Quando o modo aparece |
+| **Gatilhos de Aparição** | Anos em que o modo é comum (guia para `ano_minimo`); a frequência em crise segue o GDD 06 (carta ligada a medidor < 30) |
 | **Cartas Associadas** | As 20 cartas do modo |
-| **Eventos Encadeados** | Os 2 eventos do modo |
 | **Conexão com Atores** | Quais atores aparecem neste modo |
 | **Referências Cruzadas** | Outros modos relacionados |
 | **Fundamentação** | Base histórica e teórica |
@@ -80,9 +79,8 @@ Cada ficha contém:
 | **O que ensina** | Bicameralismo, comissões, relatores, poder de agenda, barganha, presidencialismo de coalizão, CPI, quórum, maioria simples, maioria qualificada, veto, sanção |
 | **Medidor Principal** | `Capital Político` |
 | **Medidores Secundários** | `Dignidade`, `Soberania`, `Integridade`, `Caixa` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Capital Político` < 40. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-001 a INST-020 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "CPI contra o governo" (`Capital Político` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
 | **Conexão com Atores** | Coronel, Tecnocrata, Pastor, Banqueiro/Ruralista, Burocrata |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-007 (Bancadas), MOD-008 (Impeachment) |
 | **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, os relatores do impeachment de Dilma (Jovair Arantes na Câmara, Antonio Anastasia no Senado) apontaram crime de responsabilidade e votaram pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. |
@@ -129,9 +127,8 @@ Cada ficha contém:
 | **O que ensina** | Teto de gastos, dívida pública, emendas parlamentares, subfinanciamento, escolhas políticas, orçamento público ≠ orçamento doméstico |
 | **Medidor Principal** | `Dignidade` |
 | **Medidores Secundários** | `Caixa`, `Capital Político`, `Integridade`, `Legitimidade` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` < 30 ou `Dignidade` < 30. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-021 a INST-040 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Crise fiscal" (`Caixa` -15, `Dignidade` -10) · Ano 3: "Falência" (`Caixa` -20, `Capital Político` -15) |
 | **Conexão com Atores** | Tecnocrata, Médico do SUS, Professor, Banqueiro/Ruralista, Empresário da Saúde, Reitor Privatista |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-009 (Judiciário) |
 | **Fundamentação** | O orçamento público não é como o de casa. O governo pode gastar mais do que arrecada para investir e gerar arrecadação futura. O teto de gastos retirou R$ 37 bilhões do SUS entre 2018 e 2022. A expectativa de vida caiu de 76,2 para 72,8 anos. |
@@ -178,9 +175,8 @@ Cada ficha contém:
 | **O que ensina** | BNCC, concessões de TV, censura, pensamento crítico, educação integral, mídia como campo de batalha, redes sociais |
 | **Medidor Principal** | `Consciência` |
 | **Medidores Secundários** | `Integridade`, `Dignidade`, `Capital Político` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Consciência` < 30 ou `Integridade` < 30. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-041 a INST-060 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Geração sem pensamento crítico" (`Consciência` -15, `Integridade` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
 | **Conexão com Atores** | Professor, Artista Engajado, Pastor, Coach Digital, Reitor Privatista, Jornalista Independente |
 | **Referências Cruzadas** | MOD-010 (Influenciador) |
 | **Fundamentação** | A Lei 13.415/2017 rebaixou Filosofia e Sociologia de "disciplinas obrigatórias" para "estudos e práticas". O "Escola sem Partido" criminaliza o debate crítico. A educação integral (CIEPs) ataca as causas do crime. |
@@ -227,9 +223,8 @@ Cada ficha contém:
 | **O que ensina** | BRICS, desdolarização, dependência externa, soberania, imperialismo, domínio chinês, venda de recursos estratégicos |
 | **Medidor Principal** | `Soberania` |
 | **Medidores Secundários** | `Caixa`, `Dignidade`, `Integridade` |
-| **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Soberania` < 30. |
+| **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-061 a INST-080 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Dependência externa" (`Soberania` -15, `Caixa` +10) · Ano 3: "Colônia" (`Soberania` -20, `Dignidade` -15) |
 | **Conexão com Atores** | Banqueiro/Ruralista, Tecnocrata, Ambientalista, Indígena |
 | **Referências Cruzadas** | MOD-002 (Orçamento) |
 | **Fundamentação** | O BRICS busca reduzir a dependência do dólar com sistemas como BRICS Pay, BRICS Bridge e BRICS Clear. O Brasil importa 85% dos fertilizantes. A China também exerce domínio sobre o Brasil. A soberania não está à venda — está em disputa. |
@@ -276,9 +271,8 @@ Cada ficha contém:
 | **O que ensina** | Encarceramento em massa, política de drogas, violência policial, Estado penal vs. Estado social, sistema prisional, facções |
 | **Medidor Principal** | `Segurança` |
 | **Medidores Secundários** | `Dignidade`, `Consciência`, `Integridade` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Segurança` < 30 ou `Dignidade` < 30. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-081 a INST-100 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Rebelião em presídios" (`Segurança` -15, `Dignidade` -10) · Ano 3: "Estado de Caos" (`Segurança` -20, `Dignidade` -15) |
 | **Conexão com Atores** | Miliciano, Médico do SUS, Professor, Quilombola |
 | **Referências Cruzadas** | MOD-009 (Judiciário) |
 | **Fundamentação** | A polícia matou 11 pessoas por dia em 2024. 86% eram negras. O Brasil é o 3º país que mais encarcera no mundo. 69% da população carcerária é negra. O encarceramento em massa não reduz a violência. |
@@ -325,9 +319,8 @@ Cada ficha contém:
 | **O que ensina** | Presidencialismo de coalizão, emendas parlamentares, moeda de troca, fisiologismo, Centrão, governabilidade |
 | **Medidor Principal** | `Caixa` |
 | **Medidores Secundários** | `Capital Político`, `Dignidade`, `Integridade` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Caixa` > 60 ou `Capital Político` < 40. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-101 a INST-120 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Escândalo de desvio" (`Caixa` -15, `Integridade` -10) · Ano 3: "Impeachment" (`Capital Político` -20, `Legitimidade` -15) |
 | **Conexão com Atores** | Coronel, Burocrata, Banqueiro/Ruralista, Pastor |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-007 (Bancadas) |
 | **Fundamentação** | As emendas parlamentares representam 0,9% do orçamento. Entre janeiro de 2024 e março de 2026, cem artistas acumularam mais de R$ 5 bilhões em cachês. O agronegócio recebeu 56 vezes mais recursos que a agricultura familiar. |
@@ -374,9 +367,8 @@ Cada ficha contém:
 | **O que ensina** | Bancada BBB (Boi, Bíblia, Bala), bancadas de direitos, bancadas temáticas, lobby, financiamento de campanha |
 | **Medidor Principal** | `Capital Político` |
 | **Medidores Secundários** | `Dignidade`, `Consciência`, `Soberania`, `Integridade` |
-| **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Capital Político` < 40. |
+| **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-121 a INST-140 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Agenda conservadora avança" (`Consciência` -10, `Soberania` -5) · Ano 3: "Hegemonia Autoritária" (`Capital Político` +20, `Consciência` -20) |
 | **Conexão com Atores** | Coronel, Pastor, Banqueiro/Ruralista, Miliciano, Professor, Sindicalista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-006 (Emendas) |
 | **Fundamentação** | A FPA tem 345 membros. A FPE tem 210 deputados. A FPSP tem 260+ integrantes. Quando atuam juntas, formam a bancada BBB. A FPA recebeu R$ 426 milhões em doações de campanha em 2014. |
@@ -423,9 +415,8 @@ Cada ficha contém:
 | **O que ensina** | Processo de impeachment, quórum de 2/3, julgamento político, golpe institucional, crime de responsabilidade |
 | **Medidor Principal** | `Legitimidade` |
 | **Medidores Secundários** | `Capital Político`, `Consciência`, `Integridade` |
-| **Gatilhos de Aparição** | Ano 2-4. Acionado quando `Legitimidade` < 20 E `Capital Político` < 20. |
+| **Gatilhos de Aparição** | Cena de impeachment: gatilhos em `gdd/sistemas/03_impeachment.md` §3.1 |
 | **Cartas Associadas** | INST-141 a INST-160 (20 cartas) |
-| **Eventos Encadeados** | Ano 3: "Processo instaurado" (`Capital Político` -15, `Legitimidade` -10) · Ano 4: "Condenação ou absolvição" (`Legitimidade` -30 ou +20) |
 | **Conexão com Atores** | Todos os atores |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-009 (Judiciário) |
 | **Fundamentação** | O impeachment de Dilma Rousseff em 2016 foi um golpe parlamentar, jurídico e midiático. O relator no Senado, Antonio Anastasia, apontou crime de responsabilidade e votou pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. A contradição central foi que Dilma perdeu o mandato, mas manteve seus direitos políticos. |
@@ -472,9 +463,8 @@ Cada ficha contém:
 | **O que ensina** | Venda de sentenças, blindagem institucional, suspeição, foro privilegiado, aposentadoria compulsória, impunidade |
 | **Medidor Principal** | `Consciência` / `Integridade` |
 | **Medidores Secundários** | `Capital Político`, `Legitimidade`, `Dignidade` |
-| **Gatilhos de Aparição** | Ano 2-4. Aparece com mais frequência quando `Integridade` < 30. |
+| **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-161 a INST-180 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Escândalo no STF" (`Integridade` -15, `Consciência` -10) · Ano 3: "Crise institucional" (`Integridade` -20, `Capital Político` -15) |
 | **Conexão com Atores** | Jornalista Independente, Burocrata, Banqueiro/Ruralista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-010 (Influenciador) |
 | **Fundamentação** | A venda de sentenças é um mercado nacional. O relatório da Polícia Federal sobre o celular de Daniel Vorcaro (Banco Master) mostra 28 mensagens enviadas a um telefone atribuído a Alexandre de Moraes, em dezembro de 2025 ([Poder360, 2026](https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/)); corrigido no P-011. A aposentadoria compulsória é uma forma de blindagem institucional. |
@@ -521,9 +511,8 @@ Cada ficha contém:
 | **O que ensina** | Fake news, deepfakes, bets, influenciadores, pânico moral, desmoralização, didatismo acusatório, fazendas de IA, cachê da desgraça |
 | **Medidor Principal** | `Integridade` / `Consciência` |
 | **Medidores Secundários** | `Legitimidade`, `Capital Político`, `Dignidade` |
-| **Gatilhos de Aparição** | Ano 1-4. Aparece com mais frequência quando `Integridade` < 30 ou `Consciência` < 30. |
+| **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-181 a INST-200 (20 cartas) |
-| **Eventos Encadeados** | Ano 2: "Deepfake viral" (`Integridade` -15, `Consciência` -10) · Ano 3: "Desintegração" (`Integridade` -20, `Consciência` -15) |
 | **Conexão com Atores** | Coach Digital, Jornalista Independente, Influenciador Progressista, Pastor |
 | **Referências Cruzadas** | MOD-003 (Currículo e Mídia) |
 | **Fundamentação** | A divulgação de conteúdos falsos com IA mais que triplicou entre 2024 e 2025. 554 vídeos deepfake foram publicados nas eleições de 2026. As bets financiam influenciadores com comissão sobre as perdas. O "cachê da desgraça alheia" é uma das formas mais perversas de exploração digital. |
@@ -586,6 +575,8 @@ Cada ficha contém:
 | **Desfecho (Ano 4)** | Todos os modos |
 
 ### 12.3.3. Modos por Conexão com Atores
+
+> Tabela do **elenco anterior** (antes da D-085), como as linhas "Conexão com Atores" das fichas acima. Revisar com os 24 atores do doc 11 `[pendente]`.
 
 | Ator | Modos em que Aparece |
 | :--- | :--- |
@@ -655,13 +646,15 @@ Cada ficha contém:
 
 ### 12.4.2. Regras de Aparição
 
+Regras completas: `gdd/sistemas/06_sorteio.md`.
+
 | Regra | Descrição |
 | :--- | :--- |
-| **1. Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| **2. Prioridade de Modo** | Se um modo não apareceu nos últimos 2 turnos, ele tem prioridade. |
-| **3. Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| **4. Prioridade de Medidor** | Se um medidor está < 30, cartas do modo relacionado aparecem obrigatoriamente. |
-| **5. Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+| **1. Obrigatórias** | Até 3 por turno: emergência (medidor ≤ 10) → ataque de ator Furioso → carta ligada a medidor < 30 (D-114, D-115) |
+| **2. Variedade** | Nas vagas sorteadas, máx. 1 carta por modo; relaxa se faltar carta (D-116) |
+| **3. Peso igual** | As vagas restantes até 7 são sorteadas com peso igual |
+
+Eventos encadeados não são cartas nem pertencem aos modos: vêm das opções (D-109).
 
 ---
 

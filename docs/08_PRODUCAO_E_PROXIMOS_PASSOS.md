@@ -19,7 +19,7 @@ Este documento consolida o planejamento de produção do jogo, incluindo a stack
 | **Validação** | Testes com 3-5 pessoas + educador |
 | **Distribuição** | Play Store, Web, itch.io |
 | **Modelo** | Gratuito (sem monetização interna) |
-| **Salvamento** | Sem salvamento de progresso |
+| **Salvamento** | Automático e invisível, 1 partida, sem desfazer (D-121) |
 
 ### 08.01.2. Princípios de Produção
 

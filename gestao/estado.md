@@ -144,7 +144,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**`/sync-docs`:** aplicar os "Ajustes para outros docs" dos GDDs 05-10 (docs 05, 11, 12, 13, 15; `CLAUDE.md`: 28 finais, eventos, atores `ACT`).
+**Aguardando ordem do PO.** `/sync-docs` dos GDDs 05-10 aplicado (2026-10-16). Pendentes do sync: "Cartas Associadas" do doc 11 a redefinir no doc 17; "Conexão com Atores" do doc 12 ainda com o elenco anterior.
 
 **Pendências do P-012:**
 - Citação e categoria do final "Renúncia" (`gdd/sistemas/02_finais.md` §3.1).

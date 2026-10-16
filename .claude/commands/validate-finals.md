@@ -1,5 +1,5 @@
 ---
-description: Valida os 27 finais (estrutura, condições, consistência)
+description: Valida os 28 finais (estrutura, condições, consistência)
 allowed-tools: Read, Grep, Glob
 ---
 
@@ -13,7 +13,7 @@ allowed-tools: Read, Grep, Glob
 
 ## Validações
 
-1. **Contagem:** Existem exatamente 27 finais (D-096); regras em `gdd/sistemas/02_finais.md`.
+1. **Contagem:** Existem exatamente 28 finais (D-096, D-122); regras em `gdd/sistemas/02_finais.md`.
 2. **Estrutura:** Cada final tem id, nome, categoria, condição, descrição, citação, autor, cor, ícone.
 3. **IDs únicos:** Cada final tem um ID único.
 4. **Categorias:** Só categorias previstas no §13.3.6.

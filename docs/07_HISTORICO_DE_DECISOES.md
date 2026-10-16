@@ -69,6 +69,8 @@ Cada decisão é registrada com:
 | 19 | **Plataforma** | Mobile, Web e PC | Acessibilidade e distribuição |
 | 20 | **Modo** | Singleplayer, sem salvamento | Foco na experiência e simplicidade técnica |
 
+> **Revisões posteriores (registro histórico mantido acima):** turnos com 7 cartas (D-113); 27 → 28 finais (D-096, D-122); eventos só das opções, revisa os 78 (D-109); sorteio com teto de 3 obrigatórias (D-114); salvamento automático (D-121). Lista completa: `gestao/decisoes.md`.
+
 ### 07.2.2. Fundamentação das Decisões Principais
 
 #### Nome "O Planalto"

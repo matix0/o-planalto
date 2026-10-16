@@ -224,7 +224,7 @@ Existem frameworks prontos que aceleram o desenvolvimento de jogos de cartas em 
 
 ### 13.3.1. Estrutura de uma Carta
 
-Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes campos:
+Cada carta é um **Resource** (`.tres`) ou **objeto JSON**. Regras: `gdd/sistemas/05_cartas.md` §3.
 
 ```json
 {
@@ -236,31 +236,23 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
   "opcao_a": {
     "texto": "Nomear relator adversário",
     "cor": "vermelho",
-    "custo": { "Capital Político": -10 },
-    "efeitos": { "Soberania": 10 },
-    "consequencia": "O relator é adversário. O projeto avança.",
-    "eixo": [-1, 0, 0, 0]
+    "eixo": [-1, 0, 0, 0],
+    "efeitos": { "Capital Político": -10, "Soberania": 10 },
+    "atores": {},
+    "eventos": [],
+    "consequencia": "O relator é adversário. O projeto avança."
   },
   "opcao_b": {
     "texto": "Aceitar as mudanças",
     "cor": "laranja",
-    "custo": { "Capital Político": 10, "Caixa": 10 },
-    "efeitos": { "Soberania": -15, "Integridade": -5 },
-    "consequencia": "A lei passa. O povo paga a conta.",
-    "eixo": [1, 0, 0, 0]
+    "eixo": [1, 0, 0, 0],
+    "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
+    "atores": {},
+    "eventos": [],
+    "consequencia": "A lei passa. O povo paga a conta."
   },
   "aprendizado_id": "APR-001",
-  "pre_requisitos": {
-    "ano_minimo": 1,
-    "modo_nao_jogado": true
-  },
-  "eventos_encadeados": [
-    {
-      "turno_gatilho": 2,
-      "evento": "Aumento de tarifas de energia",
-      "efeitos": { "Dignidade": -10, "Soberania": -5 }
-    }
-  ]
+  "pre_requisitos": { "ano_minimo": 1 }
 }
 ```
 
@@ -268,38 +260,28 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
-| `id` | String | Identificador único da carta (INST-001, THEM-001, ATOR-001) |
-| `titulo` | String | Título curto da carta |
-| `modo` | String | Modo institucional (Congresso, Orçamento, etc.) |
-| `tipo` | String | Tipo (Institucional, Temática, Ator, Evento) |
-| `problema` | String | Descrição do dilema |
-| `opcao_a` | Objeto | Primeira opção; o jogo sorteia o lado em que aparece (D-084) |
-| `opcao_b` | Objeto | Segunda opção |
-| `aprendizado_id` | String | Código da Carta de Aprendizado no doc 18 (D-090), ex.: `APR-001` |
-| `pre_requisitos` | Objeto | Condições para a carta aparecer |
-| `eventos_encadeados` | Array | Eventos que a carta gera |
+| `id` | String | Único: `INST-xxx`, `THEM-xxx`, `ATOR-xxx` |
+| `titulo` | String | Até 5 palavras |
+| `modo` | String | Um dos 10 modos |
+| `tipo` | String | Institucional, Temática, Ator ou Impeachment (fora das 340, com `teste` por opção — D-101) |
+| `problema` | String | Até 2 linhas |
+| `opcao_a` / `opcao_b` | Objeto | Opções; o jogo sorteia o lado a cada exibição (D-084, D-099) |
+| `aprendizado_id` | String | `APR-xxx` no doc 18 (D-090); sem aprovação, a carta fica fora do baralho (D-102) |
+| `pre_requisitos` | Objeto | Só `ano_minimo` (1-4, padrão 1 — D-117) |
+| `tecnica` | String | Só no modo Influenciador: uma de 6 técnicas (D-119) |
 
 ### 13.3.2. Estrutura de uma Opção
 
-```json
-{
-  "texto": "Nomear relator adversário",
-  "cor": "vermelho",
-  "custo": { "Capital Político": -10 },
-  "efeitos": { "Soberania": 10 },
-  "consequencia": "O relator é adversário. O projeto avança."
-}
-```
-
-**Campos:**
-
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
-| `texto` | String | Texto da opção |
-| `cor` | String | Cor partidária de quem propõe a opção (vermelho, azul, verde, amarelo, roxo, laranja, preto) — D-092 |
-| `eixo` | Array[4] | Pontos [Economia, Diplomacia, Sociedade, Estado], inteiros −2 a +2 (`gdd/sistemas/04_eixo.md`) |
-| `custo` | Objeto | Medidores que são gastos (negativos) |
-| `efeitos` | Objeto | Medidores que são afetados (positivos ou negativos) |
+| `texto` | String | 1 linha |
+| `cor` | String | Uma das 7 cores; cores distintas nas duas opções (D-092, D-103) |
+| `eixo` | Array[4] | [Economia, Diplomacia, Sociedade, Estado], −2 a +2 (`gdd/sistemas/04_eixo.md`) |
+| `efeitos` | Objeto | Campo único com sinal: 2-4 medidores, ±5 a ±30, múltiplos de 5, ≥ 1 negativo (D-098; exceção: Boa Vontade, D-108) |
+| `atores` | Objeto | `{ "ACT-xxx": ±1 }`, 0-3 atores (D-106) |
+| `eventos` | Array | 0 ou 1 evento: `texto`, `atraso` (1-2), `efeitos` (1-3 medidores) — D-111 |
+| `reacao` | String | Só no modo Influenciador: `aceitar`, `recusar` ou `investigar` (D-120) |
+| `teste` | Objeto | Só no tipo Impeachment (`gdd/sistemas/03_impeachment.md`) |
 | `consequencia` | String | Frase curta mostrada após a escolha |
 
 ### 13.3.3. Estrutura de um Medidor
@@ -339,91 +321,33 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 
 ```json
 {
-  "id": "ATOR-001",
-  "nome": "Coronel",
-  "arquetipo": "Senhor de engenho, chefe local",
-  "satisfacao": 50,
+  "id": "ACT-001",
+  "nome": "Latifundiários",
+  "categoria": "Capital",
+  "arquetipo": "Senhor de engenho, barão do café, dono de terras",
   "oferece": ["Capital Político"],
-  "cobra": ["Autonomia", "Impunidade"],
-  "preco": { "Dignidade": -5, "Integridade": -5 },
-  "cartas": ["ATOR-001", "ATOR-002", "ATOR-003", "ATOR-004", "ATOR-005"],
-  "eventos_encadeados": [
-    {
-      "turno": 2,
-      "evento": "Cobra favor",
-      "efeitos": { "Capital Político": -10 }
-    },
-    {
-      "turno": 3,
-      "evento": "Ameaça invadir terra",
-      "efeitos": { "Soberania": -10, "Dignidade": -5 }
-    },
-    {
-      "turno": 4,
-      "evento": "Milícia domina região",
-      "efeitos": { "Segurança": -10, "Soberania": -10 }
-    }
-  ]
+  "cobra": ["Soberania"],
+  "cartas": { "ataque": "ATOR-xxx", "exigencia": "ATOR-xxx", "oferta": "ATOR-xxx" }
 }
 ```
 
-**Campos:**
+**Campos:** `id` (`ACT-001` a `ACT-024`, D-104); `nome`, `categoria`, `arquetipo` (doc 11); `oferece` / `cobra` (guia de escrita); `cartas` (uma por função; 2 atores sem `oferta` — D-105). Sem `preco` nem eventos próprios (D-107, D-109). A satisfação (começa em 50) fica no estado da partida. Regras: `gdd/sistemas/07_atores.md`.
 
-| Campo | Tipo | Descrição |
-| :--- | :--- | :--- |
-| `id` | String | Identificador único do ator |
-| `nome` | String | Nome do ator |
-| `arquetipo` | String | Herança histórica |
-| `satisfacao` | Int | Nível de satisfação (0-100) |
-| `oferece` | Array | O que o ator oferece |
-| `cobra` | Array | O que o ator cobra |
-| `preco` | Objeto | Medidores afetados |
-| `cartas` | Array | IDs das cartas do ator |
-| `eventos_encadeados` | Array | Eventos gerados pelo ator |
+### 13.3.5. Estado da Partida
 
-### 13.3.5. Estrutura de um Turno
+O que é salvo automaticamente (D-121). Regras: `gdd/sistemas/10_estado_partida.md` §3.4.
 
-```json
-{
-  "turno": 1,
-  "ano": 1,
-  "fase": "Lua de Mel",
-  "cartas_sorteadas": ["INST-001", "THEM-001", "ATOR-001"],
-  "eventos_encadeados": ["EVEN-001"],
-  "medidores_inicio": {
-    "Dignidade": 45,
-    "Consciência": 40,
-    "Soberania": 40,
-    "Segurança": 50,
-    "Integridade": 40,
-    "Caixa": 55,
-    "Capital Político": 50,
-    "Legitimidade": 55
-  },
-  "medidores_fim": {
-    "Dignidade": 45,
-    "Consciência": 40,
-    "Soberania": 50,
-    "Segurança": 50,
-    "Integridade": 35,
-    "Caixa": 65,
-    "Capital Político": 50,
-    "Legitimidade": 55
-  }
-}
-```
+| Dado | Sistema dono |
+| :--- | :--- |
+| Versão do formato, ano (1-4), estado atual, cartas do turno | 10 |
+| 8 medidores e medidores que já tiveram emergência | 01, 06 |
+| Satisfação dos 24 atores | 07 |
+| Traçados "o que você disse" e "como você governou" | 04 |
+| Cartas jogadas | 06 |
+| Fila de eventos e epílogo | 08 |
+| Impeachment usado, fase e apoio | 03 |
 
-**Campos:**
-
-| Campo | Tipo | Descrição |
-| :--- | :--- | :--- |
-| `turno` | Int | Número do turno (1-4) |
-| `ano` | Int | Ano do mandato (1-4) |
-| `fase` | String | Fase (Lua de Mel, Realidade Bate, Crise, Desfecho) |
-| `cartas_sorteadas` | Array | IDs das cartas sorteadas |
-| `eventos_encadeados` | Array | IDs dos eventos encadeados |
-| `medidores_inicio` | Objeto | Valores dos medidores no início do turno |
-| `medidores_fim` | Objeto | Valores dos medidores no fim do turno |
+Uma única partida salva, apagada na tela final ou ao abandonar; entre partidas, só as configurações (D-123).
 
 ### 13.3.6. Estrutura de um Final
 
@@ -459,74 +383,13 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON** com os seguintes camp
 
 ## 13.4. Sistemas
 
-### 13.4.1. Sistema de Sorteio (Prioridade Narrativa)
+### 13.4.1. Sistema de Sorteio
 
-O sistema de sorteio é o **coração do jogo**. Ele define quais cartas aparecem em cada turno.
-
-**Algoritmo:**
-
-```
-funcao sortear_cartas(turno, medidores, atores, cartas_jogadas):
-    # 1. Filtrar cartas disponíveis
-    cartas_disponiveis = filtrar_cartas(cartas_jogadas, turno)
-    
-    # 2. Prioridade narrativa
-    for evento in eventos_encadeados:
-        if evento.turno == turno:
-            adicionar_carta_obrigatoria(evento.carta)
-    
-    # 3. Prioridade de ator
-    for ator in atores:
-        if ator.satisfacao < 30:
-            adicionar_carta_obrigatoria(ator.cartas[0])
-    
-    # 4. Prioridade de medidor
-    for medidor in medidores:
-        if medidor.valor_atual < 30:
-            adicionar_carta_obrigatoria(medidor.cartas_relacionadas)
-    
-    # 5. Variedade
-    remover_cartas_do_mesmo_modo(cartas_disponiveis)
-    
-    # 6. Aleatoriedade controlada
-    cartas_sorteadas = sortear_aleatoriamente(cartas_disponiveis, 6-8)
-    
-    return cartas_sorteadas
-```
-
-**Regras:**
-
-| # | Regra | Descrição |
-| :--- | :--- | :--- |
-| 1 | **Prioridade Narrativa** | Se uma decisão anterior gerou uma consequência, a carta da consequência aparece obrigatoriamente no turno correto. |
-| 2 | **Prioridade de Ator** | Se um ator está insatisfeito (satisfação < 30), ele aparece obrigatoriamente no próximo turno. |
-| 3 | **Prioridade de Medidor** | Se um medidor está < 30, cartas relacionadas a ele aparecem obrigatoriamente no próximo turno. |
-| 4 | **Variedade** | Se um modo já apareceu no turno, ele não aparece de novo no mesmo turno. |
-| 5 | **Aleatoriedade Controlada** | As cartas restantes são sorteadas aleatoriamente, mas com peso igual. |
+Regras e fórmulas: `gdd/sistemas/06_sorteio.md`. 7 cartas por turno, sem repetição; até 3 obrigatórias (emergência → ator Furioso → medidor < 30); vagas restantes com peso igual, 1 por modo; sorteio uma a uma na exibição.
 
 ### 13.4.2. Sistema de Satisfação dos Atores
 
-| Nível | Estado | O que Acontece |
-| :--- | :--- | :--- |
-| 0-20 | Furioso | Aparece obrigatoriamente. Pode atacar o governo. |
-| 21-40 | Insatisfeito | Aparece com alta probabilidade. Pode fazer exigências. |
-| 41-60 | Neutro | Aparece normalmente. |
-| 61-80 | Satisfeito | Aparece com baixa probabilidade. Pode oferecer bônus. |
-| 81-100 | Aliado | Aparece apenas se necessário. Oferece apoio incondicional. |
-
-**Algoritmo de Atualização:**
-
-```
-funcao atualizar_satisfacao(ator, escolha):
-    if escolha.atende_ator(ator):
-        ator.satisfacao += 10
-    elif escolha.contraria_ator(ator):
-        ator.satisfacao -= 10
-    else:
-        ator.satisfacao += 0
-    
-    ator.satisfacao = clamp(ator.satisfacao, 0, 100)
-```
+Regras e fórmulas: `gdd/sistemas/07_atores.md`. `s(a) ← clamp(s(a) + 10 × d(o,a), 0, 100)`, com `d` vindo do campo `atores` da opção; o nível define a função de carta sorteável.
 
 ### 13.4.3. Sistema de Eixo Ideológico
 
@@ -597,8 +460,7 @@ Detalhes: `gdd/sistemas/01_medidores.md`.
 | `cartas.json` | JSON | Todas as 340 cartas |
 | `medidores.json` | JSON | Os 8 medidores (sub-medidores removidos, D-094) |
 | `atores.json` | JSON | Os 24 atores |
-| `finais.json` | JSON | Os 27 finais |
-| `eventos.json` | JSON | Os 78 eventos encadeados |
+| `finais.json` | JSON | Os 28 finais (D-096, D-122) |
 | `calibracao.json` | JSON | As 6 perguntas da calibração inicial |
 | `eixo_ideologico.json` | JSON | Configuração do eixo 9axes |
 | `dialogos.json` | JSON | Textos de interface (botões, mensagens) |
@@ -619,35 +481,29 @@ Detalhes: `gdd/sistemas/01_medidores.md`.
       "opcao_a": {
         "texto": "Nomear relator adversário",
         "cor": "vermelho",
-        "custo": { "Capital Político": -10 },
-        "efeitos": { "Soberania": 10 },
-        "consequencia": "O relator é adversário. O projeto avança.",
-        "eixo": [-1, 0, 0, 0]
+        "eixo": [-1, 0, 0, 0],
+        "efeitos": { "Capital Político": -10, "Soberania": 10 },
+        "atores": {},
+        "eventos": [],
+        "consequencia": "O relator é adversário. O projeto avança."
       },
       "opcao_b": {
         "texto": "Aceitar as mudanças",
         "cor": "laranja",
-        "custo": { "Capital Político": 10, "Caixa": 10 },
-        "efeitos": { "Soberania": -15, "Integridade": -5 },
-        "consequencia": "A lei passa. O povo paga a conta.",
-        "eixo": [1, 0, 0, 0]
+        "eixo": [1, 0, 0, 0],
+        "efeitos": { "Capital Político": 10, "Soberania": -15, "Caixa": 10, "Integridade": -5 },
+        "atores": {},
+        "eventos": [],
+        "consequencia": "A lei passa. O povo paga a conta."
       },
       "aprendizado_id": "APR-001",
-      "pre_requisitos": {
-        "ano_minimo": 1,
-        "modo_nao_jogado": true
-      },
-      "eventos_encadeados": [
-        {
-          "turno_gatilho": 2,
-          "evento": "Aumento de tarifas de energia",
-          "efeitos": { "Dignidade": -10, "Soberania": -5 }
-        }
-      ]
+      "pre_requisitos": { "ano_minimo": 1 }
     }
   ]
 }
 ```
+
+Eventos ficam dentro das opções (D-111); não há `eventos.json`.
 
 ---
 
@@ -679,7 +535,7 @@ Detalhes: `gdd/sistemas/01_medidores.md`.
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  ABERTURA DO TURNO                                          │
-│  └──▶ SORTEIO DE CARTAS (6-8)                              │
+│  └──▶ EVENTOS → OBRIGATÓRIAS → 7 CARTAS                    │
 │       └──▶ CARTA 1 (Problema + Escolha + Consequência)     │
 │            └──▶ CARTA DE APRENDIZADO 1                     │
 │                 └──▶ CARTA 2                                │
@@ -754,8 +610,8 @@ Detalhes: `gdd/sistemas/03_impeachment.md`.
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  DECISÃO (Turno X)                                          │
-│  └──▶ REGISTRAR EVENTO (Turno X+2)                         │
-│       └──▶ NO TURNO X+2:                                   │
+│  └──▶ AGENDAR EVENTO DA OPÇÃO (Turno X + atraso 1-2)       │
+│       └──▶ INÍCIO DO TURNO DE DESTINO (> 4 → EPÍLOGO):     │
 │            └──▶ EXIBIR AVISO ESPECIAL                      │
 │                 └──▶ APLICAR EFEITOS                       │
 │                      └──▶ CONTINUAR JOGO                   │

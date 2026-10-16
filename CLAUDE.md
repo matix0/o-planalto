@@ -26,7 +26,7 @@
 - **Modos:** 10 institucionais
 - **Atores:** 24 (14 base + 6 expansão + 4 adicionais — D-085)
 - **Cartas:** 340
-- **Finais:** 27 (D-096)
+- **Finais:** 28 (D-096, D-122)
 - **Eixo Ideológico:** Modelo 9axes adaptado
 - **Cores Partidárias:** Vermelho, Azul, Verde, Amarelo, Roxo, Laranja, Preto
 
@@ -69,7 +69,7 @@ Próximo passo: [O que fazer em seguida]
 | `/sync-tech` | Sincroniza arquitetura técnica (arquivo 13) |
 | `/sync-docs` | Sincroniza toda a documentação (00-13) |
 | `/validate-cards` | Valida as 340 cartas |
-| `/validate-finals` | Valida os 27 finais |
+| `/validate-finals` | Valida os 28 finais |
 | `/publish-docs` | Publica a documentação no GitHub Pages |
 | `/mapear-sistemas` | Mapeia sistemas, dependências e ordem dos GDDs (P-011) |
 | `/gdd-sistema` | Escreve o GDD de um sistema, seção por seção (P-011) |
