@@ -127,6 +127,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-115 | Carta ligada ao medidor M: alguma opção com efeito positivo em M; usada pela emergência, pelo medidor < 30 e pela "recuperação" | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
 | D-116 | Vagas sorteadas com peso igual, máx. 1 por modo (relaxa se faltar carta), escolhidas uma a uma na exibição; obrigatórias isentas do modo | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
 | D-117 | Único pré-requisito da carta: `ano_minimo` (sai `modo_nao_jogado`); com baralho curto, a partida fica curta, sem repetir cartas | 2026-10-16 | Escolha do PO (GDD 06 Sorteio, P-012) |
+| D-118 | Desinformação é sistema de conteúdo, sem mecânica nova; inoculação pela exposição na carta e pela Carta de Aprendizado, que nomeia a técnica | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
+| D-119 | Modo Influenciador: campo `tecnica` obrigatório (1 de 6); cada técnica em ≥ 2 das 20 cartas; falta de cobertura só avisa enquanto o roteiro está incompleto | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
+| D-120 | Campo `reacao` por opção no modo (aceitar, recusar, investigar), distintas na carta; opção `aceitar` perde `Integridade` ou `Consciência`; as 3 reações do GDD §6.8 viram guia de escrita | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
 
 ---
 
@@ -196,6 +199,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-115 | Carta ligada a medidor |
 | D-116 | Sorteio com peso igual e 1 por modo |
 | D-117 | Só `ano_minimo` |
+| D-118 | Desinformação como conteúdo |
+| D-119 | Campo `tecnica` |
+| D-120 | Campo `reacao` |
 
 ### Técnica
 

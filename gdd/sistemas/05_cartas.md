@@ -29,6 +29,7 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `problema` | Até 2 linhas |
 | `opcao_a` / `opcao_b` | §3.3 |
 | `aprendizado_id` | `APR-xxx`, mesmo número da carta; texto no doc 18 (D-090) |
+| `tecnica` | Só no modo Influenciador: uma de 6 técnicas (`gdd/sistemas/09_desinformacao.md` §3.1) |
 | `pre_requisitos` | Declarado aqui; regras no GDD 06 |
 
 ### 3.3. Opção
@@ -42,6 +43,7 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `consequencia` | Frase curta, mostrada após a escolha |
 | `atores` | `{ "ACT-xxx": ±1 }`, de 0 a 3 atores; a carta de um ator o cita nas duas opções (`gdd/sistemas/07_atores.md` §3.3-3.4) |
 | `eventos` | 0 ou 1 evento encadeado (`gdd/sistemas/08_eventos.md` §3.1) |
+| `reacao` | Só no modo Influenciador: `aceitar`, `recusar` ou `investigar` (`gdd/sistemas/09_desinformacao.md` §3.2) |
 
 ### 3.4. Lado e exibição
 
@@ -101,7 +103,7 @@ Ao soltar a carta, nesta ordem:
 | 06 Sorteio | Lê `pre_requisitos`, `modo` e `tipo` | ⏳ a escrever |
 | 07 Atores | Lê o campo `atores` e as cartas ATOR | ✅ `gdd/sistemas/07_atores.md` §3 |
 | 08 Eventos | Lê o campo `eventos` da opção | ✅ `gdd/sistemas/08_eventos.md` §3 |
-| 09 Desinformação | Usa as cartas do modo Influenciador | ⏳ a escrever |
+| 09 Desinformação | Campos `tecnica` e `reacao` no modo Influenciador | ✅ `gdd/sistemas/09_desinformacao.md` §3 |
 | 10 Estado da partida | Executa a resolução (§3.5) | ⏳ a escrever |
 | 02 Finais | Recebe o fim imediato (§5) | ❌ não cita o 05 — ajuste na etapa 7 do P-012 |
 

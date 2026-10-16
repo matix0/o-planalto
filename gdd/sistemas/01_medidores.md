@@ -104,6 +104,7 @@ Carta de recuperação → GDD 06 Sorteio. Evento de boa vontade → GDD 07 Ator
 | 06 Sorteio | Recebe o pedido de carta de emergência; medidor < 30 puxa cartas ligadas (`gdd/sistemas/06_sorteio.md` §3.2-3.3) |
 | 07 Atores | Evento de boa vontade aplica efeito nos medidores |
 | 08 Eventos | Aplica efeitos nos medidores |
+| 09 Desinformação | O dobro da perda de `Consciência` (§3.3) é o peso da desinformação (`gdd/sistemas/09_desinformacao.md` §3.4) |
 | 10 Estado da partida | Executa o efeito da carta e o fechamento do turno |
 
 Cada um desses GDDs deve citar o 01 de volta.
