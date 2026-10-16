@@ -237,7 +237,7 @@ FIM DO ANO 4
 | **Fortalecimento** | 5 | República Soberana e Popular |
 | **Cuidado e Soberania** | 3 | Fome como Escolha Política |
 | **Neutro** | 1 | Mandato Comum |
-| `[pendente]` | 1 | Renúncia (ao abandonar o mandato) |
+| **Saída** | 1 | Renúncia (ao abandonar o mandato) |
 
 ---
 

@@ -61,7 +61,7 @@ Derivados do resultado, não calculados: Comissão aprova o parecer se a fase 2 
 | Principal | 37% |
 | Crise | 53% (25% condenação automática) |
 | Alternativo | 82% |
-| Capital em 0 | < 67% (medido com apoio ≥ 2; recalcular com ≥ 3) |
+| Capital em 0 | 47% jogador atento / 5% aleatório, com apoio ≥ 3 (ECO, P-013) |
 
 Diferença entre gatilhos aceita como intencional pelo PO. Sempre A ou sempre B ≈ 0%; melhor roteiro fixo (AAAAB) 35%.
 

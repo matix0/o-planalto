@@ -111,14 +111,14 @@ Ao soltar a carta, nesta ordem:
 
 | Parâmetro | Atual | Faixa segura | O que afeta |
 | :--- | :--- | :--- | :--- |
-| Medidores por opção | 2 a 4 | 1 a 5 | Legibilidade × peso da escolha; ≥ 5 dilui a causa e efeito (pilar 2) |
-| Magnitude do efeito base | ±5 a ±30 | ±5 a ±40 | Velocidade até 0 ou 100; ±30 × 1,5 (Ano 4) = 45 pontos de uma vez (`gdd/sistemas/01_medidores.md:28`) |
+| Medidores por opção | 2 a 4 | 2 a 4 (1-2 concentra o dano) | Legibilidade × peso da escolha; ≥ 5 dilui a causa e efeito (pilar 2) |
+| Magnitude do efeito base | ±5 a ±30 | ±5 a ±30 (±40 sobe a catástrofe do jogador atento de 8% para 29%) | Velocidade até 0 ou 100; ±30 × 1,5 (Ano 4) = 45 pontos de uma vez (`gdd/sistemas/01_medidores.md:28`) |
 | Passo do efeito | 5 | 5 | Números redondos para a escrita e para o ECO |
 | Negativos mínimos por opção | 1 | 1 | Custo real (D-097) |
 | Chance do lado de A | 0,5 | 0,5 fixo | Outro valor cria um "lado certo" (D-084) |
 | Custo por cor | ≥ 1 medidor com `S(c,m) < 0` | ≥ 1 | Nenhuma cor "de graça" (§4) |
 
-Faixas atuais: contagem das 44 opções escritas (`docs/17_ROTEIRO_DAS_CARTAS.md`). Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
+Faixas atuais: contagem das 44 opções escritas (`docs/17_ROTEIRO_DAS_CARTAS.md`). Faixas seguras: Simulação do ECO no P-013 (3.000 partidas por cenário, baralho sintético das 22 cartas; `.claude/notas/P-013-eco.md`). Jogo ao acaso termina em catástrofe em ~77% das partidas e o jogador atento chega ao fim do Ano 4 em ~89% — aceito pelo PO (padrão *Reigns*; D-124).
 
 ## 8. Critérios de aceite
 

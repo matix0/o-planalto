@@ -133,6 +133,12 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-121 | Salvamento automático e invisível após cada carta e transição; 1 partida salva, apagada no final; sem desfazer; ao reabrir, consequência e Aprendizado reaparecem. Resolve P-12 | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
 | D-122 | "Abandonar mandato" (pausa, com confirmação) → 28º final "Renúncia", completo (citação, epílogo, eixo, medidores); na calibração apaga sem final; "Novo mandato" apaga sem Renúncia. Revisa D-096 | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
 | D-123 | Entre partidas, só as configurações ficam guardadas; nenhum dado de jogo | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
+| D-124 | Balanceamento do ECO (simulação Monte Carlo): faixas dos §7 confirmadas — efeito ±5..±30, 2-4 medidores, passo dos atores 10-15; jogo ao acaso com ~77% de catástrofe aceito (padrão *Reigns*; jogador atento ~89% chega ao fim) | 2026-10-16 | Escolha do PO (P-013) |
+| D-125 | Eventos em 15%-25% das opções; efeitos de evento ±5..±20 (revisa D-111) | 2026-10-16 | Escolha do PO (P-013) |
+| D-126 | Cobertura mínima de 15% por eixo é regra de escrita das cartas, com aviso no `/validate-cards`; vetores já aprovados não mudam | 2026-10-16 | Escolha do PO (P-013) |
+| D-127 | Final "Renúncia" na categoria própria "Saída" (citação: Jânio Quadros, 1961); os 28 finais têm citação ou adaptação aprovada | 2026-10-16 | Escolha do PO (P-013) |
+| D-128 | Atores sem carta de oferta: Impérios Geopolíticos e Diplomatas do Itamaraty (sobreposição com o modo Geopolítico). Pergunta "EUA × BRICS" mantida, sem revisão do PSI (fecha P-11) | 2026-10-16 | Escolha do PO (P-013) |
+| D-129 | GDD mestre versão 2.0, status Aprovado (regras completas; cartas por amostra). P-5 e P-7 ficam com o protótipo | 2026-10-16 | Escolha do PO (P-013) |
 
 ---
 
@@ -195,7 +201,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-108 | Boa Vontade na carta de oferta |
 | D-109 | Eventos só das opções |
 | D-110 | Atraso de 1-2 turnos |
-| D-111 | Evento na opção |
+| D-111 | Evento na opção (revisada por D-125) |
 | D-112 | Disparo no início do turno |
 | D-113 | 7 cartas por turno, sem repetição |
 | D-114 | Teto de 3 obrigatórias |
@@ -208,6 +214,12 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-121 | Salvamento automático |
 | D-122 | Final Renúncia |
 | D-123 | Só configurações entre partidas |
+| D-124 | Balanceamento do ECO |
+| D-125 | Eventos 15-25%, ±20 |
+| D-126 | Cobertura de eixo como regra de escrita |
+| D-127 | Categoria Saída |
+| D-128 | Atores sem oferta; P-11 mantida |
+| D-129 | GDD 2.0 aprovado |
 
 ### Técnica
 

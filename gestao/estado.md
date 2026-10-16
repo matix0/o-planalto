@@ -1,7 +1,7 @@
 # Estado do Projeto — O Planalto
 
 **Última atualização:** 2026-10-16
-**Fase atual:** Setup de documentação (Fase 0-3 concluídas)
+**Fase atual:** GDD 2.0 aprovado (P-013)
 **Próxima fase:** Escrita dos arquivos 14-18 e GDD
 
 ---
@@ -35,8 +35,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **Site público** | ✅ Novo (Starlight) | P-009, https://matix0.github.io/o-planalto/ |
 | **MCP Godot** | ⏳ Adiado | P-005 (D-072) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
-| **GDD Completo** | 🟡 Rascunho 1.2 + 10 GDDs de sistema | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011, P-012); abertas no §16.4: P-5, P-7, P-11 |
-| **Protótipo Técnico** | ⏳ Pendente | Bloqueado pelo GDD |
+| **GDD Completo** | ✅ 2.0 aprovado | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011 a P-013); P-5 e P-7 ficam com o protótipo |
+| **Protótipo Técnico** | ⏳ Pendente | Desbloqueado; fica para o fim (decisão do PO) |
 | **Testes** | ⏳ Pendentes | Após protótipo |
 | **Publicação** | ⏳ Pendente | Após validação |
 
@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-124–D-129 | P-013 (balanceamento, eventos, finais, GDD 2.0) | 2026-10-16 |
 | D-098–D-103 | GDD 05 Cartas | 2026-10-16 |
 | D-104–D-108 | GDD 07 Atores | 2026-10-16 |
 | D-109–D-112 | GDD 08 Eventos | 2026-10-16 |
@@ -136,38 +137,20 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | RP-07 | Cartas inconsistentes | 🔴 Alto | Guia de estilo + validação |
 | RP-08 | Custo de tokens | 🟡 Ativo | Política de subagentes |
 | RT-08 | Godot instalado 4.6 ≠ stack 4.7 | 🟡 Ativo | Atualizar antes do P-005 ou rever D-052 |
-| RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟡 Ativo | Atualizar o Node para buildar `site/` localmente; o deploy no GitHub usa Node 24 |
+| RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟢 Fechado | Node 22.23.3 via `n` (2026-10-16) |
 | RC-08 | Docs citam políticos reais (contra D-005) em período eleitoral | 🔴 Alto | Aviso de conteúdo (D-075); parecer jurídico pendente (`docs/07_HISTORICO_DE_DECISOES.md:180`) |
-| RC-09 | Docs truncados — todos restaurados | 🟡 Ativo | Aviso + `noindex` (D-078); recuperar originais |
+| RC-09 | Docs truncados — todos restaurados | 🟢 Fechado | Originais truncados desde o 1º commit, sem recuperação; docs restaurados (P-013) |
 
 ---
 
 ## Próximo Passo
 
-**Aguardando ordem do PO.** `/sync-docs` dos GDDs 05-10 aplicado (2026-10-16). Pendentes do sync: "Cartas Associadas" do doc 11 a redefinir no doc 17; "Conexão com Atores" do doc 12 ainda com o elenco anterior.
+**GDD 2.0 aprovado (P-013).** Próximos planos possíveis, por ordem do PO:
+- Conteúdo: escrever as 313 cartas restantes (doc 17) e seus Aprendizados (doc 18), usando as cartas do P-003 só como banco de ideias.
+- Docs 19-23 (personas, testes, divulgação, lore, licença).
+- Protótipo técnico (P-005), por último: inclui P-5 (licenças) e P-7 (MCP/Godot 4.6 × 4.7).
 
-**Pendências do P-012:**
-- Citação e categoria do final "Renúncia" (`gdd/sistemas/02_finais.md` §3.1).
-- Escolher os 2 atores sem carta de oferta (`gdd/sistemas/07_atores.md` §3.5).
-- Proporção de opções com evento, com o ECO (`gdd/sistemas/08_eventos.md` §7).
-- Faixas seguras dos GDDs 05-10 sem simulação do ECO `[não verificado]`.
-- Gravação local em Godot web/mobile `[não verificado]` (P-005).
-- Baralho jogável: 22 cartas (D-102) → partida curta até o doc 17/18 avançar.
-
-**Pendências do P-011:**
-- Mais cartas de Diplomacia (≥ 15% por eixo). A neutralização do "moral" por cor e eixo foi cancelada (D-097); toda opção mantém custo real.
-- Citações para 5 finais sem fonte (Barbárie, Autogestão, Golpe Militar, República Soberana, Fome).
-- Texto das cartas das fases 3-5 do impeachment.
-- Recalcular absolvição com apoio ≥ 3 (Capital em 0).
-- Doc 05: limiares de proteção e sub-medidores (`/sync-docs`).
-- Revisão PSI da pergunta "EUA vs. BRICS" (P-11).
-
-**Pendências do P-010:**
-- 5 Cartas de Aprendizado sem dado verificado (002, 041, 061, 121, ATOR-001).
-
-**Pendências do P-009:**
-- Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).
-- Parecer jurídico sobre o conteúdo com políticos reais (RC-08).
+**Ação externa do PO:** parecer jurídico sobre nomes reais (RC-08).
 
 **Bloqueios:** Nenhum.
 

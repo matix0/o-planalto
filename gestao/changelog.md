@@ -10,6 +10,11 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- GDD mestre 2.0 aprovado (P-013, D-129)
+- Simulação de balanceamento do ECO (`.claude/notas/P-013-eco.md`); faixas dos §7 confirmadas (D-124, D-125)
+- Citações dos finais Barbárie, Autogestão, Golpe Militar, República Soberana, Fome e Renúncia (categoria "Saída", D-127)
+- Cartas da cena de impeachment INST-143 a 145 e APR-143 a 145
+- Decisões D-124 a D-129
 - `gdd/sistemas/`: GDDs 05 Cartas, 06 Sorteio, 07 Atores, 08 Eventos, 09 Desinformação, 10 Estado da partida — 8 seções cada (P-012); os 10 sistemas concluídos
 - Final "Renúncia" (28º, ao abandonar o mandato), salvamento automático e "Continuar" (D-121, D-122)
 - Campos de carta: `atores`, `eventos` (na opção), `tecnica` e `reacao` (modo Influenciador); tipo `Impeachment`
@@ -27,6 +32,7 @@ Versionamento: [SemVer](https://semver.org/).
 - Decisões D-081 a D-092
 
 ### Alterado
+- APR-002, 041, 061, 121 e ATOR-001 com dados verificados; doc 12 com a conexão dos 24 atores; `/validate-cards` alinhado aos GDDs 05-09
 - Campo único `efeitos` com sinal (sai `custo`); lado sorteado a cada exibição; custo real por cor (D-098 a D-100)
 - Atores com código `ACT-xxx`, satisfação inicial 50, cartas por função (ataque, exigência, oferta) (D-104 a D-108)
 - Eventos só das opções, atraso de 1-2 turnos, disparo no início do turno; tabelas fixas removidas (D-109 a D-112, revisa D-024)

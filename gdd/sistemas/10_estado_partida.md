@@ -120,7 +120,7 @@ O jogador sente um mandato contínuo e irreversível: não há botão de voltar 
 | Partidas salvas | 1 | Fixo | Impede "salvar e testar" escolhas (pilar 1) |
 | Aviso de falha ao gravar | 1× por partida | 1× | Informa sem incomodar |
 | Confirmação de "Abandonar" / "Novo mandato" | 1 passo | 1-2 passos | Evita saída por toque acidental |
-| `t_x` (tempo fixo por partida) | `[não verificado]` | 5-8 min | Fecha a meta de ~15 min (D-088) com 28 × `t_c` (§4) |
+| `t_x` (tempo fixo por partida) | A medir no playtest do protótipo | 5-8 min | Fecha a meta de ~15 min (D-088) com 28 × `t_c` (§4) |
 
 Turnos: D-016; salvamento e confirmação: decisões do PO no P-012; faixa de `t_x`: diferença calculada na §4, a medir no protótipo.
 

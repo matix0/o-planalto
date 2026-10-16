@@ -279,7 +279,7 @@ Cada carta é um **Resource** (`.tres`) ou **objeto JSON**. Regras: `gdd/sistema
 | `eixo` | Array[4] | [Economia, Diplomacia, Sociedade, Estado], −2 a +2 (`gdd/sistemas/04_eixo.md`) |
 | `efeitos` | Objeto | Campo único com sinal: 2-4 medidores, ±5 a ±30, múltiplos de 5, ≥ 1 negativo (D-098; exceção: Boa Vontade, D-108) |
 | `atores` | Objeto | `{ "ACT-xxx": ±1 }`, 0-3 atores (D-106) |
-| `eventos` | Array | 0 ou 1 evento: `texto`, `atraso` (1-2), `efeitos` (1-3 medidores) — D-111 |
+| `eventos` | Array | 0 ou 1 evento: `texto`, `atraso` (1-2), `efeitos` (1-3 medidores, ±5 a ±20) — D-111, D-125 |
 | `reacao` | String | Só no modo Influenciador: `aceitar`, `recusar` ou `investigar` (D-120) |
 | `teste` | Objeto | Só no tipo Impeachment (`gdd/sistemas/03_impeachment.md`) |
 | `consequencia` | String | Frase curta mostrada após a escolha |

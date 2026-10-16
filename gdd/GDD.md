@@ -1,10 +1,10 @@
 # GDD — Game Design Document
 ## O Planalto
 
-**Versão:** 1.2
-**Data:** 2026-10-14
+**Versão:** 2.0
+**Data:** 2026-10-16
 **Autor:** Mateus (consolidação assistida)
-**Status:** Rascunho — documento mestre (D-081)
+**Status:** Aprovado (regras completas; cartas por amostra) — documento mestre (D-081)
 **Documentos-fonte:** `00` a `18`
 
 ---
@@ -501,7 +501,7 @@ Cada carta tem uma Carta de Aprendizado com 5 blocos:
 | Fortalecimento | 5 | República Soberana e Popular |
 | Cuidado e Soberania | 3 | Fome como Escolha Política |
 | Neutro | 1 | Mandato Comum |
-| `[pendente]` | 1 | Renúncia (ao abandonar o mandato) |
+| Saída | 1 | Renúncia (ao abandonar o mandato) |
 
 ---
 
@@ -786,8 +786,8 @@ Não há limiares de proteção por ano (D-082). A suavização da dificuldade v
 | Etapa | Prazo | Status |
 | :--- | :--- | :--- |
 | Documentação (00-13) | Out/2026 | ✅ |
-| Arquivos 14-18 | Out–Nov/2026 | ⏳ |
-| GDD Completo | Nov/2026 | ⏳ Rascunho 1.1 (este documento) |
+| Arquivos 14-18 | Out–Nov/2026 | 🟡 Escritos; roteiro das cartas por amostra (22 + 5 da cena) |
+| GDD Completo | Out/2026 | ✅ 2.0 (P-013): regras e 10 GDDs de sistema; cartas por amostra |
 | Protótipo Técnico | Nov/2026 (6-7 dias) | ⏳ |
 | Testes (3-5 pessoas) | Nov/2026 | ⏳ |
 | Validação Educador | Nov/2026 | ⏳ |
@@ -800,12 +800,12 @@ Não há limiares de proteção por ano (D-082). A suavização da dificuldade v
 | RP-07 | Cartas inconsistentes | Guia de estilo + validação |
 | RC-01 | Conteúdo doutrinário | Revisão ética |
 | RC-02 | Dados desatualizados | Validação com fontes 2026 |
-| RC-08 | Nomes reais mantidos (D-083) | Aviso de conteúdo (D-075); parecer jurídico pendente |
+| RC-08 | Nomes reais mantidos (D-083) | Aviso de conteúdo (D-075); parecer jurídico pendente — ação externa do PO |
 | RT-01 | Godot 4.7 + MCP inexperiente | Seguir fluxo documentado |
 
 ### 15.4. Próximos Passos
 
-1. Resolver as pendências da §16.4.
+1. Pendências restantes da §16.4 (P-5, P-7) ficam com o protótipo.
 2. Completar roteiro das 340 cartas (`17`).
 3. Completar roteiro das 340 Cartas de Aprendizado (`18`).
 4. Montar protótipo técnico em Godot 4.7.
@@ -887,13 +887,13 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-2 | ✅ Resolvida: partida de ~15 min (D-088) | §1.1, §4.2 |
 | P-3 | ✅ Resolvida: `gdd/sistemas/02_finais.md` (D-096) | §9 |
 | P-4 | ✅ Resolvida: `gdd/sistemas/06_sorteio.md` (teto de 3 obrigatórias; 1 por modo nas sorteadas) | §6.2.2 |
-| P-5 | Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
+| P-5 | Fora do GDD (com o protótipo): Font Awesome Free não é CC0 (ícones CC BY 4.0); Freesound/FMA misturam licenças | §11.1, §11.3 |
 | P-6 | ✅ Resolvida: sub-medidores removidos (D-094) | §6.1.2 |
-| P-7 | MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
+| P-7 | Fora do GDD (com o protótipo): MCP listado em `addons/` do jogo, mas é ferramenta de desenvolvimento; Godot instalado 4.6 (RT-08) | §12 |
 | P-8 | ✅ Resolvida: `gdd/sistemas/01_medidores.md` §3-4 | §6.1.3, §7.2, §13.2 |
 | P-9 | ✅ Resolvida: `gdd/sistemas/04_eixo.md` | §6.6, §9.2 |
 | P-10 | ✅ Resolvida: `gdd/sistemas/07_atores.md` (satisfação inicial 50; campo `atores` por opção) | §6.3 |
-| P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
+| P-11 | ✅ Resolvida: pergunta "EUA vs. BRICS" mantida pelo PO, sem revisão do PSI (P-013) | §5.5 |
 | P-12 | ✅ Resolvida: `gdd/sistemas/10_estado_partida.md` (salvamento automático, 1 partida) | §4.4 |
 | P-13 | ✅ Resolvida: 22 cartas escritas; 22 Cartas de Aprendizado ligadas e 127 em rascunho (P-010) | §8.1, §8.4 |
 | P-14 | ✅ Resolvida: os 10 GDDs de sistema têm as 8 seções (`.claude/rules/design-docs.md`) | todo |
@@ -902,6 +902,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 
 | Versão | Data | Mudanças |
 | :--- | :--- | :--- |
+| 2.0 | 2026-10-16 | P-012 e P-013: 10 GDDs de sistema (D-093 a D-126); 28 finais com citação; balanceamento simulado pelo ECO; pendências de design fechadas (P-5 e P-7 ficam com o protótipo). Aprovado pelo PO |
 | 0.1 | Out/2026 | Estrutura inicial |
 | 1.0 | Out/2026 | Consolidação completa |
 | 1.2 | 2026-10-14 | P-010: cenário Brasil e jogador Presidente (D-086/087); ~15 min (D-088); fim imediato (D-089); Aprendizado no doc 18 (D-090); dados verificados (D-091); cor por opção e lado sorteado (D-092); paleta das faixas e tamanhos de texto (doc 14) |
@@ -909,6 +910,6 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 
 ---
 
-**Última atualização:** 2026-10-14
-**Versão:** 1.2
-**Status:** Rascunho
+**Última atualização:** 2026-10-16
+**Versão:** 2.0
+**Status:** Aprovado

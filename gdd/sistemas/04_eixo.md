@@ -69,7 +69,7 @@ A revelação dos medidores continua com os textos de `gdd/GDD.md` §9.2.
 | :--- | :--- | :--- | :--- |
 | Escala dos vetores | ±2 | ±1 a ±3 | Nuance por opção |
 | Fator de escala | ×5 | — | Mantém −10..+10 |
-| Cobertura mínima por eixo | — | ≥ 15% das opções com valor ≠ 0 | Diplomacia hoje: 4 de 44 (9%) |
+| Cobertura mínima por eixo | — | ≥ 15% das opções com valor ≠ 0 | Diplomacia hoje: 4 de 44 (9%). Regra para a escrita das cartas; `/validate-cards` avisa abaixo de 15% (D-126). Os vetores já aprovados não mudam |
 
 ## 8. Critérios de aceite
 

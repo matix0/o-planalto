@@ -55,7 +55,7 @@ Satisfação inteira de 0 a 100; começa em 50 para todos.
 
 ### 3.5. Pendência
 
-Os 2 atores sem carta de oferta: escolha do PO ao escrever as cartas deles no doc 17.
+Os 2 atores sem carta de oferta: **Impérios Geopolíticos (`ACT-021`) e Diplomatas do Itamaraty (`ACT-010`)** — critério estrutural: os dois se sobrepõem ao modo Geopolítico (INST-061 a 080). Escolha do PO, P-013 (2026-10-16).
 
 ## 4. Fórmulas
 
@@ -105,12 +105,12 @@ O GDD 07 não lê os medidores: a satisfação só muda pelo campo `atores`.
 | Parâmetro | Atual | Faixa segura | O que afeta |
 | :--- | :--- | :--- | :--- |
 | Satisfação inicial | 50 | 50 fixo | Mesmo ponto de partida; outro valor cria viés |
-| Passo `P` | 10 | 5 a 15 | Velocidade de mudança de nível: 10 → 3 contrariedades até Furioso; 15 → 2; 5 → 6 |
+| Passo `P` | 10 | 10 a 15 (com 5 o nível quase não muda) | Velocidade de mudança de nível: 10 → 3 contrariedades até Furioso; 15 → 2; 5 → 6 |
 | Atores por opção | 0 a 3 | 0 a 3 | Quantos níveis mudam numa escolha |
 | Faixas dos níveis | 20 / 40 / 60 / 80 | ±5 em cada corte | Tempo do ator em cada função de carta |
 | Cartas por ator | 3 (2 para 2 atores) | Fixo (D-020) | Total de 70 cartas ATOR |
 
-Passo e faixas: `gdd/GDD.md` §6.3. Ritmo: ⌈30 / `P`⌉ (de 50 a 20). Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
+Passo e faixas: `gdd/GDD.md` §6.3. Ritmo: ⌈30 / `P`⌉ (de 50 a 20). Faixas seguras: Simulação do ECO no P-013 (3.000 partidas por cenário, baralho sintético das 22 cartas; `.claude/notas/P-013-eco.md`); atores em Furioso por partida: P=5 → 0; P=10 → 0,14; P=15 → 0,71.
 
 ## 8. Critérios de aceite
 
@@ -140,4 +140,4 @@ Aplicar no `/sync-docs` e na etapa 7 do P-012 (não alterados por este GDD):
 
 ## Pendência de roteiro
 
-- Escolher os 2 atores sem carta de oferta (§3.5) ao escrever as cartas deles no doc 17.
+- ✅ Resolvida no P-013: Impérios Geopolíticos e Diplomatas do Itamaraty ficam sem carta de oferta (§3.5).

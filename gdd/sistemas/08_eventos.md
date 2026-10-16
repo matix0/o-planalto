@@ -21,9 +21,10 @@ O jogador sente que o passado cobra a conta: uma decisão esquecida volta um ou 
 | :--- | :--- |
 | `texto` | Aviso de 1 linha |
 | `atraso` | 1 ou 2 turnos |
-| `efeitos` | 1 a 3 medidores; múltiplos de 5, de ±5 a ±30; positivos ou negativos; não exige custo |
+| `efeitos` | 1 a 3 medidores; múltiplos de 5, de ±5 a ±20; positivos ou negativos; não exige custo (D-125) |
 
 - Cada opção tem o campo `eventos`, com 0 ou 1 evento (`gdd/sistemas/05_cartas.md` §3.3).
+- No baralho, 15% a 25% das opções têm evento (1-2 avisos por turno; D-125). `/validate-cards` avisa fora da faixa.
 - Cartas da cena de impeachment não têm eventos.
 
 ### 3.2. Agendamento
@@ -74,7 +75,7 @@ Como `D` ≥ 2, o multiplicador ×0,25 do Ano 1 nunca se aplica a eventos.
 | Partida termina antes do destino (catástrofe ou condenação) | Eventos na fila vão ao epílogo, sem efeito |
 | Opção que zera medidor e tem evento | O evento não é agendado (`gdd/sistemas/05_cartas.md` §5) nem vai ao epílogo |
 | Ganho em medidor já em 100 | Limita a 100 (GDD 01) |
-| Evento inválido (`atraso` fora de 1-2, > 3 efeitos, valor fora de ±5..±30, > 1 evento na opção, evento em carta de impeachment) | `/validate-cards` reprova; no jogo, a carta é excluída do baralho e o erro vai ao log |
+| Evento inválido (`atraso` fora de 1-2, > 3 efeitos, valor fora de ±5..±20, > 1 evento na opção, evento em carta de impeachment) | `/validate-cards` reprova; no jogo, a carta é excluída do baralho e o erro vai ao log |
 | Epílogo sem eventos | A seção do epílogo não aparece na tela final |
 
 ## 6. Dependências
@@ -99,19 +100,19 @@ Como `D` ≥ 2, o multiplicador ×0,25 do Ano 1 nunca se aplica a eventos.
 | Parâmetro | Atual | Faixa segura | O que afeta |
 | :--- | :--- | :--- | :--- |
 | Atraso | 1 ou 2 turnos | 1-2 | ≥ 3 → quase todo evento vira epílogo em 4 turnos |
-| Eventos por opção | 0 ou 1 | 0-1 | Até ~28 avisos por partida (6-8 cartas por turno, `gdd/GDD.md` §5.4) |
+| Eventos por opção | 0 ou 1 | 0-1 | Até ~28 avisos por partida (7 cartas por turno, D-113); com 15%-25% de opções com evento, 1-2 por turno |
 | Medidores por evento | 1 a 3 | 1-3 | Legibilidade do aviso |
-| Magnitude do efeito | ±5 a ±30 | ±5 a ±30 | Com ×1,5 no Ano 4, até ±45; mesma escala das cartas (`gdd/sistemas/05_cartas.md` §7) |
+| Magnitude do efeito | ±5 a ±20 | ±5 a ±20 | Eventos se somam às cartas; com ×1,5 no Ano 4, até ±30 |
 | Multiplicador | Do ano de destino | Fixo | Peso do evento × cartas |
-| Opções com evento | Livre | `[a definir com o ECO]` | Avisos por turno; muitos cansam (pilar 2) |
+| Opções com evento | 15%-25% | 15%-25% | Catástrofe do jogador atento: 15% → 15%; 30% → 22%; 50% → 28% |
 
-Faixas: decisões do PO no P-012 e escala do GDD 05. Proporção de opções com evento: sem dado — nenhuma das 22 cartas escritas tem evento (`docs/17_ROTEIRO_DAS_CARTAS.md`) — `[não verificado]` até a simulação do ECO.
+Faixas: decisões do PO no P-012 e escala do GDD 05. Magnitude e proporção: Simulação do ECO no P-013 (3.000 partidas por cenário, baralho sintético das 22 cartas; `.claude/notas/P-013-eco.md`).
 
 ## 8. Critérios de aceite
 
 | # | Critério | Como testar | Passa se |
 | :--- | :--- | :--- | :--- |
-| CA-01 | Dados do evento | `/validate-cards` | 0 ou 1 evento por opção; `atraso` 1 ou 2; 1-3 efeitos, múltiplos de 5, ±5 a ±30 |
+| CA-01 | Dados do evento | `/validate-cards` | 0 ou 1 evento por opção; `atraso` 1 ou 2; 1-3 efeitos, múltiplos de 5, ±5 a ±20 |
 | CA-02 | Sem evento na cena | `/validate-cards` | Nenhuma carta de impeachment tem evento |
 | CA-03 | Só a opção escolhida | Escolher A numa carta em que só B tem evento | Fila continua vazia |
 | CA-04 | Destino | Ano 1, opção com `atraso` 2 | Aviso no início do Ano 3, antes da primeira carta |

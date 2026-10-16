@@ -110,7 +110,7 @@ A emergência conta para o teto: com `Em` ≥ 3, nenhuma carta de ator ou de med
 | Peso das sorteadas | Igual | Fixo | Sorteio "narrativo, não ponderado" (`docs/05_SISTEMAS_E_MECANICAS.md` §05.04.1) |
 | `ano_minimo` | 1-4 | 1-4 | Concentra cartas de crise nos anos finais |
 
-Atuais: decisões do PO no P-012; limite de 30 de `gdd/GDD.md` §6.2.1. Faixas seguras: proposta aprovada pelo PO (2026-10-16), sem simulação do ECO `[não verificado]`.
+Atuais: decisões do PO no P-012; limite de 30 de `gdd/GDD.md` §6.2.1. Faixas seguras confirmadas por Simulação do ECO no P-013 (3.000 partidas por cenário, baralho sintético das 22 cartas; `.claude/notas/P-013-eco.md`): N 6-8, T 2-4 e limite 25-35 mudam a catástrofe em ≤ 4 pontos.
 
 ## 8. Critérios de aceite
 

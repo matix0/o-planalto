@@ -93,7 +93,7 @@ Valem também todas as regras do GDD 05 (2-4 efeitos, ≥ 1 negativo, cor, eixo,
 | Cobertura mínima por técnica | 2 | 1-3 | 3 × 6 = 18 em 20 deixa quase nenhuma folga |
 | Dobro da `Consciência` | ×2 com `Integridade` < 30 | ×1,5 a ×2 | Peso da desinformação; ajustado só no GDD 01 (`gdd/sistemas/01_medidores.md` §7) |
 
-Técnicas: `docs/05_SISTEMAS_E_MECANICAS.md` §05.10.2; cobertura: decisão do PO no P-012. Faixas seguras: proposta aprovada pelo PO (2026-10-16) `[não verificado]`.
+Técnicas: `docs/05_SISTEMAS_E_MECANICAS.md` §05.10.2; cobertura: decisão do PO no P-012. Faixas seguras: parâmetros de conteúdo (cobertura pedagógica), sem efeito no balanceamento — não exigem simulação; aprovadas pelo PO (2026-10-16). O dobro da `Consciência` é parâmetro do GDD 01.
 
 ## 8. Critérios de aceite
 

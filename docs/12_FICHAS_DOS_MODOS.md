@@ -81,7 +81,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Dignidade`, `Soberania`, `Integridade`, `Caixa` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-001 a INST-020 (20 cartas) |
-| **Conexão com Atores** | Coronel, Tecnocrata, Pastor, Banqueiro/Ruralista, Burocrata |
+| **Conexão com Atores** | Latifundiários, Diplomatas do Itamaraty, Líder da Câmara (Centrão), Líder Sindical, Movimentos por Moradia (MTST), Movimentos sociais do campo (MST), Jornalista Independente, Influenciador Progressista |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-007 (Bancadas), MOD-008 (Impeachment) |
 | **Fundamentação** | O bicameralismo brasileiro é um dos mais fragmentados do mundo. A Câmara representa o povo; o Senado representa os estados. O relator tem poder de alterar o texto de um projeto. Em 2016, os relatores do impeachment de Dilma (Jovair Arantes na Câmara, Antonio Anastasia no Senado) apontaram crime de responsabilidade e votaram pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. |
 
@@ -129,7 +129,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Caixa`, `Capital Político`, `Integridade`, `Legitimidade` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-021 a INST-040 (20 cartas) |
-| **Conexão com Atores** | Tecnocrata, Médico do SUS, Professor, Banqueiro/Ruralista, Empresário da Saúde, Reitor Privatista |
+| **Conexão com Atores** | Investidores da Faria Lima, Construtoras, Empresariado Industrial, Mercado, Tecnocratas, Profissionais da Saúde, Movimentos por Moradia (MTST), Movimentos sociais do campo (MST) |
 | **Referências Cruzadas** | MOD-006 (Emendas), MOD-009 (Judiciário) |
 | **Fundamentação** | O orçamento público não é como o de casa. O governo pode gastar mais do que arrecada para investir e gerar arrecadação futura. O teto de gastos retirou R$ 37 bilhões do SUS entre 2018 e 2022. A expectativa de vida caiu de 76,2 para 72,8 anos. |
 
@@ -177,7 +177,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Integridade`, `Dignidade`, `Capital Político` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-041 a INST-060 (20 cartas) |
-| **Conexão com Atores** | Professor, Artista Engajado, Pastor, Coach Digital, Reitor Privatista, Jornalista Independente |
+| **Conexão com Atores** | Setor de Universidades Privadas, Sindicato dos Professores, Movimentos sociais ambientais, Meta (Big Tech), Coach Digital, Jornalista Independente, Influenciador Progressista |
 | **Referências Cruzadas** | MOD-010 (Influenciador) |
 | **Fundamentação** | A Lei 13.415/2017 rebaixou Filosofia e Sociologia de "disciplinas obrigatórias" para "estudos e práticas". O "Escola sem Partido" criminaliza o debate crítico. A educação integral (CIEPs) ataca as causas do crime. |
 
@@ -225,7 +225,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Caixa`, `Dignidade`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-061 a INST-080 (20 cartas) |
-| **Conexão com Atores** | Banqueiro/Ruralista, Tecnocrata, Ambientalista, Indígena |
+| **Conexão com Atores** | Latifundiários, Empresariado Industrial, Servidores Públicos Estatais, Impérios Geopolíticos (China e EUA) |
 | **Referências Cruzadas** | MOD-002 (Orçamento) |
 | **Fundamentação** | O BRICS busca reduzir a dependência do dólar com sistemas como BRICS Pay, BRICS Bridge e BRICS Clear. O Brasil importa 85% dos fertilizantes. A China também exerce domínio sobre o Brasil. A soberania não está à venda — está em disputa. |
 
@@ -273,7 +273,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Dignidade`, `Consciência`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-081 a INST-100 (20 cartas) |
-| **Conexão com Atores** | Miliciano, Médico do SUS, Professor, Quilombola |
+| **Conexão com Atores** | Militares, Diplomatas do Itamaraty, Artista Engajado |
 | **Referências Cruzadas** | MOD-009 (Judiciário) |
 | **Fundamentação** | A polícia matou 11 pessoas por dia em 2024. 86% eram negras. O Brasil é o 3º país que mais encarcera no mundo. 69% da população carcerária é negra. O encarceramento em massa não reduz a violência. |
 
@@ -321,7 +321,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Capital Político`, `Dignidade`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-101 a INST-120 (20 cartas) |
-| **Conexão com Atores** | Coronel, Burocrata, Banqueiro/Ruralista, Pastor |
+| **Conexão com Atores** | Investidores da Faria Lima, Construtoras, Setor de Universidades Privadas, Mercado, Tecnocratas, Servidores Públicos Estatais, Sindicato dos Professores, Profissionais da Saúde, Movimentos sociais ambientais, Impérios Geopolíticos (China e EUA) |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-007 (Bancadas) |
 | **Fundamentação** | As emendas parlamentares representam 0,9% do orçamento. Entre janeiro de 2024 e março de 2026, cem artistas acumularam mais de R$ 5 bilhões em cachês. O agronegócio recebeu 56 vezes mais recursos que a agricultura familiar. |
 
@@ -369,7 +369,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Dignidade`, `Consciência`, `Soberania`, `Integridade` |
 | **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-121 a INST-140 (20 cartas) |
-| **Conexão com Atores** | Coronel, Pastor, Banqueiro/Ruralista, Miliciano, Professor, Sindicalista |
+| **Conexão com Atores** | Latifundiários, Diplomatas do Itamaraty, Líder da Câmara (Centrão), Líder Sindical, Movimentos por Moradia (MTST), Movimentos sociais do campo (MST), Jornalista Independente, Influenciador Progressista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-006 (Emendas) |
 | **Fundamentação** | A FPA tem 345 membros. A FPE tem 210 deputados. A FPSP tem 260+ integrantes. Quando atuam juntas, formam a bancada BBB. A FPA recebeu R$ 426 milhões em doações de campanha em 2014. |
 
@@ -417,7 +417,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Capital Político`, `Consciência`, `Integridade` |
 | **Gatilhos de Aparição** | Cena de impeachment: gatilhos em `gdd/sistemas/03_impeachment.md` §3.1 |
 | **Cartas Associadas** | INST-141 a INST-160 (20 cartas) |
-| **Conexão com Atores** | Todos os atores |
+| **Conexão com Atores** | Militares, Líder da Câmara (Centrão), Pastores, Líder Sindical, Artista Engajado, Meta (Big Tech), Coach Digital |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-009 (Judiciário) |
 | **Fundamentação** | O impeachment de Dilma Rousseff em 2016 foi um golpe parlamentar, jurídico e midiático. O relator no Senado, Antonio Anastasia, apontou crime de responsabilidade e votou pela continuidade ([Agência Senado, 2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)); corrigido no P-011. A contradição central foi que Dilma perdeu o mandato, mas manteve seus direitos políticos. |
 
@@ -465,7 +465,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Capital Político`, `Legitimidade`, `Dignidade` |
 | **Gatilhos de Aparição** | Ano 2-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-161 a INST-180 (20 cartas) |
-| **Conexão com Atores** | Jornalista Independente, Burocrata, Banqueiro/Ruralista |
+| **Conexão com Atores** | Setor de Universidades Privadas, Pastores, Sindicato dos Professores, Movimentos sociais ambientais, Meta (Big Tech), Coach Digital, Jornalista Independente, Influenciador Progressista |
 | **Referências Cruzadas** | MOD-001 (Congresso), MOD-010 (Influenciador) |
 | **Fundamentação** | A venda de sentenças é um mercado nacional. O relatório da Polícia Federal sobre o celular de Daniel Vorcaro (Banco Master) mostra 28 mensagens enviadas a um telefone atribuído a Alexandre de Moraes, em dezembro de 2025 ([Poder360, 2026](https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/)); corrigido no P-011. A aposentadoria compulsória é uma forma de blindagem institucional. |
 
@@ -513,7 +513,7 @@ Cada ficha contém:
 | **Medidores Secundários** | `Legitimidade`, `Capital Político`, `Dignidade` |
 | **Gatilhos de Aparição** | Ano 1-4. Em crise, cartas ligadas a medidor < 30 viram obrigatórias (`gdd/sistemas/06_sorteio.md` §3.3). |
 | **Cartas Associadas** | INST-181 a INST-200 (20 cartas) |
-| **Conexão com Atores** | Coach Digital, Jornalista Independente, Influenciador Progressista, Pastor |
+| **Conexão com Atores** | Setor de Universidades Privadas, Pastores, Sindicato dos Professores, Movimentos sociais ambientais, Meta (Big Tech), Coach Digital, Jornalista Independente, Influenciador Progressista |
 | **Referências Cruzadas** | MOD-003 (Currículo e Mídia) |
 | **Fundamentação** | A divulgação de conteúdos falsos com IA mais que triplicou entre 2024 e 2025. 554 vídeos deepfake foram publicados nas eleições de 2026. As bets financiam influenciadores com comissão sobre as perdas. O "cachê da desgraça alheia" é uma das formas mais perversas de exploração digital. |
 
@@ -576,30 +576,34 @@ Cada ficha contém:
 
 ### 12.3.3. Modos por Conexão com Atores
 
-> Tabela do **elenco anterior** (antes da D-085), como as linhas "Conexão com Atores" das fichas acima. Revisar com os 24 atores do doc 11 `[pendente]`.
+Critério (P-013): o ator se conecta aos modos cujo medidor principal (§12.1.4) é o que ele **oferece** ou **cobra** (`docs/11_FICHAS_DOS_ATORES.md` §11.1.4). Guia de escrita; o sorteio não usa esta tabela (`gdd/sistemas/06_sorteio.md`).
 
 | Ator | Modos em que Aparece |
 | :--- | :--- |
-| **Coronel** | Congresso, Emendas, Bancadas |
-| **Tecnocrata** | Orçamento, Geopolítico |
-| **Populista** | Impeachment |
-| **Miliciano** | Prisional e Policial |
-| **Pastor** | Currículo e Mídia, Bancadas |
-| **Banqueiro/Ruralista** | Orçamento, Geopolítico, Emendas, Judiciário |
-| **Professor** | Currículo e Mídia, Orçamento |
-| **Médico do SUS** | Orçamento, Prisional e Policial |
-| **Coach Digital** | Influenciador |
-| **Jornalista Independente** | Currículo e Mídia, Judiciário, Influenciador |
-| **Artista Engajado** | Currículo e Mídia |
-| **Burocrata** | Congresso, Emendas, Judiciário |
-| **Empresário da Saúde** | Orçamento |
-| **Reitor Privatista** | Currículo e Mídia, Orçamento |
-| **Sindicalista** | Orçamento, Bancadas |
-| **Estudante** | Currículo e Mídia |
-| **Ambientalista** | Geopolítico, Prisional e Policial |
-| **Indígena** | Geopolítico, Judiciário |
-| **Quilombola** | Prisional e Policial, Judiciário |
-| **Influenciador Progressista** | Influenciador |
+| **Latifundiários** | Congresso, Geopolítico, Bancadas |
+| **Investidores da Faria Lima** | Orçamento, Emendas |
+| **Construtoras** | Orçamento, Emendas |
+| **Empresariado Industrial** | Orçamento, Geopolítico |
+| **Setor de Universidades Privadas** | Currículo e Mídia, Emendas, Judiciário, Influenciador |
+| **Mercado** | Orçamento, Emendas |
+| **Tecnocratas** | Orçamento, Emendas |
+| **Militares** | Prisional e Policial, Impeachment |
+| **Servidores Públicos Estatais** | Geopolítico, Emendas |
+| **Diplomatas do Itamaraty** | Congresso, Prisional e Policial, Bancadas |
+| **Líder da Câmara (Centrão)** | Congresso, Bancadas, Impeachment |
+| **Pastores** | Impeachment, Judiciário, Influenciador |
+| **Sindicato dos Professores** | Currículo e Mídia, Emendas, Judiciário, Influenciador |
+| **Profissionais da Saúde** | Orçamento, Emendas |
+| **Líder Sindical** | Congresso, Bancadas, Impeachment |
+| **Movimentos por Moradia (MTST)** | Congresso, Orçamento, Bancadas |
+| **Movimentos sociais do campo (MST)** | Congresso, Orçamento, Bancadas |
+| **Movimentos sociais ambientais** | Currículo e Mídia, Emendas, Judiciário, Influenciador |
+| **Artista Engajado** | Prisional e Policial, Impeachment |
+| **Meta (Big Tech)** | Currículo e Mídia, Impeachment, Judiciário, Influenciador |
+| **Impérios Geopolíticos (China e EUA)** | Geopolítico, Emendas |
+| **Coach Digital** | Currículo e Mídia, Impeachment, Judiciário, Influenciador |
+| **Jornalista Independente** | Congresso, Currículo e Mídia, Bancadas, Judiciário, Influenciador |
+| **Influenciador Progressista** | Congresso, Currículo e Mídia, Bancadas, Judiciário, Influenciador |
 
 ### 12.3.4. Modos por Tipo de Carta
 

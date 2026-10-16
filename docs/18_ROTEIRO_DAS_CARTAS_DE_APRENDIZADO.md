@@ -116,17 +116,20 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  texto. Se o Senado rejeitar, o projeto é arquivado.        │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  A Reforma Trabalhista de 2017 flexibilizou a jornada e     │
-│  permitiu a terceirização irrestrita. O resultado foi o     │
-│  aumento da informalidade e a precarização.                 │
+│  Em 2018, a Agência Senado avaliou que os efeitos da        │
+│  Reforma Trabalhista (Lei 13.467/2017) no emprego eram      │
+│  imprecisos, mas que as relações de trabalho mudaram de     │
+│  forma consistente.                                         │
 │                                                             │
-│  FONTE: DIEESE, 2024. [não verificado]                      │
+│  FONTE: Agência Senado, 2018.                               │
 │                                                             │
 │  "Direito retirado não volta. A luta é para não perder o    │
 │   que já se conquistou."                                    │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+**Fonte verificada (P-013):** [Agência Senado](https://www12.senado.leg.br/noticias/especiais/especial-cidadania/reforma-trabalhista-formalizou-mais-empregos-mas-continua-contestada)
 
 ### APR-003 — CPI contra o Governo
 
@@ -338,18 +341,19 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  "disciplinas obrigatórias" para "estudos e práticas".      │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  A retirada dessas disciplinas é a desativação do           │
-│  pensamento crítico. Sem Sociologia, o aluno não entende    │
-│  como a sociedade funciona. Sem Filosofia, não aprende a    │
-│  questionar argumentos.                                     │
+│  A Lei 13.415/2017 deixou de tratar Filosofia e             │
+│  Sociologia como disciplinas: a base do ensino médio passou │
+│  a incluir "estudos e práticas" de sociologia e filosofia.  │
 │                                                             │
-│  FONTE: Ministério da Educação, 2017. [não verificado]      │
+│  FONTE: Lei 13.415/2017, art. 35-A da LDB.                  │
 │                                                             │
 │  "Sem pensamento crítico, o povo é presa fácil do pânico    │
 │   moral e da desinformação."                                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+**Fonte verificada (P-013):** [Lei 13.415/2017](https://www.meuvademecumonline.com.br/legislacao/leis_ordinarias/11053/pagina_1/33/lei-n-13-415-de-16-de-fevereiro-de-2017/)
 
 ### APR-042 — Concessão de TV para Pastor
 
@@ -404,17 +408,17 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  como BRICS Pay, BRICS Bridge e BRICS Clear.                │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  O BRICS representa quase metade da população mundial. A    │
-│  desdolarização permite que exportadores brasileiros sejam  │
-│  pagos diretamente por importadores chineses, sem passar    │
-│  pelo sistema bancário americano.                           │
+│  Em 2025, o BRICS ampliado reunia cerca de 48,5% da         │
+│  população mundial.                                         │
 │                                                             │
-│  FONTE: IPEA, 2025. [não verificado]                        │
+│  FONTE: imprensa, julho de 2025 (fonte fraca).              │
 │                                                             │
 │  "A soberania não está à venda. Ela está em disputa."       │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+**Fonte verificada (P-013):** [O Cafezinho, 2025](https://www.ocafezinho.com/2025/07/02/rio-de-janeiro-recebe-o-17o-encontro-dos-brics-em-momento-geopolitico-de-muita-tensao-no-mundo/amp/) — fonte fraca
 
 ### APR-062 — Venda de Lítio
 
@@ -567,16 +571,19 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  Elas são informais, mas poderosas.                         │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  A bancada ruralista tem 345 membros. A evangélica, 210.    │
-│  A da bala, 260. Quando atuam juntas, formam a bancada BBB. │
+│  A Frente Parlamentar da Agropecuária declarou ter 340      │
+│  membros: 290 deputados e 50 senadores. Frentes             │
+│  parlamentares são informais, mas votam em bloco.           │
 │                                                             │
-│  FONTE: Congresso em Foco, 2026. [não verificado]           │
+│  FONTE: Diário do Poder (fonte fraca).                      │
 │                                                             │
 │  "As bancadas BBB controlam o Congresso. Elas são           │
 │   informais, mas poderosas."                                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+**Fonte verificada (P-013):** [Diário do Poder](https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/frente-parlamentar-do-agro-declara-apoio-a-hugo-motta-para-suceder-lira) — fonte fraca
 
 ---
 
@@ -645,6 +652,85 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Fonte verificada (P-010):** [Agência Senado, 02/08/2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)
 **Fonte verificada (P-010):** [Câmara, 2016](https://www.camara.leg.br/noticias/484934-relatorio-de-jovair-arantes-recomenda-abertura-de-processo-de-impeachment-contra-dilma/)
+
+### APR-143 — A Votação
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-143                            │
+│  A Votação                                                  │
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mobilizava as ruas ou negociava votos.     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Câmara autoriza o processo com 2/3 dos deputados:        │
+│  342 de 513 votos.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 17/04/2016, a Câmara autorizou o processo contra        │
+│  Dilma: 367 votos a favor, 137 contra, 7 abstenções.        │
+│                                                             │
+│  FONTE: imprensa, abril de 2016.                            │
+│                                                             │
+│  "Na Câmara, o voto é contado. E negociado."                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-013):** [TNH1, 2016](https://www.tnh1.com.br/noticia/nid/camara-autoriza-senado-a-julgar-afastamento-da-presidente-dilma-rousseff/)
+**Fonte verificada (P-013):** [Diario de Pernambuco, 2026](https://www.diariodepernambuco.com.br/politica/2026/04/11712427-10-anos-do-impeachment-as-sessoes-da-camara-federal-que-aprovaram-a-derrubada-de-dilma-rousseff.html)
+
+### APR-144 — O Julgamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-144                            │
+│  O Julgamento                                               │
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fazia a defesa ou oferecia cargos.         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Senado julga. Para condenar, são precisos 2/3:           │
+│  54 de 81 senadores.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 12/05/2016, o Senado afastou Dilma por 55 a 22,         │
+│  até o julgamento final.                                    │
+│                                                             │
+│  FONTE: imprensa, maio de 2016.                             │
+│                                                             │
+│  "O julgamento é jurídico no nome. E político no voto."     │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-013):** [História do Mundo](https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm) — fonte fraca
+
+### APR-145 — O Desfecho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-145                            │
+│  O Desfecho                                                 │
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se falava à nação ou selava um pacto.         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Condenada, a pessoa perde o cargo. A perda dos             │
+│  direitos políticos é votada à parte.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 31/08/2016, o Senado condenou Dilma por 61 a 20,        │
+│  mas manteve seus direitos políticos em outra votação.      │
+│                                                             │
+│  FONTE: imprensa, agosto de 2016.                           │
+│                                                             │
+│  "O mandato acaba. A história continua."                    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-013):** [História do Mundo](https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm) — fonte fraca
 
 ---
 
@@ -771,16 +857,18 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  existe.                                                    │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  A Lei de Terras de 1850 consolidou a concentração          │
-│  fundiária. O coronelismo se adaptou: do senhor de engenho  │
-│  ao dono da Faria Lima.                                     │
+│  A Lei de Terras (Lei 601, de 1850) proibiu adquirir        │
+│  terras públicas por outro meio que não a compra. Quem não  │
+│  tinha dinheiro ficou fora da terra.                        │
 │                                                             │
-│  FONTE: Darcy Ribeiro, 1995. [não verificado]               │
+│  FONTE: Lei 601/1850; Univates.                             │
 │                                                             │
 │  "O coronel não pede. Ele cobra. E a moeda é a lealdade."   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+**Fonte verificada (P-013):** [Univates](https://univates.br/revistas/index.php/destaques/article/download/3389/2391/11005)
 
 ---
 

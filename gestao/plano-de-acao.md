@@ -312,6 +312,36 @@
 
 ---
 
+## P-013 — Fechamento do GDD (versão 1.0)
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | ✅ Concluído |
+| **Início** | 2026-10-16 |
+| **Conclusão** | 2026-10-16 |
+| **Decisões** | D-124 a D-129 |
+| **Objetivo** | Fechar as pendências de design e publicar o GDD 1.0 (cartas por amostra) |
+| **Escopo** | Fora: protótipo e P-7, P-5, as 318 cartas restantes, docs 19-23. Cartas do P-003 só como banco de ideias. PSI não é consultado |
+| **Notas** | `.claude/notas/P-013-*.md` (local) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Simulação de balanceamento (ECO): faixas §7 dos GDDs 05-10, proporção de eventos, absolvição com apoio ≥ 3 | ✅ | `.claude/notas/P-013-eco.md`; §7 dos GDDs 05-08; GDD 03 |
+| 2 | Final "Renúncia": categoria e citação | ✅ | Categoria "Saída"; Jânio Quadros (1961) |
+| 3 | Citações dos 5 finais sem fonte | ✅ | `gdd/sistemas/02_finais.md` §3.5 |
+| 4 | Texto das cartas do impeachment, fases 3-5 | ✅ | INST-143 a 145 (doc 17); APR-143 a 145 (doc 18) |
+| 5 | Decisões do PO: 2 atores sem oferta; P-11 (EUA × BRICS) | ✅ | `gdd/sistemas/07_atores.md` §3.5; `gdd/GDD.md` §16.4 |
+| 6 | Eixo: Diplomacia ≥ 15% | ✅ | Regra de escrita + aviso no `/validate-cards` (`gdd/sistemas/04_eixo.md` §7) |
+| 7 | Docs pendentes: doc 12 (atores), RC-09, 5 APRs | ✅ | Doc 12 §12.3.3 (critério por medidor); RC-09 fechado (originais truncados desde o 1º commit; docs restaurados); APR-002, 041, 061, 121, ATOR-001 com fonte |
+| 8 | GDD 1.0: `/revisar-gdds`, §15, §16.4, §16.5, validações | ✅ | Versão 2.0 (1.0 já existia no histórico); 25 cartas e 28 finais sem erro |
+| 9 | `/fechar-plano` e `/publish-docs` | ✅ | Este fechamento |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |

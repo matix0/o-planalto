@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 22 de 340 cartas escritas.** Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 22 de 340 cartas escritas + 5 cartas da cena de impeachment (fora das 340, D-101).** Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -430,6 +430,69 @@ Aprendizado: [APR-xxx — texto no doc 18]
 | **Consequência B** | "A comissão suaviza o parecer. Mas o povo percebe a compra de votos." |
 | **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-142 (doc 18) |
+
+### INST-143 — A Votação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | A Votação |
+| **Modo** | Impeachment |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | A Câmara vai votar a autorização do processo. São precisos 342 de 513 votos. A contagem está apertada. |
+| **Opção A** | Mobilizar as ruas |
+| **Teste A** | `Consciência` > 55 (apoio +1) |
+| **Efeitos A** | `Legitimidade` +10, `Soberania` -5, `Segurança` -5 |
+| **Consequência A** | "As praças lotam. Os deputados sentem a pressão." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Opção B** | Negociar votos |
+| **Teste B** | `Capital Político` > 35 (apoio +1) |
+| **Efeitos B** | `Capital Político` +5, `Soberania` -10, `Segurança` -5 |
+| **Consequência B** | "Alguns votos mudam de lado. O preço vem depois." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Aprendizado** | APR-143 (doc 18) |
+
+### INST-144 — O Julgamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | O Julgamento |
+| **Modo** | Impeachment |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | O Senado julga o processo. São precisos 54 de 81 votos para condenar. |
+| **Opção A** | Fazer a defesa no Senado |
+| **Teste A** | `Dignidade` > 50 (apoio +1) |
+| **Efeitos A** | `Consciência` +10, `Caixa` -5 |
+| **Consequência A** | "A defesa é ouvida no país inteiro." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Opção B** | Oferecer cargos a senadores |
+| **Teste B** | `Capital Político` > 40 (apoio +1) |
+| **Efeitos B** | `Capital Político` +5, `Legitimidade` +5, `Dignidade` -10 |
+| **Consequência B** | "Os cargos são aceitos. As promessas ao povo esperam." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Aprendizado** | APR-144 (doc 18) |
+
+### INST-145 — O Desfecho
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | O Desfecho |
+| **Modo** | Impeachment |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | É o último dia. O resultado depende do apoio que você juntou e da sua última palavra. |
+| **Opção A** | Falar à nação |
+| **Teste A** | `Legitimidade` > 45 (absolvição, se apoio suficiente) |
+| **Efeitos A** | `Legitimidade` +10, `Caixa` -5 |
+| **Consequência A** | "O país para para ouvir." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Opção B** | Selar um pacto com o Congresso |
+| **Teste B** | `Integridade` > 51 (absolvição, se apoio suficiente) |
+| **Efeitos B** | `Integridade` +5, `Soberania` -5 |
+| **Consequência B** | "O pacto é fechado. Quem manda agora?" |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Aprendizado** | APR-145 (doc 18) |
 
 ---
 
