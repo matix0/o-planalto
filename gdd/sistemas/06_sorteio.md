@@ -97,7 +97,7 @@ A emergência conta para o teto: com `Em` ≥ 3, nenhuma carta de ator ou de med
 | 09 Desinformação | Cartas do modo puxadas por medidor < 30 | ✅ `gdd/sistemas/09_desinformacao.md` §3.4 |
 | 02 Finais | Fim do Ano 4 sem emergência; turno curto | ❌ não cita o 06 — ajuste na etapa 7 do P-012 |
 | 03 Impeachment | Cartas da cena fora das 7 | ❌ não cita o 06 — ajuste na etapa 7 do P-012 |
-| 10 Estado da partida | Guarda cartas jogadas; chama o sorteio a cada carta | ⏳ a escrever |
+| 10 Estado da partida | Guarda cartas jogadas; chama o sorteio a cada carta | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
 
 ## 7. Parâmetros de ajuste
 

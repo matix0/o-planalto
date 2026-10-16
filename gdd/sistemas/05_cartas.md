@@ -104,7 +104,7 @@ Ao soltar a carta, nesta ordem:
 | 07 Atores | Lê o campo `atores` e as cartas ATOR | ✅ `gdd/sistemas/07_atores.md` §3 |
 | 08 Eventos | Lê o campo `eventos` da opção | ✅ `gdd/sistemas/08_eventos.md` §3 |
 | 09 Desinformação | Campos `tecnica` e `reacao` no modo Influenciador | ✅ `gdd/sistemas/09_desinformacao.md` §3 |
-| 10 Estado da partida | Executa a resolução (§3.5) | ⏳ a escrever |
+| 10 Estado da partida | Executa a resolução (§3.5) | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
 | 02 Finais | Recebe o fim imediato (§5) | ❌ não cita o 05 — ajuste na etapa 7 do P-012 |
 
 ## 7. Parâmetros de ajuste

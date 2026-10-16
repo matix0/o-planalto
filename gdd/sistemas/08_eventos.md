@@ -90,7 +90,7 @@ Como `D` ≥ 2, o multiplicador ×0,25 do Ano 1 nunca se aplica a eventos.
 | 05 Cartas | Campo `eventos` na opção; passo 3 da §3.5 | ✅ `gdd/sistemas/05_cartas.md` §3.3, §3.5, §6 |
 | 03 Impeachment | Cartas da cena sem eventos; a cena interrompe o disparo (§5) | ❌ não cita o 08 — ajuste na etapa 7 do P-012 |
 | 06 Sorteio | Eventos disparam antes da primeira carta do turno | ⏳ a escrever |
-| 10 Estado da partida | Guarda a fila de eventos e o epílogo | ⏳ a escrever |
+| 10 Estado da partida | Guarda a fila de eventos e o epílogo | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
 
 **Removido:** relação com o 07 Atores — atores não têm eventos próprios; a pressão deles vem das cartas de ataque (`gdd/sistemas/07_atores.md` §3.2).
 

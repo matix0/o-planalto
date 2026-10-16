@@ -96,7 +96,7 @@ Os 2 atores sem carta de oferta: escolha do PO ao escrever as cartas deles no do
 | 01 Medidores | Recebe o efeito da carta de oferta (Boa Vontade) | ✅ `gdd/sistemas/01_medidores.md:51,105` |
 | 05 Cartas | Campo `atores`, passo 2b, exceção da Boa Vontade | ✅ `gdd/sistemas/05_cartas.md` §3.3, §3.5, §6 |
 | 06 Sorteio | Lê nível e função da carta; ataque obrigatório; "1× por partida" | ✅ `gdd/sistemas/06_sorteio.md` §3 |
-| 10 Estado da partida | Guarda `s(a)` dos 24 atores | ⏳ a escrever |
+| 10 Estado da partida | Guarda `s(a)` dos 24 atores | ✅ `gdd/sistemas/10_estado_partida.md` §3 |
 
 O GDD 07 não lê os medidores: a satisfação só muda pelo campo `atores`.
 

@@ -1,13 +1,13 @@
 # 02 — Finais
 
-**Sistema:** 02 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 27 finais, prioridade, epílogo
+**Sistema:** 02 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 28 finais, prioridade, epílogo
 **Status:** ✅ Aprovado pelo PO (2026-10-15) · **Pendências:** P-3, P-1 (parte)
 
 ---
 
 ## 1. Visão geral
 
-O sistema decide como a partida termina. São **27 finais** em 7 categorias (D-096). Os finais de **Catástrofe** acontecem na hora em que um medidor chega a 0 — exceto `Capital Político`, que abre o impeachment (D-095). Os demais são checados **no fim do Ano 4**, por uma regra de prioridade; se nenhum vale, o jogador recebe o final neutro **"Mandato Comum"**. A tela final mostra final, citação, epílogo dos eventos encadeados pendentes, eixo ideológico e valores dos medidores (`docs/14_UI_UX_DESIGN.md` §14.09).
+O sistema decide como a partida termina. São **28 finais** (D-096; +Renúncia, GDD 10). Os finais de **Catástrofe** acontecem na hora em que um medidor chega a 0 — exceto `Capital Político`, que abre o impeachment (D-095). Os demais são checados **no fim do Ano 4**, por uma regra de prioridade; se nenhum vale, o jogador recebe o final neutro **"Mandato Comum"**. A tela final mostra final, citação, epílogo dos eventos encadeados pendentes, eixo ideológico e valores dos medidores (`docs/14_UI_UX_DESIGN.md` §14.09).
 
 ## 2. Fantasia do jogador
 
@@ -26,12 +26,14 @@ O jogador descobre "o país que construiu": o final é a soma das escolhas, não
 | Fortalecimento | 5 | Fim do Ano 4 | #18 a #22 (faixa "boa", junto com Cuidado e Soberania) |
 | Cuidado e Soberania | 3 | Fim do Ano 4 | #23 a #25 (#26 removido: duplicava o #20) (faixa "boa") |
 | Neutro | 1 | Fim do Ano 4, se nenhum outro vale | **Mandato Comum** (novo) |
+| `[pendente]` | 1 | Na hora, ao "Abandonar mandato" fora da calibração (`gdd/sistemas/10_estado_partida.md` §3.3) | **Renúncia** (novo; categoria a definir pelo PO) |
 
 ### 3.2. Catástrofe na hora
 
 - Medidor em 0 após uma carta ou um fechamento de turno → final da Catástrofe desse medidor (`gdd/sistemas/01_medidores.md` §3.3-3.4).
 - Dois ou mais em 0 na mesma carta → vale o medidor que mais perdeu nessa carta; empate pela ordem de `gdd/GDD.md` §6.1.1.
 - `Capital Político` em 0 → cena de impeachment (GDD 03), não final direto (D-095).
+- "Abandonar mandato" → Renúncia na hora, sem passar pela prioridade; tela completa (`gdd/sistemas/10_estado_partida.md` §3.3).
 
 ### 3.3. Fim do Ano 4
 
@@ -77,6 +79,7 @@ Só entram no jogo com fonte verificada (D-091). Verificação na web em 2026-10
 | 23 | Cuidado como Política de Estado | "Quero mostrar ao mundo que é possível cuidar do povo pobre." | Lula | [PT](https://pt.org.br/quero-mostrar-que-e-possivel-cuidar-do-povo-pobre-afirma-lula/) |
 | 24 | Soberania que Alimenta | "Ninguém faz opção pela pobreza." (paráfrase de entrevista, 2023) — fonte fraca | Lula | [Aos Fatos](https://www.aosfatos.org/noticias/lula-contexto-brasileiros-pobres/) |
 | 25 | Fome como Escolha Política | — (frase literal não encontrada) | — | — |
+| — | Renúncia (novo) | `[pendente]` — citação com fonte (D-091) | — | — |
 | — | Mandato Comum (novo) | "Só há duas opções nesta vida: se resignar ou se indignar." | Darcy Ribeiro (atribuída) — fonte fraca | [Wikiquote](https://pt.wikiquote.org/wiki/Darcy_Ribeiro) |
 
 Finais com "—" são exibidos sem citação até o PO indicar uma com fonte. As marcadas "fonte fraca" foram aceitas pelo PO.

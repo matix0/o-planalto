@@ -303,7 +303,7 @@
 | 3 | GDD 08 Eventos | ✅ | `gdd/sistemas/08_eventos.md` |
 | 4 | GDD 06 Sorteio (P-4) | ✅ | `gdd/sistemas/06_sorteio.md` |
 | 5 | GDD 09 Desinformação | ✅ | `gdd/sistemas/09_desinformacao.md` |
-| 6 | GDD 10 Estado da partida (P-12) | ⏳ | — |
+| 6 | GDD 10 Estado da partida (P-12) | ✅ | `gdd/sistemas/10_estado_partida.md` |
 | 7 | `/revisar-gdds` e atualização do GDD mestre | ⏳ | — |
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.

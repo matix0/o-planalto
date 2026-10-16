@@ -919,7 +919,7 @@ Levantadas na revisão de 2026-10-13. Cada item vira decisão do PO ou GDD de si
 | P-9 | ✅ Resolvida: `gdd/sistemas/04_eixo.md` | §6.6, §9.2 |
 | P-10 | ✅ Resolvida: `gdd/sistemas/07_atores.md` (satisfação inicial 50; campo `atores` por opção) | §6.3 |
 | P-11 | Valores resolvidos (±5, GDD 01); falta revisão PSI da pergunta "EUA vs. BRICS" | §5.5 |
-| P-12 | "Sessão parcial (se pausado)" × sem salvamento; risco no mobile | §4.4 |
+| P-12 | ✅ Resolvida: `gdd/sistemas/10_estado_partida.md` (salvamento automático, 1 partida) | §4.4 |
 | P-13 | ✅ Resolvida: 22 cartas escritas; 22 Cartas de Aprendizado ligadas e 127 em rascunho (P-010) | §8.1, §8.4 |
 | P-14 | Faltam casos-limite, parâmetros de ajuste e critérios de aceite testáveis | todo |
 

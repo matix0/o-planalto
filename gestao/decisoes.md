@@ -130,6 +130,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-118 | Desinformação é sistema de conteúdo, sem mecânica nova; inoculação pela exposição na carta e pela Carta de Aprendizado, que nomeia a técnica | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
 | D-119 | Modo Influenciador: campo `tecnica` obrigatório (1 de 6); cada técnica em ≥ 2 das 20 cartas; falta de cobertura só avisa enquanto o roteiro está incompleto | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
 | D-120 | Campo `reacao` por opção no modo (aceitar, recusar, investigar), distintas na carta; opção `aceitar` perde `Integridade` ou `Consciência`; as 3 reações do GDD §6.8 viram guia de escrita | 2026-10-16 | Escolha do PO (GDD 09 Desinformação, P-012) |
+| D-121 | Salvamento automático e invisível após cada carta e transição; 1 partida salva, apagada no final; sem desfazer; ao reabrir, consequência e Aprendizado reaparecem. Resolve P-12 | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
+| D-122 | "Abandonar mandato" (pausa, com confirmação) → 28º final "Renúncia", completo (citação, epílogo, eixo, medidores); na calibração apaga sem final; "Novo mandato" apaga sem Renúncia. Revisa D-096 | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
+| D-123 | Entre partidas, só as configurações ficam guardadas; nenhum dado de jogo | 2026-10-16 | Escolha do PO (GDD 10 Estado da partida, P-012) |
 
 ---
 
@@ -173,7 +176,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-085 | 24 atores |
 | D-020 | 340 cartas |
 | D-021 | 26 finais (revisada por D-096) |
-| D-096 | 27 finais |
+| D-096 | 27 finais (revisada por D-122) |
 | D-022 | Impeachment como golpe |
 | D-024 | 78 eventos (revisada por D-109) |
 | D-027 | Eixo 9axes |
@@ -202,6 +205,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-118 | Desinformação como conteúdo |
 | D-119 | Campo `tecnica` |
 | D-120 | Campo `reacao` |
+| D-121 | Salvamento automático |
+| D-122 | Final Renúncia |
+| D-123 | Só configurações entre partidas |
 
 ### Técnica
 

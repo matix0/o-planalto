@@ -17,7 +17,7 @@ Cada sistema tem um GDD próprio em `gdd/sistemas/`, escrito com `/gdd-sistema`.
 | 07 | Satisfação dos atores | `07_atores.md` | Níveis, atualização, consequências | 01, 05 | P-10 | ✅ |
 | 08 | Eventos encadeados | `08_eventos.md` | Atraso 1-2 turnos, aviso, epílogo | 01, 05 | — | ✅ |
 | 09 | Desinformação | `09_desinformacao.md` | Modo Influenciador, inoculação | 01, 05, 06 | — | ✅ |
-| 10 | Estado da partida | `10_estado_partida.md` | Máquina de estados, fim imediato, sessão | todos | P-12 | ⏳ |
+| 10 | Estado da partida | `10_estado_partida.md` | Máquina de estados, fim imediato, sessão | todos | P-12 | ✅ |
 
 P-14 (casos-limite, parâmetros e critérios de aceite) é atendida em todos os GDDs pela regra das 8 seções. P-5 (licenças) e P-7 (MCP/Godot) ficam fora deste índice: são de produção e técnica.
 
