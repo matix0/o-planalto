@@ -233,6 +233,8 @@ Opção nas configurações. Remove pulsos, "pop", deslizes, zoom e flash. Mant�
 
 ### 14.11.1. Paleta da interface (GDD §10.1)
 
+**D-172:** secundária, alerta e destaque passam a ser neutras (branco e cinzas), porque azul, vermelho e amarelo são cores partidárias. Os hex da tabela ficam só como histórico. Viewport base 390×844 com `canvas_items` + `expand` (D-170); coluna do PC até 430 px (D-171).
+
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
 | Primária | Branco (neutro — D-159) | `#FFFFFF` |

@@ -179,6 +179,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-167 | PC: com uma metade revelada, o 1º Esc cancela a revelação e o 2º abre a pausa; sem metade revelada, Esc abre a pausa | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
 | D-168 | Placar do Senado na fase 4 mostra só a meta (— / 81, quórum 54); a barra preenchida só aparece no resultado (absolvição ou condenação) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
 | D-169 | Propostas dos wireframes aprovadas como base de teste: P1 (texto a 36 px, sem retrato, problema rolável) e P2 (alto contraste com fundo preto, textos e contornos brancos; cores partidárias e faixas inalteradas) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-170 | Viewport base 390×844 em retrato; `stretch/mode=canvas_items` + `aspect=expand`; conferir também 360×800 e 430×932 (https://docs.godotengine.org/en/stable/tutorials/rendering/multiple_resolutions.html) | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
+| D-171 | PC/Web: coluna central com largura máxima de 430 px; laterais vazias ou decoradas | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
+| D-172 | Cores secundária, alerta e destaque em tons neutros (branco e cinzas); nenhuma cor partidária fora da borda da carta; revisa a paleta de `docs/14` §14.11.1 | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
+| D-173 | Na rodada final, modais destrutivos (C-14) em variantes A (cancelar primário) e B (confirmar primário) e legenda das cores só como PROPOSTA, para o PO escolher vendo | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
 
 ---
 
@@ -300,6 +304,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-167 | Esc: cancela, depois pausa |
 | D-168 | Senado só com a meta na fase 4 |
 | D-169 | Propostas P1 (36 px) e P2 (alto contraste) |
+| D-170 | Viewport 390×844, canvas_items + expand |
+| D-171 | Coluna do PC até 430 px |
+| D-172 | Secundária, alerta e destaque neutras |
+| D-173 | Modais A/B e legenda como PROPOSTA |
 
 ### Técnica
 
