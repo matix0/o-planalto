@@ -102,6 +102,11 @@ Detalhes dos papéis: `gestao/equipe.md`.
 - **Fontes:** Poppins (títulos) + Inter (corpo)
 - **Assets:** Kenney, OpenGameArt, FreeMusicArchive, Google Fonts
 
+## GodotPrompter
+
+- Antes de implementar qualquer sistema Godot, procurar e usar a skill `godot-prompter:*` correspondente (índice: `godot-prompter:using-godot-prompter`).
+- Vale também para subagentes que escrevem código Godot.
+
 ## Referências Rápidas
 
 - `docs/13_ARQUITETURA_TECNICA.md` — Stack e estrutura de dados

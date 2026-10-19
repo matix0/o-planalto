@@ -14,6 +14,7 @@ Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Sta
 ID: [Código único]
 Título: [Nome curto da carta]
 Modo: [Modo institucional]
+Quem fala: [ACT-xxx ou instituição do modo — D-164]
 Tipo: [Institucional, Temática, Ator]
 Problema: [Descrição do dilema]
 Opção A: [Texto]
@@ -610,6 +611,6 @@ Aprendizado: [APR-xxx — texto no doc 18]
 
 ---
 
-**Última atualização:** 2026-10-13 (P-010)
+**Última atualização:** 2026-10-19 (avaliação dos wireframes, D-161 a D-169)
 **Versão:** 1.1 (em desenvolvimento)
 

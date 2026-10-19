@@ -10,6 +10,9 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Avaliação consolidada dos wireframes (`.claude/notas/avaliacao-wireframes/consolidado.md`) e decisões D-161 a D-169: rastro no medidor, revisão do ciano pelo TA, dica do toque, campo `quem_fala`, seletor 16/18/20/24, filete branco na calibração, Esc em 2 passos, Senado só com a meta, propostas P1/P2
+- Docs 14, 14A, GDD 05 e doc 17 ajustados; prompt de wireframes com correções da 2ª rodada
+- Seção GodotPrompter no `CLAUDE.md`
 - GDD mestre 2.0 aprovado (P-013, D-129)
 - Simulação de balanceamento do ECO (`.claude/notas/P-013-eco.md`); faixas dos §7 confirmadas (D-124, D-125)
 - Citações dos finais Barbárie, Autogestão, Golpe Militar, República Soberana, Fome e Renúncia (categoria "Saída", D-127)

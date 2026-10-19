@@ -3,7 +3,7 @@
 **Para quem:** membro da equipe que vai rodar os wireframes no Claude Design (Opus 5.5, esforço máximo).
 **Como usar:** dê ao Claude Design acesso ao repositório https://github.com/matix0/o-planalto e cole o bloco abaixo inteiro.
 **Citações:** todas as linhas foram conferidas no commit `c9d3752`. Para abrir uma citação fixa, use `https://github.com/matix0/o-planalto/blob/c9d3752/<arquivo>#L<início>-L<fim>`. Se o `main` mudar depois, o `main` vale; avise o PO se encontrar divergência.
-**Decisões:** D-084 a D-160 em `gestao/decisoes.md`. Atualizado em 2026-10-16.
+**Decisões:** D-084 a D-169 em `gestao/decisoes.md`. Atualizado em 2026-10-19 (correções da 2ª rodada).
 
 ---
 
@@ -105,7 +105,7 @@ Folha de componentes C-01 a C-21, com todas as variantes de docs/14A_INVENTARIO_
 Fluxograma navegável F-01 a F-08 (docs/14A_INVENTARIO_DE_TELAS.md:255-266).
 
 # Animações (anotar nos quadros)
-Durações de docs/14_UI_UX_DESIGN.md:191-220 e docs/14A_INVENTARIO_DE_TELAS.md:270-292. Com "Reduzir movimento", saem pulso, pop, deslize, zoom e flash; ficam os fades curtos e o preenchimento (docs/14_UI_UX_DESIGN.md:222-224).
+Durações de docs/14_UI_UX_DESIGN.md:191-220 e docs/14A_INVENTARIO_DE_TELAS.md:270-292. Com "Reduzir movimento", saem pulso, pop, deslize, zoom e flash; ficam os fades curtos e o preenchimento (docs/14_UI_UX_DESIGN.md §14.10.3).
 
 # Em aberto (não decida; marque "[a definir]")
 Itens de docs/14A_INVENTARIO_DE_TELAS.md:300-315, mais: secundária, alerta e destaque da paleta; escala de 36 px (D-149); controles de áudio; visual do modo Influenciador; conteúdo de "Compartilhar"; tamanho das pranchetas; modo daltônico (pós-MVP).
@@ -122,4 +122,20 @@ Itens de docs/14A_INVENTARIO_DE_TELAS.md:300-315, mais: secundária, alerta e de
 2. Resuma em 5-10 linhas o fluxo e as restrições.
 3. Entregue na ordem T-01 → T-16, C-01 → C-21, F-01 → F-08.
 4. Antes de finalizar, confira cada tela contra as 10 restrições obrigatórias e contra a interação da carta.
+
+# Correções da 2ª rodada (avaliação de 2026-10-19; .claude/notas/avaliacao-wireframes/consolidado.md)
+Refaça só os quadros afetados; mantenha o resto da 1ª rodada.
+1. T-06.2, T-06.3, T-03.2-3, C-06: o texto da opção não pode sair da tela durante o arraste. Ancore o texto na metade da carta voltada para o centro da tela e teste com a opção mais longa.
+2. C-01, C-02, T-07.1-2: desenhe o rastro do nível anterior durante o preenchimento, sem número nem direção (D-161).
+3. C-01: faixas de ciano "[em revisão — TA, D-162]"; mantenha os hex atuais e anote a pendência.
+4. T-06.5, T-07.1: os pontos de efeito começam ao fim da saída da carta e ficam até o fim do preenchimento; anote os tempos como "a validar" (docs/14_UI_UX_DESIGN.md §14.10).
+5. Novo quadro "Reduzir movimento" (T-07.1/T-07.2): pontos com fade, troca de faixa sem pulso, rastro mantido (docs/14_UI_UX_DESIGN.md §14.10.3).
+6. T-06.1, C-04: dica contextual do toque em 2 passos quando a carta fica parada; texto e tempo "[a definir]"; sem rótulo de lado (D-163, D-084).
+7. C-03, T-06.1, T-06.7: quem fala vem do campo `quem_fala` (D-164).
+8. T-12.1, C-20: seletor 16 / 18 / 20 / 24 px, 18 marcado (D-165).
+9. T-03.2-3: borda só com filete branco; tire o "[a definir]" (D-166).
+10. T-11.1, T-15.5, T-16.2: Esc — com metade revelada, o 1º cancela e o 2º abre a pausa (D-167).
+11. T-09.5, C-11: Senado na fase 4 só com a meta (— / 81, quórum 54) (D-168).
+12. T-15.2-P vira T-15.6 (36 px) e T-15.3 sai de PROPOSTA (D-169).
+Influenciador é INST-181 (docs/17_ROTEIRO_DAS_CARTAS.md:526-534).
 ```

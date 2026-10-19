@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-16
+**Última atualização:** 2026-10-19
 **Fase atual:** GDD 2.0 aprovado (P-013)
 **Próxima fase:** Escrita dos arquivos 14-18 e GDD
 
@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-161–D-169 | Avaliação dos wireframes: rastro, ciano em revisão, dica do toque, `quem_fala`, seletor 18 px, calibração, Esc, Senado, P1/P2 | 2026-10-19 |
 | D-156–D-160 | Fim da varredura UI/UX: toque duplo 0,5 s, sensibilidade, primária neutra, folha modal | 2026-10-16 |
 | D-152–D-155 | Leitor de tela mobile, trava do flick, velocidade do toque, relatórios | 2026-10-16 |
 | D-148–D-151 | Varredura UI/UX (2ª rodada), escala 200%, pausa, cores | 2026-10-16 |
@@ -156,6 +157,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 - Conteúdo: escrever as 313 cartas restantes (doc 17) e seus Aprendizados (doc 18), usando as cartas do P-003 só como banco de ideias.
 - Docs 19-23 (personas, testes, divulgação, lore, licença).
 - Protótipo técnico (P-005), por último: inclui P-5 (licenças) e P-7 (MCP/Godot 4.6 × 4.7).
+
+**Wireframes:** 1ª rodada avaliada; 2ª rodada pronta para rodar com o prompt atualizado. Pendentes com o PO: botão primário dos modais destrutivos, legenda das cores (PSI + playtest), aviso de Captura em 600-800 ms, limite de 2 linhas do problema (D3), manual desatualizado (D10). TA: nova escala de ciano (D-162).
 
 **Ação externa do PO:** parecer jurídico sobre nomes reais (RC-08).
 

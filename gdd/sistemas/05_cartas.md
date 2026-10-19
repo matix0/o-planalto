@@ -26,6 +26,7 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 | `id` | Único: `INST-xxx`, `THEM-xxx`, `ATOR-xxx` |
 | `titulo` | Até 5 palavras (`gdd/GDD.md` §5.3) |
 | `modo` | Um dos 10 modos |
+| `quem_fala` | Quem apresenta o problema: `ACT-xxx` (ator) ou instituição do modo; vira retrato + nome na carta (D-164, `docs/14_UI_UX_DESIGN.md` §14.04.1) |
 | `problema` | Até 2 linhas |
 | `opcao_a` / `opcao_b` | §3.3 |
 | `aprendizado_id` | `APR-xxx`, mesmo número da carta; texto no doc 18 (D-090) |

@@ -64,7 +64,7 @@ Fonte: doc 15 §15.04 (`docs/15_FLUXO_DO_JOGO.md:69-86`); doc 14 §14.10.1 (igua
 | Código | Estado | Conteúdo | Status |
 | :--- | :--- | :--- | :--- |
 | T-03.1 | Pergunta parada | Pergunta, carta arrastável (C-04), progresso 1/6 a 6/6 | ⏳ |
-| T-03.2 | Arrastando para um lado | Texto da resposta revelado; sem pontos de efeito | ⏳ |
+| T-03.2 | Arrastando para um lado | Texto da resposta revelado; sem pontos de efeito; borda só com filete branco (D-166) | ⏳ |
 | T-03.3 | Arrastando para o outro lado | Idem, com a outra resposta | ⏳ |
 | T-03.4 | Abandonar na calibração | Modal (C-14): volta ao início, sem final (`gdd/sistemas/10_estado_partida.md` §3.3) | ⏳ |
 
@@ -143,7 +143,7 @@ Fonte: doc 14 §14.08; doc 15 §15.07; `gdd/sistemas/03_impeachment.md` §3.2-3.
 | T-09.2 | 1. O Pedido | Carta com moldura de crise (C-10); opções povo × Congresso | ⏳ |
 | T-09.3 | 2. A Comissão | Carta + placar da comissão (C-11) | ⏳ |
 | T-09.4 | 3. A Votação | Carta + placar da Câmara: 342 de 513 | ⏳ |
-| T-09.5 | 4. O Julgamento | Carta + placar do Senado: 54 de 81 | ⏳ |
+| T-09.5 | 4. O Julgamento | Carta + placar do Senado só com a meta: — / 81, quórum 54 (D-168) | ⏳ |
 | T-09.6 | 5. O Desfecho | Carta da última fase | ⏳ |
 | T-09.7 | Absolvição | Resultado; volta ao ponto em que o jogo parou | ⏳ |
 | T-09.8 | Condenação | Resultado; segue para o final "Impeachment" (T-10) | ⏳ |
@@ -208,8 +208,9 @@ Fonte: doc 14 §14.12.1.
 | :--- | :--- | :--- |
 | T-15.1 | T-06 com texto 16 px | ⏳ |
 | T-15.2 | T-06 com texto 24 px | ⏳ |
-| T-15.3 | T-06 em alto contraste | ⏳ |
+| T-15.3 | T-06 em alto contraste (base: P2, D-169) | ⏳ |
 | T-15.4 | T-08.2 com texto 24 px (pior caso de texto longo) | ⏳ |
+| T-15.6 | T-06 com texto 36 px (base: P1, D-169) | ⏳ |
 | T-15.5 | Foco de teclado em T-01 e T-06 (PC): setas revelam a metade, Enter confirma, Esc cancela (D-156) | ⏳ |
 
 ### T-16 — Layout PC e Web
@@ -228,17 +229,17 @@ Fonte: doc 14 §14.02.
 
 | Código | Componente | Variantes e estados | Fonte | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| C-01 | Ícone de medidor | 8 ícones (casa, livro, bandeira, escudo, lupa, moeda, Congresso, povo); preenchimento proporcional; 5 faixas de cor; pulso na troca de faixa; estilhaço no 0; versão com número (só na T-10) | doc 14 §14.03, §14.10.1, §14.11.3 | ⏳ |
+| C-01 | Ícone de medidor | 8 ícones (casa, livro, bandeira, escudo, lupa, moeda, Congresso, povo); preenchimento proporcional; 5 faixas de cor; pulso na troca de faixa; estilhaço no 0; versão com número (só na T-10); rastro do nível anterior no preenchimento (D-161) | doc 14 §14.03, §14.10.1, §14.11.3 | ⏳ |
 | C-02 | HUD | 8 C-01 na ordem: Sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e Poder (Caixa, Capital Político, Legitimidade) | doc 14 §14.03 | ⏳ |
-| C-03 | Quem fala | Retrato em silhueta + nome; ator ou instituição | doc 14 §14.04.1; D-142 | ⏳ |
-| C-04 | Carta arrastável | Parada; arrastando (inclinada); voltando ao centro; saindo pelo lado; opção revelada por toque (D-145) | doc 14 §14.04.4 | ⏳ |
+| C-03 | Quem fala | Retrato em silhueta + nome; ator ou instituição; dado do campo `quem_fala` (D-164) | doc 14 §14.04.1; D-142 | ⏳ |
+| C-04 | Carta arrastável | Parada; arrastando (inclinada); voltando ao centro; saindo pelo lado; opção revelada por toque (D-145); dica contextual do toque (D-163) | doc 14 §14.04.4 | ⏳ |
 | C-05 | Borda partidária | 7 cores (vermelho, azul, verde, amarelo, roxo, laranja, preto), sempre com contorno branco de 2-3 px dos dois lados da faixa (D-156) | doc 14 §14.11.2 | ⏳ |
 | C-06 | Texto da opção | Oculto; revelado (fade + deslize de 8-12 px) | doc 14 §14.04.2, §14.10.1 | ⏳ |
 | C-07 | Rodapé | "Ano X · Fase · carta n/7" | doc 14 §14.02 | ⏳ |
 | C-08 | Ponto de efeito | Pequeno (até 10: círculo branco sólido ~6 dp); grande (mais de 10: ~10 dp + anel ~14 dp); sem direção (D-156) | doc 14 §14.05 | ⏳ |
 | C-09 | Folha de Aprendizado | Modal com fundo escurecido (D-160); resumo; "saiba mais" aberto; link de fonte | doc 14 §14.07 | ⏳ |
 | C-10 | Moldura de crise | Carta de impeachment | doc 14 §14.08 | ⏳ |
-| C-11 | Placar | Comissão; Câmara (342 / 513); Senado (54 / 81); resultado alcançado × não alcançado; barra branco × escuro hachurado com linha de quórum, sem verde nem vermelho (D-156) | doc 14 §14.08; `gdd/sistemas/03_impeachment.md` §3.3 | ⏳ |
+| C-11 | Placar | Comissão; Câmara (342 / 513); Senado (54 / 81); Senado na fase 4 só com a meta (D-168); resultado alcançado × não alcançado; barra branco × escuro hachurado com linha de quórum, sem verde nem vermelho (D-156) | doc 14 §14.08; `gdd/sistemas/03_impeachment.md` §3.3 | ⏳ |
 | C-12 | Bloco de citação | Frase + autor; ausente | doc 14 §14.09; D-091 | ⏳ |
 | C-13 | Radar ideológico | 8 pontas (4 eixos × 2 polos); dois traçados, "o que você disse" × "como você governou" | doc 14 §14.09; `gdd/sistemas/04_eixo.md` | ⏳ |
 | C-14 | Modal de confirmação | Novo mandato; abandonar (calibração); abandonar (partida) | doc 15 §15.03; `gdd/sistemas/10_estado_partida.md` §3.3 | ⏳ |
@@ -247,7 +248,7 @@ Fonte: doc 14 §14.02.
 | C-17 | Aviso de evento | Destaque na borda + ícone + texto | doc 14 §14.10.1 | ⏳ |
 | C-18 | Aviso de conteúdo | Lista dos 4 avisos da tela inicial | GDD §14.3 | ⏳ |
 | C-19 | Indicador de progresso | Tutorial (1/4 a 4/4); calibração (1/6 a 6/6) | doc 16 Parte B; doc 15 §15.04 | ⏳ |
-| C-20 | Controles de configuração | Seletor de tamanho (16 / 20 / 24); chaves de reduzir movimento e alto contraste; áudio `[a definir]` | doc 14 §14.12.1 | ⏳ |
+| C-20 | Controles de configuração | Seletor de tamanho (16 / 18 / 20 / 24, D-165); chaves de reduzir movimento e alto contraste; áudio `[a definir]` | doc 14 §14.12.1 | ⏳ |
 | C-21 | Aviso discreto | Falha ao gravar; salvamento ilegível | `gdd/sistemas/10_estado_partida.md` §5 | ⏳ |
 
 ---
@@ -311,10 +312,12 @@ Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 fai
 | 8 | Tamanho das pranchetas (mobile e PC) | Todas | não definido nos docs |
 | 9 | Modo daltônico | C-01, C-05 | pós-MVP (doc 14 §14.13 #6) |
 | 10 | Leitor de tela no Android e no iOS | Todas | aguardando suporte do Godot (D-152) |
+| 11 | Nova escala de ciano dos medidores | C-01, C-02 | D-162 |
+| 12 | Texto e tempo da dica do toque | C-04, T-06 | D-163 |
 
 ---
 
-**Total:** 16 telas (63 estados e variantes), 21 componentes, 8 fluxos.
+**Total:** 16 telas (64 estados e variantes), 21 componentes, 8 fluxos.
 
-**Última atualização:** 2026-10-16 (P-005)
+**Última atualização:** 2026-10-19 (avaliação dos wireframes, D-161 a D-169)
 **Versão:** 1.0

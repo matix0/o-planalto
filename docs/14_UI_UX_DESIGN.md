@@ -56,6 +56,7 @@ O rodapé mostra só ano, fase e posição no turno (ex.: "Ano 1 · Lua de Mel �
 | Item | Definição |
 | :--- | :--- |
 | **Forma** | 8 ícones que "enchem" (preenchimento proporcional ao valor) |
+| **Rastro** | Durante o preenchimento, um rastro marca o nível anterior, para a variação pequena ficar visível; sem número nem direção (D-161) |
 | **Números** | Não aparecem durante a partida; só na tela final (§14.09) |
 | **Cor** | Muda conforme a faixa do medidor (paleta própria, §14.11.3) |
 | **Ordem** | Sociais (Dignidade, Consciência, Soberania, Segurança, Integridade) e Poder (Caixa, Capital Político, Legitimidade) — GDD §6.1.1 |
@@ -79,7 +80,7 @@ O rodapé mostra só ano, fase e posição no turno (ex.: "Ano 1 · Lua de Mel �
 
 ### 14.04.1. Quem fala
 
-A carta mostra o **retrato e o nome de quem apresenta o problema**: um dos **24 atores** (`docs/11_FICHAS_DOS_ATORES.md`) ou uma **instituição** dos 10 modos (ex.: Câmara, Senado, STF). Não há outros personagens (D-087: o jogador é o Presidente; a carta fala com ele).
+A carta mostra o **retrato e o nome de quem apresenta o problema**: um dos **24 atores** (`docs/11_FICHAS_DOS_ATORES.md`) ou uma **instituição** dos 10 modos (ex.: Câmara, Senado, STF). Não há outros personagens (D-087: o jogador é o Presidente; a carta fala com ele). O dado vem do campo `quem_fala` da carta (D-164, `gdd/sistemas/05_cartas.md` §3.2).
 
 ### 14.04.2. Opções e lado
 
@@ -98,6 +99,7 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 - A borda tem **contorno branco de 2-3 px** em todas as cores, para garantir contraste (§14.11.2).
 - O filete branco fica **dos dois lados** da faixa partidária, porque roxo e preto quase somem contra o fundo da carta (D-156).
 - As cores e o significado de cada uma estão em §14.11.2.
+- **Calibração:** as respostas não têm cor partidária; a borda é só o filete branco (D-166, exceção à regra acima).
 
 ### 14.04.4. Gesto
 
@@ -114,6 +116,8 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 **Trava do flick (D-153):** o flick só confirma se o texto daquela opção já apareceu ou se a carta já andou 20-25% da largura, para o jogador não decidir sem ler. Qual medida de velocidade usar no Godot (`screen_velocity` ou `velocity`) é testado no protótipo (D-154).
 
 **Alternativa ao arraste (D-145):** exigida pelo WCAG 2.2, critério 2.5.7 (nível AA). Não mostra rótulo de lado (D-084). Tocar a outra metade troca a opção revelada; tocar fora da carta cancela; sem tempo limite. O 2º toque só é aceito 0,5 s depois do 1º (D-157).
+
+**Dica contextual (D-163):** se a carta fica parada, uma dica curta mostra que dá para tocar numa metade; texto e tempo `[a definir]`, sem rótulo de lado.
 
 **Sensibilidade (D-158):** nas Configurações, o jogador pode baixar o limite de arraste de 40% até 25% da largura.
 
@@ -162,7 +166,7 @@ Cena especial, separada do fluxo normal de cartas.
 | 1. O Pedido | Carta com moldura de crise |
 | 2. A Comissão | Carta + placar da comissão especial |
 | 3. A Votação | Carta + placar da Câmara: 513 deputados, 342 votos (2/3) para autorizar |
-| 4. O Julgamento | Carta + placar do Senado: 81 senadores, 54 votos (2/3) para condenar |
+| 4. O Julgamento | Carta + placar do Senado só com a meta (— / 81, quórum 54); a barra preenchida aparece no resultado (D-168) |
 | 5. O Desfecho | Absolvição ou condenação |
 
 **Placares (D-156):** barra com os votos favoráveis em branco e os contrários em fundo escuro hachurado, mais uma linha fixa marcando o quórum (342 ou 54) e o número grande. Nunca verde nem vermelho, que são cores partidárias.
@@ -261,7 +265,7 @@ Mantidas pelo PO com referência a partidos reais.
 
 ### 14.11.3. Cores das faixas dos medidores
 
-Paleta própria, separada das cores partidárias e da paleta da interface. Escala única de ciano, do escuro (crítico) ao claro (extremo). O claro **não** significa "bom": 81-100 é instável (GDD §5.2). Proposta do TA, aprovada pelo PO (2026-10-13).
+Paleta própria, separada das cores partidárias e da paleta da interface. Escala única de ciano, do escuro (crítico) ao claro (extremo). O claro **não** significa "bom": 81-100 é instável (GDD §5.2). Proposta do TA, aprovada pelo PO (2026-10-13). **Em revisão (D-162):** faixas vizinhas têm só 1,12–1,33:1 entre si e a 0-20 tem 2,75:1 contra o poço `#37474F`; o TA propõe nova escala (faixa 0-20 ≥ 3:1, WCAG 1.4.11). Os hex abaixo valem até lá.
 
 | Faixa | Significado (GDD §5.2) | HEX | Contraste sobre `#263238` |
 | :--- | :--- | :--- | :--- |
@@ -280,7 +284,7 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 | Títulos | Poppins |
 | Corpo | Inter |
 
-**Tamanhos de texto (configuração):** 16, 20 e 24 px; **padrão 18 px** (revisa GDD §10.2 e §10.5). A escala dos títulos fica para o protótipo (§14.13).
+**Tamanhos de texto (configuração):** 16, 18, 20 e 24 px; **padrão 18 px** (D-165) (revisa GDD §10.2 e §10.5). A escala dos títulos fica para o protótipo (§14.13).
 
 ---
 
@@ -298,10 +302,10 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 
 | Recurso | Status |
 | :--- | :--- |
-| Tamanho de texto (16/20/24) | Planejado (GDD §10.5) |
+| Tamanho de texto (16/18/20/24, D-165; teste a 36 px, D-169) | Planejado (GDD §10.5) |
 | Reduzir movimento | Planejado (proposta GF aprovada) |
-| Alto contraste | Planejado (GDD §10.5) |
-| Navegação por teclado (PC) | Planejado (GDD §10.5): setas revelam a metade, Enter confirma, Esc cancela (D-156) |
+| Alto contraste | Planejado (GDD §10.5); base de teste: fundo preto, textos e contornos brancos, cores partidárias e faixas inalteradas (D-169) |
+| Navegação por teclado (PC) | Planejado (GDD §10.5): setas revelam a metade, Enter confirma, Esc cancela; com metade revelada, o 1º Esc cancela e o 2º abre a pausa (D-167) |
 | Escolha sem arrastar (toque em 2 passos, D-145) | Planejado (WCAG 2.2, 2.5.7) |
 | Leitor de tela | PC: `accessibility_name`/`accessibility_description` nos Controls (AccessKit, Godot 4.5+); cada medidor anuncia a faixa ("faixa 2 de 5"), nunca o número (D-156). Android e iOS: aguardando suporte do Godot (D-152) |
 | Modo daltônico (padrões nos medidores + símbolo do partido na carta) | **Depois do MVP** |
@@ -318,8 +322,10 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 | 4 | Estilo dos retratos: geométricos simples ou arte vetorizada, CC0 ou feitos à mão, sem IA generativa (D-007) | TA + PO |
 | 5 | Validação das durações de animação no Godot | Protótipo (DEV) |
 | 6 | Modo daltônico | Pós-MVP |
+| 7 | Nova escala de ciano (D-162) | TA + PO |
+| 8 | Texto e tempo da dica do toque (D-163) | UX + PO |
 
 ---
 
-**Última atualização:** 2026-10-13 (P-010)
+**Última atualização:** 2026-10-19 (avaliação dos wireframes, D-161 a D-169)
 **Versão:** 2.0 (reescrita)

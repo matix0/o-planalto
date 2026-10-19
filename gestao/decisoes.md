@@ -170,6 +170,15 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-158 | Sensibilidade do arraste ajustável nas Configurações: limite de 25% a 40% da largura (padrão 40%, D-146) | 2026-10-16 | Escolha do PO; https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107 |
 | D-159 | Cor primária da interface passa a ser neutra (branco `#FFFFFF`) no lugar do verde `#2E7D32`, que coincide com a cor partidária do agronegócio | 2026-10-16 | Escolha do PO |
 | D-160 | Folha de Aprendizado modal, com fundo escurecido (scrim), para evitar disparar a próxima carta sem querer | 2026-10-16 | Escolha do PO |
+| D-161 | Rastro do nível anterior no ícone do medidor durante o preenchimento, para mostrar a variação sem número nem direção (revela a mudança de ±1 a ±4 do Ano 1) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-162 | O TA revisa a escala de ciano dos medidores: mais passo de luminância entre faixas vizinhas e faixa 0-20 com ≥ 3:1 contra o poço `#37474F` (WCAG 1.4.11); os hex atuais valem até a revisão | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-163 | Dica contextual do toque em 2 passos quando a carta fica parada; texto e tempo `[a definir]`, sem rótulo de lado (D-084) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-164 | Campo `quem_fala` no schema da carta (ator `ACT-xxx` ou instituição do modo) para o retrato + nome de `docs/14` §14.04.1 | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-165 | Seletor de tamanho de texto com 16 / 18 / 20 / 24 px; padrão 18 px | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-166 | Calibração: borda só com filete branco, exceção à "sem borda neutra" (respostas não têm cor partidária) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-167 | PC: com uma metade revelada, o 1º Esc cancela a revelação e o 2º abre a pausa; sem metade revelada, Esc abre a pausa | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-168 | Placar do Senado na fase 4 mostra só a meta (— / 81, quórum 54); a barra preenchida só aparece no resultado (absolvição ou condenação) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
+| D-169 | Propostas dos wireframes aprovadas como base de teste: P1 (texto a 36 px, sem retrato, problema rolável) e P2 (alto contraste com fundo preto, textos e contornos brancos; cores partidárias e faixas inalteradas) | 2026-10-19 | Escolha do PO (avaliação dos wireframes, `.claude/notas/avaliacao-wireframes/consolidado.md`) |
 
 ---
 
@@ -282,6 +291,15 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-158 | Sensibilidade do arraste 25–40% |
 | D-159 | Primária neutra (branco) |
 | D-160 | Folha de Aprendizado modal |
+| D-161 | Rastro no ícone do medidor |
+| D-162 | TA revisa a escala de ciano |
+| D-163 | Dica contextual do toque em 2 passos |
+| D-164 | Campo `quem_fala` na carta |
+| D-165 | Seletor 16/18/20/24 px |
+| D-166 | Calibração com filete branco |
+| D-167 | Esc: cancela, depois pausa |
+| D-168 | Senado só com a meta na fase 4 |
+| D-169 | Propostas P1 (36 px) e P2 (alto contraste) |
 
 ### Técnica
 
