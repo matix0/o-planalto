@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/content_warnings.gd" id="1"]
+
+[node name="ContentWarnings" type="VBoxContainer"]
+offset_right = 342.0
+offset_bottom = 80.0
+mouse_filter = 2
+theme_override_constants/separation = 12
+script = ExtResource("1")
+
+[node name="Title" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "Avisos de conteúdo"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Tags" type="HFlowContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+alignment = 1

@@ -1,0 +1,159 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/about_screen.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/icons/close.svg" id="2"]
+
+[node name="AboutScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 0
+
+[node name="Column" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 24
+
+[node name="TopBar" type="HBoxContainer" parent="SafeArea/Column"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="CloseButton" type="Button" parent="SafeArea/Column/TopBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_vertical = 4
+theme_type_variation = &"Icon"
+theme_override_constants/icon_max_width = 22
+icon = ExtResource("2")
+icon_alignment = 1
+
+[node name="Title" type="Label" parent="SafeArea/Column/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TitleM"
+text = "Sobre"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="SafeArea/Column"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Sections" type="VBoxContainer" parent="SafeArea/Column/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="Credits" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CreditsTitle" type="Label" parent="SafeArea/Column/Scroll/Sections/Credits"]
+layout_mode = 2
+theme_type_variation = &"TitleS"
+text = "Créditos"
+autowrap_mode = 3
+
+[node name="CreditsGrid" type="GridContainer" parent="SafeArea/Column/Scroll/Sections/Credits"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="Assets" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="AssetsTitle" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
+layout_mode = 2
+theme_type_variation = &"TitleS"
+text = "Licenças dos assets"
+autowrap_mode = 3
+
+[node name="AssetsText" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+text = "Kenney (CC0) e outros"
+autowrap_mode = 3
+
+[node name="IconsText" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="AssetsTodo" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Muted"
+text = "[lista de assets e licenças — a definir]"
+autowrap_mode = 3
+
+[node name="Fonts" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="FontsTitle" type="Label" parent="SafeArea/Column/Scroll/Sections/Fonts"]
+layout_mode = 2
+theme_type_variation = &"TitleS"
+text = "Fontes"
+autowrap_mode = 3
+
+[node name="FontsText" type="Label" parent="SafeArea/Column/Scroll/Sections/Fonts"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+text = "Poppins e Inter — Google Fonts, licença OFL"
+autowrap_mode = 3
+
+[node name="FontsBox" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections/Fonts"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Engine" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="EngineTitle" type="Label" parent="SafeArea/Column/Scroll/Sections/Engine"]
+layout_mode = 2
+theme_type_variation = &"TitleS"
+text = "Godot Engine"
+autowrap_mode = 3
+
+[node name="GodotTodo" type="Label" parent="SafeArea/Column/Scroll/Sections/Engine"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Muted"
+text = "[aviso de licença do Godot (MIT) — a definir]"
+autowrap_mode = 3
+
+[node name="BottomPad" type="Control" parent="SafeArea/Column/Scroll/Sections"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+mouse_filter = 2
