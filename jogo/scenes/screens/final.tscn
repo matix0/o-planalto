@@ -1,0 +1,187 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/final_screen.gd" id="1_final"]
+[ext_resource type="PackedScene" path="res://scenes/components/quote_block.tscn" id="2_quote"]
+[ext_resource type="PackedScene" path="res://scenes/components/radar.tscn" id="3_radar"]
+
+[node name="FinalScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_final")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Scroll" type="ScrollContainer" parent="SafeArea"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="Page" type="MarginContainer" parent="SafeArea/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Column" type="VBoxContainer" parent="SafeArea/Scroll/Page"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 32
+
+[node name="Header" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="CategoryTag" type="PanelContainer" parent="SafeArea/Scroll/Page/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+theme_type_variation = &"Tag"
+
+[node name="CategoryLabel" type="Label" parent="SafeArea/Scroll/Page/Column/Header/CategoryTag"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "[categoria]"
+
+[node name="EndingName" type="Label" parent="SafeArea/Scroll/Page/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+accessibility_live = 1
+theme_type_variation = &"TitleL"
+text = "[nome do final]"
+autowrap_mode = 3
+
+[node name="EndingDesc" type="Label" parent="SafeArea/Scroll/Page/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Muted"
+text = "[descrição curta do final — a definir]"
+autowrap_mode = 3
+
+[node name="QuoteBlock" parent="SafeArea/Scroll/Page/Column" instance=ExtResource("2_quote")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Epilogue" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="EpilogueHeading" type="Label" parent="SafeArea/Scroll/Page/Column/Epilogue"]
+layout_mode = 2
+theme_type_variation = &"TitleM"
+text = "Epílogo"
+autowrap_mode = 3
+
+[node name="EpilogueList" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column/Epilogue"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="Values" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="ValuesHeading" type="Label" parent="SafeArea/Scroll/Page/Column/Values"]
+layout_mode = 2
+theme_type_variation = &"TitleM"
+text = "Os valores que guiaram seu governo"
+autowrap_mode = 3
+
+[node name="Radar" parent="SafeArea/Scroll/Page/Column/Values" instance=ExtResource("3_radar")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AxisText" type="Label" parent="SafeArea/Scroll/Page/Column/Values"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+text = "[texto do eixo]"
+autowrap_mode = 3
+
+[node name="Country" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="CountryHeading" type="Label" parent="SafeArea/Scroll/Page/Column/Country"]
+layout_mode = 2
+theme_type_variation = &"TitleM"
+text = "O país que você construiu"
+autowrap_mode = 3
+
+[node name="MeterList" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column/Country"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="RevealText" type="Label" parent="SafeArea/Scroll/Page/Column/Country"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+text = "[padrão]"
+autowrap_mode = 3
+
+[node name="ClosingPhrase" type="Label" parent="SafeArea/Scroll/Page/Column/Country"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Quote"
+text = "[frase final]"
+autowrap_mode = 3
+
+[node name="Buttons" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="PlayAgain" type="Button" parent="SafeArea/Scroll/Page/Column/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_type_variation = &"Primary"
+text = "Jogar novamente"
+autowrap_mode = 3
+
+[node name="Share" type="Button" parent="SafeArea/Scroll/Page/Column/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_type_variation = &"Secondary"
+text = "Compartilhar"
+autowrap_mode = 3
+
+[node name="ScrollRing" type="Control" parent="SafeArea"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2

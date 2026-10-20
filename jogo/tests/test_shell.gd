@@ -86,6 +86,7 @@ func _run() -> void:
 		_finish("test_shell")
 		return
 	_main.game = _fake
+	_main.force_placeholder = [&"calibration", &"game", &"impeachment", &"final"]   # fake Game: shell only
 	root.add_child(_main)
 	# Headless windows are not 390 wide: pin Main to the phone canvas (D-170).
 	_main.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)

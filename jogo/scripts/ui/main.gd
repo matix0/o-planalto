@@ -52,6 +52,9 @@ var game: Node = null
 var start_screen: StringName = &"title"
 ## Safe-area override (left, top, right, bottom) for tests and captures; x < 0 = device.
 var debug_safe_insets := Vector4(-1.0, 0.0, 0.0, 0.0)
+## Test hook: these ids open the placeholder even when their scene exists (shell tests
+## use a fake Game that does not implement the in-game views).
+var force_placeholder: Array = []
 
 @onready var _bg: PanelContainer = %Bg
 @onready var _frame: Control = %Frame
@@ -413,10 +416,10 @@ func _make_screen(id: StringName, params: Dictionary) -> AppScreen:
 
 
 func _instantiate(id: StringName) -> AppScreen:
-	var path: String = SCREENS.get(id, "")
-	if path == "":
+	var path: String = "" if force_placeholder.has(id) else SCREENS.get(id, "")
+	if path == "" and not force_placeholder.has(id):
 		push_warning("Main: unknown screen id '%s'" % id)
-	elif ResourceLoader.exists(path):
+	elif path != "" and ResourceLoader.exists(path):
 		var node := (load(path) as PackedScene).instantiate()
 		if node is AppScreen:
 			return node as AppScreen

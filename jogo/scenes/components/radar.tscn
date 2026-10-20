@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/radar.gd" id="1_radar"]
+
+[node name="Radar" type="VBoxContainer"]
+offset_right = 342.0
+offset_bottom = 264.0
+mouse_filter = 2
+theme_override_constants/separation = 12
+script = ExtResource("1_radar")
+
+[node name="Chart" type="Control" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Key" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="Legend" type="HFlowContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 8
+
+[node name="Said" type="HBoxContainer" parent="Legend"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="SaidSample" type="Control" parent="Legend/Said"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(28, 8)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="SaidLabel" type="Label" parent="Legend/Said"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "o que você disse"
+
+[node name="Governed" type="HBoxContainer" parent="Legend"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="GovernedSample" type="Control" parent="Legend/Governed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(28, 8)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="GovernedLabel" type="Label" parent="Legend/Governed"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "como você governou"
