@@ -5,6 +5,8 @@
 **Citações:** conferidas no commit `b5beea5` (2026-10-16). Se o `main` mudar, o `main` vale; avise o PO se encontrar divergência.
 **Uso interno:** cita a D-097, que fica só em docs internos (`gestao/decisoes.md:109`). Não copie este prompt para o site.
 **Insumos:** pareceres do GD e do QA (2026-10-16). O parecer do PSI foi interrompido; as regras éticas abaixo vêm direto dos docs.
+**Atualização 2026-10-20 (P-015):** decisões D-176, D-177 e D-190 da validação do protótipo (`gestao/validacao-2026-10-20.md`); opção até 25 caracteres; `quem_fala` obrigatório; nova etapa final de migração para o jogo. Branch: `claude/p015-cartas` (a partir do `main` atualizado).
+**Dependências:** a Onda 1 só começa depois da etapa 2 do P-014 (`/validate-cards` com 25 caracteres e `quem_fala`, `gestao/prompts/correcoes-p014.md`). A migração (etapa final) só começa depois das etapas 3-6 do P-014 estarem no `main`.
 
 ---
 
@@ -31,7 +33,8 @@ Você é o fio principal do projeto "O Planalto" (CLAUDE.md). Sua missão: escre
 - docs/11_FICHAS_DOS_ATORES.md e docs/12_FICHAS_DOS_MODOS.md:71-552 — vozes, interesses e contexto.
 - docs/17_ROTEIRO_DAS_CARTAS.md e docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md — formato e cartas já aprovadas.
 - docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md:875 em diante — 127 Aprendizados em rascunho (§18.14), banco de ideias.
-- gestao/decisoes.md:94-172 — D-083 a D-160.
+- gestao/decisoes.md — D-083 a D-190 (atenção: D-164 `quem_fala`, D-176, D-177 opção ≤ 25 caracteres, D-190 citações e avisos).
+- gestao/validacao-2026-10-20.md — relatório da validação do protótipo (o que o jogo já checa).
 Se este prompt e o repositório divergirem, siga o repositório e liste a divergência.
 
 # Regra de ouro
@@ -44,10 +47,12 @@ Antes da 1ª carta, apresente estes pontos ao PO, com alternativas e recomendaç
 3. Os 7 temas das THEM: só "Reforma Agrária" tem nome (docs/17_ROTEIRO_DAS_CARTAS.md:554); docs/12_FICHAS_DOS_MODOS.md:613 diz apenas "7 temas transversais".
 4. Formato da carta: o modelo docs/17_ROTEIRO_DAS_CARTAS.md:13-29 não tem `ano_minimo`, `atores`, `eventos`, `tecnica`, `reacao` nem a função da carta ATOR, todos exigidos pelos GDDs (gdd/sistemas/05_cartas.md:26-46). Proponha a tabela estendida (ver "Formato de saída") ou o JSON de jogo/data/cards.json.
 5. IDs: regra de numeração ATOR → ator e função (ataque/exigência/oferta); código do Aprendizado de THEM/ATOR — o GDD diz "mesmo número" (gdd/sistemas/05_cartas.md:31), o doc 17 usa APR-THEM-001 (docs/17_ROTEIRO_DAS_CARTAS.md:566); `modo` das THEM e ATOR para a regra de 1 por modo (gdd/sistemas/06_sorteio.md:44).
+6. Cartas já aprovadas × regras novas: 4 das 50 opções do doc 17 passam de 25 caracteres (D-177): docs/17_ROTEIRO_DAS_CARTAS.md:85 "Mobilizar senadores aliados" (27), :354 "Redirecionar para o hospital" (28), :470 "Oferecer cargos a senadores" (27), :491 "Selar um pacto com o Congresso" (30); e nenhuma das 22 preenche "Quem fala" (D-164, modelo em docs/17_ROTEIRO_DAS_CARTAS.md:17). Alternativas: (A) reescrever as 4 opções e preencher "Quem fala" nas 22, com aprovação do PO uma a uma; (B) exceção para as cartas aprovadas antes de 2026-10-20; (C) só preencher "Quem fala" e manter as 4 opções. Recomendação: A (a regra de ouro "aprovadas não mudam" cede a uma decisão posterior do PO, e o jogo passa a reprovar > 25).
 Registre as respostas com /fechar-plano antes da Onda 1.
 
 # Regras por carta (reprovam)
-- `titulo` ≤ 5 palavras; `problema` ≤ 2 linhas e 140 caracteres; opção ≤ 60 caracteres; consequência ≤ 80 caracteres (docs/10_GUIA_DE_ESTILO_E_TOM.md:100-105).
+- `titulo` ≤ 5 palavras; `problema` ≤ 2 linhas e 140 caracteres; opção ≤ 25 caracteres (D-177; revisa os 60 de docs/10_GUIA_DE_ESTILO_E_TOM.md:104); consequência ≤ 80 caracteres (docs/10_GUIA_DE_ESTILO_E_TOM.md:100-105).
+- `quem_fala` obrigatório: `ACT-xxx` ou a instituição do modo (D-164; docs/17_ROTEIRO_DAS_CARTAS.md:17).
 - Duas opções, A e B, nomes internos; o lado é sorteado e nunca se escreve "esquerda/direita" (D-084; gdd/sistemas/05_cartas.md:50-51).
 - Cor: uma das 7 (Vermelho, Azul, Verde, Amarelo, Roxo, Laranja, Preto), a de quem propõe a opção; cores diferentes em A e B (D-092, D-103; docs/10_GUIA_DE_ESTILO_E_TOM.md:250-262).
 - Eixo [Eco, Dip, Soc, Est], inteiros −2..+2; nunca derivado do lado nem da cor (gdd/sistemas/04_eixo.md:29-30).
@@ -70,7 +75,7 @@ Registre as respostas com /fechar-plano antes da Onda 1.
 - Tom: voz ativa, presente, 2ª pessoa, frases ≤ 20 palavras, sem gerúndio nem advérbio (docs/10_GUIA_DE_ESTILO_E_TOM.md:113-123). Evitar jargão, eufemismo, panfletagem, sarcasmo cruel, ufanismo, derrotismo e neutralidade excessiva (docs/10_GUIA_DE_ESTILO_E_TOM.md:487-502).
 - O problema apresenta o dilema sem tomar partido, com fatos concretos (docs/10_GUIA_DE_ESTILO_E_TOM.md:204-207). A consequência mostra o resultado sem julgar e nunca é cruel (:236-240).
 - Toda opção tem custo real (D-097, D-098). O alinhamento do jogo (D-097, gestao/decisoes.md:109) nunca aparece em texto para o jogador; não se neutraliza o "moral" por cor.
-- Nomes reais: mantidos nos atores e citações (D-083), mas RC-08 segue ativo (gestao/estado.md, "Riscos Ativos"). Não crie acusação nova contra pessoa real viva; use papéis ("um ministro", "o relator"). Na dúvida, pergunte ao PO.
+- Nomes reais: mantidos nos atores e citações (D-083), mas RC-08 segue ativo (gestao/estado.md, "Riscos Ativos"). Não crie acusação nova nem citação nova de pessoa real viva até o parecer jurídico (D-190); use papéis ("um ministro", "o relator"). Paráfrase nunca entre aspas como citação. Na dúvida, pergunte ao PO.
 - Temas do aviso de conteúdo — genocídio, tortura, violência policial, linguagem direta (gdd/GDD.md:762-769): sem detalhe gráfico; passam pelo PSI.
 - Público de 15 a 30 anos, periférico e estudante (CLAUDE.md): sem estereótipo de periferia (docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md:61).
 - Influenciador: inocular, nunca ensinar a manipular; a carta expõe a técnica e o Aprendizado a nomeia (D-118).
@@ -93,7 +98,7 @@ Tamanho da onda: 10 cartas + 10 Aprendizados.
 Tabela do doc 17 (docs/17_ROTEIRO_DAS_CARTAS.md:58-73) com estas linhas a mais: **Tipo**, **Ano mínimo**, **Função** (só ATOR), **Técnica** (só Influenciador), e por opção **Atores A/B**, **Evento A/B** (texto · atraso · efeitos), **Reação A/B** (só Influenciador). Efeitos sempre como `Medidor` ±N. Aprendizado no formato de caixa do doc 18 (docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md:76-100), com a linha "Fonte verificada" e o link. Use o formato que o PO aprovar.
 
 # Checklist por carta (antes de entregar ao PO)
-☐ limites de palavras e caracteres · ☐ voz ativa, presente, 2ª pessoa · ☐ cores distintas entre as 7 · ☐ eixo −2..+2 · ☐ 2-4 efeitos, múltiplos de 5, ±5..±30, ≥ 1 negativo (salvo Boa Vontade) · ☐ atores 0-3, ±1; ATOR cita o ator nas duas · ☐ evento 0-1, atraso 1-2, efeitos ±5..±20 · ☐ `ano_minimo` · ☐ Influenciador: técnica + reações distintas + `aceitar` com custo · ☐ Aprendizado com 5 blocos e link · ☐ sem "esquerda/direita" e sem rótulo ideológico · ☐ checklist docs/10_GUIA_DE_ESTILO_E_TOM.md:662-691.
+☐ limites de palavras e caracteres (opção ≤ 25) · ☐ `quem_fala` · ☐ voz ativa, presente, 2ª pessoa · ☐ cores distintas entre as 7 · ☐ eixo −2..+2 · ☐ 2-4 efeitos, múltiplos de 5, ±5..±30, ≥ 1 negativo (salvo Boa Vontade) · ☐ atores 0-3, ±1; ATOR cita o ator nas duas · ☐ evento 0-1, atraso 1-2, efeitos ±5..±20 · ☐ `ano_minimo` · ☐ Influenciador: técnica + reações distintas + `aceitar` com custo · ☐ Aprendizado com 5 blocos e link · ☐ sem "esquerda/direita" e sem rótulo ideológico · ☐ checklist docs/10_GUIA_DE_ESTILO_E_TOM.md:662-691.
 
 # Critério de "pronto" da onda
 1. /validate-cards sem erros na onda (o comando cita dados/cartas.json, .claude/commands/validate-cards.md:10; use o doc 17 e o doc 18 como fonte, como ele mesmo prevê).
@@ -103,14 +108,22 @@ Tabela do doc 17 (docs/17_ROTEIRO_DAS_CARTAS.md:58-73) com estas linhas a mais: 
 5. 5 citações conferidas à mão.
 6. PO aprova → você grava no doc 17 e no doc 18, atualiza os status (docs/17_ROTEIRO_DAS_CARTAS.md:5, :595-600; docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md:7) e roda /fechar-plano.
 
+# Etapa final — migração para o jogo (depois de todas as ondas e das etapas 3-6 do P-014 no main)
+- Faça merge do `main` (com o P-014) nesta branch.
+- Script (fora do repositório ou em `jogo/tools/`, pergunte ao PO) que gera jogo/data/cards.json e jogo/data/learning.json a partir do doc 17 e do doc 18: chaves em EN (D-136), `quem_fala` no campo `speaker`, cartas da cena em jogo/data/impeachment.json. As 40 cartas fictícias saem (D-135 cumprido).
+- Validar com o próprio jogo (`GameDatabase.validate_card`, jogo/scripts/game_data.gd) e com jogo/tests/run_all.sh numa cópia isolada (`XDG_DATA_HOME` próprio; o user:// real do PO tem save). jogo/tests/test_data.gd fixa 40 cartas: passar a ler a contagem dos dados.
+- ECO: simulação headless de ~2.000 partidas com o baralho real (taxas do gdd/sistemas/03_impeachment.md §4.2 e gdd/sistemas/08_eventos.md §7; cobertura dos 28 finais; fim de mandato × catástrofe). Resultado ao PO.
+- PO aprova → /fechar-plano; o P-006 (playtest) fica liberado (D-176).
+
 # Fora do escopo
-- jogo/data/cards.json: hoje só tem 40 cartas fictícias (D-135, gestao/decisoes.md:147); o teste fixa 40 (jogo/tests/test_data.gd:14). Migrar as cartas reais para o JSON é outro plano.
 - Mudar regra de GDD. Divergência vira pergunta ao PO.
+- Código do jogo além da migração dos dados (é do P-014).
 
 # Processo
 1. Leia a "Fonte de verdade".
 2. Resuma em 5-10 linhas as regras e o estado do baralho.
-3. Onda 0: leve os 5 pontos ao PO e espere.
-4. Ondas 1..N: GD → dados e Aprendizado → PSI → QA → PO → gravar → /fechar-plano. ECO a cada ~40 cartas.
+3. Onda 0: leve os 6 pontos ao PO e espere.
+4. Ondas 1..N (só depois da etapa 2 do P-014): GD → dados e Aprendizado → PSI → QA → PO → gravar → /fechar-plano. ECO a cada ~40 cartas.
 5. No fim de cada onda: cartas da onda, relatório de avisos, divergências e pendências.
+6. Etapa final: migração para o jogo (acima).
 ```

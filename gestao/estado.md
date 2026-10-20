@@ -1,8 +1,8 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-19
-**Fase atual:** GDD 2.0 aprovado (P-013)
-**Próxima fase:** Escrita dos arquivos 14-18 e GDD
+**Última atualização:** 2026-10-20
+**Fase atual:** Protótipo validado (P-005); correções e cartas planejadas (P-014, P-015)
+**Próxima fase:** P-014 (correções) e P-015 (cartas reais), em paralelo
 
 ---
 
@@ -36,8 +36,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | **MCP Godot** | ✅ Instalado | `~/.local/share/godot-mcp`, `.mcp.json` (D-131, D-132) |
 | **Arquivos 14-18** | ✅ Revisados | P-010 (alucinações corrigidas; 22 cartas) |
 | **GDD Completo** | ✅ 2.0 aprovado | `gdd/GDD.md` + `gdd/sistemas/01-10` (P-011 a P-013); P-5 e P-7 ficam com o protótipo |
-| **Protótipo Técnico** | 🔄 Em andamento | P-005: etapa 2 concluída (dados JSON em `jogo/`); próxima: etapa 3 (cartas) |
-| **Testes** | ⏳ Pendentes | Após protótipo |
+| **Protótipo Técnico** | ✅ Validado | P-005 concluído; validação ponta a ponta 2026-10-20 (`gestao/validacao-2026-10-20.md`): 18/18 testes, 0 bloqueantes, 9 achados altos; correções no P-014 |
+| **Testes** | ⏳ Pendentes | P-006 espera as cartas reais (D-176, P-015) |
 | **Publicação** | ⏳ Pendente | Após validação |
 
 ---
@@ -114,6 +114,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | D-094 | Sub-medidores removidos | 2026-10-14 |
 | D-095 | Capital Político em 0 abre o impeachment | 2026-10-14 |
 | D-096 | 27 finais (revisada por D-122) | 2026-10-14 |
+| D-174–D-190 | Validação do protótipo (finais, revelação, opção até 25 caracteres, impeachment, telas, licenças, MCP, avisos) | 2026-10-20 |
 | D-170–D-173 | Rodada final de wireframes: viewport 390×844, coluna 430 px, paleta neutra, modais A/B | 2026-10-19 |
 | D-161–D-169 | Avaliação dos wireframes: rastro, ciano em revisão, dica do toque, `quem_fala`, seletor 18 px, calibração, Esc, Senado, P1/P2 | 2026-10-19 |
 | D-156–D-160 | Fim da varredura UI/UX: toque duplo 0,5 s, sensibilidade, primária neutra, folha modal | 2026-10-16 |
@@ -149,20 +150,26 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 | RT-09 | Node local 22.11 < 22.12 exigido pelo site | 🟢 Fechado | Node 22.23.3 via `n` (2026-10-16) |
 | RC-08 | Docs citam políticos reais (contra D-005) em período eleitoral | 🔴 Alto | Aviso de conteúdo (D-075); parecer jurídico pendente (`docs/07_HISTORICO_DE_DECISOES.md:180`) |
 | RC-09 | Docs truncados — todos restaurados | 🟢 Fechado | Originais truncados desde o 1º commit, sem recuperação; docs restaurados (P-013) |
+| RT-10 | Balanceamento desconhecido até o baralho real; com o fictício, 72% de catástrofe no jogador atento | 🔴 Alto | D-176; simulação do ECO com o doc 17 (P-015) |
+| RT-11 | MCP injeta autoload com `eval` no `project.godot` se rodar em `jogo/` | 🟡 Ativo | D-189 (cópia isolada + pre-commit) |
+| RT-12 | Perda de partida: save não atômico; persistência Web não verificada | 🟡 Ativo | P-014 etapa 5 |
+| RT-13 | Testes não protegem as condições dos finais nem as relações do `balance.json` | 🟡 Ativo | P-014 etapa 6 |
+| RC-10 | Tela final com marcador "[a definir]" em metade das partidas | 🟠 Alto | D-175; P-014 |
+| RP-09 | Subagentes param no limite de uso no meio do trabalho | 🟡 Ativo | Notas incrementais; ondas menores |
 
 ---
 
 ## Próximo Passo
 
-**GDD 2.0 aprovado (P-013).** Próximos planos possíveis, por ordem do PO:
-- Conteúdo: escrever as 313 cartas restantes (doc 17) e seus Aprendizados (doc 18), usando as cartas do P-003 só como banco de ideias.
-- Docs 19-23 (personas, testes, divulgação, lore, licença).
-- Protótipo técnico (P-005), por último: inclui P-5 (licenças) e P-7 (MCP/Godot 4.6 × 4.7).
+**Protótipo validado (P-005, 2026-10-20).** Decisões D-174 a D-190. Dois processos para executar em paralelo:
+- **P-014 Correções** — `gestao/prompts/correcoes-p014.md`, branch `claude/p014-correcoes`.
+- **P-015 Cartas reais** — `gestao/prompts/criacao-cartas.md`, branch `claude/p015-cartas`. A Onda 1 espera a etapa 2 do P-014 (`/validate-cards`); a migração para o jogo espera as etapas 3-6.
+- Depois: P-006 (playtest), docs 19-23.
 
-**Wireframes:** 1ª rodada avaliada; rodada final pronta (`gestao/prompts/wireframes-rodada-final.md`). Pendentes com o PO: botão primário dos modais destrutivos, legenda das cores (PSI + playtest), aviso de Captura em 600-800 ms, limite de 2 linhas do problema (D3), manual desatualizado (D10). TA: nova escala de ciano (D-162).
+**Wireframes:** rodada final usada no protótipo (`gestao/prompts/wireframes-rodada-final.md`). Resolvidos na validação: modal destrutivo (D-187) e aviso de Captura (D-184). Pendentes com o PO: legenda das cores (PSI + playtest), limite de 2 linhas do problema (D3), manual desatualizado (D10). TA: nova escala de ciano (D-162).
 
 **Ação externa do PO:** parecer jurídico sobre nomes reais (RC-08).
 
 **Bloqueios:** Nenhum.
 
-**Aguardando:** Ordem do PO.
+**Aguardando:** execução do P-014 e do P-015 (membro da equipe).

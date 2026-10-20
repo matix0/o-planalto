@@ -106,24 +106,24 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🔄 Em andamento |
+| **Status** | ✅ Concluído (correções no P-014) |
 | **Início** | 2026-10-16 |
-| **Conclusão** | — |
+| **Conclusão** | 2026-10-20 |
 | **Objetivo** | Implementar o jogo em Godot 4.7 — todos os sistemas, dados fictícios (D-135) |
 
 ### Etapas
 
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
-| 1 | Configurar Godot 4.7 + MCP | 🔄 Godot 4.7.2 ok; conexão do MCP a conferir após reiniciar o app | D-130 a D-134, `.mcp.json` |
+| 1 | Configurar Godot 4.7 + MCP | ✅ | D-130 a D-134, `.mcp.json`; MCP responde (validação 2026-10-20); D-133 revista pela D-189 |
 | 2 | Implementar estrutura de dados (JSON) | ✅ | `jogo/data/*.json`, `jogo/scripts/game_data.gd`, `jogo/tests/test_data.gd` (headless OK); D-136 a D-139 |
-| 3 | Implementar sistema de cartas | ⏳ | — |
-| 4 | Implementar medidores | ⏳ | — |
-| 5 | Implementar sistema de sorteio | ⏳ | — |
-| 6 | Implementar atores | ⏳ | — |
-| 7 | Implementar finais | ⏳ | — |
-| 8 | Implementar UI/UX | ⏳ | — |
-| 9 | Testes internos | ⏳ | — |
+| 3 | Implementar sistema de cartas | ✅ | `152268c` (regras dos 10 sistemas, `jogo/scripts/core/`) |
+| 4 | Implementar medidores | ✅ | `152268c` |
+| 5 | Implementar sistema de sorteio | ✅ | `152268c` |
+| 6 | Implementar atores | ✅ | `152268c` |
+| 7 | Implementar finais | ✅ | `152268c`, `6284e54` (tela final) |
+| 8 | Implementar UI/UX | ✅ | `904cc09` a `377db7a` (telas T-01 a T-16) |
+| 9 | Testes internos | ✅ | 18 testes headless (`jogo/tests/`); validação ponta a ponta `gestao/validacao-2026-10-20.md` |
 
 ---
 
@@ -342,6 +342,62 @@
 
 ---
 
+## P-014 — Correções da validação ponta a ponta
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | ⏳ Pendente |
+| **Início** | — |
+| **Conclusão** | — |
+| **Decisões** | D-174 a D-190 |
+| **Objetivo** | Corrigir o protótipo, os GDDs e os docs com base na validação de 2026-10-20 (`gestao/validacao-2026-10-20.md`) |
+| **Escopo** | Dentro: as 17 decisões, correções sem design, docs desatualizados, testes. Fora: cartas reais (P-015), áudio, modo daltônico |
+| **Prompt** | `gestao/prompts/correcoes-p014.md` (branch `claude/p014-correcoes`) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 0 | Registrar decisões e atualizar docs vivos | ✅ | D-174 a D-190; este plano |
+| 1 | GDDs e docs (02, 03, 04, 05, 08, 01, GDD §5.3/§9.2/§10.1/§13.1/§14.3, docs 10, 13, 16, README) | ⏳ | — |
+| 2 | `/validate-cards`: opção ≤ 25 caracteres e `quem_fala` obrigatório (antes da Onda 1 do P-015) | ⏳ | — |
+| 3 | Regras do jogo (D-174, D-175, D-179, D-182, V-015, V-035) | ⏳ | — |
+| 4 | Interface (D-177, D-183, D-184, D-185, D-186, V-022, V-024, V-026) | ⏳ | — |
+| 5 | Técnico (save atômico, Sobre/licenças, preset Web, pre-commit do MCP) | ⏳ | — |
+| 6 | Testes (finais e relações por tabela, `test_e2e`, decisões novas) | ⏳ | — |
+| 7 | Verificação ponta a ponta (testes, roteiros, simulação, capturas) | ⏳ | — |
+| 8 | `/fechar-plano` e PR | ⏳ | — |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
+
+---
+
+## P-015 — Cartas reais (docs 17 e 18) e migração para o jogo
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | ⏳ Pendente |
+| **Início** | — |
+| **Conclusão** | — |
+| **Decisões** | D-176, D-177, D-190 (+ Onda 0) |
+| **Objetivo** | Escrever as cartas que faltam no doc 17 e seus Aprendizados no doc 18; depois levá-las a `jogo/data/` e liberar o P-006 (D-176) |
+| **Prompt** | `gestao/prompts/criacao-cartas.md` (branch `claude/p015-cartas`) |
+| **Depende de** | P-014 etapa 2 (antes da Onda 1); P-014 etapas 3-6 (antes da migração) |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 0 | Onda 0: 5 decisões do PO (modo Impeachment, número-alvo, temas THEM, formato, IDs) | ⏳ | — |
+| 1 | Ondas 1..N: 10 cartas + 10 Aprendizados por onda (GD → dados → PSI → QA → PO) | ⏳ | — |
+| 2 | ECO a cada ~40 cartas | ⏳ | — |
+| 3 | Migração para `jogo/data/cards.json` e `learning.json`, testes e simulação com o baralho real | ⏳ | — |
+| 4 | `/fechar-plano`; liberar o P-006 | ⏳ | — |
+
+**Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |
@@ -354,4 +410,4 @@
 
 ---
 
-**Última atualização:** 2026-10-09
+**Última atualização:** 2026-10-20

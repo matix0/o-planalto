@@ -183,6 +183,23 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-171 | PC/Web: coluna central com largura máxima de 430 px; laterais vazias ou decoradas | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
 | D-172 | Cores secundária, alerta e destaque em tons neutros (branco e cinzas); nenhuma cor partidária fora da borda da carta; revisa a paleta de `docs/14` §14.11.1 | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
 | D-173 | Na rodada final, modais destrutivos (C-14) em variantes A (cancelar primário) e B (confirmar primário) e legenda das cores só como PROPOSTA, para o PO escolher vendo | 2026-10-19 | Escolha do PO (rodada final de wireframes, `.claude/notas/rodada3/`) |
+| D-174 | Desempate dos finais de fim de mandato: vence o mais específico — se as condições de um final implicam as de outro, vence o mais restrito (torna o #14 "Populismo Autoritário" alcançável; revisa `gdd/sistemas/02_finais.md` §3.3 passo 5 e §4) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-175 | Revelação dos medidores (`gdd/GDD.md` §9.2): "alto" > 60, "baixo" < 40; 6º texto "sem padrão" para quando nenhum padrão se aplica (rascunho do GD, revisão do PSI, aprovação do PO) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-176 | O playtest (P-006) espera as cartas reais do doc 17; o baralho fictício do protótipo (D-139) fica como está | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-177 | Texto da opção: "frase curta, até 25 caracteres" (revisa "1 linha" de `gdd/sistemas/05_cartas.md` §3.3), checado pelo `/validate-cards`; no arraste, o rótulo ocupa a largura visível da carta (encolhe enquanto arrasta e nunca sai da tela) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-178 | Alto contraste: a banda partidária fica como está (mantém D-169); o contraste das cores preta e roxa fica para o modo daltônico (pós-MVP) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-179 | Gatilho alternativo do impeachment checado após o Aprendizado da 3ª carta (atualiza `gdd/sistemas/03_impeachment.md` §3.1); a sequência de opções que tiram Capital zera ao abrir o Ano 2 | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-180 | "Medidor que mais perdeu" (dois ou mais em 0 na mesma carta) = maior queda aplicada, já limitada a 0 (`gdd/sistemas/02_finais.md` §3.2) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-181 | Cena de impeachment no fim do Ano 4: os finais usam os valores depois da cena (atualiza `gdd/sistemas/02_finais.md` §3.3 e §4) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-182 | Condenação aberta por Capital em 0 numa carta: o evento daquela opção vai para o epílogo | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-183 | Calibração sem a caixa "[HUD na calibração — a definir]" (o efeito da calibração continua oculto) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-184 | Ida à tela final com fade para preto e pausa (doc 14 §14.10.2); o aviso de Captura no Ano 4 espera um toque (proposta P4) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-185 | Android: Voltar na tela de título sai do jogo; teclado: Enter confirma a opção revelada sem o intervalo de 0,5 s do toque | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-186 | Texto a 36 px (D-169): escala menor dos títulos e quebra de linha só em espaços | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-187 | Modal destrutivo (C-14): variante A, com cancelar em destaque (fecha a escolha da D-173) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-188 | Tela Sobre mostra o aviso de licença do Godot por `Engine.get_license_text()` e a lista real de assets; o 1º preset de exportação é só Web | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-189 | MCP do Godot roda só numa cópia isolada do projeto, com checagem no pre-commit que barra o autoload `mcp_interaction_server` no `project.godot` (revisa D-133) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-190 | Avisos de conteúdo: unificar `gdd/GDD.md` §14.3 e `docs/16` §16.13 (lista do PO, revisão do PSI); citações de políticos vivos esperam o parecer jurídico (RC-08); paráfrases conferidas no original | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
 
 ---
 
@@ -308,6 +325,23 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-171 | Coluna do PC até 430 px |
 | D-172 | Secundária, alerta e destaque neutras |
 | D-173 | Modais A/B e legenda como PROPOSTA |
+| D-174 | Final mais específico vence |
+| D-175 | Revelação > 60 / < 40 + texto sem padrão |
+| D-176 | P-006 espera o doc 17 |
+| D-177 | Opção até 25 caracteres; rótulo na parte visível |
+| D-178 | Alto contraste mantido |
+| D-179 | Alternativo após o Aprendizado; zera no Ano 2 |
+| D-180 | Mais perdeu = queda aplicada |
+| D-181 | Finais do Ano 4 pós-cena |
+| D-182 | Evento ao epílogo na condenação |
+| D-183 | Calibração sem caixa do HUD |
+| D-184 | Fade para preto; Captura espera toque |
+| D-185 | Voltar sai; Enter sem 0,5 s |
+| D-186 | 36 px: títulos menores, quebra em espaços |
+| D-187 | Modal destrutivo variante A |
+| D-188 | Licença do Godot; preset só Web |
+| D-189 | MCP só em cópia isolada |
+| D-190 | Avisos unificados; citações esperam RC-08 |
 
 ### Técnica
 
@@ -369,4 +403,4 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 
 ---
 
-**Última atualização:** 2026-10-13
+**Última atualização:** 2026-10-20

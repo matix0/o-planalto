@@ -10,6 +10,9 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Validação ponta a ponta do protótipo (`gestao/validacao-2026-10-20.md`; prompt `gestao/prompts/validacao-ponta-a-ponta.md`): 18/18 testes, 13 roteiros pela interface, 2.880 partidas simuladas, 50 achados
+- Decisões D-174 a D-190 (finais, revelação dos medidores, opção até 25 caracteres, impeachment, telas, licenças, MCP, avisos de conteúdo)
+- Planos P-014 (correções, `gestao/prompts/correcoes-p014.md`) e P-015 (cartas reais e migração); P-005 concluído
 - Avaliação consolidada dos wireframes (`.claude/notas/avaliacao-wireframes/consolidado.md`) e decisões D-161 a D-169: rastro no medidor, revisão do ciano pelo TA, dica do toque, campo `quem_fala`, seletor 16/18/20/24, filete branco na calibração, Esc em 2 passos, Senado só com a meta, propostas P1/P2
 - Docs 14, 14A, GDD 05 e doc 17 ajustados; prompt de wireframes com correções da 2ª rodada
 - Seção GodotPrompter no `CLAUDE.md`
