@@ -352,7 +352,7 @@
 | **Decisões** | D-174 a D-190 |
 | **Objetivo** | Corrigir o protótipo, os GDDs e os docs com base na validação de 2026-10-20 (`gestao/validacao-2026-10-20.md`) |
 | **Escopo** | Dentro: as 17 decisões, correções sem design, docs desatualizados, testes. Fora: cartas reais (P-015), áudio, modo daltônico |
-| **Prompt** | `gestao/prompts/correcoes-p014.md` (branch `claude/p014-correcoes`) |
+| **Prompt** | Execução: `gestao/prompts/execucao-p014-p015.md` (branch `claude/p014-p015`, PO valida no fim); especificação: `gestao/prompts/correcoes-p014.md` |
 
 ### Etapas
 
@@ -381,7 +381,7 @@
 | **Conclusão** | — |
 | **Decisões** | D-176, D-177, D-190 (+ Onda 0) |
 | **Objetivo** | Escrever as cartas que faltam no doc 17 e seus Aprendizados no doc 18; depois levá-las a `jogo/data/` e liberar o P-006 (D-176) |
-| **Prompt** | `gestao/prompts/criacao-cartas.md` (branch `claude/p015-cartas`) |
+| **Prompt** | Execução: `gestao/prompts/execucao-p014-p015.md` (branch `claude/p014-p015`, PO valida no fim); especificação: `gestao/prompts/criacao-cartas.md` |
 | **Depende de** | P-014 etapa 2 (antes da Onda 1); P-014 etapas 3-6 (antes da migração) |
 
 ### Etapas

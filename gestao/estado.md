@@ -161,7 +161,7 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**Protótipo validado (P-005, 2026-10-20).** Decisões D-174 a D-190. Dois processos para executar em paralelo:
+**Protótipo validado (P-005, 2026-10-20).** Decisões D-174 a D-190. O membro executa os dois processos com um só prompt, `gestao/prompts/execucao-p014-p015.md` (branch `claude/p014-p015`); escolhas no meio ficam provisórias (`gestao/decisoes-provisorias.md`) e o PO valida tudo no fim pelo PR e por `gestao/entrega-p014-p015.md`. Especificações:
 - **P-014 Correções** — `gestao/prompts/correcoes-p014.md`, branch `claude/p014-correcoes`.
 - **P-015 Cartas reais** — `gestao/prompts/criacao-cartas.md`, branch `claude/p015-cartas`. A Onda 1 espera a etapa 2 do P-014 (`/validate-cards`); a migração para o jogo espera as etapas 3-6.
 - Depois: P-006 (playtest), docs 19-23.
