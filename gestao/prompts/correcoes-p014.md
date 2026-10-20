@@ -1,7 +1,7 @@
 # Prompt — P-014 Correções da validação ponta a ponta
 
 **Para quem:** membro da equipe, numa sessão nova do Claude Code (Opus 5.5) aberta na raiz do repositório.
-**Como usar:** crie a branch `claude/p014-correcoes` a partir do `main` atualizado e cole o bloco abaixo inteiro.
+**Como usar:** crie a branch `claude/p014-correcoes` a partir de `claude/game-end-to-end-validation-8f501a` (ponta da branch: protótipo do P-005 + este plano) enquanto o P-005 não estiver no `main`; depois que entrar, a partir do `main` e cole o bloco abaixo inteiro.
 **Insumos:** `gestao/validacao-2026-10-20.md` (relatório; os IDs V-xxx vêm da seção 4), decisões D-174 a D-190 (`gestao/decisoes.md`), plano P-014 (`gestao/plano-de-acao.md`). Atualizado em 2026-10-20.
 **Roda em paralelo com:** P-015 (cartas, `gestao/prompts/criacao-cartas.md`). A etapa 2 deste plano destrava a Onda 1 do P-015: termine-a cedo e avise o PO.
 

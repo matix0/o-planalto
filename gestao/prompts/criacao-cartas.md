@@ -5,7 +5,7 @@
 **Citações:** conferidas no commit `b5beea5` (2026-10-16). Se o `main` mudar, o `main` vale; avise o PO se encontrar divergência.
 **Uso interno:** cita a D-097, que fica só em docs internos (`gestao/decisoes.md:109`). Não copie este prompt para o site.
 **Insumos:** pareceres do GD e do QA (2026-10-16). O parecer do PSI foi interrompido; as regras éticas abaixo vêm direto dos docs.
-**Atualização 2026-10-20 (P-015):** decisões D-176, D-177 e D-190 da validação do protótipo (`gestao/validacao-2026-10-20.md`); opção até 25 caracteres; `quem_fala` obrigatório; nova etapa final de migração para o jogo. Branch: `claude/p015-cartas` (a partir do `main` atualizado).
+**Atualização 2026-10-20 (P-015):** decisões D-176, D-177 e D-190 da validação do protótipo (`gestao/validacao-2026-10-20.md`); opção até 25 caracteres; `quem_fala` obrigatório; nova etapa final de migração para o jogo. Branch: `claude/p015-cartas`, a partir de `claude/game-end-to-end-validation-8f501a` (ponta da branch: protótipo do P-005 + este plano) enquanto o P-005 não estiver no `main`; depois que entrar, a partir do `main`.
 **Dependências:** a Onda 1 só começa depois da etapa 2 do P-014 (`/validate-cards` com 25 caracteres e `quem_fala`, `gestao/prompts/correcoes-p014.md`). A migração (etapa final) só começa depois das etapas 3-6 do P-014 estarem no `main`.
 
 ---
