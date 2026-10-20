@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" path="res://scenes/components/meter_icon.tscn" id="2_meter"]
+
+[node name="Hud" type="HBoxContainer"]
+custom_minimum_size = Vector2(336, 52)
+offset_right = 336.0
+offset_bottom = 52.0
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_constants/separation = 8
+script = ExtResource("1_hud")
+
+[node name="Dignity" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "dignity"
+
+[node name="Awareness" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "awareness"
+
+[node name="Sovereignty" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "sovereignty"
+
+[node name="Security" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "security"
+
+[node name="Integrity" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "integrity"
+
+[node name="MeterDivider" type="Control" parent="."]
+custom_minimum_size = Vector2(16, 32)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+
+[node name="Line" type="ColorRect" parent="MeterDivider"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.470588, 0.564706, 0.611765, 1)
+
+[node name="Treasury" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "treasury"
+
+[node name="PoliticalCapital" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "political_capital"
+
+[node name="Legitimacy" parent="." instance=ExtResource("2_meter")]
+layout_mode = 2
+meter_id = "legitimacy"

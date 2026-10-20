@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/card_footer.gd" id="1_footer"]
+[ext_resource type="Texture2D" path="res://assets/icons/pause.svg" id="2_pause"]
+
+[node name="CardFooter" type="VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+offset_right = 342.0
+offset_bottom = 65.0
+theme_override_constants/separation = 0
+script = ExtResource("1_footer")
+
+[node name="TopRule" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.215686, 0.278431, 0.309804, 1)
+
+[node name="Pad" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Row" type="HBoxContainer" parent="Pad"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ProgressText" type="Label" parent="Pad/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_type_variation = &"Footer"
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+
+[node name="Steps" type="HBoxContainer" parent="Pad/Row"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 12
+
+[node name="Count" type="Label" parent="Pad/Row/Steps"]
+layout_mode = 2
+theme_type_variation = &"Footer"
+text = "1/6"
+
+[node name="Segments" type="HBoxContainer" parent="Pad/Row/Steps"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="PauseButton" type="Button" parent="Pad/Row"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_vertical = 4
+theme_type_variation = &"Icon"
+icon = ExtResource("2_pause")
+icon_alignment = 1

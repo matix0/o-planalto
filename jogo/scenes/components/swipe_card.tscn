@@ -1,0 +1,189 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/swipe_card.gd" id="1_card"]
+[ext_resource type="Shader" path="res://scripts/ui/components/hatch.gdshader" id="2_hatch"]
+[ext_resource type="Texture2D" path="res://assets/icons/tap.svg" id="3_tap"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hatch"]
+shader = ExtResource("2_hatch")
+shader_parameter/stripe_color = Color(0.690196, 0.745098, 0.772549, 1)
+shader_parameter/period = 10.0
+shader_parameter/stripe_width = 4.0
+shader_parameter/radius = 28.0
+shader_parameter/rect_size = Vector2(304, 360)
+
+[node name="SwipeCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 2
+script = ExtResource("1_card")
+
+[node name="CardFit" type="AspectRatioContainer" parent="."]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 336.0
+mouse_filter = 2
+ratio = 0.8333
+
+[node name="Card" type="Control" parent="CardFit"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="CrisisFrame" type="ColorRect" parent="CardFit/Card"]
+visible = false
+material = SubResource("ShaderMaterial_hatch")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bg" type="PanelContainer" parent="CardFit/Card"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"Card"
+
+[node name="HalfHighlight" type="Panel" parent="CardFit/Card"]
+visible = false
+layout_mode = 1
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BorderOuter" type="Panel" parent="CardFit/Card"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BorderBand" type="Panel" parent="CardFit/Card/BorderOuter"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Face" type="MarginContainer" parent="CardFit/Card"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="CardTitle" type="Label" parent="CardFit/Card/Face"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"TitleM"
+text = "[título da carta]"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="OptionLabel" type="Label" parent="CardFit/Card"]
+visible = false
+layout_mode = 1
+anchor_right = 0.54
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 24.0
+offset_bottom = 24.0
+mouse_filter = 2
+theme_type_variation = &"Option"
+autowrap_mode = 3
+
+[node name="TapHint" type="PanelContainer" parent="CardFit/Card"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Row" type="HBoxContainer" parent="CardFit/Card/TapHint"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="Icon" type="TextureRect" parent="CardFit/Card/TapHint/Row"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("3_tap")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Text" type="Label" parent="CardFit/Card/TapHint/Row"]
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "[dica do toque — a definir]"
+
+[node name="FocusRing" type="Panel" parent="CardFit/Card"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="OptionBand" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 24.0
+offset_right = -24.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="BandLabel" type="Label" parent="OptionBand"]
+layout_mode = 2
+theme_type_variation = &"Option"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HintTimer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true

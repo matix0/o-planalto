@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/meter_icon.gd" id="1_meter"]
+[ext_resource type="Script" path="res://scripts/ui/components/effect_dot.gd" id="2_dot"]
+[ext_resource type="Texture2D" path="res://assets/icons/meter_broken.svg" id="3_broken"]
+
+[node name="MeterIcon" type="VBoxContainer"]
+custom_minimum_size = Vector2(32, 52)
+offset_right = 32.0
+offset_bottom = 52.0
+mouse_filter = 2
+theme_override_constants/separation = 4
+script = ExtResource("1_meter")
+
+[node name="DotSlot" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="EffectDot" type="Control" parent="DotSlot"]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("2_dot")
+
+[node name="Well" type="TextureProgressBar" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+step = 0.0
+value = 50.0
+fill_mode = 3
+
+[node name="Trail" type="TextureRect" parent="Well"]
+visible = false
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 2.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Glyph" type="TextureRect" parent="Well"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 26.0
+offset_bottom = 26.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Edge" type="Panel" parent="Well"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Broken" type="TextureRect" parent="Well"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_broken")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Number" type="Label" parent="."]
+visible = false
+layout_mode = 2
+theme_type_variation = &"TitleS"
+text = "50"
+horizontal_alignment = 1
