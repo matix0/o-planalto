@@ -1,0 +1,286 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/learning_sheet.gd" id="1_sheet"]
+[ext_resource type="Texture2D" path="res://assets/icons/external.svg" id="2_external"]
+
+[node name="LearningSheet" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_sheet")
+
+[node name="Scrim" type="ColorRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.62)
+
+[node name="SheetArea" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="Sheet" type="PanelContainer" parent="SheetArea"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Sheet"
+
+[node name="Body" type="VBoxContainer" parent="SheetArea/Sheet"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="ScrollWrap" type="Control" parent="SheetArea/Sheet/Body"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Scroll" type="ScrollContainer" parent="SheetArea/Sheet/Body/ScrollWrap"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="Content" type="MarginContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 8
+
+[node name="Box" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="RereadTag" type="PanelContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+theme_type_variation = &"Tag"
+
+[node name="RereadText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/RereadTag"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "[indicação de releitura — a definir]"
+autowrap_mode = 3
+
+[node name="Header" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="Kicker" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "Carta de Aprendizado"
+autowrap_mode = 3
+
+[node name="CardTitle" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"TitleM"
+autowrap_mode = 3
+
+[node name="ConceptBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="ConceptLabel" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/ConceptBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "O conceito por trás"
+autowrap_mode = 3
+
+[node name="ConceptText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/ConceptBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="TechniqueBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="TechniqueLabel" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/TechniqueBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+autowrap_mode = 3
+
+[node name="TechniqueText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/TechniqueBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="Impact" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Quote"
+autowrap_mode = 3
+
+[node name="More" type="FoldableContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]
+unique_name_in_owner = true
+layout_mode = 2
+folded = true
+title = "Saiba mais"
+
+[node name="MoreBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="LivedBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="LivedLabel" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/LivedBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "O que você acabou de vivenciar"
+autowrap_mode = 3
+
+[node name="LivedText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/LivedBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="DataBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="DataLabel" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/DataBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "Dados reais"
+autowrap_mode = 3
+
+[node name="DataText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/DataBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="SourceBox" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="SourceLabel" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/SourceBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Caption"
+text = "Fonte"
+autowrap_mode = 3
+
+[node name="SourceRow" type="HBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/SourceBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="SourceLink" type="LinkButton" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/SourceBox/SourceRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 2
+
+[node name="SourceIcon" type="TextureRect" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/SourceBox/SourceRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("2_external")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SourceText" type="Label" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box/More/MoreBox/SourceBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"Body"
+autowrap_mode = 3
+
+[node name="Fade" type="TextureRect" parent="SheetArea/Sheet/Body/ScrollWrap"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="FooterLine" type="ColorRect" parent="SheetArea/Sheet/Body"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.564706, 0.643137, 0.682353, 1)
+
+[node name="Footer" type="MarginContainer" parent="SheetArea/Sheet/Body"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="ContinueButton" type="Button" parent="SheetArea/Sheet/Body/Footer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_type_variation = &"Primary"
+text = "Continuar"
+autowrap_mode = 3

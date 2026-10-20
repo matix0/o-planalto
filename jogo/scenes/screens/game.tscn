@@ -1,0 +1,131 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/game_screen.gd" id="1_game"]
+[ext_resource type="PackedScene" path="res://scenes/components/hud.tscn" id="2_hud"]
+[ext_resource type="PackedScene" path="res://scenes/components/speaker_view.tscn" id="3_speaker"]
+[ext_resource type="PackedScene" path="res://scenes/components/swipe_card.tscn" id="4_card"]
+[ext_resource type="PackedScene" path="res://scenes/components/year_card.tscn" id="5_year"]
+[ext_resource type="PackedScene" path="res://scenes/components/card_footer.tscn" id="6_footer"]
+[ext_resource type="PackedScene" path="res://scenes/components/event_notice.tscn" id="7_event"]
+[ext_resource type="PackedScene" path="res://scenes/components/consequence_line.tscn" id="8_line"]
+[ext_resource type="PackedScene" path="res://scenes/components/learning_sheet.tscn" id="9_sheet"]
+
+[node name="GameScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_game")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 0
+
+[node name="Column" type="VBoxContainer" parent="SafeArea"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="HudSlot" type="CenterContainer" parent="SafeArea/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Hud" parent="SafeArea/Column/HudSlot" instance=ExtResource("2_hud")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Spacer16" type="Control" parent="SafeArea/Column"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Speaker" parent="SafeArea/Column" instance=ExtResource("3_speaker")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="SpeakerGap" type="Control" parent="SafeArea/Column"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ProblemBox" type="MarginContainer" parent="SafeArea/Column"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ProblemScroll" type="ScrollContainer" parent="SafeArea/Column/ProblemBox"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 0
+
+[node name="Problem" type="Label" parent="SafeArea/Column/ProblemBox/ProblemScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"Body"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ProblemFade" type="TextureRect" parent="SafeArea/Column/ProblemBox"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+expand_mode = 1
+
+[node name="CardSlot" type="MarginContainer" parent="SafeArea/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Card" parent="SafeArea/Column/CardSlot" instance=ExtResource("4_card")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="YearCard" parent="SafeArea/Column/CardSlot" instance=ExtResource("5_year")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Footer" parent="SafeArea/Column" instance=ExtResource("6_footer")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="EventNotice" parent="." instance=ExtResource("7_event")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="Consequence" parent="." instance=ExtResource("8_line")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="LearningSheet" parent="." instance=ExtResource("9_sheet")]
+unique_name_in_owner = true
+layout_mode = 1
