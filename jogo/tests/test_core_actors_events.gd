@@ -96,6 +96,7 @@ func _event_firing() -> void:
 	_eq([f.state(), v["text"], v["index"], v["total"]], [&"events", "Epidemia na periferia", 1, 1], "CA-04 warning before the first card")
 	_eq(f.run.meters["dignity"], 45, "§4 example −15 at ×1,0")
 	_eq(v["origin_title"], "Teste", "origin card title")
+	_eq(v["footer"], "Ano 3 · Crise", "event footer: year and phase, no card count")
 	f.continue_from_event()
 	_eq(f.state(), &"card", "then the cards")
 	# CA-05: Dignidade −15 firing in Ano 4 → −23.

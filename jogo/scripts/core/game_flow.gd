@@ -172,6 +172,7 @@ func event_view() -> Dictionary:
 		return {}
 	var v := run.current_event.duplicate(true)
 	v["readonly"] = run.readonly
+	v["footer"] = _turn_footer()
 	return v
 
 
@@ -196,9 +197,18 @@ func card_view() -> Dictionary:
 	if state() != &"card":
 		return {}
 	var card: Dictionary = data.cards[run.current_card["id"]]
-	var per_turn := int(balance.get("cards_per_turn", 7))
-	var footer := "Ano %d · %s · %d/%d" % [run.year, PHASE_NAMES[run.year - 1], run.turn_cards.size() + 1, per_turn]
+	var footer := _turn_footer(run.turn_cards.size() + 1)
 	return _card_dict(card, int(run.current_card["side_a"]), footer, String(run.current_card["kind"]))
+
+
+## Footer of the turn (C-07): "Ano N · Fase", or "Ano N · Fase · n/7" with a card number.
+## Views that follow a card (consequence, learning) and the events carry it too, so a
+## resumed run shows the same footer (lote D).
+func _turn_footer(card_number: int = 0) -> String:
+	var base := "Ano %d · %s" % [run.year, PHASE_NAMES[run.year - 1]]
+	if card_number <= 0:
+		return base
+	return "%s · %d/%d" % [base, card_number, int(balance.get("cards_per_turn", 7))]
 
 
 ## Resolves the shown card on `side` (-1/+1), in the order of gdd 05 §3.5: effects → governed
@@ -271,6 +281,7 @@ func consequence_view() -> Dictionary:
 		"text": r["consequence"],
 		"changes": r["changes"].duplicate(true),
 		"readonly": run.readonly,
+		"footer": _turn_footer(run.turn_cards.size()),
 	}
 
 
@@ -285,7 +296,9 @@ func learning_view() -> Dictionary:
 	if state() != &"learning":
 		return {}
 	var r := run.last_result
-	return _learning_dict(String(r["learning_id"]), String(r["title"]), String(r["technique"]))
+	var v := _learning_dict(String(r["learning_id"]), String(r["title"]), String(r["technique"]))
+	v["footer"] = _turn_footer(run.turn_cards.size())
+	return v
 
 
 ## After the learning card: the alternative trigger (checked right after the card, gdd 03

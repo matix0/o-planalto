@@ -10,6 +10,10 @@ signal pause_pressed
 const SEGMENT_SIZE := Vector2(Tokens.ESP_16, Tokens.ESP_4)   # C-19
 const PAUSE_ICON_PX := 22                                   # C-07 (CC0 icon 22)
 const TEXT_MAX_LINES := 2                                   # D21: 2 lines at 24 px
+## At 36 px (P1) "Ano 2 · Realidade Bate · 1/7" needs 3 lines; 2 would cut the "1/7"
+## (D21 covers up to 24 px — a validar).
+const TEXT_MAX_LINES_LARGE := 3
+const LARGE_TEXT_PX := 36
 
 var high_contrast: bool = false:
 	set(v):
@@ -29,7 +33,7 @@ var _total := 0
 
 
 func _ready() -> void:
-	_text.max_lines_visible = TEXT_MAX_LINES
+	_fit_lines()
 	_pause.accessibility_name = "Pausar"
 	_pause.tooltip_text = "Pausar"
 	_pause.add_theme_constant_override(&"icon_max_width", PAUSE_ICON_PX)
@@ -93,6 +97,16 @@ func _paint_segments() -> void:
 		var box := seg.get_theme_stylebox(&"panel") as StyleBoxFlat
 		box.bg_color = Tokens.TEXT if i < _done else todo
 		i += 1
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_THEME_CHANGED and is_node_ready():
+		_fit_lines.call_deferred()   # the label's own theme cache refreshes after ours
+
+
+func _fit_lines() -> void:
+	var px := _text.get_theme_font_size(&"font_size")
+	_text.max_lines_visible = TEXT_MAX_LINES_LARGE if px >= LARGE_TEXT_PX else TEXT_MAX_LINES
 
 
 func _apply_contrast() -> void:

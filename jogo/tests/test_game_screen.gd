@@ -262,10 +262,13 @@ func _settings_checks() -> void:
 	_expect(portrait != null and not portrait.visible, "P1 (36 px): no portrait")
 	var scroll := screen.find_child("ProblemScroll", true, false) as ScrollContainer
 	_expect(scroll.custom_minimum_size.y == 4 * 44, "P1: problem keeps 4 lines and scrolls")
+	var ftext := screen.footer().find_child("ProgressText", true, false) as Label
+	_expect(ftext.max_lines_visible == 3, "P1: the footer may take 3 lines (the 'n/7' is not cut)")
 	_check_texts(screen, "P1")
 	_settings.reset_defaults(false)
 	await _frames(3)
 	_expect(portrait.visible, "portrait back at 18 px")
+	_expect(ftext.max_lines_visible == 2, "footer back to 2 lines (D21)")
 
 
 ## Closes the app on a decided card and reopens it: consequence read-only, no replay.
@@ -290,6 +293,8 @@ func _resume_checks() -> void:
 	_expect(not screen.is_hud_busy(), "no effect replay on resume")
 	_expect(_values(screen.hud()) == _game_values(), "resumed HUD = saved values")
 	_expect(line.text() == text and line.is_waiting(), "same sentence, waiting for the tap")
+	var cfooter := String(_game.consequence_view().get("footer", ""))
+	_expect(cfooter.begins_with("Ano ") and screen.footer().display_text() == cfooter, "resumed consequence keeps the footer 'Ano · Fase · n/7'")
 	_expect(_texts(line).has("[indicação de releitura — a definir]"), "T-08.3 reread tag on the consequence")
 	_check_texts(screen, "resume")
 	_key(KEY_ENTER)

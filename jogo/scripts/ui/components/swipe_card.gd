@@ -721,7 +721,8 @@ func _on_focus_entered() -> void:
 
 func _update_focus_ring() -> void:
 	if _focus_ring:
-		_focus_ring.visible = has_focus() and not _pointer_input and _state != State.LEAVING
+		# has_focus(true): focus given by code after a touch is hidden (grab_focus(true), 4.7)
+		_focus_ring.visible = has_focus(true) and not _pointer_input and _state != State.LEAVING
 
 
 func _layout_fit() -> void:

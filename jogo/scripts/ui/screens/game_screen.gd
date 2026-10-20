@@ -183,7 +183,7 @@ func _show_event() -> void:
 	var g := game()
 	var view: Dictionary = g.event_view()
 	_clear_center()
-	_footer.set_text(_year_footer)
+	_footer.set_text(String(view.get("footer", _year_footer)))   # also right after a resume
 	_event.show_event(view, _rm())
 	if bool(view.get("readonly", false)):
 		_hud.set_values(_values_of(g.hud()))   # resumed: no replay
@@ -286,6 +286,8 @@ func _show_consequence(view: Dictionary) -> void:
 	_year_card.hide_now()
 	_event.hide_now()
 	_set_problem_interactive(false)
+	if view.has("footer"):
+		_footer.set_text(String(view["footer"]))   # same "n/7" as the card; set again on resume
 	if readonly:
 		_hud.set_values(_values_of(game().hud()))
 		_set_context_visible(false)
@@ -319,6 +321,8 @@ func _show_learning(view: Dictionary) -> void:
 	_set_problem_interactive(false)
 	if not _consequence.visible:
 		_set_context_visible(false)   # resumed straight into the learning card
+	if view.has("footer"):
+		_footer.set_text(String(view["footer"]))
 	_sheet.reduce_motion = _rm()
 	_sheet.safe_top = safe_top
 	_sheet.safe_bottom = safe_bottom

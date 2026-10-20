@@ -161,6 +161,7 @@ func _resume_points() -> void:
 	_eq([r.state(), r.consequence_view()["readonly"]], [&"consequence", true], "CA-07 consequence read-only")
 	_eq(r.choose(1), {}, "CA-07 no new choice")
 	_eq(r.consequence_view()["text"], f.consequence_view()["text"], "same consequence")
+	_eq(r.consequence_view()["footer"], "Ano 1 · Lua de Mel · %d/7" % r.run.turn_cards.size(), "consequence footer survives the resume")
 	r.continue_from_consequence()
 	_eq(r.learning_view()["readonly"], true, "learning read-only")
 	r.continue_from_learning()
