@@ -22,6 +22,7 @@ const SCREENS := {
 	&"about": "res://scenes/screens/about.tscn",
 	&"calibration": "res://scenes/screens/calibration.tscn",   # wave 2
 	&"game": "res://scenes/screens/game.tscn",                 # wave 2
+	&"impeachment": "res://scenes/screens/impeachment.tscn",   # wave 2 (T-09, own screen)
 	&"final": "res://scenes/screens/final.tscn",               # wave 2
 }
 const PLACEHOLDER_SCENE := "res://scenes/screens/placeholder.tscn"
@@ -34,7 +35,7 @@ const STATE_SCREENS := {
 	&"card": &"game",
 	&"consequence": &"game",
 	&"learning": &"game",
-	&"impeachment": &"game",
+	&"impeachment": &"impeachment",
 	&"final": &"final",
 }
 const SCREEN_FADE := 0.3             # A-22 / A-27 (total: half out, half in)

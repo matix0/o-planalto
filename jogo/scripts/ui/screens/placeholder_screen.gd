@@ -4,7 +4,7 @@ extends AppScreen
 ## and "game" so the shell can be tried end to end.
 
 const BUILDING := "[em construção]"
-const PAUSABLE_IDS: Array[StringName] = [&"calibration", &"game"]
+const PAUSABLE_IDS: Array[StringName] = [&"calibration", &"game", &"impeachment"]
 
 @onready var _safe_area: MarginContainer = %SafeArea
 @onready var _title: Label = %Title
