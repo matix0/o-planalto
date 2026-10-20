@@ -1,0 +1,159 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/impeachment_screen.gd" id="1_screen"]
+[ext_resource type="PackedScene" path="res://scenes/components/hud.tscn" id="2_hud"]
+[ext_resource type="PackedScene" path="res://scenes/components/scoreboard.tscn" id="3_board"]
+[ext_resource type="PackedScene" path="res://scenes/components/speaker_view.tscn" id="4_speaker"]
+[ext_resource type="PackedScene" path="res://scenes/components/swipe_card.tscn" id="5_card"]
+[ext_resource type="PackedScene" path="res://scenes/components/impeachment_panel.tscn" id="6_panel"]
+[ext_resource type="PackedScene" path="res://scenes/components/card_footer.tscn" id="7_footer"]
+[ext_resource type="PackedScene" path="res://scenes/components/consequence_line.tscn" id="8_line"]
+[ext_resource type="PackedScene" path="res://scenes/components/learning_sheet.tscn" id="9_sheet"]
+
+[node name="ImpeachmentScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_screen")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 0
+
+[node name="Column" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Hud" parent="SafeArea/Column" instance=ExtResource("2_hud")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HudGap" type="Control" parent="SafeArea/Column"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Scoreboard" parent="SafeArea/Column" instance=ExtResource("3_board")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="BoardGap" type="Control" parent="SafeArea/Column"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Speaker" parent="SafeArea/Column" instance=ExtResource("4_speaker")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SpeakerGap" type="Control" parent="SafeArea/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Problem" type="Label" parent="SafeArea/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Body"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="CardSlot" type="MarginContainer" parent="SafeArea/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 16
+
+[node name="SlotArea" type="Control" parent="SafeArea/Column/CardSlot"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Card" parent="SafeArea/Column/CardSlot/SlotArea" instance=ExtResource("5_card")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="Result" parent="SafeArea/Column/CardSlot/SlotArea" instance=ExtResource("6_panel")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_right = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Footer" parent="SafeArea/Column" instance=ExtResource("7_footer")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TapLayer" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Consequence" parent="." instance=ExtResource("8_line")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="LearningSheet" parent="." instance=ExtResource("9_sheet")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="Intro" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="Intro"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="IntroText" parent="Intro" instance=ExtResource("6_panel")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

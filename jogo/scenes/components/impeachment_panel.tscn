@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/impeachment_panel.gd" id="1_panel"]
+
+[node name="ImpeachmentPanel" type="MarginContainer"]
+offset_right = 390.0
+offset_bottom = 200.0
+mouse_filter = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_right = 24
+script = ExtResource("1_panel")
+
+[node name="Box" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Title" type="Label" parent="Box"]
+layout_mode = 2
+theme_type_variation = &"TitleL"
+text = "[a definir]"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Text" type="Label" parent="Box"]
+visible = false
+layout_mode = 2
+theme_type_variation = &"Muted"
+horizontal_alignment = 1
+autowrap_mode = 3
