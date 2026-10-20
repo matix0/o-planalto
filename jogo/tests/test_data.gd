@@ -27,6 +27,18 @@ func _initialize() -> void:
 	var bad_errors: PackedStringArray = data.validate_card(bad)
 	_expect(failures, bad_errors.size() >= 3, "broken card rejected (%s)" % ", ".join(bad_errors))
 
+	# Lote A data (P-005): calibration (docs/15 §15.04), Learning Cards (doc 18 blocks,
+	# fictitious), the 5 impeachment scene cards (gdd/sistemas/03_impeachment.md §4.1).
+	_expect(failures, data.calibration.size() == 6, "6 calibration questions")
+	_expect(failures, data.calibration[0]["question"] == "O governo deve priorizar segurança ou prevenção?", "calibration question 1")
+	_expect(failures, data.cards.values().all(func(c): return data.learning.has(c["learning_id"])), "a Learning Card for every card")
+	_expect(failures, data.impeachment_cards.size() == 5, "5 scene cards")
+	_expect(failures, data.impeachment_cards.all(func(c): return c["type"] == "impeachment"), "scene cards are type impeachment")
+	var no_test: Dictionary = data.impeachment_cards[0].duplicate(true)
+	no_test["option_a"].erase("test")
+	_expect(failures, not data.validate_card(no_test).is_empty(), "scene card without a test rejected")
+	_expect(failures, data.speaker_for(data.cards["INST-001"])["name"] == "Congresso", "speaker = mode institution (D-164)")
+
 	data.free()
 	if failures.is_empty() and ok:
 		print("test_data: OK")

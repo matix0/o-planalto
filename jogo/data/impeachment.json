@@ -1,0 +1,288 @@
+[
+  {
+    "id": "IMP-1",
+    "phase": 1,
+    "title": "O Pedido",
+    "mode": "impeachment",
+    "type": "impeachment",
+    "problem": "[Fictício] Problema da fase 1 da cena de impeachment.",
+    "option_a": {
+      "text": "[Fictício] Opção do povo (fase 1)",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 10,
+        "legitimacy": 5,
+        "security": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A na fase 1.",
+      "test": {
+        "meter": "awareness",
+        "op": ">",
+        "value": 45
+      }
+    },
+    "option_b": {
+      "text": "[Fictício] Opção do Congresso (fase 1)",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "treasury": -10
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B na fase 1.",
+      "test": {
+        "meter": "treasury",
+        "op": ">",
+        "value": 45
+      }
+    },
+    "learning_id": "APR-IMP-1",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "IMP-2",
+    "phase": 2,
+    "title": "A Comissão",
+    "mode": "impeachment",
+    "type": "impeachment",
+    "problem": "[Fictício] Problema da fase 2 da cena de impeachment.",
+    "option_a": {
+      "text": "[Fictício] Opção do povo (fase 2)",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "integrity": 5,
+        "awareness": 5,
+        "security": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A na fase 2.",
+      "test": {
+        "meter": "integrity",
+        "op": ">",
+        "value": 45
+      }
+    },
+    "option_b": {
+      "text": "[Fictício] Opção do Congresso (fase 2)",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "treasury": -10,
+        "integrity": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B na fase 2.",
+      "test": {
+        "meter": "political_capital",
+        "op": ">",
+        "value": 25
+      }
+    },
+    "learning_id": "APR-IMP-2",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "IMP-3",
+    "phase": 3,
+    "title": "A Votação",
+    "mode": "impeachment",
+    "type": "impeachment",
+    "problem": "[Fictício] Problema da fase 3 da cena de impeachment.",
+    "option_a": {
+      "text": "[Fictício] Opção do povo (fase 3)",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "sovereignty": -5,
+        "security": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A na fase 3.",
+      "test": {
+        "meter": "awareness",
+        "op": ">",
+        "value": 55
+      }
+    },
+    "option_b": {
+      "text": "[Fictício] Opção do Congresso (fase 3)",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 5,
+        "sovereignty": -10,
+        "security": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B na fase 3.",
+      "test": {
+        "meter": "political_capital",
+        "op": ">",
+        "value": 35
+      }
+    },
+    "learning_id": "APR-IMP-3",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "IMP-4",
+    "phase": 4,
+    "title": "O Julgamento",
+    "mode": "impeachment",
+    "type": "impeachment",
+    "problem": "[Fictício] Problema da fase 4 da cena de impeachment.",
+    "option_a": {
+      "text": "[Fictício] Opção do povo (fase 4)",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 10,
+        "treasury": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A na fase 4.",
+      "test": {
+        "meter": "dignity",
+        "op": ">",
+        "value": 50
+      }
+    },
+    "option_b": {
+      "text": "[Fictício] Opção do Congresso (fase 4)",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 5,
+        "legitimacy": 5,
+        "dignity": -10
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B na fase 4.",
+      "test": {
+        "meter": "political_capital",
+        "op": ">",
+        "value": 40
+      }
+    },
+    "learning_id": "APR-IMP-4",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "IMP-5",
+    "phase": 5,
+    "title": "O Desfecho",
+    "mode": "impeachment",
+    "type": "impeachment",
+    "problem": "[Fictício] Problema da fase 5 da cena de impeachment.",
+    "option_a": {
+      "text": "[Fictício] Opção do povo (fase 5)",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "treasury": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A na fase 5.",
+      "test": {
+        "meter": "legitimacy",
+        "op": ">",
+        "value": 45
+      }
+    },
+    "option_b": {
+      "text": "[Fictício] Opção do Congresso (fase 5)",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "integrity": 5,
+        "sovereignty": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B na fase 5.",
+      "test": {
+        "meter": "integrity",
+        "op": ">",
+        "value": 51
+      }
+    },
+    "learning_id": "APR-IMP-5",
+    "prerequisites": {
+      "min_year": 1
+    }
+  }
+]

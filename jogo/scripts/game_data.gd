@@ -1,9 +1,14 @@
+class_name GameDatabase
 extends Node
 ## Loads and validates the static game data in res://data (P-005, D-138).
 ## Invalid cards are left out of the deck and reported in `errors`
-## (gdd/sistemas/07_atores.md §5).
+## (gdd/sistemas/07_atores.md §5). Autoload name: GameData.
 
 const DATA_DIR := "res://data/"
+const SPEAKER_TBD := "[quem fala — a definir]"   # D-164; a validar (temáticas e cena)
+const CALIBRATION_QUESTIONS := 6                 # docs/15 §15.04
+const SCENE_PHASES := 5                          # gdd/sistemas/03_impeachment.md §3.2
+const TEST_OPS := ["<", ">", "<=", ">="]
 
 const CARD_TYPES := ["institutional", "thematic", "actor", "impeachment"]
 const CARD_PREFIX := {"institutional": "INST-", "thematic": "THEM-", "actor": "ATOR-"}
@@ -23,6 +28,10 @@ var actors: Dictionary = {}     # id -> actor
 var endings: Dictionary = {}    # id -> ending
 var cards: Dictionary = {}      # id -> card (valid only)
 var balance: Dictionary = {}
+var calibration: Array = []     # 6 questions, card-shaped (docs/15 §15.04)
+var learning: Dictionary = {}   # id -> Learning Card (doc 18 blocks; fictitious, D-139)
+var impeachment_cards: Array = []  # the 5 scene cards, ordered by phase (gdd 03 §4.1)
+var meter_info: Dictionary = {} # id -> meter entry of meters.json
 var errors: PackedStringArray = []
 
 
@@ -38,6 +47,9 @@ func load_all() -> bool:
 	actors = _index(_read("actors.json", []), "actors")
 	endings = _index(_read("endings.json", []), "endings")
 	meter_ids = PackedStringArray(meters.map(func(m): return m.get("id", "")))
+	meter_info = {}
+	for m in meters:
+		meter_info[m.get("id", "")] = m
 	_validate_meters()
 	_validate_actors()
 	_validate_endings()
@@ -51,9 +63,40 @@ func load_all() -> bool:
 			for e in card_errors:
 				errors.append("%s: %s" % [id, e])
 	_validate_actor_card_refs(all_cards)
+	calibration = _read("calibration.json", [])
+	_validate_calibration()
+	learning = _index(_read("learning.json", []), "learning")
+	_validate_learning()
+	_load_impeachment_cards()
 	for e in errors:
 		push_warning("GameData: " + e)
 	return errors.is_empty()
+
+
+## Who presents the problem (D-164, gdd/sistemas/05_cartas.md §3.2): `quem_fala` (or
+## `speaker`) when filled — an actor id or an institution name; otherwise the actor of an
+## actor card, the mode's institution for an institutional card, else "[quem fala — a definir]".
+## Returns {name, actor} — `actor` is the ACT-xxx id for the portrait, or "".
+func speaker_for(card: Dictionary) -> Dictionary:
+	var who := String(card.get("speaker", card.get("quem_fala", "")))
+	if actors.has(who):
+		return {"name": String(actors[who].get("name", who)), "actor": who}
+	if who != "":
+		return {"name": who, "actor": ""}
+	match String(card.get("type", "")):
+		"actor":
+			var owner := owner_of(String(card.get("id", "")))
+			if not owner.is_empty():
+				return {"name": String(actors[owner["actor"]].get("name", "")), "actor": owner["actor"]}
+		"institutional":
+			if modes.has(card.get("mode", "")):
+				return {"name": String(modes[card["mode"]].get("name", "")), "actor": ""}
+	return {"name": SPEAKER_TBD, "actor": ""}
+
+
+## {actor, role} of an ATOR-xxx card, or {} (gdd/sistemas/07_atores.md §3.4).
+func owner_of(card_id: String) -> Dictionary:
+	return _actor_owning(card_id)
 
 
 func validate_card(card: Dictionary) -> PackedStringArray:
@@ -215,6 +258,83 @@ func _validate_endings() -> void:
 		for c in e.get("conditions", []):
 			if c.get("meter") not in meter_ids or c.get("op") not in CONDITION_OPS:
 				errors.append("ending %s: invalid condition" % e.get("id"))
+
+
+## docs/15 §15.04: 6 questions, each answer ±5 on 1-2 meters (gdd 01 §3.2) and an axis vector.
+func _validate_calibration() -> void:
+	if calibration.size() != CALIBRATION_QUESTIONS:
+		errors.append("calibration: expected %d questions, got %d" % [CALIBRATION_QUESTIONS, calibration.size()])
+	var step := int(balance.get("calibration_step", 5))
+	for q in calibration:
+		var tag := "calibration %s: " % (q.get("id", "?") if q is Dictionary else "?")
+		if not q is Dictionary or String(q.get("question", "")).is_empty():
+			errors.append(tag + "missing question")
+			continue
+		for key in ["option_a", "option_b"]:
+			var o: Dictionary = q.get(key, {})
+			if String(o.get("text", "")).is_empty():
+				errors.append(tag + key + " missing text")
+			var effects: Dictionary = o.get("effects", {})
+			if effects.is_empty():
+				errors.append(tag + key + " without effects")
+			for m in effects:
+				if m not in meter_ids or absf(effects[m]) != step:
+					errors.append(tag + key + " effect on %s must be ±%d" % [m, step])
+			var axis = o.get("axis", [])
+			if typeof(axis) != TYPE_ARRAY or axis.size() != 4 or axis.any(func(v): return typeof(v) != TYPE_FLOAT or v != int(v) or absf(v) > 2):
+				errors.append(tag + key + " axis must be 4 integers in -2..2")
+
+
+## Every learning card has the 5 blocks of doc 18 §18.01.2; a source has a label (url may be
+## empty for fictitious data, D-091). A card whose learning card is missing stays out of the
+## draw (gdd/sistemas/06_sorteio.md §3.1) — reported here.
+func _validate_learning() -> void:
+	for id in learning:
+		var l: Dictionary = learning[id]
+		for key in ["lived", "concept", "data", "impact"]:
+			if String(l.get(key, "")).is_empty():
+				errors.append("learning %s: missing %s" % [id, key])
+		var source = l.get("source", {})
+		if typeof(source) != TYPE_DICTIONARY or String(source.get("label", "")).is_empty():
+			errors.append("learning %s: source needs a label" % id)
+	for id in cards:
+		if not learning.has(String(cards[id].get("learning_id", ""))):
+			errors.append("%s: learning card %s not found (card out of the draw)" % [id, cards[id].get("learning_id", "")])
+
+
+## The 5 scene cards (gdd/sistemas/03_impeachment.md §3.2, §4.1): type `impeachment`, one per
+## phase, a test {meter, op, value} on each option, no events (gdd/sistemas/08_eventos.md §3.1).
+func _load_impeachment_cards() -> void:
+	impeachment_cards = []
+	var by_phase := {}
+	for c in _read("impeachment.json", []):
+		var id: String = c.get("id", "?") if c is Dictionary else "?"
+		var e: PackedStringArray = validate_card(c) if c is Dictionary else PackedStringArray(["not an object"])
+		if c is Dictionary:
+			if c.get("type") != "impeachment":
+				e.append("scene card must have type 'impeachment'")
+			var phase = c.get("phase", 0)
+			if typeof(phase) != TYPE_FLOAT or phase < 1 or phase > SCENE_PHASES or by_phase.has(int(phase)):
+				e.append("phase must be a unique 1-%d" % SCENE_PHASES)
+			for key in ["option_a", "option_b"]:
+				var o: Dictionary = c.get(key, {})
+				if not o.get("events", []).is_empty():
+					e.append(key + ": scene cards have no events")
+				var t = o.get("test", {})
+				if typeof(t) != TYPE_DICTIONARY or String(t.get("meter", "")) not in meter_ids or String(t.get("op", "")) not in TEST_OPS or typeof(t.get("value")) != TYPE_FLOAT:
+					e.append(key + ": test must be {meter, op, value}")
+			if not String(c.get("learning_id", "")).is_empty() and not learning.has(c["learning_id"]):
+				e.append("learning card %s not found" % c["learning_id"])
+		if e.is_empty():
+			by_phase[int(c["phase"])] = c
+		else:
+			for x in e:
+				errors.append("%s: %s" % [id, x])
+	for p in range(1, SCENE_PHASES + 1):
+		if by_phase.has(p):
+			impeachment_cards.append(by_phase[p])
+		else:
+			errors.append("impeachment: no valid card for phase %d" % p)
 
 
 func _read(file: String, fallback: Variant) -> Variant:

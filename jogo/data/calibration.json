@@ -1,0 +1,178 @@
+[
+  {
+    "id": "CAL-1",
+    "question": "O governo deve priorizar segurança ou prevenção?",
+    "option_a": {
+      "text": "Segurança",
+      "effects": {
+        "security": 5,
+        "dignity": -5
+      },
+      "axis": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    "option_b": {
+      "text": "Prevenção",
+      "effects": {
+        "dignity": 5,
+        "security": -5
+      },
+      "axis": [
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "CAL-2",
+    "question": "O Brasil deve se alinhar aos EUA ou ao BRICS?",
+    "option_a": {
+      "text": "EUA",
+      "effects": {
+        "sovereignty": -5
+      },
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "option_b": {
+      "text": "BRICS",
+      "effects": {
+        "sovereignty": 5
+      },
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "CAL-3",
+    "question": "O Estado deve investir em educação ou cortar gastos?",
+    "option_a": {
+      "text": "Educação",
+      "effects": {
+        "awareness": 5,
+        "treasury": -5
+      },
+      "axis": [
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "option_b": {
+      "text": "Cortar",
+      "effects": {
+        "treasury": 5,
+        "awareness": -5
+      },
+      "axis": [
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "CAL-4",
+    "question": "A mídia deve ser livre ou regulada?",
+    "option_a": {
+      "text": "Livre",
+      "effects": {
+        "integrity": 5
+      },
+      "axis": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "option_b": {
+      "text": "Regulada",
+      "effects": {
+        "integrity": -5
+      },
+      "axis": [
+        0,
+        0,
+        0,
+        -1
+      ]
+    }
+  },
+  {
+    "id": "CAL-5",
+    "question": "O governo deve taxar grandes fortunas?",
+    "option_a": {
+      "text": "Sim",
+      "effects": {
+        "dignity": 5,
+        "treasury": -5
+      },
+      "axis": [
+        -2,
+        0,
+        0,
+        0
+      ]
+    },
+    "option_b": {
+      "text": "Não",
+      "effects": {
+        "treasury": 5,
+        "dignity": -5
+      },
+      "axis": [
+        2,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "CAL-6",
+    "question": "O povo deve participar das decisões?",
+    "option_a": {
+      "text": "Sim",
+      "effects": {
+        "legitimacy": 5,
+        "awareness": 5
+      },
+      "axis": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "option_b": {
+      "text": "Não",
+      "effects": {
+        "political_capital": 5,
+        "awareness": -5
+      },
+      "axis": [
+        0,
+        0,
+        0,
+        -2
+      ]
+    }
+  }
+]

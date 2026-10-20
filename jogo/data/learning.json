@@ -1,0 +1,497 @@
+[
+  {
+    "id": "APR-001",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-001).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-001).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-001)."
+  },
+  {
+    "id": "APR-002",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-002).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-002).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-002)."
+  },
+  {
+    "id": "APR-003",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-003).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-003).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-003)."
+  },
+  {
+    "id": "APR-021",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-021).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-021).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-021)."
+  },
+  {
+    "id": "APR-022",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-022).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-022).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-022)."
+  },
+  {
+    "id": "APR-023",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-023).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-023).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-023)."
+  },
+  {
+    "id": "APR-041",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-041).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-041).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-041)."
+  },
+  {
+    "id": "APR-042",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-042).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-042).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-042)."
+  },
+  {
+    "id": "APR-043",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-043).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-043).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-043)."
+  },
+  {
+    "id": "APR-061",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-061).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-061).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-061)."
+  },
+  {
+    "id": "APR-062",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-062).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-062).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-062)."
+  },
+  {
+    "id": "APR-063",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-063).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-063).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-063)."
+  },
+  {
+    "id": "APR-081",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-081).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-081).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-081)."
+  },
+  {
+    "id": "APR-082",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-082).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-082).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-082)."
+  },
+  {
+    "id": "APR-083",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-083).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-083).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-083)."
+  },
+  {
+    "id": "APR-101",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-101).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-101).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-101)."
+  },
+  {
+    "id": "APR-102",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-102).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-102).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-102)."
+  },
+  {
+    "id": "APR-103",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-103).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-103).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-103)."
+  },
+  {
+    "id": "APR-121",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-121).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-121).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-121)."
+  },
+  {
+    "id": "APR-122",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-122).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-122).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-122)."
+  },
+  {
+    "id": "APR-123",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-123).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-123).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-123)."
+  },
+  {
+    "id": "APR-141",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-141).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-141).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-141)."
+  },
+  {
+    "id": "APR-142",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-142).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-142).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-142)."
+  },
+  {
+    "id": "APR-143",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-143).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-143).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-143)."
+  },
+  {
+    "id": "APR-161",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-161).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-161).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-161)."
+  },
+  {
+    "id": "APR-162",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-162).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-162).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-162)."
+  },
+  {
+    "id": "APR-163",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-163).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-163).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-163)."
+  },
+  {
+    "id": "APR-181",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-181).",
+    "concept": "[Fictício] A técnica Fazenda de IA e como reconhecê-la (APR-181).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-181)."
+  },
+  {
+    "id": "APR-182",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-182).",
+    "concept": "[Fictício] A técnica Cachê da Desgraça e como reconhecê-la (APR-182).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-182)."
+  },
+  {
+    "id": "APR-183",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-183).",
+    "concept": "[Fictício] A técnica Deepfake e como reconhecê-la (APR-183).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-183)."
+  },
+  {
+    "id": "APR-201",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-201).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-201).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-201)."
+  },
+  {
+    "id": "APR-202",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-202).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-202).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-202)."
+  },
+  {
+    "id": "APR-203",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-203).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-203).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-203)."
+  },
+  {
+    "id": "APR-204",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-204).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-204).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-204)."
+  },
+  {
+    "id": "APR-205",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-205).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-205).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-205)."
+  },
+  {
+    "id": "APR-271",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-271).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-271).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-271)."
+  },
+  {
+    "id": "APR-272",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-272).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-272).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-272)."
+  },
+  {
+    "id": "APR-273",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-273).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-273).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-273)."
+  },
+  {
+    "id": "APR-274",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-274).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-274).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-274)."
+  },
+  {
+    "id": "APR-275",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-275).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-275).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-275)."
+  },
+  {
+    "id": "APR-IMP-1",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-1).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-1).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-IMP-1)."
+  },
+  {
+    "id": "APR-IMP-2",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-2).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-2).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-IMP-2)."
+  },
+  {
+    "id": "APR-IMP-3",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-3).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-3).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-IMP-3)."
+  },
+  {
+    "id": "APR-IMP-4",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-4).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-4).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-IMP-4)."
+  },
+  {
+    "id": "APR-IMP-5",
+    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-5).",
+    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-5).",
+    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "source": {
+      "label": "[Fictício] Fonte de exemplo",
+      "url": ""
+    },
+    "impact": "[Fictício] Frase de impacto (APR-IMP-5)."
+  }
+]
