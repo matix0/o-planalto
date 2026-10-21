@@ -47,6 +47,7 @@ func _run() -> void:
 	var real_settings: String = _settings.storage_path
 	_settings.storage_path = TEST_SETTINGS
 	_settings.reset_defaults(false)
+	_apply_base_settings()   # -- --text=N (16-36) and --hc: base text size and high contrast (P-014 etapa 7)
 	_saves.path = "user://shot_imp_%d.json" % OS.get_process_id()
 	_saves.delete()
 
@@ -317,3 +318,13 @@ func _key(code: Key) -> void:
 	var up := down.duplicate() as InputEventKey
 	up.pressed = false
 	root.push_input(up)
+
+
+## Base settings from the command line: --text=16|18|20|24|36 and --hc. The variant shots of
+## this script still set their own sizes; this only changes the base pages.
+func _apply_base_settings() -> void:
+	for a in OS.get_cmdline_user_args():
+		if a.begins_with("--text="):
+			_settings.set_value(&"text_step", int(a.trim_prefix("--text=")))
+		elif a == "--hc":
+			_settings.set_value(&"high_contrast", true)

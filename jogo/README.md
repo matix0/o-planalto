@@ -61,11 +61,12 @@ Rodar numa cópia, como manda `.claude/rules/isolamento.md`:
 cp -r jogo /tmp/pt && GODOT=/caminho/do/godot jogo/tests/run_all.sh /tmp/pt
 ```
 
-- `run_all.sh` faz o `--import` e roda os 18 `tests/test_*.gd` headless (D-134), em cerca de 1 min.
+- `run_all.sh` faz o `--import` e roda os 20 `tests/test_*.gd` headless (D-134), em cerca de 1 min.
 - `test_e2e.gd` joga uma partida inteira pela interface, com cliques e teclas:
   - título → tutorial → calibração → 4 anos → impeachment → final;
   - fecha e reabre o app no meio;
-  - chega ao mesmo final que a mesma política jogada só pela API.
+  - chega ao mesmo final que a mesma política jogada antes só pela API (`GameFlow`), no mesmo teste.
+- `test_table_endings.gd` e `test_table_balance.gd` (P-014): as condições dos 28 finais e os números do `balance.json` copiados dos docs de design, com teste de fronteira de cada um (um passo antes e um depois do limite). Mudar 1 unidade em qualquer número desses dois arquivos faz um teste falhar.
 - `shot_*.gd` geram capturas. Precisam de tela; no Linux sem tela, use `xvfb-run` (modo de usar no cabeçalho de cada arquivo).
 
 ## Estrutura

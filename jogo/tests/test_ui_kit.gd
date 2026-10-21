@@ -341,6 +341,34 @@ func _test_card(host: Control) -> void:
 	await process_frame
 	_events.clear()
 
+	# D-177 at every text size (16-36 px) and both ends of the drag limit (25%, 40%, D-158):
+	# the option text stays on screen, inside the visible part of the card, words whole.
+	var old_limit := card.drag_limit
+	for px in [16, 18, 20, 24, 36]:
+		slot.theme = ThemeBuilder.build(px)
+		await process_frame
+		for limit in [0.25, 0.40]:
+			card.drag_limit = limit
+			for side in [1, -1]:
+				card.reset()
+				card.preview_drag(side, limit)
+				await process_frame
+				var where := "%d px, limit %.2f, side %+d" % [px, limit, side]
+				var vis: Vector2 = card.visible_span(card_node.offset_transform_position.x)
+				_expect(option.visible and _label_on_screen(option, card_node), "D-177 %s: text on screen" % where)
+				_expect(option.position.x >= vis.x - 0.5 and option.position.x + option.size.x <= vis.y + 0.5,
+					"D-177 %s: text in the visible part (x %.1f, w %.1f, span %s)" % [where, option.position.x, option.size.x, str(vis)])
+				var font := option.get_theme_font(&"font")
+				var fs := option.get_theme_font_size(&"font_size")
+				for word in option.text.split(" ", false):
+					_expect(font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x <= option.size.x + 0.5,
+						"D-177 %s: '%s' fits the text width" % [where, word])
+	card.drag_limit = old_limit
+	slot.theme = null
+	card.reset()
+	await process_frame
+	_events.clear()
+
 	# A gesture in progress can be dropped (pause, app in background).
 	card.reset()
 	_press(card, c)

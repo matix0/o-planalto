@@ -36,6 +36,7 @@ func _run() -> void:
 	var real_save: String = _saves.path
 	_settings.storage_path = TEST_SETTINGS
 	_settings.reset_defaults(false)
+	_apply_base_settings()   # -- --text=N (16-36) and --hc: base text size and high contrast (P-014 etapa 7)
 	_saves.path = TEST_SAVE
 	_game.new_run(RUN_SEED)
 	_main = (load(MAIN_SCENE) as PackedScene).instantiate() as Control
@@ -219,3 +220,13 @@ func _settle() -> void:
 func _frames(n: int) -> void:
 	for i in n:
 		await process_frame
+
+
+## Base settings from the command line: --text=16|18|20|24|36 and --hc. The variant shots of
+## this script still set their own sizes; this only changes the base pages.
+func _apply_base_settings() -> void:
+	for a in OS.get_cmdline_user_args():
+		if a.begins_with("--text="):
+			_settings.set_value(&"text_step", int(a.trim_prefix("--text=")))
+		elif a == "--hc":
+			_settings.set_value(&"high_contrast", true)

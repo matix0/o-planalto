@@ -4,7 +4,9 @@ extends SceneTree
 ## year card (T-04) → cards (T-06) → effects (T-07) → consequence (T-07.3) → learning card
 ## (T-08) → Year 2 → event notice (T-05) → card; Esc rule (D-167), tap outside (D-145), pause
 ## button during the consequence, live settings, P1 at 36 px; resumed run shows the
-## consequence read-only without replaying effects (gdd 10 §5). No side words (D-084) and
+## consequence read-only without replaying effects (gdd 10 §5); through the title's "Continuar",
+## a run closed on an event notice or in the calibration comes back where it was; a meter at 0
+## through the screens ends on the final screen (P-014 etapa 6). No side words (D-084) and
 ## no meter numbers in visible text. LearningSheet / ConsequenceLine / YearCard / EventNotice
 ## API checks on standalone instances.
 ## Untyped references on purpose: scripts that use autoloads cannot be named statically from
@@ -69,6 +71,8 @@ func _run() -> void:
 	await _event_checks()
 	await _settings_checks()
 	await _resume_checks()
+	await _meter_zero_checks()
+	await _resume_in_calibration_checks()
 
 	# Cleanup.
 	Engine.time_scale = 1.0
@@ -241,6 +245,15 @@ func _event_checks() -> void:
 	_expect(await _wait(func() -> bool: return notice.is_waiting(), 4.0), "C-17 waits for the tap after the HUD")
 	_expect(_values(screen.hud()) == _game_values(), "T-05: HUD shows the event changes")
 	_check_texts(screen, "T-05.1")
+	# Closed on the notice, back through "Continuar": same event, waiting, effects not replayed.
+	var before: Dictionary = _game_values()
+	await _close_and_continue()
+	screen = _main.current_screen()
+	notice = screen.event_notice()
+	_expect(_main.current_id() == &"game" and _screen_step() == &"events", "Continuar → the event notice (got %s/%s)" % [_main.current_id(), _screen_step()])
+	_expect(notice.display_texts()[0] == String(view.text), "resumed event: same text")
+	_expect(await _wait(func() -> bool: return notice.is_waiting(), 4.0), "resumed event waits for the tap")
+	_expect(_game_values() == before and _values(screen.hud()) == before, "resumed event: effects not replayed")
 	_click(Vector2(195, 420))
 	_expect(await _wait(func() -> bool: return _screen_step() != &"events" or _game.event_view().get("index", 0) > int(view.index), 3.0), "tap → next event or card")
 	_expect(await _wait(func() -> bool: return _screen_step() == &"card", 6.0), "events → the cards of the turn")
@@ -300,6 +313,92 @@ func _resume_checks() -> void:
 	_check_texts(screen, "resume")
 	_key(KEY_ENTER)
 	_expect(await _wait(func() -> bool: return _screen_step() == &"learning", 3.0), "Enter continues the consequence")
+
+
+## Meter at 0 through the screens: the choice ends the run on the final screen (D-184).
+func _meter_zero_checks() -> void:
+	_expect(await _advance_to(&"card"), "a card for the meter-at-0 test (step %s)" % _screen_step())
+	var cur: Dictionary = _game.flow.run.current_card
+	var card_data: Dictionary = root.get_node(^"GameData").cards[cur["id"]]
+	var pick := 0
+	var meter := ""
+	for side in [1, -1]:
+		var opt: Dictionary = card_data[CardRules.option_key(side, int(cur["side_a"]))]
+		for m in opt["effects"]:
+			if m != "political_capital" and int(opt["effects"][m]) < 0:
+				meter = String(m)
+				break
+		if meter != "":
+			pick = side
+			break
+	_expect(pick != 0, "the card has a loss that can take a meter to 0")
+	if pick == 0:
+		return
+	_game.flow.run.meters[meter] = 1
+	_choose(_main.current_screen().card(), pick)
+	_expect(await _wait(func() -> bool: return _main.current_id() == &"final" and not _main.is_busy(), 8.0),
+		"meter at 0 → final screen (got %s)" % _main.current_id())
+	var v: Dictionary = _game.final_view()
+	_expect(String(v.get("reason", "")) == "catastrophe" and String(v.get("meter", "")) == meter,
+		"catastrophe of %s (got %s / %s)" % [meter, v.get("reason", ""), v.get("meter", "")])
+	var ending: Dictionary = v.get("ending", {})
+	_expect(String(ending.get("id", "")) == String(root.get_node(^"GameData").meter_info[meter]["zero_ending"]), "the ending of %s at 0" % meter)
+	_expect(_texts(_main.current_screen()).has(String(ending.get("name", "?"))), "T-10 shows the ending name")
+	_expect(not _saves.has_save(), "the save is deleted on the final screen")
+
+
+## Closed in the calibration, back through "Continuar": same question, same progress.
+func _resume_in_calibration_checks() -> void:
+	_game.new_run(RUN_SEED)
+	_main.go_to(&"calibration")
+	await _settle()
+	var screen: Node = _main.current_screen()
+	for i in 2:
+		_choose(screen.card(), 1)
+		var want := "%d/6" % (i + 2)
+		_expect(await _wait(func() -> bool: return screen.footer().display_text() == want, 5.0), "calibration at %s before closing" % want)
+	var question := String(_game.calibration_view().question)
+	await _close_and_continue()
+	screen = _main.current_screen()
+	_expect(_main.current_id() == &"calibration", "Continuar → calibration (got %s)" % _main.current_id())
+	_expect(screen.footer().display_text() == "3/6", "resumed calibration at 3/6 (got %s)" % screen.footer().display_text())
+	_expect(_texts(screen.card()).has(question), "resumed calibration: same question")
+
+
+## "Closes the app" (only the save is left) and opens it on the title; "Continuar".
+func _close_and_continue() -> void:
+	_main.queue_free()
+	_main = null
+	await _frames(2)
+	await _new_main()
+	_main.go_to(&"title")
+	await _settle()
+	var b: Array = _main.current_screen().buttons()
+	_expect((b[0] as Control).visible, "T-01: 'Continuar' with a save")
+	b[0].pressed.emit()
+	await _settle()
+
+
+## Moves the run on (sheet, consequence, year card, events) until the screen shows `step`.
+func _advance_to(step: StringName) -> bool:
+	for i in 40:
+		var now := _screen_step()
+		if now == step:
+			return true
+		var screen: Node = _main.current_screen()
+		match now:
+			&"learning":
+				screen.sheet().continue_button().pressed.emit()
+			&"consequence":
+				screen.consequence().continue_now()
+			&"year":
+				if screen.year_card().is_waiting_tap():
+					_key(KEY_ENTER)
+			&"events":
+				if screen.event_notice().is_waiting():
+					_click(Vector2(195, 420))
+		await _wait(func() -> bool: return _screen_step() != now, 3.0)
+	return _screen_step() == step
 
 
 ## Components alone (API used by lote E).

@@ -8,8 +8,9 @@ extends SceneTree
 ## the same card comes back (gdd 10 §3.5). After the final: "Jogar novamente" → calibration
 ## (tutorial already seen) → pause → "Abandonar mandato" → title (gdd 10 CA-10).
 ## Choices follow a fixed policy on a fixed seed: drain political capital until the scene,
-## pass its tests, then keep the lowest meter high. The same policy through the Game API alone
-## ends in EXPECTED_ENDING, so the screens make exactly the calls the rules expect.
+## pass its tests, then keep the lowest meter high. Before the screens, the same policy is
+## played through GameFlow alone (`_api_expected`, V-033); the screens must reach the same
+## ending, so they make exactly the calls the rules expect.
 ## Every screen: no side word (D-084). Game and scene screens: no meter number before the final.
 ## Untyped references on purpose: classes that use autoloads cannot be named in a -s script.
 
@@ -17,8 +18,7 @@ const MAIN_SCENE := "res://scenes/main.tscn"
 const TEST_SETTINGS := "user://test_e2e_settings.cfg"
 const TEST_SAVE := "user://test_e2e_save.json"
 const RUN_SEED := 15
-const EXPECTED_REASON := "end_of_term"
-const EXPECTED_ENDING := "END-027"
+const API_MAX_STEPS := 5000
 const EXPECTED_PATH: Array[StringName] = [&"title", &"tutorial", &"calibration", &"game", &"impeachment", &"game", &"final"]
 const RESUME_AT_YEAR := 2
 const SIDE_WORDS := ["esquerda", "direita", "◀", "▶", "←", "→"]
@@ -38,6 +38,7 @@ var _real_settings_path := ""
 var _real_save_path := ""
 var _order: Array = []
 var _visits: Array[StringName] = []
+var _expected := {}   # {reason, id, scene} of the policy played through GameFlow alone
 var _scene_seen := false
 var _resumed := false
 var _paused_once := false
@@ -69,6 +70,8 @@ func _run() -> void:
 	_saves.path = TEST_SAVE
 	_saves.delete()
 	Engine.time_scale = TIME_SCALE
+	_expected = _api_expected()
+	print("  API: %s / %s (scene: %s)" % [_expected.reason, _expected.id, _expected.scene])
 
 	await _new_main()   # the app opens on the title
 	await _title_new_term()
@@ -155,8 +158,9 @@ func _final_checks() -> void:
 	var screen: Node = _main.current_screen()
 	var v: Dictionary = _game.final_view()
 	var ending: Dictionary = v.get("ending", {})
-	_expect(String(v.get("reason", "")) == EXPECTED_REASON and String(ending.get("id", "")) == EXPECTED_ENDING,
-		"same ending as the policy through the API: %s/%s (got %s/%s)" % [EXPECTED_REASON, EXPECTED_ENDING, v.get("reason", ""), ending.get("id", "")])
+	_expect(String(v.get("reason", "")) == _expected.reason and String(ending.get("id", "")) == _expected.id,
+		"same ending as the policy through the API: %s/%s (got %s/%s)" % [_expected.reason, _expected.id, v.get("reason", ""), ending.get("id", "")])
+	_expect(_expected.scene, "the API run also went through the impeachment scene")
 	_expect(_texts(screen).has(String(ending.get("name", "?"))), "T-10 shows the ending name")
 	_expect(not _saves.has_save(), "gdd 10 §3.5: the save is deleted on the final screen")
 	_played = (_game.flow.run.played as Array).size() if _game.flow != null else 0
@@ -202,7 +206,7 @@ func _act() -> void:
 		&"game":
 			match screen.step():
 				&"card":
-					await _decide(_pick())
+					await _decide(_pick_in(_game.flow, _scene_seen))
 				&"consequence":
 					_key(KEY_ENTER)
 				&"learning":
@@ -222,7 +226,7 @@ func _act() -> void:
 				"intro", "result":
 					_key(KEY_ENTER)
 				"phase":
-					await _decide(_scene_pick())
+					await _decide(_scene_pick_in(_game.flow))
 				"consequence":
 					_key(KEY_ENTER)
 				"learning":
@@ -262,30 +266,63 @@ func _decide(side: int) -> void:
 	_key(KEY_ENTER)
 
 
-## Same policy as the API probe: drain political capital until the scene, then keep the lowest
-## meter high (fictitious data, D-135).
-func _pick() -> int:
-	var run: RunState = _game.flow.run
+## The policy: drain political capital until the scene, then keep the lowest meter high
+## (fictitious data, D-135). `flow` is the Game's (screens) or the API run's.
+func _pick_in(flow: Variant, scene_seen: bool) -> int:
+	var run: RunState = flow.run
 	var card: Dictionary = _data.cards[run.current_card["id"]]
 	var side_a := int(run.current_card["side_a"])
 	var scores := {}
 	for side in [-1, 1]:
 		var opt: Dictionary = card[CardRules.option_key(side, side_a)]
 		var m: Dictionary = run.meters.duplicate()
-		MeterRules.apply_effects(m, _game.flow._ints(opt["effects"]), _game.flow._multiplier(), _data.balance, _order)
+		MeterRules.apply_effects(m, flow._ints(opt["effects"]), flow._multiplier(), _data.balance, _order)
 		var safe: int = m.values().min() * 1000 + m.values().reduce(func(a, v): return a + v, 0)
-		scores[side] = safe if _scene_seen else -int(opt["effects"].get("political_capital", 0)) * 100000 + safe
+		scores[side] = safe if scene_seen else -int(opt["effects"].get("political_capital", 0)) * 100000 + safe
 	return -1 if scores[-1] > scores[1] else 1
 
 
 ## Passes the phase test when an option does (acquittal path).
-func _scene_pick() -> int:
-	var imp: Dictionary = _game.flow.run.impeachment
+func _scene_pick_in(flow: Variant) -> int:
+	var imp: Dictionary = flow.run.impeachment
 	var card: Dictionary = _data.impeachment_cards[int(imp["phase"]) - 1]
-	var a_passes := ImpeachmentRules.test_passes(card["option_a"]["test"], _game.flow.run.meters)
-	var b_passes := ImpeachmentRules.test_passes(card["option_b"]["test"], _game.flow.run.meters)
+	var a_passes := ImpeachmentRules.test_passes(card["option_a"]["test"], flow.run.meters)
+	var b_passes := ImpeachmentRules.test_passes(card["option_b"]["test"], flow.run.meters)
 	var take_a := a_passes or not b_passes
 	return int(imp["side_a"]) if take_a else -int(imp["side_a"])
+
+
+## V-033: the same seed and policy through GameFlow alone, no screens: calibration all +1
+## (like `_act`), then `_pick_in` and `_scene_pick_in`.
+func _api_expected() -> Dictionary:
+	var f := GameFlow.new(_data)
+	f.start(RUN_SEED)
+	var scene := false
+	var steps := 0
+	while f.state() != &"final" and steps < API_MAX_STEPS:
+		steps += 1
+		match f.state():
+			&"calibration":
+				f.answer_calibration(1)
+			&"year_intro":
+				f.continue_from_year()
+			&"events":
+				f.continue_from_event()
+			&"card":
+				f.choose(_pick_in(f, scene))
+			&"consequence":
+				f.continue_from_consequence()
+			&"learning":
+				f.continue_from_learning()
+			&"impeachment":
+				scene = true
+				if f.impeachment_view()["stage"] == "phase":
+					f.choose_impeachment(_scene_pick_in(f))
+				else:
+					f.continue_impeachment()
+	_expect(f.state() == &"final", "the API run reaches the final (state %s)" % f.state())
+	var v: Dictionary = f.final_view()
+	return {"reason": String(v.get("reason", "")), "id": String(v.get("ending", {}).get("id", "")), "scene": scene}
 
 
 func _should_resume() -> bool:
