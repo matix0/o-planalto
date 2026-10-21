@@ -1,7 +1,7 @@
 # 02 — Finais
 
 **Sistema:** 02 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 28 finais, prioridade, epílogo
-**Status:** ✅ Aprovado pelo PO (2026-10-15) · **Pendências:** P-3, P-1 (parte)
+**Status:** ✅ Aprovado pelo PO (2026-10-15) · **Pendências:** P-3, P-1 (parte) · **Revisão 2026-10-20** (D-174, D-180, D-181): provisória, DP-002
 
 ---
 
@@ -31,7 +31,7 @@ O jogador descobre "o país que construiu": o final é a soma das escolhas, não
 ### 3.2. Catástrofe na hora
 
 - Medidor em 0 após uma carta, um evento (GDD 08) ou um fechamento de turno → final da Catástrofe desse medidor (`gdd/sistemas/01_medidores.md` §3.3-3.4).
-- Dois ou mais em 0 na mesma carta ou evento → vale o medidor que mais perdeu nessa carta; empate pela ordem de `gdd/GDD.md` §6.1.1.
+- Dois ou mais em 0 na mesma carta ou evento → vale o medidor que mais perdeu nessa carta; empate pela ordem de `gdd/GDD.md` §6.1.1. "Mais perdeu" = maior queda aplicada (valor antes − valor depois, já limitado a 0), não o efeito escrito na carta (D-180).
 - `Capital Político` em 0 → cena de impeachment (GDD 03), não final direto (D-095).
 - "Abandonar mandato" → Renúncia na hora, sem passar pela prioridade; tela completa (`gdd/sistemas/10_estado_partida.md` §3.3).
 
@@ -39,9 +39,9 @@ O jogador descobre "o país que construiu": o final é a soma das escolhas, não
 
 1. Depois da última carta do Ano 4 **não há** relações, limiares nem bônus (`gdd/sistemas/01_medidores.md` §3.4).
 2. Checa o gatilho de impeachment com os valores da última carta; se disparar, a cena acontece primeiro (GDD 03).
-3. Lê as condições de todos os finais não-Catástrofe com esses valores.
+3. Lê as condições de todos os finais não-Catástrofe com os valores do fim do Ano 4: os da última carta ou, se houve cena com absolvição, os de depois da cena (D-181).
 4. Prioridade: Extermínio → Perda da Democracia → Captura → faixa "boa" (Fortalecimento + Cuidado e Soberania) → Mandato Comum.
-5. Dentro da categoria (ou da faixa boa), vence o final com mais condições; empate pela ordem da tabela.
+5. Dentro da categoria (ou da faixa boa), vence o mais específico: se as condições de um final que atende implicam as de outro que também atende, o mais restrito vence (D-174). Sem essa relação, vence o final com mais condições; empate pela ordem da tabela.
 
 ### 3.4. Aviso de Captura
 
@@ -86,11 +86,14 @@ Finais com "—" são exibidos sem citação até o PO indicar uma com fonte. As
 
 ## 4. Fórmulas
 
-- `atende(f)`: todas as condições de `f` verdadeiras com os valores da última carta do Ano 4. Comparações estritas (`>`, `<`), como no doc 04; Captura usa `≥ 95`.
+- `atende(f)`: todas as condições de `f` verdadeiras com os valores do fim do Ano 4 (§3.3 passo 3; D-181). Comparações estritas (`>`, `<`), como no doc 04; Captura usa `≥ 95`.
+- `implica(a, b)`: cada condição de `b` é garantida por uma condição de `a` no mesmo medidor e no mesmo sentido (`a: x > 80` garante `b: x > 70`; `a: x < 20` garante `b: x < 30`) e as duas listas não são iguais (D-174).
 - `peso(f)`: número de condições de `f`.
-- Final escolhido: o primeiro que atende na ordem (categoria pela prioridade de §3.3 → peso decrescente → ordem da tabela); nenhum → Mandato Comum.
+- Final escolhido: na categoria de maior prioridade (§3.3) que tem algum `f` que atende, descarta todo `b` que atende para o qual existe `a` que atende com `implica(a, b)`; dos que sobram, peso decrescente → ordem da tabela; nenhum → Mandato Comum.
 
 **Exemplo:** fim do Ano 4 com Dignidade 85, Consciência 75, Soberania 72, Integridade 74, demais 50. Atendem #18 (4 condições) e #25 (3), ambos na faixa boa → vence **#18 República Soberana e Popular** (mais condições).
+
+**Exemplo (D-174):** Legitimidade 85, Consciência 20, Integridade 20, demais 50. Atendem #11 (Consciência < 30, Integridade < 30, Legitimidade > 70) e #14 (Legitimidade > 80, Consciência < 30, Integridade < 30), mesmo peso. `implica(#14, #11)` → vence **#14 Populismo Autoritário**. Sem a regra, #11 vencia pela ordem da tabela e o #14 nunca saía (`gestao/validacao-2026-10-20.md`, V-001).
 
 ## 5. Casos-limite
 
@@ -99,7 +102,7 @@ Finais com "—" são exibidos sem citação até o PO indicar uma com fonte. As
 | Medidor em 0 durante a cena de impeachment | Catástrofe na hora; a cena é interrompida |
 | Absolvição no impeachment | O jogo continua; o GDD 03 define o que acontece com `Capital Político` em 0 |
 | Captura e final bom ao mesmo tempo | Captura vence (houve aviso no início do Ano 4) |
-| Gatilho de impeachment no fim do Ano 4 | A cena acontece antes dos finais |
+| Gatilho de impeachment no fim do Ano 4 | A cena acontece antes dos finais; com absolvição, os finais leem os valores de depois da cena (D-181) |
 | Medidor exatamente no limite (ex.: 70 em "> 70") | Não atende (comparação estrita) |
 | Medidor ≤ 10 no fim do Ano 4 | Sem carta de emergência: o mandato acabou |
 | Eventos que cairiam depois do Ano 4 | Epílogo de qualquer final, inclusive Catástrofe |
@@ -128,3 +131,6 @@ Finais com "—" são exibidos sem citação até o PO indicar uma com fonte. As
 6. Segurança 96 no fim do Ano 4 e nenhum Extermínio/Perda da Democracia → Estado Policial; Segurança ≥ 81 no início do Ano 4 → aviso no cartão.
 7. Todos os medidores em 50 no fim do Ano 4 → Mandato Comum.
 8. Consciência 85, Integridade 85, Legitimidade 72 após a última carta do Ano 4 → #21 (sem perda de fechamento).
+9. Legitimidade 85, Consciência 20, Integridade 20, demais 50 no fim do Ano 4 → #14 Populismo Autoritário, não #11 (D-174).
+10. Dignidade 10 e Soberania 20 recebem −30 e −20 na mesma carta: quedas aplicadas 10 e 20 → vale Soberania → Colônia (D-180).
+11. Cena de impeachment no fim do Ano 4 com absolvição: o final usa os valores de depois da cena (D-181).

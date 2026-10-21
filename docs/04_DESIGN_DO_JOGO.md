@@ -129,7 +129,7 @@ O jogo possui **8 medidores principais**. Os sub-medidores foram removidos (D-09
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 385 pontos (Consciência 40 — GDD 01).
+**Total:** 375 pontos (Consciência 40 — GDD 01; soma corrigida, D-141).
 
 **Justificativa:** O jogador começa com uma situação difícil, mas não impossível. Há margem para errar e aprender.
 
@@ -801,7 +801,7 @@ No nosso jogo, o sistema é **narrativamente orientado**, não matematicamente p
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 385 pontos (Consciência 40 — GDD 01).
+**Total:** 375 pontos (Consciência 40 — GDD 01; soma corrigida, D-141).
 
 ### 04.15.2. Multiplicador de Dificuldade
 

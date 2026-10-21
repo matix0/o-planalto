@@ -1,7 +1,7 @@
 # 05 — Cartas
 
 **Sistema:** 05 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** estrutura, opções A/B, sorteio do lado, cor por opção e saldo por cor
-**Status:** ✅ Aprovado pelo PO (2026-10-16)
+**Status:** ✅ Aprovado pelo PO (2026-10-16) · **Revisão 2026-10-20** (D-177, opção até 25 caracteres): provisória, DP-006
 
 ---
 
@@ -37,7 +37,7 @@ O jogador sente o peso de decidir sozinho, com um gesto, um problema sem respost
 
 | Campo | Regra |
 | :--- | :--- |
-| `texto` | 1 linha |
+| `texto` | Frase curta, até 25 caracteres (acentos contam 1), checada pelo `/validate-cards` e pelo jogo; no arraste, o rótulo ocupa a largura visível da carta e nunca sai da tela (D-177) |
 | `cor` | Uma das 7 cores partidárias; sem cor neutra (D-092) |
 | `eixo` | `[Eco, Dip, Soc, Est]`, inteiros −2 a +2 (`gdd/sistemas/04_eixo.md` §3.2) |
 | `efeitos` | Campo único, com sinal. De 2 a 4 medidores; ≥ 1 negativo (D-097), exceto uma opção da carta de oferta de ator (Boa Vontade, `gdd/sistemas/07_atores.md` §5); valores múltiplos de 5, de ±5 a ±30 |

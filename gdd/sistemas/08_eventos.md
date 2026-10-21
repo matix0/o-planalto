@@ -1,7 +1,7 @@
 # 08 — Eventos Encadeados
 
 **Sistema:** 08 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** atraso de 1-2 turnos, aviso, epílogo
-**Status:** ✅ Aprovado pelo PO (2026-10-16)
+**Status:** ✅ Aprovado pelo PO (2026-10-16) · **Revisão 2026-10-20** (D-182): provisória, DP-004
 
 ---
 
@@ -73,7 +73,8 @@ Como `D` ≥ 2, o multiplicador ×0,25 do Ano 1 nunca se aplica a eventos.
 | Vários eventos no mesmo turno | Um por um, na ordem de agendamento; cada um com sua tela de aviso |
 | Evento e carta de emergência no mesmo turno | Eventos primeiro; a emergência é a primeira carta depois deles (`gdd/sistemas/01_medidores.md` §3.4, passo 5) |
 | Partida termina antes do destino (catástrofe ou condenação) | Eventos na fila vão ao epílogo, sem efeito |
-| Opção que zera medidor e tem evento | O evento não é agendado (`gdd/sistemas/05_cartas.md` §5) nem vai ao epílogo |
+| Opção que zera medidor (exceto `Capital Político`) e tem evento | O evento não é agendado (`gdd/sistemas/05_cartas.md` §5) nem vai ao epílogo |
+| Opção que zera `Capital Político` (abre a cena, GDD 03) e tem evento | Absolvição: o evento é agendado e a partida segue. Condenação: o evento vai ao epílogo, sem efeito (D-182) |
 | Ganho em medidor já em 100 | Limita a 100 (GDD 01) |
 | Evento inválido (`atraso` fora de 1-2, > 3 efeitos, valor fora de ±5..±20, > 1 evento na opção, evento em carta de impeachment) | `/validate-cards` reprova; no jogo, a carta é excluída do baralho e o erro vai ao log |
 | Epílogo sem eventos | A seção do epílogo não aparece na tela final |
@@ -124,6 +125,7 @@ Faixas: decisões do PO no P-012 e escala do GDD 05. Magnitude e proporção: Si
 | CA-10 | Emergência | Medidor ≤ 10 no fechamento e evento no turno seguinte | Evento dispara antes da carta de emergência |
 | CA-11 | Opção que encerra | Opção que zera medidor e tem evento | Evento não aparece no epílogo |
 | CA-12 | Sem pendentes | Final sem eventos na fila | Tela final sem a seção do epílogo |
+| CA-13 | Condenação com evento da carta | Opção zera `Capital Político`, tem evento e a cena termina em condenação | Texto do evento no epílogo; nenhum medidor muda (D-182) |
 
 ## Ajustes para outros docs
 

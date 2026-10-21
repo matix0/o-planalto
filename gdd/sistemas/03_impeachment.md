@@ -1,7 +1,7 @@
 # 03 — Impeachment
 
 **Sistema:** 03 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** gatilhos, cena de 5 fases, placares
-**Status:** ✅ Aprovado pelo PO (2026-10-15) · **Pendências resolvidas:** P-1 (com D-095)
+**Status:** ✅ Aprovado pelo PO (2026-10-15) · **Pendências resolvidas:** P-1 (com D-095) · **Revisão 2026-10-20** (D-179): provisória, DP-003
 
 ---
 
@@ -21,10 +21,10 @@ O jogador sente o cerco: o processo é político, não jurídico. Sobreviver exi
 | :--- | :--- | :--- |
 | Principal | `Legitimidade` < 20 E `Capital Político` < 20 | Ano 2 |
 | Crise | `Integridade` < 20 E `Consciência` < 20 | Ano 2 |
-| Alternativo | 3 opções seguidas com efeito negativo em `Capital Político` | Ano 2 |
+| Alternativo | 3 opções seguidas com efeito negativo em `Capital Político`; a contagem zera ao abrir o Ano 2 (D-179) | Ano 2 |
 | Capital em 0 | `Capital Político` = 0 (D-095) | Ano 1 |
 
-Os gatilhos de medidor são checados no passo 6 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4); `Capital Político` = 0 e o alternativo, logo após a carta ou o evento (`gdd/sistemas/08_eventos.md` §5).
+Os gatilhos de medidor são checados no passo 6 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4); `Capital Político` = 0, logo após a carta ou o evento (`gdd/sistemas/08_eventos.md` §5); o alternativo, depois da Carta de Aprendizado da 3ª opção da sequência (D-179).
 
 ### 3.2. A cena
 
@@ -74,6 +74,7 @@ Diferença entre gatilhos aceita como intencional pelo PO. Sempre A ou sempre B 
 | Medidor (exceto Capital) em 0 na cena | Catástrofe; a cena é interrompida |
 | Caixa muito baixo na entrada | Pode chegar perto de 0 (< 0,1% das simulações) |
 | Gatilho depois da cena já ter ocorrido | Ignorado; só Capital em 0 vale (final direto) |
+| Sequência do alternativo na virada do Ano 1 para o 2 | Zera ao abrir o Ano 2: opções do Ano 1 não contam (D-179) |
 
 ## 6. Dependências
 
@@ -97,3 +98,5 @@ Diferença entre gatilhos aceita como intencional pelo PO. Sempre A ou sempre B 
 5. Segunda vez com Capital Político em 0 → final "Impeachment" direto.
 6. Cena por Capital em 0, apoio 2 e Desfecho passando → condenação.
 7. Efeito de carta da cena no Ano 4 → sem multiplicador (×1).
+8. Três opções seguidas que tiram Capital no Ano 2 → a cena abre depois da Carta de Aprendizado da 3ª, não antes (D-179).
+9. Duas opções que tiram Capital no fim do Ano 1 e uma no início do Ano 2 → a cena não abre (a contagem zerou, D-179).

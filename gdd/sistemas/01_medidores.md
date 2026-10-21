@@ -1,7 +1,7 @@
 # 01 — Medidores
 
 **Sistema:** 01 (`gdd/sistemas/00_INDICE.md`) · **Inclui:** 8 medidores, relações, turnos e fases, calibração inicial
-**Status:** ✅ Aprovado pelo PO (2026-10-14) · **Pendências:** P-6, P-8, P-11
+**Status:** ✅ Aprovado pelo PO (2026-10-14) · **Pendências:** P-6, P-8, P-11 · **Revisão 2026-10-20** (dobro da Consciência em eventos e na cena, validação C-05): provisória, DP-005
 
 ---
 
@@ -26,7 +26,7 @@ Tabela base (`gdd/GDD.md` §13.1): Dignidade 45 · Consciência 40 · Soberania 
 ### 3.3. Efeito de uma carta (na hora, nesta ordem)
 
 1. Efeito base da opção × multiplicador do ano (×0,25 / ×0,75 / ×1,0 / ×1,5), para ganhos e perdas.
-2. Se `Integridade` < 30, a perda de `Consciência` é dobrada.
+2. Se `Integridade` < 30, a perda de `Consciência` é dobrada. Vale também para o efeito de um evento (GDD 08) e de uma carta da cena de impeachment (GDD 03, que não usa o multiplicador do passo 1).
 3. Arredonda para o inteiro mais próximo; no empate (,5), afasta do zero. Se o efeito base não é zero, o resultado é no mínimo ±1.
 4. Limita a 0-100.
 5. Medidor em 0 → final catastrófico na hora (D-089).
@@ -60,7 +60,7 @@ Carta de recuperação → GDD 06 Sorteio. Evento de boa vontade → GDD 07 Ator
 | :--- | :--- | :--- |
 | `E` | Efeito base da opção (doc 17) | −30 a +30 nas cartas atuais |
 | `M` | Multiplicador do ano | 0,25 / 0,75 / 1,0 / 1,5 |
-| `D` | 2 se o medidor é `Consciência`, `E` < 0 e `Integridade` **antes da carta** < 30; senão 1 | 1 ou 2 |
+| `D` | 2 se o medidor é `Consciência`, `E` < 0 e `Integridade` **antes da carta** (ou do evento) < 30; senão 1. Vale para carta, evento e carta da cena | 1 ou 2 |
 | `arred` | Inteiro mais próximo; no ,5, afasta do zero; se `E` ≠ 0, |Δ| ≥ 1 | — |
 
 **Exemplo** (Ano 1, INST-001, Opção B, valores iniciais sem calibração):

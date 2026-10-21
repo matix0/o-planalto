@@ -270,7 +270,7 @@ Nenhum lado é fixo como "social" ou "de mercado": o jogo sorteia o lado de cada
 **Descrição:** Cada carta é uma unidade de decisão com:
 - **Título** (5 palavras)
 - **Problema** (2 linhas)
-- **Duas opções** (1 linha cada)
+- **Duas opções** (frase curta, até 25 caracteres cada, D-177)
 - **Efeitos** (2–4 medidores, campo único com sinal, ≥ 1 negativo — D-098)
 - **Consequência** (1 linha)
 - **Carta de Aprendizado** (5 blocos)
@@ -546,12 +546,14 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
 | Primária | Branco (neutro — D-159) | `#FFFFFF` |
-| Secundária | Azul | `#1565C0` |
+| Secundária | Cinza-azulado, contorno (neutro — D-172) | `#90A4AE` |
 | Terciária | Cinza | `#37474F` |
-| Alerta | Vermelho | `#C62828` |
-| Destaque | Amarelo | `#F9A825` |
+| Alerta | Branco + forma ou ícone (neutro — D-172) | `#FFFFFF` |
+| Destaque | Cinza-claro (neutro — D-172) | `#ECEFF1` |
 | Fundo | Cinza-escuro | `#263238` |
 | Texto | Branco | `#FFFFFF` |
+
+**D-172:** azul, vermelho e amarelo são cores partidárias; por isso secundária, alerta e destaque são neutras. Histórico (não usar): secundária `#1565C0`, alerta `#C62828`, destaque `#F9A825`. Tons do protótipo: `jogo/scripts/ui/tokens.gd:11-16`.
 
 **Faixas dos medidores:** escala ciano `#0097A7` · `#00ACC1` · `#26C6DA` · `#4DD0E1` · `#80DEEA` (0-20 a 81-100; doc 14 §14.11.3). **Bordas partidárias:** contorno branco de 2-3 px.
 
@@ -717,7 +719,7 @@ Exportação: Web, Android, Windows
 | Caixa | 55 |
 | Capital Político | 50 |
 | Legitimidade | 55 |
-| **Total** | **385** |
+| **Total** | **375** (D-141) |
 
 ### 13.2. Multiplicador de Dificuldade
 

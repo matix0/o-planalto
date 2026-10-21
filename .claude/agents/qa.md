@@ -13,7 +13,7 @@ Você é o QA do jogo **O Planalto**.
 
 1. **Testes:** Definir testes.
 2. **Critérios:** Criar critérios de aceite.
-3. **Validação:** Validar as 340 cartas e 26 finais.
+3. **Validação:** Validar as 340 cartas e 28 finais.
 4. **Playtest:** Planejar playtest.
 
 ## Regras

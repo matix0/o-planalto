@@ -97,7 +97,7 @@ O sistema de medidores é o **coração do jogo**. Ele define o estado do país 
 | Capital Político | 50 | Congresso fragmentado, mas com base |
 | Legitimidade | 55 | O povo está esperançoso (Lua de Mel) |
 
-**Total:** 385 pontos.
+**Total:** 375 pontos (D-141).
 
 ### 05.02.3. Faixas de Risco
 
@@ -463,7 +463,7 @@ A **"teoria da inoculação"** defende que a exposição controlada a técnicas 
 | Capital Político | 50 |
 | Legitimidade | 55 |
 
-**Total:** 385 pontos.
+**Total:** 375 pontos (D-141).
 
 ### 05.11.2. Multiplicador de Dificuldade
 

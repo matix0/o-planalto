@@ -101,7 +101,7 @@ O tom do jogo é **direto, humano e levemente irônico**.
 | :--- | :--- | :--- |
 | **Título da carta** | 5 palavras | Legibilidade em mobile |
 | **Problema da carta** | 2 linhas (máx. 140 caracteres) | Leitura rápida |
-| **Opção (A/B)** | 1 linha (máx. 60 caracteres) | Cabe no botão |
+| **Opção (A/B)** | Frase curta (máx. 25 caracteres, D-177) | Cabe na carta durante o arraste |
 | **Consequência** | 1 linha (máx. 80 caracteres) | Impacto rápido |
 | **Carta de Aprendizado (vivencia)** | 2 linhas | Contexto |
 | **Carta de Aprendizado (conceito)** | 3 linhas | Explicação |
@@ -217,7 +217,7 @@ O tom do jogo é **direto, humano e levemente irônico**.
 ### 10.04.4. As Opções
 
 **Regras:**
-- Máximo 1 linha (60 caracteres).
+- Frase curta, até 25 caracteres, contando espaços e acentos (D-177). O `/validate-cards` e o jogo reprovam a opção mais longa.
 - Cada opção representa uma solução típica de um espectro político.
 - Sem rótulos explícitos de espectro político.
 - A e B são nomes internos: o jogo sorteia o lado de cada opção a cada partida e nunca o escreve na carta (D-084).
