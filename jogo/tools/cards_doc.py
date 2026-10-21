@@ -508,11 +508,11 @@ def deck_report(cards):
     return lines
 
 
-def load_all():
+def load_all(doc17=DOC17, doc18=DOC18):
     known = {a["id"] for a in json.load(open(ACTORS, encoding="utf-8"))}
     roles = actor_roles()
-    raw = parse_doc17()
-    learning = parse_doc18()
+    raw = parse_doc17(doc17)
+    learning = parse_doc18(doc18) if doc18 else {}
     built = []
     for c in raw:
         card, errs = build_card(c, known, roles)
@@ -523,7 +523,7 @@ def load_all():
 
 
 def cmd_check(args):
-    cards, learning = load_all()
+    cards, learning = load_all(args.doc17, None if args.no_learning else args.doc18)
     want = set(x.strip() for x in args.ids.split(",")) if args.ids else None
     seen = {}
     total_err = 0
@@ -536,7 +536,9 @@ def cmd_check(args):
         errs = list(c["_errors"])
         warns = []
         l = learning.get(c["learning_id"])
-        if not l:
+        if args.no_learning:
+            pass
+        elif not l:
             errs.append("Aprendizado %s não está no doc 18 — carta fora do baralho" % c["learning_id"])
         else:
             approved = c["_status"].startswith("aprovado")
@@ -590,6 +592,60 @@ def cmd_export(args):
     return 0
 
 
+# --- Doc 18 box -------------------------------------------------------------------------------
+
+BOX_INNER = 59   # text width inside "│  " … "│" (doc 18 §18.02)
+
+
+def _wrap(text, width=BOX_INNER):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        if cur and nfc_len(cur) + 1 + nfc_len(w) > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def render_box(a):
+    """a: {code, card_id, title, lived, concept, data, source, impact, technique?, url, url_label,
+    verified_note?} → the doc 18 block (### header, box, "Fonte verificada" line)."""
+    def row(text=""):
+        return "│  " + text + " " * max(0, BOX_INNER - nfc_len(text)) + "│"
+    out = ["### %s — %s" % (a["code"], a["title"]), "", "```",
+           "┌" + "─" * (BOX_INNER + 2) + "┐",
+           row("CARTA DE APRENDIZADO — " + a["card_id"]), row(a["title"]),
+           "├" + "─" * (BOX_INNER + 2) + "┤", row()]
+    for label, key in (("O QUE VOCÊ ACABOU DE VIVENCIAR:", "lived"), ("O CONCEITO POR TRÁS:", "concept"),
+                       ("DADOS REAIS:", "data")):
+        out.append(row(label))
+        out.extend(row(ln) for ln in _wrap(a[key]))
+        out.append(row())
+    if a.get("technique"):
+        out.append(row("TÉCNICA: " + a["technique"]))
+        out.append(row())
+    out.append(row("FONTE: " + a["source"]))
+    out.append(row())
+    out.extend(row(ln) for ln in _wrap('"%s"' % a["impact"].strip('"“”')))
+    out.append(row())
+    out.append("└" + "─" * (BOX_INNER + 2) + "┘")
+    out.append("```")
+    out.append("")
+    note = a.get("verified_note", "P-015")
+    out.append("**Fonte verificada (%s):** [%s](%s)" % (note, a["url_label"], a["url"]))
+    return "\n".join(out) + "\n"
+
+
+def cmd_box(args):
+    items = json.load(open(args.json, encoding="utf-8"))
+    for a in items:
+        sys.stdout.write(render_box(a) + "\n")
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -597,10 +653,16 @@ def main():
     c.add_argument("--ids", default="")
     c.add_argument("--wave-report", action="store_true")
     c.add_argument("-v", "--verbose", action="store_true")
+    c.add_argument("--doc17", default=DOC17, help="arquivo com cartas no formato do doc 17 (ex.: rascunho de uma onda)")
+    c.add_argument("--doc18", default=DOC18)
+    c.add_argument("--no-learning", action="store_true", help="não confere o Aprendizado (rascunho de cartas)")
     e = sub.add_parser("export")
     e.add_argument("--out", required=True)
+    b = sub.add_parser("box", help="renders doc 18 boxes from a JSON list (see render_box)")
+    b.add_argument("--json", required=True)
     args = p.parse_args()
-    sys.exit(cmd_check(args) if args.cmd == "check" else cmd_export(args))
+    handler = {"check": cmd_check, "export": cmd_export, "box": cmd_box}[args.cmd]
+    sys.exit(handler(args))
 
 
 if __name__ == "__main__":
