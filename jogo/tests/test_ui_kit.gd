@@ -268,8 +268,11 @@ func _test_card(host: Control) -> void:
 	_expect(is_equal_approx(card_node.offset_transform_rotation, deg_to_rad(Tokens.TILT_DEG_AT_LIMIT)), "tilt 5° at the limit")
 	_expect(option.text == "Aceitar as mudanças" and option.horizontal_alignment == HORIZONTAL_ALIGNMENT_LEFT, "option text +1")
 	var span: Vector2 = card.visible_span(card_node.offset_transform_position.x)
-	_expect(is_equal_approx(option.position.x, span.x + Tokens.ESP_24) and absf(option.position.x + option.size.x - (span.y - Tokens.ESP_24)) < 1.0,
-		"+1 text spans the visible part of the card (D-177; x %.1f, w %.1f, span %s)" % [option.position.x, option.size.x, str(span)])
+	# The 5° tilt moves the top of the card toward the drag: the label gives that room back.
+	var shift := (card_node.size.y - (option.position.y + option.size.y * 0.5)) * sin(card_node.offset_transform_rotation)
+	_expect(is_equal_approx(option.position.x, span.x + Tokens.ESP_24) and absf(option.position.x + option.size.x - (span.y - Tokens.ESP_24 - shift)) < 1.0,
+		"+1 text spans the visible part of the card minus the tilt (D-177; x %.1f, w %.1f, span %s, shift %.1f)" % [option.position.x, option.size.x, str(span), shift])
+	_expect(shift > 20.0, "the tilt at the limit moves the label more than 20 px (%.1f)" % shift)
 	_expect(_label_on_screen(option, card_node), "+1 text inside the screen at the limit (D-177)")
 	var band_box := card.get_node("CardFit/Card/BorderOuter/BorderBand").get_theme_stylebox(&"panel") as StyleBoxFlat
 	var outer_box := card.get_node("CardFit/Card/BorderOuter").get_theme_stylebox(&"panel") as StyleBoxFlat
@@ -363,6 +366,18 @@ func _test_card(host: Control) -> void:
 				for word in option.text.split(" ", false):
 					_expect(font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x <= option.size.x + 0.5,
 						"D-177 %s: '%s' fits the text width" % [where, word])
+	# With the tilt on (5° at the limit, pivot at the bottom center), the turned label still
+	# ends inside the screen.
+	card.reduce_motion = false
+	for px in [18, 24, 36]:
+		slot.theme = ThemeBuilder.build(px)
+		await process_frame
+		for side in [1, -1]:
+			card.reset()
+			card.preview_drag(side, 0.40)
+			await process_frame
+			_expect(_label_on_screen_tilted(option, card_node), "D-177 tilt %d px, side %+d: turned text on screen" % [px, side])
+	card.reduce_motion = true
 	card.drag_limit = old_limit
 	slot.theme = null
 	card.reset()
@@ -511,6 +526,19 @@ func _label_on_screen(option: Label, card_node: Control) -> bool:
 	var x0 := card_node.global_position.x + card_node.offset_transform_position.x + option.position.x
 	var screen := root.get_visible_rect()
 	return x0 >= screen.position.x - 0.5 and x0 + option.size.x <= screen.end.x + 0.5
+
+
+## Both top corners of the option label after the card's offset rotation (pivot = bottom
+## center, offset_transform_pivot_ratio (0.5, 1)) are inside the screen.
+func _label_on_screen_tilted(option: Label, card_node: Control) -> bool:
+	var pivot := Vector2(card_node.size.x * 0.5, card_node.size.y)
+	var screen := root.get_visible_rect()
+	for p in [option.position, option.position + Vector2(option.size.x, 0.0)]:
+		var q: Vector2 = pivot + (p - pivot).rotated(card_node.offset_transform_rotation)
+		var x := card_node.global_position.x + card_node.offset_transform_position.x + q.x
+		if x < screen.position.x - 0.5 or x > screen.end.x + 0.5:
+			return false
+	return true
 
 
 func _check_no_side_words(node: Node, where: String) -> void:

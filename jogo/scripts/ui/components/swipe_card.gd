@@ -615,8 +615,12 @@ func _layout_option(side: int, centered: bool) -> void:
 		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	else:
 		var span := visible_span(_drag_dx)
-		left = span.x + inset
-		right = maxf(span.y - inset, left + 1.0)
+		# The tilt turns the card around its bottom center: the top, where the label is, moves
+		# toward the drag by lift × sin(angle) — up to ~25 px at 5°, the whole inset.
+		var lift := _card.size.y - (_option.offset_top + _option.size.y * 0.5)
+		var shift := lift * sin(_card.offset_transform_rotation)
+		left = span.x + inset + maxf(0.0, -shift)
+		right = maxf(span.y - inset - maxf(0.0, shift), left + 1.0)
 		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT if side > 0 else HORIZONTAL_ALIGNMENT_RIGHT
 	_option.offset_left = left
 	_option.offset_right = right
