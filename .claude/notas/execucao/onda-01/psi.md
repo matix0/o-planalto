@@ -1,0 +1,51 @@
+# Onda 1 — Revisão do PSI (modo Influenciador, INST-182 a INST-191)
+
+**Autor:** PSI (subagente, Opus) · **Data:** 2026-10-21 · **Branch:** `claude/p014-p015`
+**Status:** CONCLUÍDO. É proposta: o PO decide. Sem commit; nenhum outro arquivo alterado.
+**Insumos:** `onda-01/cartas.md`, `onda-01/fontes.md`, `onda-01/aprendizados.json`; `docs/10_GUIA_DE_ESTILO_E_TOM.md:206`, `:236-240`, `:487-502`; `gdd/sistemas/09_desinformacao.md:14`, `:30`, `:38`, `:69`; `jogo/scripts/ui/components/content_warnings.gd:9-10`; `gestao/decisoes.md:109` (D-097), `:130` (D-118), `:202` (D-190); `gestao/estado.md:151` (RC-08).
+**Conferência:** os textos novos foram contados em NFC (acento = 1) por script no scratchpad. Uma cópia das cartas com os ajustes passou no `cards_doc.py check` (10 cartas, 0 erros), e uma cópia do JSON passou no `box` (saída 0; conceito e dado cabem em 3 linhas). Rodei com `PYTHONDONTWRITEBYTECODE=1`; nenhum `__pycache__` foi criado.
+
+**Resumo:** 4 aprovadas, 6 com ajuste, 0 reprovadas.
+
+## Veredito por carta
+
+| Carta | Veredito | Problema (PSI) | Texto exato de substituição |
+| :--- | :--- | :--- | :--- |
+| INST-182 | aprovar | A carta inocula bem: a consequência A mostra que ceder "prova" o boato (`cartas.md:26`). A ministra não tem nome; se alguém a ligar a uma pessoa real, a carta a defende (boato sem prova). O dado bate com a fonte (`fontes.md:39-40`, `:337`). | — |
+| INST-183 | ajustar (Aprendizado) | A carta está ok: não ensina a técnica passo a passo, o revide tem custo e o evento mostra o "dividendo do mentiroso" (`cartas.md:59-63`). O problema está no conceito, que ensina sinais visuais (`aprendizados.json:20`). Um deepfake bem-feito não mostra falha (GT Deepfakes, `fontes.md:65`), e treinar o olho dá confiança falsa (Köbis et al., *iScience*, 2021 `[não verificado]`). A própria caixa mostra que só 11% se sentem confiantes. O sinal confiável é a fonte. | APR-183 `concept` (169): "Deepfake é vídeo, foto ou voz falsos feitos com IA. Os bons não mostram falha: desconfie se nenhuma fonte séria confirma. Se tudo pode ser falso, a verdade também perde." |
+| INST-184 | ajustar | (1) "Não há prova" sem objeto pode ser contestado (`fontes.md:97`) e não diz que o estigma é falso. (2) `Segurança` +10 em "Fechar a fronteira" (`cartas.md:93`) faz a mecânica dizer que refugiado é ameaça, ou seja, confirma o pânico que o texto desmente. O guia dá ao Aceitar ganho de alcance (`gdd/sistemas/09_desinformacao.md:38`). (3) O dado nomeia os venezuelanos logo depois de "crime e doença" e usa número absoluto (270 mil), que reforça a ideia de "invasão". A proporção corrige melhor. | **Problema** (125): "Vídeos culpam refugiados de um país vizinho por todo crime e toda doença. É falso, mas a cidade da fronteira entra em pânico." · **Efeitos A**: `Legitimidade` +10, `Capital Político` +5, `Dignidade` -15, `Integridade` -10 · APR-184 `data` (119): "Em 2022, o Brasil tinha cerca de 1 milhão de estrangeiros e naturalizados: 0,5% da população, ou 1 em cada 200 pessoas." |
+| INST-185 | aprovar | A tentação vem dos aliados e está marcada "sem prova". Na opção B, o governo debate e a crítica não é punida. Ver a resposta 3. O dado bate com a fonte (`fontes.md:116-117`). | — |
+| INST-186 | ajustar (leve) | "A defesa cibernética" (militar) achando perfis "que atacam seu governo" (`cartas.md:159`) faz parecer normal que militares vigiem críticos na internet. Isso contraria o próprio jogo (aviso "Ditadura e tortura") e é impreciso (o GD marcou `[não verificado]`). Na vida real, quem acha essas redes costuma ser pesquisador ou plataforma (`fontes.md:155`). | **Problema** (102): "Pesquisadores acham 8 mil perfis falsos que atacam seu governo. Uma potência estrangeira opera a rede." (`ACT-008` pode continuar como quem fala, pela "segurança nacional"; o GD decide.) |
+| INST-187 | ajustar | (1) As aspas em 'ensina' são sutis demais para quem tem 15 anos: o estigma racista fica de pé até a caixa aparecer (aviso "Racismo"). (2) "Atrasam o Brasil" é um juízo, e o dado do MapBiomas desmente outra coisa (`fontes.md:177`). A proposta troca por uma acusação que o dado derruba e a marca como falsa. (3) A consequência A liga a bancada real do agro à defesa de um canal racista, o que é acusação nova a um grupo real (D-190). | **Problema** (131): "Um canal com cara de aula 'ensina' que indígenas destroem a floresta. É falso, e os anúncios do seu governo pagam parte dos vídeos." · **Consequência A** (66): "O canal perde a verba. Aliados dele no Congresso falam em censura." (`ACT-001` −1 continua.) |
+| INST-188 | aprovar | O golpe não usa rosto real, "cura" está entre aspas e a plataforma não tem nome. Os sinais de contexto (promessa de cura, pressa, compra fora de loja oficial) são confiáveis. Ver a resposta 4. | — |
+| INST-189 | ajustar (Aprendizado) | (1) O dado é amplo demais: "fatos notoriamente falsos" (`aprendizados.json:99`) soa como qualquer mentira. A regra vale só para fato que ameace a integridade da eleição (`fontes.md:227`). Exagerar o poder do TSE em ano de eleição alimenta o discurso de "censura". (2) "Perfis sem história" e "números que crescem do nada" não têm fonte (`fontes.md:229`) e ensinam a chamar de robô qualquer conta nova, o que já é desmoralizar gente real. A proposta deixa só o sinal de coordenação, que tem fonte (Res. TSE 23.732, art. 37, XXI, `fontes.md:229`). | APR-189 `concept` (159): "Fazenda de IA também serve para elogiar: cria a ilusão de que todo mundo apoia. Sinal: o mesmo elogio, com as mesmas palavras, em muitos perfis ao mesmo tempo." · APR-189 `data` (164): "Regra do TSE (2026): a Justiça Eleitoral pode remover perfil comprovadamente falso ou robô que repete crime eleitoral ou fato falso contra a integridade da eleição." |
+| INST-190 | aprovar | O mito aparece uma vez só, já com "É boato" (padrão de desmentido). Nenhuma opção premia quem cede ao pânico (`gdd/sistemas/09_desinformacao.md:69`). O evento B é positivo, sem derrotismo. O dado usa o medo, mas junto com a solução ("altamente prevenível"), o que é aceitável em saúde. Ver a resposta 2. | — |
+| INST-191 | ajustar | (1) O estigma mira o próprio público, o jovem pobre: a falsidade precisa estar marcada já na carta, não só na caixa. (2) A frase de impacto vem logo depois de um dado de pouca mobilidade (48% e 8%). Para quem é pobre, "quem paga é você" pode soar como culpa ou fatalismo (`docs/10_GUIA_DE_ESTILO_E_TOM.md:501`). A frase nova põe a culpa na falta de chance, ecoando o "48% de chance" da fonte. | **Problema** (124): "Um coach oferece de graça seu curso a jovens do programa de emprego. A aula 'ensina' que pobre é pobre porque quer. É falso." · APR-191 `impact` (42): "Não é falta de vontade. É falta de chance." |
+
+## Respostas às dúvidas do GD (`cartas.md:372-377`)
+
+1. **INST-184 e INST-187 (o estigma repetido para ser exposto): "Não há prova" e as aspas bastam?** Não. Nenhum dos dois diz que a ideia é falsa. O padrão proposto: o mito aparece uma vez, a mesma carta diz "É falso" e a caixa traz o dado que o derruba (Debunking Handbook, 2020 `[não verificado]`).
+2. **INST-190 (mito de saúde sobre menores):** está ok. O "É boato" na mesma frase já desmente. A caixa mostra o custo real (INCA) e o conceito explica o mecanismo. Não acrescentar "a vacina é segura": por enquanto essa frase só tem fonte de imprensa (`fontes.md:262`).
+3. **INST-183 e INST-185 (a técnica vem da base do governo, Roxo e Vermelho):** é inoculação, não equivalência. A tentação do atalho é de quem está no poder, de qualquer lado (`gdd/sistemas/09_desinformacao.md:14`), e quem se acha imune cai mais. A diferença do mundo real continua visível na onda: quem financia a desinformação é canal pago, bet e plataforma (INST-187, 191, 188). A D-097 não exige "toda cor com um Aceitar" (`gestao/decisoes.md:109`); é uma escolha do GD, permitida. Vale acompanhar nas 20 cartas do modo para que Vermelho e Roxo não virem a fonte principal das opções Aceitar.
+4. **INST-188 (a marca no ACT-020):** está ok. A tela mostra só o nome de quem fala (`ACT-014`; `jogo/scripts/game_data.gd:83-84`). Procurei em `jogo/scripts/ui` e não achei a reação ±1 dos atores exibida por nome. A ligação interna com a Meta se apoia em fato público (NetLab/UFRJ 2025, sobre as plataformas da Meta, `fontes.md:194`). Recomendo não nomear a Meta no texto nem na caixa enquanto o RC-08 estiver aberto.
+5. **INST-191 ("Até a si mesmos"):** manter. A frase nomeia a culpa que a pessoa passa a sentir de si mesma, que é o dano real da técnica, sem julgar os jovens; logo depois, a caixa mostra que a origem pesa. O problema estava na frase de impacto, já ajustada acima.
+
+## Dúvidas do pesquisador que tocam em ética (`fontes.md:316-326`)
+
+- **1 (INST-184):** resolvida no ajuste da carta.
+- **2 (APR-188):** não usar o estudo reserva de 2024, que nomeia políticos vivos (`fontes.md:208`, RC-08). O dado atual serve: a linha TÉCNICA e a frase fazem a ligação com o deepfake. Não nomear a Meta.
+- **3 (APR-186):** está ok. A potência não tem nome, então não há acusação; o dado ilustra a técnica.
+- **4 (APR-189):** a caixa ajustada não chama a oferta de crime. Ela só diz quando a Justiça manda remover.
+- **6 (nomes de técnica do projeto):** está ok. A Carta de Aprendizado nomeia a técnica com o rótulo do jogo (D-118) e não precisa de fonte externa para o nome.
+
+## Só o PO decide
+
+1. **INST-184, Efeitos A:** sem o `Segurança` +10, a onda passa a ter 1 opção que sobe Segurança, e não 2. O ECO confere a carta ligada a esse medidor.
+2. **INST-187:** trocar a acusação do canal muda o conteúdo da carta. Alternativa mínima (128 caracteres): manter "atrasam o Brasil" e só acrescentar "É falso, e os anúncios do seu governo pagam parte dos vídeos." Nesse caso, o dado desmente de forma indireta.
+3. **INST-189, Quem fala `ACT-011`:** ligar o Centrão a uma agência de robôs é inferência do GD, sem fato público (`cartas.md:281`). O risco é baixo porque o ator é um arquétipo. Se o PO quiser risco zero, há o `ACT-022`, que tem "lucrar com a desinformação" na ficha (`docs/11_FICHAS_DOS_ATORES.md:507`).
+4. **INST-191:** escolher entre a frase de impacto nova e a original.
+5. **APR-188:** nomear ou não a Meta na caixa (recomendo não nomear enquanto o RC-08 estiver aberto).
+
+## Fora do escopo (para o QA)
+
+- APR-191 `concept`: "Sinais:" vem com um item só; trocar por "Sinal:".

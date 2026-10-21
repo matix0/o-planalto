@@ -172,4 +172,4 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 **Bloqueios:** Nenhum.
 
-**Aguardando:** execução do P-014 e do P-015 (membro da equipe).
+**Aguardando:** P-014 pronto e P-015 parado em 57 de 340 cartas (Ondas 1-4 gravadas, DP-021 a DP-024), na branch `claude/p014-p015`. Ponto de parada e como continuar: `gestao/execucao-p014-p015.md`, seção "Ponto de parada".

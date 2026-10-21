@@ -27,9 +27,9 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 | 2 | Geopolítico INST-063..072 | ✅ gravada (DP-022) |
 | 3 | Influenciador INST-192..200 | ✅ gravada (DP-023) |
 | 4 | Geopolítico INST-073..080 | ✅ gravada (DP-024) |
-| 5 | Congresso INST-007..016 | GD ✅; fontes |
-| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | GD ✅; fontes |
-| 7 | Orçamento INST-029..038 | GD |
+| 5 | Congresso INST-007..016 | GD ✅; fontes 7/10 (parada) |
+| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | GD ✅; fontes 3/10 (parada) |
+| 7 | Orçamento INST-029..038 | GD só começou (refazer) |
 | 8 | Orçamento INST-039..040 + Currículo INST-043..050 | — |
 | 9 | Currículo INST-051..060 | — |
 | 10 | Prisional INST-083..092 | — |
@@ -44,6 +44,32 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 | 19 | Judiciário INST-176..180 | — |
 | 20-26 | Temáticas: THEM-002..010, 011..020, 021..030, 031..040, 041..050, 051..060, 061..070 (um tema por onda) | — |
 | 27-33 | Atores: ATOR-002..011, 012..021, 022..031, 032..041, 042..051, 052..061, 062..070 | — |
+
+## Ponto de parada (2026-10-21, 11:35) — para continuar
+
+Parado a pedido do membro (limite de uso semanal). Tudo está commitado e no `origin/claude/p014-p015`.
+
+**Feito**
+- P-014 completo (etapas 1-7): 20/20 testes, mutação 100%, Web testada; fecha junto com o P-015.
+- P-015: Ondas 0-4 gravadas nos docs 17 e 18 — 57 de 340 cartas + 5 da cena (Influenciador e Geopolítico completos), DP-011 a DP-024, `cards_doc.py check` com 0 erros.
+- Ensaio da fase 6: `cards_doc.py export` exporta as 57 cartas, as 5 da cena e 62 Aprendizados, 0 de fora.
+
+**Em andamento** (rascunhos em `.claude/notas/execucao/`, commitados com `git add -f` só para esta passagem; podem sair do índice depois da validação)
+- Onda 5 (Congresso INST-007..016): GD ✅ (`onda-05/cartas.md`, `aprendizados.md`). Fontes 7/10 (`onda-05/fontes.md`: APR-007..013 verificados; faltam APR-014, 015 e 016; falta gerar o `aprendizados.json`). Alertas do pesquisador no próprio arquivo: APR-009 (taxa zerada em set/2026), APR-010 e 012 (temas vivos), conceito do APR-013 e eventos INST-010 B e INST-012 B, que não se sustentam como estão (reescrita proposta).
+- Onda 6 (Congresso INST-017..020 + Orçamento INST-023..028): GD ✅; fontes 3/10 (APR-017..019).
+- Onda 7 (Orçamento INST-029..038): o GD só abriu o arquivo; recomeçar.
+
+**Como continuar (por onda)**
+1. Fontes: subagente (Sonnet) continua o checklist do `onda-NN/fontes.md` e gera o `onda-NN/aprendizados.json` (formato do `cards_doc.py box`, com o campo `strength`).
+2. Fio principal reabre 5 fontes (WebFetch).
+3. PSI (Opus) grava `onda-NN/psi.md` com veredito e texto exato por carta (pode juntar 2 ondas).
+4. Aplicar os ajustes: `python3 .claude/notas/execucao/ferramentas/wavefix.py .claude/notas/execucao/onda-NN <mudancas.json>` (formato no topo do script) e uma linha DP nova em `gestao/decisoes-provisorias.md` (próxima: DP-025).
+5. `PYTHONDONTWRITEBYTECODE=1 python3 jogo/tools/cards_doc.py insert --cards .claude/notas/execucao/onda-NN/cartas.md --learning .claude/notas/execucao/onda-NN/aprendizados.json --status "provisório (DP-nnn)"`, depois `cards_doc.py check --style` (0 erros).
+6. Commit, push e atualizar a fila acima. Novas ondas do GD: kit em `.claude/notas/execucao/kit-gd.md` (com o estado do baralho).
+
+**Depois das ondas**
+- Fase 6: exportar para `jogo/data/` (sai o baralho fictício); regenerar o campo `cards` do `actors.json` a partir do `actor_cards.json` (a numeração fictícia difere da DP-015: hoje ATOR-001 é o ataque do `ACT-001` nos dados e a exigência no doc); `test_data` lendo as contagens dos dados; `run_all.sh` numa cópia; simulação do ECO com o baralho real (`.claude/notas/execucao/ferramentas/sim.gd`; o END-015 deve aparecer).
+- Fase 7: `gestao/entrega-p014-p015.md`, `/fechar-plano`, PR para o `main` sem merge e mensagem ao PO.
 
 ## Bloqueios para o PO
 
