@@ -74,6 +74,7 @@ func _initialize() -> void:
 	_bonus()
 	_doubling_and_multipliers()
 	_emergency()
+	_linked_limit()
 	_actor_levels()
 	_reveal()
 	data.free()
@@ -167,6 +168,25 @@ func _emergency() -> void:
 	m["dignity"] = 10
 	m["treasury"] = 11
 	_eq(MeterRules.emergency_order(m, [], limit, order), ["dignity"], "≤ 10 asks for an emergency, 11 does not")
+
+
+## A meter below 30 asks for a card linked to it among the mandatory ones; at 30 it does not
+## (gdd/GDD.md §6.2, rule 2).
+func _linked_limit() -> void:
+	var f := GameFlow.new(data)
+	f.start(3)
+	for v in [29, 30]:
+		var rng := RandomNumberGenerator.new()
+		rng.seed = 3
+		var m := _quiet()
+		m["dignity"] = v
+		f.run.meters = m
+		f.run.emergency_pending = []
+		var targets: Array = []
+		for e in DrawRules.build_mandatory(data, f.run, rng):
+			if String(e["kind"]) == "meter":
+				targets.append(String(e["target"]))
+		_eq(targets.has("dignity"), v < 30, "dignity %d: linked card %s" % [v, "asked" if v < 30 else "not asked"])
 
 
 func _actor_levels() -> void:
