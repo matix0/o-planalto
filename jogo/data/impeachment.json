@@ -5,9 +5,10 @@
     "title": "O Pedido",
     "mode": "impeachment",
     "type": "impeachment",
+    "speaker": "Câmara dos Deputados",
     "problem": "[Fictício] Problema da fase 1 da cena de impeachment.",
     "option_a": {
-      "text": "[Fictício] Opção do povo (fase 1)",
+      "text": "[Fictício] Povo · F1",
       "color": "purple",
       "axis": [
         0,
@@ -30,7 +31,7 @@
       }
     },
     "option_b": {
-      "text": "[Fictício] Opção do Congresso (fase 1)",
+      "text": "[Fictício] Congresso · F1",
       "color": "yellow",
       "axis": [
         0,
@@ -62,9 +63,10 @@
     "title": "A Comissão",
     "mode": "impeachment",
     "type": "impeachment",
+    "speaker": "Câmara dos Deputados",
     "problem": "[Fictício] Problema da fase 2 da cena de impeachment.",
     "option_a": {
-      "text": "[Fictício] Opção do povo (fase 2)",
+      "text": "[Fictício] Povo · F2",
       "color": "red",
       "axis": [
         0,
@@ -87,7 +89,7 @@
       }
     },
     "option_b": {
-      "text": "[Fictício] Opção do Congresso (fase 2)",
+      "text": "[Fictício] Congresso · F2",
       "color": "yellow",
       "axis": [
         0,
@@ -120,9 +122,10 @@
     "title": "A Votação",
     "mode": "impeachment",
     "type": "impeachment",
+    "speaker": "Câmara dos Deputados",
     "problem": "[Fictício] Problema da fase 3 da cena de impeachment.",
     "option_a": {
-      "text": "[Fictício] Opção do povo (fase 3)",
+      "text": "[Fictício] Povo · F3",
       "color": "red",
       "axis": [
         0,
@@ -145,7 +148,7 @@
       }
     },
     "option_b": {
-      "text": "[Fictício] Opção do Congresso (fase 3)",
+      "text": "[Fictício] Congresso · F3",
       "color": "yellow",
       "axis": [
         0,
@@ -178,9 +181,10 @@
     "title": "O Julgamento",
     "mode": "impeachment",
     "type": "impeachment",
+    "speaker": "Senado Federal",
     "problem": "[Fictício] Problema da fase 4 da cena de impeachment.",
     "option_a": {
-      "text": "[Fictício] Opção do povo (fase 4)",
+      "text": "[Fictício] Povo · F4",
       "color": "purple",
       "axis": [
         0,
@@ -202,7 +206,7 @@
       }
     },
     "option_b": {
-      "text": "[Fictício] Opção do Congresso (fase 4)",
+      "text": "[Fictício] Congresso · F4",
       "color": "yellow",
       "axis": [
         0,
@@ -235,9 +239,10 @@
     "title": "O Desfecho",
     "mode": "impeachment",
     "type": "impeachment",
+    "speaker": "Senado Federal",
     "problem": "[Fictício] Problema da fase 5 da cena de impeachment.",
     "option_a": {
-      "text": "[Fictício] Opção do povo (fase 5)",
+      "text": "[Fictício] Povo · F5",
       "color": "red",
       "axis": [
         0,
@@ -259,7 +264,7 @@
       }
     },
     "option_b": {
-      "text": "[Fictício] Opção do Congresso (fase 5)",
+      "text": "[Fictício] Congresso · F5",
       "color": "yellow",
       "axis": [
         0,

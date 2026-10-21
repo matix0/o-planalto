@@ -67,7 +67,8 @@ func _card_view() -> void:
 	f.run.current_card = {"id": "ATOR-002", "kind": "draw", "target": "", "side_a": 1}
 	_eq([f.card_view()["speaker"], f.card_view()["speaker_actor"]], ["Latifundiários", "ACT-001"], "actor card speaker")
 	f.run.current_card = {"id": "THEM-001", "kind": "draw", "target": "", "side_a": 1}
-	_eq(f.card_view()["speaker"], GameDatabase.SPEAKER_TBD, "thematic speaker undefined")
+	_eq(f.card_view()["speaker"], "Prisional e Policial", "thematic speaker from the data (D-164)")
+	_eq(data.speaker_for({"type": "thematic", "mode": "budget"})["name"], GameDatabase.SPEAKER_TBD, "thematic without quem_fala → [a definir]")
 	_eq(data.speaker_for({"quem_fala": "ACT-010", "type": "institutional", "mode": "congress"})["actor"], "ACT-010", "quem_fala wins")
 	# Calibration: no party colour (D-166).
 	var c := GameFlow.new(data)

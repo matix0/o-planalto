@@ -4,6 +4,7 @@
     "title": "Congresso fictício 1",
     "mode": "congress",
     "type": "institutional",
+    "speaker": "Congresso",
     "problem": "[Fictício] Problema da carta INST-001.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -66,6 +67,7 @@
     "title": "Congresso fictício 2",
     "mode": "congress",
     "type": "institutional",
+    "speaker": "Congresso",
     "problem": "[Fictício] Problema da carta INST-002.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -127,6 +129,7 @@
     "title": "Congresso fictício 3",
     "mode": "congress",
     "type": "institutional",
+    "speaker": "Congresso",
     "problem": "[Fictício] Problema da carta INST-003.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -176,6 +179,7 @@
     "title": "Orçamento fictício 1",
     "mode": "budget",
     "type": "institutional",
+    "speaker": "Orçamento",
     "problem": "[Fictício] Problema da carta INST-021.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -226,6 +230,7 @@
     "title": "Orçamento fictício 2",
     "mode": "budget",
     "type": "institutional",
+    "speaker": "Orçamento",
     "problem": "[Fictício] Problema da carta INST-022.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -296,6 +301,7 @@
     "title": "Orçamento fictício 3",
     "mode": "budget",
     "type": "institutional",
+    "speaker": "Orçamento",
     "problem": "[Fictício] Problema da carta INST-023.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -347,6 +353,7 @@
     "title": "Currículo e Mídia fictício 1",
     "mode": "curriculum_media",
     "type": "institutional",
+    "speaker": "Currículo e Mídia",
     "problem": "[Fictício] Problema da carta INST-041.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -408,6 +415,7 @@
     "title": "Currículo e Mídia fictício 2",
     "mode": "curriculum_media",
     "type": "institutional",
+    "speaker": "Currículo e Mídia",
     "problem": "[Fictício] Problema da carta INST-042.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -459,6 +467,7 @@
     "title": "Currículo e Mídia fictício 3",
     "mode": "curriculum_media",
     "type": "institutional",
+    "speaker": "Currículo e Mídia",
     "problem": "[Fictício] Problema da carta INST-043.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -506,6 +515,7 @@
     "title": "Geopolítico fictício 1",
     "mode": "geopolitics",
     "type": "institutional",
+    "speaker": "Geopolítico",
     "problem": "[Fictício] Problema da carta INST-061.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -559,6 +569,7 @@
     "title": "Geopolítico fictício 2",
     "mode": "geopolitics",
     "type": "institutional",
+    "speaker": "Geopolítico",
     "problem": "[Fictício] Problema da carta INST-062.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -610,6 +621,7 @@
     "title": "Geopolítico fictício 3",
     "mode": "geopolitics",
     "type": "institutional",
+    "speaker": "Geopolítico",
     "problem": "[Fictício] Problema da carta INST-063.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -659,6 +671,7 @@
     "title": "Prisional e Policial fictício 1",
     "mode": "prison_police",
     "type": "institutional",
+    "speaker": "Prisional e Policial",
     "problem": "[Fictício] Problema da carta INST-081.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -707,6 +720,7 @@
     "title": "Prisional e Policial fictício 2",
     "mode": "prison_police",
     "type": "institutional",
+    "speaker": "Prisional e Policial",
     "problem": "[Fictício] Problema da carta INST-082.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -758,6 +772,7 @@
     "title": "Prisional e Policial fictício 3",
     "mode": "prison_police",
     "type": "institutional",
+    "speaker": "Prisional e Policial",
     "problem": "[Fictício] Problema da carta INST-083.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -820,6 +835,7 @@
     "title": "Emendas fictício 1",
     "mode": "amendments",
     "type": "institutional",
+    "speaker": "Emendas",
     "problem": "[Fictício] Problema da carta INST-101.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -870,6 +886,7 @@
     "title": "Emendas fictício 2",
     "mode": "amendments",
     "type": "institutional",
+    "speaker": "Emendas",
     "problem": "[Fictício] Problema da carta INST-102.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -919,6 +936,7 @@
     "title": "Emendas fictício 3",
     "mode": "amendments",
     "type": "institutional",
+    "speaker": "Emendas",
     "problem": "[Fictício] Problema da carta INST-103.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -968,6 +986,7 @@
     "title": "Bancadas fictício 1",
     "mode": "caucuses",
     "type": "institutional",
+    "speaker": "Bancadas",
     "problem": "[Fictício] Problema da carta INST-121.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1022,6 +1041,7 @@
     "title": "Bancadas fictício 2",
     "mode": "caucuses",
     "type": "institutional",
+    "speaker": "Bancadas",
     "problem": "[Fictício] Problema da carta INST-122.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1079,6 +1099,7 @@
     "title": "Bancadas fictício 3",
     "mode": "caucuses",
     "type": "institutional",
+    "speaker": "Bancadas",
     "problem": "[Fictício] Problema da carta INST-123.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1128,6 +1149,7 @@
     "title": "Impeachment fictício 1",
     "mode": "impeachment",
     "type": "institutional",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta INST-141.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1178,6 +1200,7 @@
     "title": "Impeachment fictício 2",
     "mode": "impeachment",
     "type": "institutional",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta INST-142.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1227,6 +1250,7 @@
     "title": "Impeachment fictício 3",
     "mode": "impeachment",
     "type": "institutional",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta INST-143.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1278,6 +1302,7 @@
     "title": "Judiciário fictício 1",
     "mode": "judiciary",
     "type": "institutional",
+    "speaker": "Judiciário",
     "problem": "[Fictício] Problema da carta INST-161.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1330,6 +1355,7 @@
     "title": "Judiciário fictício 2",
     "mode": "judiciary",
     "type": "institutional",
+    "speaker": "Judiciário",
     "problem": "[Fictício] Problema da carta INST-162.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1386,6 +1412,7 @@
     "title": "Judiciário fictício 3",
     "mode": "judiciary",
     "type": "institutional",
+    "speaker": "Judiciário",
     "problem": "[Fictício] Problema da carta INST-163.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1447,6 +1474,7 @@
     "title": "Influenciador fictício 1",
     "mode": "influencer",
     "type": "institutional",
+    "speaker": "Influenciador",
     "problem": "[Fictício] Problema da carta INST-181.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1507,6 +1535,7 @@
     "title": "Influenciador fictício 2",
     "mode": "influencer",
     "type": "institutional",
+    "speaker": "Influenciador",
     "problem": "[Fictício] Problema da carta INST-182.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1567,6 +1596,7 @@
     "title": "Influenciador fictício 3",
     "mode": "influencer",
     "type": "institutional",
+    "speaker": "Influenciador",
     "problem": "[Fictício] Problema da carta INST-183.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1622,6 +1652,7 @@
     "title": "Tema fictício 1",
     "mode": "prison_police",
     "type": "thematic",
+    "speaker": "Prisional e Policial",
     "problem": "[Fictício] Problema da carta THEM-001.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1676,6 +1707,7 @@
     "title": "Tema fictício 2",
     "mode": "impeachment",
     "type": "thematic",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta THEM-002.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1734,6 +1766,7 @@
     "title": "Tema fictício 3",
     "mode": "budget",
     "type": "thematic",
+    "speaker": "Orçamento",
     "problem": "[Fictício] Problema da carta THEM-003.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1784,6 +1817,7 @@
     "title": "Tema fictício 4",
     "mode": "impeachment",
     "type": "thematic",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta THEM-004.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1842,6 +1876,7 @@
     "title": "Tema fictício 5",
     "mode": "impeachment",
     "type": "thematic",
+    "speaker": "Impeachment",
     "problem": "[Fictício] Problema da carta THEM-005.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1892,6 +1927,7 @@
     "title": "Latifundiários — ataque",
     "mode": "prison_police",
     "type": "actor",
+    "speaker": "ACT-001",
     "problem": "[Fictício] Problema da carta ATOR-001.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1943,6 +1979,7 @@
     "title": "Latifundiários — exigência",
     "mode": "geopolitics",
     "type": "actor",
+    "speaker": "ACT-001",
     "problem": "[Fictício] Problema da carta ATOR-002.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -1994,6 +2031,7 @@
     "title": "Latifundiários — oferta",
     "mode": "caucuses",
     "type": "actor",
+    "speaker": "ACT-001",
     "problem": "[Fictício] Problema da carta ATOR-003.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -2044,6 +2082,7 @@
     "title": "Diplomatas do Itamaraty — ataque",
     "mode": "geopolitics",
     "type": "actor",
+    "speaker": "ACT-010",
     "problem": "[Fictício] Problema da carta ATOR-004.",
     "option_a": {
       "text": "[Fictício] Opção A",
@@ -2103,6 +2142,7 @@
     "title": "Diplomatas do Itamaraty — exigência",
     "mode": "caucuses",
     "type": "actor",
+    "speaker": "ACT-010",
     "problem": "[Fictício] Problema da carta ATOR-005.",
     "option_a": {
       "text": "[Fictício] Opção A",

@@ -9,6 +9,7 @@ const SPEAKER_TBD := "[quem fala — a definir]"   # D-164; a validar (temática
 const CALIBRATION_QUESTIONS := 6                 # docs/15 §15.04
 const SCENE_PHASES := 5                          # gdd/sistemas/03_impeachment.md §3.2
 const TEST_OPS := ["<", ">", "<=", ">="]
+const OPTION_TEXT_MAX := 25                      # D-177: "frase curta, até 25 caracteres"
 
 const CARD_TYPES := ["institutional", "thematic", "actor", "impeachment"]
 const CARD_PREFIX := {"institutional": "INST-", "thematic": "THEM-", "actor": "ATOR-"}
@@ -111,6 +112,12 @@ func validate_card(card: Dictionary) -> PackedStringArray:
 		out.append("unknown mode '%s'" % card.get("mode", ""))
 	if String(card.get("title", "")).split(" ", false).size() > 5:
 		out.append("title over 5 words")
+	# D-164: who presents the problem — an actor (ACT-xxx) or the mode's institution.
+	var who := String(card.get("speaker", card.get("quem_fala", ""))).strip_edges()
+	if who.is_empty():
+		out.append("missing speaker (quem_fala, D-164)")
+	elif who.begins_with("ACT-") and not actors.has(who):
+		out.append("unknown speaker actor '%s'" % who)
 	var number := id.get_slice("-", 1)
 	if type != "impeachment" and not String(card.get("learning_id", "")).begins_with("APR-"):
 		out.append("missing learning_id")
@@ -151,8 +158,11 @@ func validate_card(card: Dictionary) -> PackedStringArray:
 
 ## Returns true when the option has no negative effect (Boa Vontade, D-108).
 func _validate_option(o: Dictionary, influencer: bool, impeachment: bool, tag: String, out: PackedStringArray) -> bool:
-	if String(o.get("text", "")).is_empty():
+	var text := String(o.get("text", ""))
+	if text.is_empty():
 		out.append(tag + "missing text")
+	elif text.length() > OPTION_TEXT_MAX:
+		out.append(tag + "text over %d characters (D-177): %d" % [OPTION_TEXT_MAX, text.length()])
 	if String(o.get("consequence", "")).is_empty():
 		out.append(tag + "missing consequence")
 	if o.get("color") not in COLORS:

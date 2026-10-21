@@ -346,8 +346,8 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | ⏳ Pendente |
-| **Início** | — |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-20 |
 | **Conclusão** | — |
 | **Decisões** | D-174 a D-190 |
 | **Objetivo** | Corrigir o protótipo, os GDDs e os docs com base na validação de 2026-10-20 (`gestao/validacao-2026-10-20.md`) |
@@ -360,7 +360,7 @@
 | :--- | :--- | :--- | :--- |
 | 0 | Registrar decisões e atualizar docs vivos | ✅ | D-174 a D-190; este plano |
 | 1 | GDDs e docs (02, 03, 04, 05, 08, 01, GDD §5.3/§9.2/§10.1/§13.1/§14.3, docs 10, 13, 16, README) | ⏳ | — |
-| 2 | `/validate-cards`: opção ≤ 25 caracteres e `quem_fala` obrigatório (antes da Onda 1 do P-015) | ⏳ | — |
+| 2 | `/validate-cards`: opção ≤ 25 caracteres e `quem_fala` obrigatório (antes da Onda 1 do P-015) | ✅ | `.claude/commands/validate-cards.md`; `jogo/scripts/game_data.gd` (`OPTION_TEXT_MAX`, speaker); `jogo/tests/test_data.gd`; DP-001 |
 | 3 | Regras do jogo (D-174, D-175, D-179, D-182, V-015, V-035) | ⏳ | — |
 | 4 | Interface (D-177, D-183, D-184, D-185, D-186, V-022, V-024, V-026) | ⏳ | — |
 | 5 | Técnico (save atômico, Sobre/licenças, preset Web, pre-commit do MCP) | ⏳ | — |
