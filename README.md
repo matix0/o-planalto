@@ -64,9 +64,11 @@ o-planalto/
 ├── README.md          # Este arquivo
 ├── .claude/
 │   ├── agents/        # 12 subagentes
-│   ├── commands/      # 6 comandos
+│   ├── commands/      # Comandos (/fechar-plano, /sync-docs…)
+│   ├── hooks/         # Hook do Claude Code que barra o autoload do MCP (D-189)
 │   ├── rules/         # Políticas
-│   └── settings.json  # Permissões do projeto
+│   └── settings.json  # Permissões e hooks do projeto
+├── .githooks/         # pre-commit do git (D-189)
 ├── gestao/            # Docs vivos (agentes)
 │   ├── estado.md
 │   ├── decisoes.md
@@ -78,11 +80,8 @@ o-planalto/
 │   └── 00-13 (14 arquivos)
 ├── site/              # Site público (Astro Starlight)
 ├── .github/workflows/ # Deploy do site no GitHub Pages
-├── assets/            # Assets CC0 (P-005)
-├── dados/             # Dados do jogo em JSON (P-005)
-├── cenas/             # Cenas do Godot (P-005)
-├── scripts/           # Scripts GDScript (P-005)
-└── addons/            # Addons, incl. MCP (P-005)
+├── gdd/               # GDD mestre e GDDs dos sistemas
+└── jogo/              # Protótipo Godot 4.7 (P-005, D-135): assets, data (JSON), scenes, scripts, tests, tools
 ```
 
 ---
@@ -93,6 +92,7 @@ o-planalto/
 2. Consultar os docs vivos em `gestao/`.
 3. Seguir as políticas em `.claude/rules/`.
 4. Usar os comandos disponíveis (ex: `/fechar-plano`).
+5. Ativar o hook do git uma vez por clone: `git config core.hooksPath .githooks` (barra o autoload do MCP no `jogo/project.godot`, D-189).
 
 ---
 
