@@ -33,6 +33,8 @@ enum TextMode { NONE, DRAG, TAP, BAND }
 const ARMED_ENABLED := false          # PROPOSTA P3 — off until the PO decides
 const ARMED_VIBRATION_MS := 30        # P3 / A-21 (Input.vibrate_handheld; VIBRATE permission)
 const OPTION_BAND_P7 := false         # PROPOSTA P7 — option in a fixed band at the top at 36 px
+const DRAG_VISIBLE_MIN := 0.6         # D-177 / DP-009: a dragged card keeps ≥ 60% of its width on screen
+const FIT_MIN_FONT := 14              # D-186 / DP-009: smallest size when a long word must shrink to fit
 const OPTION_BAND_MIN_SIZE := 36      # Option font size that triggers P7
 const TAP_HINT_DELAY := 4.0           # D-163: idle time "[a definir]" — a validar
 const TAP_HINT_TEXT := "[dica do toque — a definir]"
@@ -145,6 +147,7 @@ func _ready() -> void:
 ## only, D-166) | &"crisis" (hatched frame, C-10).
 func setup(view: Dictionary) -> void:
 	_title.text = String(view.get("title", ""))
+	_fit_title()
 	_sides = {}
 	var sides: Dictionary = view.get("sides", {})
 	for key in sides:
@@ -412,6 +415,7 @@ func _on_release(pos: Vector2) -> void:
 # --- States ------------------------------------------------------------------
 
 func _set_drag(dx: float, animated: bool) -> void:
+	dx = _clamp_travel(dx)
 	_drag_dx = dx
 	var limit := drag_limit * card_width()
 	_card.offset_transform_position = Vector2(dx, 0.0)
@@ -422,6 +426,8 @@ func _set_drag(dx: float, animated: bool) -> void:
 		_hide_option()
 	else:
 		_show_option(side, false, animated)
+		if _text_mode == TextMode.DRAG and _text_side == side:
+			_layout_option(side, false)   # the visible part changes while the card moves (D-177)
 	_set_armed(side != 0 and absf(dx) >= limit)
 
 
@@ -591,32 +597,88 @@ func _place_text(side: int, mode: TextMode, text: String, fading_in: bool) -> vo
 		_option.offset_transform_position = Vector2.ZERO
 
 
-## Dragging: label in the half facing the screen center (54% wide, inset
-## esp-24). Tap: full width, centered (card at rest).
+## Dragging: the label spans the part of the card that is on screen, inset esp-24, aligned
+## toward the screen center; it shrinks as the card leaves the screen and never leaves it
+## (D-177). Tap: full width, centered (card at rest). Words never break (D-186).
 func _layout_option(side: int, centered: bool) -> void:
 	var inset := float(Tokens.ESP_24)
+	var w := card_width()
+	var left := inset
+	var right := w - inset
+	_option.anchor_left = 0.0
+	_option.anchor_right = 0.0
 	_option.anchor_top = 0.0
 	_option.anchor_bottom = 0.0
 	_option.offset_top = inset
 	_option.offset_bottom = inset
 	if centered:
-		_option.anchor_left = 0.0
-		_option.anchor_right = 1.0
-		_option.offset_left = inset
-		_option.offset_right = -inset
 		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	elif side > 0:
-		_option.anchor_left = 0.0
-		_option.anchor_right = Tokens.OPTION_WIDTH_RATIO
-		_option.offset_left = inset
-		_option.offset_right = inset
-		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	else:
-		_option.anchor_left = 1.0 - Tokens.OPTION_WIDTH_RATIO
-		_option.anchor_right = 1.0
-		_option.offset_left = -inset
-		_option.offset_right = -inset
-		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		var span := visible_span(_drag_dx)
+		left = span.x + inset
+		right = maxf(span.y - inset, left + 1.0)
+		_option.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT if side > 0 else HORIZONTAL_ALIGNMENT_RIGHT
+	_option.offset_left = left
+	_option.offset_right = right
+	_fit_words(_option, right - left)
+
+
+## Part of the card that is on screen when it is moved by `dx`, in card x (D-177).
+func visible_span(dx: float) -> Vector2:
+	var w := card_width()
+	if not is_inside_tree():
+		return Vector2(0.0, w)
+	var screen := get_viewport_rect()
+	var x0 := _card.global_position.x + dx
+	return Vector2(clampf(screen.position.x - x0, 0.0, w), clampf(screen.end.x - x0, 0.0, w))
+
+
+## The card follows the finger until DRAG_VISIBLE_MIN of it is left on screen, so the label
+## keeps room; the stop is never before the decision limit.
+func _clamp_travel(dx: float) -> float:
+	if not is_inside_tree():
+		return dx
+	var w := card_width()
+	var screen := get_viewport_rect()
+	var x0 := _card.global_position.x
+	var keep := DRAG_VISIBLE_MIN * w
+	var floor_travel := drag_limit * w * 1.1
+	var max_right := maxf(screen.end.x - x0 - keep, floor_travel)
+	var max_left := maxf(x0 + w - screen.position.x - keep, floor_travel)
+	return clampf(dx, -max_left, max_right)
+
+
+## D-186: lines break only at spaces; a word wider than `width` shrinks the label's font
+## (down to FIT_MIN_FONT) instead of breaking or leaving the card.
+static func fit_words(label: Label, width: float) -> void:
+	label.remove_theme_font_size_override(&"font_size")
+	if width <= 1.0 or label.text.is_empty():
+		return
+	var font := label.get_theme_font(&"font")
+	var base := label.get_theme_font_size(&"font_size")
+	var longest := 0.0
+	for word in label.text.split(" ", false):
+		longest = maxf(longest, font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, base).x)
+	if longest <= width:
+		return
+	var fitted := base
+	while fitted > FIT_MIN_FONT:
+		fitted -= 1
+		var widest := 0.0
+		for word in label.text.split(" ", false):
+			widest = maxf(widest, font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, fitted).x)
+		if widest <= width:
+			break
+	label.add_theme_font_size_override(&"font_size", fitted)
+
+
+func _fit_words(label: Label, width: float) -> void:
+	fit_words(label, width)
+
+
+func _fit_title() -> void:
+	if _title and is_inside_tree():
+		_fit_words(_title, card_width() - 2.0 * Tokens.ESP_24)
 
 
 ## C-04: touched half +6% white, rounded on the card's outer corners.
@@ -664,7 +726,17 @@ func _set_armed(on: bool) -> void:
 
 
 func _band_active() -> bool:
-	return option_band and _option.get_theme_font_size(&"font_size") >= OPTION_BAND_MIN_SIZE
+	if not option_band:
+		return false
+	# The style's size, not the label's fit override (D-186): look under the override.
+	var had := _option.has_theme_font_size_override(&"font_size")
+	var fitted := _option.get_theme_font_size(&"font_size")
+	if had:
+		_option.remove_theme_font_size_override(&"font_size")
+	var base := _option.get_theme_font_size(&"font_size")
+	if had:
+		_option.add_theme_font_size_override(&"font_size", fitted)
+	return base >= OPTION_BAND_MIN_SIZE
 
 
 func _restart_hint_timer() -> void:
@@ -686,6 +758,7 @@ func _on_hint_timeout() -> void:
 ## A-02: fade in 150 ms; leaves on the 1st gesture.
 func _show_hint(animated: bool) -> void:
 	_hint_used = true
+	_layout_hint()
 	_hint.visible = true
 	_kill(_hint_tween)
 	if animated:
@@ -695,6 +768,21 @@ func _show_hint(animated: bool) -> void:
 			.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	else:
 		_hint.modulate.a = 1.0
+
+
+## V-022: the hint wraps inside the card (inset esp-24) instead of running off the screen.
+func _layout_hint() -> void:
+	_hint_label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	_hint_label.custom_minimum_size.x = 0.0
+	var pad := _hint.get_theme_stylebox(&"panel").get_minimum_size().x if _hint.has_theme_stylebox(&"panel") else 0.0
+	var icon_room := float(Tokens.ESP_16 + Tokens.ESP_8)
+	var max_text := card_width() - 2.0 * Tokens.ESP_24 - pad - icon_room
+	var font := _hint_label.get_theme_font(&"font")
+	var size := _hint_label.get_theme_font_size(&"font_size")
+	if font.get_string_size(_hint_label.text, HORIZONTAL_ALIGNMENT_LEFT, -1, size).x > max_text:
+		_hint_label.autowrap_mode = TextServer.AUTOWRAP_WORD
+		_hint_label.custom_minimum_size.x = maxf(max_text, 1.0)
+	_hint.reset_size()
 
 
 func _hide_hint(animated: bool) -> void:
@@ -735,6 +823,7 @@ func _layout_fit() -> void:
 		h = w / Tokens.CARD_RATIO
 	_fit.size = Vector2(w, h)
 	_fit.position = ((size - _fit.size) * 0.5).round()
+	_fit_title.call_deferred()
 	if _preview.x != 0.0 and w > 1.0 and _state == State.IDLE:
 		_card.size = Vector2(w, h)
 		_set_drag(_preview.x * _preview.y * w, false)

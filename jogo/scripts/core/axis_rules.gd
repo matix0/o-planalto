@@ -34,16 +34,17 @@ const SCALE := 5.0
 ## D-175: high > 60, low < 40 (balance.json overrides); balance = all 8 between the limits.
 const REVEAL_HIGH_ABOVE := 60
 const REVEAL_LOW_BELOW := 40
+## Texts reviewed by the PSI (validation finding P-07; provisional, DP-009).
 const REVEAL_PATTERNS := [
 	{"high": ["dignity", "awareness", "sovereignty"],
-		"text": "Seu governo priorizou a dignidade, a educação e a soberania..."},
+		"text": "Seu governo priorizou a dignidade, a educação e a soberania."},
 	{"high": ["security", "political_capital", "treasury"],
-		"text": "Seu governo priorizou a ordem, a estabilidade e a economia..."},
-	{"balance": true, "text": "Seu governo buscou equilíbrio entre diferentes valores..."},
-	{"low": ["integrity", "awareness"], "text": "Seu governo negligenciou a verdade e a educação..."},
-	{"low": ["dignity", "sovereignty"], "text": "Seu governo negligenciou o povo e a soberania..."},
+		"text": "Seu governo priorizou a ordem, a estabilidade e a economia."},
+	{"balance": true, "text": "Seu governo buscou equilíbrio entre diferentes valores."},
+	{"low": ["integrity", "awareness"], "text": "Seu governo deixou a verdade e a educação em segundo plano."},
+	{"low": ["dignity", "sovereignty"], "text": "Seu governo deixou os direitos do povo e a soberania em segundo plano."},
 ]
-const REVEAL_NONE := "[a definir — nenhum padrão do GDD §9.2 se aplica]"
+const REVEAL_NONE := "Nenhum padrão resume seu governo. Os números contam o resto."   # D-175, 6º texto
 const CLOSING_PHRASE := "O país que você construiu reflete os valores que você priorizou."
 
 

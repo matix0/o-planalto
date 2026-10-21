@@ -3,20 +3,16 @@ extends AppScreen
 ## §3.3; D-145, D-146, D-153, D-157, D-158, D-166).
 ## Six questions on the card face (Title-M); answers only appear on drag or on the 1st tap,
 ## with the white filete only (no party color, D-166). No speaker, no problem; the footer
-## shows the progress "n/6" (C-19). HUD during the calibration: [a definir] — dashed
-## placeholder. After the 6th answer → Year 1 on the game screen: fade with a light zoom,
+## shows the progress "n/6" (C-19). No HUD during the calibration (D-183): its slot stays
+## empty, so the card sits where it will be in the game. After the 6th answer → Year 1 on the game screen: fade with a light zoom,
 ## 400 ms (A-23; "Reduzir movimento": fade only). Pause allowed (T-03.4: abandon → title).
 
 const TO_YEAR_FADE := 0.4          # A-23 (Main fades the two screens)
 const TO_YEAR_ZOOM := 1.04         # A-23: "leve zoom" [intensidade a definir]
-const HUD_PLACEHOLDER := "[HUD na calibração — a definir]"
 const CARD_A11Y := "Pergunta %d de %d: %s"   # T-03.1 [formato a definir]
 const PROGRESS_NOUN := "Pergunta"
-const DASH := 4.0
 
 @onready var _safe: MarginContainer = %SafeArea
-@onready var _hud_box: Control = %HudPlaceholder
-@onready var _hud_text: Label = %HudPlaceholderText
 @onready var _card: SwipeCard = %Card
 @onready var _footer: CardFooter = %Footer
 
@@ -29,8 +25,6 @@ func _ready() -> void:
 	_card.exit_finished.connect(_on_exit)
 	_footer.pause_pressed.connect(_on_pause_pressed)
 	_footer.set_pause_visible(true)
-	_hud_text.text = HUD_PLACEHOLDER
-	_hud_box.draw.connect(_draw_hud_placeholder)
 	Settings.changed.connect(_on_settings_changed)
 	var a := app()
 	if a:
@@ -130,7 +124,6 @@ func _apply_settings() -> void:
 	_card.reduce_motion = Settings.reduce_motion
 	_card.high_contrast = Settings.high_contrast
 	_footer.high_contrast = Settings.high_contrast
-	_hud_box.queue_redraw()
 
 
 func _on_pause_pressed() -> void:
@@ -168,15 +161,6 @@ func _focus_card() -> void:
 		focus_first(_card)
 	elif _card.has_focus():
 		_card.release_focus()
-
-
-## Dashed outline (1 px #90A4AE; P2 white) around the HUD slot: "[a definir]" marker.
-func _draw_hud_placeholder() -> void:
-	var color := Tokens.TEXT if Settings.high_contrast else Tokens.OUTLINE
-	var r := Rect2(Vector2.ZERO, _hud_box.size).grow(-0.5)
-	var corners := [r.position, Vector2(r.end.x, r.position.y), r.end, Vector2(r.position.x, r.end.y)]
-	for i in 4:
-		_hud_box.draw_dashed_line(corners[i], corners[(i + 1) % 4], color, 1.0, DASH)
 
 
 # --- For tests and captures ------------------------------------------------------------------

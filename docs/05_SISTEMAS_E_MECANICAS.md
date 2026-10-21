@@ -361,11 +361,12 @@ Detalhes: `gdd/sistemas/04_eixo.md`.
 
 | Padrão | Revelação |
 | :--- | :--- |
-| **Dignidade, Consciência e Soberania altos** | *"Seu governo priorizou a dignidade, a educação e a soberania..."* |
-| **Segurança, Capital Político e Caixa altos** | *"Seu governo priorizou a ordem, a estabilidade e a economia..."* |
-| **Equilíbrio entre todos** | *"Seu governo buscou equilíbrio entre diferentes valores..."* |
-| **Integridade e Consciência baixos** | *"Seu governo negligenciou a verdade e a educação..."* |
-| **Dignidade e Soberania baixos** | *"Seu governo negligenciou o povo e a soberania..."* |
+| **Dignidade, Consciência e Soberania altos** | *"Seu governo priorizou a dignidade, a educação e a soberania."* |
+| **Segurança, Capital Político e Caixa altos** | *"Seu governo priorizou a ordem, a estabilidade e a economia."* |
+| **Equilíbrio entre todos** | *"Seu governo buscou equilíbrio entre diferentes valores."* |
+| **Integridade e Consciência baixos** | *"Seu governo deixou a verdade e a educação em segundo plano."* |
+| **Dignidade e Soberania baixos** | *"Seu governo deixou os direitos do povo e a soberania em segundo plano."* |
+| **Nenhum dos anteriores** (D-175) | *"Nenhum padrão resume seu governo. Os números contam o resto."* |
 
 ### 05.08.5. Fundamentação Teórica
 

@@ -39,7 +39,8 @@ const STATE_SCREENS := {
 	&"final": &"final",
 }
 const SCREEN_FADE := 0.3             # A-22 / A-27 (total: half out, half in)
-const FINAL_FADE := 1.0              # A-26: to the final, fade ≥ 500 ms + pause [a definir] (a validar)
+const FINAL_FADE := 1.0              # A-26 / D-184: to black (half) and from black (half)
+const FINAL_HOLD := 0.8              # D-184: pause on black before the final screen (DP-009, a validar)
 const SAVE_UNREADABLE_TEXT := "Não foi possível continuar o mandato"   # gdd 10 §5 (T-01.4)
 const SAVE_FAILED_TEXT := "[a definir — aviso de falha ao gravar]"      # C-21, T-14.1
 const ABANDON_TITLE := "[título — a definir]"
@@ -60,6 +61,7 @@ var force_placeholder: Array = []
 @onready var _frame: Control = %Frame
 @onready var _host: Control = %ScreenHost
 @onready var _overlays: Control = %Overlays
+var _black: ColorRect = null   # D-184 transition to the final screen
 @onready var _toast: AppToast = %Toast
 @onready var _modal: ConfirmModal = %ConfirmModal
 @onready var _pause: PauseMenu = %PauseMenu
@@ -98,7 +100,10 @@ func _ready() -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST and is_node_ready():
-		handle_cancel()   # Android back = Esc (needs application/config/quit_on_go_back = false)
+		# Android back = Esc (needs application/config/quit_on_go_back = false). On the title
+		# screen, with nothing open, it leaves the game (D-185).
+		if not handle_cancel() and current_id() == &"title" and not _busy:
+			get_tree().quit()
 
 
 func _input(event: InputEvent) -> void:
@@ -313,7 +318,8 @@ func _layout() -> void:
 func _safe_insets() -> Vector4:
 	if debug_safe_insets.x >= 0.0:
 		return debug_safe_insets
-	if not OS.has_feature("mobile"):
+	# V-026: phones in the browser too (web_android / web_ios); values a validar no aparelho.
+	if not (OS.has_feature("mobile") or OS.has_feature("web_android") or OS.has_feature("web_ios")):
 		return Vector4.ZERO
 	var safe := DisplayServer.get_display_safe_area()
 	var screen := DisplayServer.screen_get_size()
@@ -353,6 +359,9 @@ func _on_screen_request(id: StringName, params: Dictionary, from: AppScreen) -> 
 
 
 func _do_go_to(id: StringName, params: Dictionary) -> void:
+	if id == &"final":
+		await _do_go_to_black(id, params)
+		return
 	var half := _half_fade(params)
 	var old := current_screen()
 	if old:
@@ -363,6 +372,39 @@ func _do_go_to(id: StringName, params: Dictionary) -> void:
 	var screen := _make_screen(id, params)
 	await _fade(screen, 1.0, half)
 	screen_changed.emit(screen.screen_id)
+
+
+## D-184 (doc 14 §14.10.2, A-26): the run fades to black, a pause, then the final screen
+## comes out of the black. Input is blocked meanwhile (the black layer stops it).
+func _do_go_to_black(id: StringName, params: Dictionary) -> void:
+	var half := float(params.get("fade_time", FINAL_FADE)) * 0.5
+	var black := _black_layer()
+	black.modulate.a = 0.0
+	black.visible = true
+	await _fade(black, 1.0, half)
+	for s in _stack:
+		_discard(s)
+	_stack.clear()
+	var screen := _make_screen(id, params)
+	screen.modulate.a = 1.0
+	if is_inside_tree():
+		await get_tree().create_timer(FINAL_HOLD).timeout
+	await _fade(black, 0.0, half)
+	black.visible = false
+	screen_changed.emit(screen.screen_id)
+
+
+func _black_layer() -> ColorRect:
+	if _black == null:
+		_black = ColorRect.new()
+		_black.name = "ToBlack"
+		_black.color = Color.BLACK
+		_black.mouse_filter = Control.MOUSE_FILTER_STOP
+		_black.visible = false
+		_overlays.add_child(_black)
+		_overlays.move_child(_black, 0)   # under the pause, the modal and the toast
+		_black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	return _black
 
 
 func _do_push(id: StringName, params: Dictionary) -> void:

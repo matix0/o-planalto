@@ -106,11 +106,17 @@ func _final_view() -> void:
 	# Ending without a verified quote (gdd 02 §3.5): empty quote → the block is hidden.
 	f.run.ending = {"id": "END-005", "reason": "catastrophe", "meter": "integrity"}
 	_eq(f.final_view()["ending"]["quote"], "", "END-005 has no quote")
-	# Meter reveal (GDD §9.2; thresholds a validar).
+	# Meter reveal (GDD §9.2; D-175: high > 60, low < 40, 6th text when no pattern applies).
 	_eq(AxisRules.meter_reveal(_meters({})), AxisRules.REVEAL_PATTERNS[2]["text"], "all 50 → equilíbrio")
 	_eq(AxisRules.meter_reveal(_meters({"dignity": 70, "awareness": 70, "sovereignty": 70})), AxisRules.REVEAL_PATTERNS[0]["text"], "high dignity/awareness/sovereignty")
 	_eq(AxisRules.meter_reveal(_meters({"integrity": 30, "awareness": 30})), AxisRules.REVEAL_PATTERNS[3]["text"], "low integrity/awareness")
-	_eq(AxisRules.meter_reveal(_meters({"dignity": 20, "security": 90})), AxisRules.REVEAL_NONE, "no pattern → placeholder")
+	_eq(AxisRules.meter_reveal(_meters({"dignity": 20, "security": 90})), AxisRules.REVEAL_NONE, "D-175 no pattern → 6th text")
+	_check(not AxisRules.REVEAL_NONE.contains("[a definir"), "D-175 the marker never shows")
+	_eq(AxisRules.meter_reveal(_meters({"integrity": 39, "awareness": 39})), AxisRules.REVEAL_PATTERNS[3]["text"], "39 is low")
+	_check(AxisRules.meter_reveal(_meters({"integrity": 40, "awareness": 40})) != AxisRules.REVEAL_PATTERNS[3]["text"], "40 is not low (strict)")
+	_eq(AxisRules.meter_reveal(_meters({"integrity": 40, "awareness": 40}), {"reveal_low_below": 41}), AxisRules.REVEAL_PATTERNS[3]["text"], "limit read from balance.json")
+	for p in AxisRules.REVEAL_PATTERNS:
+		_check(not String(p["text"]).contains("...") and not String(p["text"]).contains("negligenc"), "P-07: no ellipsis, no blame (%s)" % p["text"])
 
 
 ## Flow in CARTA at `year` with a synthetic card whose option A has `eff_a` (shown on the

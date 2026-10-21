@@ -79,6 +79,8 @@ func _shots() -> void:
 		"capture_warning_text": "[aviso curto de Captura — a definir]"}, {"security": 88}, false)
 	await create_timer(0.25).timeout
 	await _frozen_shot("t04_5_like_capture")
+	if screen.year_card().is_waiting_tap():
+		screen.year_card().call("_tap")   # D-184: the Captura warning waits for a tap
 	await _wait(func() -> bool: return _step() == &"card", 6.0)
 	await create_timer(0.4).timeout
 	await _shot("t06_1_card")

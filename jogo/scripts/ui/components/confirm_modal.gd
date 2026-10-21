@@ -9,7 +9,7 @@ extends Control
 
 signal decided(confirmed: bool)
 
-const VARIANT := &"A"            # D-173 pendente — trocar para &"B" se o PO escolher
+const VARIANT := &"A"            # D-187: variante A, cancelar em destaque (fecha a D-173)
 const OPEN_TIME := 0.2
 const OPEN_TIME_REDUCED := 0.15
 const DEFAULT_CONFIRM := "[confirmar — a definir]"

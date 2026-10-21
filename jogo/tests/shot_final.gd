@@ -19,15 +19,15 @@ const EPI := ["Epidemia na periferia", "Jovens criam cooperativa"]
 ## Final.dc.html, table F (illustrative meter values and pattern texts of the boards).
 const FRAMES := {
 	"paralisia": {"id": "END-006", "vals": [62, 58, 47, 35, 66, 0, 41, 52], "epi": EPI, "reason": "catastrophe",
-		"padrao": "Seu governo priorizou a dignidade, a educação e a soberania..."},
+		"padrao": "Seu governo priorizou a dignidade, a educação e a soberania."},
 	"desintegracao": {"id": "END-005", "vals": [48, 44, 51, 46, 0, 52, 47, 50], "epi": EPI, "reason": "catastrophe",
-		"padrao": "Seu governo negligenciou a verdade e a educação..."},
+		"padrao": "Seu governo deixou a verdade e a educação em segundo plano."},
 	"comum": {"id": "END-027", "vals": [50, 48, 52, 55, 47, 49, 51, 53], "epi": [], "reason": "end_of_term",
-		"padrao": "Seu governo buscou equilíbrio entre diferentes valores..."},
+		"padrao": "Seu governo buscou equilíbrio entre diferentes valores."},
 	"colonia": {"id": "END-003", "vals": [45, 42, 0, 50, 40, 61, 47, 52], "epi": ["Epidemia na periferia"], "reason": "catastrophe",
-		"padrao": "Seu governo negligenciou o povo e a soberania..."},
+		"padrao": "Seu governo deixou os direitos do povo e a soberania em segundo plano."},
 	"renuncia": {"id": "END-028", "vals": [44, 41, 39, 52, 43, 50, 38, 47], "epi": ["Epidemia na periferia"], "reason": "exit",
-		"padrao": "Seu governo buscou equilíbrio entre diferentes valores..."},
+		"padrao": "Seu governo buscou equilíbrio entre diferentes valores."},
 }
 ## T-10.1 radar example: calibration answers A / option A of 5 cards (T10a).
 const SAID := [-7.5, 5.0, -5.0, 5.0]

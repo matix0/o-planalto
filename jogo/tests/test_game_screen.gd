@@ -92,7 +92,7 @@ func _calibration_checks() -> void:
 	var card: Control = screen.card()
 	var footer: Control = screen.footer()
 	_expect(screen.allows_pause(), "T-03: pause allowed")
-	_expect(_texts(screen).has("[HUD na calibração — a definir]"), "T-03: HUD placeholder")
+	_expect(not Array(_texts(screen)).any(func(t: String) -> bool: return t.contains("HUD")), "T-03: no HUD box during the calibration (D-183)")
 	for i in 6:
 		var view: Dictionary = _game.calibration_view()
 		_expect(footer.display_text() == "%d/6" % (i + 1), "C-19 progress %d/6 (got %s)" % [i + 1, footer.display_text()])
@@ -264,6 +264,7 @@ func _settings_checks() -> void:
 	_expect(scroll.custom_minimum_size.y == 4 * 44, "P1: problem keeps 4 lines and scrolls")
 	var ftext := screen.footer().find_child("ProgressText", true, false) as Label
 	_expect(ftext.max_lines_visible == 3, "P1: the footer may take 3 lines (the 'n/7' is not cut)")
+	_expect(ftext.size.y >= ftext.get_line_count() * 44 - 1, "P1: the footer label is tall enough for its lines (V-048; h %.0f, %d lines)" % [ftext.size.y, ftext.get_line_count()])
 	_check_texts(screen, "P1")
 	_settings.reset_defaults(false)
 	await _frames(3)
@@ -380,7 +381,10 @@ func _component_checks() -> void:
 	_expect(yt.has("Ano 4") and yt.has("Desfecho") and yt.has("Segurança") and yt.has("[aviso curto de Captura — a definir]"), "C-16 capture warning texts")
 	for t in _texts(yc):
 		_expect(not t.contains("88"), "C-16 never shows the meter number")
-	_expect(await _wait(func() -> bool: return held.size() == 1, 2.0), "C-16 held after the time (P4 off)")
+	_expect(not await _wait(func() -> bool: return held.size() == 1, 1.0), "C-16 with the Captura warning waits for a tap (D-184)")
+	_expect(yc.is_waiting_tap(), "C-16 waiting for the tap")
+	_key(KEY_ENTER)
+	_expect(await _wait(func() -> bool: return held.size() == 1, 2.0), "C-16 held after the tap (D-184)")
 	# EventNotice: counter only with several events; P5 off.
 	var ev: Control = (load(EVENT_SCENE) as PackedScene).instantiate()
 	host.add_child(ev)

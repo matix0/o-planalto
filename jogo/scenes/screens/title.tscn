@@ -27,43 +27,51 @@ theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Column" type="VBoxContainer" parent="SafeArea"]
+[node name="Scroll" type="ScrollContainer" parent="SafeArea"]
 layout_mode = 2
+mouse_filter = 1
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Column" type="VBoxContainer" parent="SafeArea/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 mouse_filter = 2
 theme_override_constants/separation = 0
 
-[node name="TopSpacer" type="Control" parent="SafeArea/Column"]
+[node name="TopSpacer" type="Control" parent="SafeArea/Scroll/Column"]
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 
-[node name="Title" type="Label" parent="SafeArea/Column"]
+[node name="Title" type="Label" parent="SafeArea/Scroll/Column"]
 layout_mode = 2
 theme_type_variation = &"Display"
 text = "O Planalto"
 horizontal_alignment = 1
-autowrap_mode = 3
+autowrap_mode = 2
 
-[node name="Spacer" type="Control" parent="SafeArea/Column"]
+[node name="Spacer" type="Control" parent="SafeArea/Scroll/Column"]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Warnings" parent="SafeArea/Column" instance=ExtResource("2")]
+[node name="Warnings" parent="SafeArea/Scroll/Column" instance=ExtResource("2")]
 layout_mode = 2
 
-[node name="MidSpacer" type="Control" parent="SafeArea/Column"]
+[node name="MidSpacer" type="Control" parent="SafeArea/Scroll/Column"]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 
-[node name="Buttons" type="VBoxContainer" parent="SafeArea/Column"]
+[node name="Buttons" type="VBoxContainer" parent="SafeArea/Scroll/Column"]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="ContinueButton" type="Button" parent="SafeArea/Column/Buttons"]
+[node name="ContinueButton" type="Button" parent="SafeArea/Scroll/Column/Buttons"]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(0, 48)
@@ -72,7 +80,7 @@ theme_type_variation = &"Primary"
 text = "Continuar"
 autowrap_mode = 3
 
-[node name="NewTermButton" type="Button" parent="SafeArea/Column/Buttons"]
+[node name="NewTermButton" type="Button" parent="SafeArea/Scroll/Column/Buttons"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
@@ -80,7 +88,7 @@ theme_type_variation = &"Primary"
 text = "Novo mandato"
 autowrap_mode = 3
 
-[node name="SettingsButton" type="Button" parent="SafeArea/Column/Buttons"]
+[node name="SettingsButton" type="Button" parent="SafeArea/Scroll/Column/Buttons"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
@@ -88,7 +96,7 @@ theme_type_variation = &"Secondary"
 text = "Configurações"
 autowrap_mode = 3
 
-[node name="AboutButton" type="Button" parent="SafeArea/Column/Buttons"]
+[node name="AboutButton" type="Button" parent="SafeArea/Scroll/Column/Buttons"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2

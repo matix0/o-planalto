@@ -25,6 +25,8 @@
 
 ## Pendências para o PO (não bloqueiam)
 
+- Revelação dos medidores: só os medidores sociais têm padrão "baixo" (achado do PSI); rever com o baralho real (RT-10).
+- Calibração CAL-5: "taxar grandes fortunas: Sim" tira Caixa (`docs/15_FLUXO_DO_JOGO.md:79`), o que sugere que taxar os ricos esvazia o cofre (achado do PSI, fora do escopo).
 - Classificação etária: `docs/16_MANUAL_DO_JOGADOR.md` §16.13 diz "Livre (recomendado para maiores de 12 anos)", que se contradiz; o PSI sugere 14+ e lembra que a classificação oficial vem do IARC.
 
 ## Registro
@@ -48,3 +50,10 @@
 - D-190: lista do PSI (opção B) aplicada no jogo, no GDD e no manual (DP-008). Na tela de título a 36 px os botões passam da tela (a tela não rola): corrigir na etapa 4 com a D-186.
 - P-014 etapa 3 (adiantada): D-174 (`EndingRules.implies`), D-179 (contagem zera no Ano 2), D-182 (evento ao epílogo na condenação), V-035 (Captura lê `capture_at_or_above`), V-015 (Aprendizado sem link verificado sai dos dados e a carta sai do baralho; as 45 fictícias levam `"fictitious": true`), limiares da revelação no `balance.json`. Testes novos em `test_core_endings`, `test_core_impeachment` e `test_data`; 18/18 OK.
 - Conferidas 5 citações do PSI (`content_warnings.gd:9`, `docs/16` §16.13 e FAQ, `site/.../sobre.md:20`, `gdd/GDD.md` §14.3): 5/5 ✅. A citação de racismo em `endings.json:360` é a fala contra indígenas; ajustei o texto do GDD.
+
+### 2026-10-20 — D-175 e P-014 etapa 4 (interface)
+- D-175: GD propôs o 6º texto e a revisão dos 5; o PSI reprovou a 1ª frase do GD e propôs "Nenhum padrão resume seu governo. Os números contam o resto." e "deixou … em segundo plano" no lugar de "negligenciou" (DP-009). Aplicado no jogo, no GDD §9.2, no GDD 04 e nos docs 04, 05 e 15; testes de fronteira (39/40) e de limite lido do `balance.json`.
+- Etapa 4: rótulo do arraste na parte visível da carta, que para com ≥ 60% na tela (D-177); 36 px com títulos menores, quebra só em espaços e fonte que encolhe se uma palavra não couber (D-186); dica do toque com quebra (V-022); link da fonte com alvo de 48 px (V-024); calibração sem a caixa do HUD (D-183); ida ao final com camada preta e pausa de 0,8 s, aviso de Captura que espera toque (D-184); Voltar do Android no título sai (D-185); área segura no Web em celular (V-026); modal variante A sem "a validar" (D-187). Números novos em DP-010.
+- Achados e corrigidos na conferência por capturas: a tela de título a 36 px escondia "Sobre" (agora rola e o título cabe numa linha); o rodapé a 36 px cortava o "n/7" porque o Label não crescia (V-048: `update_minimum_size`).
+- Pendência registrada (PSI): só os medidores sociais têm padrão "baixo"; um governo de "ordem" que derruba Integridade e Consciência recebe só o texto do P2. Recomendação do PSI: manter na D-175 e rever com o baralho real (RT-10).
+- `run_all.sh` 18/18 OK.

@@ -527,13 +527,16 @@ Citações desta tabela são as antigas; as verificadas estão em `gdd/sistemas/
 
 **Revelação:** radar de 8 pontas (disse × governou) + texto do eixo predominante (`gdd/sistemas/04_eixo.md` §3.3) + o texto dos medidores abaixo ("o país que você construiu").
 
+Vale o 1º padrão que casa, na ordem da tabela. "Alto" = acima de 60; "baixo" = abaixo de 40; "equilíbrio" = os 8 medidores entre 40 e 60 (D-175; limites em `jogo/data/balance.json`, `reveal_high_above` e `reveal_low_below`). Textos revistos pelo PSI (achado P-07 da validação; provisórios, DP-009).
+
 | Padrão | Revelação |
 | :--- | :--- |
-| Dignidade, Consciência, Soberania altos | *"Seu governo priorizou a dignidade, a educação e a soberania..."* |
-| Segurança, Capital Político, Caixa altos | *"Seu governo priorizou a ordem, a estabilidade e a economia..."* |
-| Equilíbrio | *"Seu governo buscou equilíbrio entre diferentes valores..."* |
-| Integridade e Consciência baixos | *"Seu governo negligenciou a verdade e a educação..."* |
-| Dignidade e Soberania baixos | *"Seu governo negligenciou o povo e a soberania..."* |
+| Dignidade, Consciência, Soberania altos | *"Seu governo priorizou a dignidade, a educação e a soberania."* |
+| Segurança, Capital Político, Caixa altos | *"Seu governo priorizou a ordem, a estabilidade e a economia."* |
+| Equilíbrio | *"Seu governo buscou equilíbrio entre diferentes valores."* |
+| Integridade e Consciência baixos | *"Seu governo deixou a verdade e a educação em segundo plano."* |
+| Dignidade e Soberania baixos | *"Seu governo deixou os direitos do povo e a soberania em segundo plano."* |
+| Nenhum dos anteriores (sem padrão, D-175) | *"Nenhum padrão resume seu governo. Os números contam o resto."* |
 
 **Frase final:** *"O país que você construiu reflete os valores que você priorizou."*
 

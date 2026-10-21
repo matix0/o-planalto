@@ -33,18 +33,10 @@ layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 0
 
-[node name="HudPlaceholder" type="CenterContainer" parent="SafeArea/Column"]
-unique_name_in_owner = true
+[node name="HudSpace" type="Control" parent="SafeArea/Column"]
 custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
 mouse_filter = 2
-
-[node name="HudPlaceholderText" type="Label" parent="SafeArea/Column/HudPlaceholder"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_type_variation = &"Caption"
-text = "[HUD na calibração — a definir]"
-horizontal_alignment = 1
 
 [node name="Spacer16" type="Control" parent="SafeArea/Column"]
 custom_minimum_size = Vector2(0, 16)

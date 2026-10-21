@@ -107,6 +107,7 @@ func _notification(what: int) -> void:
 func _fit_lines() -> void:
 	var px := _text.get_theme_font_size(&"font_size")
 	_text.max_lines_visible = TEXT_MAX_LINES_LARGE if px >= LARGE_TEXT_PX else TEXT_MAX_LINES
+	_text.update_minimum_size()   # the container must grow to the 3rd line (V-048)
 
 
 func _apply_contrast() -> void:

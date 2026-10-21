@@ -28,6 +28,9 @@ func _initialize() -> void:
 
 
 func _run() -> void:
+	# Headless windows are 64×64: the dragged label is laid out against the screen (D-177).
+	root.size = Vector2i(Tokens.VIEWPORT)
+	await process_frame
 	var host := Control.new()
 	host.size = Vector2(Tokens.VIEWPORT)
 	host.theme = ThemeBuilder.build()
@@ -264,16 +267,26 @@ func _test_card(host: Control) -> void:
 	_expect(is_equal_approx(card_node.offset_transform_position.x, 0.40 * w), "card offset at the limit")
 	_expect(is_equal_approx(card_node.offset_transform_rotation, deg_to_rad(Tokens.TILT_DEG_AT_LIMIT)), "tilt 5° at the limit")
 	_expect(option.text == "Aceitar as mudanças" and option.horizontal_alignment == HORIZONTAL_ALIGNMENT_LEFT, "option text +1")
-	_expect(is_equal_approx(option.position.x, Tokens.ESP_24) and absf(option.size.x - Tokens.OPTION_WIDTH_RATIO * w) < 1.0,
-		"+1 text in the half facing the center (x %.1f, w %.1f)" % [option.position.x, option.size.x])
+	var span: Vector2 = card.visible_span(card_node.offset_transform_position.x)
+	_expect(is_equal_approx(option.position.x, span.x + Tokens.ESP_24) and absf(option.position.x + option.size.x - (span.y - Tokens.ESP_24)) < 1.0,
+		"+1 text spans the visible part of the card (D-177; x %.1f, w %.1f, span %s)" % [option.position.x, option.size.x, str(span)])
+	_expect(_label_on_screen(option, card_node), "+1 text inside the screen at the limit (D-177)")
 	var band_box := card.get_node("CardFit/Card/BorderOuter/BorderBand").get_theme_stylebox(&"panel") as StyleBoxFlat
 	var outer_box := card.get_node("CardFit/Card/BorderOuter").get_theme_stylebox(&"panel") as StyleBoxFlat
 	_expect(band_box.border_color == Tokens.PARTY.orange and band_box.border_width_left == Tokens.BORDER_BAND, "party band 8 px")
 	_expect(outer_box.border_width_left == 12, "white 2 + party 8 + white 2 = 12")
 	card.preview_drag(-1, 0.40)
 	await process_frame
-	_expect(absf(option.position.x + option.size.x - (w - Tokens.ESP_24)) < 1.0 and option.horizontal_alignment == HORIZONTAL_ALIGNMENT_RIGHT,
+	span = card.visible_span(card_node.offset_transform_position.x)
+	_expect(absf(option.position.x + option.size.x - (span.y - Tokens.ESP_24)) < 1.0 and option.horizontal_alignment == HORIZONTAL_ALIGNMENT_RIGHT,
 		"-1 text mirrored")
+	_expect(_label_on_screen(option, card_node), "-1 text inside the screen at the limit (D-177)")
+	# Far beyond the limit the card stops with ≥ 60% of it on screen; the label stays inside.
+	card.preview_drag(1, 0.95)
+	await process_frame
+	_expect(card_node.offset_transform_position.x < 0.95 * w and _label_on_screen(option, card_node), "card travel stops; label still on screen (D-177)")
+	card.preview_drag(-1, 0.40)
+	await process_frame
 	_expect(band_box.border_color == Tokens.PARTY.red, "red border for -1")
 	_check_no_side_words(card, "card dragging")
 	card.preview_tap(1)
@@ -463,6 +476,13 @@ func _expect_events(expected: Array, what: String) -> void:
 	var got := ", ".join(_events)
 	_expect(_events == PackedStringArray(expected), "%s — got [%s]" % [what, got])
 	_events.clear()
+
+
+## Option label rect, moved with the card (offset transform), inside the viewport.
+func _label_on_screen(option: Label, card_node: Control) -> bool:
+	var x0 := card_node.global_position.x + card_node.offset_transform_position.x + option.position.x
+	var screen := root.get_visible_rect()
+	return x0 >= screen.position.x - 0.5 and x0 + option.size.x <= screen.end.x + 0.5
 
 
 func _check_no_side_words(node: Node, where: String) -> void:

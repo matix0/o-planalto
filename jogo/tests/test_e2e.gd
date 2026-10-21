@@ -209,8 +209,11 @@ func _act() -> void:
 					_click_control(screen.sheet().continue_button())
 				&"events":
 					_click(TAP_POINT)
+				&"year":
+					if screen.year_card().is_waiting_tap():
+						_key(KEY_ENTER)   # Captura warning waits for a tap (D-184)
 				_:
-					pass   # year card, resolving, leaving: the screen moves on alone
+					pass   # resolving, leaving: the screen moves on alone
 		&"impeachment":
 			_scene_seen = true
 			if screen.is_locked():
