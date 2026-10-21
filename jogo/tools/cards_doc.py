@@ -646,6 +646,170 @@ def cmd_box(args):
     return 0
 
 
+# --- insert: writes a reviewed wave into doc 17 and doc 18 -------------------------------------
+
+SECTION_17 = {"congress": "## 17.02", "budget": "## 17.03", "curriculum_media": "## 17.04",
+              "geopolitics": "## 17.05", "prison_police": "## 17.06", "amendments": "## 17.07",
+              "caucuses": "## 17.08", "impeachment": "## 17.09", "judiciary": "## 17.10",
+              "influencer": "## 17.11", "thematic": "## 17.12", "actor": "## 17.13"}
+SECTION_18 = {"congress": "## 18.02", "budget": "## 18.03", "curriculum_media": "## 18.04",
+              "geopolitics": "## 18.05", "prison_police": "## 18.06", "amendments": "## 18.07",
+              "caucuses": "## 18.08", "impeachment": "## 18.09", "judiciary": "## 18.10",
+              "influencer": "## 18.11", "thematic": "## 18.12", "actor": "## 18.13"}
+SCENE_DRAFTS = {"APR-143", "APR-144", "APR-145"}   # §18.14 drafts that repeat the scene (doc 18:7)
+
+
+def _section_of(card_id):
+    kind, num = card_id.split("-")[0], int(card_id.split("-")[1])
+    if kind == "THEM":
+        return "thematic"
+    if kind == "ATOR":
+        return "actor"
+    for mode, (lo, hi) in MODE_RANGES.items():
+        if lo <= num <= hi:
+            return mode
+    raise ValueError("sem modo para %s" % card_id)
+
+
+def _wave_blocks(path):
+    """Card blocks of a wave file: [(id, text)] with the heading and the table only."""
+    text = open(path, encoding="utf-8").read()
+    out = []
+    for m in re.finditer(r"(?m)^### ((?:INST|THEM|ATOR)-\d{3}) — .*$", text):
+        lines = text[m.start():].split("\n")
+        block = [lines[0], ""]
+        started = False
+        for ln in lines[1:]:
+            if ln.startswith("|"):
+                started = True
+                block.append(ln)
+            elif started:
+                break
+        out.append((m.group(1), "\n".join(block) + "\n"))
+    return out
+
+
+def _set_status(block, status):
+    return re.sub(r"(?m)^\| \*\*Status\*\* \| .* \|$", "| **Status** | %s |" % status, block)
+
+
+def _insert_sorted(text, heading, item_id, block, item_re):
+    """Puts `block` in the section that starts with `heading`, before the first item with a
+    larger number of the same kind, or after the last item of the section."""
+    start = text.index("\n" + heading) + 1
+    nxt = re.search(r"(?m)^## ", text[start + 3:])
+    end = start + 3 + nxt.start() if nxt else len(text)
+    section = text[start:end]
+    kind, num = item_id.split("-")[0], int(item_id.split("-")[1])
+    items = [(m.group(1), m.start()) for m in re.finditer(item_re, section)]
+    if any(i == item_id for i, _ in items):
+        raise ValueError("%s já está no documento" % item_id)
+    pos = None
+    for iid, at in items:
+        if iid.split("-")[0] == kind and iid.split("-")[1].isdigit() and int(iid.split("-")[1]) > num:
+            pos = start + at
+            break
+    if pos is None:
+        # After the section's last line of content: before the closing "---" if there is one.
+        tail = section.rstrip("\n")
+        close = tail.rfind("\n---")
+        pos = start + (close + 1 if close >= 0 and tail[close:].strip() == "---" else len(tail) + 1)
+        return text[:pos] + "\n" + block + "\n" + text[pos:] if not text[pos - 2:pos] == "\n\n" else text[:pos] + block + "\n" + text[pos:]
+    return text[:pos] + block + "\n" + text[pos:]
+
+
+def _drop_draft(text, code):
+    """Removes the §18.14 draft `#### code — …` (up to the next heading or ruler)."""
+    m = re.search(r"(?m)^#### %s — .*$" % re.escape(code), text)
+    if not m or m.start() < text.find("## 18.14"):
+        return text, False
+    nxt = re.search(r"(?m)^(#### |### |## |---)", text[m.end():])
+    stop = m.end() + nxt.start() if nxt else len(text)
+    return text[:m.start()] + text[stop:], True
+
+
+def _recount(t17, t18):
+    cards = parse_doc17_text(t17)
+    inst = sum(1 for c in cards if c["id"].startswith("INST-"))
+    them = sum(1 for c in cards if c["id"].startswith("THEM-"))
+    ator = sum(1 for c in cards if c["id"].startswith("ATOR-"))
+    total = inst + them + ator
+    t17 = re.sub(r"Status: \d+ de 340 cartas escritas", "Status: %d de 340 cartas escritas" % total, t17)
+    t17 = re.sub(r"(?m)^\| \*\*Institucionais\*\* \| \d+ \| 200 \|$", "| **Institucionais** | %d | 200 |" % inst, t17)
+    t17 = re.sub(r"(?m)^\| \*\*Temáticas\*\* \| \d+ \| 70 \|$", "| **Temáticas** | %d | 70 |" % them, t17)
+    t17 = re.sub(r"(?m)^\| \*\*Atores\*\* \| \d+ \| 70 \|$", "| **Atores** | %d | 70 |" % ator, t17)
+    t17 = re.sub(r"(?m)^\| \*\*Total\*\* \| \*\*\d+\*\* \| \*\*340\*\* \|$", "| **Total** | **%d** | **340** |" % total, t17)
+    stop = t18.find("## 18.14")
+    linked = re.findall(r"(?m)^### (APR-(?:\d{3}|THEM-\d{3}|ATOR-\d{3}))", t18[:stop])
+    drafts = re.findall(r"(?m)^#### (APR-\d{3}) — ", t18[stop:])
+    useful = [d for d in drafts if d not in SCENE_DRAFTS]
+    l_inst = sum(1 for c in linked if re.match(r"APR-\d{3}$", c))
+    l_them = sum(1 for c in linked if c.startswith("APR-THEM"))
+    l_ator = sum(1 for c in linked if c.startswith("APR-ATOR"))
+    l_all = l_inst + l_them + l_ator
+    for mode, head in SECTION_18.items():
+        a = t18.index("\n" + head) + 1
+        b = t18.index("\n## ", a + 3)
+        n = len(re.findall(r"(?m)^### APR-(?:\d{3}|THEM-\d{3}|ATOR-\d{3}) — ", t18[a:b]))
+        line_end = t18.index("\n", a)
+        line = t18[a:line_end]
+        new = re.sub(r"\(\d+ de (20|70)\)", "(%d de \\1)" % n, line)
+        new = re.sub(r"comuns: \d+ de 20", "comuns: %d de 20" % n, new)
+        t18 = t18[:a] + new + t18[line_end:]
+    t18 = re.sub(r"\d+ Cartas de Aprendizado ligadas às \d+ cartas do doc 17 \(\d+ dentro das 340",
+                 "%d Cartas de Aprendizado ligadas às %d cartas do doc 17 (%d dentro das 340" % (l_all + 5, l_all + 5, l_all), t18)
+    t18 = re.sub(r"e \d+ rascunhos úteis aguardando carta", "e %d rascunhos úteis aguardando carta" % len(useful), t18)
+    t18 = re.sub(r"(?m)^\| \*\*Institucionais\*\* \| \d+ \| \d+ \| 200 \|$", "| **Institucionais** | %d | %d | 200 |" % (l_inst, len(useful)), t18)
+    t18 = re.sub(r"(?m)^\| \*\*Temáticas\*\* \| \d+ \| \d+ \| 70 \|$", "| **Temáticas** | %d | 0 | 70 |" % l_them, t18)
+    t18 = re.sub(r"(?m)^\| \*\*Atores\*\* \| \d+ \| \d+ \| 70 \|$", "| **Atores** | %d | 0 | 70 |" % l_ator, t18)
+    t18 = re.sub(r"(?m)^\| \*\*Total\*\* \| \*\*\d+\*\* \| \*\*\d+\*\* \| \*\*340\*\* \|$",
+                 "| **Total** | **%d** | **%d** | **340** |" % (l_all, len(useful)), t18)
+    return t17, t18, total
+
+
+def parse_doc17_text(text):
+    tmp = os.path.join(os.path.dirname(DOC17), ".doc17_tmp.md")
+    try:
+        open(tmp, "w", encoding="utf-8").write(text)
+        return parse_doc17(tmp)
+    finally:
+        os.remove(tmp)
+
+
+def cmd_insert(args):
+    t17 = open(args.doc17, encoding="utf-8").read()
+    t18 = open(args.doc18, encoding="utf-8").read()
+    learning = {a["code"]: a for a in json.load(open(args.learning, encoding="utf-8"))}
+    note = "P-015"
+    dropped = []
+    for cid, block in _wave_blocks(args.cards):
+        sec = _section_of(cid)
+        t17 = _insert_sorted(t17, SECTION_17[sec], cid, _set_status(block, args.status),
+                             r"(?m)^### ((?:INST|THEM|ATOR)-\d{3}|IMP-[1-5]) — ")
+        code = "APR-" + cid.split("-", 1)[1] if cid.startswith("INST-") else "APR-" + cid
+        a = learning.get(code)
+        if a is None:
+            print("aviso: %s sem Aprendizado no JSON" % code)
+            continue
+        a = dict(a, verified_note=note)
+        box = render_box(a)
+        if a.get("strength") in ("imprensa", "fraca"):
+            box = box.rstrip("\n") + " — fonte %s\n" % ("de imprensa" if a["strength"] == "imprensa" else "fraca")
+        box += "\n**Status:** %s\n" % args.status
+        t18 = _insert_sorted(t18, SECTION_18[sec], code, box, r"(?m)^### (APR-(?:\d{3}|THEM-\d{3}|ATOR-\d{3}|IMP-[1-5])) — ")
+        t18, gone = _drop_draft(t18, code)
+        if gone:
+            dropped.append(code)
+    t17, t18, total = _recount(t17, t18)
+    if args.dry_run:
+        sys.stdout.write("cartas escritas depois da onda: %d; rascunhos retirados da §18.14: %s\n" % (total, ", ".join(dropped) or "nenhum"))
+        return 0
+    open(args.doc17, "w", encoding="utf-8").write(t17)
+    open(args.doc18, "w", encoding="utf-8").write(t18)
+    print("doc 17 e doc 18 gravados: %d cartas escritas; rascunhos retirados: %s" % (total, ", ".join(dropped) or "nenhum"))
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -660,8 +824,15 @@ def main():
     e.add_argument("--out", required=True)
     b = sub.add_parser("box", help="renders doc 18 boxes from a JSON list (see render_box)")
     b.add_argument("--json", required=True)
+    i = sub.add_parser("insert", help="grava uma onda revisada no doc 17 e no doc 18, em ordem, e refaz as contagens")
+    i.add_argument("--cards", required=True, help="arquivo da onda com as cartas no formato do doc 17")
+    i.add_argument("--learning", required=True, help="JSON dos Aprendizados (formato do box)")
+    i.add_argument("--status", required=True, help='ex.: "provisório (DP-020)"')
+    i.add_argument("--doc17", default=DOC17)
+    i.add_argument("--doc18", default=DOC18)
+    i.add_argument("--dry-run", action="store_true")
     args = p.parse_args()
-    handler = {"check": cmd_check, "export": cmd_export, "box": cmd_box}[args.cmd]
+    handler = {"check": cmd_check, "export": cmd_export, "box": cmd_box, "insert": cmd_insert}[args.cmd]
     sys.exit(handler(args))
 
 

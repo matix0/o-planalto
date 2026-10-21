@@ -436,9 +436,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  tecnologia. Vendê-lo bruto é entregar o futuro.            │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  O Brasil tem a 7ª maior reserva de lítio do mundo (USGS). A│
-│  venda de recursos brutos perpetua a reprimarização da      │
-│  economia. [não verificado: 2ª frase]                       │
+│  O Brasil tem a 7ª maior reserva de lítio do mundo (USGS).  │
 │                                                             │
 │  FONTE: USGS, via pv magazine, 2023.                        │
 │                                                             │
@@ -448,6 +446,8 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [pv magazine, 2023](https://www.pv-magazine-brasil.com/2023/10/03/brasil-tem-a-setima-maior-reserva-de-litio-do-mundo/)
+
+**Status:** dado ajustado, provisório (DP-020): sai a 2ª frase, sem fonte.
 
 ---
 
@@ -822,12 +822,10 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  reforma agrária nunca ocorreu de forma estrutural.         │
 │                                                             │
 │  DADOS REAIS:                                               │
-│  O agronegócio recebeu R$ 516,2 bilhões no Plano Safra      │
-│  2025/2026; a agricultura familiar, R$ 89 bilhões. O MST tem│
-│  mais de 1,5 milhão de membros e a FPA tem 345 [não         │
-│  verificado].                                               │
+│  O Plano Safra 2025/2026 reservou R$ 516,2 bilhões ao       │
+│  agronegócio e R$ 89 bilhões à agricultura familiar.        │
 │                                                             │
-│  FONTE: Ministério da Agricultura, 2025.                    │
+│  FONTE: MAPA e Congresso em Foco, 2025.                     │
 │                                                             │
 │  "A terra é para quem trabalha nela. Não para quem          │
 │  especula."                                                 │
@@ -836,6 +834,10 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [MAPA, 2025](https://www.gov.br/agricultura/pt-br/assuntos/noticias/2025/governo-federal-lanca-plano-safra-2025-2026-com-r-516-2-bilhoes-para-impulsionar-o-agro-brasileiro)
+
+**Fonte verificada (P-015):** [Congresso em Foco, 2025](https://www.congressoemfoco.com.br/noticia/109843/plano-safra-25-26-preve-r-89-bilhoes-para-agricultura-familiar) — fonte de imprensa; o trecho "agricultura familiar" do dado.
+
+**Status:** dado ajustado, provisório (DP-020): sai a frase sobre MST e FPA, sem fonte.
 
 ---
 
