@@ -522,6 +522,50 @@ def load_all(doc17=DOC17, doc18=DOC18):
     return built, learning
 
 
+# --- style (docs/10_GUIA_DE_ESTILO_E_TOM.md §10.03.2): warnings only -------------------------
+
+NOT_GERUND = {"quando", "mundo", "segundo", "fundo", "profundo", "comando", "bando", "brando",
+              "oriundo", "tremendo", "estupendo", "horrendo", "dividendo", "adendo", "lindo",
+              "findo", "nefando", "rotundo", "fecundo", "jucundo", "imundo", "vagabundo"}
+NOT_ADVERB = {"mente", "semente", "demente", "clemente", "veemente", "sementes", "desmente"}
+NOT_FUTURE = {"pará", "ceará", "amapá", "alvará", "jacaré"}
+
+
+def style_warnings(tag, text):
+    out = []
+    t = unquote(text) if text else ""
+    for sent in re.split(r"(?<=[.!?])\s+", t):
+        n = len(re.findall(r"[\wÀ-ÿ'-]+", sent))
+        if n > 20:
+            out.append("%s: frase com %d palavras (máx. 20): %s…" % (tag, n, sent[:40]))
+    low = t.lower()
+    for w in re.findall(r"\b[a-zà-ÿ]+(?:ando|endo|indo)\b", low):
+        if w not in NOT_GERUND:
+            out.append("%s: gerúndio '%s'" % (tag, w))
+    for w in re.findall(r"\b[a-zà-ÿ]+mente\b", low):
+        if w not in NOT_ADVERB:
+            out.append("%s: advérbio '%s'" % (tag, w))
+    for w in re.findall(r"\b[a-zà-ÿ]+(?:ará|erá|irá|arão|erão|irão)\b", low):
+        if w not in NOT_FUTURE:
+            out.append("%s: futuro '%s' (use o presente)" % (tag, w))
+    return out
+
+
+def card_style(c, l=None):
+    """Style warnings for the player text of a built card and its Learning Card blocks."""
+    out = []
+    out.extend(style_warnings("problema", c.get("problem", "")))
+    for key in ("option_a", "option_b"):
+        o = c.get(key, {})
+        out.extend(style_warnings("consequência %s" % key[-1].upper(), o.get("consequence", "")))
+        for ev in o.get("events", []):
+            out.extend(style_warnings("evento %s" % key[-1].upper(), ev.get("text", "")))
+    if l:
+        for k in ("lived", "concept", "impact"):
+            out.extend(style_warnings("APR %s" % k, _join(l["blocks"][k])))
+    return out
+
+
 def cmd_check(args):
     cards, learning = load_all(args.doc17, None if args.no_learning else args.doc18)
     want = set(x.strip() for x in args.ids.split(",")) if args.ids else None
@@ -550,6 +594,8 @@ def cmd_check(args):
                 print("    - " + e)
         elif args.verbose:
             print("✓ %s" % c["id"])
+        if args.style:
+            warns.extend(card_style(c, l if not args.no_learning else None))
         for w in warns:
             print("  ⚠ %s: %s" % (c["id"], w))
     checked = len([c for c in cards if not want or c["id"] in want])
@@ -820,6 +866,7 @@ def main():
     c.add_argument("--doc17", default=DOC17, help="arquivo com cartas no formato do doc 17 (ex.: rascunho de uma onda)")
     c.add_argument("--doc18", default=DOC18)
     c.add_argument("--no-learning", action="store_true", help="não confere o Aprendizado (rascunho de cartas)")
+    c.add_argument("--style", action="store_true", help="avisos de estilo do doc 10 (frase > 20 palavras, gerúndio, advérbio, futuro)")
     e = sub.add_parser("export")
     e.add_argument("--out", required=True)
     b = sub.add_parser("box", help="renders doc 18 boxes from a JSON list (see render_box)")
