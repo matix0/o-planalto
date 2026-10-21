@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 45 Cartas de Aprendizado ligadas às 45 cartas do doc 17 (40 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 114 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 62 Cartas de Aprendizado ligadas às 62 cartas do doc 17 (57 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 106 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -389,7 +389,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.05 — Cartas de Aprendizado do Modo Geopolítico (12 de 20)
+## 18.05 — Cartas de Aprendizado do Modo Geopolítico (20 de 20)
 
 ### APR-061 — Adesão ao BRICS
 
@@ -779,6 +779,270 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** provisório (DP-022)
 
+### APR-073 — Terras para estrangeiros
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-073                            │
+│  Terras para estrangeiros                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se sancionava a lei que libera a compra de    │
+│  terras por estrangeiros.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma lei limita quanto de terra rural um estrangeiro pode   │
+│  comprar. Abrir atrai investimento; manter o limite protege │
+│  quem decide o que se planta e para quem.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  A Lei 5.709, de 1971, limita as terras de estrangeiros a   │
+│  1/4 de cada município. Uma só nacionalidade pode ter 40%   │
+│  desse limite, ou 10% do município.                         │
+│                                                             │
+│  FONTE: Lei 5.709/1971, art. 12 (Câmara).                   │
+│                                                             │
+│  "Quem é dono da terra decide o que se planta."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Lei 5.709/1971 (Câmara)](https://www2.camara.leg.br/legin/fed/lei/1970-1979/lei-5709-7-outubro-1971-357938-normaatualizada-pl.html)
+
+**Status:** provisório (DP-024)
+
+### APR-074 — Ajuda militar dos EUA
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-074                            │
+│  Ajuda militar dos EUA                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava drones e agentes dos EUA no Brasil│
+│  contra facções que eles tratam como terroristas.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Chamar um grupo de terrorista muda as regras: pode abrir   │
+│  caminho para sanções e ações militares de fora. Aqui, a lei│
+│  trata facção como crime organizado.                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em maio de 2026, os EUA anunciaram a intenção de tratar o  │
+│  PCC e o Comando Vermelho como organizações terroristas     │
+│  estrangeiras a partir de 5 de junho.                       │
+│                                                             │
+│  FONTE: Departamento de Estado dos EUA, 28/05/2026.         │
+│                                                             │
+│  "Segurança emprestada tem dono."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Departamento de Estado dos EUA, 2026](https://www.state.gov/translations/portuguese/designacao-do-comando-vermelho-e-do-primeiro-comando-da-capital-como-organizacoes-terroristas)
+
+**Status:** provisório (DP-024)
+
+### APR-075 — Adesão à OCDE
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-075                            │
+│  Adesão à OCDE                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trocava vantagens de país em               │
+│  desenvolvimento pelo apoio dos EUA para entrar na OCDE.    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A OCDE reúne, em sua maioria, países ricos com regras      │
+│  comuns de economia, impostos e transparência. Entrar dá um │
+│  selo de confiança, mas limita políticas próprias.          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  O roteiro da OCDE (2022) exige que o Brasil aceite todos os│
+│  instrumentos jurídicos da organização, salvo reservas      │
+│  acordadas, e passe por mais de 20 comitês.                 │
+│                                                             │
+│  FONTE: OCDE, Roteiro de adesão do Brasil, 2022.            │
+│                                                             │
+│  "Todo clube cobra a entrada."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [OCDE, Roteiro de adesão do Brasil, 2022](https://one.oecd.org/document/C/MIN(2022)21/FINAL/en/pdf)
+
+**Status:** provisório (DP-024)
+
+### APR-076 — Acesso a vacinas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-076                            │
+│  Acesso a vacinas                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se quebrava a patente de uma vacina ou pagava │
+│  o preço da farmacêutica.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Em emergência, a lei permite a licença compulsória, a      │
+│  quebra de patente. O remédio fica mais barato, mas produzir│
+│  aqui exige fábrica, tecnologia e tempo.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2007, o Brasil quebrou a patente do efavirenz, remédio  │
+│  contra o HIV. Genéricos importados cortaram o custo anual  │
+│  em 71%; a produção nacional só veio em 2009.               │
+│                                                             │
+│  FONTE: Revista Panamericana de Salud Pública, 2009.        │
+│                                                             │
+│  "Na pandemia, a patente decide a fila."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Rodrigues e Soler, Rev Panam Salud Publica, 2009](https://scielosp.org/pdf/rpsp/2009.v26n6/553-559/pt)
+
+**Status:** provisório (DP-024)
+
+### APR-077 — Base de foguetes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-077                            │
+│  Base de foguetes                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se expandia a base de foguetes do Maranhão    │
+│  sobre terras quilombolas.                                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quilombos são comunidades negras formadas por quem resistiu│
+│  à escravidão e por seus descendentes. A Constituição       │
+│  reconhece a elas a propriedade das terras que ocupam.      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, a Corte Interamericana divulgou a condenação do   │
+│  Brasil por violar direitos de 171 comunidades quilombolas  │
+│  de Alcântara, onde fica a base de foguetes.                │
+│                                                             │
+│  FONTE: Corte Interamericana de Direitos Humanos, 2025.     │
+│                                                             │
+│  "Progresso que expulsa não é para todos."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Corte IDH, Alcântara, 2025](https://www.corteidh.or.cr/docs/comunicados/cp_18_2025_port.pdf)
+
+**Status:** provisório (DP-024)
+
+### APR-078 — Banco do BRICS
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-078                            │
+│  Banco do BRICS                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pegava o dinheiro do esgoto com o Banco do │
+│  BRICS ou com o Banco Mundial.                              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O BRICS criou um banco próprio para financiar obras sem    │
+│  depender só do Banco Mundial. Nele, os sócios fundadores   │
+│  têm o mesmo peso no voto.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, o Banco do BRICS aprovou US$ 50 milhões para o    │
+│  esgoto do Pará, com meta de 31.500 casas ligadas à rede. O │
+│  estado entra com R$ 137,5 milhões do orçamento.            │
+│                                                             │
+│  FONTE: Novo Banco de Desenvolvimento (BRICS), 2025.        │
+│                                                             │
+│  "Escolher o credor também é política externa."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [NDB, Pará Sanitation Development Project, 2025](https://www.ndb.int/project/para-sanitation-development-project/)
+
+**Status:** provisório (DP-024)
+
+### APR-079 — Asilo ou extradição
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-079                            │
+│  Asilo ou extradição                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava asilo a um ex-agente que revelou que  │
+│  uma potência espionava o Brasil.                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No Brasil, o STF julga os pedidos de extradição, e a       │
+│  Constituição proíbe extraditar por crime político ou de    │
+│  opinião. Dar asilo é decisão do governo.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Pelo decreto de 2017 da Lei de Migração, o presidente da   │
+│  República decide o pedido de asilo político, consultado o  │
+│  ministro das Relações Exteriores.                          │
+│                                                             │
+│  FONTE: Decreto 9.199/2017, art. 112 (Câmara).              │
+│                                                             │
+│  "Proteger quem denuncia também é soberania."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Decreto 9.199/2017 (Câmara)](https://www2.camara.leg.br/legin/fed/decret/2017/decreto-9199-20-novembro-2017-785772-normaatualizada-pe.html)
+
+**Status:** provisório (DP-024)
+
+### APR-080 — Golpe no país vizinho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-080                            │
+│  Golpe no país vizinho                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se propunha suspender do Mercosul um vizinho  │
+│  tomado por um golpe militar.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Mercosul tem uma cláusula democrática: o sócio que rompe │
+│  a democracia pode ser suspenso. Defender a democracia ao   │
+│  lado também protege a sua.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Pelo Protocolo de Ushuaia (1998), a democracia é condição  │
+│  essencial da integração. Suspender quem a rompe exige      │
+│  consenso dos outros sócios, sem o país afetado.            │
+│                                                             │
+│  FONTE: Protocolo de Ushuaia (1998), arts. 1 e 6 (Câmara).  │
+│                                                             │
+│  "Golpe ao lado é aviso para casa."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Protocolo de Ushuaia (Decreto 4.210/2002)](https://www2.camara.leg.br/legin/fed/decret/2002/decreto-4210-24-abril-2002-458107-publicacaooriginal-1-pe.html)
+
+**Status:** provisório (DP-024)
+
 ---
 
 ## 18.06 — Cartas de Aprendizado do Modo Prisional e Policial (2 de 20)
@@ -1100,7 +1364,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.11 — Cartas de Aprendizado do Modo Influenciador (11 de 20)
+## 18.11 — Cartas de Aprendizado do Modo Influenciador (20 de 20)
 
 ### APR-181 — Influenciador financiado
 
@@ -1480,6 +1744,321 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-015):** [Agência Brasil, 2026](https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-07/genero-raca-e-origem-familiar-definem-mobilidade-social-diz-estudo) — fonte de imprensa
 
 **Status:** provisório (DP-021)
+
+### APR-192 — Boato da taxa no Pix
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-192                            │
+│  Boato da taxa no Pix                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha a fiscalização do Pix diante de um│
+│  boato ou se revogava a norma.                              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pânico moral cria medo sobre um tema para forçar uma       │
+│  decisão. Sinais: ameaça ao seu bolso, pressa para agir e   │
+│  nada na norma que confirme. Leia a norma antes de repassar.│
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em jan/2025, após boatos de taxação do Pix, a Receita      │
+│  revogou a norma que ampliava a fiscalização do Pix. Em     │
+│  ago/2025, disse que isso ajudou o crime organizado.        │
+│                                                             │
+│  TÉCNICA: Pânico Moral                                      │
+│                                                             │
+│  FONTE: Agência Brasil, 2025 (nota da Receita Federal).     │
+│                                                             │
+│  "Boato não precisa ser verdade para derrubar uma regra."   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Brasil, 2025](https://agenciabrasil.ebc.com.br/economia/noticia/2025-08/receita-voltara-a-exigir-declaracao-de-fintechs-apos-operacoes-da-pf) — fonte de imprensa
+
+**Status:** provisório (DP-023)
+
+### APR-193 — Indicação para o Esporte
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-193                            │
+│  Indicação para o Esporte                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava para ministro um ex-influenciador │
+│  que lucrou com a perda dos seguidores.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Cachê da desgraça é o pagamento que o influenciador recebe │
+│  sobre o que o seguidor perde. Sinais: link de indicação, só│
+│  vitórias na tela e pressa para você depositar.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, um delegado disse à CPI das Bets que casas ilegais│
+│  davam ao influenciador uma conta demo para simular ganhos e│
+│  um link para os seguidores apostarem.                      │
+│                                                             │
+│  TÉCNICA: Cachê da Desgraça                                 │
+│                                                             │
+│  FONTE: Agência Senado (CPI das Bets), 2025.                │
+│                                                             │
+│  "Quem ganha com a sua perda não torce por você."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Senado, 2025](https://www12.senado.leg.br/noticias/materias/2025/04/22/cpi-delegado-mostra-que-bets-ilegais-e-influenciadores-mentem-para-lucrar-mais)
+
+**Status:** provisório (DP-023)
+
+### APR-194 — Comissão sobre a perda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-194                            │
+│  Comissão sobre a perda                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se proibia o pagamento de influenciadores pela│
+│  perda dos seguidores ou se deixava o setor agir.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No cachê da desgraça, o influenciador ganha quando você    │
+│  perde. Por isso ele mostra vitórias e esconde derrotas.    │
+│  Desconfie da dica de quem lucra com o seu prejuízo.        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, o relatório da CPI das Bets propunha proibir pagar│
+│  influenciadores pelas perdas de apostadores. A CPI rejeitou│
+│  o relatório inteiro, por 4 votos a 3.                      │
+│                                                             │
+│  TÉCNICA: Cachê da Desgraça                                 │
+│                                                             │
+│  FONTE: Agência Senado (CPI das Bets), 2025.                │
+│                                                             │
+│  "Se ele ganha quando você perde, não é dica."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Senado, 2025](https://www12.senado.leg.br/noticias/materias/2025/06/12/cpi-das-bets-rejeita-relatorio-final)
+
+**Status:** provisório (DP-023)
+
+### APR-195 — Boato contra as urnas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-195                            │
+│  Boato contra as urnas                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se punha as urnas em dúvida depois da derrota │
+│  de um aliado ou se reconhecia o resultado.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Desmoralização pode mirar uma instituição: destrói a       │
+│  confiança com acusação sem prova. Sinais: a urna só vira   │
+│  suspeita quando o seu lado perde, e a prova nunca aparece. │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2026, o TSE afirmou: nenhum caso de fraude nas urnas foi│
+│  comprovado desde 1996, e qualquer brasileiro pode propor   │
+│  planos de ataque no teste público de segurança.            │
+│                                                             │
+│  TÉCNICA: Desmoralização                                    │
+│                                                             │
+│  FONTE: TSE, 2026.                                          │
+│                                                             │
+│  "Quem só confia na urna quando ganha não confia nela."     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [TSE, 2026](https://www.tse.jus.br/comunicacao/noticias/2026/Julho/entrevista-urna-eletronica-assegura-a-soberania-do-voto-popular-nas-eleicoes-brasileiras)
+
+**Status:** provisório (DP-023)
+
+### APR-196 — Denúncia em massa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-196                            │
+│  Denúncia em massa                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se investigava quem derrubou a conta de uma   │
+│  ativista ou se deixava o caso com a plataforma.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Fazenda de IA serve para calar: perfis falsos denunciam uma│
+│  conta até ela cair. Sinais: muitas denúncias de uma vez,   │
+│  perfis que imitam gente real e um alvo que incomoda.       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2022, a Meta removeu na Indonésia uma rede de cerca de  │
+│  2.800 contas, grupos e páginas que fazia denúncias falsas, │
+│  em parte com perfis falsos, para derrubar posts.           │
+│                                                             │
+│  TÉCNICA: Fazenda de IA                                     │
+│                                                             │
+│  FONTE: Meta, Relatório de Ameaças, 2022.                   │
+│                                                             │
+│  "Quando robôs denunciam, alguém quer silêncio."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Meta, relatório de ameaças, 2022](https://about.fb.com/wp-content/uploads/2022/08/Quarterly-Adversarial-Threat-Report-Q2-2022.pdf)
+
+**Status:** provisório (DP-023)
+
+### APR-197 — Aula contra o eleitor rival
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-197                            │
+│  Aula contra o eleitor rival                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se compartilhava aulas que tratam o eleitor   │
+│  rival como inimigo ou se pedia ao canal que parasse.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Didatismo acusatório pode mirar o vizinho que vota         │
+│  diferente: ensina a odiar com cara de aula. Sinais: 'nós'  │
+│  contra 'eles', culpa de um grupo inteiro e nenhuma fonte.  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2026, 60% dos brasileiros de 16 anos ou mais temiam     │
+│  agressão física pela escolha política (68% em 2022). 2,2%, │
+│  cerca de 3,6 milhões, a sofreram em 12 meses.              │
+│                                                             │
+│  TÉCNICA: Didatismo Acusatório                              │
+│                                                             │
+│  FONTE: Fórum Brasileiro de Segurança Pública, 2026.        │
+│                                                             │
+│  "Quem vota diferente é vizinho, não inimigo."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Fórum Brasileiro de Segurança Pública, 2026](https://forumseguranca.org.br/wp-content/uploads/2026/05/os-gatilhos-da-inseguranca-relatorio-completo-2026.pdf)
+
+**Status:** provisório (DP-023)
+
+### APR-198 — Vídeo falso do vizinho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-198                            │
+│  Vídeo falso do vizinho                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se retaliava um país vizinho por causa de um  │
+│  vídeo suspeito ou se confirmava antes com ele.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Deepfake pode criar crise entre países: põe na boca de um  │
+│  líder o que ele não disse. Sinais: fonte única, anúncio    │
+│  fora do canal oficial e pressa para reagir.                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 16/03/2022, um deepfake mostrou o presidente de um país │
+│  em guerra mandando largar as armas. Ele o desmentiu no     │
+│  mesmo dia, em vídeo no próprio perfil.                     │
+│                                                             │
+│  TÉCNICA: Deepfake                                          │
+│                                                             │
+│  FONTE: Euronews, 2022.                                     │
+│                                                             │
+│  "Antes de revidar, confirme. O falso tem pressa."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Euronews, 2022](https://www.euronews.com/my-europe/amp/2022/03/16/deepfake-zelenskyy-surrender-video-is-the-first-intentionally-used-in-ukraine-war) — fonte de imprensa
+
+**Status:** provisório (DP-023)
+
+### APR-199 — Rifas da facção
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-199                            │
+│  Rifas da facção                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se seguia o dinheiro de rifas ligadas a uma   │
+│  facção ou se prendia os influenciadores ao vivo.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na rifa ilegal, o influenciador lucra porque quase todos   │
+│  perdem, como no cachê da desgraça. E o caixa da rifa pode  │
+│  lavar lucro do crime. Sinal: sorteio sem autorização.      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, o Ministério Público do RS apontou que uma facção │
+│  movimentou mais de R$ 49 milhões e reaplicou lucros do     │
+│  tráfico em empréstimos ilegais, rifas e apostas.           │
+│                                                             │
+│  TÉCNICA: Cachê da Desgraça                                 │
+│                                                             │
+│  FONTE: Ministério Público do RS (GAECO), 2025.             │
+│                                                             │
+│  "Prender o rosto não fecha o caixa do crime."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Ministério Público do RS, 2025](https://www.mprs.mp.br/noticias/64148/)
+
+**Status:** provisório (DP-023)
+
+### APR-200 — Pânico contra o funk
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-200                            │
+│  Pânico contra o funk                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava a proibição do baile funk ou se    │
+│  regularizava os bailes.                                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pânico moral transforma uma cultura em ameaça. Sinais: o   │
+│  lazer dos jovens vira caso de polícia, nenhuma prova e     │
+│  pressa para proibir. O samba passou pelo mesmo.            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2017, uma ideia no portal do Senado propôs tornar o funk│
+│  crime de saúde pública. Teve quase 22 mil apoios, mas o    │
+│  texto não citava dados. A comissão não a adotou.           │
+│                                                             │
+│  TÉCNICA: Pânico Moral                                      │
+│                                                             │
+│  FONTE: Portal e-Cidadania, Senado Federal, 2017.           │
+│                                                             │
+│  "Ontem foi o samba. Hoje é o funk."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [e-Cidadania (Senado), 2017](https://www12.senado.leg.br/ecidadania/visualizacaoideia?id=65513)
+
+**Status:** provisório (DP-023)
 
 ---
 
@@ -2906,211 +3485,6 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 ---
 
 ### Rascunho — Modo Geopolítico
-
-#### APR-073 — Compra de Terras por China
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-073                            │
-│  Compra de terras por China                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se limitava ou permitia a compra de terras    │
-│  por chineses.                                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A soberania alimentar é ameaçada pela venda de terras      │
-│  para estrangeiros.                                         │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A terra é um bem estratégico. A venda de terras é uma      │
-│  questão de segurança nacional.                             │
-│                                                             │
-│  FONTE: INCRA, 2024. [não verificado]                       │
-│                                                             │
-│  "A soberania alimentar é ameaçada."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-074 — Ajuda Militar dos EUA
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-074                            │
-│  Ajuda militar dos EUA                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou aceitava a ajuda militar dos   │
-│  EUA.                                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A ajuda militar americana é uma forma de ingerência.       │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A história mostra que a presença militar estrangeira é     │
-│  uma ameaça à soberania.                                    │
-│                                                             │
-│  FONTE: Ministério da Defesa, 2024. [não verificado]        │
-│                                                             │
-│  "A soberania é entregue por migalhas."                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-075 — Adesão à OCDE
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-075                            │
-│  Adesão à OCDE                                              │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou aderia à OCDE.                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A OCDE é o clube dos países ricos. Aderir é se alinhar.    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania é decidir seu próprio caminho.                 │
-│                                                             │
-│  FONTE: OCDE, 2024. [não verificado]                        │
-│                                                             │
-│  "O Brasil se alinha ao Ocidente."                          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-076 — Acesso a Vacinas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-076                            │
-│  Acesso a vacinas                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se liderava ou seguia os EUA no acesso a      │
-│  vacinas.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A saúde é um direito. A OMS busca universalizar o acesso.  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil tem um papel fundamental na luta por vacinas      │
-│  acessíveis.                                                │
-│                                                             │
-│  FONTE: OMS, 2024. [não verificado]                         │
-│                                                             │
-│  "A saúde vira mercadoria."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-077 — Base Militar na Amazônia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-077                            │
-│  Base militar na Amazônia                                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou permitia uma base militar      │
-│  estrangeira na Amazônia.                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A Amazônia é estratégica. Uma base militar estrangeira é   │
-│  uma ameaça à soberania.                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Amazônia é o maior patrimônio do Brasil.                 │
-│                                                             │
-│  FONTE: Ministério da Defesa, 2024. [não verificado]        │
-│                                                             │
-│  "A Amazônia é entregue."                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-078 — Banco do BRICS
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-078                            │
-│  Banco do BRICS                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se sediou ou recusava o Banco do BRICS.       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Banco do BRICS é uma alternativa ao FMI e ao Banco       │
-│  Mundial.                                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania financeira é uma estratégia de desenvolvimento.│
-│                                                             │
-│  FONTE: NDB, 2024. [não verificado]                         │
-│                                                             │
-│  "O banco é criado. O Brasil lidera."                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-079 — Extradição de Cidadão
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-079                            │
-│  Extradição de cidadão                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se resistia ou extraditava um cidadão         │
-│  brasileiro.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A extradição é uma questão de soberania. Ceder é           │
-│  subordinação.                                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A justiça brasileira deve prevalecer.                      │
-│                                                             │
-│  FONTE: STF, 2024. [não verificado]                         │
-│                                                             │
-│  "A justiça brasileira é submetida."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-080 — Recebimento de Refugiados
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-080                            │
-│  Recebimento de refugiados                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recebia ou recusava refugiados.            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Brasil sempre recebeu refugiados. É uma tradição         │
-│  humanitária.                                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania é decidir receber com dignidade.               │
-│                                                             │
-│  FONTE: ACNUR, 2024. [não verificado]                       │
-│                                                             │
-│  "O Brasil fecha as portas."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ---
 
@@ -4668,10 +5042,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 38 | 114 | 200 |
+| **Institucionais** | 55 | 106 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **40** | **114** | **340** |
+| **Total** | **57** | **106** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

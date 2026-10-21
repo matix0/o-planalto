@@ -11,9 +11,9 @@
 | :--- | :--- | :--- | :--- |
 | 1 | P-014 etapa 2 — `/validate-cards` (opção ≤ 25 caracteres, `quem_fala`) | ✅ | `game_data.gd`, `test_data.gd`, `validate-cards.md`; DP-001; 18/18 testes |
 | 2 | P-014 etapa 1 (GDDs e docs) + P-015 Onda 0 | ✅ | `4dc9c8e`, `ded652b`; `/sync-tech` (docs 13 e 13.1); DP-002 a DP-017 |
-| 3 | P-014 etapas 3-5 (código) + ondas de cartas | 🟡 | Etapas 3-5 ✅ (`4177ec1`, `601168b`, etapa 5 neste registro); Ondas 1 e 2 em revisão |
+| 3 | P-014 etapas 3-5 (código) + ondas de cartas | ✅ | Etapas 3-5 ✅ (`4177ec1`, `601168b`, etapa 5 neste registro) |
 | 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | ✅ | Etapas 6 e 7 ✅ (P-014 pronto para o fechamento junto com o P-015) |
-| 5 | Ondas de cartas até o número-alvo (ECO a cada ~40 cartas) | ⏳ | — |
+| 5 | Ondas de cartas até o número-alvo (ECO a cada ~40 cartas) | 🟡 | Ondas 1-4 gravadas (57 de 340 + 5 da cena; DP-021 a DP-024) |
 | 6 | P-015 migração para `jogo/data/` + simulação do ECO com o baralho real | ⏳ | — |
 | 7 | Verificação final e entrega ao PO | ⏳ | — |
 
@@ -25,11 +25,11 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 | :--- | :--- | :--- |
 | 1 | Influenciador INST-182..191 | ✅ gravada (DP-021) |
 | 2 | Geopolítico INST-063..072 | ✅ gravada (DP-022) |
-| 3 | Influenciador INST-192..200 | fontes ✅ (5/5); PSI |
-| 4 | Geopolítico INST-073..080 | fontes ✅ (5/5); PSI |
+| 3 | Influenciador INST-192..200 | ✅ gravada (DP-023) |
+| 4 | Geopolítico INST-073..080 | ✅ gravada (DP-024) |
 | 5 | Congresso INST-007..016 | GD ✅; fontes |
-| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | GD |
-| 7 | Orçamento INST-029..038 | — |
+| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | GD ✅; fontes |
+| 7 | Orçamento INST-029..038 | GD |
 | 8 | Orçamento INST-039..040 + Currículo INST-043..050 | — |
 | 9 | Currículo INST-051..060 | — |
 | 10 | Prisional INST-083..092 | — |
@@ -59,7 +59,7 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 - Descrição curta dos finais (relatório do `/sync-tech`, P-1): `endings.json` não tem o campo e a tela final mostra "[descrição curta do final — a definir]" em toda partida (`jogo/scripts/core/game_flow.gd:28, 459`). Alternativas: A) escrever as 28 com GD e PSI (recomendada pelo agente); B) tirar a descrição da tela e dos docs 14/14A; C) manter o marcador até o P-006. Fora do escopo do P-014; não decidi.
 - D-055 (card-framework) segue aberta (relatório do `/sync-tech`, P-2): A) nova decisão "não adotado" (recomendada); B) manter como recomendação; C) migrar depois.
 - `gdd/GDD.md` §12.2-12.4 ainda com chaves em PT (P-3): A) trocar por ponteiro ao doc 13 (recomendada); B) copiar o esquema EN; C) deixar.
-- Bets proibidas em 2026: a MP 1.394/2026 (setembro) proibiu as bets no Brasil, com recurso no STF (Senado, sumário da MPV 1394). A carta aprovada INST-181 e as INST-193/194 da Onda 3 supõem bets legais. O PSI da Onda 3 propõe o texto; a INST-181 (aprovada antes) fica com o PO.
+- Bets proibidas em 2026: a MP 1.394/2026 (setembro) proibiu as bets no Brasil, com recurso no STF (Senado, sumário da MPV 1394). A carta aprovada INST-181 e as INST-193/194 da Onda 3 supõem bets legais. Provisório (DP-023): as caixas seguem com o fato de 2025 e os APR-193/194 são reconferidos quando a MP for votada ou caducar ou quando o STF decidir (texto pronto em `.claude/notas/execucao/onda-03/psi.md`); a INST-181 (aprovada antes) fica com o PO.
 - Tela Sobre: os textos completos das licenças de terceiros do Godot (`Engine.get_license_info()`, ~77 mil caracteres) não aparecem; a tela lista componentes, licenças e copyrights (DP-019). Decidir se entram (tela, arquivo ao lado do build Web ou link).
 
 ## Registro
@@ -131,3 +131,10 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 ### 2026-10-21 — pausa pelo limite de uso e retomada
 - 01:50: o limite de uso da conta parou o GD da Onda 6 e as fontes da Onda 5 no meio (RP-09); o PSI das Ondas 3-4 não chegou a abrir. As notas incrementais guardaram o progresso. Retomado às 10:55: os dois agentes continuam do ponto em que pararam (SendMessage) e o PSI das Ondas 3-4 começou.
 - Fontes da Onda 3 (9/9, 2 de imprensa) e da Onda 4 (8/8, todas primárias): 5 reabertas em cada, 10/10 conferem. Ajustes de texto para ficar igual à fonte: APR-192 (a norma revogada era a das transferências do Pix) e APR-074 ("anunciaram a intenção de", como a fonte).
+
+### 2026-10-21 — Ondas 3 e 4 gravadas nos docs 17 e 18
+- PSI das Ondas 3 e 4: 6 aprovar, 11 ajustar, 0 reprovar (`.claude/notas/execucao/onda-03/psi.md`, `onda-04/psi.md`). Ajustes aplicados com os textos exatos do PSI; pontos que ficavam com o PO decididos de forma provisória (DP-023, DP-024). Os mais sensíveis: INST-193 no masculino (RC-08), INST-195 e INST-200 com "É falso", INST-073 sem a China (muda o tema do doc 12), INST-080 com a cor B Laranja.
+- QA: APR-197 com a base "de 16 anos ou mais"; INST-080 A "Propor a suspensão" (a suspensão no Mercosul exige consenso, Protocolo de Ushuaia, art. 6); evento extra na INST-196 B (eventos do baralho em 16%).
+- Gravação com `cards_doc.py insert`: doc 17 com 57 de 340 + 5 da cena; rascunhos APR-073..080 retirados da §18.14; `cards_doc.py check` com 0 erros (avisos de estilo só em cartas aprovadas antes: INST-062, INST-082, ATOR-001).
+- Para as próximas cartas do `ACT-021` (proposta do GD da Onda 4): "comprar terras" e "base militar" já viraram INST-073, 074 e 077; a exigência e o ataque do ator usam outros temas.
+- Pendente para o PO: a lista de cartas planejadas do doc 12 (MOD-010 e Geopolítico) não bate mais com as cartas escritas; regravar a lista quando o PO aprovar as ondas.
