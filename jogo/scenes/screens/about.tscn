@@ -94,25 +94,10 @@ theme_type_variation = &"TitleS"
 text = "Licenças dos assets"
 autowrap_mode = 3
 
-[node name="AssetsText" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
+[node name="AssetsList" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections/Assets"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_type_variation = &"Body"
-text = "Kenney (CC0) e outros"
-autowrap_mode = 3
-
-[node name="IconsText" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_type_variation = &"Body"
-autowrap_mode = 3
-
-[node name="AssetsTodo" type="Label" parent="SafeArea/Column/Scroll/Sections/Assets"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_type_variation = &"Muted"
-text = "[lista de assets e licenças — a definir]"
-autowrap_mode = 3
+theme_override_constants/separation = 8
 
 [node name="Fonts" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections"]
 layout_mode = 2
@@ -146,12 +131,16 @@ theme_type_variation = &"TitleS"
 text = "Godot Engine"
 autowrap_mode = 3
 
-[node name="GodotTodo" type="Label" parent="SafeArea/Column/Scroll/Sections/Engine"]
+[node name="GodotText" type="Label" parent="SafeArea/Column/Scroll/Sections/Engine"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_type_variation = &"Muted"
-text = "[aviso de licença do Godot (MIT) — a definir]"
+theme_type_variation = &"Body"
 autowrap_mode = 3
+
+[node name="GodotBox" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections/Engine"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 8
 
 [node name="BottomPad" type="Control" parent="SafeArea/Column/Scroll/Sections"]
 custom_minimum_size = Vector2(0, 24)

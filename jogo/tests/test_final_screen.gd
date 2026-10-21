@@ -10,7 +10,7 @@ extends SceneTree
 ## (D-171), focus and keyboard scroll, "Compartilhar" toast, and "Jogar novamente" starts a
 ## new run (tutorial the 1st time, calibration after).
 ## Saves and settings go to temporary files. Classes that use autoloads (AppMain, AppScreen,
-## components) are not typed here: see .claude/notas/p005/shell.md.
+## components) are not typed here: a script run with -s cannot name them.
 
 const MAIN_SCENE := "res://scenes/main.tscn"
 const TEST_SETTINGS := "user://test_final_settings.cfg"

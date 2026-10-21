@@ -491,7 +491,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 ## Keyboard / gamepad users get the focus (and its ring) on the card; touch and mouse users
 ## do not, so the card rests without the ring (T-06.1). SwipeCard draws its own ring from
-## has_focus(), which does not see a hidden focus (4.7) — see .claude/notas/p005/lote-d.md.
+## has_focus(true), which does not see a hidden focus (4.7; swipe_card.gd `_update_focus_ring`).
 func _focus_card() -> void:
 	var a := app()
 	if a and a.keyboard_navigation():

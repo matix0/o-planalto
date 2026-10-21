@@ -1,7 +1,7 @@
 extends SceneTree
 ## gdd/sistemas/10_estado_partida.md §3.5 and §5 through the SaveManager and Game autoloads:
 ## automatic save, one saved run deleted on FINAL or abandon, unreadable / old-format save,
-## write failure warned once per run (CA-08..CA-12). Uses its own save file.
+## write failure warned once per run (CA-08..CA-12), atomic write (V-008). Uses its own save file.
 ## godot --headless --path jogo -s res://tests/test_core_save.gd
 
 var failures: PackedStringArray = []
@@ -22,6 +22,7 @@ func _initialize() -> void:
 	game.toast_requested.connect(func(kind): toasts.append(kind))
 	game.state_changed.connect(func(s): states.append(s))
 	_save_manager()
+	_atomic_write()
 	_automatic_save()
 	_finish_deletes_save()
 	_new_run_and_abandon()
@@ -40,6 +41,29 @@ func _save_manager() -> void:
 	_eq(saves.load_run()["x"], 1.0, "load_run reads it back")
 	saves.delete()
 	_check(not saves.has_save(), "delete")
+
+
+## V-008: the run is written to `<path>.tmp`, which then replaces the save. A crash while
+## writing leaves the previous save; a crash between remove and rename leaves only the .tmp.
+func _atomic_write() -> void:
+	var tmp: String = path + ".tmp"
+	_check(saves.save_run({"format_version": RunState.FORMAT_VERSION, "x": 1}), "first save")
+	_check(not FileAccess.file_exists(tmp), "no .tmp left after a save")
+	_check(saves.save_run({"format_version": RunState.FORMAT_VERSION, "x": 2}), "save over an old one")
+	_eq(saves.load_run()["x"], 2.0, "the new save replaced the old one")
+	# Crash in the middle of a write: half a .tmp next to the good save.
+	var f := FileAccess.open(tmp, FileAccess.WRITE)
+	f.store_string("{ \"format_version\": ")
+	f.close()
+	_eq(saves.load_run()["x"], 2.0, "a broken .tmp does not hide the last good save")
+	_check(saves.save_run({"format_version": RunState.FORMAT_VERSION, "x": 3}), "save after a crash")
+	_eq(saves.load_run()["x"], 3.0, "the next save works")
+	# Crash between the remove and the rename of the fallback: only the .tmp is there.
+	DirAccess.rename_absolute(path, tmp)
+	_check(saves.has_save(), "a lone .tmp counts as a save")
+	_eq(saves.load_run()["x"], 3.0, "a lone .tmp is read")
+	saves.delete()
+	_check(not FileAccess.file_exists(path) and not FileAccess.file_exists(tmp), "delete removes both")
 
 
 func _automatic_save() -> void:

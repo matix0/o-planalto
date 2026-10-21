@@ -8,7 +8,7 @@ extends Control
 ## - Screens: stack with fade transitions (A-22, A-27: 300 ms; Reduzir movimento: igual).
 ## - Overlays: toast (C-21), confirmation (C-14), pause menu (T-11).
 ## - Esc: modal → pause → screen → opens the pause only if the screen did not use it (D-167).
-## Screen API for wave 2: .claude/notas/p005/shell.md.
+## Screen API: AppScreen (scripts/ui/app_screen.gd).
 
 signal screen_changed(screen_id: StringName)
 ## The pause menu opened (true) or closed (false) — e.g. SwipeCard.cancel_gesture().

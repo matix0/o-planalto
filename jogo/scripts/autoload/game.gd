@@ -1,6 +1,6 @@
 extends Node
-## The only game API the screens use (P-005 contract; full reference in
-## .claude/notas/p005/api.md). Wraps GameFlow (pure rules) and saves the run after every
+## The only game API the screens use (P-005 contract; the public methods below are the
+## reference). Wraps GameFlow (pure rules) and saves the run after every
 ## transition and every resolved card (gdd/sistemas/10_estado_partida.md §3.5).
 ##
 ## Sides are -1 / +1 (never "esquerda/direita", D-084). Views are plain dictionaries;

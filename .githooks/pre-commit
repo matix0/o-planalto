@@ -1,0 +1,39 @@
+#!/bin/sh
+# D-189: o MCP do Godot roda só numa cópia isolada do projeto. Quando roda em jogo/, ele
+# injeta o autoload mcp_interaction_server no project.godot. Este hook barra o commit se o
+# autoload ou o script dele chegarem ao jogo/.
+#
+# Ativar uma vez por clone:  git config core.hooksPath .githooks
+# Com --worktree, confere também os arquivos ainda não adicionados (hook do Claude Code,
+# .claude/hooks/pre-commit-mcp.sh, que roda antes de um "git add ... && git commit").
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root" || exit 1
+pattern='mcp_interaction_server'
+found=0
+
+if git show :jogo/project.godot 2>/dev/null | grep -n "$pattern" >&2; then
+	echo "pre-commit (D-189): jogo/project.godot no commit tem o autoload do MCP ($pattern)." >&2
+	found=1
+fi
+staged=$(git diff --cached --name-only --diff-filter=ACMR | grep -i "$pattern")
+if [ -n "$staged" ]; then
+	echo "pre-commit (D-189): arquivo do MCP no commit: $staged" >&2
+	found=1
+fi
+if [ "$1" = "--worktree" ]; then
+	if grep -n "$pattern" jogo/project.godot >&2; then
+		echo "pre-commit (D-189): jogo/project.godot na pasta tem o autoload do MCP; rode o MCP só numa cópia." >&2
+		found=1
+	fi
+	loose=$( (git diff --name-only; git ls-files --others --exclude-standard) | grep -i "$pattern")
+	if [ -n "$loose" ]; then
+		echo "pre-commit (D-189): arquivo do MCP na pasta: $loose" >&2
+		found=1
+	fi
+fi
+
+if [ "$found" -ne 0 ]; then
+	echo "Desfaça com: git checkout -- jogo/project.godot (e apague o script do MCP). Veja docs/13_ARQUITETURA_TECNICA.md, regra de isolamento do MCP." >&2
+	exit 1
+fi
+exit 0

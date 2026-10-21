@@ -1,6 +1,6 @@
 class_name AppScreen
 extends Control
-## Base for every screen shown by Main (P-005 shell; see .claude/notas/p005/shell.md).
+## Base for every screen shown by Main (P-005 shell).
 ## A screen is a full-rect Control inside the centered column (≤ 430, D-171).
 ## It applies the safe area itself (Viewport board: "SafeArea, MarginContainer
 ## na raiz de cada tela"), so a sheet can still reach the bottom edge.

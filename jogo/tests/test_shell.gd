@@ -344,21 +344,42 @@ func _about_checks() -> void:
 	_expect(_main.current_id() == &"about", "title → about")
 	var ab: Node = _main.current_screen()
 	var texts := _texts(ab)
-	for t in ["Idealização", "Mateus", "Professor Alisson", "Godot 4.7", "Kenney (CC0) e outros", "Poppins e Inter — Google Fonts, licença OFL"]:
+	for t in ["Idealização", "Mateus", "Professor Alisson", "Godot 4.7", "Poppins e Inter — Google Fonts, licença OFL"]:
 		_expect(texts.has(t), "about shows '%s'" % t)
 	_expect(texts.has("Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)"), "Inter OFL notice")
 	_expect(texts.has("Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)"), "Poppins OFL notice")
+	# D-188: the real asset list (every file of assets/ in a group, no Kenney) and the Godot notice.
+	var groups: Array = ab.ASSETS
+	for g: Dictionary in groups:
+		_expect(texts.has(g["text"]), "about lists '%s'" % g["text"])
+	for f in ab.asset_files():
+		_expect(ab.asset_group(f) >= 0, "asset %s is in the about list" % f)
+	_expect(ab.asset_files().size() >= 20, "asset_files sees the assets")
+	for t in texts:
+		_expect(not t.contains("Kenney") and not t.contains("a definir"), "about without '%s'" % t.left(40))
 	var folds: Array = ab.folds()
-	_expect(folds.size() == 2 and folds[0].folded, "OFL texts folded")
+	_expect(folds.size() == 4 and folds.all(func(f): return f.folded), "OFL and Godot texts folded")
+	var third_party: String = ab.third_party_text()
+	_expect(third_party.contains("The FreeType Project — FTL") and third_party.contains("Mbed TLS — Apache-2.0"), "third-party components listed")
+	folds[2].folded = false
+	folds[3].folded = false
+	await _frames(2)
+	var open_texts := _texts(ab)
+	_expect(open_texts.has(Engine.get_license_text().strip_edges()), "Godot MIT notice (Engine.get_license_text)")
+	_expect(open_texts.has(third_party), "third-party list shown when unfolded")
+	folds[2].folded = true
+	folds[3].folded = true
 	var close := ab.find_child("CloseButton", true, false) as Button
 	_expect(_focus() == close, "T-13: focus on close")
 	_check_tree(ab, "about")
 	# Larger text and an open license still fit the column (no horizontal overflow).
 	_settings.set_value(&"text_step", 24)
 	folds[0].folded = false
+	folds[2].folded = false
 	await _frames(3)
 	_check_tree(ab, "about 24 px")
 	folds[0].folded = true
+	folds[2].folded = true
 	_settings.set_value(&"text_step", 18)
 	await _frames(2)
 	close.pressed.emit()
