@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-20
+**Última atualização:** 2026-10-21
 **Fase atual:** Protótipo validado (P-005); correções e cartas planejadas (P-014, P-015)
 **Próxima fase:** P-014 (correções) e P-015 (cartas reais), em paralelo
 
@@ -160,6 +160,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 ---
 
 ## Próximo Passo
+
+**Jogo jogável no navegador (2026-10-21):** https://matix0.github.io/o-planalto/jogar/ — baralho real com 57 cartas + 5 da cena (D-194), exportado pelo workflow do site (D-195). As cartas crescem com as ondas do P-015; a conferência das fontes ficou no P-016.
 
 **Protótipo validado (P-005, 2026-10-20).** Decisões D-174 a D-190. O membro executa os dois processos com um só prompt, `gestao/prompts/execucao-p014-p015.md` (branch `claude/p014-p015`); escolhas no meio ficam provisórias (`gestao/decisoes-provisorias.md`) e o PO valida tudo no fim pelo PR e por `gestao/entrega-p014-p015.md`. Especificações:
 - **P-014 Correções** — `gestao/prompts/correcoes-p014.md`, branch `claude/p014-correcoes`.
