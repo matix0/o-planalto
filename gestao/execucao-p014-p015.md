@@ -12,7 +12,7 @@
 | 1 | P-014 etapa 2 — `/validate-cards` (opção ≤ 25 caracteres, `quem_fala`) | ✅ | `game_data.gd`, `test_data.gd`, `validate-cards.md`; DP-001; 18/18 testes |
 | 2 | P-014 etapa 1 (GDDs e docs) + P-015 Onda 0 | ✅ | `4dc9c8e`, `ded652b`; `/sync-tech` (docs 13 e 13.1); DP-002 a DP-017 |
 | 3 | P-014 etapas 3-5 (código) + ondas de cartas | 🟡 | Etapas 3-5 ✅ (`4177ec1`, `601168b`, etapa 5 neste registro); Ondas 1 e 2 em revisão |
-| 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | ⏳ | — |
+| 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | 🟡 | Etapa 6 ✅; etapa 7 em andamento |
 | 5 | Ondas de cartas até o número-alvo (ECO a cada ~40 cartas) | ⏳ | — |
 | 6 | P-015 migração para `jogo/data/` + simulação do ECO com o baralho real | ⏳ | — |
 | 7 | Verificação final e entrega ao PO | ⏳ | — |
@@ -73,3 +73,9 @@
   - V-046: comentários sem `.claude/notas/p005/*` (`main.gd`, `app_screen.gd`, `game_screen.gd`, `game.gd`, `test_final_screen.gd`).
   - `run_all.sh` 18/18 OK numa cópia com `XDG_DATA_HOME` próprio.
 - Ondas 1 (Influenciador, INST-182..191) e 2 (Geopolítico, INST-063..072): rascunhos do GD prontos em `.claude/notas/execucao/onda-01/` e `onda-02/`, `cards_doc.py check` com 0 erros. Conferidas 5 citações da Onda 2 (`docs/12:226, 247, 255`, `docs/03:436`, `docs/11:484`): 5/5 ✅. Próximo: fontes na web e PSI.
+
+### 2026-10-20 — P-014 etapa 6 (testes) e começo da etapa 7
+- Testes novos: `test_table_endings.gd` (28 finais: dados = tabela do doc 04 §04.08 e do GDD 02; fronteira de cada condição; cada final vence no próprio limite, inclusive END-015 sobre END-012 pela D-174; D-180) e `test_table_balance.gd` (relações, limiares, bônus, dobro, multiplicadores, emergência, carta ligada, aviso de Captura, níveis dos atores, revelação; 3.000 estados sem marcador, D-175). `test_e2e.gd` calcula o final esperado jogando a mesma política só pelo `GameFlow` (V-033). `test_ui_kit.gd`: rótulo do arraste dentro da tela e da parte visível de 16 a 36 px, nos limites 25% e 40% (D-177). `test_game_screen.gd`: retomada num aviso de evento e na calibração pelo "Continuar" do título; medidor em 0 pela interface até a tela final. D-179 e D-182 já tinham teste (`test_core_impeachment.gd`).
+- Mutação de 1 unidade em cada número de `endings.json` e `balance.json` (script no scratchpad, `qa/mutate.py`, testes rápidos): antes, 5/115 e 36/79 mortas; agora, 115/115 e 79/79 (100%). Só com os testes de comportamento (sem conferir dados = tabela): 102/115 e 77/79; as 15 que sobram não mudam o jogo (o "= 0" das 7 Catástrofes, que vem do `meters.json`; os 6 valores de Captura, que o carregador troca pelo do `balance.json`; o máximo 100 do nível Aliado).
+- Simulação headless de 2.116 partidas pelo `GameFlow` (23 perfis: aleatório, sempre A, sempre B, cuidadoso, afundar o Capital, populista, populista com piso, máximo e mínimo de cada medidor; script no scratchpad, `sim/sim.gd`): medidores sempre em 0-100; mesma semente → mesma partida; salvar → JSON → restaurar no meio dá o mesmo resultado; 8.202 eventos, todos no ano-alvo; nenhuma partida travada. Com o baralho fictício, 83% terminam em Catástrofe, 16% em Impeachment e 1% no fim do mandato (RT-10). **END-015 não aparece** com o baralho fictício: quase nenhuma partida chega ao fim do Ano 4; a D-174 está provada no teste de tabela (END-015 vence no próprio limite). Refazer com o baralho real (P-015, fase 6). Marcadores na tela final: nenhum "[a definir" na revelação (D-175 ✅); a descrição curta do final mostra "[descrição curta do final — a definir]" em todas as partidas (pendência P-1 acima); os epílogos mostram "[Fictício]" (dados fictícios).
+- `run_all.sh` 20/20 OK.

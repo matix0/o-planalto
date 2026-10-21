@@ -364,8 +364,8 @@
 | 3 | Regras do jogo (D-174, D-175, D-179, D-182, V-015, V-035) | ✅ | `4177ec1`, `601168b` (D-175); DP-009 |
 | 4 | Interface (D-177, D-183, D-184, D-185, D-186, V-022, V-024, V-026) | ✅ | `601168b`; DP-010 |
 | 5 | Técnico (save atômico, Sobre/licenças, preset Web, pre-commit do MCP) | ✅ | `save_manager.gd` + `test_core_save.gd`; `about_screen.gd`; `export_presets.cfg` (Web testado no Chromium); `.githooks/pre-commit` + hook do Claude Code; DP-018, DP-019 |
-| 6 | Testes (finais e relações por tabela, `test_e2e`, decisões novas) | ⏳ | — |
-| 7 | Verificação ponta a ponta (testes, roteiros, simulação, capturas) | ⏳ | — |
+| 6 | Testes (finais e relações por tabela, `test_e2e`, decisões novas) | ✅ | `test_table_endings.gd`, `test_table_balance.gd`, `test_e2e.gd` (V-033), `test_ui_kit.gd` (D-177), `test_game_screen.gd`; mutação: 100% nos dois arquivos |
+| 7 | Verificação ponta a ponta (testes, roteiros, simulação, capturas) | 🟡 | `run_all.sh` 20/20; simulação de 2.116 partidas; Web no Chromium; capturas em andamento |
 | 8 | `/fechar-plano` e PR | ⏳ | — |
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
