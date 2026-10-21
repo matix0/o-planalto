@@ -200,6 +200,9 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-188 | Tela Sobre mostra o aviso de licença do Godot por `Engine.get_license_text()` e a lista real de assets; o 1º preset de exportação é só Web | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
 | D-189 | MCP do Godot roda só numa cópia isolada do projeto, com checagem no pre-commit que barra o autoload `mcp_interaction_server` no `project.godot` (revisa D-133) | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
 | D-190 | Avisos de conteúdo: unificar `gdd/GDD.md` §14.3 e `docs/16` §16.13 (lista do PO, revisão do PSI); citações de políticos vivos esperam o parecer jurídico (RC-08); paráfrases conferidas no original | 2026-10-20 | Escolha do PO (validação ponta a ponta, `gestao/validacao-2026-10-20.md`) |
+| D-191 | Obras de Lula, Brizola, Freire, Darcy Ribeiro e Josué de Castro não estão em domínio público: só citação curta com crédito (Lei 9.610/1998, art. 46, III); corrige `docs/08` §08.06.1 | 2026-10-21 | Escolha do PO (cruzamento com a branch `claude/eloquent-einstein-gez6rk`); entra no parecer jurídico (RC-08) |
+| D-192 | "Relator admitiu que as pedaladas não eram crime" (`docs/03` §03.03) marcado `[não verificado]` até ter fonte (aplica D-091) | 2026-10-21 | Escolha do PO (cruzamento com a branch `claude/eloquent-einstein-gez6rk`) |
+| D-193 | A branch `claude/eloquent-einstein-gez6rk` não entra no `main` (contradiz D-090, D-091, D-094, D-104, D-105, D-109); suas 342 cartas ficam como rascunho em `gestao/rascunhos/` para as ondas do P-015 | 2026-10-21 | Escolha do PO |
 
 ---
 
@@ -363,6 +366,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-040 | GitHub Pages |
 | D-047 | Testes com 3-5 pessoas |
 | D-048 | Validação com educador |
+| D-191 | Citações protegidas por direito autoral |
+| D-193 | Rascunho das 342 cartas fora do baralho |
 
 ### Governança
 
@@ -385,6 +390,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-078 | Docs truncados com aviso |
 | D-079 | Guardrails do site |
 | D-081 | GDD mestre em `gdd/` |
+| D-192 | Relator e pedaladas `[não verificado]` |
 
 ---
 

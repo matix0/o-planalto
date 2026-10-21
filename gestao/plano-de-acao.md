@@ -396,6 +396,8 @@
 
 **Regra de execução:** nenhuma suposição — toda dúvida vai ao PO antes de gravar.
 
+**Material de apoio:** `gestao/rascunhos/roteiro-cartas-342-eloquent.md` (342 cartas no formato antigo, dados `[não verificado]`, fora do baralho; D-193).
+
 ---
 
 ## Legenda de Status

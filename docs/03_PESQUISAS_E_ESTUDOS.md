@@ -99,7 +99,7 @@ O impeachment de Dilma Rousseff em 2016 não foi um processo jurídico, mas um *
 
 ### 2. A Fragilidade Jurídica
 
-A acusação formal baseava-se nas chamadas **"pedaladas fiscais"** — atrasos em repasses a bancos públicos. O relator do processo no Senado, Antonio Anastasia, admitiu que as pedaladas **não configuravam crime de responsabilidade**. A contradição central do julgamento foi que Dilma **perdeu o mandato, mas manteve seus direitos políticos** — algo juridicamente incoerente.
+A acusação formal baseava-se nas chamadas **"pedaladas fiscais"** — atrasos em repasses a bancos públicos. O relator do processo no Senado, Antonio Anastasia, admitiu que as pedaladas **não configuravam crime de responsabilidade** `[não verificado]` (D-192). A contradição central do julgamento foi que Dilma **perdeu o mandato, mas manteve seus direitos políticos** — algo juridicamente incoerente.
 
 ### 3. A Contradição Adicional: O Crime Foi Legalizado
 

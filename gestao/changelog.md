@@ -10,6 +10,8 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Adicionado
+- Rascunho com as 342 cartas da branch `claude/eloquent-einstein-gez6rk` em `gestao/rascunhos/` para as ondas do P-015, fora do baralho (D-193)
+- Decisões D-191 a D-193
 - Validação ponta a ponta do protótipo (`gestao/validacao-2026-10-20.md`; prompt `gestao/prompts/validacao-ponta-a-ponta.md`): 18/18 testes, 13 roteiros pela interface, 2.880 partidas simuladas, 50 achados
 - Decisões D-174 a D-190 (finais, revelação dos medidores, opção até 25 caracteres, impeachment, telas, licenças, MCP, avisos de conteúdo)
 - Planos P-014 (correções, `gestao/prompts/correcoes-p014.md`) e P-015 (cartas reais e migração); P-005 concluído
@@ -57,6 +59,8 @@ Versionamento: [SemVer](https://semver.org/).
 - `/validate-cards`: regras de cor por opção, APR e saldo por cor
 
 ### Corrigido
+- `docs/08` §08.06.1: obras de Lula, Brizola, Freire, Darcy Ribeiro e Josué de Castro não estão em domínio público (D-191)
+- `docs/03` §03.03: afirmação sobre o relator e as pedaladas marcada `[não verificado]` (D-192)
 - Doc 12: relatores do impeachment de 2016 e "52 mensagens" (P-011)
 - GDD mestre: trechos desatualizados apontados pelo `/revisar-gdds`
 - Alucinações dos docs 14-18 (P-010): fatos errados (Anastasia, expectativa de vida, Marco Temporal, salário mínimo, juros, mortes por polícia, Master), consequências trocadas/duplicadas, limiares removidos (D-082)
