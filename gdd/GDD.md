@@ -763,12 +763,18 @@ Não há limiares de proteção por ano (D-082). A suavização da dificuldade v
 
 ### 14.3. Avisos de Conteúdo
 
-| Aviso | Onde |
-| :--- | :--- |
-| Genocídio | Tela inicial |
-| Tortura | Tela inicial |
-| Violência policial | Tela inicial |
-| Linguagem direta | Tela inicial |
+Fonte única da lista (D-190): a tela inicial (`jogo/scripts/ui/components/content_warnings.gd`) e o manual (`docs/16_MANUAL_DO_JOGADOR.md` §16.13) repetem esta tabela. Lista provisória (DP-008), proposta do PSI. O PSI revisa a lista no fim de cada onda de cartas do P-015.
+
+| Aviso | Conteúdo que o exige | Onde |
+| :--- | :--- | :--- |
+| Violência policial | Cartas do modo Prisional e Policial (`docs/17_ROTEIRO_DAS_CARTAS.md` §17.06) | Tela inicial, manual |
+| Racismo | Final #17 Exploração Necropolítica (citação contra os povos indígenas, §3.5); Aprendizados sobre racismo estrutural (`docs/18_ROTEIRO_DAS_CARTAS_DE_APRENDIZADO.md`, rascunhos da §18.14) | Tela inicial, manual |
+| Genocídio | Finais de Extermínio e Exploração (`gdd/sistemas/02_finais.md` §3.1) | Tela inicial, manual |
+| Ditadura e tortura | Finais de Perda da Democracia e Captura; Aprendizados sobre a ditadura militar | Tela inicial, manual |
+| Nazifascismo | Finais que citam lemas nazistas e fascistas para criticá-los (`gdd/sistemas/02_finais.md` §3.5) | Tela inicial, manual |
+| Políticos reais | Citações e nomes reais (D-083); citações de políticos vivos esperam o parecer jurídico (RC-08) | Tela inicial, manual |
+
+Frase de apoio, sob as etiquetas: "O jogo fala de fome e morte sem eufemismo." Se o baralho real usar palavrão (`docs/10_GUIA_DE_ESTILO_E_TOM.md`), acrescentar "Às vezes, com palavrão."
 
 ---
 

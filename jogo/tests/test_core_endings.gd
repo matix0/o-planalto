@@ -34,6 +34,15 @@ func _end_of_term() -> void:
 	var both := _meters({"dignity": 85, "sovereignty": 85, "treasury": 75, "integrity": 65})
 	_check(EndingRules.meets(e["END-025"], both) and EndingRules.meets(e["END-021"], both), "CA-5 setup meets both")
 	_eq(EndingRules.end_of_term(e, both), "END-025", "CA-5 more conditions win")
+	# D-174 / CA-9: Legitimidade 85, Consciência 20, Integridade 20 meet #11 (END-012) and #14
+	# (END-015), same weight; #14 implies #11 → #14 Populismo Autoritário.
+	var populism := _meters({"legitimacy": 85, "awareness": 20, "integrity": 20})
+	_check(EndingRules.meets(e["END-012"], populism) and EndingRules.meets(e["END-015"], populism), "CA-9 setup meets #11 and #14")
+	_eq(EndingRules.end_of_term(e, populism), "END-015", "D-174 the more specific ending wins")
+	_check(EndingRules.implies(e["END-015"], e["END-012"]) and not EndingRules.implies(e["END-012"], e["END-015"]), "implies is one-way")
+	_check(not EndingRules.implies(e["END-012"], e["END-012"]), "identical lists imply nothing")
+	# Legitimidade 75 meets only #11.
+	_eq(EndingRules.end_of_term(e, _meters({"legitimacy": 75, "awareness": 20, "integrity": 20})), "END-012", "#11 when #14 does not apply")
 	# CA-6: Segurança 96, no extermination / democracy loss → Estado Policial (END-009).
 	_eq(EndingRules.end_of_term(e, _meters({"security": 96})), "END-009", "CA-6 capture")
 	# §5: capture beats a good ending.

@@ -268,6 +268,21 @@ func _validate_endings() -> void:
 		for c in e.get("conditions", []):
 			if c.get("meter") not in meter_ids or c.get("op") not in CONDITION_OPS:
 				errors.append("ending %s: invalid condition" % e.get("id"))
+	_apply_capture_limit()
+
+
+## V-035: the Capture limit lives in balance.json (`capture_at_or_above`, gdd/sistemas/02_finais.md
+## §7); the "≥" condition of every Capture ending reads it, whatever endings.json says.
+func _apply_capture_limit() -> void:
+	if not balance.has("capture_at_or_above"):
+		return
+	var limit := int(balance["capture_at_or_above"])
+	for e in endings.values():
+		if e.get("category") != "capture":
+			continue
+		for c in e.get("conditions", []):
+			if c.get("op") == ">=":
+				c["value"] = limit
 
 
 ## docs/15 §15.04: 6 questions, each answer ±5 on 1-2 meters (gdd 01 §3.2) and an axis vector.
@@ -298,15 +313,27 @@ func _validate_calibration() -> void:
 ## Every learning card has the 5 blocks of doc 18 §18.01.2; a source has a label (url may be
 ## empty for fictitious data, D-091). A card whose learning card is missing stays out of the
 ## draw (gdd/sistemas/06_sorteio.md §3.1) — reported here.
+## Doc 18 blocks + a verified source (D-091): label and an http(s) link. A Learning Card that
+## fails leaves the data, so its card leaves the draw (D-102, V-015). Placeholders of the
+## prototype (`"fictitious": true`, D-139) need only the label.
 func _validate_learning() -> void:
-	for id in learning:
+	for id in learning.keys():
 		var l: Dictionary = learning[id]
+		var problems: PackedStringArray = []
 		for key in ["lived", "concept", "data", "impact"]:
 			if String(l.get(key, "")).is_empty():
-				errors.append("learning %s: missing %s" % [id, key])
+				problems.append("missing " + key)
 		var source = l.get("source", {})
 		if typeof(source) != TYPE_DICTIONARY or String(source.get("label", "")).is_empty():
-			errors.append("learning %s: source needs a label" % id)
+			problems.append("source needs a label")
+		elif not bool(l.get("fictitious", false)):
+			var url := String(source.get("url", ""))
+			if not (url.begins_with("https://") or url.begins_with("http://")):
+				problems.append("source needs a verified link (D-091)")
+		for p in problems:
+			errors.append("learning %s: %s" % [id, p])
+		if not problems.is_empty():
+			learning.erase(id)
 	for id in cards:
 		if not learning.has(String(cards[id].get("learning_id", ""))):
 			errors.append("%s: learning card %s not found (card out of the draw)" % [id, cards[id].get("learning_id", "")])

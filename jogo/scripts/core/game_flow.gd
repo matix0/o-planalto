@@ -473,7 +473,7 @@ func final_view() -> Dictionary:
 			"text": AxisRules.text_for(dom, float(governed[dom])),
 		},
 		"meters": hud(),
-		"reveal_text": AxisRules.meter_reveal(run.meters),
+		"reveal_text": AxisRules.meter_reveal(run.meters, balance),
 		"closing_phrase": AxisRules.CLOSING_PHRASE,
 	}
 
@@ -495,6 +495,8 @@ func hud() -> Array:
 func _begin_year(y: int) -> void:
 	run.year = y
 	run.state = &"year_intro"
+	if y == 2:
+		run.capital_streak = 0   # D-179: options of Year 1 do not count for the alternative trigger
 	run.turn_cards = []
 	run.turn_mandatory = []
 	run.turn_events = []
@@ -677,6 +679,13 @@ func _schedule_pending() -> void:
 ## Game when it sees FINAL (gdd 10 §3.5).
 func _finish(ending_id: String, reason: String, meter: String) -> void:
 	EventRules.flush_to_epilogue(run)
+	if reason == "impeachment":
+		# D-182: a conviction opened by Capital at 0 on a card — that option's events were held
+		# for the acquittal (gdd 05 §5); they go to the epilogue, without effect.
+		for ev in run.last_result.get("pending_events", []):
+			run.epilogue.append(String(ev.get("text", "")))
+		if run.last_result.has("pending_events"):
+			run.last_result["pending_events"] = []
 	run.ending = {"id": ending_id, "reason": reason, "meter": meter}
 	run.state = &"final"
 	run.readonly = false

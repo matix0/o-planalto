@@ -50,6 +50,32 @@ func _initialize() -> void:
 	_expect(failures, data.validate_card(legacy).is_empty(), "quem_fala key accepted (doc 17 name)")
 	_expect(failures, data.cards.values().all(func(c): return String(c.get("speaker", "")) != ""), "every card names who speaks")
 
+	# V-035: the Capture limit comes from balance.json.
+	_expect(failures, data.endings["END-009"]["conditions"][0]["value"] == int(data.balance["capture_at_or_above"]), "capture ending reads capture_at_or_above")
+	var low_capture = load("res://scripts/game_data.gd").new()
+	low_capture.balance = {"capture_at_or_above": 90}
+	low_capture.endings = {"E": {"id": "E", "category": "capture", "trigger": "end_of_term", "conditions": [{"meter": "security", "op": ">=", "value": 95}]}}
+	low_capture._apply_capture_limit()
+	_expect(failures, low_capture.endings["E"]["conditions"][0]["value"] == 90, "capture limit follows balance.json")
+	low_capture.free()
+	# V-015 / D-091: a Learning Card without a verified link leaves the data → its card leaves the draw.
+	var strict = load("res://scripts/game_data.gd").new()
+	strict.load_all()
+	var real: Dictionary = strict.learning["APR-001"].duplicate(true)
+	real.erase("fictitious")
+	strict.learning = {"APR-001": real}
+	strict.cards = {"INST-001": strict.cards["INST-001"]}
+	strict.errors.clear()
+	strict._validate_learning()
+	_expect(failures, not strict.learning.has("APR-001"), "real learning without a link is dropped (V-015)")
+	_expect(failures, Array(strict.errors).any(func(e: String) -> bool: return e.contains("verified link")), "error names the missing link")
+	var linked: Dictionary = real.duplicate(true)
+	linked["source"] = {"label": "IBGE", "url": "https://www.ibge.gov.br/"}
+	strict.learning = {"APR-001": linked}
+	strict._validate_learning()
+	_expect(failures, strict.learning.has("APR-001"), "real learning with a link stays")
+	strict.free()
+
 	# Lote A data (P-005): calibration (docs/15 §15.04), Learning Cards (doc 18 blocks,
 	# fictitious), the 5 impeachment scene cards (gdd/sistemas/03_impeachment.md §4.1).
 	_expect(failures, data.calibration.size() == 6, "6 calibration questions")

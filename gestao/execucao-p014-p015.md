@@ -19,7 +19,13 @@
 
 ## Bloqueios para o PO
 
-Nenhum até agora.
+| # | Bloqueio | Por que não decidi | Onde |
+| :--- | :--- | :--- | :--- |
+| B-1 | `site/src/content/docs/sobre.md:20` diz que o jogo não usa políticos reais (D-005), contra a D-083 | Depende do parecer jurídico (RC-08) e de publicar o site, que fica com o PO | Achado do PSI (D-190) |
+
+## Pendências para o PO (não bloqueiam)
+
+- Classificação etária: `docs/16_MANUAL_DO_JOGADOR.md` §16.13 diz "Livre (recomendado para maiores de 12 anos)", que se contradiz; o PSI sugere 14+ e lembra que a classificação oficial vem do IARC.
 
 ## Registro
 
@@ -36,3 +42,9 @@ Nenhum até agora.
 - `.claude/commands/validate-cards.md`: fonte `jogo/data/*.json` e as duas regras novas.
 - A Onda 1 do P-015 está destravada.
 - Próximo passo: fase 2 (GDDs e docs + Onda 0).
+
+### 2026-10-20 — fase 2 (em andamento) e começo da fase 3
+- P-014 etapa 1: GDDs 01, 02, 03, 05, 08, GDD §5.3/§10.1/§13.1/§14.3, docs 04, 05, 10 e 16 (avisos e FAQ do salvamento), README do jogo e `qa.md` (DP-002 a DP-008). Faltam: texto "sem padrão" (D-175, GD → PSI) e `/sync-tech` do doc 13.
+- D-190: lista do PSI (opção B) aplicada no jogo, no GDD e no manual (DP-008). Na tela de título a 36 px os botões passam da tela (a tela não rola): corrigir na etapa 4 com a D-186.
+- P-014 etapa 3 (adiantada): D-174 (`EndingRules.implies`), D-179 (contagem zera no Ano 2), D-182 (evento ao epílogo na condenação), V-035 (Captura lê `capture_at_or_above`), V-015 (Aprendizado sem link verificado sai dos dados e a carta sai do baralho; as 45 fictícias levam `"fictitious": true`), limiares da revelação no `balance.json`. Testes novos em `test_core_endings`, `test_core_impeachment` e `test_data`; 18/18 OK.
+- Conferidas 5 citações do PSI (`content_warnings.gd:9`, `docs/16` §16.13 e FAQ, `site/.../sobre.md:20`, `gdd/GDD.md` §14.3): 5/5 ✅. A citação de racismo em `endings.json:360` é a fala contra indígenas; ajustei o texto do GDD.

@@ -127,7 +127,7 @@ func _title_checks() -> void:
 	_expect(_focus() == b[1], "T-01.1: focus on Novo mandato")
 	_check_tree(title, "title")
 	var warnings := title.find_child("Warnings", true, false) as Control
-	_expect(warnings != null and warnings.accessibility_name == "Avisos de conteúdo: Genocídio, Tortura, Violência policial, Linguagem direta", "C-18 group name")
+	_expect(warnings != null and warnings.accessibility_name == "Avisos de conteúdo: Violência policial, Racismo, Genocídio, Ditadura e tortura, Nazifascismo, Políticos reais. O jogo fala de fome e morte sem eufemismo.", "C-18 group name")
 	_expect(warnings != null and warnings.focus_mode == Control.FOCUS_NONE, "C-18 not focusable")
 	# Esc on the title: no pause there (gdd 10 §3.3).
 	_esc()

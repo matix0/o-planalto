@@ -21,6 +21,8 @@ func _initialize() -> void:
 	_catastrophe_in_scene()
 	_capital_zero_card_and_return()
 	_alternative_trigger()
+	_alternative_resets_in_year_2()
+	_conviction_event_to_epilogue()
 	_event_trigger()
 	_closing_trigger_and_once_per_run()
 	data.free()
@@ -243,6 +245,45 @@ func _alternative_trigger() -> void:
 			_check(f.run.impeachment.is_empty(), "alternative not before Ano 2")
 		else:
 			_eq([f.state(), f.run.impeachment["triggers"], f.run.impeachment["min_support"]], [&"impeachment", ["alternative"], 2], "3 options lowering capital → scene after the 3rd card")
+
+
+## D-179: options of Year 1 do not count — the streak restarts when Year 2 opens.
+func _alternative_resets_in_year_2() -> void:
+	var card := _synthetic("INST-993", {"political_capital": -5, "dignity": 5}, [])
+	var f := _flow(1, {})
+	for i in 2:
+		f.run.state = &"card"
+		f.run.current_card = {"id": card["id"], "kind": "draw", "target": "", "side_a": 1}
+		f.run.played.erase(card["id"])
+		f.choose(1)
+		f.continue_from_consequence()
+		f.continue_from_learning()
+	_eq(f.run.capital_streak, 2, "two options lowering capital at the end of Ano 1")
+	f._begin_year(2)
+	_eq(f.run.capital_streak, 0, "D-179 the streak restarts when Ano 2 opens")
+	f.run.state = &"card"
+	f.run.current_card = {"id": card["id"], "kind": "draw", "target": "", "side_a": 1}
+	f.run.played.erase(card["id"])
+	f.choose(1)
+	f.continue_from_consequence()
+	f.continue_from_learning()
+	_check(f.run.impeachment.is_empty(), "D-179 2 + 1 across the turn of the year → no scene")
+
+
+## D-182: conviction opened by capital at 0 on a card → that option's event goes to the epilogue.
+func _conviction_event_to_epilogue() -> void:
+	var card := _synthetic("INST-994", {"political_capital": -30, "dignity": 5}, [{"text": "Evento da carta", "delay": 1, "effects": {"dignity": 5}}])
+	var f := _flow(2, {"political_capital": 10})
+	f.run.state = &"card"
+	f.run.current_card = {"id": card["id"], "kind": "draw", "target": "", "side_a": 1}
+	f.choose(1)
+	_eq(f.state(), &"impeachment", "capital 0 → scene")
+	_play(f, [["option_a", false], ["option_a", false], ["option_a", false], ["option_a", false], ["option_a", false]])
+	_eq(f.run.impeachment["outcome"], "convicted", "convicted")
+	f.continue_impeachment()
+	_eq(f.state(), &"final", "conviction → final")
+	_check(f.final_view()["epilogue"].has("Evento da carta"), "D-182 the card's event is in the epilogue (%s)" % str(f.final_view()["epilogue"]))
+	_eq(f.run.meters["dignity"], f.run.meters["dignity"], "no effect applied")
 
 
 func _event_trigger() -> void:

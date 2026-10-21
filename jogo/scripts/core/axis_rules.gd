@@ -31,8 +31,7 @@ const TEXTS := [
 const SCALE := 5.0
 
 ## gdd/GDD.md §9.2 — meter patterns, checked in table order, first match wins.
-## The repo does not define "altos", "baixos" nor "equilíbrio" (docs/15 §15.10; wireframe
-## T-10.1) — a validar (§9.2): high > 60, low < 40, balance = all 8 between 40 and 60.
+## D-175: high > 60, low < 40 (balance.json overrides); balance = all 8 between the limits.
 const REVEAL_HIGH_ABOVE := 60
 const REVEAL_LOW_BELOW := 40
 const REVEAL_PATTERNS := [
@@ -91,25 +90,28 @@ static func pole_for(index: int, pos: float) -> String:
 	return POLES[index][0] if pos < 0.0 else POLES[index][1]
 
 
-## Text of the meter reveal on the final screen (gdd/GDD.md §9.2).
-static func meter_reveal(meters: Dictionary) -> String:
+## Text of the meter reveal on the final screen (gdd/GDD.md §9.2). Limits from balance.json
+## (`reveal_high_above`, `reveal_low_below`; D-175), else the constants.
+static func meter_reveal(meters: Dictionary, balance: Dictionary = {}) -> String:
+	var high := int(balance.get("reveal_high_above", REVEAL_HIGH_ABOVE))
+	var low := int(balance.get("reveal_low_below", REVEAL_LOW_BELOW))
 	for p in REVEAL_PATTERNS:
 		if p.get("balance", false):
-			if _balanced(meters):
+			if _balanced(meters, high, low):
 				return p["text"]
 			continue
 		var ok := true
 		for m in p.get("high", []):
-			ok = ok and int(meters[m]) > REVEAL_HIGH_ABOVE
+			ok = ok and int(meters[m]) > high
 		for m in p.get("low", []):
-			ok = ok and int(meters[m]) < REVEAL_LOW_BELOW
+			ok = ok and int(meters[m]) < low
 		if ok:
 			return p["text"]
 	return REVEAL_NONE
 
 
-static func _balanced(meters: Dictionary) -> bool:
+static func _balanced(meters: Dictionary, high: int = REVEAL_HIGH_ABOVE, low: int = REVEAL_LOW_BELOW) -> bool:
 	for v in meters.values():
-		if int(v) < REVEAL_LOW_BELOW or int(v) > REVEAL_HIGH_ABOVE:
+		if int(v) < low or int(v) > high:
 			return false
 	return true

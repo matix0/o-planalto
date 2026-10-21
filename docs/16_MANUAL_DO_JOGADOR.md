@@ -313,13 +313,16 @@ O jogo revela o **padrão de valores** que guiou seu governo, sem rótulos biná
 
 ## 16.13 — Avisos de Conteúdo
 
-Este jogo aborda temas sensíveis, incluindo:
+Este jogo aborda temas sensíveis. A lista é a mesma da tela inicial (`gdd/GDD.md` §14.3, D-190):
 
-- Genocídio
-- Tortura
-- Violência policial
-- Desigualdade social
-- Corrupção
+- **Violência policial** — cartas sobre a polícia e o sistema prisional.
+- **Racismo** — finais e Cartas de Aprendizado sobre racismo estrutural.
+- **Genocídio** — finais em que o governo deixa morrer uma parte da população.
+- **Ditadura e tortura** — finais e Cartas de Aprendizado sobre a ditadura militar.
+- **Nazifascismo** — finais citam lemas nazistas e fascistas para criticá-los.
+- **Políticos reais** — o jogo cita pessoas reais, com fonte.
+
+O jogo fala de fome e morte sem eufemismo. Se um tema pesar, pause ou feche o jogo: a partida fica salva.
 
 
 **Classificação:** Livre (recomendado para maiores de 12 anos).
@@ -346,7 +349,7 @@ Sim. As cartas são sorteadas, o lado das opções muda e suas escolhas levam a 
 
 ### O jogo tem salvamento?
 
-Não. Cada partida é uma sessão completa de cerca de 15 minutos.
+Sim. O jogo salva sozinho a cada passo. Ao abrir de novo, toque em "Continuar" para voltar de onde parou (`gdd/sistemas/10_estado_partida.md` §3.5). Uma partida completa dura cerca de 15 minutos.
 
 ---
 

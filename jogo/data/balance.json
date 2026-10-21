@@ -147,5 +147,7 @@
   "cards_per_turn": 7,
   "max_mandatory_per_turn": 3,
   "capture_at_or_above": 95,
-  "capture_warning_at_or_above": 81
+  "capture_warning_at_or_above": 81,
+  "reveal_high_above": 60,
+  "reveal_low_below": 40
 }
