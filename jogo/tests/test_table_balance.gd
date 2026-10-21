@@ -75,6 +75,7 @@ func _initialize() -> void:
 	_doubling_and_multipliers()
 	_emergency()
 	_linked_limit()
+	_capture_warning()
 	_actor_levels()
 	_reveal()
 	data.free()
@@ -187,6 +188,16 @@ func _linked_limit() -> void:
 			if String(e["kind"]) == "meter":
 				targets.append(String(e["target"]))
 		_eq(targets.has("dignity"), v < 30, "dignity %d: linked card %s" % [v, "asked" if v < 30 else "not asked"])
+
+
+## Year 4 card: a Captura meter at 81 is named in the warning, at 80 it is not (gdd 02 §3.4).
+func _capture_warning() -> void:
+	var limit := int(balance["capture_warning_at_or_above"])
+	for v in [81, 80]:
+		var m := _quiet()
+		m["security"] = v
+		var named: Array = EndingRules.capture_warning(data.meters, m, limit)
+		_eq(named.size(), 1 if v >= 81 else 0, "security %d: Captura warning %s" % [v, "shown" if v >= 81 else "not shown"])
 
 
 func _actor_levels() -> void:
