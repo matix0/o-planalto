@@ -23,11 +23,11 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 
 | Onda | Cartas | Status |
 | :--- | :--- | :--- |
-| 1 | Influenciador INST-182..191 | fontes ✅ (5/5 conferidas); PSI |
-| 2 | Geopolítico INST-063..072 | fontes |
+| 1 | Influenciador INST-182..191 | ✅ gravada (DP-021) |
+| 2 | Geopolítico INST-063..072 | ✅ gravada (DP-022) |
 | 3 | Influenciador INST-192..200 | GD ✅; fontes |
 | 4 | Geopolítico INST-073..080 | GD ✅; fontes |
-| 5 | Congresso INST-007..016 | — |
+| 5 | Congresso INST-007..016 | GD |
 | 6 | Congresso INST-017..020 + Orçamento INST-023..028 | — |
 | 7 | Orçamento INST-029..038 | — |
 | 8 | Orçamento INST-039..040 + Currículo INST-043..050 | — |
@@ -120,3 +120,9 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 - Fontes da Onda 1: 10/10 com trecho literal (8 primárias, 2 de imprensa pública). Reabri 5 links (APR-182, 185, 187, 189, 191): 5/5 conferem; dois textos ajustados para ficarem iguais à fonte (APR-182, APR-187).
 - Checagem do baralho (papel do ECO, feita por script: `cards_doc.py check --wave-report` sobre o doc 17 + Ondas 1-4 numa cópia): eventos em 15% (piso), eixos todos ≥ 20% (Diplomacia saiu de 10% para 43%), as 7 cores com saldo negativo, técnicas 3-4 cada; carta ligada fraca em Dignidade (2 opções positivas com Ano 2-4) e Segurança (5). Orientação nova no kit do GD. A simulação do ECO fica para a migração (fase 6), com o baralho real.
 - Novo no `cards_doc.py`: `check --style` (frase > 20 palavras, gerúndio, advérbio, futuro; doc 10 §10.03.2).
+
+### 2026-10-21 — Ondas 1 e 2 gravadas nos docs 17 e 18
+- Fontes da Onda 2: 10/10 com trecho literal; reabri 5 (APR-064, 065, 068, 071, 072): 5/5 conferem.
+- PSI das Ondas 1 e 2: 9 aprovar, 11 ajustar, 0 reprovar (`.claude/notas/execucao/onda-01/psi.md`, `onda-02/psi.md`). Ajustes aplicados com textos exatos do PSI; pontos que ficavam com o PO decididos de forma provisória (DP-021, DP-022). QA: títulos do JSON iguais aos das cartas, ponto final nos eventos da Onda 2, "Sinal:" no APR-191, fonte de imprensa marcada nas caixas APR-184, 191 e 072.
+- Gravação com `cards_doc.py insert` (cartas no modo, em ordem; caixas no doc 18; rascunhos APR-063..072 retirados da §18.14; contagens refeitas): doc 17 com 40 de 340 + 5 da cena, `cards_doc.py check` com 0 erros.
+- Doc 03 §03.13: a citação sobre desdolarização era de Gao Bai (Tricontinental, 2024), não do IPEA (achado do pesquisador; conferido no link). Atribuição corrigida (D-190).

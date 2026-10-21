@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 25 Cartas de Aprendizado ligadas às 25 cartas do doc 17 (20 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 124 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 45 Cartas de Aprendizado ligadas às 45 cartas do doc 17 (40 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 114 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -389,7 +389,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.05 — Cartas de Aprendizado do Modo Geopolítico (2 de 20)
+## 18.05 — Cartas de Aprendizado do Modo Geopolítico (12 de 20)
 
 ### APR-061 — Adesão ao BRICS
 
@@ -448,6 +448,336 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-010):** [pv magazine, 2023](https://www.pv-magazine-brasil.com/2023/10/03/brasil-tem-a-setima-maior-reserva-de-litio-do-mundo/)
 
 **Status:** dado ajustado, provisório (DP-020): sai a 2ª frase, sem fonte.
+
+### APR-063 — Pressão dos EUA
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-063                            │
+│  Pressão dos EUA                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava uma empresa chinesa do 5G a pedido  │
+│  dos EUA.                                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  EUA e China disputam a tecnologia do mundo, e cada um quer │
+│  os outros países do seu lado. Escolher tem preço: em       │
+│  dinheiro, em segurança ou em autonomia.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2021, o leilão do 5G não excluiu a Huawei de forma      │
+│  explícita, apesar da pressão dos EUA. O edital previu uma  │
+│  rede privativa e segura para o governo federal.            │
+│                                                             │
+│  FONTE: IPEA, Revista Tempo do Mundo, 2024.                 │
+│                                                             │
+│  "Tecnologia também é território."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [IPEA, 2024](https://www.ipea.gov.br/revistas/index.php/rtm/article/download/547/414/2140)
+
+**Status:** provisório (DP-022)
+
+### APR-064 — Acordo com a China
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-064                            │
+│  Acordo com a China                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trocava tarifa zero para carros chineses   │
+│  por vendas garantidas de soja e minério.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A tarifa de importação protege a indústria local. Sem ela, │
+│  o país corre o risco de vender matéria-prima e comprar     │
+│  produto pronto. Isso se chama reprimarização.              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2024, a China comprou 28% das exportações do Brasil.    │
+│  Soja, petróleo, minério de ferro, carnes e celulose foram  │
+│  90% das vendas à China.                                    │
+│                                                             │
+│  FONTE: Banco Central, junho de 2025.                       │
+│                                                             │
+│  "Vender grão e comprar máquina custa empregos."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Banco Central, 2025](https://www.bcb.gov.br/content/ri/relatorioinflacao/202506/rpm202506b4p.pdf)
+
+**Status:** provisório (DP-022)
+
+### APR-065 — Empréstimo do FMI
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-065                            │
+│  Empréstimo do FMI                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava o dinheiro do FMI com as condições│
+│  dele.                                                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O FMI empresta a países em crise, mas exige condições:     │
+│  metas fiscais, reformas e, às vezes, privatizações. O      │
+│  dinheiro alivia agora; o ajuste pesa depois.               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 1998, o FMI aprovou um crédito de cerca de US$ 18       │
+│  bilhões ao Brasil. O programa incluía ajuste fiscal,       │
+│  reforma da Previdência e privatizações.                    │
+│                                                             │
+│  FONTE: FMI, comunicado de 2 de dezembro de 1998.           │
+│                                                             │
+│  "Dinheiro de fora vem com regras de fora."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [FMI, 1998](https://www.imf.org/en/news/articles/2015/09/14/01/49/pr9859)
+
+**Status:** provisório (DP-022)
+
+### APR-066 — Venda da Embraer
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-066                            │
+│  Venda da Embraer                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava a venda da Embraer a uma gigante    │
+│  estrangeira.                                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Em empresas estratégicas privatizadas, a União pode guardar│
+│  uma ação especial, a "ação de ouro". Ela dá poder de veto  │
+│  sobre a venda do controle.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  A União tem uma ação especial na Embraer. Pelo estatuto da │
+│  empresa, ela dá poder de veto sobre a mudança de controle e│
+│  os programas militares.                                    │
+│                                                             │
+│  FONTE: Estatuto social da Embraer, art. 9º (2024).         │
+│                                                             │
+│  "Tecnologia vendida não volta."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Embraer, estatuto social, 2024](https://ri.embraer.com.br/en/governance/golden-share/)
+
+**Status:** provisório (DP-022)
+
+### APR-067 — Moeda comum do BRICS
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-067                            │
+│  Moeda comum do BRICS                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu entre uma moeda comum do BRICS e o controle do│
+│  real.                                                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Moeda comum exige um banco central comum: cada país deixa  │
+│  de decidir os próprios juros. O BRICS hoje estuda          │
+│  pagamentos em moedas locais, não uma moeda única.          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em setembro de 2026, a declaração do BRICS cita o estudo de│
+│  pagamentos entre países e a discussão do comércio em moedas│
+│  locais. O texto não fala em moeda comum.                   │
+│                                                             │
+│  FONTE: Declaração de Nova Délhi (BRICS), set. 2026.        │
+│                                                             │
+│  "Trocar de dependência não é ser soberano."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [BRICS, Declaração de Nova Délhi, 2026](https://www.pmindia.gov.in/en/news_updates/brics-new-delhi-declaration-building-for-resilience-innovation-cooperation-and-sustainability-september-12-2026/)
+
+**Status:** provisório (DP-022)
+
+### APR-068 — Envio de tropas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-068                            │
+│  Envio de tropas                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mandava soldados brasileiros para a guerra │
+│  de um aliado.                                              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição manda o Brasil defender a não intervenção e │
+│  a solução pacífica dos conflitos. Mandar tropas ao exterior│
+│  depende de autorização do Congresso.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Desde 1956, a Lei 2.953 exige autorização do Congresso para│
+│  mandar tropas ao exterior em cumprimento de tratados,      │
+│  acordos ou entendimentos militares.                        │
+│                                                             │
+│  FONTE: Lei nº 2.953, de 17 de novembro de 1956.            │
+│                                                             │
+│  "Na guerra dos outros, os mortos são nossos."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Planalto, Lei 2.953/1956](https://www.planalto.gov.br/ccivil_03/leis/1950-1969/l2953.htm)
+
+**Status:** provisório (DP-022)
+
+### APR-069 — Corte de fertilizantes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-069                            │
+│  Corte de fertilizantes                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu entre uma mina em terra indígena e o adubo    │
+│  orgânico.                                                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Depender de adubo importado deixa a safra refém de guerras │
+│  e sanções. Povos indígenas têm direito a consulta prévia   │
+│  antes de projetos que afetam suas terras.                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2021, mais de 85% dos fertilizantes usados no Brasil    │
+│  foram importados. China e Rússia limitaram a exportação de │
+│  nitrogenados, e a Bielorrússia sofreu sanções.             │
+│                                                             │
+│  FONTE: Carta da Agricultura, jan.-mar. de 2022.            │
+│                                                             │
+│  "Comida soberana começa no adubo."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Embrapa (Alice), 2022](https://www.alice.cnptia.embrapa.br/bitstream/doc/1142514/1/A-importancia-do-PNF.pdf)
+
+**Status:** provisório (DP-022)
+
+### APR-070 — Preço do petróleo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-070                            │
+│  Preço do petróleo                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a Petrobras repassava a alta do petróleo   │
+│  para o diesel.                                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na paridade de importação, o preço daqui segue o preço lá  │
+│  fora e o dólar. Ela protege o caixa da estatal, mas joga a │
+│  alta no frete e na comida.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em março de 2026, o diesel S10 estava 13% mais caro que no │
+│  último reajuste do piso do frete. Por lei, o piso é        │
+│  reajustado quando o diesel varia mais de 5%.               │
+│                                                             │
+│  FONTE: ANTT, notícia de 16 de março de 2026.               │
+│                                                             │
+│  "O diesel sobe e a comida sobe junto."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [ANTT, 2026](https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/antt-atualiza-tabela-dos-pisos-minimos-de-frete-em-decorrencia-da-variacao-no-preco-do-diesel-s10)
+
+**Status:** provisório (DP-022)
+
+### APR-071 — Taxação das big techs
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-071                            │
+│  Taxação das big techs                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cobrava imposto das big techs mesmo com a  │
+│  ameaça de tarifas dos EUA.                                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Empresas digitais vendem em muitos países sem sede neles.  │
+│  Alguns países criam um imposto digital; os EUA, sede de    │
+│  muitas delas, respondem com ameaça de tarifas.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2021, os EUA encerraram a investigação sobre o Brasil,  │
+│  que não adotou o imposto digital em estudo, e mantiveram a │
+│  opção de tarifas contra outros seis países.                │
+│                                                             │
+│  FONTE: USTR, comunicado de 26 de março de 2021.            │
+│                                                             │
+│  "Quem fatura aqui paga imposto onde?"                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [USTR, 2021](https://www.ustr.gov/about-us/policy-offices/press-office/press-releases/2021/march/ustr-announces-next-steps-section-301-digital-services-taxes-investigations)
+
+**Status:** provisório (DP-022)
+
+### APR-072 — Energia de Itaipu
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-072                            │
+│  Energia de Itaipu                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava pagar mais ao Paraguai pela       │
+│  energia de Itaipu.                                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Itaipu é uma usina dos dois países. O Paraguai vende ao    │
+│  Brasil a energia que não usa, por um preço fixado em       │
+│  tratado. Integração também tem custo.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2024, o Brasil usou 69% da energia de Itaipu e o        │
+│  Paraguai, 31%. Nos anos 1980, o Brasil usava 95%. Itaipu   │
+│  prevê que o excedente paraguaio acabe até 2035.            │
+│                                                             │
+│  FONTE: Agência Brasil, com dados da Itaipu, 2025.          │
+│                                                             │
+│  "Soberania também vale para o vizinho."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Brasil, 2025](https://agenciabrasil.ebc.com.br/economia/noticia/2025-09/hidreletrica-de-itaipu-chega-ao-marco-de-31-bilhoes-de-mwh-produzidos) — fonte de imprensa
+
+**Status:** provisório (DP-022)
 
 ---
 
@@ -770,7 +1100,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.11 — Cartas de Aprendizado do Modo Influenciador (1 de 20)
+## 18.11 — Cartas de Aprendizado do Modo Influenciador (11 de 20)
 
 ### APR-181 — Influenciador financiado
 
@@ -801,6 +1131,355 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [Jornal de Brasília, 2026](https://jornaldebrasilia.com.br/noticias/economia/blaze-gastou-r-330-mi-com-anuncios-em-2025-e-tem-virginia-como-principal-influenciadora-no-brasil/)
+
+### APR-182 — Boato contra a ministra
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-182                            │
+│  Boato contra a ministra                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se demitia uma ministra atacada por um boato  │
+│  ou se investigava quem o espalhou.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Desmoralização é destruir uma reputação com mentiras.      │
+│  Sinais: acusação grave sem prova e muita repetição.        │
+│  Pergunte quem ganha se a pessoa cair.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2024, 67% dos brasileiros com 16 anos ou mais já tinham │
+│  recebido notícia falsa. Para metade de quem viu, é difícil │
+│  saber se é falsa.                                          │
+│                                                             │
+│  TÉCNICA: Desmoralização                                    │
+│                                                             │
+│  FONTE: DataSenado (Agência Senado), 2024.                  │
+│                                                             │
+│  "Mentira repetida não vira prova. Vira arma."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [DataSenado, 2024](https://www12.senado.leg.br/institucional/datasenado/materias/relatorios-de-pesquisa/pesquisa-datasenado-revela-o-que-pensa-o-brasileiro-sobre-fake-news)
+
+**Status:** provisório (DP-021)
+
+### APR-183 — Vídeo falso de você
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-183                            │
+│  Vídeo falso de você                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se revidava um vídeo falso com outro vídeo    │
+│  falso ou se pedia uma perícia.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Deepfake é vídeo, foto ou voz falsos feitos com IA. Os bons│
+│  não mostram falha: desconfie se nenhuma fonte séria        │
+│  confirma. Se tudo pode ser falso, a verdade também perde.  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, 41% dos usuários de internet (16 anos ou mais)    │
+│  relataram contato diário com deepfakes. Só 11% se sentem   │
+│  muito confiantes em identificar informação falsa.          │
+│                                                             │
+│  TÉCNICA: Deepfake                                          │
+│                                                             │
+│  FONTE: Cetic.br/NIC.br, Painel TIC Integridade, 2025.      │
+│                                                             │
+│  "Quem revida com mentira perde a verdade."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Cetic.br, Painel TIC Integridade da Informação 2025](https://cetic.br/media/docs/publicacoes/2/pt-br/20260408150833/painel_tic_integridade_informacao_2025_resumoexecutivo_pt.pdf)
+
+**Status:** provisório (DP-021)
+
+### APR-184 — Pânico na fronteira
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-184                            │
+│  Pânico na fronteira                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fechava a fronteira diante do medo ou se   │
+│  acolhia os refugiados e checava os fatos.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pânico moral é criar medo de um grupo ou tema para         │
+│  mobilizar as pessoas. Sinais: um culpado pronto, ameaça às │
+│  famílias e pressa para agir antes de pensar.               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2022, o Brasil tinha cerca de 1 milhão de estrangeiros e│
+│  naturalizados: 0,5% da população, ou 1 em cada 200 pessoas.│
+│                                                             │
+│  TÉCNICA: Pânico Moral                                      │
+│                                                             │
+│  FONTE: Agência Brasil, 2025 (Censo 2022, IBGE).            │
+│                                                             │
+│  "O medo tem pressa. Os fatos têm fonte."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Brasil, 2025](https://agenciabrasil.ebc.com.br/geral/noticia/2025-06/venezuelanos-sao-maior-grupo-de-imigrantes-do-brasil) — fonte de imprensa
+
+**Status:** provisório (DP-021)
+
+### APR-185 — Streamer critica o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-185                            │
+│  Streamer critica o governo                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se espalhava um boato contra um crítico ou se │
+│  debatia com ele ao vivo.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Desmoralização também mira quem critica: em vez de         │
+│  responder à crítica, ataca a pessoa. Sinais: o assunto vira│
+│  quem fala, e a acusação vem sem prova.                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2025, a Abraji registrou 204 alertas de ataques a       │
+│  jornalistas e veículos de imprensa. Em 55% deles, a origem │
+│  ou a repercussão foi online.                               │
+│                                                             │
+│  TÉCNICA: Desmoralização                                    │
+│                                                             │
+│  FONTE: Abraji, 2026.                                       │
+│                                                             │
+│  "Quem ataca o mensageiro foge da mensagem."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Abraji, 2026](https://www.abraji.org.br/noticias/abraji-registrou-204-alertas-de-violacoes-a-liberdade-de-imprensa-no-brasil-em-2025)
+
+**Status:** provisório (DP-021)
+
+### APR-186 — Robôs de outro país
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-186                            │
+│  Robôs de outro país                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se expunha uma rede de perfis falsos de outro │
+│  país ou se abafava o caso pelo comércio.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Fazenda de IA é uma rede de perfis falsos coordenados que  │
+│  imitam gente real. Sinais: o mesmo conteúdo em vários      │
+│  perfis ao mesmo tempo e nenhum aviso de IA.                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  De janeiro de 2025 a abril de 2026, o Observatório IA nas  │
+│  Eleições identificou 18 avatares de IA comentando política.│
+│  Em 61% das ocorrências, nenhum aviso de IA.                │
+│                                                             │
+│  TÉCNICA: Fazenda de IA                                     │
+│                                                             │
+│  FONTE: Data Privacy Brasil e Aláfia Lab, 2026.             │
+│                                                             │
+│  "Mil robôs não fazem um povo."                             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Data Privacy Brasil, 2026](https://www.dataprivacybr.org/avatares-sinteticos-usados-para-atacar-politicos-e-instituicoes-democraticas-no-brasil/)
+
+**Status:** provisório (DP-021)
+
+### APR-187 — Aula contra os indígenas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-187                            │
+│  Aula contra os indígenas                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se tirava ou mantinha os anúncios do governo  │
+│  num canal que ensina a culpar os indígenas.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Didatismo acusatório é ódio com cara de aula: gráfico, tom │
+│  de professor e um culpado no fim. Sinais: nenhuma fonte, um│
+│  lado só e um grupo tratado como problema.                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  De 1985 a 2024, as terras indígenas perderam menos de 1% da│
+│  vegetação nativa. Em áreas privadas ou sem registro da     │
+│  terra, a perda foi de 21%.                                 │
+│                                                             │
+│  TÉCNICA: Didatismo Acusatório                              │
+│                                                             │
+│  FONTE: MapBiomas, Coleção 10, 2025.                        │
+│                                                             │
+│  "Aula que ensina a odiar não educa. Recruta."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [MapBiomas, 2025](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2025/08/Fact_Colecao10_22.08.2025_v9.pdf)
+
+**Status:** provisório (DP-021)
+
+### APR-188 — Golpe com rosto famoso
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-188                            │
+│  Golpe com rosto famoso                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se multava a plataforma que lucra com anúncios│
+│  de golpe ou se esperava que ela se regulasse.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Deepfake também vende golpe: usa um rosto famoso para      │
+│  ganhar sua confiança. Sinais: promessa de cura ou lucro    │
+│  rápido, pressa e compra fora de loja oficial.              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em abril e maio de 2025, o NetLab/UFRJ analisou uma amostra│
+│  de 6.579 anúncios de saúde em redes sociais: 76% eram      │
+│  fraudulentos.                                              │
+│                                                             │
+│  TÉCNICA: Deepfake                                          │
+│                                                             │
+│  FONTE: NetLab/UFRJ, 2025.                                  │
+│                                                             │
+│  "Rosto conhecido não é garantia. É isca."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [NetLab-UFRJ, 2025](https://netlab.eco.ufrj.br/en/post/disinformation-can-kill-scam-ads-fraud-and-health-disinformation-on-meta-platforms)
+
+**Status:** provisório (DP-021)
+
+### APR-189 — Elogio de robô
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-189                            │
+│  Elogio de robô                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se contratava perfis falsos para elogiar seu  │
+│  governo ou se recusava a oferta.                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Fazenda de IA também serve para elogiar: cria a ilusão de  │
+│  que todo mundo apoia. Sinal: o mesmo elogio, com as mesmas │
+│  palavras, em muitos perfis ao mesmo tempo.                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Regra do TSE (2026): a Justiça Eleitoral pode remover      │
+│  perfil comprovadamente falso ou robô que repete crime      │
+│  eleitoral ou fato falso contra a integridade da eleição.   │
+│                                                             │
+│  TÉCNICA: Fazenda de IA                                     │
+│                                                             │
+│  FONTE: TSE, Res. 23.755/2026, art. 38-A.                   │
+│                                                             │
+│  "Aplauso comprado não é apoio. É cenário."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [TSE, Resolução 23.755/2026](https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-755-de-2-de-marco-de-2026)
+
+**Status:** provisório (DP-021)
+
+### APR-190 — Medo da vacina
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-190                            │
+│  Medo da vacina                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se investigava quem lucra com o medo da vacina│
+│  ou se levava médicos às escolas.                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pânico moral cria medo sobre um tema para mudar o que as   │
+│  pessoas fazem. Sinais: caso isolado vira regra, alerta     │
+│  sobre os filhos e nenhum dado oficial.                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  O INCA estima cerca de 19 mil casos novos de câncer do colo│
+│  do útero por ano (2026–2028), causado pelo HPV e altamente │
+│  prevenível por vacinação e rastreamento.                   │
+│                                                             │
+│  TÉCNICA: Pânico Moral                                      │
+│                                                             │
+│  FONTE: INCA/Ministério da Saúde, 2026.                     │
+│                                                             │
+│  "O boato corre. A doença vem atrás."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [INCA, 2026](https://www.gov.br/inca/pt-br/assuntos/cancer/numeros/estimativa/sintese-de-resultados-e-comentarios)
+
+**Status:** provisório (DP-021)
+
+### APR-191 — Curso que culpa o pobre
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-191                            │
+│  Curso que culpa o pobre                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava um curso grátis que culpa os      │
+│  pobres ou se investigava quem o financia.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Didatismo acusatório ensina a culpar o outro com cara de   │
+│  lição. Aqui, o pobre vira culpado da própria pobreza.      │
+│  Sinal: história de sucesso no lugar de dado.               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2026, o Atlas da Mobilidade Social mostrou que 48% dos  │
+│  filhos dos 25% mais pobres seguem nesse grupo na vida      │
+│  adulta. Só 8% chegam aos 25% mais ricos.                   │
+│                                                             │
+│  TÉCNICA: Didatismo Acusatório                              │
+│                                                             │
+│  FONTE: Agência Brasil, 2026 (Atlas da Mobilidade Social).  │
+│                                                             │
+│  "Não é falta de vontade. É falta de chance."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Brasil, 2026](https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-07/genero-raca-e-origem-familiar-definem-mobilidade-social-diz-estudo) — fonte de imprensa
+
+**Status:** provisório (DP-021)
 
 ---
 
@@ -2227,265 +2906,6 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 ---
 
 ### Rascunho — Modo Geopolítico
-
-#### APR-063 — Pressão dos EUA
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-063                            │
-│  Pressão dos EUA                                            │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mantinha neutralidade ou cedia à pressão   │
-│  dos EUA.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A neutralidade é uma escolha soberana. Ceder é              │
-│  subordinação.                                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Os EUA pressionam o Brasil a condenar a China. A           │
-│  soberania não é negociável.                                │
-│                                                             │
-│  FONTE: Itamaraty, 2024. [não verificado]                   │
-│                                                             │
-│  "A subserviência aos EUA não é diplomacia. É subordinação."│
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-064 — Acordo com a China
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-064                            │
-│  Acordo com a China                                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se aceitava ou recusava um acordo comercial   │
-│  com a China.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A China é o maior parceiro comercial do Brasil. Os EUA     │
-│  não aceitam.                                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A China absorve 40% das exportações brasileiras.           │
-│                                                             │
-│  FONTE: Comex Stat, 2024. [não verificado]                  │
-│                                                             │
-│  "A soberania é decidir com quem negociar."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-065 — Empréstimo do FMI
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-065                            │
-│  Empréstimo do FMI                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou aceitava um empréstimo do FMI. │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O FMI impõe cortes na saúde e educação. É o receituário    │
-│  neoliberal.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania é não se submeter a condições impostas de fora.│
-│                                                             │
-│  FONTE: FMI, 2024. [não verificado]                         │
-│                                                             │
-│  "O FMI impõe cortes. O povo paga a conta."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-066 — Venda da Embraer
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-066                            │
-│  Venda da Embraer                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou permitia a venda da Embraer.     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A Embraer é estratégica. Vendê-la é entregar a tecnologia. │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania tecnológica é a base do desenvolvimento.       │
-│                                                             │
-│  FONTE: Ministério da Defesa, 2024. [não verificado]        │
-│                                                             │
-│  "A tecnologia brasileira vai para os EUA."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-067 — Moeda Comum do BRICS
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-067                            │
-│  Moeda comum do BRICS                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou recuava da moeda comum do       │
-│  BRICS.                                                     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A moeda comum do BRICS é uma ameaça ao dólar. Os EUA       │
-│  reagem.                                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A desdolarização é uma estratégia de soberania.            │
-│                                                             │
-│  FONTE: IPEA, 2025. [não verificado]                        │
-│                                                             │
-│  "A desdolarização avança."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-068 — Envio de Tropas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-068                            │
-│  Envio de tropas                                            │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou enviava tropas para um         │
-│  conflito internacional.                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Brasil não deve se envolver em guerras alheias. A        │
-│  soberania é não se subordinar.                             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A história mostra que o Brasil não deve se envolver em     │
-│  conflitos que não são seus.                                │
-│                                                             │
-│  FONTE: Itamaraty, 2024. [não verificado]                   │
-│                                                             │
-│  "O Brasil entra em guerra alheia."                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-069 — Corte de Fertilizantes
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-069                            │
-│  Corte de fertilizantes                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se diversificava fornecedores ou cedia à      │
-│  pressão da Rússia.                                         │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Brasil importa 85% dos fertilizantes. A dependência é    │
-│  uma armadilha.                                             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania alimentar é uma questão de segurança nacional. │
-│                                                             │
-│  FONTE: MAPA, 2024. [não verificado]                        │
-│                                                             │
-│  "O agro é salvo no curto prazo. A dependência se aprofunda."│
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-070 — Preço do Petróleo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-070                            │
-│  Preço do petróleo                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mantinha o preço interno ou alinhava-se    │
-│  à OPEP.                                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O preço do petróleo afeta a inflação e o transporte. É     │
-│  uma decisão política.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A soberania energética é uma questão estratégica.          │
-│                                                             │
-│  FONTE: ANP, 2024. [não verificado]                         │
-│                                                             │
-│  "A gasolina sobe. O povo paga."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-071 — Taxação das Big Techs
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-071                            │
-│  Taxação das big techs                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava ou não as big techs.                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As big techs lucram no Brasil e pagam pouco imposto.       │
-│  Taxá-las é soberania.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A regulação das plataformas é uma questão de soberania     │
-│  digital.                                                   │
-│                                                             │
-│  FONTE: Receita Federal, 2024. [não verificado]             │
-│                                                             │
-│  "As big techs lucram. O Brasil não."                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-072 — Moeda Comum do Mercosul
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-072                            │
-│  Moeda comum do Mercosul                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou recusava a moeda comum do       │
-│  Mercosul.                                                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A integração regional é uma forma de resistência ao        │
-│  imperialismo.                                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A moeda comum do Mercosul é uma estratégia de soberania.   │
-│                                                             │
-│  FONTE: Mercosul, 2024. [não verificado]                    │
-│                                                             │
-│  "A integração regional avança."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-073 — Compra de Terras por China
 
@@ -4248,10 +4668,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 18 | 124 | 200 |
+| **Institucionais** | 38 | 114 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **20** | **124** | **340** |
+| **Total** | **40** | **114** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

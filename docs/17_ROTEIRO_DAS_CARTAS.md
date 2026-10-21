@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 20 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 40 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -402,6 +402,276 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-062 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
 
+### INST-063 — Pressão dos EUA
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pressão dos EUA |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-021` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Amarelo |
+| **Problema** | Os EUA pedem que o Brasil vete uma empresa chinesa no 5G. Alegam risco de espionagem. Sem ela, a rede fica mais cara. |
+| **Opção A** | Vetar a empresa chinesa |
+| **Efeitos A** | `Segurança` +10, `Caixa` -10, `Soberania` -5 |
+| **Consequência A** | "A rede atrasa e fica mais cara. Os EUA aplaudem." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-021` +1, `ACT-008` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter a empresa chinesa |
+| **Efeitos B** | `Caixa` +10, `Dignidade` +5, `Segurança` -10 |
+| **Consequência B** | "O 5G chega mais barato. Os EUA ameaçam rever a parceria." |
+| **Eixo B** | [+1, -1, 0, 0] |
+| **Atores B** | `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-063 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-064 — Acordo com a China
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Acordo com a China |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Vermelho |
+| **Problema** | A China oferece um contrato longo de compra de soja e minério. Em troca, quer tarifa zero para seus carros e máquinas. |
+| **Opção A** | Fechar o acordo |
+| **Efeitos A** | `Caixa` +20, `Capital Político` +5, `Soberania` -10 |
+| **Consequência A** | "O agro vende mais. A indústria perde espaço para os importados." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-021` +1, `ACT-004` -1 |
+| **Evento A** | "Fábricas fecham diante dos importados chineses." · atraso 2 · `Dignidade` -10, `Soberania` -5 |
+| **Opção B** | Proteger a indústria |
+| **Efeitos B** | `Soberania` +10, `Dignidade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência B** | "As fábricas mantêm os empregos. O agro reclama no Congresso." |
+| **Eixo B** | [-1, -1, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-001` -1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-064 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-065 — Empréstimo do FMI
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Empréstimo do FMI |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Roxo |
+| **Problema** | A crise seca o caixa do governo. O FMI oferece um empréstimo, mas exige corte de gastos e venda de estatais. |
+| **Opção A** | Aceitar o empréstimo |
+| **Efeitos A** | `Caixa` +25, `Soberania` -10, `Dignidade` -5 |
+| **Consequência A** | "O dinheiro chega. Técnicos do FMI passam a revisar suas contas." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-007` +1, `ACT-006` +1 |
+| **Evento A** | "O FMI cobra o corte combinado no orçamento." · atraso 1 · `Dignidade` -10, `Legitimidade` -5 |
+| **Opção B** | Recusar o FMI |
+| **Efeitos B** | `Soberania` +10, `Caixa` -15, `Dignidade` -5 |
+| **Consequência B** | "O dólar sobe. A crise continua sem dinheiro novo." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-007` -1, `ACT-006` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-065 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-066 — Venda da Embraer
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Venda da Embraer |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Uma gigante estrangeira quer comprar a Embraer, que faz aviões civis e militares. Você tem poder de veto. |
+| **Opção A** | Vetar a venda |
+| **Efeitos A** | `Soberania` +10, `Segurança` +5, `Caixa` -10, `Dignidade` -5 |
+| **Consequência A** | "A Embraer segue brasileira. Os acionistas perdem o negócio." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-008` +1, `ACT-002` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar a venda |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Soberania` -15, `Segurança` -5 |
+| **Consequência B** | "A venda sai. A nova dona decide os projetos lá fora." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-002` +1, `ACT-008` -1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-066 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-067 — Moeda comum do BRICS
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Moeda comum do BRICS |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Um sócio do BRICS defende uma moeda comum. O Brasil dependeria menos do dólar, mas deixaria de decidir os próprios juros. |
+| **Opção A** | Apoiar a moeda comum |
+| **Efeitos A** | `Caixa` +10, `Soberania` -10, `Legitimidade` -5 |
+| **Consequência A** | "O comércio sai do dólar. Um banco do bloco passa a decidir seus juros." |
+| **Eixo A** | [0, -1, 0, 0] |
+| **Atores A** | `ACT-021` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o real |
+| **Efeitos B** | `Soberania` +5, `Caixa` -10 |
+| **Consequência B** | "O real fica. O comércio segue em dólar." |
+| **Eixo B** | [0, +1, 0, 0] |
+| **Atores B** | `ACT-006` +1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-067 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-068 — Envio de tropas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Envio de tropas |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Amarelo |
+| **Problema** | Uma potência aliada pede soldados brasileiros para uma guerra. Em troca, apoia uma vaga fixa do Brasil no Conselho de Segurança da ONU. |
+| **Opção A** | Enviar os soldados |
+| **Efeitos A** | `Caixa` +15, `Capital Político` +5, `Soberania` -10, `Legitimidade` -5 |
+| **Consequência A** | "As tropas embarcam. Parte do país protesta contra a guerra." |
+| **Eixo A** | [0, +2, 0, 0] |
+| **Atores A** | `ACT-008` +1, `ACT-021` +1 |
+| **Evento A** | "Soldados brasileiros morrem no conflito." · atraso 1 · `Legitimidade` -10, `Dignidade` -5 |
+| **Opção B** | Recusar o pedido |
+| **Efeitos B** | `Soberania` +10, `Legitimidade` +5, `Caixa` -10, `Segurança` -5 |
+| **Consequência B** | "O Brasil fica fora da guerra. O aliado corta a ajuda militar." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-010` +1, `ACT-008` -1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-068 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-069 — Corte de fertilizantes
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Corte de fertilizantes |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Roxo |
+| **Problema** | Uma guerra corta o adubo importado. Uma mineradora quer extrair potássio em terra reivindicada por povos indígenas na Amazônia. |
+| **Opção A** | Liberar a mina |
+| **Efeitos A** | `Soberania` +15, `Dignidade` -10, `Integridade` -5 |
+| **Consequência A** | "O potássio sai do chão, sem consulta. Povos indígenas vão à Justiça." |
+| **Eixo A** | [+1, -1, 0, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento A** | — |
+| **Opção B** | Produzir adubo orgânico |
+| **Efeitos B** | `Soberania` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência B** | "O agro reclama da demora. Cooperativas do campo começam a produzir." |
+| **Eixo B** | [-1, -1, 0, 0] |
+| **Atores B** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento B** | "Cooperativas produzem adubo orgânico em escala." · atraso 2 · `Soberania` +10, `Dignidade` +5 |
+| **Aprendizado** | APR-069 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-070 — Preço do petróleo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Preço do petróleo |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | O barril de petróleo dispara no mundo. A Petrobras pode repassar a alta ou segurar o preço do diesel. |
+| **Opção A** | Repassar o preço |
+| **Efeitos A** | `Caixa` +15, `Dignidade` -10 |
+| **Consequência A** | "O diesel sobe. O frete e a comida ficam mais caros." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-006` +1, `ACT-002` +1 |
+| **Evento A** | "Caminhoneiros entram em greve e param o país." · atraso 1 · `Dignidade` -5, `Segurança` -5, `Legitimidade` -5 |
+| **Opção B** | Segurar o diesel |
+| **Efeitos B** | `Dignidade` +10, `Caixa` -15 |
+| **Consequência B** | "O diesel fica estável. A Petrobras lucra menos e o Mercado reclama." |
+| **Eixo B** | [-1, -1, 0, 0] |
+| **Atores B** | `ACT-009` +1, `ACT-006` -1, `ACT-002` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-070 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-071 — Taxação das big techs
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Taxação das big techs |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-020` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Sua equipe propõe um imposto sobre o faturamento das big techs no Brasil. Os EUA ameaçam tarifas em resposta. |
+| **Opção A** | Cobrar o imposto |
+| **Efeitos A** | `Soberania` +10, `Caixa` +10, `Dignidade` -5, `Capital Político` -10 |
+| **Consequência A** | "As big techs pagam. Os EUA anunciam tarifas sobre produtos do Brasil." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-020` -1, `ACT-021` -1 |
+| **Evento A** | — |
+| **Opção B** | Desistir do imposto |
+| **Efeitos B** | `Caixa` +5, `Capital Político` +5, `Soberania` -10, `Legitimidade` -5 |
+| **Consequência B** | "As tarifas não vêm. As big techs ficam sem o novo imposto." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-020` +1, `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-071 (doc 18) |
+| **Status** | provisório (DP-022) |
+
+### INST-072 — Energia de Itaipu
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Energia de Itaipu |
+| **Tipo** | Institucional |
+| **Modo** | Geopolítico |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | O Paraguai pede um preço maior pela energia de Itaipu que vende ao Brasil. Pagar mais encarece a conta de luz. |
+| **Opção A** | Aceitar o novo preço |
+| **Efeitos A** | `Soberania` +5, `Integridade` +5, `Dignidade` -5, `Caixa` -5 |
+| **Consequência A** | "O vizinho comemora. A conta de luz sobe no Brasil." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-010` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o preço atual |
+| **Efeitos B** | `Dignidade` +5, `Caixa` +5, `Integridade` -5, `Soberania` -5 |
+| **Consequência B** | "A conta de luz não sobe. O Paraguai diz que o Brasil abusa do seu tamanho." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-072 (doc 18) |
+| **Status** | provisório (DP-022) |
+
 ---
 
 ## 17.06 — Cartas do Modo Prisional e Policial (20)
@@ -725,6 +995,306 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-181 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
 
+### INST-182 — Boato contra a ministra
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Boato contra a ministra |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-018` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Desmoralização |
+| **Cor A** | Preto |
+| **Cor B** | Verde |
+| **Problema** | Perfis dizem que sua ministra do Meio Ambiente vendeu terras da Amazônia a estrangeiros. Não há prova. O boato viraliza. |
+| **Opção A** | Demitir a ministra |
+| **Efeitos A** | `Capital Político` +10, `Legitimidade` +5, `Integridade` -15 |
+| **Consequência A** | "A ministra cai. Para muita gente, a demissão prova o boato." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento A** | — |
+| **Reação A** | Aceitar |
+| **Opção B** | Investigar a origem |
+| **Efeitos B** | `Capital Político` -10, `Legitimidade` -5, `Integridade` +10 |
+| **Consequência B** | "A PF rastreia os perfis. O boato segue no ar." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-018` +1 |
+| **Evento B** | — |
+| **Reação B** | Investigar |
+| **Aprendizado** | APR-182 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-183 — Vídeo falso de você
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vídeo falso de você |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Técnica** | Deepfake |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Um vídeo feito com IA mostra você. Nele, você anuncia o fim do auxílio. É falso, mas milhões de pessoas acreditam. |
+| **Opção A** | Revidar com vídeo falso |
+| **Efeitos A** | `Legitimidade` +10, `Capital Político` +5, `Integridade` -15, `Consciência` -5 |
+| **Consequência A** | "Seu time solta um vídeo falso do rival. As redes viram uma guerra de mentiras." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-023` -1 |
+| **Evento A** | "Todo vídeo vira suspeito. Até os verdadeiros." · atraso 1 · `Integridade` -10, `Consciência` -5 |
+| **Reação A** | Aceitar |
+| **Opção B** | Pedir perícia à PF |
+| **Efeitos B** | `Integridade` +10, `Consciência` +5, `Legitimidade` -10, `Capital Político` -5 |
+| **Consequência B** | "A perícia prova a fraude. O desmentido chega a menos gente que a mentira." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-023` +1 |
+| **Evento B** | — |
+| **Reação B** | Investigar |
+| **Aprendizado** | APR-183 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-184 — Pânico na fronteira
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pânico na fronteira |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Pânico Moral |
+| **Cor A** | Preto |
+| **Cor B** | Roxo |
+| **Problema** | Vídeos culpam refugiados de um país vizinho por todo crime e toda doença. É falso, mas a cidade da fronteira entra em pânico. |
+| **Opção A** | Fechar a fronteira |
+| **Efeitos A** | `Legitimidade` +10, `Capital Político` +5, `Dignidade` -15, `Integridade` -10 |
+| **Consequência A** | "A fronteira fecha. Famílias ficam presas do outro lado." |
+| **Eixo A** | [0, -2, -1, -1] |
+| **Atores A** | `ACT-010` -1 |
+| **Evento A** | — |
+| **Reação A** | Aceitar |
+| **Opção B** | Acolher e checar os fatos |
+| **Efeitos B** | `Dignidade` +10, `Consciência` +5, `Legitimidade` -10, `Caixa` -10 |
+| **Consequência B** | "Os refugiados ficam. Parte da cidade ajuda, parte tem medo." |
+| **Eixo B** | [0, +2, +1, 0] |
+| **Atores B** | `ACT-010` +1 |
+| **Evento B** | — |
+| **Reação B** | Recusar |
+| **Aprendizado** | APR-184 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-185 — Streamer critica o governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Streamer critica o governo |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-024` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Desmoralização |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Um streamer com 3 milhões de seguidores detona seu governo. Aliados querem espalhar, sem prova, que ele é pago por um rival. |
+| **Opção A** | Espalhar o boato |
+| **Efeitos A** | `Legitimidade` +10, `Capital Político` +5, `Integridade` -10, `Consciência` -10 |
+| **Consequência A** | "O boato pega. O streamer perde patrocínio e para de falar de política." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-024` -1 |
+| **Evento A** | — |
+| **Reação A** | Aceitar |
+| **Opção B** | Debater ao vivo |
+| **Efeitos B** | `Consciência` +10, `Integridade` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência B** | "Você entra na live dele. A audiência bate recorde, e as críticas também." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-024` +1 |
+| **Evento B** | — |
+| **Reação B** | Recusar |
+| **Aprendizado** | APR-185 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-186 — Robôs de outro país
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Robôs de outro país |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Técnica** | Fazenda de IA |
+| **Cor A** | Preto |
+| **Cor B** | Amarelo |
+| **Problema** | Pesquisadores acham 8 mil perfis falsos que atacam seu governo. Uma potência estrangeira opera a rede. |
+| **Opção A** | Investigar e expor |
+| **Efeitos A** | `Soberania` +10, `Segurança` +5, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "O mundo vê a interferência. A potência nega e ameaça retaliar." |
+| **Eixo A** | [0, -1, 0, +1] |
+| **Atores A** | `ACT-021` -1, `ACT-008` +1 |
+| **Evento A** | "A potência estrangeira suspende compras do Brasil." · atraso 1 · `Caixa` -15 |
+| **Reação A** | Investigar |
+| **Opção B** | Abafar o caso |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Soberania` -15, `Integridade` -10 |
+| **Consequência B** | "O comércio segue. Os perfis falsos também." |
+| **Eixo B** | [+1, +1, 0, -1] |
+| **Atores B** | `ACT-021` +1, `ACT-008` -1 |
+| **Evento B** | — |
+| **Reação B** | Aceitar |
+| **Aprendizado** | APR-186 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-187 — Aula contra os indígenas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aula contra os indígenas |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Didatismo Acusatório |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | Um canal com cara de aula 'ensina' que indígenas destroem a floresta. É falso, e os anúncios do seu governo pagam parte dos vídeos. |
+| **Opção A** | Tirar os anúncios |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "O canal perde a verba. Aliados dele no Congresso falam em censura." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-001` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Reação A** | Recusar |
+| **Opção B** | Manter os anúncios |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -15, `Dignidade` -5 |
+| **Consequência B** | "O canal cresce com dinheiro público. Nas escolas, alunos repetem a aula." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Reação B** | Aceitar |
+| **Aprendizado** | APR-187 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-188 — Golpe com rosto famoso
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Golpe com rosto famoso |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Deepfake |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | Anúncios usam um vídeo falso de um médico famoso para vender uma 'cura' do diabetes. A plataforma lucra e não tira do ar. |
+| **Opção A** | Multar a plataforma |
+| **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "A plataforma paga a multa e acusa o Brasil de censurar a internet." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-020` -1, `ACT-014` +1 |
+| **Evento A** | — |
+| **Reação A** | Recusar |
+| **Opção B** | Esperar a autorregulação |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Integridade` -10 |
+| **Consequência B** | "A plataforma promete agir. Os anúncios falsos seguem no ar." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-020` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Reação B** | Aceitar |
+| **Aprendizado** | APR-188 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-189 — Elogio de robô
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Elogio de robô |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 3 |
+| **Técnica** | Fazenda de IA |
+| **Cor A** | Amarelo |
+| **Cor B** | Laranja |
+| **Problema** | Uma agência oferece 5 mil perfis falsos para elogiar seu governo nas redes. Ela garante: ninguém percebe que são robôs. |
+| **Opção A** | Contratar a agência |
+| **Efeitos A** | `Legitimidade` +15, `Capital Político` +5, `Caixa` -10, `Integridade` -15 |
+| **Consequência A** | "Os elogios inundam as redes. O debate fica mais barulhento e mais falso." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-011` +1 |
+| **Evento A** | "Uma reportagem revela os perfis pagos pelo governo." · atraso 1 · `Legitimidade` -10, `Integridade` -10 |
+| **Reação A** | Aceitar |
+| **Opção B** | Recusar a oferta |
+| **Efeitos B** | `Integridade` +10, `Legitimidade` -10, `Capital Político` -5 |
+| **Consequência B** | "Você fica só com perfis reais. Os ataques dominam as redes." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-011` -1 |
+| **Evento B** | — |
+| **Reação B** | Recusar |
+| **Aprendizado** | APR-189 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-190 — Medo da vacina
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Medo da vacina |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Pânico Moral |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | Vídeos dizem que a vacina contra o HPV paralisa meninas. É boato, mas pais desmarcam a vacinação nas escolas. |
+| **Opção A** | Investigar quem lucra |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -10, `Dignidade` -10 |
+| **Consequência A** | "A PF acha canais que vendem 'vacina natural'. O medo continua nas escolas." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | — |
+| **Evento A** | — |
+| **Reação A** | Investigar |
+| **Opção B** | Campanha com médicos |
+| **Efeitos B** | `Dignidade` +10, `Consciência` +5, `Caixa` -15, `Legitimidade` -5 |
+| **Consequência B** | "Médicos vão às escolas e às redes. A campanha custa caro e demora." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-014` +1 |
+| **Evento B** | "A procura pela vacina volta a subir nas escolas." · atraso 2 · `Dignidade` +10 |
+| **Reação B** | Recusar |
+| **Aprendizado** | APR-190 (doc 18) |
+| **Status** | provisório (DP-021) |
+
+### INST-191 — Curso que culpa o pobre
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Curso que culpa o pobre |
+| **Tipo** | Institucional |
+| **Modo** | Influenciador |
+| **Quem fala** | `ACT-022` |
+| **Ano mínimo** | 1 |
+| **Técnica** | Didatismo Acusatório |
+| **Cor A** | Azul |
+| **Cor B** | Vermelho |
+| **Problema** | Um coach oferece de graça seu curso a jovens do programa de emprego. A aula 'ensina' que pobre é pobre porque quer. É falso. |
+| **Opção A** | Aceitar o curso |
+| **Efeitos A** | `Legitimidade` +10, `Caixa` +5, `Consciência` -15, `Dignidade` -5 |
+| **Consequência A** | "Os jovens aprendem a culpar quem é pobre. Até a si mesmos." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-022` +1, `ACT-013` -1 |
+| **Evento A** | — |
+| **Reação A** | Aceitar |
+| **Opção B** | Investigar quem financia |
+| **Efeitos B** | `Integridade` +10, `Legitimidade` -10, `Capital Político` -5 |
+| **Consequência B** | "Uma casa de apostas banca o curso. O coach chama você de inimigo." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-022` -1 |
+| **Evento B** | — |
+| **Reação B** | Investigar |
+| **Aprendizado** | APR-191 (doc 18) |
+| **Status** | provisório (DP-021) |
+
 ---
 
 ## 17.12 — Cartas Temáticas (70)
@@ -820,10 +1390,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 18 | 200 |
+| **Institucionais** | 38 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **20** | **340** |
+| **Total** | **40** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

@@ -731,6 +731,9 @@ def _wave_blocks(path):
                 block.append(ln)
             elif started:
                 break
+        title = re.search(r"(?m)^\| \*\*Título\*\* \| (.*) \|$", "\n".join(block))
+        if title:   # the doc 17 heading repeats the card title (the GD heading may be longer)
+            block[0] = "### %s — %s" % (m.group(1), title.group(1).strip())
         out.append((m.group(1), "\n".join(block) + "\n"))
     return out
 

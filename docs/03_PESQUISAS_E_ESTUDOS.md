@@ -432,6 +432,7 @@ A **insustentabilidade** é evidente: vender patrimônio para cobrir déficit é
 O **BRICS** (Brasil, Rússia, Índia, China, África do Sul, mais recentemente expandido) tem buscado ativamente uma **agenda de desdolarização** e reforma do sistema monetário e financeiro internacional (SMFI).
 
 > "Ao defender a desdolarização, esses países pretendem mitigar os vários riscos apresentados pelo dólar estadunidense, e não confrontá-lo."
+> — Gao Bai, *Wenhua Zongheng*, out. 2023, publicado em português pelo Instituto Tricontinental em 17/05/2024 (https://thetricontinental.org/pt-pt/wenhua-zongheng-2024-1-reducao-de-riscos-desdolarizacao-moeda-brics/). A citação não é do artigo do IPEA; atribuição corrigida no P-015 (D-190).
 
 A prioridade estratégica do BRICS — especialmente a do Brasil em 2025 — concentrou-se no **aprofundamento de estudos sobre pagamentos em moedas locais**, sem prever a criação imediata de uma moeda comum.
 
