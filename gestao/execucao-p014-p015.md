@@ -12,7 +12,7 @@
 | 1 | P-014 etapa 2 — `/validate-cards` (opção ≤ 25 caracteres, `quem_fala`) | ✅ | `game_data.gd`, `test_data.gd`, `validate-cards.md`; DP-001; 18/18 testes |
 | 2 | P-014 etapa 1 (GDDs e docs) + P-015 Onda 0 | ✅ | `4dc9c8e`, `ded652b`; `/sync-tech` (docs 13 e 13.1); DP-002 a DP-017 |
 | 3 | P-014 etapas 3-5 (código) + ondas de cartas | 🟡 | Etapas 3-5 ✅ (`4177ec1`, `601168b`, etapa 5 neste registro); Ondas 1 e 2 em revisão |
-| 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | 🟡 | Etapa 6 ✅; etapa 7 em andamento |
+| 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | ✅ | Etapas 6 e 7 ✅ (P-014 pronto para o fechamento junto com o P-015) |
 | 5 | Ondas de cartas até o número-alvo (ECO a cada ~40 cartas) | ⏳ | — |
 | 6 | P-015 migração para `jogo/data/` + simulação do ECO com o baralho real | ⏳ | — |
 | 7 | Verificação final e entrega ao PO | ⏳ | — |
@@ -79,3 +79,10 @@
 - Mutação de 1 unidade em cada número de `endings.json` e `balance.json` (script no scratchpad, `qa/mutate.py`, testes rápidos): antes, 5/115 e 36/79 mortas; agora, 115/115 e 79/79 (100%). Só com os testes de comportamento (sem conferir dados = tabela): 102/115 e 77/79; as 15 que sobram não mudam o jogo (o "= 0" das 7 Catástrofes, que vem do `meters.json`; os 6 valores de Captura, que o carregador troca pelo do `balance.json`; o máximo 100 do nível Aliado).
 - Simulação headless de 2.116 partidas pelo `GameFlow` (23 perfis: aleatório, sempre A, sempre B, cuidadoso, afundar o Capital, populista, populista com piso, máximo e mínimo de cada medidor; script no scratchpad, `sim/sim.gd`): medidores sempre em 0-100; mesma semente → mesma partida; salvar → JSON → restaurar no meio dá o mesmo resultado; 8.202 eventos, todos no ano-alvo; nenhuma partida travada. Com o baralho fictício, 83% terminam em Catástrofe, 16% em Impeachment e 1% no fim do mandato (RT-10). **END-015 não aparece** com o baralho fictício: quase nenhuma partida chega ao fim do Ano 4; a D-174 está provada no teste de tabela (END-015 vence no próprio limite). Refazer com o baralho real (P-015, fase 6). Marcadores na tela final: nenhum "[a definir" na revelação (D-175 ✅); a descrição curta do final mostra "[descrição curta do final — a definir]" em todas as partidas (pendência P-1 acima); os epílogos mostram "[Fictício]" (dados fictícios).
 - `run_all.sh` 20/20 OK.
+
+### 2026-10-20 — P-014 etapa 7 (verificação ponta a ponta)
+- Capturas com xvfb (sem escala 0,75: a tela virtual cabe o tamanho real), numa cópia, com as opções novas `--text=N` e `--hc` dos `shot_*.gd`: 390×844 (casca, jogo, final, cena; jogo a 16, 20 px e alto contraste; casca a 16 px), 360×800 (casca, jogo, final, cena) e PC 1500×844 (casca, final, cena). 15 rodadas, todas com saída 0; folhas de contato no scratchpad (`sheet-*.png`).
+- Achado nas capturas e corrigido: a 20 px o rótulo do arraste encostava na borda da tela. Causa: a inclinação de 5° no limite (pivô no centro de baixo) leva o topo da carta ~25 px para o lado, o recuo inteiro; o teste de 16-36 px rodava com "Reduzir movimento" (sem inclinação). O rótulo agora desconta a inclinação (`swipe_card.gd` `_layout_option`); teste novo com a inclinação ligada, que falhava antes (`test_ui_kit.gd`).
+- Sem regressão nas outras capturas: coluna de 430 no PC (D-171), título e Sobre a 16 px, rodapé a 36 px, cena e tela final. Os marcadores "[… — a definir]" que aparecem são textos ainda não escritos (contagem da validação: 125) e a descrição curta do final (P-1).
+- Exportação Web e fechar a aba: ver o registro da etapa 5. Simulação e mutação: registro da etapa 6.
+- `run_all.sh` 20/20 OK depois da correção.
