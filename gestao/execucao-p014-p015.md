@@ -23,10 +23,10 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 
 | Onda | Cartas | Status |
 | :--- | :--- | :--- |
-| 1 | Influenciador INST-182..191 | fontes |
+| 1 | Influenciador INST-182..191 | fontes ✅ (5/5 conferidas); PSI |
 | 2 | Geopolítico INST-063..072 | fontes |
-| 3 | Influenciador INST-192..200 | GD |
-| 4 | Geopolítico INST-073..080 | — |
+| 3 | Influenciador INST-192..200 | GD ✅; fontes |
+| 4 | Geopolítico INST-073..080 | GD ✅; fontes |
 | 5 | Congresso INST-007..016 | — |
 | 6 | Congresso INST-017..020 + Orçamento INST-023..028 | — |
 | 7 | Orçamento INST-029..038 | — |
@@ -114,3 +114,9 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 - Sem regressão nas outras capturas: coluna de 430 no PC (D-171), título e Sobre a 16 px, rodapé a 36 px, cena e tela final. Os marcadores "[… — a definir]" que aparecem são textos ainda não escritos (contagem da validação: 125) e a descrição curta do final (P-1).
 - Exportação Web e fechar a aba: ver o registro da etapa 5. Simulação e mutação: registro da etapa 6.
 - `run_all.sh` 20/20 OK depois da correção.
+
+### 2026-10-21 — Ondas 1-4 (rascunhos) e checagem do baralho com 57 cartas
+- Rascunhos do GD prontos nas Ondas 1-4 (37 cartas; Geopolítico e Influenciador completos), todos com `cards_doc.py check` sem erros. Conferências: Onda 2 5/5, Onda 3 5/5 (`docs/12:101, 290, 383, 575, 577`; `cards_doc.py:44`; 0 erros), Onda 4 5/5 (`docs/17:430, 457`; `docs/11:492`; 0 erros; 5 cartas de Ano 2-4).
+- Fontes da Onda 1: 10/10 com trecho literal (8 primárias, 2 de imprensa pública). Reabri 5 links (APR-182, 185, 187, 189, 191): 5/5 conferem; dois textos ajustados para ficarem iguais à fonte (APR-182, APR-187).
+- Checagem do baralho (papel do ECO, feita por script: `cards_doc.py check --wave-report` sobre o doc 17 + Ondas 1-4 numa cópia): eventos em 15% (piso), eixos todos ≥ 20% (Diplomacia saiu de 10% para 43%), as 7 cores com saldo negativo, técnicas 3-4 cada; carta ligada fraca em Dignidade (2 opções positivas com Ano 2-4) e Segurança (5). Orientação nova no kit do GD. A simulação do ECO fica para a migração (fase 6), com o baralho real.
+- Novo no `cards_doc.py`: `check --style` (frase > 20 palavras, gerúndio, advérbio, futuro; doc 10 §10.03.2).
