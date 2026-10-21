@@ -115,7 +115,7 @@ Ficam como constantes nomeadas, fáceis de trocar:
 | Flick (D-153) | confirma com 22% de arraste ou com o texto à mostra há ≥ 150 ms | `tokens.gd` `FLICK_*` |
 | Dica do toque (D-163) | 4 s parado, uma vez por carta | `swipe_card.gd` `TAP_HINT_DELAY` |
 | Rodapé a 36 px | até 3 linhas, para não cortar o "n/7" | `card_footer.gd` |
-| Ids das cartas da cena | `IMP-1`..`IMP-5` (o baralho já usa `INST-141`..`143`); decisão da Onda 0 do P-015 | `data/impeachment.json` |
+| Ids das cartas da cena | `IMP-1`..`IMP-5`, Aprendizados `APR-IMP-1..5`; as INST-141..160 são cartas comuns do modo (DP-011, provisória) | `data/impeachment.json` |
 | Cena: cada fase | mostra consequência e Aprendizado | `game_flow.gd` |
 | Câmara antes da votação (D18) | "— / 513" (o 342 da prancha entrega o resultado; P8 pronta) | `scoreboard.gd` `P8_TARGET_ONLY` |
 | Pontos em eventos e no fechamento do ano | sem pontos | `game_screen.gd` `EVENT_DOTS`, `CLOSING_DOTS` |

@@ -438,7 +438,7 @@ As configurações ficam em `user://settings.cfg` (`ConfigFile`, seção `settin
 | `text_step` | Int | 18 | 16, 18, 20 ou 24 px (D-165); 36 px só como base de teste (D-169) (`settings.gd:10-11`) |
 | `reduce_motion` | Bool | false | — |
 | `high_contrast` | Bool | false | — |
-| `drag_limit` | Float | 0,40 | De 0,25 a 0,40 da largura da carta (D-146, D-158; `Tokens.DRAG_LIMIT_MIN` e `DRAG_LIMIT_DEFAULT`, `jogo/scripts/ui/tokens.gd`) |
+| `drag_limit` | Float | 0,40 | De 0,25 a 0,40 da largura da carta (D-146, D-158; `Tokens.DRAG_LIMIT_MIN` e `DRAG_LIMIT_DEFAULT`, `jogo/scripts/ui/tokens.gd:77-78`; `settings.gd:12-19`) |
 | `tutorial_seen` | Bool | false | — |
 | `audio` | Dicionário | `{}` | `[a definir]`: os controles de áudio não estão definidos nos docs |
 
@@ -539,7 +539,7 @@ Limiares (D-175): "alto" é valor **> 60** e "baixo" é valor **< 40**, lidos de
 
 **Bônus por equilíbrio:** no fechamento do turno, se todos os 8 medidores estão > 45, todos ganham +3 (1× por turno).
 
-Os valores desta seção estão em `jogo/data/balance.json` (`relations` :8-90, `awareness_loss_doubling` :91-94, `thresholds` :95-110, `balance_bonus` :111-114) e são aplicados no fechamento do turno por `MeterRules.close_turn` (`jogo/scripts/core/meter_rules.gd:57-80`).
+Os valores desta seção estão em `jogo/data/balance.json` (`relations` em `balance.json:8-90`, `awareness_loss_doubling` em `balance.json:91-94`, `thresholds` em `balance.json:95-110`, `balance_bonus` em `balance.json:111-114`) e são aplicados no fechamento do turno por `MeterRules.close_turn` (`jogo/scripts/core/meter_rules.gd:57-80`).
 
 Detalhes: `gdd/sistemas/01_medidores.md`.
 

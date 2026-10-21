@@ -423,6 +423,8 @@ Cada ficha contém:
 
 **Cartas do Modo:**
 
+*Lista antiga (P-003): a cena usa `IMP-1..5` (DP-011, provisória) e as INST-141..160 serão cartas comuns do modo, sobre pressão e legitimidade antes do processo, escritas nas ondas do P-015 (`docs/17_ROTEIRO_DAS_CARTAS.md` §17.09).*
+
 | # | Título | Tema |
 | :--- | :--- | :--- |
 | INST-141 | O Pedido | Início do processo |

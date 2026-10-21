@@ -2,9 +2,9 @@
 
 **Roteiro das Cartas de Aprendizado do jogo "O Planalto"**
 
-Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta (ex.: INST-001 → APR-001; THEM-001 → APR-THEM-001). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
+Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (P-010, 2026-10-13):** 22 Cartas de Aprendizado ligadas às 22 cartas do doc 17 (§18.02-18.13) e 127 em rascunho, aguardando carta (§18.14).
+**Status (Onda 0 do P-015, 2026-10-20):** 25 Cartas de Aprendizado ligadas às 25 cartas do doc 17 (20 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 124 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -587,13 +587,13 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.09 — Cartas de Aprendizado do Modo Impeachment (2 de 20)
+## 18.09 — Cartas de Aprendizado do Modo Impeachment (cena: 5; comuns: 0 de 20)
 
-### APR-141 — O Pedido
+### APR-IMP-1 — O Pedido
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-141                            │
+│  CARTA DE APRENDIZADO — IMP-1                               │
 │  O Pedido                                                   │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
@@ -620,11 +620,11 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Fonte verificada (P-010):** [Agência Brasil, 02/12/2015](https://agenciabrasil.ebc.com.br/politica/noticia/2015-12/cunha-aceita-pedido-de-abertura-de-processo-de-impeachment-de-dilma)
 
-### APR-142 — A Comissão
+### APR-IMP-2 — A Comissão
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-142                            │
+│  CARTA DE APRENDIZADO — IMP-2                               │
 │  A Comissão                                                 │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
@@ -653,11 +653,11 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-010):** [Agência Senado, 02/08/2016](https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff)
 **Fonte verificada (P-010):** [Câmara, 2016](https://www.camara.leg.br/noticias/484934-relatorio-de-jovair-arantes-recomenda-abertura-de-processo-de-impeachment-contra-dilma/)
 
-### APR-143 — A Votação
+### APR-IMP-3 — A Votação
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-143                            │
+│  CARTA DE APRENDIZADO — IMP-3                               │
 │  A Votação                                                  │
 │                                                             │
 │  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
@@ -680,11 +680,11 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-013):** [TNH1, 2016](https://www.tnh1.com.br/noticia/nid/camara-autoriza-senado-a-julgar-afastamento-da-presidente-dilma-rousseff/)
 **Fonte verificada (P-013):** [Diario de Pernambuco, 2026](https://www.diariodepernambuco.com.br/politica/2026/04/11712427-10-anos-do-impeachment-as-sessoes-da-camara-federal-que-aprovaram-a-derrubada-de-dilma-rousseff.html)
 
-### APR-144 — O Julgamento
+### APR-IMP-4 — O Julgamento
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-144                            │
+│  CARTA DE APRENDIZADO — IMP-4                               │
 │  O Julgamento                                               │
 │                                                             │
 │  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
@@ -706,11 +706,11 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Fonte verificada (P-013):** [História do Mundo](https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm) — fonte fraca
 
-### APR-145 — O Desfecho
+### APR-IMP-5 — O Desfecho
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-145                            │
+│  CARTA DE APRENDIZADO — IMP-5                               │
 │  O Desfecho                                                 │
 │                                                             │
 │  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
@@ -4150,6 +4150,8 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Impeachment
 
+*Os 3 rascunhos abaixo repetem Aprendizados já ligados à cena (APR-IMP-3..5, §18.09) e ficam só como histórico; os Aprendizados das 20 cartas comuns do modo (INST-141..160) são novos (Onda 0 do P-015).*
+
 #### APR-143 — A Votação na Câmara
 
 ```
@@ -4244,10 +4246,11 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 20 | 127 | 200 |
+| **Institucionais** | 18 | 124 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **22** | **127** | **340** |
+| **Total** | **20** | **124** | **340** |
+| Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
 
