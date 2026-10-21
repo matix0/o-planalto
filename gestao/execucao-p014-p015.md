@@ -25,10 +25,10 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 | :--- | :--- | :--- |
 | 1 | Influenciador INST-182..191 | ✅ gravada (DP-021) |
 | 2 | Geopolítico INST-063..072 | ✅ gravada (DP-022) |
-| 3 | Influenciador INST-192..200 | GD ✅; fontes |
-| 4 | Geopolítico INST-073..080 | GD ✅; fontes |
-| 5 | Congresso INST-007..016 | GD |
-| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | — |
+| 3 | Influenciador INST-192..200 | fontes ✅ (5/5); PSI |
+| 4 | Geopolítico INST-073..080 | fontes ✅ (5/5); PSI |
+| 5 | Congresso INST-007..016 | GD ✅; fontes |
+| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | GD |
 | 7 | Orçamento INST-029..038 | — |
 | 8 | Orçamento INST-039..040 + Currículo INST-043..050 | — |
 | 9 | Currículo INST-051..060 | — |
@@ -59,6 +59,7 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 - Descrição curta dos finais (relatório do `/sync-tech`, P-1): `endings.json` não tem o campo e a tela final mostra "[descrição curta do final — a definir]" em toda partida (`jogo/scripts/core/game_flow.gd:28, 459`). Alternativas: A) escrever as 28 com GD e PSI (recomendada pelo agente); B) tirar a descrição da tela e dos docs 14/14A; C) manter o marcador até o P-006. Fora do escopo do P-014; não decidi.
 - D-055 (card-framework) segue aberta (relatório do `/sync-tech`, P-2): A) nova decisão "não adotado" (recomendada); B) manter como recomendação; C) migrar depois.
 - `gdd/GDD.md` §12.2-12.4 ainda com chaves em PT (P-3): A) trocar por ponteiro ao doc 13 (recomendada); B) copiar o esquema EN; C) deixar.
+- Bets proibidas em 2026: a MP 1.394/2026 (setembro) proibiu as bets no Brasil, com recurso no STF (Senado, sumário da MPV 1394). A carta aprovada INST-181 e as INST-193/194 da Onda 3 supõem bets legais. O PSI da Onda 3 propõe o texto; a INST-181 (aprovada antes) fica com o PO.
 - Tela Sobre: os textos completos das licenças de terceiros do Godot (`Engine.get_license_info()`, ~77 mil caracteres) não aparecem; a tela lista componentes, licenças e copyrights (DP-019). Decidir se entram (tela, arquivo ao lado do build Web ou link).
 
 ## Registro
@@ -126,3 +127,7 @@ Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`
 - PSI das Ondas 1 e 2: 9 aprovar, 11 ajustar, 0 reprovar (`.claude/notas/execucao/onda-01/psi.md`, `onda-02/psi.md`). Ajustes aplicados com textos exatos do PSI; pontos que ficavam com o PO decididos de forma provisória (DP-021, DP-022). QA: títulos do JSON iguais aos das cartas, ponto final nos eventos da Onda 2, "Sinal:" no APR-191, fonte de imprensa marcada nas caixas APR-184, 191 e 072.
 - Gravação com `cards_doc.py insert` (cartas no modo, em ordem; caixas no doc 18; rascunhos APR-063..072 retirados da §18.14; contagens refeitas): doc 17 com 40 de 340 + 5 da cena, `cards_doc.py check` com 0 erros.
 - Doc 03 §03.13: a citação sobre desdolarização era de Gao Bai (Tricontinental, 2024), não do IPEA (achado do pesquisador; conferido no link). Atribuição corrigida (D-190).
+
+### 2026-10-21 — pausa pelo limite de uso e retomada
+- 01:50: o limite de uso da conta parou o GD da Onda 6 e as fontes da Onda 5 no meio (RP-09); o PSI das Ondas 3-4 não chegou a abrir. As notas incrementais guardaram o progresso. Retomado às 10:55: os dois agentes continuam do ponto em que pararam (SendMessage) e o PSI das Ondas 3-4 começou.
+- Fontes da Onda 3 (9/9, 2 de imprensa) e da Onda 4 (8/8, todas primárias): 5 reabertas em cada, 10/10 conferem. Ajustes de texto para ficar igual à fonte: APR-192 (a norma revogada era a das transferências do Pix) e APR-074 ("anunciaram a intenção de", como a fonte).
