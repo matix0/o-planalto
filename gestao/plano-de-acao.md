@@ -400,6 +400,29 @@
 
 ---
 
+## P-016 — Conferência das fontes das cartas
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | ⏳ Pendente (separado do P-015 a pedido do PO, 2026-10-21) |
+| **Início** | — |
+| **Conclusão** | — |
+| **Decisões** | D-091, D-102 |
+| **Objetivo** | Conferir na web as fontes dos Aprendizados (trecho literal + link) antes de as cartas valerem como reais; o P-015 segue com o texto das cartas e o jogo fica jogável antes |
+| **Depende de** | Acesso às páginas oficiais (`senado.leg.br`, `camara.leg.br`, `agenciabrasil.ebc.com.br`, `stf.jus.br` etc.). Na nuvem, a política de rede bloqueou essas páginas em 2026-10-21 (WebFetch e `curl` com 403); só a busca funcionou. Liberar os domínios no ambiente ou rodar localmente |
+
+### Etapas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Onda 5: fontes APR-014, 015 e 016 e o `aprendizados.json` | ⏳ | `.claude/notas/execucao/onda-05/fontes.md` (7 de 10 feitas) |
+| 2 | Onda 6: fontes APR-020 e APR-023..028 | ⏳ | `.claude/notas/execucao/onda-06/fontes.md` (3 de 10) |
+| 3 | Ondas 7 em diante: fontes de cada onda escrita pelo GD | ⏳ | — |
+| 4 | Reconferências marcadas: diplomação de 2026 (APR-007), bets proibidas pela MP 1.394/2026 (APR-193/194, INST-181), taxa zerada (APR-009) | ⏳ | diário `gestao/execucao-p014-p015.md` |
+| 5 | 5 fontes de cada onda reabertas à mão pelo fio principal | ⏳ | — |
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |

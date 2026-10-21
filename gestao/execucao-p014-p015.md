@@ -164,3 +164,10 @@ Parado a pedido do membro (limite de uso semanal). Tudo está commitado e no `or
 - Gravação com `cards_doc.py insert`: doc 17 com 57 de 340 + 5 da cena; rascunhos APR-073..080 retirados da §18.14; `cards_doc.py check` com 0 erros (avisos de estilo só em cartas aprovadas antes: INST-062, INST-082, ATOR-001).
 - Para as próximas cartas do `ACT-021` (proposta do GD da Onda 4): "comprar terras" e "base militar" já viraram INST-073, 074 e 077; a exigência e o ataque do ator usam outros temas.
 - Pendente para o PO: a lista de cartas planejadas do doc 12 (MOD-010 e Geopolítico) não bate mais com as cartas escritas; regravar a lista quando o PO aprovar as ondas.
+
+### 2026-10-21 — retomada na nuvem: conferência das fontes vira o P-016
+
+- `main` ganhou a `claude/p014-p015` (fast-forward, pedido do PO) e o commit `dc21820` (D-191 a D-193); esta branch foi alinhada ao `main`.
+- Na nuvem, a política de rede barra as páginas oficiais (WebFetch e `curl` com 403 em `senado.leg.br` e `camara.leg.br`); só a busca na web funciona, sem trecho literal. O PO mandou separar a conferência num plano à parte (P-016) e focar em deixar o jogo jogável.
+- Godot 4.7.2 oficial baixado para o scratchpad; `run_all.sh` numa cópia: 20/20 OK.
+
