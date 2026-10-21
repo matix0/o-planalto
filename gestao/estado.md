@@ -1,8 +1,8 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-10
+**Última atualização:** 2026-10-21
 **Fase atual:** Setup de documentação (Fase 0-3 concluídas)
-**Próxima fase:** Escrita dos arquivos 14-18 e GDD
+**Próxima fase:** Consolidação dos docs e roteiros (P-010), depois GDD (P-004)
 
 ---
 
@@ -122,17 +122,11 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 
 ## Próximo Passo
 
-**Escrever os arquivos 14-18** (UI/UX, Fluxo, Manual, Roteiros) antes do GDD.
+**P-010** (`gestao/plano-de-acao.md`): consolidar os docs 14-18 e completar as Cartas de Aprendizado. Começa pelas decisões das etapas 10 e 11.
 
 **Pendências do P-009:**
 - Recuperar o começo dos docs 04, 05, 06, 08 e 10 (RC-09).
 - Parecer jurídico sobre o conteúdo com políticos reais (RC-08), incluindo as citações protegidas (D-091).
-
-**Pendências da consolidação (2026-10-10):**
-- Finais 20 e 26 com a mesma condição: tratar no `/validate-finals`.
-- Doc 13: evento X+2, eixo ±1 e sub-medidores fora do schema ficam para o P-005 (D-092).
-- Doc 17: títulos longos, 13 pares com problema repetido e 168 Aprendizados só com Frase, em lotes para o PO.
-- Docs 14-18: varredura de inconsistências em andamento.
 
 **Bloqueios:** Nenhum.
 

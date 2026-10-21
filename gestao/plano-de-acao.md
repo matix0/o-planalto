@@ -227,6 +227,52 @@
 
 ---
 
+## P-010 — Roteiro das Cartas e Consolidação da Documentação
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-10 |
+| **Objetivo** | Completar o roteiro das 342 cartas, validar e consolidar os docs 00-18 com o PO |
+| **Decisões** | D-081 a D-093 |
+| **Notas** | `.claude/notas/sync-*.md` e `validacao-cartas.md` (locais; o essencial está neste plano) |
+
+### Etapas concluídas
+
+| # | Etapa | Status | Evidência |
+| :--- | :--- | :--- | :--- |
+| 1 | Inserir as 282 cartas do PO no doc 17 | ✅ | commit `fd9a182` |
+| 2 | Escrever as 56 cartas institucionais que faltavam (INST-143 a 200) | ✅ | commit `2c28ee8` |
+| 3 | `/sync-docs`: correções mecânicas nos docs 00-13 | ✅ | commit `bae2d0c` |
+| 4 | Decisões do PO: 24 atores e 342 cartas, prefixo `ACT-`, só os 8 medidores | ✅ | D-081 a D-083, commit `b9db675` |
+| 5 | Decisões do PO: 6 regras de sorteio, campo único `efeitos`, 6 consequências | ✅ | D-084 a D-086, commit `c45e82b` |
+| 6 | Decisões do PO: Juros, satisfação, impeachment 5+15, 24 atores nos eventos (108) | ✅ | D-087 a D-090, commit `4e530d4` |
+| 7 | Domínio público no doc 08; doc 13 adiado para o P-005 | ✅ | D-091 e D-092, commit `df4c557` |
+| 8 | Doc 17, lote 1: títulos, consequências e 13 cartas repetidas | ✅ | D-093, commit `795eb98`; `/validate-cards`: 0 erros |
+| 9 | Varredura de QA dos docs 14-18 | ✅ | resultados nas etapas 10-14 abaixo |
+
+### Etapas pendentes
+
+| # | Etapa | Tipo | Status | Detalhe |
+| :--- | :--- | :--- | :--- | :--- |
+| 10 | Fonte da verdade entre docs 17 e 18 | Decisão do PO | ⏳ | 10 dados em conflito (ex.: APR-017 × INST-017, APR-023, 035, 043, 052, 069, 084, 087, 093), 4 frases que mudam de sentido, vivências erradas em APR-125 e APR-145. Opções: 17 manda (recomendado) / 18 manda / caso a caso |
+| 11 | Fatos sem verificação | Decisão + checagem | ⏳ | "Relator admitiu que pedaladas não eram crime" (`docs/03_PESQUISAS_E_ESTUDOS.md:102`, APR-142/145, INST-142/145); fonte "Revista Acervo, 2025"; 101 de 145 fontes genéricas no doc 18; Eletrobras "1/5 e 5 mil demitidos"; CPI das Bets "4 a 3"; "554 deepfakes"; citações de pessoas reais em APR-014 e APR-028. Opções: marcar `[verificar]` e checar antes do playtest (recomendado) / remover já. Revisão do PSI para o tom editorial ("foi um golpe") |
+| 12 | Doc 14 (UI/UX) | Correção | ⏳ | Graves: tela de impeachment em inglês e com placar inventado (`14:366-396`); calendário de 48 meses e "R$ 500M" (`14:280`); ator inexistente "Ministro da Economia" (`14:270,291`); Font Awesome não é CC0 (`14:514`). Médios: cor de medidor igual à cor partidária; HUD sem os 3 sub-medidores; tamanhos de fonte divergentes; contraste a medir; citações sem fonte |
+| 13 | Docs 15 e 16 (fluxo e manual) | Correção + decisões | ⏳ | Mecânico (decisões já tomadas): impeachment a partir do Ano 2 e com 15 reações (`15:225-230`, `16:162`, `15:297-309`, `16:247-253`); final "virtuoso" não existe (`15:403`); calibração ±10 em um medidor e "pode pular" (`15:164-171`); satisfação (`16:214-215`); "sorteio guiado" (`16:367`); eventos "1-2 turnos" (`16:221`). Decisões: Vila Nova cidade-estado ou país (`16:5,11`); 12+ ou Livre (D-042, `16:351`); acessibilidade além da D-044 (`16:333-337`); tempo por carta × 30-40 min (`15:66-71,269-278`); rótulos "lulista/bolsonarista" no manual (`16:268-272`) |
+| 14 | Doc 17, lote 2 | Proposta + aprovação | ⏳ | 168 cartas com Aprendizado só com Frase. Fazer junto com a etapa 15 |
+| 15 | Doc 18: Cartas de Aprendizado que faltam | Escrita + aprovação | ⏳ | 197 APR (INST-146 a 200, THEM-001 a 070, ACT-001 a 072); corrigir 10 títulos, 24 frases em 2 linhas e o texto "o documento completo tem 342" (`18:3,3932`). Depende das etapas 10 e 11 |
+| 16 | `/validate-finals` | Validação + decisões | ⏳ | Finais 20 e 26 com a mesma condição (`04:599,610`); `Caixa` = 0 sem final de catástrofe (`04:117`); nomes dos finais em 100 divergentes (`04:117-124` × `04:563-564`); títulos de finais com mais de 3 palavras (`10:442`) |
+| 17 | Pendências menores do `/sync-docs` | Correção + decisões | ⏳ | Glossário sem os 8 medidores e outros termos; "9axes" com 4 eixos (nome); "modo diferente a cada turno" (`04:342`); evento "Colapso da verdade" (`11:532`, D-080); "180+ ferramentas" (`02:131`); quadro de riscos do doc 08 sem RT-08, RT-09, RC-08 e RC-09; itens abertos do doc 07 já resolvidos |
+| 18 | Revalidar e fechar | Validação | ⏳ | `/validate-cards`, `/sync-docs` (docs 00-18) e `/fechar-plano` |
+
+**Fora deste plano:**
+- D-005 / RC-08: o PO decidiu manter os docs como estão; segue o parecer jurídico (P-009).
+- Doc 13 (evento X+2, eixo ±1, sub-medidores no schema): P-005 (D-092).
+- Recuperar o começo dos docs 04, 05, 06, 08 e 10: P-009 (RC-09).
+- Próximo plano depois deste: P-004 (GDD completo).
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |
