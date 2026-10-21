@@ -17,6 +17,34 @@
 | 6 | P-015 migração para `jogo/data/` + simulação do ECO com o baralho real | ⏳ | — |
 | 7 | Verificação final e entrega ao PO | ⏳ | — |
 
+## Fila das ondas do P-015 (plano do fio principal; IDs pela DP-011 a DP-015)
+
+Cada onda: GD (rascunho em `.claude/notas/execucao/onda-NN/`, kit em `kit-gd.md`) → fontes na web (subagente; 5 conferidas à mão) → PSI → gravação com `jogo/tools/cards_doc.py insert` e uma DP por onda. ECO a cada ~40 cartas.
+
+| Onda | Cartas | Status |
+| :--- | :--- | :--- |
+| 1 | Influenciador INST-182..191 | fontes |
+| 2 | Geopolítico INST-063..072 | fontes |
+| 3 | Influenciador INST-192..200 | GD |
+| 4 | Geopolítico INST-073..080 | — |
+| 5 | Congresso INST-007..016 | — |
+| 6 | Congresso INST-017..020 + Orçamento INST-023..028 | — |
+| 7 | Orçamento INST-029..038 | — |
+| 8 | Orçamento INST-039..040 + Currículo INST-043..050 | — |
+| 9 | Currículo INST-051..060 | — |
+| 10 | Prisional INST-083..092 | — |
+| 11 | Prisional INST-093..100 + Emendas INST-102..103 | — |
+| 12 | Emendas INST-104..113 | — |
+| 13 | Emendas INST-114..120 + Bancadas INST-122..124 | — |
+| 14 | Bancadas INST-125..134 | — |
+| 15 | Bancadas INST-135..140 + Impeachment INST-141..144 | — |
+| 16 | Impeachment INST-145..154 | — |
+| 17 | Impeachment INST-155..160 + Judiciário INST-162..165 | — |
+| 18 | Judiciário INST-166..175 | — |
+| 19 | Judiciário INST-176..180 | — |
+| 20-26 | Temáticas: THEM-002..010, 011..020, 021..030, 031..040, 041..050, 051..060, 061..070 (um tema por onda) | — |
+| 27-33 | Atores: ATOR-002..011, 012..021, 022..031, 032..041, 042..051, 052..061, 062..070 | — |
+
 ## Bloqueios para o PO
 
 | # | Bloqueio | Por que não decidi | Onde |
