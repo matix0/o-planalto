@@ -1,0 +1,321 @@
+[
+  {
+    "id": "ACT-001",
+    "name": "Latifundiários",
+    "category": "capital",
+    "archetype": "Senhor de engenho, barão do café, dono de terras",
+    "offers": [
+      "political_capital"
+    ],
+    "costs": [
+      "sovereignty"
+    ],
+    "cards": {
+      "attack": "ATOR-001",
+      "demand": "ATOR-002",
+      "offer": "ATOR-003"
+    }
+  },
+  {
+    "id": "ACT-002",
+    "name": "Investidores da Faria Lima",
+    "category": "capital",
+    "archetype": "Capital financeiro, especulador, dono de fundos",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "dignity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-003",
+    "name": "Construtoras",
+    "category": "capital",
+    "archetype": "Especulação imobiliária, dono de empreiteiras",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "dignity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-004",
+    "name": "Empresariado Industrial",
+    "category": "capital",
+    "archetype": "Dono de fábrica, industrial, empreendedor",
+    "offers": [
+      "sovereignty"
+    ],
+    "costs": [
+      "dignity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-005",
+    "name": "Setor de Universidades Privadas",
+    "category": "capital",
+    "archetype": "Financeirização do ensino",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "awareness"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-006",
+    "name": "Mercado",
+    "category": "capital",
+    "archetype": "Capital especulativo, \"mãos invisíveis\"",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "dignity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-007",
+    "name": "Tecnocratas",
+    "category": "state",
+    "archetype": "Planejador militar, economista, \"salvador da pátria\"",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "dignity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-008",
+    "name": "Militares",
+    "category": "state",
+    "archetype": "Forças Armadas, capitão do mato, guardião da ordem",
+    "offers": [
+      "security"
+    ],
+    "costs": [
+      "legitimacy"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-009",
+    "name": "Servidores Públicos Estatais",
+    "category": "state",
+    "archetype": "Servidor público de carreira, burocrata",
+    "offers": [
+      "sovereignty"
+    ],
+    "costs": [
+      "treasury"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-010",
+    "name": "Diplomatas do Itamaraty",
+    "category": "state",
+    "archetype": "Política externa, diplomacia, soberania",
+    "offers": [
+      "security"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {
+      "attack": "ATOR-004",
+      "demand": "ATOR-005"
+    }
+  },
+  {
+    "id": "ACT-011",
+    "name": "Líder da Câmara (Centrão)",
+    "category": "state",
+    "archetype": "Fisiologismo, presidencialismo de coalizão",
+    "offers": [
+      "political_capital"
+    ],
+    "costs": [
+      "legitimacy"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-012",
+    "name": "Pastores",
+    "category": "civil_society",
+    "archetype": "Imperador midiático da fé",
+    "offers": [
+      "legitimacy"
+    ],
+    "costs": [
+      "integrity"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-013",
+    "name": "Sindicato dos Professores",
+    "category": "civil_society",
+    "archetype": "Educador libertador e sucateado",
+    "offers": [
+      "awareness"
+    ],
+    "costs": [
+      "treasury"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-014",
+    "name": "Profissionais da Saúde",
+    "category": "civil_society",
+    "archetype": "Sanitarista, médicos, enfermeiros, técnicos, agentes comunitários",
+    "offers": [
+      "dignity"
+    ],
+    "costs": [
+      "treasury"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-015",
+    "name": "Líder Sindical",
+    "category": "civil_society",
+    "archetype": "Trabalhadores organizados",
+    "offers": [
+      "legitimacy"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-016",
+    "name": "Movimentos por Moradia (MTST)",
+    "category": "civil_society",
+    "archetype": "Luta urbana, direito à cidade",
+    "offers": [
+      "dignity"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-017",
+    "name": "Movimentos sociais do campo (MST)",
+    "category": "civil_society",
+    "archetype": "Luta pela terra, reforma agrária",
+    "offers": [
+      "dignity"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-018",
+    "name": "Movimentos sociais ambientais",
+    "category": "civil_society",
+    "archetype": "Proteção ambiental, ecologia",
+    "offers": [
+      "awareness"
+    ],
+    "costs": [
+      "treasury"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-019",
+    "name": "Artista Engajado",
+    "category": "civil_society",
+    "archetype": "Cultura como trincheira",
+    "offers": [
+      "legitimacy"
+    ],
+    "costs": [
+      "security"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-020",
+    "name": "Meta (Big Tech)",
+    "category": "media_tech",
+    "archetype": "Colonialismo digital",
+    "offers": [
+      "legitimacy"
+    ],
+    "costs": [
+      "awareness"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-021",
+    "name": "Impérios Geopolíticos (China e EUA)",
+    "category": "media_tech",
+    "archetype": "Imperialismo, potências estrangeiras",
+    "offers": [
+      "treasury"
+    ],
+    "costs": [
+      "sovereignty"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-022",
+    "name": "Coach Digital",
+    "category": "media_tech",
+    "archetype": "Novo pastor da prosperidade",
+    "offers": [
+      "legitimacy"
+    ],
+    "costs": [
+      "awareness"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-023",
+    "name": "Jornalista Independente",
+    "category": "media_tech",
+    "archetype": "Imprensa alternativa e resistência",
+    "offers": [
+      "awareness"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {}
+  },
+  {
+    "id": "ACT-024",
+    "name": "Influenciador Progressista",
+    "category": "media_tech",
+    "archetype": "Nova esquerda digital",
+    "offers": [
+      "awareness"
+    ],
+    "costs": [
+      "political_capital"
+    ],
+    "cards": {}
+  }
+]

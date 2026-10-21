@@ -1,0 +1,66 @@
+[
+  {
+    "id": "dignity",
+    "name": "Dignidade",
+    "category": "social",
+    "initial": 45,
+    "zero_ending": "END-001",
+    "capture_ending": null
+  },
+  {
+    "id": "awareness",
+    "name": "Consciência",
+    "category": "social",
+    "initial": 40,
+    "zero_ending": "END-002",
+    "capture_ending": null
+  },
+  {
+    "id": "sovereignty",
+    "name": "Soberania",
+    "category": "social",
+    "initial": 40,
+    "zero_ending": "END-003",
+    "capture_ending": null
+  },
+  {
+    "id": "security",
+    "name": "Segurança",
+    "category": "social",
+    "initial": 50,
+    "zero_ending": "END-004",
+    "capture_ending": "END-009"
+  },
+  {
+    "id": "integrity",
+    "name": "Integridade",
+    "category": "social",
+    "initial": 40,
+    "zero_ending": "END-005",
+    "capture_ending": null
+  },
+  {
+    "id": "treasury",
+    "name": "Caixa",
+    "category": "power",
+    "initial": 55,
+    "zero_ending": "END-006",
+    "capture_ending": null
+  },
+  {
+    "id": "political_capital",
+    "name": "Capital Político",
+    "category": "power",
+    "initial": 50,
+    "zero_ending": null,
+    "capture_ending": "END-010"
+  },
+  {
+    "id": "legitimacy",
+    "name": "Legitimidade",
+    "category": "power",
+    "initial": 55,
+    "zero_ending": "END-008",
+    "capture_ending": "END-011"
+  }
+]

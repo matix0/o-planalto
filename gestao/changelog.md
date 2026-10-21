@@ -9,6 +9,10 @@ Versionamento: [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Adicionado (jogo jogável)
+- O jogo usa as 57 cartas reais dos docs 17 e 18 (D-194); baralho fictício só nos testes (`jogo/tests/fixtures/data/`); novo `test_real_data.gd`
+- Jogo no navegador em `/jogar/` do site, exportado pelo workflow (D-195)
+
 ### Adicionado
 - Rascunho com as 342 cartas da branch `claude/eloquent-einstein-gez6rk` em `gestao/rascunhos/` para as ondas do P-015, fora do baralho (D-193)
 - Decisões D-191 a D-193

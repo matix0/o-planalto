@@ -1,0 +1,153 @@
+{
+  "year_multipliers": [
+    0.25,
+    0.75,
+    1.0,
+    1.5
+  ],
+  "relations": [
+    {
+      "source": "dignity",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "awareness": -5
+      }
+    },
+    {
+      "source": "dignity",
+      "op": ">",
+      "value": 70,
+      "effects": {
+        "awareness": 3
+      }
+    },
+    {
+      "source": "awareness",
+      "op": ">",
+      "value": 60,
+      "effects": {
+        "legitimacy": -5
+      }
+    },
+    {
+      "source": "awareness",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "legitimacy": 5
+      }
+    },
+    {
+      "source": "sovereignty",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "treasury": 10,
+        "dignity": -5
+      }
+    },
+    {
+      "source": "security",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "dignity": -10
+      }
+    },
+    {
+      "source": "treasury",
+      "op": ">",
+      "value": 70,
+      "effects": {
+        "legitimacy": -3
+      }
+    },
+    {
+      "source": "treasury",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "legitimacy": -5
+      }
+    },
+    {
+      "source": "political_capital",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "treasury": -10
+      }
+    },
+    {
+      "source": "legitimacy",
+      "op": "<",
+      "value": 30,
+      "effects": {
+        "political_capital": -10
+      }
+    }
+  ],
+  "awareness_loss_doubling": {
+    "integrity_below": 30,
+    "factor": 2
+  },
+  "thresholds": [
+    {
+      "source": "integrity",
+      "op": "<",
+      "value": 20,
+      "effects_all_others": -1
+    },
+    {
+      "source": "legitimacy",
+      "op": ">",
+      "value": 90,
+      "effects": {
+        "awareness": -10
+      }
+    }
+  ],
+  "balance_bonus": {
+    "all_above": 45,
+    "amount": 3
+  },
+  "emergency_at_or_below": 10,
+  "linked_card_below": 30,
+  "calibration_step": 5,
+  "actor_initial": 50,
+  "actor_step": 10,
+  "actor_levels": [
+    {
+      "id": "furious",
+      "max": 20,
+      "role": "attack"
+    },
+    {
+      "id": "dissatisfied",
+      "max": 40,
+      "role": "demand"
+    },
+    {
+      "id": "neutral",
+      "max": 60,
+      "role": "demand"
+    },
+    {
+      "id": "satisfied",
+      "max": 80,
+      "role": "offer"
+    },
+    {
+      "id": "ally",
+      "max": 100,
+      "role": "offer"
+    }
+  ],
+  "cards_per_turn": 7,
+  "max_mandatory_per_turn": 3,
+  "capture_at_or_above": 95,
+  "capture_warning_at_or_above": 81,
+  "reveal_high_above": 60,
+  "reveal_low_below": 40
+}

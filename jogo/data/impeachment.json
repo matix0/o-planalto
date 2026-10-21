@@ -1,14 +1,17 @@
 [
   {
     "id": "IMP-1",
-    "phase": 1,
     "title": "O Pedido",
-    "mode": "impeachment",
     "type": "impeachment",
+    "mode": "impeachment",
+    "phase": 1,
     "speaker": "Câmara dos Deputados",
-    "problem": "[Fictício] Problema da fase 1 da cena de impeachment.",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A oposição protocolou um pedido de impeachment. O presidente da Câmara, seu adversário, aceita o pedido em 48 horas.",
     "option_a": {
-      "text": "[Fictício] Povo · F1",
+      "text": "Apelar ao povo",
       "color": "purple",
       "axis": [
         0,
@@ -21,17 +24,17 @@
         "legitimacy": 5,
         "security": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A na fase 1.",
+      "consequence": "As ruas se enchem. Mas o Congresso se sente atacado.",
       "test": {
         "meter": "awareness",
         "op": ">",
         "value": 45
-      }
+      },
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Congresso · F1",
+      "text": "Confiar na base",
       "color": "yellow",
       "axis": [
         0,
@@ -43,30 +46,30 @@
         "political_capital": 10,
         "treasury": -10
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B na fase 1.",
+      "consequence": "A base está rachada. Alguns aliados já negociam com a oposição.",
       "test": {
         "meter": "treasury",
         "op": ">",
         "value": 45
-      }
+      },
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-IMP-1",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-IMP-1"
   },
   {
     "id": "IMP-2",
-    "phase": 2,
     "title": "A Comissão",
-    "mode": "impeachment",
     "type": "impeachment",
+    "mode": "impeachment",
+    "phase": 2,
     "speaker": "Câmara dos Deputados",
-    "problem": "[Fictício] Problema da fase 2 da cena de impeachment.",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O presidente da Câmara aceitou o pedido. Uma comissão especial foi formada. O relator é seu adversário.",
     "option_a": {
-      "text": "[Fictício] Povo · F2",
+      "text": "Denunciar o golpe",
       "color": "red",
       "axis": [
         0,
@@ -79,17 +82,17 @@
         "awareness": 5,
         "security": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A na fase 2.",
+      "consequence": "A denúncia ganha força nas ruas. Mas o Congresso ignora.",
       "test": {
         "meter": "integrity",
         "op": ">",
         "value": 45
-      }
+      },
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Congresso · F2",
+      "text": "Negociar nos bastidores",
       "color": "yellow",
       "axis": [
         0,
@@ -102,30 +105,30 @@
         "treasury": -10,
         "integrity": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B na fase 2.",
+      "consequence": "A comissão suaviza o parecer. Mas o povo percebe a compra de votos.",
       "test": {
         "meter": "political_capital",
         "op": ">",
         "value": 25
-      }
+      },
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-IMP-2",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-IMP-2"
   },
   {
     "id": "IMP-3",
-    "phase": 3,
     "title": "A Votação",
-    "mode": "impeachment",
     "type": "impeachment",
+    "mode": "impeachment",
+    "phase": 3,
     "speaker": "Câmara dos Deputados",
-    "problem": "[Fictício] Problema da fase 3 da cena de impeachment.",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A Câmara vai votar a autorização do processo. São precisos 342 de 513 votos. A contagem está apertada.",
     "option_a": {
-      "text": "[Fictício] Povo · F3",
+      "text": "Mobilizar as ruas",
       "color": "red",
       "axis": [
         0,
@@ -138,17 +141,17 @@
         "sovereignty": -5,
         "security": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A na fase 3.",
+      "consequence": "As praças lotam. Os deputados sentem a pressão.",
       "test": {
         "meter": "awareness",
         "op": ">",
         "value": 55
-      }
+      },
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Congresso · F3",
+      "text": "Negociar votos",
       "color": "yellow",
       "axis": [
         0,
@@ -161,30 +164,30 @@
         "sovereignty": -10,
         "security": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B na fase 3.",
+      "consequence": "Alguns votos mudam de lado. O preço vem depois.",
       "test": {
         "meter": "political_capital",
         "op": ">",
         "value": 35
-      }
+      },
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-IMP-3",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-IMP-3"
   },
   {
     "id": "IMP-4",
-    "phase": 4,
     "title": "O Julgamento",
-    "mode": "impeachment",
     "type": "impeachment",
+    "mode": "impeachment",
+    "phase": 4,
     "speaker": "Senado Federal",
-    "problem": "[Fictício] Problema da fase 4 da cena de impeachment.",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Senado julga o processo. São precisos 54 de 81 votos para condenar.",
     "option_a": {
-      "text": "[Fictício] Povo · F4",
+      "text": "Fazer a defesa no Senado",
       "color": "purple",
       "axis": [
         0,
@@ -196,17 +199,17 @@
         "awareness": 10,
         "treasury": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A na fase 4.",
+      "consequence": "A defesa é ouvida no país inteiro.",
       "test": {
         "meter": "dignity",
         "op": ">",
         "value": 50
-      }
+      },
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Congresso · F4",
+      "text": "Oferecer cargos",
       "color": "yellow",
       "axis": [
         0,
@@ -219,30 +222,30 @@
         "legitimacy": 5,
         "dignity": -10
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B na fase 4.",
+      "consequence": "Os cargos são aceitos. As promessas ao povo esperam.",
       "test": {
         "meter": "political_capital",
         "op": ">",
         "value": 40
-      }
+      },
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-IMP-4",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-IMP-4"
   },
   {
     "id": "IMP-5",
-    "phase": 5,
     "title": "O Desfecho",
-    "mode": "impeachment",
     "type": "impeachment",
+    "mode": "impeachment",
+    "phase": 5,
     "speaker": "Senado Federal",
-    "problem": "[Fictício] Problema da fase 5 da cena de impeachment.",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "É o último dia. O resultado depende do apoio que você juntou e da sua última palavra.",
     "option_a": {
-      "text": "[Fictício] Povo · F5",
+      "text": "Falar à nação",
       "color": "red",
       "axis": [
         0,
@@ -254,17 +257,17 @@
         "legitimacy": 10,
         "treasury": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A na fase 5.",
+      "consequence": "O país para para ouvir.",
       "test": {
         "meter": "legitimacy",
         "op": ">",
         "value": 45
-      }
+      },
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Congresso · F5",
+      "text": "Pactuar com o Congresso",
       "color": "yellow",
       "axis": [
         0,
@@ -276,18 +279,15 @@
         "integrity": 5,
         "sovereignty": -5
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B na fase 5.",
+      "consequence": "O pacto é fechado. Quem manda agora?",
       "test": {
         "meter": "integrity",
         "op": ">",
         "value": 51
-      }
+      },
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-IMP-5",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-IMP-5"
   }
 ]

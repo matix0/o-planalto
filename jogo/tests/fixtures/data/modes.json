@@ -1,0 +1,84 @@
+[
+  {
+    "id": "congress",
+    "name": "Congresso",
+    "main_meters": [
+      "political_capital"
+    ],
+    "first_card": "INST-001"
+  },
+  {
+    "id": "budget",
+    "name": "Orçamento",
+    "main_meters": [
+      "dignity"
+    ],
+    "first_card": "INST-021"
+  },
+  {
+    "id": "curriculum_media",
+    "name": "Currículo e Mídia",
+    "main_meters": [
+      "awareness"
+    ],
+    "first_card": "INST-041"
+  },
+  {
+    "id": "geopolitics",
+    "name": "Geopolítico",
+    "main_meters": [
+      "sovereignty"
+    ],
+    "first_card": "INST-061"
+  },
+  {
+    "id": "prison_police",
+    "name": "Prisional e Policial",
+    "main_meters": [
+      "security"
+    ],
+    "first_card": "INST-081"
+  },
+  {
+    "id": "amendments",
+    "name": "Emendas",
+    "main_meters": [
+      "treasury"
+    ],
+    "first_card": "INST-101"
+  },
+  {
+    "id": "caucuses",
+    "name": "Bancadas",
+    "main_meters": [
+      "political_capital"
+    ],
+    "first_card": "INST-121"
+  },
+  {
+    "id": "impeachment",
+    "name": "Impeachment",
+    "main_meters": [
+      "legitimacy"
+    ],
+    "first_card": "INST-141"
+  },
+  {
+    "id": "judiciary",
+    "name": "Judiciário",
+    "main_meters": [
+      "awareness",
+      "integrity"
+    ],
+    "first_card": "INST-161"
+  },
+  {
+    "id": "influencer",
+    "name": "Influenciador",
+    "main_meters": [
+      "integrity",
+      "awareness"
+    ],
+    "first_card": "INST-181"
+  }
+]

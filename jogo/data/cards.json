@@ -1,2200 +1,3217 @@
 [
   {
     "id": "INST-001",
-    "title": "Congresso fictício 1",
-    "mode": "congress",
+    "title": "Privatização da estatal",
     "type": "institutional",
-    "speaker": "Congresso",
-    "problem": "[Fictício] Problema da carta INST-001.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        2,
-        -2,
-        -1,
-        2
-      ],
-      "effects": {
-        "political_capital": 25,
-        "legitimacy": 10,
-        "integrity": -25,
-        "treasury": -5
-      },
-      "actors": {
-        "ACT-004": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "treasury": 15,
-            "awareness": 20,
-            "security": -15
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
+    "mode": "congress",
+    "speaker": "Congresso Nacional",
+    "prerequisites": {
+      "min_year": 1
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "purple",
+    "problem": "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora.",
+    "option_a": {
+      "text": "Nomear relator adversário",
+      "color": "red",
       "axis": [
-        -2,
-        2,
-        2,
+        -1,
+        0,
+        0,
         0
       ],
       "effects": {
-        "legitimacy": -5,
-        "awareness": 15,
-        "treasury": 20
+        "political_capital": -10,
+        "sovereignty": 10
       },
-      "actors": {
-        "ACT-019": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "consequence": "O relator é adversário. O projeto avança.",
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-001",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "option_b": {
+      "text": "Aceitar as mudanças",
+      "color": "orange",
+      "axis": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "sovereignty": -15,
+        "treasury": 10,
+        "integrity": -5
+      },
+      "consequence": "A lei passa. O povo paga a conta.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-001"
   },
   {
     "id": "INST-002",
-    "title": "Congresso fictício 2",
-    "mode": "congress",
+    "title": "Retirada de direitos",
     "type": "institutional",
-    "speaker": "Congresso",
-    "problem": "[Fictício] Problema da carta INST-002.",
+    "mode": "congress",
+    "speaker": "Senado Federal",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A Câmara aprovou um projeto que retira direitos trabalhistas. O Senado vai analisar.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
+      "text": "Mobilizar senadores",
+      "color": "red",
       "axis": [
-        1,
-        1,
-        2,
+        -2,
+        0,
+        0,
         0
       ],
       "effects": {
-        "legitimacy": -25,
-        "integrity": -10,
-        "political_capital": -30
+        "political_capital": -20,
+        "dignity": 10,
+        "integrity": 5
       },
-      "actors": {
-        "ACT-022": 1,
-        "ACT-004": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 1,
-          "effects": {
-            "legitimacy": 15
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
+      "consequence": "Os direitos são mantidos. O Congresso reclama.",
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "black",
+      "text": "Deixar o Senado decidir",
+      "color": "orange",
       "axis": [
-        2,
         1,
         0,
-        2
+        0,
+        0
       ],
       "effects": {
-        "legitimacy": -15,
+        "dignity": -10,
         "political_capital": 5,
-        "security": -10,
-        "treasury": 25
+        "integrity": -5
       },
-      "actors": {
-        "ACT-012": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "consequence": "Os direitos são retirados. O Congresso aplaude.",
+      "actors": {},
+      "events": []
     },
-    "learning_id": "APR-002",
-    "prerequisites": {
-      "min_year": 3
-    }
+    "learning_id": "APR-002"
   },
   {
     "id": "INST-003",
-    "title": "Congresso fictício 3",
-    "mode": "congress",
+    "title": "CPI contra o governo",
     "type": "institutional",
-    "speaker": "Congresso",
-    "problem": "[Fictício] Problema da carta INST-003.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "yellow",
-      "axis": [
-        1,
-        1,
-        2,
-        -2
-      ],
-      "effects": {
-        "treasury": 30,
-        "security": 20,
-        "dignity": -20
-      },
-      "actors": {
-        "ACT-016": 1,
-        "ACT-003": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+    "mode": "congress",
+    "speaker": "Câmara dos Deputados",
+    "prerequisites": {
+      "min_year": 1
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "purple",
+    "problem": "A oposição propõe uma CPI para investigar o governo. O presidente da Câmara quer engavetar.",
+    "option_a": {
+      "text": "Apoiar a CPI",
+      "color": "blue",
       "axis": [
-        -1,
-        1,
-        -1,
+        0,
+        0,
+        0,
         1
       ],
       "effects": {
-        "awareness": 25,
-        "dignity": -25
+        "awareness": 10,
+        "integrity": 10,
+        "political_capital": -15
       },
+      "consequence": "A CPI é instalada. O governo é investigado.",
       "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-003",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-021",
-    "title": "Orçamento fictício 1",
-    "mode": "budget",
-    "type": "institutional",
-    "speaker": "Orçamento",
-    "problem": "[Fictício] Problema da carta INST-021.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "black",
-      "axis": [
-        0,
-        0,
-        -1,
-        -2
-      ],
-      "effects": {
-        "legitimacy": -25,
-        "treasury": -20,
-        "political_capital": -25
-      },
-      "actors": {
-        "ACT-017": -1,
-        "ACT-010": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "purple",
+      "text": "Negociar o engavetamento",
+      "color": "yellow",
       "axis": [
-        -1,
-        2,
         0,
-        2
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "treasury": -20,
+        "political_capital": 10,
+        "integrity": -10
+      },
+      "consequence": "A CPI é arquivada. O povo não sabe de nada.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-003"
+  },
+  {
+    "id": "INST-004",
+    "title": "Indicação para o STF",
+    "type": "institutional",
+    "mode": "congress",
+    "speaker": "Senado Federal",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Senado vai analisar sua indicação para o STF. O nome é polêmico.",
+    "option_a": {
+      "text": "Indicar um nome técnico",
+      "color": "blue",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "political_capital": -10,
+        "awareness": 5,
+        "integrity": 5
+      },
+      "consequence": "O nome é aprovado. O STF ganha um técnico.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Insistir no nome político",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        -1
       ],
       "effects": {
         "political_capital": -20,
         "legitimacy": -5,
-        "awareness": 5
+        "integrity": -5
       },
+      "consequence": "O Senado rejeita. O governo sai enfraquecido.",
       "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "events": []
     },
-    "learning_id": "APR-021",
+    "learning_id": "APR-004"
+  },
+  {
+    "id": "INST-005",
+    "title": "Marco Temporal",
+    "type": "institutional",
+    "mode": "congress",
+    "speaker": "ACT-001",
     "prerequisites": {
       "min_year": 1
-    }
+    },
+    "problem": "A bancada ruralista quer aprovar o Marco Temporal. O STF já declarou inconstitucional.",
+    "option_a": {
+      "text": "Vetar o projeto",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "dignity": 10,
+        "political_capital": -15
+      },
+      "consequence": "Os indígenas mantêm suas terras.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Apoiar o projeto",
+      "color": "green",
+      "axis": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "effects": {
+        "political_capital": 15,
+        "sovereignty": -10,
+        "dignity": -10,
+        "integrity": -5
+      },
+      "consequence": "Os indígenas perdem. O agronegócio comemora.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-005"
+  },
+  {
+    "id": "INST-006",
+    "title": "Aumento do próprio salário",
+    "type": "institutional",
+    "mode": "congress",
+    "speaker": "Congresso Nacional",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Congresso quer aumentar o próprio salário. A população está revoltada.",
+    "option_a": {
+      "text": "Vetar o aumento",
+      "color": "orange",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "political_capital": -20
+      },
+      "consequence": "O povo aplaude. O Congresso reclama.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Apoiar o aumento",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 15,
+        "legitimacy": -15,
+        "integrity": -5
+      },
+      "consequence": "O povo vê que a casta política se protege.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-006"
+  },
+  {
+    "id": "INST-021",
+    "title": "Corte na saúde",
+    "type": "institutional",
+    "mode": "budget",
+    "speaker": "ACT-007",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O orçamento está estourado. Você precisa cortar R$ 50 bilhões. Onde?",
+    "option_a": {
+      "text": "Cortar da dívida",
+      "color": "purple",
+      "axis": [
+        -2,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": -20,
+        "treasury": 30,
+        "integrity": 5
+      },
+      "consequence": "Os credores entram em pânico. O Congresso bloqueia. Mas o povo aplaude.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Cortar da saúde",
+      "color": "orange",
+      "axis": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": -15,
+        "treasury": 20,
+        "integrity": -5
+      },
+      "consequence": "A fila do hospital aumenta. A mortalidade infantil sobe.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-021"
   },
   {
     "id": "INST-022",
-    "title": "Orçamento fictício 2",
-    "mode": "budget",
+    "title": "Dívida pública",
     "type": "institutional",
-    "speaker": "Orçamento",
-    "problem": "[Fictício] Problema da carta INST-022.",
+    "mode": "budget",
+    "speaker": "ACT-006",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A dívida pública consome 40% do orçamento. Os credores pressionam por mais.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "black",
+      "text": "Renegociar a dívida",
+      "color": "red",
       "axis": [
-        -2,
-        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "treasury": 20,
+        "political_capital": -15
+      },
+      "consequence": "Os credores reagem. Mas o governo respira.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Pagar em dia",
+      "color": "blue",
+      "axis": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": -20,
+        "political_capital": 10,
+        "dignity": -5
+      },
+      "consequence": "Os credores ficam satisfeitos. O povo paga a conta.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-022"
+  },
+  {
+    "id": "INST-041",
+    "title": "Retirada de Filosofia",
+    "type": "institutional",
+    "mode": "curriculum_media",
+    "speaker": "Congresso Nacional",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Congresso propõe retirar Filosofia e Sociologia do currículo obrigatório. A bancada evangélica apoia.",
+    "option_a": {
+      "text": "Vetar a proposta",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
         1,
         0
       ],
       "effects": {
-        "integrity": 20,
-        "security": -10,
-        "sovereignty": -20,
-        "dignity": 20
+        "awareness": 15,
+        "integrity": 10,
+        "political_capital": -20
       },
+      "consequence": "Os professores comemoram. Mas o Congresso ameaça retaliar.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Apoiar a proposta",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -2,
+        0
+      ],
+      "effects": {
+        "political_capital": 15,
+        "awareness": -15,
+        "integrity": -10
+      },
+      "consequence": "A lei passa. Os alunos aprendem 'educação financeira' em vez de pensar.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-041"
+  },
+  {
+    "id": "INST-042",
+    "title": "Concessão de TV",
+    "type": "institutional",
+    "mode": "curriculum_media",
+    "speaker": "ACT-012",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Uma rede de TV controlada por um pastor pede renovação de concessão. Ele promete apoio em troca.",
+    "option_a": {
+      "text": "Renovar com pluralidade",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "effects": {
+        "awareness": 10,
+        "integrity": 5,
+        "political_capital": -10
+      },
+      "consequence": "A emissora aceita, mas faz campanha velada contra você.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Renovar sem condições",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "effects": {
+        "political_capital": 15,
+        "awareness": -15,
+        "integrity": -10
+      },
+      "consequence": "A TV elogia seu governo. Mas o que ela mostra não é a realidade.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-042"
+  },
+  {
+    "id": "INST-061",
+    "title": "Adesão ao BRICS",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-010",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O BRICS propõe um sistema de pagamento em moedas locais. Os EUA ameaçam retaliações.",
+    "option_a": {
+      "text": "Aderir",
+      "color": "red",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 15,
+        "integrity": 5,
+        "treasury": -5
+      },
+      "consequence": "O Brasil reduz a dependência do dólar. Mas os EUA ameaçam tarifas.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Recusar",
+      "color": "blue",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "sovereignty": -15,
+        "integrity": -5
+      },
+      "consequence": "Os EUA elogiam o Brasil. Mas o país continua vulnerável a sanções.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-061"
+  },
+  {
+    "id": "INST-062",
+    "title": "Venda de lítio",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-021",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Uma potência estrangeira oferece bilhões pela reserva de lítio. O BRICS quer desenvolver a cadeia local.",
+    "option_a": {
+      "text": "Desenvolver com o BRICS",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 15,
+        "treasury": -10,
+        "integrity": 5
+      },
+      "consequence": "O lítio fica no Brasil. A cadeia produtiva se desenvolve.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Vender",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 25,
+        "sovereignty": -20,
+        "integrity": -10
+      },
+      "consequence": "O lítio vai embora. O país importa tecnologia.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-062"
+  },
+  {
+    "id": "INST-063",
+    "title": "Pressão dos EUA",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-021",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Os EUA pedem que o Brasil vete uma empresa chinesa no 5G. Alegam risco de espionagem. Sem ela, a rede fica mais cara.",
+    "option_a": {
+      "text": "Vetar a empresa chinesa",
+      "color": "black",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "security": 10,
+        "treasury": -10,
+        "sovereignty": -5
+      },
+      "consequence": "A rede atrasa e fica mais cara. Os EUA aplaudem.",
       "actors": {
-        "ACT-008": -1,
-        "ACT-022": 1
+        "ACT-021": 1,
+        "ACT-008": 1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Manter a empresa chinesa",
+      "color": "yellow",
+      "axis": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "dignity": 5,
+        "security": -10
+      },
+      "consequence": "O 5G chega mais barato. Os EUA ameaçam rever a parceria.",
+      "actors": {
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-063"
+  },
+  {
+    "id": "INST-064",
+    "title": "Acordo com a China",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-001",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A China oferece um contrato longo de compra de soja e minério. Em troca, quer tarifa zero para seus carros e máquinas.",
+    "option_a": {
+      "text": "Fechar o acordo",
+      "color": "green",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 20,
+        "political_capital": 5,
+        "sovereignty": -10
+      },
+      "consequence": "O agro vende mais. A indústria perde espaço para os importados.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-021": 1,
+        "ACT-004": -1
       },
       "events": [
         {
-          "text": "[Fictício] Evento encadeado.",
+          "text": "Fábricas fecham diante dos importados chineses.",
+          "delay": 2,
+          "effects": {
+            "dignity": -10,
+            "sovereignty": -5
+          }
+        }
+      ]
+    },
+    "option_b": {
+      "text": "Proteger a indústria",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "dignity": 5,
+        "treasury": -10,
+        "political_capital": -10
+      },
+      "consequence": "As fábricas mantêm os empregos. O agro reclama no Congresso.",
+      "actors": {
+        "ACT-004": 1,
+        "ACT-001": -1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-064"
+  },
+  {
+    "id": "INST-065",
+    "title": "Empréstimo do FMI",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-007",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "A crise seca o caixa do governo. O FMI oferece um empréstimo, mas exige corte de gastos e venda de estatais.",
+    "option_a": {
+      "text": "Aceitar o empréstimo",
+      "color": "blue",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 25,
+        "sovereignty": -10,
+        "dignity": -5
+      },
+      "consequence": "O dinheiro chega. Técnicos do FMI passam a revisar suas contas.",
+      "actors": {
+        "ACT-007": 1,
+        "ACT-006": 1
+      },
+      "events": [
+        {
+          "text": "O FMI cobra o corte combinado no orçamento.",
+          "delay": 1,
+          "effects": {
+            "dignity": -10,
+            "legitimacy": -5
+          }
+        }
+      ]
+    },
+    "option_b": {
+      "text": "Recusar o FMI",
+      "color": "purple",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "treasury": -15,
+        "dignity": -5
+      },
+      "consequence": "O dólar sobe. A crise continua sem dinheiro novo.",
+      "actors": {
+        "ACT-007": -1,
+        "ACT-006": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-065"
+  },
+  {
+    "id": "INST-066",
+    "title": "Venda da Embraer",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-004",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Uma gigante estrangeira quer comprar a Embraer, que faz aviões civis e militares. Você tem poder de veto.",
+    "option_a": {
+      "text": "Vetar a venda",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "security": 5,
+        "treasury": -10,
+        "dignity": -5
+      },
+      "consequence": "A Embraer segue brasileira. Os acionistas perdem o negócio.",
+      "actors": {
+        "ACT-008": 1,
+        "ACT-002": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Liberar a venda",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "political_capital": 5,
+        "sovereignty": -15,
+        "security": -5
+      },
+      "consequence": "A venda sai. A nova dona decide os projetos lá fora.",
+      "actors": {
+        "ACT-002": 1,
+        "ACT-008": -1,
+        "ACT-015": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-066"
+  },
+  {
+    "id": "INST-067",
+    "title": "Moeda comum do BRICS",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-010",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Um sócio do BRICS defende uma moeda comum. O Brasil dependeria menos do dólar, mas deixaria de decidir os próprios juros.",
+    "option_a": {
+      "text": "Apoiar a moeda comum",
+      "color": "purple",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "sovereignty": -10,
+        "legitimacy": -5
+      },
+      "consequence": "O comércio sai do dólar. Um banco do bloco passa a decidir seus juros.",
+      "actors": {
+        "ACT-021": 1,
+        "ACT-006": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Manter o real",
+      "color": "blue",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 5,
+        "treasury": -10
+      },
+      "consequence": "O real fica. O comércio segue em dólar.",
+      "actors": {
+        "ACT-006": 1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-067"
+  },
+  {
+    "id": "INST-068",
+    "title": "Envio de tropas",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-008",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Uma potência aliada pede soldados brasileiros para uma guerra. Em troca, apoia uma vaga fixa do Brasil no Conselho de Segurança da ONU.",
+    "option_a": {
+      "text": "Enviar os soldados",
+      "color": "black",
+      "axis": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 15,
+        "political_capital": 5,
+        "sovereignty": -10,
+        "legitimacy": -5
+      },
+      "consequence": "As tropas embarcam. Parte do país protesta contra a guerra.",
+      "actors": {
+        "ACT-008": 1,
+        "ACT-021": 1
+      },
+      "events": [
+        {
+          "text": "Soldados brasileiros morrem no conflito.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": -10,
+            "dignity": -5
+          }
+        }
+      ]
+    },
+    "option_b": {
+      "text": "Recusar o pedido",
+      "color": "yellow",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "legitimacy": 5,
+        "treasury": -10,
+        "security": -5
+      },
+      "consequence": "O Brasil fica fora da guerra. O aliado corta a ajuda militar.",
+      "actors": {
+        "ACT-010": 1,
+        "ACT-008": -1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-068"
+  },
+  {
+    "id": "INST-069",
+    "title": "Corte de fertilizantes",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-001",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Uma guerra corta o adubo importado. Uma mineradora quer extrair potássio em terra reivindicada por povos indígenas na Amazônia.",
+    "option_a": {
+      "text": "Liberar a mina",
+      "color": "green",
+      "axis": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 15,
+        "dignity": -10,
+        "integrity": -5
+      },
+      "consequence": "O potássio sai do chão, sem consulta. Povos indígenas vão à Justiça.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-018": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Produzir adubo orgânico",
+      "color": "purple",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 5,
+        "treasury": -10,
+        "political_capital": -10
+      },
+      "consequence": "O agro reclama da demora. Cooperativas do campo começam a produzir.",
+      "actors": {
+        "ACT-017": 1,
+        "ACT-001": -1
+      },
+      "events": [
+        {
+          "text": "Cooperativas produzem adubo orgânico em escala.",
+          "delay": 2,
+          "effects": {
+            "sovereignty": 10,
+            "dignity": 5
+          }
+        }
+      ]
+    },
+    "learning_id": "APR-069"
+  },
+  {
+    "id": "INST-070",
+    "title": "Preço do petróleo",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-009",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O barril de petróleo dispara no mundo. A Petrobras pode repassar a alta ou segurar o preço do diesel.",
+    "option_a": {
+      "text": "Repassar o preço",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 15,
+        "dignity": -10
+      },
+      "consequence": "O diesel sobe. O frete e a comida ficam mais caros.",
+      "actors": {
+        "ACT-006": 1,
+        "ACT-002": 1
+      },
+      "events": [
+        {
+          "text": "Caminhoneiros entram em greve e param o país.",
+          "delay": 1,
+          "effects": {
+            "dignity": -5,
+            "security": -5,
+            "legitimacy": -5
+          }
+        }
+      ]
+    },
+    "option_b": {
+      "text": "Segurar o diesel",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "treasury": -15
+      },
+      "consequence": "O diesel fica estável. A Petrobras lucra menos e o Mercado reclama.",
+      "actors": {
+        "ACT-009": 1,
+        "ACT-006": -1,
+        "ACT-002": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-070"
+  },
+  {
+    "id": "INST-071",
+    "title": "Taxação das big techs",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-020",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Sua equipe propõe um imposto sobre o faturamento das big techs no Brasil. Os EUA ameaçam tarifas em resposta.",
+    "option_a": {
+      "text": "Cobrar o imposto",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "treasury": 10,
+        "dignity": -5,
+        "political_capital": -10
+      },
+      "consequence": "As big techs pagam. Os EUA anunciam tarifas sobre produtos do Brasil.",
+      "actors": {
+        "ACT-020": -1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Desistir do imposto",
+      "color": "blue",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 5,
+        "political_capital": 5,
+        "sovereignty": -10,
+        "legitimacy": -5
+      },
+      "consequence": "As tarifas não vêm. As big techs ficam sem o novo imposto.",
+      "actors": {
+        "ACT-020": 1,
+        "ACT-021": 1
+      },
+      "events": []
+    },
+    "learning_id": "APR-071"
+  },
+  {
+    "id": "INST-072",
+    "title": "Energia de Itaipu",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-010",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Paraguai pede um preço maior pela energia de Itaipu que vende ao Brasil. Pagar mais encarece a conta de luz.",
+    "option_a": {
+      "text": "Aceitar o novo preço",
+      "color": "yellow",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 5,
+        "integrity": 5,
+        "dignity": -5,
+        "treasury": -5
+      },
+      "consequence": "O vizinho comemora. A conta de luz sobe no Brasil.",
+      "actors": {
+        "ACT-010": 1,
+        "ACT-004": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Manter o preço atual",
+      "color": "blue",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 5,
+        "treasury": 5,
+        "integrity": -5,
+        "sovereignty": -5
+      },
+      "consequence": "A conta de luz não sobe. O Paraguai diz que o Brasil abusa do seu tamanho.",
+      "actors": {
+        "ACT-004": 1,
+        "ACT-010": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-072"
+  },
+  {
+    "id": "INST-073",
+    "title": "Terras para estrangeiros",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-011",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Congresso libera a compra de terras por estrangeiros. Fundos de fora negociam fazendas de soja. Falta a sua sanção.",
+    "option_a": {
+      "text": "Sancionar a lei",
+      "color": "green",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 15,
+        "political_capital": 10,
+        "sovereignty": -15
+      },
+      "consequence": "Dinheiro de fora entra no campo. Fazendas de soja mudam de dono.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-021": 1,
+        "ACT-017": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Vetar a lei",
+      "color": "purple",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "political_capital": -10,
+        "treasury": -5
+      },
+      "consequence": "A venda fica barrada. O Congresso ameaça derrubar o seu veto.",
+      "actors": {
+        "ACT-017": 1,
+        "ACT-011": -1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-073"
+  },
+  {
+    "id": "INST-074",
+    "title": "Ajuda militar dos EUA",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-021",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Os EUA, que tratam duas facções como terroristas, oferecem drones e agentes para combatê-las em solo brasileiro.",
+    "option_a": {
+      "text": "Aceitar a ajuda",
+      "color": "black",
+      "axis": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "effects": {
+        "security": 15,
+        "political_capital": 5,
+        "sovereignty": -15,
+        "dignity": -5
+      },
+      "consequence": "Drones vigiam as rotas do crime. Agentes dos EUA atuam no país.",
+      "actors": {
+        "ACT-021": 1,
+        "ACT-010": -1
+      },
+      "events": [
+        {
+          "text": "Agentes dos EUA fazem uma operação sem avisar a PF.",
+          "delay": 1,
+          "effects": {
+            "sovereignty": -10,
+            "legitimacy": -5
+          }
+        }
+      ]
+    },
+    "option_b": {
+      "text": "Recusar a ajuda",
+      "color": "yellow",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "political_capital": -10,
+        "security": -5
+      },
+      "consequence": "As facções seguem como caso de polícia. Os EUA cortam a cooperação.",
+      "actors": {
+        "ACT-010": 1,
+        "ACT-021": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-074"
+  },
+  {
+    "id": "INST-075",
+    "title": "Adesão à OCDE",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-002",
+    "prerequisites": {
+      "min_year": 3
+    },
+    "problem": "Os EUA apoiam a entrada do Brasil na OCDE, o 'clube dos países ricos'. Em troca, o Brasil abre mão de vantagens de país em desenvolvimento.",
+    "option_a": {
+      "text": "Entrar na OCDE",
+      "color": "blue",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "integrity": 5,
+        "sovereignty": -15
+      },
+      "consequence": "O selo atrai investidores. O país adota as regras de transparência do clube.",
+      "actors": {
+        "ACT-021": 1,
+        "ACT-002": 1,
+        "ACT-010": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Manter as vantagens",
+      "color": "red",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "treasury": -10
+      },
+      "consequence": "O Brasil fica fora do clube. O mercado diz que o país perdeu uma chance.",
+      "actors": {
+        "ACT-010": 1,
+        "ACT-021": -1,
+        "ACT-002": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-075"
+  },
+  {
+    "id": "INST-076",
+    "title": "Acesso a vacinas",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-014",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Uma pandemia chega. A farmacêutica dona da vacina cobra um preço alto. A lei permite quebrar a patente, mas os EUA ameaçam sanções.",
+    "option_a": {
+      "text": "Quebrar a patente",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "dignity": -10,
+        "treasury": -5
+      },
+      "consequence": "A produção nacional leva meses. Os EUA aplicam sanções ao Brasil.",
+      "actors": {
+        "ACT-014": 1,
+        "ACT-021": -1
+      },
+      "events": [
+        {
+          "text": "O laboratório público entrega a vacina a todos.",
           "delay": 1,
           "effects": {
             "dignity": 10
           }
         }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
+      ]
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
+      "text": "Pagar o preço cobrado",
+      "color": "orange",
       "axis": [
         1,
-        -2,
-        -1,
-        2
-      ],
-      "effects": {
-        "sovereignty": -20,
-        "awareness": 20
-      },
-      "actors": {
-        "ACT-014": 1,
-        "ACT-003": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 1,
-          "effects": {
-            "legitimacy": 15,
-            "security": 10
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-022",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-023",
-    "title": "Orçamento fictício 3",
-    "mode": "budget",
-    "type": "institutional",
-    "speaker": "Orçamento",
-    "problem": "[Fictício] Problema da carta INST-023.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
         1,
-        -2,
-        2,
-        2
+        0,
+        0
       ],
       "effects": {
-        "awareness": -5,
-        "political_capital": -20,
-        "legitimacy": 20
+        "dignity": 10,
+        "treasury": -15,
+        "sovereignty": -5
       },
+      "consequence": "A vacinação começa. O SUS corta outras despesas para pagar a conta.",
       "actors": {
-        "ACT-022": -1,
+        "ACT-021": 1,
         "ACT-006": 1
       },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": []
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        0,
-        2,
-        2,
-        2
-      ],
-      "effects": {
-        "awareness": 25,
-        "integrity": -25
-      },
-      "actors": {
-        "ACT-019": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-023",
-    "prerequisites": {
-      "min_year": 2
-    }
+    "learning_id": "APR-076"
   },
   {
-    "id": "INST-041",
-    "title": "Currículo e Mídia fictício 1",
-    "mode": "curriculum_media",
+    "id": "INST-077",
+    "title": "Base de foguetes",
     "type": "institutional",
-    "speaker": "Currículo e Mídia",
-    "problem": "[Fictício] Problema da carta INST-041.",
+    "mode": "geopolitics",
+    "speaker": "ACT-008",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Uma potência quer alugar a base de foguetes do Maranhão. Para isso, a base precisa crescer sobre terras quilombolas.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "red",
+      "text": "Expandir a base",
+      "color": "black",
       "axis": [
-        -2,
+        0,
         1,
         -1,
-        -2
+        0
       ],
       "effects": {
-        "dignity": -25,
-        "political_capital": 15,
-        "sovereignty": -15,
-        "awareness": 10
+        "treasury": 20,
+        "sovereignty": -10,
+        "dignity": -10
       },
+      "consequence": "Foguetes estrangeiros sobem. Famílias quilombolas perdem suas terras.",
       "actors": {
-        "ACT-009": -1
+        "ACT-021": 1,
+        "ACT-008": 1,
+        "ACT-017": -1
       },
       "events": [
         {
-          "text": "[Fictício] Evento encadeado.",
+          "text": "Os quilombolas levam o caso a uma corte internacional.",
           "delay": 2,
           "effects": {
-            "dignity": -10,
-            "legitimacy": -15
+            "legitimacy": -10,
+            "integrity": -5
           }
         }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
+      ]
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "green",
+      "text": "Proteger os quilombos",
+      "color": "purple",
       "axis": [
-        -2,
-        -2,
-        2,
-        2
+        0,
+        -1,
+        1,
+        0
       ],
       "effects": {
-        "treasury": -20,
-        "political_capital": 25,
-        "security": -25
+        "dignity": 10,
+        "legitimacy": 5,
+        "treasury": -10
       },
+      "consequence": "As famílias ficam. Sem o aluguel, o programa espacial segue sem dinheiro.",
       "actors": {
-        "ACT-014": -1
+        "ACT-017": 1,
+        "ACT-021": -1,
+        "ACT-008": -1
       },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "events": []
     },
-    "learning_id": "APR-041",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-077"
   },
   {
-    "id": "INST-042",
-    "title": "Currículo e Mídia fictício 2",
-    "mode": "curriculum_media",
+    "id": "INST-078",
+    "title": "Banco do BRICS",
     "type": "institutional",
-    "speaker": "Currículo e Mídia",
-    "problem": "[Fictício] Problema da carta INST-042.",
+    "mode": "geopolitics",
+    "speaker": "ACT-016",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "Para levar esgoto às periferias, o Banco do BRICS oferece crédito. O Banco Mundial empresta mais, mas exige subir a conta de água.",
     "option_a": {
-      "text": "[Fictício] Opção A",
+      "text": "Pegar com o BRICS",
+      "color": "red",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "sovereignty": 5,
+        "dignity": 5,
+        "treasury": -10
+      },
+      "consequence": "A obra chega a menos bairros. Parte do custo sai do seu caixa.",
+      "actors": {
+        "ACT-016": 1,
+        "ACT-006": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Aceitar o Banco Mundial",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "treasury": 5,
+        "sovereignty": -5,
+        "legitimacy": -5
+      },
+      "consequence": "O esgoto chega a mais bairros. A conta de água sobe para todos.",
+      "actors": {
+        "ACT-006": 1,
+        "ACT-003": 1,
+        "ACT-016": -1
+      },
+      "events": []
+    },
+    "learning_id": "APR-078"
+  },
+  {
+    "id": "INST-079",
+    "title": "Asilo ou extradição",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-023",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "problem": "Um ex-agente de uma potência revela que ela espiona o governo brasileiro. Ele pede asilo ao Brasil, e a potência exige a entrega dele.",
+    "option_a": {
+      "text": "Entregar o ex-agente",
+      "color": "blue",
+      "axis": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "effects": {
+        "treasury": 10,
+        "security": 5,
+        "sovereignty": -10,
+        "awareness": -5
+      },
+      "consequence": "A potência agradece e prende o ex-agente na chegada.",
+      "actors": {
+        "ACT-021": 1,
+        "ACT-023": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Dar asilo a ele",
       "color": "yellow",
       "axis": [
         0,
-        -2,
-        1,
-        -2
-      ],
-      "effects": {
-        "treasury": -15,
-        "sovereignty": 15,
-        "legitimacy": -25
-      },
-      "actors": {
-        "ACT-007": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "green",
-      "axis": [
-        -2,
         -1,
-        2,
-        -2
+        0,
+        1
       ],
       "effects": {
-        "dignity": 25,
-        "awareness": -5
+        "awareness": 10,
+        "sovereignty": 10,
+        "treasury": -15,
+        "security": -5
       },
+      "consequence": "Ele publica novos segredos. A potência corta acordos com o Brasil.",
       "actors": {
-        "ACT-005": 1,
-        "ACT-012": 1
+        "ACT-023": 1,
+        "ACT-010": 1,
+        "ACT-021": -1
       },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "events": []
     },
-    "learning_id": "APR-042",
+    "learning_id": "APR-079"
+  },
+  {
+    "id": "INST-080",
+    "title": "Golpe no país vizinho",
+    "type": "institutional",
+    "mode": "geopolitics",
+    "speaker": "ACT-010",
     "prerequisites": {
       "min_year": 2
-    }
-  },
-  {
-    "id": "INST-043",
-    "title": "Currículo e Mídia fictício 3",
-    "mode": "curriculum_media",
-    "type": "institutional",
-    "speaker": "Currículo e Mídia",
-    "problem": "[Fictício] Problema da carta INST-043.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "orange",
-      "axis": [
-        -1,
-        -1,
-        2,
-        -2
-      ],
-      "effects": {
-        "political_capital": -5,
-        "sovereignty": 25,
-        "awareness": 20,
-        "treasury": 15
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
-      "axis": [
-        2,
-        -2,
-        -1,
-        2
-      ],
-      "effects": {
-        "integrity": 5,
-        "sovereignty": -30
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-043",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-061",
-    "title": "Geopolítico fictício 1",
-    "mode": "geopolitics",
-    "type": "institutional",
-    "speaker": "Geopolítico",
-    "problem": "[Fictício] Problema da carta INST-061.",
+    "problem": "Militares derrubam o presidente eleito de um sócio do Mercosul e prometem eleições sem data. O país é um grande comprador do Brasil.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "orange",
+      "text": "Propor a suspensão",
+      "color": "yellow",
       "axis": [
-        -1,
+        0,
         1,
         0,
-        -1
-      ],
-      "effects": {
-        "integrity": 20,
-        "sovereignty": -25,
-        "awareness": 30,
-        "political_capital": 10
-      },
-      "actors": {
-        "ACT-014": 1,
-        "ACT-005": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "purple",
-      "axis": [
-        2,
-        1,
-        -2,
-        -1
+        1
       ],
       "effects": {
         "integrity": 10,
-        "sovereignty": -5
+        "treasury": -10,
+        "political_capital": -5
       },
+      "consequence": "O bloco suspende o vizinho até nova eleição. Exportadores perdem vendas.",
       "actors": {
-        "ACT-007": 1,
-        "ACT-023": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-061",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "INST-062",
-    "title": "Geopolítico fictício 2",
-    "mode": "geopolitics",
-    "type": "institutional",
-    "speaker": "Geopolítico",
-    "problem": "[Fictício] Problema da carta INST-062.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
-        -1,
-        2,
-        -2,
-        -2
-      ],
-      "effects": {
-        "political_capital": 15,
-        "sovereignty": -30
-      },
-      "actors": {
-        "ACT-022": -1,
-        "ACT-007": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "black",
-      "axis": [
-        0,
-        0,
-        -1,
-        1
-      ],
-      "effects": {
-        "dignity": -20,
-        "political_capital": 25
-      },
-      "actors": {
-        "ACT-017": -1,
-        "ACT-001": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-062",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-063",
-    "title": "Geopolítico fictício 3",
-    "mode": "geopolitics",
-    "type": "institutional",
-    "speaker": "Geopolítico",
-    "problem": "[Fictício] Problema da carta INST-063.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "red",
-      "axis": [
-        2,
-        -2,
-        0,
-        -2
-      ],
-      "effects": {
-        "integrity": -25,
-        "awareness": -10,
-        "legitimacy": -15
-      },
-      "actors": {
+        "ACT-010": 1,
         "ACT-004": -1
       },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "black",
+      "text": "Reconhecer o novo governo",
+      "color": "orange",
       "axis": [
-        2,
         0,
-        -2,
-        0
+        0,
+        0,
+        -1
       ],
       "effects": {
-        "legitimacy": -15,
-        "dignity": 25,
-        "integrity": 5
+        "treasury": 10,
+        "political_capital": 5,
+        "integrity": -10
       },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "consequence": "O comércio segue. A oposição do vizinho acusa você de apoiar o golpe.",
+      "actors": {
+        "ACT-004": 1,
+        "ACT-001": 1,
+        "ACT-010": -1
+      },
+      "events": [
+        {
+          "text": "O novo governo adia a eleição e prende opositores.",
+          "delay": 2,
+          "effects": {
+            "legitimacy": -5,
+            "integrity": -5
+          }
+        }
+      ]
     },
-    "learning_id": "APR-063",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-080"
   },
   {
     "id": "INST-081",
-    "title": "Prisional e Policial fictício 1",
-    "mode": "prison_police",
+    "title": "Superlotação prisional",
     "type": "institutional",
-    "speaker": "Prisional e Policial",
-    "problem": "[Fictício] Problema da carta INST-081.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "black",
-      "axis": [
-        0,
-        0,
-        -1,
-        -1
-      ],
-      "effects": {
-        "political_capital": -15,
-        "integrity": 20,
-        "legitimacy": 10
-      },
-      "actors": {
-        "ACT-008": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        0,
-        1,
-        2,
-        1
-      ],
-      "effects": {
-        "sovereignty": -20,
-        "security": 15
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-081",
+    "mode": "prison_police",
+    "speaker": "Ministério da Justiça",
     "prerequisites": {
       "min_year": 1
-    }
-  },
-  {
-    "id": "INST-082",
-    "title": "Prisional e Policial fictício 2",
-    "mode": "prison_police",
-    "type": "institutional",
-    "speaker": "Prisional e Policial",
-    "problem": "[Fictício] Problema da carta INST-082.",
+    },
+    "problem": "O sistema prisional está superlotado. Facções controlam os presídios.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        2,
-        0,
-        -1,
-        0
-      ],
-      "effects": {
-        "awareness": 25,
-        "sovereignty": -30
-      },
-      "actors": {
-        "ACT-001": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
-      "axis": [
-        0,
-        -2,
-        1,
-        2
-      ],
-      "effects": {
-        "security": -20,
-        "legitimacy": -5,
-        "sovereignty": 25,
-        "treasury": 10
-      },
-      "actors": {
-        "ACT-019": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-082",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-083",
-    "title": "Prisional e Policial fictício 3",
-    "mode": "prison_police",
-    "type": "institutional",
-    "speaker": "Prisional e Policial",
-    "problem": "[Fictício] Problema da carta INST-083.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "black",
-      "axis": [
-        0,
-        -2,
-        -2,
-        -1
-      ],
-      "effects": {
-        "awareness": -10,
-        "treasury": 25,
-        "sovereignty": 25,
-        "political_capital": 5
-      },
-      "actors": {
-        "ACT-023": -1,
-        "ACT-007": -1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 1,
-          "effects": {
-            "security": -15,
-            "integrity": -20
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        2,
-        2,
-        2,
-        -1
-      ],
-      "effects": {
-        "dignity": 5,
-        "sovereignty": -25
-      },
-      "actors": {
-        "ACT-017": 1,
-        "ACT-008": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-083",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-101",
-    "title": "Emendas fictício 1",
-    "mode": "amendments",
-    "type": "institutional",
-    "speaker": "Emendas",
-    "problem": "[Fictício] Problema da carta INST-101.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
+      "text": "Investir em prevenção",
       "color": "purple",
       "axis": [
         0,
-        1,
-        0,
-        0
-      ],
-      "effects": {
-        "legitimacy": -20,
-        "awareness": 15
-      },
-      "actors": {
-        "ACT-007": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        1,
-        0,
-        -1,
-        2
-      ],
-      "effects": {
-        "political_capital": -30,
-        "legitimacy": 20
-      },
-      "actors": {
-        "ACT-003": 1,
-        "ACT-017": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-101",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-102",
-    "title": "Emendas fictício 2",
-    "mode": "amendments",
-    "type": "institutional",
-    "speaker": "Emendas",
-    "problem": "[Fictício] Problema da carta INST-102.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        -2,
-        2,
-        -1,
-        0
-      ],
-      "effects": {
-        "political_capital": -5,
-        "treasury": 10,
-        "dignity": -20,
-        "integrity": -25
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
-      "axis": [
         0,
         1,
-        -1,
-        2
-      ],
-      "effects": {
-        "treasury": -10,
-        "sovereignty": -30,
-        "legitimacy": -10,
-        "security": -30
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-102",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-103",
-    "title": "Emendas fictício 3",
-    "mode": "amendments",
-    "type": "institutional",
-    "speaker": "Emendas",
-    "problem": "[Fictício] Problema da carta INST-103.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "black",
-      "axis": [
-        -1,
-        0,
-        2,
-        0
-      ],
-      "effects": {
-        "legitimacy": -30,
-        "awareness": -10
-      },
-      "actors": {
-        "ACT-005": 1,
-        "ACT-014": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
-      "axis": [
-        2,
-        0,
-        2,
-        -2
-      ],
-      "effects": {
-        "political_capital": -30,
-        "awareness": -20,
-        "sovereignty": -5
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-103",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-121",
-    "title": "Bancadas fictício 1",
-    "mode": "caucuses",
-    "type": "institutional",
-    "speaker": "Bancadas",
-    "problem": "[Fictício] Problema da carta INST-121.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        -1,
-        2,
-        -1,
-        -2
-      ],
-      "effects": {
-        "political_capital": -10,
-        "awareness": 10,
-        "legitimacy": 10
-      },
-      "actors": {
-        "ACT-014": 1,
-        "ACT-024": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
-      "axis": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "effects": {
-        "legitimacy": -5,
-        "dignity": 30,
-        "awareness": -5,
-        "treasury": -10
-      },
-      "actors": {
-        "ACT-014": 1,
-        "ACT-007": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-121",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-122",
-    "title": "Bancadas fictício 2",
-    "mode": "caucuses",
-    "type": "institutional",
-    "speaker": "Bancadas",
-    "problem": "[Fictício] Problema da carta INST-122.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "orange",
-      "axis": [
-        0,
-        0,
-        0,
         1
       ],
       "effects": {
-        "legitimacy": -15,
-        "integrity": 20
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "black",
-      "axis": [
-        2,
-        -1,
-        0,
-        1
-      ],
-      "effects": {
-        "dignity": 15,
-        "treasury": -20,
-        "political_capital": 15
-      },
-      "actors": {
-        "ACT-017": 1,
-        "ACT-004": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 1,
-          "effects": {
-            "legitimacy": -20
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-122",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "INST-123",
-    "title": "Bancadas fictício 3",
-    "mode": "caucuses",
-    "type": "institutional",
-    "speaker": "Bancadas",
-    "problem": "[Fictício] Problema da carta INST-123.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
-        2,
-        -2,
-        -1,
-        0
-      ],
-      "effects": {
-        "dignity": 5,
-        "legitimacy": -25
-      },
-      "actors": {
-        "ACT-001": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        -2,
-        2,
-        2,
-        -2
-      ],
-      "effects": {
-        "treasury": 10,
-        "legitimacy": 30,
-        "awareness": 30,
-        "sovereignty": -20
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-123",
-    "prerequisites": {
-      "min_year": 3
-    }
-  },
-  {
-    "id": "INST-141",
-    "title": "Impeachment fictício 1",
-    "mode": "impeachment",
-    "type": "institutional",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta INST-141.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "yellow",
-      "axis": [
-        1,
-        -1,
-        2,
-        -1
-      ],
-      "effects": {
-        "security": 25,
-        "political_capital": 20,
-        "dignity": -20
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
-      "axis": [
-        -2,
-        2,
-        1,
-        -1
-      ],
-      "effects": {
-        "security": 15,
-        "political_capital": 30,
-        "integrity": -15
-      },
-      "actors": {
-        "ACT-017": -1,
-        "ACT-006": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-141",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-142",
-    "title": "Impeachment fictício 2",
-    "mode": "impeachment",
-    "type": "institutional",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta INST-142.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
-        1,
-        1,
-        -2,
-        -2
-      ],
-      "effects": {
-        "political_capital": -5,
         "dignity": 10,
-        "awareness": 15
+        "security": -5,
+        "treasury": -15,
+        "integrity": 5
       },
+      "consequence": "A população diz que 'nada foi feito'. Mas menos jovens entram no sistema.",
       "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
+      "text": "Aumentar o encarceramento",
+      "color": "black",
       "axis": [
-        -2,
+        0,
+        0,
         -1,
-        2,
         -2
-      ],
-      "effects": {
-        "dignity": 25,
-        "sovereignty": -10,
-        "treasury": 5
-      },
-      "actors": {
-        "ACT-003": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-142",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "INST-143",
-    "title": "Impeachment fictício 3",
-    "mode": "impeachment",
-    "type": "institutional",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta INST-143.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "blue",
-      "axis": [
-        0,
-        2,
-        -2,
-        1
-      ],
-      "effects": {
-        "awareness": -25,
-        "treasury": -20,
-        "political_capital": -25
-      },
-      "actors": {
-        "ACT-008": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
-      "axis": [
-        -1,
-        -2,
-        -2,
-        1
-      ],
-      "effects": {
-        "awareness": -10,
-        "security": -10,
-        "treasury": -25
-      },
-      "actors": {
-        "ACT-013": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-143",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-161",
-    "title": "Judiciário fictício 1",
-    "mode": "judiciary",
-    "type": "institutional",
-    "speaker": "Judiciário",
-    "problem": "[Fictício] Problema da carta INST-161.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "yellow",
-      "axis": [
-        -2,
-        0,
-        -2,
-        -1
       ],
       "effects": {
         "security": 10,
-        "political_capital": 25,
-        "legitimacy": -10,
-        "awareness": -20
+        "dignity": -15,
+        "treasury": -20,
+        "integrity": -5
       },
+      "consequence": "Mais presos. Mais facções. O crime organizado se fortalece.",
       "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": []
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
-      "axis": [
-        1,
-        1,
-        2,
-        0
-      ],
-      "effects": {
-        "treasury": -30,
-        "dignity": 10,
-        "legitimacy": -20,
-        "integrity": -15
-      },
-      "actors": {
-        "ACT-022": -1,
-        "ACT-019": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-161",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-081"
   },
   {
-    "id": "INST-162",
-    "title": "Judiciário fictício 2",
-    "mode": "judiciary",
+    "id": "INST-082",
+    "title": "Polícia mata 17 por dia",
     "type": "institutional",
-    "speaker": "Judiciário",
-    "problem": "[Fictício] Problema da carta INST-162.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "red",
-      "axis": [
-        -1,
-        1,
-        2,
-        -2
-      ],
-      "effects": {
-        "legitimacy": -25,
-        "political_capital": 5
-      },
-      "actors": {},
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "political_capital": 5
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "green",
-      "axis": [
-        1,
-        2,
-        0,
-        -1
-      ],
-      "effects": {
-        "dignity": -5,
-        "security": -15,
-        "integrity": 5
-      },
-      "actors": {
-        "ACT-009": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-162",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "INST-163",
-    "title": "Judiciário fictício 3",
-    "mode": "judiciary",
-    "type": "institutional",
-    "speaker": "Judiciário",
-    "problem": "[Fictício] Problema da carta INST-163.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        2,
-        1,
-        1,
-        0
-      ],
-      "effects": {
-        "sovereignty": -10,
-        "dignity": -30,
-        "integrity": 30
-      },
-      "actors": {
-        "ACT-008": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 1,
-          "effects": {
-            "political_capital": -15
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        2,
-        1,
-        -1,
-        2
-      ],
-      "effects": {
-        "integrity": 15,
-        "legitimacy": 10,
-        "political_capital": -25,
-        "security": 5
-      },
-      "actors": {
-        "ACT-020": 1,
-        "ACT-007": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-163",
-    "prerequisites": {
-      "min_year": 2
-    }
-  },
-  {
-    "id": "INST-181",
-    "title": "Influenciador fictício 1",
-    "mode": "influencer",
-    "type": "institutional",
-    "speaker": "Influenciador",
-    "problem": "[Fictício] Problema da carta INST-181.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "orange",
-      "axis": [
-        -2,
-        2,
-        0,
-        -2
-      ],
-      "effects": {
-        "treasury": -30,
-        "integrity": 30,
-        "sovereignty": 15,
-        "security": 25
-      },
-      "actors": {},
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "treasury": -20,
-            "political_capital": 5
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A.",
-      "reaction": "refuse"
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
-        -2,
-        -1,
-        -1,
-        -1
-      ],
-      "effects": {
-        "political_capital": 25,
-        "security": -15,
-        "awareness": -25
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B.",
-      "reaction": "investigate"
-    },
-    "learning_id": "APR-181",
+    "mode": "prison_police",
+    "speaker": "Ministério da Justiça",
     "prerequisites": {
       "min_year": 1
     },
-    "technique": "ai_farm"
-  },
-  {
-    "id": "INST-182",
-    "title": "Influenciador fictício 2",
-    "mode": "influencer",
-    "type": "institutional",
-    "speaker": "Influenciador",
-    "problem": "[Fictício] Problema da carta INST-182.",
+    "problem": "A polícia matou 6.243 pessoas em 2024, cerca de 17 por dia. 82% eram negras.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "red",
+      "text": "Investigar e punir",
+      "color": "purple",
       "axis": [
         0,
-        -1,
+        0,
         1,
         1
       ],
       "effects": {
-        "treasury": -20,
-        "legitimacy": -15,
-        "integrity": -5
+        "dignity": 10,
+        "awareness": 5,
+        "integrity": 5,
+        "political_capital": -10
       },
+      "consequence": "A investigação começa. As famílias das vítimas finalmente são ouvidas.",
       "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A.",
-      "reaction": "accept"
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
+      "text": "Defender a polícia",
       "color": "black",
       "axis": [
+        0,
+        0,
         -1,
-        2,
-        1,
-        0
+        -2
       ],
       "effects": {
-        "sovereignty": -10,
-        "dignity": 20,
-        "political_capital": -25,
-        "legitimacy": 10
+        "security": 5,
+        "dignity": -15,
+        "integrity": -5
       },
+      "consequence": "A impunidade policial continua.",
       "actors": {},
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "awareness": 5,
-            "security": 20
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção B.",
-      "reaction": "refuse"
+      "events": []
     },
-    "learning_id": "APR-182",
+    "learning_id": "APR-082"
+  },
+  {
+    "id": "INST-101",
+    "title": "Emenda para show",
+    "type": "institutional",
+    "mode": "amendments",
+    "speaker": "ACT-011",
     "prerequisites": {
       "min_year": 1
     },
-    "technique": "doom_cache"
-  },
-  {
-    "id": "INST-183",
-    "title": "Influenciador fictício 3",
-    "mode": "influencer",
-    "type": "institutional",
-    "speaker": "Influenciador",
-    "problem": "[Fictício] Problema da carta INST-183.",
+    "problem": "Uma emenda parlamentar destina R$ 50 milhões para um show. O hospital local está sem remédios.",
     "option_a": {
-      "text": "[Fictício] Opção A",
+      "text": "Redirecionar ao hospital",
       "color": "blue",
       "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 15,
+        "political_capital": -10,
+        "integrity": 5
+      },
+      "consequence": "O hospital recebe os recursos. O show é cancelado.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Manter o show",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "dignity": -15,
+        "integrity": -5
+      },
+      "consequence": "O show acontece. O hospital fecha.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-101"
+  },
+  {
+    "id": "INST-121",
+    "title": "Bancada BBB",
+    "type": "institutional",
+    "mode": "caucuses",
+    "speaker": "Câmara dos Deputados",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A bancada BBB quer aprovar uma lei que flexibiliza o licenciamento ambiental e aumenta o armamento civil. Em troca, apoia seu pacote fiscal.",
+    "option_a": {
+      "text": "Recusar",
+      "color": "red",
+      "axis": [
         -1,
-        2,
-        2,
+        0,
+        1,
         0
       ],
       "effects": {
         "political_capital": -15,
-        "legitimacy": -20,
-        "dignity": -25
+        "sovereignty": 5,
+        "legitimacy": 5,
+        "integrity": 10
       },
-      "actors": {
-        "ACT-009": 1,
-        "ACT-011": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A.",
-      "reaction": "investigate"
+      "consequence": "A bancada BBB se une contra você. Mas o meio ambiente é preservado.",
+      "actors": {},
+      "events": []
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "red",
+      "text": "Aceitar",
+      "color": "black",
       "axis": [
-        2,
-        2,
+        1,
+        0,
         -1,
-        2
+        0
       ],
       "effects": {
-        "integrity": -15,
-        "security": -20,
-        "treasury": -15
+        "political_capital": 20,
+        "sovereignty": -10,
+        "dignity": -10,
+        "integrity": -10
       },
-      "actors": {
-        "ACT-009": -1
+      "consequence": "A lei passa. Mais desmatamento, mais armas. Mas o pacote fiscal é aprovado.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-121"
+  },
+  {
+    "id": "INST-161",
+    "title": "Ministro do STF",
+    "type": "institutional",
+    "mode": "judiciary",
+    "speaker": "ACT-023",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "A imprensa revela que um ministro do STF tem 28 mensagens de um banqueiro investigado. A oposição pede impeachment.",
+    "option_a": {
+      "text": "Apoiar a investigação",
+      "color": "orange",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 15,
+        "legitimacy": 10,
+        "political_capital": -30,
+        "integrity": 15
       },
+      "consequence": "O ministro é investigado. O STF entra em crise. A lei vale para todos.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Defender o ministro",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "political_capital": -20,
+        "awareness": -15,
+        "integrity": -15
+      },
+      "consequence": "O caso é arquivado. Mas o povo vê que a justiça é diferente para os poderosos.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-161"
+  },
+  {
+    "id": "INST-181",
+    "title": "Influenciador financiado",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-022",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "doom_cache",
+    "problem": "Um influenciador com 10 milhões de seguidores oferece apoio. Ele pede R$ 2 milhões por mês. O dinheiro viria de uma casa de apostas.",
+    "option_a": {
+      "text": "Recusar",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "awareness": 10,
+        "integrity": 5,
+        "legitimacy": -10
+      },
+      "consequence": "O influenciador faz campanha contra você. Mas sua consciência está limpa.",
+      "actors": {},
       "events": [],
-      "consequence": "[Fictício] Consequência da opção B.",
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "Aceitar",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "legitimacy": 15,
+        "awareness": -15,
+        "integrity": -10
+      },
+      "consequence": "O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores.",
+      "actors": {},
+      "events": [],
       "reaction": "accept"
     },
-    "learning_id": "APR-183",
+    "learning_id": "APR-181"
+  },
+  {
+    "id": "INST-182",
+    "title": "Boato contra a ministra",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-018",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "demoralization",
+    "problem": "Perfis dizem que sua ministra do Meio Ambiente vendeu terras da Amazônia a estrangeiros. Não há prova. O boato viraliza.",
+    "option_a": {
+      "text": "Demitir a ministra",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "political_capital": 10,
+        "legitimacy": 5,
+        "integrity": -15
+      },
+      "consequence": "A ministra cai. Para muita gente, a demissão prova o boato.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-018": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Investigar a origem",
+      "color": "green",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "political_capital": -10,
+        "legitimacy": -5,
+        "integrity": 10
+      },
+      "consequence": "A PF rastreia os perfis. O boato segue no ar.",
+      "actors": {
+        "ACT-018": 1
+      },
+      "events": [],
+      "reaction": "investigate"
+    },
+    "learning_id": "APR-182"
+  },
+  {
+    "id": "INST-183",
+    "title": "Vídeo falso de você",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-023",
     "prerequisites": {
       "min_year": 2
     },
-    "technique": "deepfake"
-  },
-  {
-    "id": "THEM-001",
-    "title": "Tema fictício 1",
-    "mode": "prison_police",
-    "type": "thematic",
-    "speaker": "Prisional e Policial",
-    "problem": "[Fictício] Problema da carta THEM-001.",
+    "technique": "deepfake",
+    "problem": "Um vídeo feito com IA mostra você. Nele, você anuncia o fim do auxílio. É falso, mas milhões de pessoas acreditam.",
     "option_a": {
-      "text": "[Fictício] Opção A",
+      "text": "Revidar com vídeo falso",
       "color": "purple",
       "axis": [
         0,
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "political_capital": 5,
+        "integrity": -15,
+        "awareness": -5
+      },
+      "consequence": "Seu time solta um vídeo falso do rival. As redes viram uma guerra de mentiras.",
+      "actors": {
+        "ACT-023": -1
+      },
+      "events": [
+        {
+          "text": "Todo vídeo vira suspeito. Até os verdadeiros.",
+          "delay": 1,
+          "effects": {
+            "integrity": -10,
+            "awareness": -5
+          }
+        }
+      ],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Pedir perícia à PF",
+      "color": "blue",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "integrity": 10,
+        "awareness": 5,
+        "legitimacy": -10,
+        "political_capital": -5
+      },
+      "consequence": "A perícia prova a fraude. O desmentido chega a menos gente que a mentira.",
+      "actors": {
+        "ACT-023": 1
+      },
+      "events": [],
+      "reaction": "investigate"
+    },
+    "learning_id": "APR-183"
+  },
+  {
+    "id": "INST-184",
+    "title": "Pânico na fronteira",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-010",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "moral_panic",
+    "problem": "Vídeos culpam refugiados de um país vizinho por todo crime e toda doença. É falso, mas a cidade da fronteira entra em pânico.",
+    "option_a": {
+      "text": "Fechar a fronteira",
+      "color": "black",
+      "axis": [
+        0,
+        -2,
+        -1,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "political_capital": 5,
+        "dignity": -15,
+        "integrity": -10
+      },
+      "consequence": "A fronteira fecha. Famílias ficam presas do outro lado.",
+      "actors": {
+        "ACT-010": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Acolher e checar os fatos",
+      "color": "purple",
+      "axis": [
+        0,
+        2,
         1,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "awareness": 5,
+        "legitimacy": -10,
+        "treasury": -10
+      },
+      "consequence": "Os refugiados ficam. Parte da cidade ajuda, parte tem medo.",
+      "actors": {
+        "ACT-010": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-184"
+  },
+  {
+    "id": "INST-185",
+    "title": "Streamer critica o governo",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-024",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "demoralization",
+    "problem": "Um streamer com 3 milhões de seguidores detona seu governo. Aliados querem espalhar, sem prova, que ele é pago por um rival.",
+    "option_a": {
+      "text": "Espalhar o boato",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "political_capital": 5,
+        "integrity": -10,
+        "awareness": -10
+      },
+      "consequence": "O boato pega. O streamer perde patrocínio e para de falar de política.",
+      "actors": {
+        "ACT-024": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Debater ao vivo",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 10,
+        "integrity": 5,
+        "political_capital": -10,
+        "legitimacy": -5
+      },
+      "consequence": "Você entra na live dele. A audiência bate recorde, e as críticas também.",
+      "actors": {
+        "ACT-024": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-185"
+  },
+  {
+    "id": "INST-186",
+    "title": "Robôs de outro país",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-008",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "technique": "ai_farm",
+    "problem": "Pesquisadores acham 8 mil perfis falsos que atacam seu governo. Uma potência estrangeira opera a rede.",
+    "option_a": {
+      "text": "Investigar e expor",
+      "color": "black",
+      "axis": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "security": 5,
+        "integrity": 5,
+        "political_capital": -10
+      },
+      "consequence": "O mundo vê a interferência. A potência nega e ameaça retaliar.",
+      "actors": {
+        "ACT-021": -1,
+        "ACT-008": 1
+      },
+      "events": [
+        {
+          "text": "A potência estrangeira suspende compras do Brasil.",
+          "delay": 1,
+          "effects": {
+            "treasury": -15
+          }
+        }
+      ],
+      "reaction": "investigate"
+    },
+    "option_b": {
+      "text": "Abafar o caso",
+      "color": "yellow",
+      "axis": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "effects": {
+        "treasury": 10,
+        "political_capital": 5,
+        "sovereignty": -15,
+        "integrity": -10
+      },
+      "consequence": "O comércio segue. Os perfis falsos também.",
+      "actors": {
+        "ACT-021": 1,
+        "ACT-008": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-186"
+  },
+  {
+    "id": "INST-187",
+    "title": "Aula contra os indígenas",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-013",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "accusatory_didacticism",
+    "problem": "Um canal com cara de aula 'ensina' que indígenas destroem a floresta. É falso, e os anúncios do seu governo pagam parte dos vídeos.",
+    "option_a": {
+      "text": "Tirar os anúncios",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "effects": {
+        "integrity": 10,
+        "awareness": 5,
+        "political_capital": -10,
+        "legitimacy": -5
+      },
+      "consequence": "O canal perde a verba. Aliados dele no Congresso falam em censura.",
+      "actors": {
+        "ACT-001": -1,
+        "ACT-013": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "Manter os anúncios",
+      "color": "green",
+      "axis": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "awareness": -15,
+        "dignity": -5
+      },
+      "consequence": "O canal cresce com dinheiro público. Nas escolas, alunos repetem a aula.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-013": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-187"
+  },
+  {
+    "id": "INST-188",
+    "title": "Golpe com rosto famoso",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-014",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "deepfake",
+    "problem": "Anúncios usam um vídeo falso de um médico famoso para vender uma 'cura' do diabetes. A plataforma lucra e não tira do ar.",
+    "option_a": {
+      "text": "Multar a plataforma",
+      "color": "blue",
+      "axis": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "sovereignty": 5,
+        "political_capital": -10,
+        "legitimacy": -5
+      },
+      "consequence": "A plataforma paga a multa e acusa o Brasil de censurar a internet.",
+      "actors": {
+        "ACT-020": -1,
+        "ACT-014": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "Esperar a autorregulação",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "dignity": -10,
+        "integrity": -10
+      },
+      "consequence": "A plataforma promete agir. Os anúncios falsos seguem no ar.",
+      "actors": {
+        "ACT-020": 1,
+        "ACT-014": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-188"
+  },
+  {
+    "id": "INST-189",
+    "title": "Elogio de robô",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-011",
+    "prerequisites": {
+      "min_year": 3
+    },
+    "technique": "ai_farm",
+    "problem": "Uma agência oferece 5 mil perfis falsos para elogiar seu governo nas redes. Ela garante: ninguém percebe que são robôs.",
+    "option_a": {
+      "text": "Contratar a agência",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
         0,
         -1
       ],
       "effects": {
         "legitimacy": 15,
-        "awareness": 5,
-        "sovereignty": -5,
-        "integrity": -25
+        "political_capital": 5,
+        "treasury": -10,
+        "integrity": -15
       },
+      "consequence": "Os elogios inundam as redes. O debate fica mais barulhento e mais falso.",
       "actors": {
-        "ACT-011": 1,
-        "ACT-023": -1
+        "ACT-011": 1
       },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": [
+        {
+          "text": "Uma reportagem revela os perfis pagos pelo governo.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": -10,
+            "integrity": -10
+          }
+        }
+      ],
+      "reaction": "accept"
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
+      "text": "Recusar a oferta",
+      "color": "orange",
       "axis": [
-        1,
-        1,
-        2,
+        0,
+        0,
+        0,
         1
       ],
       "effects": {
-        "political_capital": -30,
-        "treasury": 25,
-        "dignity": 25,
-        "sovereignty": 15
+        "integrity": 10,
+        "legitimacy": -10,
+        "political_capital": -5
       },
+      "consequence": "Você fica só com perfis reais. Os ataques dominam as redes.",
       "actors": {
-        "ACT-013": 1
+        "ACT-011": -1
       },
       "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "reaction": "refuse"
     },
-    "learning_id": "APR-201",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-189"
   },
   {
-    "id": "THEM-002",
-    "title": "Tema fictício 2",
-    "mode": "impeachment",
-    "type": "thematic",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta THEM-002.",
+    "id": "INST-190",
+    "title": "Medo da vacina",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-014",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "moral_panic",
+    "problem": "Vídeos dizem que a vacina contra o HPV paralisa meninas. É boato, mas pais desmarcam a vacinação nas escolas.",
     "option_a": {
-      "text": "[Fictício] Opção A",
+      "text": "Investigar quem lucra",
+      "color": "orange",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "integrity": 10,
+        "awareness": 5,
+        "political_capital": -10,
+        "dignity": -10
+      },
+      "consequence": "A PF acha canais que vendem 'vacina natural'. O medo continua nas escolas.",
+      "actors": {},
+      "events": [],
+      "reaction": "investigate"
+    },
+    "option_b": {
+      "text": "Campanha com médicos",
       "color": "red",
       "axis": [
-        1,
-        1,
-        -2,
-        2
-      ],
-      "effects": {
-        "integrity": -5,
-        "legitimacy": 20
-      },
-      "actors": {
-        "ACT-013": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "green",
-      "axis": [
-        0,
-        -2,
         -1,
-        -1
+        0,
+        0,
+        0
       ],
       "effects": {
-        "awareness": -5,
-        "legitimacy": 25
+        "dignity": 10,
+        "awareness": 5,
+        "treasury": -15,
+        "legitimacy": -5
       },
+      "consequence": "Médicos vão às escolas e às redes. A campanha custa caro e demora.",
       "actors": {
-        "ACT-015": -1,
-        "ACT-004": 1
+        "ACT-014": 1
       },
       "events": [
         {
-          "text": "[Fictício] Evento encadeado.",
+          "text": "A procura pela vacina volta a subir nas escolas.",
           "delay": 2,
           "effects": {
-            "awareness": -5
+            "dignity": 10
           }
         }
       ],
-      "consequence": "[Fictício] Consequência da opção B."
+      "reaction": "refuse"
     },
-    "learning_id": "APR-202",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-190"
   },
   {
-    "id": "THEM-003",
-    "title": "Tema fictício 3",
-    "mode": "budget",
-    "type": "thematic",
-    "speaker": "Orçamento",
-    "problem": "[Fictício] Problema da carta THEM-003.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
-        1,
-        -2,
-        -1,
-        1
-      ],
-      "effects": {
-        "dignity": 25,
-        "political_capital": 10,
-        "sovereignty": -20,
-        "security": 10
-      },
-      "actors": {
-        "ACT-021": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "orange",
-      "axis": [
-        -2,
-        -2,
-        1,
-        2
-      ],
-      "effects": {
-        "legitimacy": -5,
-        "security": 5,
-        "treasury": -20
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-203",
+    "id": "INST-191",
+    "title": "Curso que culpa o pobre",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-022",
     "prerequisites": {
       "min_year": 1
-    }
-  },
-  {
-    "id": "THEM-004",
-    "title": "Tema fictício 4",
-    "mode": "impeachment",
-    "type": "thematic",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta THEM-004.",
+    },
+    "technique": "accusatory_didacticism",
+    "problem": "Um coach oferece de graça seu curso a jovens do programa de emprego. A aula 'ensina' que pobre é pobre porque quer. É falso.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
+      "text": "Aceitar o curso",
+      "color": "blue",
       "axis": [
-        -1,
-        -1,
+        1,
         0,
-        -1
+        0,
+        0
       ],
       "effects": {
-        "integrity": 20,
-        "dignity": -15,
-        "political_capital": 5,
-        "awareness": -15
+        "legitimacy": 10,
+        "treasury": 5,
+        "awareness": -15,
+        "dignity": -5
       },
+      "consequence": "Os jovens aprendem a culpar quem é pobre. Até a si mesmos.",
       "actors": {
         "ACT-022": 1,
-        "ACT-003": -1
+        "ACT-013": -1
       },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "integrity": -5
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
+      "events": [],
+      "reaction": "accept"
     },
     "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "black",
+      "text": "Investigar quem financia",
+      "color": "red",
       "axis": [
-        -1,
-        1,
-        2,
-        0
-      ],
-      "effects": {
-        "sovereignty": -25,
-        "awareness": 30
-      },
-      "actors": {},
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-204",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "THEM-005",
-    "title": "Tema fictício 5",
-    "mode": "impeachment",
-    "type": "thematic",
-    "speaker": "Impeachment",
-    "problem": "[Fictício] Problema da carta THEM-005.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        -1,
-        -1,
+        0,
+        0,
         0,
         1
       ],
       "effects": {
-        "sovereignty": 25,
-        "integrity": -25
+        "integrity": 10,
+        "legitimacy": -10,
+        "political_capital": -5
       },
+      "consequence": "Uma casa de apostas banca o curso. O coach chama você de inimigo.",
       "actors": {
-        "ACT-008": 1
+        "ACT-022": -1
       },
       "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
+      "reaction": "investigate"
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "blue",
-      "axis": [
-        -2,
-        0,
-        -1,
-        0
-      ],
-      "effects": {
-        "political_capital": -10,
-        "legitimacy": 5,
-        "treasury": 30
-      },
-      "actors": {
-        "ACT-003": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-205",
-    "prerequisites": {
-      "min_year": 1
-    }
+    "learning_id": "APR-191"
   },
   {
-    "id": "ATOR-001",
-    "title": "Latifundiários — ataque",
-    "mode": "prison_police",
-    "type": "actor",
-    "speaker": "ACT-001",
-    "problem": "[Fictício] Problema da carta ATOR-001.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "blue",
-      "axis": [
-        -2,
-        -2,
-        0,
-        1
-      ],
-      "effects": {
-        "security": -25,
-        "treasury": -5
-      },
-      "actors": {
-        "ACT-001": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "orange",
-      "axis": [
-        0,
-        -2,
-        0,
-        1
-      ],
-      "effects": {
-        "political_capital": -5,
-        "treasury": 30,
-        "sovereignty": 30,
-        "integrity": 30
-      },
-      "actors": {
-        "ACT-001": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-271",
+    "id": "INST-192",
+    "title": "Boato da taxa no Pix",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-007",
     "prerequisites": {
       "min_year": 1
-    }
-  },
-  {
-    "id": "ATOR-002",
-    "title": "Latifundiários — exigência",
-    "mode": "geopolitics",
-    "type": "actor",
-    "speaker": "ACT-001",
-    "problem": "[Fictício] Problema da carta ATOR-002.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
-      "axis": [
-        2,
-        2,
-        0,
-        1
-      ],
-      "effects": {
-        "awareness": 20,
-        "treasury": -30,
-        "political_capital": -20,
-        "dignity": -30
-      },
-      "actors": {
-        "ACT-001": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "green",
-      "axis": [
-        0,
-        -2,
-        0,
-        -2
-      ],
-      "effects": {
-        "political_capital": -15,
-        "awareness": -20
-      },
-      "actors": {
-        "ACT-001": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-272",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "ATOR-003",
-    "title": "Latifundiários — oferta",
-    "mode": "caucuses",
-    "type": "actor",
-    "speaker": "ACT-001",
-    "problem": "[Fictício] Problema da carta ATOR-003.",
+    "technique": "moral_panic",
+    "problem": "A Receita passa a fiscalizar grandes movimentações por Pix. Vídeos dizem que o governo vai taxar o Pix. É falso, mas o medo cresce.",
     "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "purple",
+      "text": "Manter e explicar",
+      "color": "red",
       "axis": [
         -1,
-        -2,
-        1,
-        1
-      ],
-      "effects": {
-        "sovereignty": 10,
-        "political_capital": 20,
-        "awareness": 20
-      },
-      "actors": {
-        "ACT-001": 1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "yellow",
-      "axis": [
         0,
-        -1,
-        0,
-        2
-      ],
-      "effects": {
-        "security": 10,
-        "treasury": -20
-      },
-      "actors": {
-        "ACT-001": -1
-      },
-      "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
-    },
-    "learning_id": "APR-273",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "ATOR-004",
-    "title": "Diplomatas do Itamaraty — ataque",
-    "mode": "geopolitics",
-    "type": "actor",
-    "speaker": "ACT-010",
-    "problem": "[Fictício] Problema da carta ATOR-004.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "green",
-      "axis": [
-        1,
-        1,
-        1,
-        -2
-      ],
-      "effects": {
-        "integrity": -15,
-        "treasury": 15,
-        "dignity": -20
-      },
-      "actors": {
-        "ACT-010": 1
-      },
-      "events": [
-        {
-          "text": "[Fictício] Evento encadeado.",
-          "delay": 2,
-          "effects": {
-            "dignity": -10
-          }
-        }
-      ],
-      "consequence": "[Fictício] Consequência da opção A."
-    },
-    "option_b": {
-      "text": "[Fictício] Opção B",
-      "color": "purple",
-      "axis": [
-        0,
-        2,
         0,
         -1
       ],
       "effects": {
         "integrity": 10,
-        "dignity": 20,
-        "treasury": -20
+        "treasury": 5,
+        "legitimacy": -10,
+        "political_capital": -5
       },
+      "consequence": "A norma fica. O desmentido demora, e parte do país passa a evitar o Pix.",
       "actors": {
-        "ACT-010": -1
+        "ACT-007": 1
       },
       "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "reaction": "refuse"
     },
-    "learning_id": "APR-274",
-    "prerequisites": {
-      "min_year": 1
-    }
-  },
-  {
-    "id": "ATOR-005",
-    "title": "Diplomatas do Itamaraty — exigência",
-    "mode": "caucuses",
-    "type": "actor",
-    "speaker": "ACT-010",
-    "problem": "[Fictício] Problema da carta ATOR-005.",
-    "option_a": {
-      "text": "[Fictício] Opção A",
-      "color": "red",
+    "option_b": {
+      "text": "Revogar a norma",
+      "color": "yellow",
       "axis": [
         1,
-        -2,
-        2,
-        0
+        0,
+        0,
+        1
       ],
       "effects": {
-        "dignity": -5,
-        "treasury": -5,
-        "integrity": -30
+        "legitimacy": 10,
+        "political_capital": 5,
+        "integrity": -10,
+        "awareness": -5
       },
+      "consequence": "O recuo vira 'prova' do boato. A Receita deixa de enxergar o dinheiro digital.",
       "actors": {
-        "ACT-010": 1
+        "ACT-007": -1
       },
       "events": [
         {
-          "text": "[Fictício] Evento encadeado.",
+          "text": "O crime organizado usa contas digitais para lavar dinheiro.",
           "delay": 2,
           "effects": {
-            "dignity": -20
+            "security": -10,
+            "treasury": -10
           }
         }
       ],
-      "consequence": "[Fictício] Consequência da opção A."
+      "reaction": "accept"
     },
-    "option_b": {
-      "text": "[Fictício] Opção B",
+    "learning_id": "APR-192"
+  },
+  {
+    "id": "INST-193",
+    "title": "Indicação para o Esporte",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-011",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "technique": "doom_cache",
+    "problem": "Um partido aliado indica para o Ministério do Esporte um ex-influenciador que lucrou com a perda dos seguidores nas apostas.",
+    "option_a": {
+      "text": "Recusar a indicação",
       "color": "blue",
       "axis": [
-        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "integrity": 10,
+        "awareness": 5,
+        "political_capital": -15
+      },
+      "consequence": "O partido se sente traído e passa a votar contra seus projetos.",
+      "actors": {
+        "ACT-011": -1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "Aceitar a indicação",
+      "color": "yellow",
+      "axis": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "legitimacy": 10,
+        "integrity": -10,
+        "awareness": -10
+      },
+      "consequence": "O ministro traz os fãs dele ao governo. E traz as casas de apostas.",
+      "actors": {
+        "ACT-011": 1,
+        "ACT-022": 1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-193"
+  },
+  {
+    "id": "INST-194",
+    "title": "Comissão sobre a perda",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-014",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "technique": "doom_cache",
+    "problem": "Casas de apostas pagam influenciadores com parte do que os seguidores perdem. Um projeto quer proibir esse pagamento.",
+    "option_a": {
+      "text": "Proibir a comissão",
+      "color": "red",
+      "axis": [
         -1,
-        2,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "awareness": 5,
+        "treasury": -10,
+        "legitimacy": -5
+      },
+      "consequence": "A comissão acaba. Muitos influenciadores largam as apostas e viram oposição.",
+      "actors": {
+        "ACT-014": 1,
+        "ACT-022": -1
+      },
+      "events": [
+        {
+          "text": "Menos jovens se endividam com apostas.",
+          "delay": 2,
+          "effects": {
+            "dignity": 10
+          }
+        }
+      ],
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "Deixar o setor se regular",
+      "color": "orange",
+      "axis": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "effects": {
+        "treasury": 10,
+        "political_capital": 5,
+        "awareness": -10,
+        "dignity": -10
+      },
+      "consequence": "As apostas seguem em alta. Os influenciadores lucram com cada perda.",
+      "actors": {
+        "ACT-022": 1,
+        "ACT-014": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-194"
+  },
+  {
+    "id": "INST-195",
+    "title": "Boato contra as urnas",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-022",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "technique": "demoralization",
+    "problem": "Seu aliado perde uma eleição apertada. Influenciadores da sua base dizem que houve fraude nas urnas. É falso.",
+    "option_a": {
+      "text": "Duvidar das urnas",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        0,
+        -2
+      ],
+      "effects": {
+        "political_capital": 10,
+        "legitimacy": 5,
+        "integrity": -15,
+        "awareness": -5
+      },
+      "consequence": "Sua base vai às ruas. Mas foram essas urnas que elegeram você.",
+      "actors": {
+        "ACT-022": 1,
+        "ACT-023": -1
+      },
+      "events": [
+        {
+          "text": "Parte do país deixa de confiar em qualquer eleição.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": -10,
+            "integrity": -5
+          }
+        }
+      ],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Reconhecer o resultado",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "integrity": 10,
+        "legitimacy": 5,
+        "political_capital": -15
+      },
+      "consequence": "Você parabeniza os eleitos. Aliados dizem que você entregou o jogo.",
+      "actors": {
+        "ACT-023": 1,
+        "ACT-022": -1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-195"
+  },
+  {
+    "id": "INST-196",
+    "title": "Denúncia em massa",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-018",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "ai_farm",
+    "problem": "Uma ativista mostra garimpo ilegal na Amazônia. Perfis falsos denunciam a conta dela em massa, e a plataforma a suspende.",
+    "option_a": {
+      "text": "Investigar os robôs",
+      "color": "green",
+      "axis": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "effects": {
+        "integrity": 10,
+        "sovereignty": 5,
+        "political_capital": -10,
+        "legitimacy": -5
+      },
+      "consequence": "Os dados mostram robôs pagos pelo garimpo ilegal. A plataforma fala em censura.",
+      "actors": {
+        "ACT-018": 1,
+        "ACT-020": -1
+      },
+      "events": [],
+      "reaction": "investigate"
+    },
+    "option_b": {
+      "text": "Deixar com a plataforma",
+      "color": "orange",
+      "axis": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "political_capital": 10,
+        "legitimacy": 5,
+        "awareness": -10,
+        "sovereignty": -5
+      },
+      "consequence": "A conta segue fora do ar. Outras vozes contra o garimpo se calam.",
+      "actors": {
+        "ACT-020": 1,
+        "ACT-018": -1
+      },
+      "events": [
+        {
+          "text": "O garimpo ilegal avança onde a ativista denunciava.",
+          "delay": 1,
+          "effects": {
+            "sovereignty": -10
+          }
+        }
+      ],
+      "reaction": "accept"
+    },
+    "learning_id": "APR-196"
+  },
+  {
+    "id": "INST-197",
+    "title": "Aula contra o eleitor rival",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-024",
+    "prerequisites": {
+      "min_year": 3
+    },
+    "technique": "accusatory_didacticism",
+    "problem": "Um canal da sua base dá 'aulas' que ensinam a ver quem vota no rival como inimigo do país. Os vídeos viralizam.",
+    "option_a": {
+      "text": "Compartilhar a aula",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        0,
         -1
       ],
       "effects": {
-        "security": 20,
-        "awareness": -10,
-        "dignity": -15
+        "political_capital": 10,
+        "legitimacy": 5,
+        "awareness": -15
       },
+      "consequence": "Sua base se inflama. Nas famílias, quem vota no rival vira inimigo.",
       "actors": {
-        "ACT-010": -1
+        "ACT-024": -1
       },
       "events": [],
-      "consequence": "[Fictício] Consequência da opção B."
+      "reaction": "accept"
     },
-    "learning_id": "APR-275",
+    "option_b": {
+      "text": "Pedir que o canal pare",
+      "color": "blue",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 10,
+        "integrity": 5,
+        "political_capital": -10,
+        "legitimacy": -5
+      },
+      "consequence": "O canal obedece e acusa você de trair a base. A militância esfria.",
+      "actors": {
+        "ACT-024": 1,
+        "ACT-013": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-197"
+  },
+  {
+    "id": "INST-198",
+    "title": "Vídeo falso do vizinho",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-010",
     "prerequisites": {
       "min_year": 1
-    }
+    },
+    "technique": "deepfake",
+    "problem": "Em um vídeo, o presidente de um país vizinho anuncia o fim da compra de carne do Brasil. O Itamaraty suspeita de IA. O agro quer revide.",
+    "option_a": {
+      "text": "Retaliar o vizinho",
+      "color": "green",
+      "axis": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "sovereignty": 5,
+        "integrity": -10,
+        "awareness": -5
+      },
+      "consequence": "Você taxa os produtos do vizinho. Dias depois, o vídeo se revela falso.",
+      "actors": {
+        "ACT-001": 1,
+        "ACT-010": -1
+      },
+      "events": [
+        {
+          "text": "O vizinho revida e fecha o mercado a produtos do Brasil.",
+          "delay": 1,
+          "effects": {
+            "treasury": -15
+          }
+        }
+      ],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Confirmar com o vizinho",
+      "color": "yellow",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "integrity": 10,
+        "security": 5,
+        "legitimacy": -10,
+        "political_capital": -5
+      },
+      "consequence": "O vizinho desmente o vídeo. Nas redes, o agro chama você de fraco.",
+      "actors": {
+        "ACT-010": 1,
+        "ACT-001": -1
+      },
+      "events": [],
+      "reaction": "investigate"
+    },
+    "learning_id": "APR-198"
+  },
+  {
+    "id": "INST-199",
+    "title": "Rifas da facção",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-023",
+    "prerequisites": {
+      "min_year": 3
+    },
+    "technique": "doom_cache",
+    "problem": "Influenciadores vendem rifas de carros nas redes. Quase todos perdem, e uma facção usa as rifas para lavar dinheiro.",
+    "option_a": {
+      "text": "Seguir o dinheiro",
+      "color": "blue",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "security": 10,
+        "integrity": 10,
+        "political_capital": -10,
+        "legitimacy": -10
+      },
+      "consequence": "A investigação leva meses. Ao fim, a Justiça bloqueia as contas da facção.",
+      "actors": {
+        "ACT-023": 1
+      },
+      "events": [],
+      "reaction": "investigate"
+    },
+    "option_b": {
+      "text": "Prender ao vivo",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "security": 5,
+        "integrity": -10,
+        "dignity": -5
+      },
+      "consequence": "As prisões viram espetáculo. O dinheiro da facção some antes do bloqueio.",
+      "actors": {},
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-199"
+  },
+  {
+    "id": "INST-200",
+    "title": "Pânico contra o funk",
+    "type": "institutional",
+    "mode": "influencer",
+    "speaker": "ACT-019",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "moral_panic",
+    "problem": "Vídeos chamam o baile funk de 'escola do crime'. É falso, mas um projeto quer proibir os bailes.",
+    "option_a": {
+      "text": "Apoiar a proibição",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 10,
+        "political_capital": 5,
+        "awareness": -10,
+        "dignity": -10
+      },
+      "consequence": "Os bailes viram caso de polícia. Os jovens perdem o lazer do bairro.",
+      "actors": {
+        "ACT-022": 1,
+        "ACT-019": -1
+      },
+      "events": [],
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "Regularizar os bailes",
+      "color": "purple",
+      "axis": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "effects": {
+        "dignity": 10,
+        "awareness": 5,
+        "legitimacy": -10,
+        "treasury": -5
+      },
+      "consequence": "Os bailes ganham alvará. Seus rivais dizem que você apoia o crime.",
+      "actors": {
+        "ACT-019": 1
+      },
+      "events": [],
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-200"
+  },
+  {
+    "id": "THEM-001",
+    "title": "Reforma agrária",
+    "type": "thematic",
+    "mode": "caucuses",
+    "theme": "land_reform",
+    "speaker": "ACT-017",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O MST ocupa uma fazenda improdutiva. O agronegócio pressiona por despejo.",
+    "option_a": {
+      "text": "Assentar as famílias",
+      "color": "purple",
+      "axis": [
+        -2,
+        0,
+        1,
+        0
+      ],
+      "effects": {
+        "dignity": 10,
+        "sovereignty": 5,
+        "political_capital": -15
+      },
+      "consequence": "A terra é repartida. O agro protesta.",
+      "actors": {},
+      "events": []
+    },
+    "option_b": {
+      "text": "Ordenar o despejo",
+      "color": "green",
+      "axis": [
+        2,
+        0,
+        0,
+        -1
+      ],
+      "effects": {
+        "political_capital": 10,
+        "dignity": -10,
+        "integrity": -5
+      },
+      "consequence": "A polícia despeja as famílias. O agro comemora.",
+      "actors": {},
+      "events": []
+    },
+    "learning_id": "APR-THEM-001"
+  },
+  {
+    "id": "ATOR-001",
+    "title": "O Latifundiário cobra o favor",
+    "type": "actor",
+    "mode": "congress",
+    "speaker": "ACT-001",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "problem": "O Latifundiário oferece 50 mil votos em troca de controle total sobre a nomeação de juízes e delegados em sua região.",
+    "option_a": {
+      "text": "Recusar",
+      "color": "red",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "political_capital": -15,
+        "dignity": 10,
+        "integrity": 5
+      },
+      "consequence": "O Latifundiário fica furioso. Mas a dignidade é preservada.",
+      "actors": {
+        "ACT-001": -1
+      },
+      "events": []
+    },
+    "option_b": {
+      "text": "Aceitar",
+      "color": "green",
+      "axis": [
+        0,
+        0,
+        0,
+        -2
+      ],
+      "effects": {
+        "political_capital": 20,
+        "dignity": -15,
+        "integrity": -10
+      },
+      "consequence": "O Latifundiário garante votos. Mas a impunidade aumenta.",
+      "actors": {
+        "ACT-001": 1
+      },
+      "events": []
+    },
+    "learning_id": "APR-ATOR-001"
   }
 ]

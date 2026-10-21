@@ -27,6 +27,8 @@ dist/
 site/node_modules/
 site/dist/
 site/.astro/
+# Jogo exportado pelo workflow do site (D-195)
+site/public/jogar/
 # Gerados por site/scripts/sync-docs.mjs a partir de docs/
 site/src/content/docs/[0-9][0-9]-*.md
 site/src/content/docs/gdd*.md

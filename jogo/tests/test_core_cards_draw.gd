@@ -11,6 +11,7 @@ var order: Array
 
 func _initialize() -> void:
 	data = GameDatabase.new()
+	data.data_dir = "res://tests/fixtures/data/"   # fictitious fixture deck (D-139)
 	data.load_all()
 	order = Array(data.meter_ids)
 	_side_draw()

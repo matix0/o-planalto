@@ -34,6 +34,7 @@ var learning: Dictionary = {}   # id -> Learning Card (doc 18 blocks; fictitious
 var impeachment_cards: Array = []  # the 5 scene cards, ordered by phase (gdd 03 §4.1)
 var meter_info: Dictionary = {} # id -> meter entry of meters.json
 var errors: PackedStringArray = []
+var data_dir := DATA_DIR       # tests point it at res://tests/fixtures/data/ (fictitious deck, D-139)
 
 
 func _ready() -> void:
@@ -375,7 +376,7 @@ func _load_impeachment_cards() -> void:
 
 
 func _read(file: String, fallback: Variant) -> Variant:
-	var path := DATA_DIR + file
+	var path := data_dir + file
 	var text := FileAccess.get_file_as_string(path)
 	if text.is_empty():
 		errors.append("%s: cannot read (%s)" % [path, error_string(FileAccess.get_open_error())])

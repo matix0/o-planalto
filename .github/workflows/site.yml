@@ -1,4 +1,5 @@
-# Publica o site da documentação (site/, Astro Starlight) no GitHub Pages — D-077.
+# Publica o site da documentação (site/, Astro Starlight) no GitHub Pages — D-077 —
+# e o jogo exportado para Web em /jogar/ (D-195).
 # Requer Settings → Pages → Source: "GitHub Actions".
 name: Site
 
@@ -9,6 +10,7 @@ on:
       - 'docs/**'
       - 'gdd/**'
       - 'site/**'
+      - 'jogo/**'
       - '.github/workflows/site.yml'
   workflow_dispatch:
 
@@ -29,6 +31,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      # Godot 4.7.2 (D-130) e o modelo Web sem threads (preset da D-188), com cache.
+      - id: godot-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/godot
+          key: godot-4.7.2-web-nothreads
+      - if: steps.godot-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/godot && cd ~/godot
+          base=https://github.com/godotengine/godot/releases/download/4.7.2-stable
+          curl -sSL -o godot.zip "$base/Godot_v4.7.2-stable_linux.x86_64.zip"
+          unzip -q godot.zip && rm godot.zip
+          curl -sSL -o templates.tpz "$base/Godot_v4.7.2-stable_export_templates.tpz"
+          unzip -q -j templates.tpz templates/web_nothreads_release.zip templates/version.txt && rm templates.tpz
+      - name: Exporta o jogo para site/public/jogar
+        run: |
+          tpl=~/.local/share/godot/export_templates/4.7.2.stable
+          mkdir -p "$tpl" site/public/jogar
+          cp ~/godot/web_nothreads_release.zip ~/godot/version.txt "$tpl/"
+          g=~/godot/Godot_v4.7.2-stable_linux.x86_64
+          "$g" --headless --path jogo --import || true
+          "$g" --headless --path jogo --export-release "Web" "$GITHUB_WORKSPACE/site/public/jogar/index.html"
+          test -s site/public/jogar/index.pck
       - uses: withastro/action@v6
         with:
           path: ./site

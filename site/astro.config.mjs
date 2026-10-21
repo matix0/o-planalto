@@ -16,7 +16,7 @@ export default defineConfig({
 			favicon: '/favicon.svg',
 			social: [{ icon: 'github', label: 'Repositório no GitHub', href: 'https://github.com/matix0/o-planalto' }],
 			sidebar: [
-				{ label: 'Comece aqui', items: [{ label: 'Início', link: '/' }, 'sobre'] },
+				{ label: 'Comece aqui', items: [{ label: 'Início', link: '/' }, { label: 'Jogar no navegador', link: '/jogar/' }, 'sobre'] },
 				...SECOES.map(({ nome }) => ({
 					label: nome,
 					items: DOCS.filter((doc) => doc.secao === nome).map((doc) => doc.slug),

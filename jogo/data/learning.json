@@ -1,542 +1,684 @@
 [
   {
     "id": "APR-001",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-001).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-001).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se aceitava ou não as mudanças do relator.",
+    "concept": "O relator tem poder de alterar o texto de um projeto. Isso se chama \"poder de agenda\".",
+    "data": "Cerca de 3,6 mil trabalhadores foram demitidos sem justa causa após a privatização da Eletrobras, em 2022.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Agência Senado, 2025.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2025/07/15/teresa-leitao-defende-reintegracao-de-concursados-demitidos-da-eletrobras"
     },
-    "impact": "[Fictício] Frase de impacto (APR-001)."
+    "impact": "O relator tem poder. Quem controla a pauta, controla o país."
   },
   {
     "id": "APR-002",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-002).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-002).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se mobilizava senadores ou deixava o Senado decidir sobre um projeto que retira direitos trabalhistas.",
+    "concept": "O bicameralismo exige que Câmara e Senado aprovem o mesmo texto. Se o Senado rejeitar, o projeto é arquivado.",
+    "data": "Em 2018, a Agência Senado avaliou que os efeitos da Reforma Trabalhista (Lei 13.467/2017) no emprego eram imprecisos, mas que as relações de trabalho mudaram de forma consistente.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Agência Senado, 2018.",
+      "url": "https://www12.senado.leg.br/noticias/especiais/especial-cidadania/reforma-trabalhista-formalizou-mais-empregos-mas-continua-contestada"
     },
-    "impact": "[Fictício] Frase de impacto (APR-002)."
+    "impact": "Direito retirado não volta. A luta é para não perder o que já se conquistou."
   },
   {
     "id": "APR-003",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-003).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-003).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se apoiava ou engavetava uma CPI para investigar o governo.",
+    "concept": "A CPI é um instrumento de fiscalização do Legislativo. Ela tem poderes de investigação, mas não julga.",
+    "data": "A CPI das Bets (2025) foi instalada para investigar apostas online e lavagem de dinheiro. O relatório final foi rejeitado por 4 votos a 3.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Agência Senado, 2025.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2025/06/12/cpi-das-bets-rejeita-relatorio-final"
     },
-    "impact": "[Fictício] Frase de impacto (APR-003)."
+    "impact": "A CPI investiga, mas quem decide se pune é o Congresso. E o Congresso não pune a si mesmo."
+  },
+  {
+    "id": "APR-004",
+    "lived": "Você decidiu se indicava um nome técnico ou um nome político para o STF.",
+    "concept": "O Senado pode rejeitar indicados do presidente. Isso é um freio e contrapeso.",
+    "data": "Em abril de 2026, o Senado rejeitou a indicação de Jorge Messias para o STF, por 42 a 34 — algo que não acontecia desde 1894.",
+    "source": {
+      "label": "Agência Brasil, 2026.",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-04/senado-rejeita-indicacao-de-messias-para-stf"
+    },
+    "impact": "O Senado é um freio e contrapeso. O presidente não manda sozinho."
+  },
+  {
+    "id": "APR-005",
+    "lived": "Você decidiu se vetava ou apoiava o Marco Temporal.",
+    "concept": "O Marco Temporal é uma tese jurídica que pretende limitar a demarcação de terras indígenas às áreas ocupadas em 1988.",
+    "data": "O STF declarou o Marco Temporal inconstitucional em 2023. O Congresso reagiu e aprovou a tese na Lei 14.701/2023, derrubando vetos. Em dezembro de 2025, o STF a declarou inconstitucional de novo.",
+    "source": {
+      "label": "Instituto Socioambiental, 2025.",
+      "url": "https://www.socioambiental.org/noticias-socioambientais/stf-conclui-julgamento-e-rejeita-marco-temporal-mas-mantem-retrocessos-da"
+    },
+    "impact": "A terra é dos indígenas. O Marco Temporal é a morte do futuro."
+  },
+  {
+    "id": "APR-006",
+    "lived": "Você decidiu se vetava ou apoiava o aumento do próprio salário do Congresso.",
+    "concept": "O Congresso define o próprio salário. Não há controle externo.",
+    "data": "O subsídio dos deputados federais é de R$ 46.366,19. O salário mínimo em 2026 é de R$ 1.621.",
+    "source": {
+      "label": "Exame, 2026; Decreto 12.797/2025.",
+      "url": "https://exame.com/brasil/quanto-ganha-um-deputado-federal-em-2026/"
+    },
+    "impact": "Enquanto o povo passa fome, o Congresso aumenta o próprio salário."
   },
   {
     "id": "APR-021",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-021).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-021).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu onde cortar R$ 50 bilhões do orçamento.",
+    "concept": "O orçamento público não é como o de casa. O governo pode gastar mais do que arrecada para investir e gerar arrecadação futura.",
+    "data": "O teto de gastos retirou R$ 36,9 bilhões do SUS entre 2018 e 2022. Na pandemia de covid-19, a expectativa de vida caiu de 76,2 (2019) para 72,8 anos (2021).",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Inesc; IBGE.",
+      "url": "https://www.cartacapital.com.br/saude/teto-de-gastos-deixou-brasil-com-baixa-imunidade-a-covid-19-diz-estudo/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-021)."
+    "impact": "Cortar saúde não é 'ajuste fiscal'. É uma escolha que mata."
   },
   {
     "id": "APR-022",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-022).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-022).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se renegociava a dívida ou pagava em dia.",
+    "concept": "A dívida pública consome 40% do orçamento. Renegociá-la é uma decisão política.",
+    "data": "Em 2024, o setor público gastou R$ 950,4 bilhões com juros da dívida, o maior valor da série do Banco Central.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Banco Central, via InfoMoney, 2025.",
+      "url": "https://www.infomoney.com.br/economia/gasto-com-juros-do-setor-publico-em-2024-e-o-maior-da-serie-historica-diz-bc/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-022)."
-  },
-  {
-    "id": "APR-023",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-023).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-023).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-023)."
+    "impact": "A dívida pública é impagável. Renegociá-la é uma decisão política."
   },
   {
     "id": "APR-041",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-041).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-041).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se vetava ou apoiava a retirada de Filosofia e Sociologia do currículo.",
+    "concept": "A Lei 13.415/2017 rebaixou Filosofia e Sociologia de \"disciplinas obrigatórias\" para \"estudos e práticas\".",
+    "data": "A Lei 13.415/2017 deixou de tratar Filosofia e Sociologia como disciplinas: a base do ensino médio passou a incluir \"estudos e práticas\" de sociologia e filosofia.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Lei 13.415/2017, art. 35-A da LDB.",
+      "url": "https://www.meuvademecumonline.com.br/legislacao/leis_ordinarias/11053/pagina_1/33/lei-n-13-415-de-16-de-fevereiro-de-2017/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-041)."
+    "impact": "Sem pensamento crítico, o povo é presa fácil do pânico moral e da desinformação."
   },
   {
     "id": "APR-042",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-042).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-042).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se renovava ou não a concessão de TV para um pastor.",
+    "concept": "A concessão de TV é um serviço público. O espectro eletromagnético é um bem da União, cedido a empresas privadas.",
+    "data": "9 dos 50 veículos de maior audiência no Brasil são de propriedade de lideranças religiosas. A TV Record, de Edir Macedo, é o principal veículo desse império.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Media Ownership Monitor (RSF e Intervozes), 2017.",
+      "url": "https://www.congressoemfoco.com.br/noticia/45409/igrejas-controlam-9-dos-50-veiculos-mais-influentes-do-pais"
     },
-    "impact": "[Fictício] Frase de impacto (APR-042)."
-  },
-  {
-    "id": "APR-043",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-043).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-043).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-043)."
+    "impact": "Quem controla a TV controla a narrativa. Quem controla a narrativa controla o voto."
   },
   {
     "id": "APR-061",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-061).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-061).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se aderia ou não ao sistema de pagamento em moedas locais do BRICS.",
+    "concept": "O BRICS busca reduzir a dependência do dólar com sistemas como BRICS Pay, BRICS Bridge e BRICS Clear.",
+    "data": "Em 2025, o BRICS ampliado reunia cerca de 48,5% da população mundial.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "imprensa, julho de 2025 (fonte fraca).",
+      "url": "https://www.ocafezinho.com/2025/07/02/rio-de-janeiro-recebe-o-17o-encontro-dos-brics-em-momento-geopolitico-de-muita-tensao-no-mundo/amp/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-061)."
+    "impact": "A soberania não está à venda. Ela está em disputa."
   },
   {
     "id": "APR-062",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-062).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-062).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se vendia ou desenvolvia a reserva de lítio.",
+    "concept": "O lítio é um mineral estratégico para baterias e tecnologia. Vendê-lo bruto é entregar o futuro.",
+    "data": "O Brasil tem a 7ª maior reserva de lítio do mundo (USGS).",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "USGS, via pv magazine, 2023.",
+      "url": "https://www.pv-magazine-brasil.com/2023/10/03/brasil-tem-a-setima-maior-reserva-de-litio-do-mundo/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-062)."
+    "impact": "O lítio é nosso. Se vendermos, o futuro será deles."
   },
   {
     "id": "APR-063",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-063).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-063).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se vetava uma empresa chinesa do 5G a pedido dos EUA.",
+    "concept": "EUA e China disputam a tecnologia do mundo, e cada um quer os outros países do seu lado. Escolher tem preço: em dinheiro, em segurança ou em autonomia.",
+    "data": "Em 2021, o leilão do 5G não excluiu a Huawei de forma explícita, apesar da pressão dos EUA. O edital previu uma rede privativa e segura para o governo federal.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "IPEA, Revista Tempo do Mundo, 2024.",
+      "url": "https://www.ipea.gov.br/revistas/index.php/rtm/article/download/547/414/2140"
     },
-    "impact": "[Fictício] Frase de impacto (APR-063)."
+    "impact": "Tecnologia também é território."
+  },
+  {
+    "id": "APR-064",
+    "lived": "Você decidiu se trocava tarifa zero para carros chineses por vendas garantidas de soja e minério.",
+    "concept": "A tarifa de importação protege a indústria local. Sem ela, o país corre o risco de vender matéria-prima e comprar produto pronto. Isso se chama reprimarização.",
+    "data": "Em 2024, a China comprou 28% das exportações do Brasil. Soja, petróleo, minério de ferro, carnes e celulose foram 90% das vendas à China.",
+    "source": {
+      "label": "Banco Central, junho de 2025.",
+      "url": "https://www.bcb.gov.br/content/ri/relatorioinflacao/202506/rpm202506b4p.pdf"
+    },
+    "impact": "Vender grão e comprar máquina custa empregos."
+  },
+  {
+    "id": "APR-065",
+    "lived": "Você decidiu se aceitava o dinheiro do FMI com as condições dele.",
+    "concept": "O FMI empresta a países em crise, mas exige condições: metas fiscais, reformas e, às vezes, privatizações. O dinheiro alivia agora; o ajuste pesa depois.",
+    "data": "Em 1998, o FMI aprovou um crédito de cerca de US$ 18 bilhões ao Brasil. O programa incluía ajuste fiscal, reforma da Previdência e privatizações.",
+    "source": {
+      "label": "FMI, comunicado de 2 de dezembro de 1998.",
+      "url": "https://www.imf.org/en/news/articles/2015/09/14/01/49/pr9859"
+    },
+    "impact": "Dinheiro de fora vem com regras de fora."
+  },
+  {
+    "id": "APR-066",
+    "lived": "Você decidiu se vetava a venda da Embraer a uma gigante estrangeira.",
+    "concept": "Em empresas estratégicas privatizadas, a União pode guardar uma ação especial, a \"ação de ouro\". Ela dá poder de veto sobre a venda do controle.",
+    "data": "A União tem uma ação especial na Embraer. Pelo estatuto da empresa, ela dá poder de veto sobre a mudança de controle e os programas militares.",
+    "source": {
+      "label": "Estatuto social da Embraer, art. 9º (2024).",
+      "url": "https://ri.embraer.com.br/en/governance/golden-share/"
+    },
+    "impact": "Tecnologia vendida não volta."
+  },
+  {
+    "id": "APR-067",
+    "lived": "Você decidiu entre uma moeda comum do BRICS e o controle do real.",
+    "concept": "Moeda comum exige um banco central comum: cada país deixa de decidir os próprios juros. O BRICS hoje estuda pagamentos em moedas locais, não uma moeda única.",
+    "data": "Em setembro de 2026, a declaração do BRICS cita o estudo de pagamentos entre países e a discussão do comércio em moedas locais. O texto não fala em moeda comum.",
+    "source": {
+      "label": "Declaração de Nova Délhi (BRICS), set. 2026.",
+      "url": "https://www.pmindia.gov.in/en/news_updates/brics-new-delhi-declaration-building-for-resilience-innovation-cooperation-and-sustainability-september-12-2026/"
+    },
+    "impact": "Trocar de dependência não é ser soberano."
+  },
+  {
+    "id": "APR-068",
+    "lived": "Você decidiu se mandava soldados brasileiros para a guerra de um aliado.",
+    "concept": "A Constituição manda o Brasil defender a não intervenção e a solução pacífica dos conflitos. Mandar tropas ao exterior depende de autorização do Congresso.",
+    "data": "Desde 1956, a Lei 2.953 exige autorização do Congresso para mandar tropas ao exterior em cumprimento de tratados, acordos ou entendimentos militares.",
+    "source": {
+      "label": "Lei nº 2.953, de 17 de novembro de 1956.",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/1950-1969/l2953.htm"
+    },
+    "impact": "Na guerra dos outros, os mortos são nossos."
+  },
+  {
+    "id": "APR-069",
+    "lived": "Você decidiu entre uma mina em terra indígena e o adubo orgânico.",
+    "concept": "Depender de adubo importado deixa a safra refém de guerras e sanções. Povos indígenas têm direito a consulta prévia antes de projetos que afetam suas terras.",
+    "data": "Em 2021, mais de 85% dos fertilizantes usados no Brasil foram importados. China e Rússia limitaram a exportação de nitrogenados, e a Bielorrússia sofreu sanções.",
+    "source": {
+      "label": "Carta da Agricultura, jan.-mar. de 2022.",
+      "url": "https://www.alice.cnptia.embrapa.br/bitstream/doc/1142514/1/A-importancia-do-PNF.pdf"
+    },
+    "impact": "Comida soberana começa no adubo."
+  },
+  {
+    "id": "APR-070",
+    "lived": "Você decidiu se a Petrobras repassava a alta do petróleo para o diesel.",
+    "concept": "Na paridade de importação, o preço daqui segue o preço lá fora e o dólar. Ela protege o caixa da estatal, mas joga a alta no frete e na comida.",
+    "data": "Em março de 2026, o diesel S10 estava 13% mais caro que no último reajuste do piso do frete. Por lei, o piso é reajustado quando o diesel varia mais de 5%.",
+    "source": {
+      "label": "ANTT, notícia de 16 de março de 2026.",
+      "url": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/antt-atualiza-tabela-dos-pisos-minimos-de-frete-em-decorrencia-da-variacao-no-preco-do-diesel-s10"
+    },
+    "impact": "O diesel sobe e a comida sobe junto."
+  },
+  {
+    "id": "APR-071",
+    "lived": "Você decidiu se cobrava imposto das big techs mesmo com a ameaça de tarifas dos EUA.",
+    "concept": "Empresas digitais vendem em muitos países sem sede neles. Alguns países criam um imposto digital; os EUA, sede de muitas delas, respondem com ameaça de tarifas.",
+    "data": "Em 2021, os EUA encerraram a investigação sobre o Brasil, que não adotou o imposto digital em estudo, e mantiveram a opção de tarifas contra outros seis países.",
+    "source": {
+      "label": "USTR, comunicado de 26 de março de 2021.",
+      "url": "https://www.ustr.gov/about-us/policy-offices/press-office/press-releases/2021/march/ustr-announces-next-steps-section-301-digital-services-taxes-investigations"
+    },
+    "impact": "Quem fatura aqui paga imposto onde?"
+  },
+  {
+    "id": "APR-072",
+    "lived": "Você decidiu se aceitava pagar mais ao Paraguai pela energia de Itaipu.",
+    "concept": "Itaipu é uma usina dos dois países. O Paraguai vende ao Brasil a energia que não usa, por um preço fixado em tratado. Integração também tem custo.",
+    "data": "Em 2024, o Brasil usou 69% da energia de Itaipu e o Paraguai, 31%. Nos anos 1980, o Brasil usava 95%. Itaipu prevê que o excedente paraguaio acabe até 2035.",
+    "source": {
+      "label": "Agência Brasil, com dados da Itaipu, 2025.",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-09/hidreletrica-de-itaipu-chega-ao-marco-de-31-bilhoes-de-mwh-produzidos"
+    },
+    "impact": "Soberania também vale para o vizinho."
+  },
+  {
+    "id": "APR-073",
+    "lived": "Você decidiu se sancionava a lei que libera a compra de terras por estrangeiros.",
+    "concept": "Uma lei limita quanto de terra rural um estrangeiro pode comprar. Abrir atrai investimento; manter o limite protege quem decide o que se planta e para quem.",
+    "data": "A Lei 5.709, de 1971, limita as terras de estrangeiros a 1/4 de cada município. Uma só nacionalidade pode ter 40% desse limite, ou 10% do município.",
+    "source": {
+      "label": "Lei 5.709/1971, art. 12 (Câmara).",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/1970-1979/lei-5709-7-outubro-1971-357938-normaatualizada-pl.html"
+    },
+    "impact": "Quem é dono da terra decide o que se planta."
+  },
+  {
+    "id": "APR-074",
+    "lived": "Você decidiu se aceitava drones e agentes dos EUA no Brasil contra facções que eles tratam como terroristas.",
+    "concept": "Chamar um grupo de terrorista muda as regras: pode abrir caminho para sanções e ações militares de fora. Aqui, a lei trata facção como crime organizado.",
+    "data": "Em maio de 2026, os EUA anunciaram a intenção de tratar o PCC e o Comando Vermelho como organizações terroristas estrangeiras a partir de 5 de junho.",
+    "source": {
+      "label": "Departamento de Estado dos EUA, 28/05/2026.",
+      "url": "https://www.state.gov/translations/portuguese/designacao-do-comando-vermelho-e-do-primeiro-comando-da-capital-como-organizacoes-terroristas"
+    },
+    "impact": "Segurança emprestada tem dono."
+  },
+  {
+    "id": "APR-075",
+    "lived": "Você decidiu se trocava vantagens de país em desenvolvimento pelo apoio dos EUA para entrar na OCDE.",
+    "concept": "A OCDE reúne, em sua maioria, países ricos com regras comuns de economia, impostos e transparência. Entrar dá um selo de confiança, mas limita políticas próprias.",
+    "data": "O roteiro da OCDE (2022) exige que o Brasil aceite todos os instrumentos jurídicos da organização, salvo reservas acordadas, e passe por mais de 20 comitês.",
+    "source": {
+      "label": "OCDE, Roteiro de adesão do Brasil, 2022.",
+      "url": "https://one.oecd.org/document/C/MIN(2022"
+    },
+    "impact": "Todo clube cobra a entrada."
+  },
+  {
+    "id": "APR-076",
+    "lived": "Você decidiu se quebrava a patente de uma vacina ou pagava o preço da farmacêutica.",
+    "concept": "Em emergência, a lei permite a licença compulsória, a quebra de patente. O remédio fica mais barato, mas produzir aqui exige fábrica, tecnologia e tempo.",
+    "data": "Em 2007, o Brasil quebrou a patente do efavirenz, remédio contra o HIV. Genéricos importados cortaram o custo anual em 71%; a produção nacional só veio em 2009.",
+    "source": {
+      "label": "Revista Panamericana de Salud Pública, 2009.",
+      "url": "https://scielosp.org/pdf/rpsp/2009.v26n6/553-559/pt"
+    },
+    "impact": "Na pandemia, a patente decide a fila."
+  },
+  {
+    "id": "APR-077",
+    "lived": "Você decidiu se expandia a base de foguetes do Maranhão sobre terras quilombolas.",
+    "concept": "Quilombos são comunidades negras formadas por quem resistiu à escravidão e por seus descendentes. A Constituição reconhece a elas a propriedade das terras que ocupam.",
+    "data": "Em 2025, a Corte Interamericana divulgou a condenação do Brasil por violar direitos de 171 comunidades quilombolas de Alcântara, onde fica a base de foguetes.",
+    "source": {
+      "label": "Corte Interamericana de Direitos Humanos, 2025.",
+      "url": "https://www.corteidh.or.cr/docs/comunicados/cp_18_2025_port.pdf"
+    },
+    "impact": "Progresso que expulsa não é para todos."
+  },
+  {
+    "id": "APR-078",
+    "lived": "Você decidiu se pegava o dinheiro do esgoto com o Banco do BRICS ou com o Banco Mundial.",
+    "concept": "O BRICS criou um banco próprio para financiar obras sem depender só do Banco Mundial. Nele, os sócios fundadores têm o mesmo peso no voto.",
+    "data": "Em 2025, o Banco do BRICS aprovou US$ 50 milhões para o esgoto do Pará, com meta de 31.500 casas ligadas à rede. O estado entra com R$ 137,5 milhões do orçamento.",
+    "source": {
+      "label": "Novo Banco de Desenvolvimento (BRICS), 2025.",
+      "url": "https://www.ndb.int/project/para-sanitation-development-project/"
+    },
+    "impact": "Escolher o credor também é política externa."
+  },
+  {
+    "id": "APR-079",
+    "lived": "Você decidiu se dava asilo a um ex-agente que revelou que uma potência espionava o Brasil.",
+    "concept": "No Brasil, o STF julga os pedidos de extradição, e a Constituição proíbe extraditar por crime político ou de opinião. Dar asilo é decisão do governo.",
+    "data": "Pelo decreto de 2017 da Lei de Migração, o presidente da República decide o pedido de asilo político, consultado o ministro das Relações Exteriores.",
+    "source": {
+      "label": "Decreto 9.199/2017, art. 112 (Câmara).",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2017/decreto-9199-20-novembro-2017-785772-normaatualizada-pe.html"
+    },
+    "impact": "Proteger quem denuncia também é soberania."
+  },
+  {
+    "id": "APR-080",
+    "lived": "Você decidiu se propunha suspender do Mercosul um vizinho tomado por um golpe militar.",
+    "concept": "O Mercosul tem uma cláusula democrática: o sócio que rompe a democracia pode ser suspenso. Defender a democracia ao lado também protege a sua.",
+    "data": "Pelo Protocolo de Ushuaia (1998), a democracia é condição essencial da integração. Suspender quem a rompe exige consenso dos outros sócios, sem o país afetado.",
+    "source": {
+      "label": "Protocolo de Ushuaia (1998), arts. 1 e 6 (Câmara).",
+      "url": "https://www2.camara.leg.br/legin/fed/decret/2002/decreto-4210-24-abril-2002-458107-publicacaooriginal-1-pe.html"
+    },
+    "impact": "Golpe ao lado é aviso para casa."
   },
   {
     "id": "APR-081",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-081).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-081).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se investia em prevenção ou aumentava o encarceramento.",
+    "concept": "O encarceramento em massa não reduz a violência. Apenas fortalece as facções.",
+    "data": "O Brasil tem a 3ª maior população carcerária do mundo. Em 2024, 68,7% das pessoas presas eram negras.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "CNJ; SISDEPEN 2024.",
+      "url": "https://www.cnj.jus.br/brasil-tem-terceira-maior-populacao-carceraria-do-mundo/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-081)."
+    "impact": "O encarceramento em massa não reduz a violência. Apenas a desloca."
   },
   {
     "id": "APR-082",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-082).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-082).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se investigava ou defendia a polícia.",
+    "concept": "O genocídio da população negra é uma política de Estado.",
+    "data": "Em 2024, 6.243 pessoas foram mortas em intervenções policiais no Brasil, cerca de 17 por dia; 82% eram negras. Em 2025, a Operação Contenção, no Rio de Janeiro, deixou 121 mortos.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Anuário Brasileiro de Segurança Pública 2025;",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2025/07/anuario-2025.pdf"
     },
-    "impact": "[Fictício] Frase de impacto (APR-082)."
-  },
-  {
-    "id": "APR-083",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-083).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-083).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-083)."
+    "impact": "Agência Brasil, 2025. \"O Estado que mata não protege. Ele extermina."
   },
   {
     "id": "APR-101",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-101).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-101).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se redirecionava uma emenda de show para o hospital local.",
+    "concept": "As emendas parlamentares são verbas que deputados e senadores destinam a projetos em suas bases eleitorais.",
+    "data": "Entre janeiro de 2024 e março de 2026, cem artistas acumularam mais de R$ 5 bilhões em cachês pagos por prefeituras e governos estaduais.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "De Olho nos Ruralistas, 2026.",
+      "url": "https://deolhonosruralistas.com.br/2026/09/18/farras-atualizado/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-101)."
-  },
-  {
-    "id": "APR-102",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-102).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-102).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-102)."
-  },
-  {
-    "id": "APR-103",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-103).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-103).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-103)."
+    "impact": "O show acontece. O hospital não. A emenda é uma escolha política."
   },
   {
     "id": "APR-121",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-121).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-121).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se aceitava ou recusava o acordo da bancada BBB.",
+    "concept": "As bancadas BBB (Boi, Bíblia, Bala) controlam o Congresso. Elas são informais, mas poderosas.",
+    "data": "A Frente Parlamentar da Agropecuária declarou ter 340 membros: 290 deputados e 50 senadores. Frentes parlamentares são informais, mas votam em bloco.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Diário do Poder (fonte fraca).",
+      "url": "https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/frente-parlamentar-do-agro-declara-apoio-a-hugo-motta-para-suceder-lira"
     },
-    "impact": "[Fictício] Frase de impacto (APR-121)."
-  },
-  {
-    "id": "APR-122",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-122).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-122).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-122)."
-  },
-  {
-    "id": "APR-123",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-123).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-123).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-123)."
-  },
-  {
-    "id": "APR-141",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-141).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-141).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-141)."
-  },
-  {
-    "id": "APR-142",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-142).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-142).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-142)."
-  },
-  {
-    "id": "APR-143",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-143).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-143).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-143)."
-  },
-  {
-    "id": "APR-161",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-161).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-161).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-161)."
-  },
-  {
-    "id": "APR-162",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-162).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-162).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-162)."
-  },
-  {
-    "id": "APR-163",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-163).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-163).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-163)."
-  },
-  {
-    "id": "APR-181",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-181).",
-    "concept": "[Fictício] A técnica Fazenda de IA e como reconhecê-la (APR-181).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-181)."
-  },
-  {
-    "id": "APR-182",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-182).",
-    "concept": "[Fictício] A técnica Cachê da Desgraça e como reconhecê-la (APR-182).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-182)."
-  },
-  {
-    "id": "APR-183",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-183).",
-    "concept": "[Fictício] A técnica Deepfake e como reconhecê-la (APR-183).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-183)."
-  },
-  {
-    "id": "APR-201",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-201).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-201).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-201)."
-  },
-  {
-    "id": "APR-202",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-202).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-202).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-202)."
-  },
-  {
-    "id": "APR-203",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-203).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-203).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-203)."
-  },
-  {
-    "id": "APR-204",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-204).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-204).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-204)."
-  },
-  {
-    "id": "APR-205",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-205).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-205).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-205)."
-  },
-  {
-    "id": "APR-271",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-271).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-271).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-271)."
-  },
-  {
-    "id": "APR-272",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-272).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-272).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-272)."
-  },
-  {
-    "id": "APR-273",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-273).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-273).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-273)."
-  },
-  {
-    "id": "APR-274",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-274).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-274).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-274)."
-  },
-  {
-    "id": "APR-275",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-275).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-275).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
-    "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
-    },
-    "impact": "[Fictício] Frase de impacto (APR-275)."
+    "impact": "As bancadas BBB controlam o Congresso. Elas são informais, mas poderosas."
   },
   {
     "id": "APR-IMP-1",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-1).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-1).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se apelava ao povo ou confiava na base.",
+    "concept": "O impeachment começa com um pedido protocolado por qualquer cidadão. O presidente da Câmara decide se aceita ou engaveta.",
+    "data": "Em 2016, Eduardo Cunha aceitou o pedido contra Dilma logo após o PT anunciar voto contra ele no Conselho de Ética. Não foi justiça. Foi retaliação.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Agência Brasil, 2015.",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2015-12/cunha-aceita-pedido-de-abertura-de-processo-de-impeachment-de-dilma"
     },
-    "impact": "[Fictício] Frase de impacto (APR-IMP-1)."
+    "impact": "O impeachment começa com um pedido. Mas termina com um golpe."
   },
   {
     "id": "APR-IMP-2",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-2).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-2).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se denunciava o golpe ou negociava nos bastidores.",
+    "concept": "A comissão especial emite um parecer em até 5 sessões. Se aprovado por maioria simples, o processo vai a plenário.",
+    "data": "Em 2016, o relator na Câmara foi Jovair Arantes; no Senado, Antonio Anastasia. Os dois apontaram crime de responsabilidade nas pedaladas fiscais e votaram pela continuidade do processo.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "Agência Senado, 2016; Câmara dos Deputados, 2016.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2016/08/02/relator-aponta-crimes-e-vota-pela-continuidade-do-impeachment-de-dilma-rousseff"
     },
-    "impact": "[Fictício] Frase de impacto (APR-IMP-2)."
+    "impact": "A comissão é uma farsa. Mas a farsa tem poder."
   },
   {
     "id": "APR-IMP-3",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-3).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-3).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se mobilizava as ruas ou negociava votos.",
+    "concept": "A Câmara autoriza o processo com 2/3 dos deputados: 342 de 513 votos.",
+    "data": "Em 17/04/2016, a Câmara autorizou o processo contra Dilma: 367 votos a favor, 137 contra, 7 abstenções.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "imprensa, abril de 2016.",
+      "url": "https://www.tnh1.com.br/noticia/nid/camara-autoriza-senado-a-julgar-afastamento-da-presidente-dilma-rousseff/"
     },
-    "impact": "[Fictício] Frase de impacto (APR-IMP-3)."
+    "impact": "Na Câmara, o voto é contado. E negociado."
   },
   {
     "id": "APR-IMP-4",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-4).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-4).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se fazia a defesa ou oferecia cargos.",
+    "concept": "O Senado julga. Para condenar, são precisos 2/3: 54 de 81 senadores.",
+    "data": "Em 12/05/2016, o Senado afastou Dilma por 55 a 22, até o julgamento final.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "imprensa, maio de 2016.",
+      "url": "https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm"
     },
-    "impact": "[Fictício] Frase de impacto (APR-IMP-4)."
+    "impact": "O julgamento é jurídico no nome. E político no voto."
   },
   {
     "id": "APR-IMP-5",
-    "fictitious": true,
-    "lived": "[Fictício] O que você acabou de vivenciar (APR-IMP-5).",
-    "concept": "[Fictício] O conceito por trás desta decisão (APR-IMP-5).",
-    "data": "[Fictício] Dado de exemplo, sem valor real (D-091).",
+    "lived": "Você decidiu se falava à nação ou selava um pacto.",
+    "concept": "Condenada, a pessoa perde o cargo. A perda dos direitos políticos é votada à parte.",
+    "data": "Em 31/08/2016, o Senado condenou Dilma por 61 a 20, mas manteve seus direitos políticos em outra votação.",
     "source": {
-      "label": "[Fictício] Fonte de exemplo",
-      "url": ""
+      "label": "imprensa, agosto de 2016.",
+      "url": "https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm"
     },
-    "impact": "[Fictício] Frase de impacto (APR-IMP-5)."
+    "impact": "O mandato acaba. A história continua."
+  },
+  {
+    "id": "APR-161",
+    "lived": "Você decidiu se apoiava ou defendia um ministro do STF investigado.",
+    "concept": "A blindagem institucional protege magistrados corruptos com aposentadoria integral.",
+    "data": "O relatório da Polícia Federal sobre o celular de Daniel Vorcaro, do Banco Master, mostra 28 mensagens enviadas a um telefone atribuído a Alexandre de Moraes, em dezembro de 2025.",
+    "source": {
+      "label": "Poder360, 2026.",
+      "url": "https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/"
+    },
+    "impact": "A justiça é seletiva. Para os pobres, a prisão. Para os ricos, a blindagem."
+  },
+  {
+    "id": "APR-181",
+    "lived": "Você decidiu se aceitava ou recusava o apoio de um influenciador financiado por bets.",
+    "concept": "As bets financiam influenciadores com comissão sobre as perdas dos seguidores. O 'cachê da desgraça alheia' é uma das formas mais perversas de exploração digital.",
+    "data": "A Blaze destinou R$ 330 milhões à propaganda entre janeiro e novembro de 2025.",
+    "source": {
+      "label": "Folha de S.Paulo, via Jornal de Brasília, 2026.",
+      "url": "https://jornaldebrasilia.com.br/noticias/economia/blaze-gastou-r-330-mi-com-anuncios-em-2025-e-tem-virginia-como-principal-influenciadora-no-brasil/"
+    },
+    "impact": "O influenciador lucra com a sua perda. E você aplaude."
+  },
+  {
+    "id": "APR-182",
+    "lived": "Você decidiu se demitia uma ministra atacada por um boato ou se investigava quem o espalhou.",
+    "concept": "Desmoralização é destruir uma reputação com mentiras. Sinais: acusação grave sem prova e muita repetição. Pergunte quem ganha se a pessoa cair.",
+    "data": "Em 2024, 67% dos brasileiros com 16 anos ou mais já tinham recebido notícia falsa. Para metade de quem viu, é difícil saber se é falsa.",
+    "source": {
+      "label": "DataSenado (Agência Senado), 2024.",
+      "url": "https://www12.senado.leg.br/institucional/datasenado/materias/relatorios-de-pesquisa/pesquisa-datasenado-revela-o-que-pensa-o-brasileiro-sobre-fake-news"
+    },
+    "impact": "Mentira repetida não vira prova. Vira arma."
+  },
+  {
+    "id": "APR-183",
+    "lived": "Você decidiu se revidava um vídeo falso com outro vídeo falso ou se pedia uma perícia.",
+    "concept": "Deepfake é vídeo, foto ou voz falsos feitos com IA. Os bons não mostram falha: desconfie se nenhuma fonte séria confirma. Se tudo pode ser falso, a verdade também perde.",
+    "data": "Em 2025, 41% dos usuários de internet (16 anos ou mais) relataram contato diário com deepfakes. Só 11% se sentem muito confiantes em identificar informação falsa.",
+    "source": {
+      "label": "Cetic.br/NIC.br, Painel TIC Integridade, 2025.",
+      "url": "https://cetic.br/media/docs/publicacoes/2/pt-br/20260408150833/painel_tic_integridade_informacao_2025_resumoexecutivo_pt.pdf"
+    },
+    "impact": "Quem revida com mentira perde a verdade."
+  },
+  {
+    "id": "APR-184",
+    "lived": "Você decidiu se fechava a fronteira diante do medo ou se acolhia os refugiados e checava os fatos.",
+    "concept": "Pânico moral é criar medo de um grupo ou tema para mobilizar as pessoas. Sinais: um culpado pronto, ameaça às famílias e pressa para agir antes de pensar.",
+    "data": "Em 2022, o Brasil tinha cerca de 1 milhão de estrangeiros e naturalizados: 0,5% da população, ou 1 em cada 200 pessoas.",
+    "source": {
+      "label": "Agência Brasil, 2025 (Censo 2022, IBGE).",
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2025-06/venezuelanos-sao-maior-grupo-de-imigrantes-do-brasil"
+    },
+    "impact": "O medo tem pressa. Os fatos têm fonte."
+  },
+  {
+    "id": "APR-185",
+    "lived": "Você decidiu se espalhava um boato contra um crítico ou se debatia com ele ao vivo.",
+    "concept": "Desmoralização também mira quem critica: em vez de responder à crítica, ataca a pessoa. Sinais: o assunto vira quem fala, e a acusação vem sem prova.",
+    "data": "Em 2025, a Abraji registrou 204 alertas de ataques a jornalistas e veículos de imprensa. Em 55% deles, a origem ou a repercussão foi online.",
+    "source": {
+      "label": "Abraji, 2026.",
+      "url": "https://www.abraji.org.br/noticias/abraji-registrou-204-alertas-de-violacoes-a-liberdade-de-imprensa-no-brasil-em-2025"
+    },
+    "impact": "Quem ataca o mensageiro foge da mensagem."
+  },
+  {
+    "id": "APR-186",
+    "lived": "Você decidiu se expunha uma rede de perfis falsos de outro país ou se abafava o caso pelo comércio.",
+    "concept": "Fazenda de IA é uma rede de perfis falsos coordenados que imitam gente real. Sinais: o mesmo conteúdo em vários perfis ao mesmo tempo e nenhum aviso de IA.",
+    "data": "De janeiro de 2025 a abril de 2026, o Observatório IA nas Eleições identificou 18 avatares de IA comentando política. Em 61% das ocorrências, nenhum aviso de IA.",
+    "source": {
+      "label": "Data Privacy Brasil e Aláfia Lab, 2026.",
+      "url": "https://www.dataprivacybr.org/avatares-sinteticos-usados-para-atacar-politicos-e-instituicoes-democraticas-no-brasil/"
+    },
+    "impact": "Mil robôs não fazem um povo."
+  },
+  {
+    "id": "APR-187",
+    "lived": "Você decidiu se tirava ou mantinha os anúncios do governo num canal que ensina a culpar os indígenas.",
+    "concept": "Didatismo acusatório é ódio com cara de aula: gráfico, tom de professor e um culpado no fim. Sinais: nenhuma fonte, um lado só e um grupo tratado como problema.",
+    "data": "De 1985 a 2024, as terras indígenas perderam menos de 1% da vegetação nativa. Em áreas privadas ou sem registro da terra, a perda foi de 21%.",
+    "source": {
+      "label": "MapBiomas, Coleção 10, 2025.",
+      "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2025/08/Fact_Colecao10_22.08.2025_v9.pdf"
+    },
+    "impact": "Aula que ensina a odiar não educa. Recruta."
+  },
+  {
+    "id": "APR-188",
+    "lived": "Você decidiu se multava a plataforma que lucra com anúncios de golpe ou se esperava que ela se regulasse.",
+    "concept": "Deepfake também vende golpe: usa um rosto famoso para ganhar sua confiança. Sinais: promessa de cura ou lucro rápido, pressa e compra fora de loja oficial.",
+    "data": "Em abril e maio de 2025, o NetLab/UFRJ analisou uma amostra de 6.579 anúncios de saúde em redes sociais: 76% eram fraudulentos.",
+    "source": {
+      "label": "NetLab/UFRJ, 2025.",
+      "url": "https://netlab.eco.ufrj.br/en/post/disinformation-can-kill-scam-ads-fraud-and-health-disinformation-on-meta-platforms"
+    },
+    "impact": "Rosto conhecido não é garantia. É isca."
+  },
+  {
+    "id": "APR-189",
+    "lived": "Você decidiu se contratava perfis falsos para elogiar seu governo ou se recusava a oferta.",
+    "concept": "Fazenda de IA também serve para elogiar: cria a ilusão de que todo mundo apoia. Sinal: o mesmo elogio, com as mesmas palavras, em muitos perfis ao mesmo tempo.",
+    "data": "Regra do TSE (2026): a Justiça Eleitoral pode remover perfil comprovadamente falso ou robô que repete crime eleitoral ou fato falso contra a integridade da eleição.",
+    "source": {
+      "label": "TSE, Res. 23.755/2026, art. 38-A.",
+      "url": "https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-755-de-2-de-marco-de-2026"
+    },
+    "impact": "Aplauso comprado não é apoio. É cenário."
+  },
+  {
+    "id": "APR-190",
+    "lived": "Você decidiu se investigava quem lucra com o medo da vacina ou se levava médicos às escolas.",
+    "concept": "Pânico moral cria medo sobre um tema para mudar o que as pessoas fazem. Sinais: caso isolado vira regra, alerta sobre os filhos e nenhum dado oficial.",
+    "data": "O INCA estima cerca de 19 mil casos novos de câncer do colo do útero por ano (2026–2028), causado pelo HPV e altamente prevenível por vacinação e rastreamento.",
+    "source": {
+      "label": "INCA/Ministério da Saúde, 2026.",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/numeros/estimativa/sintese-de-resultados-e-comentarios"
+    },
+    "impact": "O boato corre. A doença vem atrás."
+  },
+  {
+    "id": "APR-191",
+    "lived": "Você decidiu se aceitava um curso grátis que culpa os pobres ou se investigava quem o financia.",
+    "concept": "Didatismo acusatório ensina a culpar o outro com cara de lição. Aqui, o pobre vira culpado da própria pobreza. Sinal: história de sucesso no lugar de dado.",
+    "data": "Em 2026, o Atlas da Mobilidade Social mostrou que 48% dos filhos dos 25% mais pobres seguem nesse grupo na vida adulta. Só 8% chegam aos 25% mais ricos.",
+    "source": {
+      "label": "Agência Brasil, 2026 (Atlas da Mobilidade Social).",
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-07/genero-raca-e-origem-familiar-definem-mobilidade-social-diz-estudo"
+    },
+    "impact": "Não é falta de vontade. É falta de chance."
+  },
+  {
+    "id": "APR-192",
+    "lived": "Você decidiu se mantinha a fiscalização do Pix diante de um boato ou se revogava a norma.",
+    "concept": "Pânico moral cria medo sobre um tema para forçar uma decisão. Sinais: ameaça ao seu bolso, pressa para agir e nada na norma que confirme. Leia a norma antes de repassar.",
+    "data": "Em jan/2025, após boatos de taxação do Pix, a Receita revogou a norma que ampliava a fiscalização do Pix. Em ago/2025, disse que isso ajudou o crime organizado.",
+    "source": {
+      "label": "Agência Brasil, 2025 (nota da Receita Federal).",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-08/receita-voltara-a-exigir-declaracao-de-fintechs-apos-operacoes-da-pf"
+    },
+    "impact": "Boato não precisa ser verdade para derrubar uma regra."
+  },
+  {
+    "id": "APR-193",
+    "lived": "Você decidiu se aceitava para ministro um ex-influenciador que lucrou com a perda dos seguidores.",
+    "concept": "Cachê da desgraça é o pagamento que o influenciador recebe sobre o que o seguidor perde. Sinais: link de indicação, só vitórias na tela e pressa para você depositar.",
+    "data": "Em 2025, um delegado disse à CPI das Bets que casas ilegais davam ao influenciador uma conta demo para simular ganhos e um link para os seguidores apostarem.",
+    "source": {
+      "label": "Agência Senado (CPI das Bets), 2025.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2025/04/22/cpi-delegado-mostra-que-bets-ilegais-e-influenciadores-mentem-para-lucrar-mais"
+    },
+    "impact": "Quem ganha com a sua perda não torce por você."
+  },
+  {
+    "id": "APR-194",
+    "lived": "Você decidiu se proibia o pagamento de influenciadores pela perda dos seguidores ou se deixava o setor agir.",
+    "concept": "No cachê da desgraça, o influenciador ganha quando você perde. Por isso ele mostra vitórias e esconde derrotas. Desconfie da dica de quem lucra com o seu prejuízo.",
+    "data": "Em 2025, o relatório da CPI das Bets propunha proibir pagar influenciadores pelas perdas de apostadores. A CPI rejeitou o relatório inteiro, por 4 votos a 3.",
+    "source": {
+      "label": "Agência Senado (CPI das Bets), 2025.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2025/06/12/cpi-das-bets-rejeita-relatorio-final"
+    },
+    "impact": "Se ele ganha quando você perde, não é dica."
+  },
+  {
+    "id": "APR-195",
+    "lived": "Você decidiu se punha as urnas em dúvida depois da derrota de um aliado ou se reconhecia o resultado.",
+    "concept": "Desmoralização pode mirar uma instituição: destrói a confiança com acusação sem prova. Sinais: a urna só vira suspeita quando o seu lado perde, e a prova nunca aparece.",
+    "data": "Em 2026, o TSE afirmou: nenhum caso de fraude nas urnas foi comprovado desde 1996, e qualquer brasileiro pode propor planos de ataque no teste público de segurança.",
+    "source": {
+      "label": "TSE, 2026.",
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Julho/entrevista-urna-eletronica-assegura-a-soberania-do-voto-popular-nas-eleicoes-brasileiras"
+    },
+    "impact": "Quem só confia na urna quando ganha não confia nela."
+  },
+  {
+    "id": "APR-196",
+    "lived": "Você decidiu se investigava quem derrubou a conta de uma ativista ou se deixava o caso com a plataforma.",
+    "concept": "Fazenda de IA serve para calar: perfis falsos denunciam uma conta até ela cair. Sinais: muitas denúncias de uma vez, perfis que imitam gente real e um alvo que incomoda.",
+    "data": "Em 2022, a Meta removeu na Indonésia uma rede de cerca de 2.800 contas, grupos e páginas que fazia denúncias falsas, em parte com perfis falsos, para derrubar posts.",
+    "source": {
+      "label": "Meta, Relatório de Ameaças, 2022.",
+      "url": "https://about.fb.com/wp-content/uploads/2022/08/Quarterly-Adversarial-Threat-Report-Q2-2022.pdf"
+    },
+    "impact": "Quando robôs denunciam, alguém quer silêncio."
+  },
+  {
+    "id": "APR-197",
+    "lived": "Você decidiu se compartilhava aulas que tratam o eleitor rival como inimigo ou se pedia ao canal que parasse.",
+    "concept": "Didatismo acusatório pode mirar o vizinho que vota diferente: ensina a odiar com cara de aula. Sinais: 'nós' contra 'eles', culpa de um grupo inteiro e nenhuma fonte.",
+    "data": "Em 2026, 60% dos brasileiros de 16 anos ou mais temiam agressão física pela escolha política (68% em 2022). 2,2%, cerca de 3,6 milhões, a sofreram em 12 meses.",
+    "source": {
+      "label": "Fórum Brasileiro de Segurança Pública, 2026.",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2026/05/os-gatilhos-da-inseguranca-relatorio-completo-2026.pdf"
+    },
+    "impact": "Quem vota diferente é vizinho, não inimigo."
+  },
+  {
+    "id": "APR-198",
+    "lived": "Você decidiu se retaliava um país vizinho por causa de um vídeo suspeito ou se confirmava antes com ele.",
+    "concept": "Deepfake pode criar crise entre países: põe na boca de um líder o que ele não disse. Sinais: fonte única, anúncio fora do canal oficial e pressa para reagir.",
+    "data": "Em 16/03/2022, um deepfake mostrou o presidente de um país em guerra mandando largar as armas. Ele o desmentiu no mesmo dia, em vídeo no próprio perfil.",
+    "source": {
+      "label": "Euronews, 2022.",
+      "url": "https://www.euronews.com/my-europe/amp/2022/03/16/deepfake-zelenskyy-surrender-video-is-the-first-intentionally-used-in-ukraine-war"
+    },
+    "impact": "Antes de revidar, confirme. O falso tem pressa."
+  },
+  {
+    "id": "APR-199",
+    "lived": "Você decidiu se seguia o dinheiro de rifas ligadas a uma facção ou se prendia os influenciadores ao vivo.",
+    "concept": "Na rifa ilegal, o influenciador lucra porque quase todos perdem, como no cachê da desgraça. E o caixa da rifa pode lavar lucro do crime. Sinal: sorteio sem autorização.",
+    "data": "Em 2025, o Ministério Público do RS apontou que uma facção movimentou mais de R$ 49 milhões e reaplicou lucros do tráfico em empréstimos ilegais, rifas e apostas.",
+    "source": {
+      "label": "Ministério Público do RS (GAECO), 2025.",
+      "url": "https://www.mprs.mp.br/noticias/64148/"
+    },
+    "impact": "Prender o rosto não fecha o caixa do crime."
+  },
+  {
+    "id": "APR-200",
+    "lived": "Você decidiu se apoiava a proibição do baile funk ou se regularizava os bailes.",
+    "concept": "Pânico moral transforma uma cultura em ameaça. Sinais: o lazer dos jovens vira caso de polícia, nenhuma prova e pressa para proibir. O samba passou pelo mesmo.",
+    "data": "Em 2017, uma ideia no portal do Senado propôs tornar o funk crime de saúde pública. Teve quase 22 mil apoios, mas o texto não citava dados. A comissão não a adotou.",
+    "source": {
+      "label": "Portal e-Cidadania, Senado Federal, 2017.",
+      "url": "https://www12.senado.leg.br/ecidadania/visualizacaoideia?id=65513"
+    },
+    "impact": "Ontem foi o samba. Hoje é o funk."
+  },
+  {
+    "id": "APR-THEM-001",
+    "lived": "Você decidiu se assentava ou despejava as famílias do MST.",
+    "concept": "A função social da terra é um princípio constitucional. A reforma agrária nunca ocorreu de forma estrutural.",
+    "data": "O Plano Safra 2025/2026 reservou R$ 516,2 bilhões ao agronegócio e R$ 89 bilhões à agricultura familiar.",
+    "source": {
+      "label": "MAPA e Congresso em Foco, 2025.",
+      "url": "https://www.gov.br/agricultura/pt-br/assuntos/noticias/2025/governo-federal-lanca-plano-safra-2025-2026-com-r-516-2-bilhoes-para-impulsionar-o-agro-brasileiro"
+    },
+    "impact": "A terra é para quem trabalha nela. Não para quem especula."
+  },
+  {
+    "id": "APR-ATOR-001",
+    "lived": "Você decidiu se cedia ou não ao Latifundiário.",
+    "concept": "O coronelismo é o clientelismo. O voto de cabresto ainda existe.",
+    "data": "A Lei de Terras (Lei 601, de 1850) proibiu adquirir terras públicas por outro meio que não a compra. Quem não tinha dinheiro ficou fora da terra.",
+    "source": {
+      "label": "Lei 601/1850; Univates.",
+      "url": "https://univates.br/revistas/index.php/destaques/article/download/3389/2391/11005"
+    },
+    "impact": "O coronel não pede. Ele cobra. E a moeda é a lealdade."
   }
 ]

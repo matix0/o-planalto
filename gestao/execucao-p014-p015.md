@@ -171,3 +171,11 @@ Parado a pedido do membro (limite de uso semanal). Tudo está commitado e no `or
 - Na nuvem, a política de rede barra as páginas oficiais (WebFetch e `curl` com 403 em `senado.leg.br` e `camara.leg.br`); só a busca na web funciona, sem trecho literal. O PO mandou separar a conferência num plano à parte (P-016) e focar em deixar o jogo jogável.
 - Godot 4.7.2 oficial baixado para o scratchpad; `run_all.sh` numa cópia: 20/20 OK.
 
+### 2026-10-21 — jogo jogável com o baralho real (D-194, D-195)
+
+- PO: só as cartas reais no jogo e jogo no navegador pelo site.
+- `cards_doc.py export`: 57 cartas, 5 da cena, 62 Aprendizados para `jogo/data/`; o `actors.json` recebe o campo `cards` do export (hoje só `ACT-001` → `ATOR-001`, exigência).
+- Baralho fictício copiado para `jogo/tests/fixtures/data/`; `GameDatabase.data_dir` aponta para ele em `test_data.gd` e `test_core_cards_draw.gd`. Novo `test_real_data.gd` (contagens lidas dos dados). `run_all.sh` numa cópia: 21/21 OK.
+- Simulação (`sim.gd`, 50 por perfil, 1.150 partidas) com o baralho real: 0 travadas, 0 fora de 0-100, 0 não determinísticas; motivos: catástrofe 615, impeachment 405, fim de mandato 130 (com o fictício: 958 / 182 / 10). Ainda baralho curto: o ECO avalia no fim do P-015.
+- Workflow do site exporta o jogo (Godot 4.7.2 + modelo Web sem threads, com cache) para `site/public/jogar/`; link "Jogar no navegador" na barra lateral.
+

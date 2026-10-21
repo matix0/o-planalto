@@ -1,9 +1,14 @@
 extends SceneTree
 ## Headless data check (D-134):
 ## godot --headless --path jogo -s res://tests/test_data.gd
+## Runs on the fictitious fixture deck (tests/fixtures/data, D-139); the real deck is checked
+## by test_real_data.gd.
+
+const FIXTURE_DIR := "res://tests/fixtures/data/"
 
 func _initialize() -> void:
 	var data = load("res://scripts/game_data.gd").new()
+	data.data_dir = FIXTURE_DIR
 	var ok: bool = data.load_all()
 	var failures: PackedStringArray = data.errors.duplicate()
 
@@ -60,6 +65,7 @@ func _initialize() -> void:
 	low_capture.free()
 	# V-015 / D-091: a Learning Card without a verified link leaves the data → its card leaves the draw.
 	var strict = load("res://scripts/game_data.gd").new()
+	strict.data_dir = FIXTURE_DIR
 	strict.load_all()
 	var real: Dictionary = strict.learning["APR-001"].duplicate(true)
 	real.erase("fictitious")

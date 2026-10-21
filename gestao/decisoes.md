@@ -203,6 +203,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-191 | Obras de Lula, Brizola, Freire, Darcy Ribeiro e Josué de Castro não estão em domínio público: só citação curta com crédito (Lei 9.610/1998, art. 46, III); corrige `docs/08` §08.06.1 | 2026-10-21 | Escolha do PO (cruzamento com a branch `claude/eloquent-einstein-gez6rk`); entra no parecer jurídico (RC-08) |
 | D-192 | "Relator admitiu que as pedaladas não eram crime" (`docs/03` §03.03) marcado `[não verificado]` até ter fonte (aplica D-091) | 2026-10-21 | Escolha do PO (cruzamento com a branch `claude/eloquent-einstein-gez6rk`) |
 | D-193 | A branch `claude/eloquent-einstein-gez6rk` não entra no `main` (contradiz D-090, D-091, D-094, D-104, D-105, D-109); suas 342 cartas ficam como rascunho em `gestao/rascunhos/` para as ondas do P-015 | 2026-10-21 | Escolha do PO |
+| D-194 | O jogo usa o baralho real: as cartas do doc 17 com Aprendizado no doc 18 vão para `jogo/data/` (hoje 57 + 5 da cena); o baralho fictício (D-139) fica só como dado de teste em `jogo/tests/fixtures/data/`. Fontes conferidas depois, no P-016 | 2026-10-21 | Escolha do PO (foco em jogo jogável) |
+| D-195 | O workflow do site exporta o jogo para Web (preset da D-188) e o publica em `/jogar/`, com link na barra lateral | 2026-10-21 | Escolha do PO |
 
 ---
 
@@ -368,6 +370,8 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-048 | Validação com educador |
 | D-191 | Citações protegidas por direito autoral |
 | D-193 | Rascunho das 342 cartas fora do baralho |
+| D-194 | Baralho real no jogo |
+| D-195 | Jogo no site em /jogar/ |
 
 ### Governança
 

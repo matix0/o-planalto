@@ -1,6 +1,8 @@
 # O Planalto — protótipo jogável (P-005)
 
-Protótipo em **Godot 4.7.2** (D-130) com **dados fictícios** (D-135, D-139). Cobre as etapas 3 a 9 do P-005 (`gestao/plano-de-acao.md`): os 10 sistemas do GDD 2.0 (`gdd/`) e as telas dos wireframes da rodada final. Fica na branch `claude/p005-prototipo`, fora do `main`.
+Protótipo em **Godot 4.7.2** (D-130) com o **baralho real** dos docs 17 e 18 (D-194). Cobre as etapas 3 a 9 do P-005 (`gestao/plano-de-acao.md`): os 10 sistemas do GDD 2.0 (`gdd/`) e as telas dos wireframes da rodada final.
+
+**Jogar no navegador:** https://matix0.github.io/o-planalto/jogar/ — o workflow do site exporta o jogo a cada mudança em `jogo/` no `main` (D-195).
 
 Textos marcados `[Fictício]` ou `[a definir]` são provisórios. Nenhum número de dado real foi inventado (D-091).
 
@@ -39,7 +41,8 @@ Textos marcados `[Fictício]` ou `[a definir]` são provisórios. Nenhum número
 - **Dados (D-139):**
   - reais: 8 medidores, 24 atores, 28 finais e calibração (docs/15 §15.04);
   - 10 modos;
-  - fictícios: 40 cartas e 45 Aprendizados. Cobertura real das cartas: 30 institucionais (3 por modo), 5 temáticas, 5 de ator (só `ACT-001` e `ACT-010` têm cartas próprias); 22 dos 24 atores citados; evento em 15 de 80 opções (19%); 3 das 6 técnicas de desinformação (`gestao/validacao-2026-10-20.md`, V-016 e V-019).
+  - cartas (D-194): as cartas do doc 17 com Aprendizado no doc 18, exportadas por `python3 jogo/tools/cards_doc.py export --out <pasta>` (`cards.json`, `learning.json`, `impeachment.json` e o campo `cards` do `actors.json`). Hoje são 57 cartas + 5 da cena; 40 delas são de Geopolítico e Influenciador, então a variedade cresce com as ondas do P-015. As fontes ainda esperam a conferência do P-016;
+  - o baralho fictício (40 cartas, D-139) ficou só para os testes, em `tests/fixtures/data/` (`test_data.gd` e `test_core_cards_draw.gd`); `test_real_data.gd` confere o baralho real.
 - **Salvamento:** salva sozinho a cada passo. "Continuar" retoma a partida; consequência, Aprendizado e eventos voltam em modo leitura, sem repetir efeitos (gdd 10).
 - **Pausa e configurações**, que valem na hora:
   - tamanho do texto 16-24 (36 só para teste, D-169);

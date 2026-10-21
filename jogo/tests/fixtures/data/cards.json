@@ -1,0 +1,2200 @@
+[
+  {
+    "id": "INST-001",
+    "title": "Congresso fictício 1",
+    "mode": "congress",
+    "type": "institutional",
+    "speaker": "Congresso",
+    "problem": "[Fictício] Problema da carta INST-001.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        2,
+        -2,
+        -1,
+        2
+      ],
+      "effects": {
+        "political_capital": 25,
+        "legitimacy": 10,
+        "integrity": -25,
+        "treasury": -5
+      },
+      "actors": {
+        "ACT-004": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "treasury": 15,
+            "awareness": 20,
+            "security": -15
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "purple",
+      "axis": [
+        -2,
+        2,
+        2,
+        0
+      ],
+      "effects": {
+        "legitimacy": -5,
+        "awareness": 15,
+        "treasury": 20
+      },
+      "actors": {
+        "ACT-019": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-001",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-002",
+    "title": "Congresso fictício 2",
+    "mode": "congress",
+    "type": "institutional",
+    "speaker": "Congresso",
+    "problem": "[Fictício] Problema da carta INST-002.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "effects": {
+        "legitimacy": -25,
+        "integrity": -10,
+        "political_capital": -30
+      },
+      "actors": {
+        "ACT-022": 1,
+        "ACT-004": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": 15
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "effects": {
+        "legitimacy": -15,
+        "political_capital": 5,
+        "security": -10,
+        "treasury": 25
+      },
+      "actors": {
+        "ACT-012": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-002",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-003",
+    "title": "Congresso fictício 3",
+    "mode": "congress",
+    "type": "institutional",
+    "speaker": "Congresso",
+    "problem": "[Fictício] Problema da carta INST-003.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "yellow",
+      "axis": [
+        1,
+        1,
+        2,
+        -2
+      ],
+      "effects": {
+        "treasury": 30,
+        "security": 20,
+        "dignity": -20
+      },
+      "actors": {
+        "ACT-016": 1,
+        "ACT-003": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "purple",
+      "axis": [
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "effects": {
+        "awareness": 25,
+        "dignity": -25
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-003",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-021",
+    "title": "Orçamento fictício 1",
+    "mode": "budget",
+    "type": "institutional",
+    "speaker": "Orçamento",
+    "problem": "[Fictício] Problema da carta INST-021.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        -2
+      ],
+      "effects": {
+        "legitimacy": -25,
+        "treasury": -20,
+        "political_capital": -25
+      },
+      "actors": {
+        "ACT-017": -1,
+        "ACT-010": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "purple",
+      "axis": [
+        -1,
+        2,
+        0,
+        2
+      ],
+      "effects": {
+        "political_capital": -20,
+        "legitimacy": -5,
+        "awareness": 5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-021",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-022",
+    "title": "Orçamento fictício 2",
+    "mode": "budget",
+    "type": "institutional",
+    "speaker": "Orçamento",
+    "problem": "[Fictício] Problema da carta INST-022.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "black",
+      "axis": [
+        -2,
+        2,
+        1,
+        0
+      ],
+      "effects": {
+        "integrity": 20,
+        "security": -10,
+        "sovereignty": -20,
+        "dignity": 20
+      },
+      "actors": {
+        "ACT-008": -1,
+        "ACT-022": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "dignity": 10
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        1,
+        -2,
+        -1,
+        2
+      ],
+      "effects": {
+        "sovereignty": -20,
+        "awareness": 20
+      },
+      "actors": {
+        "ACT-014": 1,
+        "ACT-003": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": 15,
+            "security": 10
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-022",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-023",
+    "title": "Orçamento fictício 3",
+    "mode": "budget",
+    "type": "institutional",
+    "speaker": "Orçamento",
+    "problem": "[Fictício] Problema da carta INST-023.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        1,
+        -2,
+        2,
+        2
+      ],
+      "effects": {
+        "awareness": -5,
+        "political_capital": -20,
+        "legitimacy": 20
+      },
+      "actors": {
+        "ACT-022": -1,
+        "ACT-006": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "effects": {
+        "awareness": 25,
+        "integrity": -25
+      },
+      "actors": {
+        "ACT-019": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-023",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-041",
+    "title": "Currículo e Mídia fictício 1",
+    "mode": "curriculum_media",
+    "type": "institutional",
+    "speaker": "Currículo e Mídia",
+    "problem": "[Fictício] Problema da carta INST-041.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        -2,
+        1,
+        -1,
+        -2
+      ],
+      "effects": {
+        "dignity": -25,
+        "political_capital": 15,
+        "sovereignty": -15,
+        "awareness": 10
+      },
+      "actors": {
+        "ACT-009": -1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "dignity": -10,
+            "legitimacy": -15
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "green",
+      "axis": [
+        -2,
+        -2,
+        2,
+        2
+      ],
+      "effects": {
+        "treasury": -20,
+        "political_capital": 25,
+        "security": -25
+      },
+      "actors": {
+        "ACT-014": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-041",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-042",
+    "title": "Currículo e Mídia fictício 2",
+    "mode": "curriculum_media",
+    "type": "institutional",
+    "speaker": "Currículo e Mídia",
+    "problem": "[Fictício] Problema da carta INST-042.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "yellow",
+      "axis": [
+        0,
+        -2,
+        1,
+        -2
+      ],
+      "effects": {
+        "treasury": -15,
+        "sovereignty": 15,
+        "legitimacy": -25
+      },
+      "actors": {
+        "ACT-007": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "green",
+      "axis": [
+        -2,
+        -1,
+        2,
+        -2
+      ],
+      "effects": {
+        "dignity": 25,
+        "awareness": -5
+      },
+      "actors": {
+        "ACT-005": 1,
+        "ACT-012": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-042",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-043",
+    "title": "Currículo e Mídia fictício 3",
+    "mode": "curriculum_media",
+    "type": "institutional",
+    "speaker": "Currículo e Mídia",
+    "problem": "[Fictício] Problema da carta INST-043.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "orange",
+      "axis": [
+        -1,
+        -1,
+        2,
+        -2
+      ],
+      "effects": {
+        "political_capital": -5,
+        "sovereignty": 25,
+        "awareness": 20,
+        "treasury": 15
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        2,
+        -2,
+        -1,
+        2
+      ],
+      "effects": {
+        "integrity": 5,
+        "sovereignty": -30
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-043",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-061",
+    "title": "Geopolítico fictício 1",
+    "mode": "geopolitics",
+    "type": "institutional",
+    "speaker": "Geopolítico",
+    "problem": "[Fictício] Problema da carta INST-061.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "orange",
+      "axis": [
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "effects": {
+        "integrity": 20,
+        "sovereignty": -25,
+        "awareness": 30,
+        "political_capital": 10
+      },
+      "actors": {
+        "ACT-014": 1,
+        "ACT-005": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "purple",
+      "axis": [
+        2,
+        1,
+        -2,
+        -1
+      ],
+      "effects": {
+        "integrity": 10,
+        "sovereignty": -5
+      },
+      "actors": {
+        "ACT-007": 1,
+        "ACT-023": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-061",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-062",
+    "title": "Geopolítico fictício 2",
+    "mode": "geopolitics",
+    "type": "institutional",
+    "speaker": "Geopolítico",
+    "problem": "[Fictício] Problema da carta INST-062.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        -1,
+        2,
+        -2,
+        -2
+      ],
+      "effects": {
+        "political_capital": 15,
+        "sovereignty": -30
+      },
+      "actors": {
+        "ACT-022": -1,
+        "ACT-007": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "effects": {
+        "dignity": -20,
+        "political_capital": 25
+      },
+      "actors": {
+        "ACT-017": -1,
+        "ACT-001": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-062",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-063",
+    "title": "Geopolítico fictício 3",
+    "mode": "geopolitics",
+    "type": "institutional",
+    "speaker": "Geopolítico",
+    "problem": "[Fictício] Problema da carta INST-063.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        2,
+        -2,
+        0,
+        -2
+      ],
+      "effects": {
+        "integrity": -25,
+        "awareness": -10,
+        "legitimacy": -15
+      },
+      "actors": {
+        "ACT-004": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        2,
+        0,
+        -2,
+        0
+      ],
+      "effects": {
+        "legitimacy": -15,
+        "dignity": 25,
+        "integrity": 5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-063",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-081",
+    "title": "Prisional e Policial fictício 1",
+    "mode": "prison_police",
+    "type": "institutional",
+    "speaker": "Prisional e Policial",
+    "problem": "[Fictício] Problema da carta INST-081.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "black",
+      "axis": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "effects": {
+        "political_capital": -15,
+        "integrity": 20,
+        "legitimacy": 10
+      },
+      "actors": {
+        "ACT-008": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "effects": {
+        "sovereignty": -20,
+        "security": 15
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-081",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-082",
+    "title": "Prisional e Policial fictício 2",
+    "mode": "prison_police",
+    "type": "institutional",
+    "speaker": "Prisional e Policial",
+    "problem": "[Fictício] Problema da carta INST-082.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        2,
+        0,
+        -1,
+        0
+      ],
+      "effects": {
+        "awareness": 25,
+        "sovereignty": -30
+      },
+      "actors": {
+        "ACT-001": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        0,
+        -2,
+        1,
+        2
+      ],
+      "effects": {
+        "security": -20,
+        "legitimacy": -5,
+        "sovereignty": 25,
+        "treasury": 10
+      },
+      "actors": {
+        "ACT-019": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-082",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-083",
+    "title": "Prisional e Policial fictício 3",
+    "mode": "prison_police",
+    "type": "institutional",
+    "speaker": "Prisional e Policial",
+    "problem": "[Fictício] Problema da carta INST-083.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "black",
+      "axis": [
+        0,
+        -2,
+        -2,
+        -1
+      ],
+      "effects": {
+        "awareness": -10,
+        "treasury": 25,
+        "sovereignty": 25,
+        "political_capital": 5
+      },
+      "actors": {
+        "ACT-023": -1,
+        "ACT-007": -1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "security": -15,
+            "integrity": -20
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        2,
+        2,
+        2,
+        -1
+      ],
+      "effects": {
+        "dignity": 5,
+        "sovereignty": -25
+      },
+      "actors": {
+        "ACT-017": 1,
+        "ACT-008": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-083",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-101",
+    "title": "Emendas fictício 1",
+    "mode": "amendments",
+    "type": "institutional",
+    "speaker": "Emendas",
+    "problem": "[Fictício] Problema da carta INST-101.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "effects": {
+        "legitimacy": -20,
+        "awareness": 15
+      },
+      "actors": {
+        "ACT-007": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        1,
+        0,
+        -1,
+        2
+      ],
+      "effects": {
+        "political_capital": -30,
+        "legitimacy": 20
+      },
+      "actors": {
+        "ACT-003": 1,
+        "ACT-017": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-101",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-102",
+    "title": "Emendas fictício 2",
+    "mode": "amendments",
+    "type": "institutional",
+    "speaker": "Emendas",
+    "problem": "[Fictício] Problema da carta INST-102.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        -2,
+        2,
+        -1,
+        0
+      ],
+      "effects": {
+        "political_capital": -5,
+        "treasury": 10,
+        "dignity": -20,
+        "integrity": -25
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        0,
+        1,
+        -1,
+        2
+      ],
+      "effects": {
+        "treasury": -10,
+        "sovereignty": -30,
+        "legitimacy": -10,
+        "security": -30
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-102",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-103",
+    "title": "Emendas fictício 3",
+    "mode": "amendments",
+    "type": "institutional",
+    "speaker": "Emendas",
+    "problem": "[Fictício] Problema da carta INST-103.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "black",
+      "axis": [
+        -1,
+        0,
+        2,
+        0
+      ],
+      "effects": {
+        "legitimacy": -30,
+        "awareness": -10
+      },
+      "actors": {
+        "ACT-005": 1,
+        "ACT-014": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        2,
+        0,
+        2,
+        -2
+      ],
+      "effects": {
+        "political_capital": -30,
+        "awareness": -20,
+        "sovereignty": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-103",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-121",
+    "title": "Bancadas fictício 1",
+    "mode": "caucuses",
+    "type": "institutional",
+    "speaker": "Bancadas",
+    "problem": "[Fictício] Problema da carta INST-121.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        -1,
+        2,
+        -1,
+        -2
+      ],
+      "effects": {
+        "political_capital": -10,
+        "awareness": 10,
+        "legitimacy": 10
+      },
+      "actors": {
+        "ACT-014": 1,
+        "ACT-024": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "effects": {
+        "legitimacy": -5,
+        "dignity": 30,
+        "awareness": -5,
+        "treasury": -10
+      },
+      "actors": {
+        "ACT-014": 1,
+        "ACT-007": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-121",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-122",
+    "title": "Bancadas fictício 2",
+    "mode": "caucuses",
+    "type": "institutional",
+    "speaker": "Bancadas",
+    "problem": "[Fictício] Problema da carta INST-122.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "orange",
+      "axis": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "effects": {
+        "legitimacy": -15,
+        "integrity": 20
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "effects": {
+        "dignity": 15,
+        "treasury": -20,
+        "political_capital": 15
+      },
+      "actors": {
+        "ACT-017": 1,
+        "ACT-004": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "legitimacy": -20
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-122",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-123",
+    "title": "Bancadas fictício 3",
+    "mode": "caucuses",
+    "type": "institutional",
+    "speaker": "Bancadas",
+    "problem": "[Fictício] Problema da carta INST-123.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        2,
+        -2,
+        -1,
+        0
+      ],
+      "effects": {
+        "dignity": 5,
+        "legitimacy": -25
+      },
+      "actors": {
+        "ACT-001": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        -2,
+        2,
+        2,
+        -2
+      ],
+      "effects": {
+        "treasury": 10,
+        "legitimacy": 30,
+        "awareness": 30,
+        "sovereignty": -20
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-123",
+    "prerequisites": {
+      "min_year": 3
+    }
+  },
+  {
+    "id": "INST-141",
+    "title": "Impeachment fictício 1",
+    "mode": "impeachment",
+    "type": "institutional",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta INST-141.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "yellow",
+      "axis": [
+        1,
+        -1,
+        2,
+        -1
+      ],
+      "effects": {
+        "security": 25,
+        "political_capital": 20,
+        "dignity": -20
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        -2,
+        2,
+        1,
+        -1
+      ],
+      "effects": {
+        "security": 15,
+        "political_capital": 30,
+        "integrity": -15
+      },
+      "actors": {
+        "ACT-017": -1,
+        "ACT-006": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-141",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-142",
+    "title": "Impeachment fictício 2",
+    "mode": "impeachment",
+    "type": "institutional",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta INST-142.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        1,
+        1,
+        -2,
+        -2
+      ],
+      "effects": {
+        "political_capital": -5,
+        "dignity": 10,
+        "awareness": 15
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        -2,
+        -1,
+        2,
+        -2
+      ],
+      "effects": {
+        "dignity": 25,
+        "sovereignty": -10,
+        "treasury": 5
+      },
+      "actors": {
+        "ACT-003": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-142",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-143",
+    "title": "Impeachment fictício 3",
+    "mode": "impeachment",
+    "type": "institutional",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta INST-143.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "blue",
+      "axis": [
+        0,
+        2,
+        -2,
+        1
+      ],
+      "effects": {
+        "awareness": -25,
+        "treasury": -20,
+        "political_capital": -25
+      },
+      "actors": {
+        "ACT-008": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        -1,
+        -2,
+        -2,
+        1
+      ],
+      "effects": {
+        "awareness": -10,
+        "security": -10,
+        "treasury": -25
+      },
+      "actors": {
+        "ACT-013": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-143",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-161",
+    "title": "Judiciário fictício 1",
+    "mode": "judiciary",
+    "type": "institutional",
+    "speaker": "Judiciário",
+    "problem": "[Fictício] Problema da carta INST-161.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "yellow",
+      "axis": [
+        -2,
+        0,
+        -2,
+        -1
+      ],
+      "effects": {
+        "security": 10,
+        "political_capital": 25,
+        "legitimacy": -10,
+        "awareness": -20
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "effects": {
+        "treasury": -30,
+        "dignity": 10,
+        "legitimacy": -20,
+        "integrity": -15
+      },
+      "actors": {
+        "ACT-022": -1,
+        "ACT-019": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-161",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-162",
+    "title": "Judiciário fictício 2",
+    "mode": "judiciary",
+    "type": "institutional",
+    "speaker": "Judiciário",
+    "problem": "[Fictício] Problema da carta INST-162.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        -1,
+        1,
+        2,
+        -2
+      ],
+      "effects": {
+        "legitimacy": -25,
+        "political_capital": 5
+      },
+      "actors": {},
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "political_capital": 5
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "green",
+      "axis": [
+        1,
+        2,
+        0,
+        -1
+      ],
+      "effects": {
+        "dignity": -5,
+        "security": -15,
+        "integrity": 5
+      },
+      "actors": {
+        "ACT-009": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-162",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "INST-163",
+    "title": "Judiciário fictício 3",
+    "mode": "judiciary",
+    "type": "institutional",
+    "speaker": "Judiciário",
+    "problem": "[Fictício] Problema da carta INST-163.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "effects": {
+        "sovereignty": -10,
+        "dignity": -30,
+        "integrity": 30
+      },
+      "actors": {
+        "ACT-008": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 1,
+          "effects": {
+            "political_capital": -15
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        2,
+        1,
+        -1,
+        2
+      ],
+      "effects": {
+        "integrity": 15,
+        "legitimacy": 10,
+        "political_capital": -25,
+        "security": 5
+      },
+      "actors": {
+        "ACT-020": 1,
+        "ACT-007": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-163",
+    "prerequisites": {
+      "min_year": 2
+    }
+  },
+  {
+    "id": "INST-181",
+    "title": "Influenciador fictício 1",
+    "mode": "influencer",
+    "type": "institutional",
+    "speaker": "Influenciador",
+    "problem": "[Fictício] Problema da carta INST-181.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "orange",
+      "axis": [
+        -2,
+        2,
+        0,
+        -2
+      ],
+      "effects": {
+        "treasury": -30,
+        "integrity": 30,
+        "sovereignty": 15,
+        "security": 25
+      },
+      "actors": {},
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "treasury": -20,
+            "political_capital": 5
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A.",
+      "reaction": "refuse"
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        -2,
+        -1,
+        -1,
+        -1
+      ],
+      "effects": {
+        "political_capital": 25,
+        "security": -15,
+        "awareness": -25
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B.",
+      "reaction": "investigate"
+    },
+    "learning_id": "APR-181",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "ai_farm"
+  },
+  {
+    "id": "INST-182",
+    "title": "Influenciador fictício 2",
+    "mode": "influencer",
+    "type": "institutional",
+    "speaker": "Influenciador",
+    "problem": "[Fictício] Problema da carta INST-182.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "effects": {
+        "treasury": -20,
+        "legitimacy": -15,
+        "integrity": -5
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A.",
+      "reaction": "accept"
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        -1,
+        2,
+        1,
+        0
+      ],
+      "effects": {
+        "sovereignty": -10,
+        "dignity": 20,
+        "political_capital": -25,
+        "legitimacy": 10
+      },
+      "actors": {},
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "awareness": 5,
+            "security": 20
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção B.",
+      "reaction": "refuse"
+    },
+    "learning_id": "APR-182",
+    "prerequisites": {
+      "min_year": 1
+    },
+    "technique": "doom_cache"
+  },
+  {
+    "id": "INST-183",
+    "title": "Influenciador fictício 3",
+    "mode": "influencer",
+    "type": "institutional",
+    "speaker": "Influenciador",
+    "problem": "[Fictício] Problema da carta INST-183.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "blue",
+      "axis": [
+        -1,
+        2,
+        2,
+        0
+      ],
+      "effects": {
+        "political_capital": -15,
+        "legitimacy": -20,
+        "dignity": -25
+      },
+      "actors": {
+        "ACT-009": 1,
+        "ACT-011": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A.",
+      "reaction": "investigate"
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "red",
+      "axis": [
+        2,
+        2,
+        -1,
+        2
+      ],
+      "effects": {
+        "integrity": -15,
+        "security": -20,
+        "treasury": -15
+      },
+      "actors": {
+        "ACT-009": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B.",
+      "reaction": "accept"
+    },
+    "learning_id": "APR-183",
+    "prerequisites": {
+      "min_year": 2
+    },
+    "technique": "deepfake"
+  },
+  {
+    "id": "THEM-001",
+    "title": "Tema fictício 1",
+    "mode": "prison_police",
+    "type": "thematic",
+    "speaker": "Prisional e Policial",
+    "problem": "[Fictício] Problema da carta THEM-001.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "effects": {
+        "legitimacy": 15,
+        "awareness": 5,
+        "sovereignty": -5,
+        "integrity": -25
+      },
+      "actors": {
+        "ACT-011": 1,
+        "ACT-023": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "effects": {
+        "political_capital": -30,
+        "treasury": 25,
+        "dignity": 25,
+        "sovereignty": 15
+      },
+      "actors": {
+        "ACT-013": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-201",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "THEM-002",
+    "title": "Tema fictício 2",
+    "mode": "impeachment",
+    "type": "thematic",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta THEM-002.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        1,
+        1,
+        -2,
+        2
+      ],
+      "effects": {
+        "integrity": -5,
+        "legitimacy": 20
+      },
+      "actors": {
+        "ACT-013": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "green",
+      "axis": [
+        0,
+        -2,
+        -1,
+        -1
+      ],
+      "effects": {
+        "awareness": -5,
+        "legitimacy": 25
+      },
+      "actors": {
+        "ACT-015": -1,
+        "ACT-004": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "awareness": -5
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-202",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "THEM-003",
+    "title": "Tema fictício 3",
+    "mode": "budget",
+    "type": "thematic",
+    "speaker": "Orçamento",
+    "problem": "[Fictício] Problema da carta THEM-003.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        1,
+        -2,
+        -1,
+        1
+      ],
+      "effects": {
+        "dignity": 25,
+        "political_capital": 10,
+        "sovereignty": -20,
+        "security": 10
+      },
+      "actors": {
+        "ACT-021": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "orange",
+      "axis": [
+        -2,
+        -2,
+        1,
+        2
+      ],
+      "effects": {
+        "legitimacy": -5,
+        "security": 5,
+        "treasury": -20
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-203",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "THEM-004",
+    "title": "Tema fictício 4",
+    "mode": "impeachment",
+    "type": "thematic",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta THEM-004.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "effects": {
+        "integrity": 20,
+        "dignity": -15,
+        "political_capital": 5,
+        "awareness": -15
+      },
+      "actors": {
+        "ACT-022": 1,
+        "ACT-003": -1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "integrity": -5
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "black",
+      "axis": [
+        -1,
+        1,
+        2,
+        0
+      ],
+      "effects": {
+        "sovereignty": -25,
+        "awareness": 30
+      },
+      "actors": {},
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-204",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "THEM-005",
+    "title": "Tema fictício 5",
+    "mode": "impeachment",
+    "type": "thematic",
+    "speaker": "Impeachment",
+    "problem": "[Fictício] Problema da carta THEM-005.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "effects": {
+        "sovereignty": 25,
+        "integrity": -25
+      },
+      "actors": {
+        "ACT-008": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        -2,
+        0,
+        -1,
+        0
+      ],
+      "effects": {
+        "political_capital": -10,
+        "legitimacy": 5,
+        "treasury": 30
+      },
+      "actors": {
+        "ACT-003": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-205",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "ATOR-001",
+    "title": "Latifundiários — ataque",
+    "mode": "prison_police",
+    "type": "actor",
+    "speaker": "ACT-001",
+    "problem": "[Fictício] Problema da carta ATOR-001.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "blue",
+      "axis": [
+        -2,
+        -2,
+        0,
+        1
+      ],
+      "effects": {
+        "security": -25,
+        "treasury": -5
+      },
+      "actors": {
+        "ACT-001": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "orange",
+      "axis": [
+        0,
+        -2,
+        0,
+        1
+      ],
+      "effects": {
+        "political_capital": -5,
+        "treasury": 30,
+        "sovereignty": 30,
+        "integrity": 30
+      },
+      "actors": {
+        "ACT-001": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-271",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "ATOR-002",
+    "title": "Latifundiários — exigência",
+    "mode": "geopolitics",
+    "type": "actor",
+    "speaker": "ACT-001",
+    "problem": "[Fictício] Problema da carta ATOR-002.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "effects": {
+        "awareness": 20,
+        "treasury": -30,
+        "political_capital": -20,
+        "dignity": -30
+      },
+      "actors": {
+        "ACT-001": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "green",
+      "axis": [
+        0,
+        -2,
+        0,
+        -2
+      ],
+      "effects": {
+        "political_capital": -15,
+        "awareness": -20
+      },
+      "actors": {
+        "ACT-001": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-272",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "ATOR-003",
+    "title": "Latifundiários — oferta",
+    "mode": "caucuses",
+    "type": "actor",
+    "speaker": "ACT-001",
+    "problem": "[Fictício] Problema da carta ATOR-003.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "purple",
+      "axis": [
+        -1,
+        -2,
+        1,
+        1
+      ],
+      "effects": {
+        "sovereignty": 10,
+        "political_capital": 20,
+        "awareness": 20
+      },
+      "actors": {
+        "ACT-001": 1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "yellow",
+      "axis": [
+        0,
+        -1,
+        0,
+        2
+      ],
+      "effects": {
+        "security": 10,
+        "treasury": -20
+      },
+      "actors": {
+        "ACT-001": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-273",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "ATOR-004",
+    "title": "Diplomatas do Itamaraty — ataque",
+    "mode": "geopolitics",
+    "type": "actor",
+    "speaker": "ACT-010",
+    "problem": "[Fictício] Problema da carta ATOR-004.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "green",
+      "axis": [
+        1,
+        1,
+        1,
+        -2
+      ],
+      "effects": {
+        "integrity": -15,
+        "treasury": 15,
+        "dignity": -20
+      },
+      "actors": {
+        "ACT-010": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "dignity": -10
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "purple",
+      "axis": [
+        0,
+        2,
+        0,
+        -1
+      ],
+      "effects": {
+        "integrity": 10,
+        "dignity": 20,
+        "treasury": -20
+      },
+      "actors": {
+        "ACT-010": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-274",
+    "prerequisites": {
+      "min_year": 1
+    }
+  },
+  {
+    "id": "ATOR-005",
+    "title": "Diplomatas do Itamaraty — exigência",
+    "mode": "caucuses",
+    "type": "actor",
+    "speaker": "ACT-010",
+    "problem": "[Fictício] Problema da carta ATOR-005.",
+    "option_a": {
+      "text": "[Fictício] Opção A",
+      "color": "red",
+      "axis": [
+        1,
+        -2,
+        2,
+        0
+      ],
+      "effects": {
+        "dignity": -5,
+        "treasury": -5,
+        "integrity": -30
+      },
+      "actors": {
+        "ACT-010": 1
+      },
+      "events": [
+        {
+          "text": "[Fictício] Evento encadeado.",
+          "delay": 2,
+          "effects": {
+            "dignity": -20
+          }
+        }
+      ],
+      "consequence": "[Fictício] Consequência da opção A."
+    },
+    "option_b": {
+      "text": "[Fictício] Opção B",
+      "color": "blue",
+      "axis": [
+        -2,
+        -1,
+        2,
+        -1
+      ],
+      "effects": {
+        "security": 20,
+        "awareness": -10,
+        "dignity": -15
+      },
+      "actors": {
+        "ACT-010": -1
+      },
+      "events": [],
+      "consequence": "[Fictício] Consequência da opção B."
+    },
+    "learning_id": "APR-275",
+    "prerequisites": {
+      "min_year": 1
+    }
+  }
+]
