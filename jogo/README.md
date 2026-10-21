@@ -86,22 +86,22 @@ A validação ponta a ponta de 2026-10-20 (`gestao/validacao-2026-10-20.md`) fec
 
 | Decisão | O que muda | Onde | Status |
 | :--- | :--- | :--- | :--- |
-| D-174 | Fim do mandato: vence o final mais específico (torna o #14 alcançável) | `ending_rules.gd` | P-014 etapa 3 |
-| D-175 | Revelação dos medidores: alto > 60, baixo < 40 e 6º texto "sem padrão" | `axis_rules.gd`, `balance.json` | P-014 etapa 3 |
-| D-177 | Opção até 25 caracteres; no arraste, rótulo na parte visível da carta | `game_data.gd`, `swipe_card.gd` | ✅ validador · P-014 etapa 4 (rótulo) |
+| D-174 | Fim do mandato: vence o final mais específico (torna o #14 alcançável) | `ending_rules.gd` | ✅ P-014 |
+| D-175 | Revelação dos medidores: alto > 60, baixo < 40 e 6º texto "sem padrão" | `axis_rules.gd`, `balance.json` | ✅ P-014 (textos: DP-009) |
+| D-177 | Opção até 25 caracteres; no arraste, rótulo na parte visível da carta | `game_data.gd`, `swipe_card.gd` | ✅ P-014 |
 | D-178 | Alto contraste: banda partidária como está | — | ✅ |
-| D-179 | Gatilho alternativo após o Aprendizado; a sequência zera no Ano 2 | `game_flow.gd` | P-014 etapa 3 |
+| D-179 | Gatilho alternativo após o Aprendizado; a sequência zera no Ano 2 | `game_flow.gd` | ✅ P-014 |
 | D-180 | "Mais perdeu" = maior queda aplicada | `meter_rules.gd` | ✅ (já era assim; teste na etapa 6) |
 | D-181 | Finais do Ano 4 com os valores depois da cena | `game_flow.gd` | ✅ (já era assim; teste na etapa 6) |
-| D-182 | Condenação por Capital em 0: o evento da opção vai ao epílogo | `game_flow.gd` | P-014 etapa 3 |
-| D-183 | Calibração sem a caixa do HUD | `calibration_screen.gd` | P-014 etapa 4 |
-| D-184 | Ida ao final com fade para preto e pausa; aviso de Captura espera toque | `main.gd`, `year_card.gd` | P-014 etapa 4 |
-| D-185 | Voltar do Android no título sai; Enter sem os 0,5 s | `main.gd`, `swipe_card.gd` | P-014 etapa 4 · ✅ Enter |
-| D-186 | 36 px: títulos menores e quebra só em espaços | `tokens.gd`, `swipe_card.gd` | P-014 etapa 4 |
+| D-182 | Condenação por Capital em 0: o evento da opção vai ao epílogo | `game_flow.gd` | ✅ P-014 |
+| D-183 | Calibração sem a caixa do HUD | `calibration_screen.gd` | ✅ P-014 |
+| D-184 | Ida ao final com fade para preto e pausa; aviso de Captura espera toque | `main.gd`, `year_card.gd` | ✅ P-014 |
+| D-185 | Voltar do Android no título sai; Enter sem os 0,5 s | `main.gd`, `swipe_card.gd` | ✅ P-014 |
+| D-186 | 36 px: títulos menores e quebra só em espaços | `tokens.gd`, `swipe_card.gd` | ✅ P-014 (números: DP-010) |
 | D-187 | Modal destrutivo: variante A | `confirm_modal.gd` `VARIANT` | ✅ |
-| D-188 | Sobre com a licença do Godot e a lista real de assets; 1º preset só Web | `about_screen.gd`, `export_presets.cfg` | P-014 etapa 5 |
-| D-189 | MCP só numa cópia; pre-commit barra o autoload do MCP | hook de pre-commit | P-014 etapa 5 |
-| D-190 | Avisos de conteúdo unificados; citações de políticos vivos esperam o parecer jurídico (RC-08) | `content_warnings.gd` | P-014 etapa 1 (lista) |
+| D-188 | Sobre com a licença do Godot e a lista real de assets; 1º preset só Web | `about_screen.gd`, `export_presets.cfg` | ✅ P-014 (DP-019) |
+| D-189 | MCP só numa cópia; pre-commit barra o autoload do MCP | `.githooks/pre-commit` (ativar: `git config core.hooksPath .githooks`) e hook do Claude Code | ✅ P-014 (DP-018) |
+| D-190 | Avisos de conteúdo unificados; citações de políticos vivos esperam o parecer jurídico (RC-08) | `content_warnings.gd` | ✅ P-014 (lista: DP-008) |
 
 ## Ainda a validar com o PO
 
@@ -129,4 +129,5 @@ Ficam como constantes nomeadas, fáceis de trocar:
   - as 340 cartas (doc 17; aqui há 40 fictícias) e seus Aprendizados (doc 18);
   - textos `[a definir]`;
   - ícones e retratos finais (TA). As cores das faixas estão em revisão (D-162).
-- **Fora do escopo deste protótipo:** áudio, exportação para celular/web e teste em aparelho (área segura, vibração, leitor de tela).
+- **Exportação Web:** preset em `export_presets.cfg` (D-188), testado no Chromium com os modelos oficiais do 4.7.2; saída em `build/web/` (fora do git). Uma escolha sobrevive a fechar a aba 300 ms depois.
+- **Fora do escopo deste protótipo:** áudio, exportação para celular e teste em aparelho (área segura, vibração, leitor de tela).

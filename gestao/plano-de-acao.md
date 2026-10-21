@@ -359,11 +359,11 @@
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
 | 0 | Registrar decisões e atualizar docs vivos | ✅ | D-174 a D-190; este plano |
-| 1 | GDDs e docs (02, 03, 04, 05, 08, 01, GDD §5.3/§9.2/§10.1/§13.1/§14.3, docs 10, 13, 16, README) | ⏳ | — |
+| 1 | GDDs e docs (02, 03, 04, 05, 08, 01, GDD §5.3/§9.2/§10.1/§13.1/§14.3, docs 10, 13, 16, README) | ✅ | `4dc9c8e`; DP-002 a DP-009; `/sync-tech`: `docs/13_ARQUITETURA_TECNICA.md` e `docs/13.1_RELATORIO_SINCRONIZACAO.md` |
 | 2 | `/validate-cards`: opção ≤ 25 caracteres e `quem_fala` obrigatório (antes da Onda 1 do P-015) | ✅ | `.claude/commands/validate-cards.md`; `jogo/scripts/game_data.gd` (`OPTION_TEXT_MAX`, speaker); `jogo/tests/test_data.gd`; DP-001 |
-| 3 | Regras do jogo (D-174, D-175, D-179, D-182, V-015, V-035) | ⏳ | — |
-| 4 | Interface (D-177, D-183, D-184, D-185, D-186, V-022, V-024, V-026) | ⏳ | — |
-| 5 | Técnico (save atômico, Sobre/licenças, preset Web, pre-commit do MCP) | ⏳ | — |
+| 3 | Regras do jogo (D-174, D-175, D-179, D-182, V-015, V-035) | ✅ | `4177ec1`, `601168b` (D-175); DP-009 |
+| 4 | Interface (D-177, D-183, D-184, D-185, D-186, V-022, V-024, V-026) | ✅ | `601168b`; DP-010 |
+| 5 | Técnico (save atômico, Sobre/licenças, preset Web, pre-commit do MCP) | ✅ | `save_manager.gd` + `test_core_save.gd`; `about_screen.gd`; `export_presets.cfg` (Web testado no Chromium); `.githooks/pre-commit` + hook do Claude Code; DP-018, DP-019 |
 | 6 | Testes (finais e relações por tabela, `test_e2e`, decisões novas) | ⏳ | — |
 | 7 | Verificação ponta a ponta (testes, roteiros, simulação, capturas) | ⏳ | — |
 | 8 | `/fechar-plano` e PR | ⏳ | — |
@@ -376,8 +376,8 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | ⏳ Pendente |
-| **Início** | — |
+| **Status** | 🟡 Em andamento |
+| **Início** | 2026-10-20 |
 | **Conclusão** | — |
 | **Decisões** | D-176, D-177, D-190 (+ Onda 0) |
 | **Objetivo** | Escrever as cartas que faltam no doc 17 e seus Aprendizados no doc 18; depois levá-las a `jogo/data/` e liberar o P-006 (D-176) |
@@ -388,8 +388,8 @@
 
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
-| 0 | Onda 0: 5 decisões do PO (modo Impeachment, número-alvo, temas THEM, formato, IDs) | ⏳ | — |
-| 1 | Ondas 1..N: 10 cartas + 10 Aprendizados por onda (GD → dados → PSI → QA → PO) | ⏳ | — |
+| 0 | Onda 0: 5 decisões do PO (modo Impeachment, número-alvo, temas THEM, formato, IDs) | ✅ provisória | `ded652b`; DP-011 a DP-017 (o PO valida no fim) |
+| 1 | Ondas 1..N: 10 cartas + 10 Aprendizados por onda (GD → dados → PSI → QA → PO) | 🟡 | Ondas 1 (Influenciador) e 2 (Geopolítico) em revisão; diário em `gestao/execucao-p014-p015.md` |
 | 2 | ECO a cada ~40 cartas | ⏳ | — |
 | 3 | Migração para `jogo/data/cards.json` e `learning.json`, testes e simulação com o baralho real | ⏳ | — |
 | 4 | `/fechar-plano`; liberar o P-006 | ⏳ | — |

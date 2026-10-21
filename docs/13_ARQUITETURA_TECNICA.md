@@ -214,7 +214,7 @@ A pesquisa confirma que **Claude é "genuinamente um dos melhores modelos para e
 **Regra de isolamento do MCP (D-189, revisa D-133):** o `run_project` do servidor injeta o autoload `mcp_interaction_server.gd` e uma linha `[autoload]` no `project.godot` do projeto em que roda (`gestao/prompts/correcoes-p014.md:26`). Por isso:
 
 - O MCP roda **só numa cópia isolada** de `jogo/` (por exemplo, `cp -r jogo <scratchpad>/pt`), nunca em `jogo/`.
-- Uma checagem no pre-commit barra `mcp_interaction_server` no `jogo/project.godot` **(planejado — P-014 etapa 5; o local do hook, git ou Claude Code, está por definir: `gestao/prompts/correcoes-p014.md:73`)**. Hoje não há hook em `.git/hooks` nem em `.claude/settings.json`, e o `project.godot` está limpo (`jogo/project.godot:18-23`).
+- Uma checagem no pre-commit barra `mcp_interaction_server` no `jogo/project.godot` e qualquer arquivo do MCP no commit, em dois lugares (DP-018, provisória): o hook do git `.githooks/pre-commit` (versionado; ativar uma vez por clone com `git config core.hooksPath .githooks`) e o hook `PreToolUse` do Claude Code (`.claude/settings.json:15-27` → `.claude/hooks/pre-commit-mcp.sh`), que roda a mesma checagem antes de um `git … commit` e confere também os arquivos ainda não adicionados (`.githooks/pre-commit:23-33`). O `project.godot` está limpo (`jogo/project.godot:18-23`).
 - A ideia anterior, autoload em `tools/mcp/` só em debug e fora dos presets de exportação (D-133), não existe no repositório e foi revista pela D-189.
 
 ### 13.2.6. Frameworks de Cartas para Godot
@@ -393,7 +393,7 @@ O que é salvo automaticamente (D-121). Regras: `gdd/sistemas/10_estado_partida.
 
 Uma única partida salva, apagada na tela final ou ao abandonar; entre partidas, só as configurações (D-123; §13.3.7). O `Game` grava depois de cada ação que muda a partida (`jogo/scripts/autoload/game.gd:161-179`). Um salvamento ilegível, que não é JSON ou tem outro `format_version` é apagado, com o aviso "Não foi possível continuar o mandato" (`save_manager.gd:36-53`, `game.gd:37-54`).
 
-A gravação é direta no arquivo, **não atômica** (`save_manager.gd:21-25`). Gravar em `save.json.tmp` e renomear é correção do P-014 etapa 5 (V-008) **(planejado**; `gestao/prompts/correcoes-p014.md:70`**)**. No Web, a persistência de `user://` ainda não foi verificada (RT-12, `gestao/estado.md:155`) `[não verificado]`.
+A gravação é atômica (V-008): a partida vai para `save.json.tmp`, que depois substitui o `save.json` por `DirAccess.rename_absolute` (`save_manager.gd:23-46`); se a plataforma não renomear sobre um arquivo existente, apaga e renomeia. Um `.tmp` sozinho (queda entre apagar e renomear) conta como salvamento e é lido (`save_manager.gd:18-19, 56`); `delete()` apaga os dois (`save_manager.gd:73-76`). Teste: `jogo/tests/test_core_save.gd` (`_atomic_write`). No Web, `user://` fica no IndexedDB, que o motor sincroniza depois da gravação: na exportação Web (Chromium, P-014) uma escolha sobreviveu a fechar a aba 300 ms depois; fechando em ~150 ms, ficou o salvamento anterior, sem corromper (`gestao/execucao-p014-p015.md`, registro da etapa 5).
 
 ### 13.3.6. Estrutura de um Final
 
@@ -581,6 +581,8 @@ Em `jogo/data/` (D-138):
 | `dialogos.json` | JSON | **(planejado)** Textos de interface (botões, mensagens); hoje ficam nas cenas e scripts, e as chaves de i18n seguem pendentes (D-066) |
 
 Fora de `jogo/data/`, em `user://`: `save.json` (§13.3.5) e `settings.cfg` (§13.3.7).
+
+**Fonte das cartas reais (P-015, provisório):** as cartas são escritas no doc 17 (tabela estendida) e os Aprendizados no doc 18. `python3 jogo/tools/cards_doc.py check` aplica as regras por carta e os avisos do baralho; `export --out <pasta>` grava `cards.json`, `impeachment.json`, `learning.json` e o campo `cards` dos atores no formato do jogo, deixando de fora a carta com erro (`jogo/tools/cards_doc.py:2-13`; DP-014 e DP-017 em `gestao/decisoes-provisorias.md:22,25`). Os JSON continuam sendo o que o jogo lê; o doc 17 é a fonte de escrita.
 
 **Nota (D-138):** o Godot suporta nativamente **Resources** (`.tres`) para dados estruturados, que são mais performáticos que JSON para leitura em tempo de execução. A D-138 manteve **JSON para todos os dados**, de jogo e de configuração. Os arquivos são lidos por `JSON.new().parse` e validados na carga; a raiz precisa ser do tipo esperado (array ou objeto), senão o arquivo é recusado (`jogo/scripts/game_data.gd:377-390`).
 
@@ -829,11 +831,12 @@ jogo/
 │   ├── fonts/              # Inter e Poppins (OFL) e os avisos OFL-*.txt
 │   └── icons/              # Ícones provisórios (SVG)
 ├── tests/                  # test_*.gd (headless), shot_*.gd (capturas), run_all.sh
-├── export_presets.cfg      # (planejado) 1º preset: Web (D-188)
+├── tools/                  # cards_doc.py: lê os docs 17 e 18, confere as regras e gera o JSON (P-015, DP-017)
+├── export_presets.cfg      # 1º preset: Web (D-188; DP-019)
 └── README.md
 ```
 
-Não existem `addons/` (o MCP não exige addon, D-131) nem `tools/mcp/` (D-189).
+Não existem `addons/` (o MCP não exige addon, D-131) nem `tools/mcp/` (D-189); `tools/` guarda só o conversor das cartas, versionado e fora da exportação (DP-017, provisória).
 
 ### 13.7.3. Camadas e Autoloads
 
@@ -906,7 +909,7 @@ O projeto usará **assets públicos e conteúdos liberados**. A pesquisa identif
 
 Regra de licença (D-140): ícones só CC0 (o Font Awesome saiu); fontes do Google Fonts (OFL) com crédito e aviso na tela Sobre. Para áudio e para imagens que não são ícones, a regra segue por definir `[não verificado]`; as tabelas de 13.8.1 a 13.8.4 listam também licenças que a D-140 não cobre (CC-BY, GPL, *royalty-free*, variadas).
 
-A tela Sobre ainda cita "Kenney (CC0)" entre os assets (`jogo/scripts/ui/screens/about_screen.gd:19`). A lista real de assets e o aviso de licença do Godot (`Engine.get_license_text()`) são a D-188 (P-014 etapa 5) **(planejado)**.
+A tela Sobre mostra a lista real de assets (D-188): ícones e retrato próprios do protótipo, provisórios, e as fontes Poppins e Inter (OFL 1.1) (`jogo/scripts/ui/screens/about_screen.gd:22-31`); `jogo/tests/test_shell.gd` confere que todo arquivo de `jogo/assets/` está num grupo da lista. O aviso do Godot vem de `Engine.get_license_text()` e os componentes de terceiros do Godot, de `Engine.get_copyright_info()`, os dois dobrados (`about_screen.gd:148-170`; DP-019, provisória). Os textos completos das licenças de terceiros (`Engine.get_license_info()`) não aparecem na tela `[pendente com o PO]`.
 
 ---
 
@@ -943,7 +946,7 @@ São metas: o protótipo não foi medido em aparelho (fora do escopo do P-005, `
 
 | Plataforma | Formato | Requisitos | Estado |
 | :--- | :--- | :--- | :--- |
-| **Web** | HTML/JS/WASM | Navegador moderno | 1º preset, excluindo `scenes/dev/*` e `tests/*` (D-188; `gestao/prompts/correcoes-p014.md:72`). **(planejado)**: ainda não há `export_presets.cfg` |
+| **Web** | HTML/JS/WASM | Navegador moderno | 1º preset (`jogo/export_presets.cfg`, D-188; DP-019): sem threads (dispensa os cabeçalhos COOP/COEP, que o GitHub Pages não envia), exclui `scenes/dev/*`, `tests/*` e `tools/*`, inclui `assets/fonts/*.txt` (avisos OFL lidos pela tela Sobre); saída em `build/web/` (fora do git). Exportado e jogado no Chromium no P-014 com os modelos oficiais do 4.7.2 |
 | **Android** | APK ou AAB | Android SDK + Java JDK + Gradle (ou GABE) | **(planejado)** |
 | **Windows** | Executável (.exe) | Windows 10+ | **(planejado)** |
 | **iOS** | Projeto Xcode | macOS + Xcode | **(planejado)** |

@@ -10,8 +10,8 @@
 | Fase | O que | Status | Evidência |
 | :--- | :--- | :--- | :--- |
 | 1 | P-014 etapa 2 — `/validate-cards` (opção ≤ 25 caracteres, `quem_fala`) | ✅ | `game_data.gd`, `test_data.gd`, `validate-cards.md`; DP-001; 18/18 testes |
-| 2 | P-014 etapa 1 (GDDs e docs) + P-015 Onda 0 | ⏳ | — |
-| 3 | P-014 etapas 3-5 (código) + ondas de cartas | ⏳ | — |
+| 2 | P-014 etapa 1 (GDDs e docs) + P-015 Onda 0 | ✅ | `4dc9c8e`, `ded652b`; `/sync-tech` (docs 13 e 13.1); DP-002 a DP-017 |
+| 3 | P-014 etapas 3-5 (código) + ondas de cartas | 🟡 | Etapas 3-5 ✅ (`4177ec1`, `601168b`, etapa 5 neste registro); Ondas 1 e 2 em revisão |
 | 4 | P-014 etapas 6-7 (testes e verificação); ondas continuam | ⏳ | — |
 | 5 | Ondas de cartas até o número-alvo (ECO a cada ~40 cartas) | ⏳ | — |
 | 6 | P-015 migração para `jogo/data/` + simulação do ECO com o baralho real | ⏳ | — |
@@ -28,6 +28,10 @@
 - Revelação dos medidores: só os medidores sociais têm padrão "baixo" (achado do PSI); rever com o baralho real (RT-10).
 - Calibração CAL-5: "taxar grandes fortunas: Sim" tira Caixa (`docs/15_FLUXO_DO_JOGO.md:79`), o que sugere que taxar os ricos esvazia o cofre (achado do PSI, fora do escopo).
 - Classificação etária: `docs/16_MANUAL_DO_JOGADOR.md` §16.13 diz "Livre (recomendado para maiores de 12 anos)", que se contradiz; o PSI sugere 14+ e lembra que a classificação oficial vem do IARC.
+- Descrição curta dos finais (relatório do `/sync-tech`, P-1): `endings.json` não tem o campo e a tela final mostra "[descrição curta do final — a definir]" em toda partida (`jogo/scripts/core/game_flow.gd:28, 459`). Alternativas: A) escrever as 28 com GD e PSI (recomendada pelo agente); B) tirar a descrição da tela e dos docs 14/14A; C) manter o marcador até o P-006. Fora do escopo do P-014; não decidi.
+- D-055 (card-framework) segue aberta (relatório do `/sync-tech`, P-2): A) nova decisão "não adotado" (recomendada); B) manter como recomendação; C) migrar depois.
+- `gdd/GDD.md` §12.2-12.4 ainda com chaves em PT (P-3): A) trocar por ponteiro ao doc 13 (recomendada); B) copiar o esquema EN; C) deixar.
+- Tela Sobre: os textos completos das licenças de terceiros do Godot (`Engine.get_license_info()`, ~77 mil caracteres) não aparecem; a tela lista componentes, licenças e copyrights (DP-019). Decidir se entram (tela, arquivo ao lado do build Web ou link).
 
 ## Registro
 
@@ -57,3 +61,15 @@
 - Achados e corrigidos na conferência por capturas: a tela de título a 36 px escondia "Sobre" (agora rola e o título cabe numa linha); o rodapé a 36 px cortava o "n/7" porque o Label não crescia (V-048: `update_minimum_size`).
 - Pendência registrada (PSI): só os medidores sociais têm padrão "baixo"; um governo de "ordem" que derruba Integridade e Consciência recebe só o texto do P2. Recomendação do PSI: manter na D-175 e rever com o baralho real (RT-10).
 - `run_all.sh` 18/18 OK.
+
+### 2026-10-20 — `/sync-tech`, P-014 etapa 5 e Ondas 1-2 (rascunho)
+- `/sync-tech` (agente): `docs/13_ARQUITETURA_TECNICA.md` com chaves em EN (D-136) e árvore de `jogo/`; relatório `docs/13.1_RELATORIO_SINCRONIZACAO.md` (48 divergências: 41 corrigidas, 6 planejadas, 1 aberta). Conferidas 5 citações do relatório: `game_flow.gd:28, 459` (marcador da descrição do final), `:155-165` (eventos na abertura do turno), `:306-315` e `:498-499` (gatilho alternativo e zerar no Ano 2), `game_data.gd:58, 387-389` (raiz array), 9 arquivos em `jogo/data/`: 5/5 ✅. Pendências P-1 a P-3 do relatório acima.
+- Etapa 5:
+  - Save atômico (V-008): grava em `save.json.tmp` e renomeia; `.tmp` sozinho conta como save; `delete()` apaga os dois. Teste `_atomic_write` em `test_core_save.gd`.
+  - Tela Sobre (D-188): lista real dos assets (sem "Kenney"), aviso MIT do Godot por `Engine.get_license_text()` e componentes de terceiros por `Engine.get_copyright_info()`, dobrados; o teste confere que todo arquivo de `jogo/assets/` está na lista (DP-019).
+  - Preset Web (D-188): `jogo/export_presets.cfg` sem threads, sem `scenes/dev`, `tests` e `tools`, com os avisos OFL (`assets/fonts/*.txt`), que a tela Sobre lê como texto e ficavam fora do pacote.
+  - Teste da Web: só os modelos Web oficiais do 4.7.2 (baixados por intervalo do `.tpz`, no scratchpad) → exportação → Chromium headless (Playwright). O jogo abre, a tela Sobre mostra os avisos OFL e do Godot. Fechar a aba depois de responder a 1ª pergunta da calibração: aos 300, 450, 600 e 1.000 ms a partida volta em 2/6; aos 0 e 150 ms volta em 1/6 (fica o salvamento anterior, sem corromper). Scripts no scratchpad (`webtest/close_tab.py`).
+  - Pre-commit do MCP (D-189): `.githooks/pre-commit` + hook `PreToolUse` do Claude Code (DP-018). Testado num clone no scratchpad: commit com o autoload barrado; arquivo do MCP solto barrado; limpo passa. `git config core.hooksPath .githooks` ativado neste clone.
+  - V-046: comentários sem `.claude/notas/p005/*` (`main.gd`, `app_screen.gd`, `game_screen.gd`, `game.gd`, `test_final_screen.gd`).
+  - `run_all.sh` 18/18 OK numa cópia com `XDG_DATA_HOME` próprio.
+- Ondas 1 (Influenciador, INST-182..191) e 2 (Geopolítico, INST-063..072): rascunhos do GD prontos em `.claude/notas/execucao/onda-01/` e `onda-02/`, `cards_doc.py check` com 0 erros. Conferidas 5 citações da Onda 2 (`docs/12:226, 247, 255`, `docs/03:436`, `docs/11:484`): 5/5 ✅. Próximo: fontes na web e PSI.
