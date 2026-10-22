@@ -20,6 +20,7 @@ const DOT_DELAY_REPO := 0.1          # A-10: 100 ms after release
 const DOT_LIFETIME_REPO := 0.5       # A-10: 400-600 ms
 const CARD_EXIT_TIME := 0.3          # A-06: 250-350 ms
 const SMALL_DOT_MAX := 10            # docs/14 §14.05: up to 10 = small
+const LEGEND_SECONDS := 4.0          # legend strip under the HUD (P-017)
 
 var high_contrast: bool = false:
 	set(v):
@@ -30,6 +31,10 @@ var high_contrast: bool = false:
 			_divider_line.color = Tokens.TEXT if v else Tokens.INACTIVE
 
 var _pending := 0
+var _legend: PanelContainer
+var _legend_text: Label
+var _legend_id := ""
+var _legend_timer: SceneTreeTimer
 
 @onready var _divider_line: ColorRect = $MeterDivider/Line
 
@@ -38,6 +43,71 @@ func _ready() -> void:
 	_divider_line.color = Tokens.INACTIVE
 	for m in meters():
 		m.animation_finished.connect(_on_meter_done)
+		m.tapped.connect(show_legend)
+		m.hovered.connect(func(id: String) -> void:
+			if _legend_id != id:
+				show_legend(id))
+	_build_legend()
+
+
+## Strip under the HUD with the name and role of a meter (tap on mobile, click on PC; hover
+## also shows the tooltip). A 2nd tap on the same meter closes it (P-017).
+func show_legend(id: String) -> void:
+	if _legend.visible and _legend_id == id:
+		hide_legend()
+		return
+	_legend_id = id
+	_legend_text.text = "%s — %s" % [Tokens.METER_NAMES.get(id, id), Tokens.METER_INFO.get(id, "")]
+	_legend.add_theme_stylebox_override(&"panel", _legend_box(Tokens.METER_COLORS.get(id, Tokens.TEXT)))
+	_legend.size = Vector2(size.x, 0)
+	_legend.global_position = global_position + Vector2(0, size.y + Tokens.ESP_4)
+	_legend.visible = true
+	_legend_text.accessibility_live = AccessibilityServer.LIVE_POLITE
+	var timer := get_tree().create_timer(LEGEND_SECONDS)
+	_legend_timer = timer
+	timer.timeout.connect(func() -> void:
+		if _legend_timer == timer:
+			hide_legend())
+
+
+func hide_legend() -> void:
+	_legend.visible = false
+	_legend_id = ""
+
+
+func legend_text() -> String:
+	return _legend_text.text if _legend.visible else ""
+
+
+func _build_legend() -> void:
+	_legend = PanelContainer.new()
+	_legend.name = "Legend"
+	_legend.top_level = true
+	_legend.visible = false
+	_legend.z_index = 10
+	_legend.mouse_filter = Control.MOUSE_FILTER_STOP
+	_legend.gui_input.connect(func(e: InputEvent) -> void:
+		if (e is InputEventMouseButton and e.pressed) or (e is InputEventScreenTouch and e.pressed):
+			hide_legend())
+	_legend_text = Label.new()
+	_legend_text.theme_type_variation = &"Caption"
+	_legend_text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_legend_text.add_theme_color_override(&"font_color", Tokens.TEXT)
+	_legend.add_child(_legend_text)
+	add_child(_legend)
+
+
+func _legend_box(accent: Color) -> StyleBoxFlat:
+	var box := StyleBoxFlat.new()
+	box.bg_color = Tokens.HC_BG if high_contrast else Tokens.CARD
+	box.border_color = accent
+	box.border_width_left = Tokens.ESP_4
+	box.set_corner_radius_all(Tokens.RADIUS_8)
+	box.content_margin_left = Tokens.ESP_12
+	box.content_margin_right = Tokens.ESP_12
+	box.content_margin_top = Tokens.ESP_8
+	box.content_margin_bottom = Tokens.ESP_8
+	return box
 
 
 func meters() -> Array[MeterIcon]:

@@ -17,12 +17,12 @@ enum Mode { HIDDEN, TARGET, BAR }
 
 const P8_TARGET_ONLY := false     # PROPOSTA P8 — committee and chamber only with the target before the choice
 const KIND_NAMES := {"committee": "Comissão especial", "chamber": "Câmara", "senate": "Senado"}
-const UNKNOWN := "[a definir]"
-const UNKNOWN_COUNT := "[—]"                            # committee count [a definir] (C-11)
-const UNKNOWN_TOTAL := "[nº de membros — a definir]"    # committee size (C-11)
+const UNKNOWN := "maioria"   # P-017 (D-200)
+const UNKNOWN_COUNT := "—"                            # committee count [a definir] (C-11)
+const UNKNOWN_TOTAL := ""      # committee size (C-11)
 const NO_COUNT := "—"                                   # before the vote (D-168)
-const BELOW_COUNT := "[< %d]"                           # a vote the government wins (T-09.7)
-const EXACT_TBD := " · valor exato [a definir]"         # T-09.7
+const BELOW_COUNT := "< %d"                           # a vote the government wins (T-09.7)
+const EXACT_TBD := ""         # T-09.7
 const BELOW_RATIO := 0.675        # count unknown, below the quorum: fill = quorum × ratio (T-09.7 draws 45% of 81) — a definir
 const COMMITTEE_QUORUM_AT := 0.5  # committee quorum line position [a definir] (C-11)
 const UNKNOWN_LINE_ALPHA := 0.6   # line drawn dimmed while its position is [a definir] (C-11)
@@ -226,7 +226,7 @@ func _make_count() -> String:
 
 func _make_total() -> String:
 	var total: Variant = _board.get("total")
-	return " / %d" % int(total) if _known(total) else " / " + UNKNOWN_TOTAL
+	return " / %d" % int(total) if _known(total) else ""
 
 
 func _make_quorum_text() -> String:
@@ -243,13 +243,13 @@ func _make_a11y() -> String:
 	var total: Variant = _board.get("total")
 	var q: Variant = _board.get("quorum")
 	var votes: Variant = _board.get("votes")
-	var total_s := str(int(total)) if _known(total) else UNKNOWN_TOTAL
+	var total_s := str(int(total)) if _known(total) else "todos os membros"
 	var quorum_s := str(int(q)) if _known(q) else UNKNOWN
 	if _known(votes):
 		return "%s: %d de %s votos; quórum %s" % [name, int(votes), total_s, quorum_s]
 	if _board.get("reached") == null:
 		return "%s: meta de %s votos de %s" % [name, quorum_s, total_s]
-	return "%s: [votos a definir] de %s; quórum %s" % [name, total_s, quorum_s]
+	return "%s: menos votos que o quórum %s, de %s" % [name, quorum_s, total_s]
 
 
 func _make_fill() -> float:

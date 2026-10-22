@@ -111,4 +111,4 @@ static func capture_warning(meter_data: Array, meters: Dictionary, at_or_above: 
 
 
 static func category_label(category: String) -> String:
-	return String(CATEGORY_LABELS.get(category, "[a definir]"))
+	return String(CATEGORY_LABELS.get(category, ""))

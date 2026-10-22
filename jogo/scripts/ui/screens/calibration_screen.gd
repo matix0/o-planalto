@@ -11,6 +11,10 @@ const TO_YEAR_FADE := 0.4          # A-23 (Main fades the two screens)
 const TO_YEAR_ZOOM := 1.04         # A-23: "leve zoom" [intensidade a definir]
 const CARD_A11Y := "Pergunta %d de %d: %s"   # T-03.1 [formato a definir]
 const PROGRESS_NOUN := "Pergunta"
+const PROGRESS_PREFIX := "Alinhamento"        # footer "Alinhamento · n/6" (P-017)
+const HEADER_TITLE := "ALINHAMENTO INICIAL"   # header where the HUD will be (P-017, D-200)
+const HEADER_TEXT := "Suas 6 respostas definem o ponto de partida do mandato e suas promessas no gráfico final"
+const HEADER_HEIGHT := 72
 
 @onready var _safe: MarginContainer = %SafeArea
 @onready var _card: SwipeCard = %Card
@@ -29,7 +33,34 @@ func _ready() -> void:
 	var a := app()
 	if a:
 		a.pause_changed.connect(_on_pause_changed)
+	_build_header()
 	_apply_settings()
+
+
+## The HUD slot holds a header: what this screen is and why it matters (P-017).
+func _build_header() -> void:
+	var space: Control = $SafeArea/Column/HudSpace
+	space.custom_minimum_size.y = HEADER_HEIGHT
+	var box := VBoxContainer.new()
+	box.name = "Header"
+	box.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	box.alignment = BoxContainer.ALIGNMENT_CENTER
+	box.add_theme_constant_override(&"separation", Tokens.ESP_4)
+	var title := Label.new()
+	title.name = "HeaderTitle"
+	title.theme_type_variation = &"TitleS"
+	title.text = HEADER_TITLE
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.add_theme_color_override(&"font_color", Tokens.ACCENT)
+	var text := Label.new()
+	text.name = "HeaderText"
+	text.theme_type_variation = &"Caption"
+	text.text = HEADER_TEXT
+	text.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	box.add_child(title)
+	box.add_child(text)
+	space.add_child(box)
 
 
 # --- AppScreen -------------------------------------------------------------------------------
@@ -76,7 +107,7 @@ func _show_question() -> void:
 		"mode": &"calibration",
 	})
 	_card.accessibility_name = CARD_A11Y % [index, total, question]
-	_footer.set_progress(index, total, PROGRESS_NOUN)
+	_footer.set_progress(index, total, PROGRESS_NOUN, PROGRESS_PREFIX)
 	_card.play_enter()
 	_focus_card()
 

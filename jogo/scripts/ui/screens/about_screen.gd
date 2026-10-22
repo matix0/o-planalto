@@ -138,11 +138,11 @@ func _build_font_licenses() -> void:
 		var first_line := text.get_slice("\n", 0).strip_edges()
 		var copyright := Label.new()
 		copyright.theme_type_variation = &"Caption"
-		copyright.text = first_line if first_line != "" else "[aviso de licença — a definir]"
+		copyright.text = first_line if first_line != "" else ""
 		copyright.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		_fonts_box.add_child(copyright)
 		_add_fold(_fonts_box, "Licença OFL 1.1 — %s" % item[0],
-			text.strip_edges() if text != "" else "[texto da licença — a definir]")
+			text.strip_edges() if text != "" else "")
 
 
 ## Godot: the MIT notice (Engine.get_license_text) and the third-party components with

@@ -68,7 +68,7 @@ stretch_mode = 5
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"TitleS"
-text = "[quem fala — a definir]"
+text = ""
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -81,7 +81,7 @@ mouse_filter = 2
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "[problema de exemplo — a definir]"
+text = ""
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -104,7 +104,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 1
 theme_type_variation = &"TitleM"
-text = "[carta de exemplo — a definir]"
+text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -140,14 +140,14 @@ theme_override_constants/separation = 16
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"TitleM"
-text = "[título do Aprendizado — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="SheetText" type="Label" parent="SheetArea/Sheet/SheetBox"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "[texto do Aprendizado de exemplo — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="More" type="FoldableContainer" parent="SheetArea/Sheet/SheetBox"]
@@ -161,7 +161,7 @@ title = "Saiba mais"
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "[dados e fontes — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="SheetContinue" type="Button" parent="SheetArea/Sheet/SheetBox"]
@@ -235,5 +235,5 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 theme_type_variation = &"Primary"
-text = "[avançar — a definir]"
+text = ""
 autowrap_mode = 3

@@ -13,7 +13,8 @@
     ],
     "quote": "Socialismo ou barbárie.",
     "author": "Rosa Luxemburgo (Brochura de Junius, 1915)",
-    "source": "https://www.marxists.org/francais/luxembur/junius/"
+    "source": "https://www.marxists.org/francais/luxembur/junius/",
+    "description": "A Dignidade chegou a zero. Sem saúde, comida e moradia, o povo passou a viver só para sobreviver."
   },
   {
     "id": "END-002",
@@ -29,7 +30,8 @@
     ],
     "quote": "Não é moda, quem pensa incomoda / … não vira massa de manobra",
     "author": "MV Bill (\"Só Deus Pode Me Julgar\")",
-    "source": "https://www.letras.mus.br/blog/frases-mv-bill/"
+    "source": "https://www.letras.mus.br/blog/frases-mv-bill/",
+    "description": "A Consciência chegou a zero. Sem escola nem senso crítico, o povo deixou de entender o que acontece com ele."
   },
   {
     "id": "END-003",
@@ -45,7 +47,8 @@
     ],
     "quote": "Em lugar do cidadão formou-se um consumidor, que aceita ser chamado de usuário.",
     "author": "Milton Santos (O Espaço do Cidadão, 1987)",
-    "source": "https://vitruvius.com.br/revistas/read/arquitextos/23.268/8604"
+    "source": "https://vitruvius.com.br/revistas/read/arquitextos/23.268/8604",
+    "description": "A Soberania chegou a zero. As decisões do país passaram a ser tomadas fora dele."
   },
   {
     "id": "END-004",
@@ -61,7 +64,8 @@
     ],
     "quote": "A emancipação dos trabalhadores deve ser obra dos próprios trabalhadores.",
     "author": "Estatutos da AIT (1864)",
-    "source": "https://www.marxists.org/archive/marx/iwma/documents/1864/rules.htm"
+    "source": "https://www.marxists.org/archive/marx/iwma/documents/1864/rules.htm",
+    "description": "A Segurança chegou a zero. O Estado perdeu o controle das ruas e o povo passou a se organizar sozinho."
   },
   {
     "id": "END-005",
@@ -77,7 +81,8 @@
     ],
     "quote": null,
     "author": null,
-    "source": null
+    "source": null,
+    "description": "A Integridade chegou a zero. A corrupção tomou conta das instituições e ninguém confia em mais nada."
   },
   {
     "id": "END-006",
@@ -93,7 +98,8 @@
     ],
     "quote": "O bem que o Estado pode fazer é limitado; o mal, infinito.",
     "author": "Roberto Campos (Na virada do milênio, 1999)",
-    "source": "https://pt.wikiquote.org/wiki/Roberto_Campos"
+    "source": "https://pt.wikiquote.org/wiki/Roberto_Campos",
+    "description": "O Caixa chegou a zero. Sem dinheiro, o governo não consegue pagar nem os serviços básicos."
   },
   {
     "id": "END-007",
@@ -103,7 +109,8 @@
     "conditions": [],
     "quote": "Uma condenação política exige obrigatoriamente a ocorrência de um crime de responsabilidade…",
     "author": "Dilma Rousseff (Senado, 29/08/2016)",
-    "source": "https://agenciabrasil.ebc.com.br/politica/noticia/2016-08/confira-integra-do-discurso-de-dilma-em-julgamento-do-impeachment-no-senado"
+    "source": "https://agenciabrasil.ebc.com.br/politica/noticia/2016-08/confira-integra-do-discurso-de-dilma-em-julgamento-do-impeachment-no-senado",
+    "description": "O Congresso e o Senado aprovaram seu afastamento. O vice assume o cargo."
   },
   {
     "id": "END-008",
@@ -119,7 +126,8 @@
     ],
     "quote": "Liberdade ainda que tardia.",
     "author": "Lema da Inconfidência Mineira",
-    "source": "https://en.wikipedia.org/wiki/Flag_of_Minas_Gerais"
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Minas_Gerais",
+    "description": "A Legitimidade chegou a zero. O povo foi às ruas e o governo caiu."
   },
   {
     "id": "END-009",
@@ -135,7 +143,8 @@
     ],
     "quote": "Brasil, ame-o ou deixe-o.",
     "author": "Slogan do governo Médici",
-    "source": "https://periodicos.ufpe.br/revistas/pedaletra/article/view/245311"
+    "source": "https://periodicos.ufpe.br/revistas/pedaletra/article/view/245311",
+    "description": "Você terminou com Segurança no máximo. A ordem virou vigilância, e o medo virou forma de governar."
   },
   {
     "id": "END-010",
@@ -151,7 +160,8 @@
     ],
     "quote": "Tudo no Estado, nada fora do Estado, nada contra o Estado.",
     "author": "Mussolini (28/10/1925)",
-    "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
+    "source": "https://en.wikipedia.org/wiki/Benito_Mussolini",
+    "description": "Você terminou com Capital Político no máximo. O Congresso virou carimbo, e ninguém mais faz oposição."
   },
   {
     "id": "END-011",
@@ -167,7 +177,8 @@
     ],
     "quote": "Crer, obedecer, combater.",
     "author": "Lema fascista",
-    "source": "https://en.wikipedia.org/wiki/Glossary_of_Fascist_Italy"
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_Fascist_Italy",
+    "description": "Você terminou com Legitimidade no máximo. A popularidade virou culto, sem espaço para crítica."
   },
   {
     "id": "END-012",
@@ -193,7 +204,8 @@
     ],
     "quote": null,
     "author": null,
-    "source": null
+    "source": null,
+    "description": "Você terminou popular, mas com pouca Consciência e pouca Integridade. As eleições continuam, mas só na aparência."
   },
   {
     "id": "END-013",
@@ -219,7 +231,8 @@
     ],
     "quote": "Temos ódio à ditadura. Ódio e nojo.",
     "author": "Ulysses Guimarães (promulgação da Constituição, 05/10/1988)",
-    "source": "https://acervodigital.cedec.org.br/wp-content/uploads/2022/09/Ulysses-Guimaraes-discurso-na-data-da-promulgacao-da-Constituicao.pdf"
+    "source": "https://acervodigital.cedec.org.br/wp-content/uploads/2022/09/Ulysses-Guimaraes-discurso-na-data-da-promulgacao-da-Constituicao.pdf",
+    "description": "Você terminou com Segurança alta, Dignidade e Consciência baixas. Os quartéis tomaram o poder."
   },
   {
     "id": "END-014",
@@ -245,7 +258,8 @@
     ],
     "quote": "Já temi a minha morte duas vezes, hoje temo a morte da democracia.",
     "author": "Dilma Rousseff (Senado, 29/08/2016)",
-    "source": "https://www12.senado.leg.br/noticias/materias/2016/08/30/dilma-fala-ao-senado-e-diz-temer-a-201cmorte-da-democracia201d-1"
+    "source": "https://www12.senado.leg.br/noticias/materias/2016/08/30/dilma-fala-ao-senado-e-diz-temer-a-201cmorte-da-democracia201d-1",
+    "description": "Você terminou com Capital Político alto, Consciência e Soberania baixas. O Congresso derrubou as regras do jogo."
   },
   {
     "id": "END-015",
@@ -271,7 +285,8 @@
     ],
     "quote": "Você não é nada, seu povo é tudo.",
     "author": "Propaganda nazista",
-    "source": "https://www.dhm.de/lemo/kapitel/ns-regime/innenpolitik/volksgemeinschaft"
+    "source": "https://www.dhm.de/lemo/kapitel/ns-regime/innenpolitik/volksgemeinschaft",
+    "description": "Você terminou muito popular, com Consciência e Integridade baixas. O carisma substituiu as instituições."
   },
   {
     "id": "END-016",
@@ -297,7 +312,8 @@
     ],
     "quote": "Nossos dados são extraídos, monetizados e usados para concentrar o poder político e econômico nas mãos de um punhado de bilionários.",
     "author": "Lula (Barcelona, 17/04/2026)",
-    "source": "https://www.brasildefato.com.br/2026/04/17/lula-critica-big-techs-e-avanco-da-extrema-direita-durante-a-1a-cupula-brasil-espanha/"
+    "source": "https://www.brasildefato.com.br/2026/04/17/lula-critica-big-techs-e-avanco-da-extrema-direita-durante-a-1a-cupula-brasil-espanha/",
+    "description": "Você terminou com Soberania, Integridade e Dignidade baixas. Empresas estrangeiras controlam os dados e a vida do povo."
   },
   {
     "id": "END-017",
@@ -328,7 +344,8 @@
     ],
     "quote": "E daí? Lamento. Quer que eu faça o quê?",
     "author": "Jair Bolsonaro (28/04/2020)",
-    "source": "https://www.cartacapital.com.br/politica/retrospectiva-as-piores-declaracoes-de-bolsonaro-durante-a-pandemia/"
+    "source": "https://www.cartacapital.com.br/politica/retrospectiva-as-piores-declaracoes-de-bolsonaro-durante-a-pandemia/",
+    "description": "Você terminou com Dignidade e Integridade muito baixas. A violência do Estado virou política contra os mais pobres."
   },
   {
     "id": "END-018",
@@ -359,7 +376,8 @@
     ],
     "quote": "Índio já tem terra demais, vamos tratá-los como seres humanos…",
     "author": "Jair Bolsonaro (2018)",
-    "source": "https://ihu.unisinos.br/publicacoes/78-noticias/575956-nem-um-centimetro-a-mais-para-terras-indigenas-diz-bolsonaro"
+    "source": "https://ihu.unisinos.br/publicacoes/78-noticias/575956-nem-um-centimetro-a-mais-para-terras-indigenas-diz-bolsonaro",
+    "description": "Você terminou com o Caixa cheio e o povo na miséria. O país lucra explorando a própria população."
   },
   {
     "id": "END-019",
@@ -390,7 +408,8 @@
     ],
     "quote": "Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição.",
     "author": "Constituição Federal de 1988, art. 1º, parágrafo único",
-    "source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    "source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "description": "Você terminou com Dignidade, Consciência, Soberania e Integridade altas. O país decide o próprio caminho, com o povo junto."
   },
   {
     "id": "END-020",
@@ -421,7 +440,8 @@
     ],
     "quote": "Ninguém liberta ninguém, ninguém se liberta sozinho: os homens se libertam em comunhão.",
     "author": "Paulo Freire (Pedagogia do Oprimido)",
-    "source": "http://www.projetomemoria.art.br/PauloFreire/pensamento/02_pensamento_pedagogia_do_oprimido.html"
+    "source": "http://www.projetomemoria.art.br/PauloFreire/pensamento/02_pensamento_pedagogia_do_oprimido.html",
+    "description": "Você terminou com Consciência e Integridade altas. O povo participa das decisões e fiscaliza o governo."
   },
   {
     "id": "END-021",
@@ -447,7 +467,8 @@
     ],
     "quote": "Queremos um Brasil forte e independente.",
     "author": "Leonel Brizola (28/08/1961)",
-    "source": "https://www.brasildefato.com.br/2021/08/21/resistiremos-ate-o-fim-anuncia-brizola-a-espera-do-bombardeio-do-piratini/"
+    "source": "https://www.brasildefato.com.br/2021/08/21/resistiremos-ate-o-fim-anuncia-brizola-a-espera-do-bombardeio-do-piratini/",
+    "description": "Você terminou com Soberania alta, Caixa e Dignidade em bom nível. O país cresceu sem depender de fora."
   },
   {
     "id": "END-022",
@@ -473,7 +494,8 @@
     ],
     "quote": "A democracia não é só o direito de votar.",
     "author": "Lula",
-    "source": "https://pt.org.br/lula-a-democracia-nao-e-so-o-direito-de-votar-mas-tambem-ajudar-a-governar/"
+    "source": "https://pt.org.br/lula-a-democracia-nao-e-so-o-direito-de-votar-mas-tambem-ajudar-a-governar/",
+    "description": "Você terminou com Consciência e Integridade muito altas. O povo organizado cobra e acompanha cada decisão."
   },
   {
     "id": "END-023",
@@ -499,7 +521,8 @@
     ],
     "quote": "Sem justiça, a paz será impossível.",
     "author": "Dom Helder Câmara (Oslo, 1974)",
-    "source": "https://domheldercamara.org.br/2018/01/05/dom-helder-o-profeta-dos-direitos-humanos/"
+    "source": "https://domheldercamara.org.br/2018/01/05/dom-helder-o-profeta-dos-direitos-humanos/",
+    "description": "Você terminou com Segurança e Dignidade altas. A violência caiu porque a vida melhorou."
   },
   {
     "id": "END-024",
@@ -530,7 +553,8 @@
     ],
     "quote": "Quero mostrar ao mundo que é possível cuidar do povo pobre.",
     "author": "Lula",
-    "source": "https://pt.org.br/quero-mostrar-que-e-possivel-cuidar-do-povo-pobre-afirma-lula/"
+    "source": "https://pt.org.br/quero-mostrar-que-e-possivel-cuidar-do-povo-pobre-afirma-lula/",
+    "description": "Você terminou com Dignidade, Integridade e Consciência altas. Cuidar das pessoas virou prioridade do Estado."
   },
   {
     "id": "END-025",
@@ -561,7 +585,8 @@
     ],
     "quote": "Ninguém faz opção pela pobreza.",
     "author": "Lula (paráfrase de entrevista, 2023)",
-    "source": "https://www.aosfatos.org/noticias/lula-contexto-brasileiros-pobres/"
+    "source": "https://www.aosfatos.org/noticias/lula-contexto-brasileiros-pobres/",
+    "description": "Você terminou com Soberania e Dignidade altas. O país produz a própria comida e ninguém passa fome."
   },
   {
     "id": "END-026",
@@ -587,7 +612,8 @@
     ],
     "quote": "Quem tem fome tem pressa.",
     "author": "Herbert de Souza, Betinho (Ação da Cidadania, 1993)",
-    "source": "https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/eventos-no-rio-homenageiam-betinho-nos-20-anos-de-sua-morte"
+    "source": "https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/eventos-no-rio-homenageiam-betinho-nos-20-anos-de-sua-morte",
+    "description": "Você terminou com Dignidade e Consciência altas. O país provou que a fome é uma escolha política, e escolheu acabar com ela."
   },
   {
     "id": "END-027",
@@ -597,7 +623,8 @@
     "conditions": [],
     "quote": "Só há duas opções nesta vida: se resignar ou se indignar.",
     "author": "Darcy Ribeiro (atribuída)",
-    "source": "https://pt.wikiquote.org/wiki/Darcy_Ribeiro"
+    "source": "https://pt.wikiquote.org/wiki/Darcy_Ribeiro",
+    "description": "Você chegou ao fim dos 4 anos. Nada quebrou, mas quase nada mudou."
   },
   {
     "id": "END-028",
@@ -607,6 +634,7 @@
     "conditions": [],
     "quote": "Forças terríveis levantaram-se contra mim…",
     "author": "Jânio Quadros (carta-renúncia, 25/08/1961)",
-    "source": "https://www12.senado.leg.br/noticias/especiais/arquivo-s/ha-60-anos-congresso-aceitou-renuncia-e-abortou-golpe-de-janio-quadros"
+    "source": "https://www12.senado.leg.br/noticias/especiais/arquivo-s/ha-60-anos-congresso-aceitou-renuncia-e-abortou-golpe-de-janio-quadros",
+    "description": "Você deixou o cargo antes do fim do mandato."
   }
 ]

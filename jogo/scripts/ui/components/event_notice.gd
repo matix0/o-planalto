@@ -21,9 +21,9 @@ const RING_SIZE := 64             # circle esp-64, contour 2 white
 const ICON_SIZE := 40
 const ICON_POP := 0.85            # A-14: icon enters from 85% (a validar); RM: none
 const P5 := false                 # PROPOSTA P5: show the card that caused the event — off
-const COUNTER_FORMAT := "[%d de %d — indicador a definir]"
-const ORIGIN_LABEL := "[rótulo da origem — a definir]"
-const HINT_TEXT := "[toque para continuar — a definir]"
+const COUNTER_FORMAT := "%d de %d"
+const ORIGIN_LABEL := "Consequência de uma decisão sua"
+const HINT_TEXT := "Toque na tela para continuar"
 
 var _waiting := false
 var _pressed := false

@@ -13,7 +13,7 @@ signal abandon_requested
 
 const FADE := 0.2
 const FADE_REDUCED := 0.15
-const TITLE := "[título do menu — a definir]"
+const TITLE := "Pausa"
 
 @onready var _scrim: ColorRect = %Scrim
 @onready var _panel: PanelContainer = %Panel

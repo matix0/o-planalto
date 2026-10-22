@@ -5,7 +5,7 @@ extends VBoxContainer
 ## be hidden (P1, text at 36 px, D-169). High contrast (P2): black disc,
 ## white ring and white silhouette (wireframe Tela).
 
-const UNKNOWN := "[quem_fala — a definir]"
+const UNKNOWN := ""   # no quem_fala: the name line hides (P-017, D-200)
 const PORTRAIT_HC_SVG := """<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 56 56"><circle cx="28" cy="28" r="27" fill="#000000" stroke="#FFFFFF" stroke-width="2"/><circle cx="28" cy="22" r="9" fill="#FFFFFF"/><path d="M11 49c2-9 9-14 17-14s15 5 17 14Z" fill="#FFFFFF"/></svg>"""
 
 var high_contrast: bool = false:
@@ -28,6 +28,7 @@ func _ready() -> void:
 
 func setup(speaker_name: String, show_portrait: bool = true) -> void:
 	_name.text = speaker_name if speaker_name.strip_edges() != "" else UNKNOWN
+	_name.visible = _name.text != ""
 	_portrait.visible = show_portrait
 
 
@@ -37,6 +38,7 @@ func speaker_name() -> String:
 
 func _apply_contrast() -> void:
 	_portrait.texture = _hc_portrait() if high_contrast else _normal_texture
+	_name.add_theme_color_override(&"font_color", Tokens.TEXT if high_contrast else Tokens.ACCENT)   # D-199
 
 
 static func _hc_portrait() -> Texture2D:

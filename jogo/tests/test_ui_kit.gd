@@ -104,7 +104,7 @@ func _test_hud(host: Control) -> void:
 	for m in hud.meters():
 		ids.append(m.meter_id)
 	_expect(ids == PackedStringArray(Hud.ORDER), "8 meters in GDD order: %s" % ", ".join(ids))
-	_expect(hud.get_combined_minimum_size() == Tokens.HUD_SIZE, "HUD is 336×52, got %s" % hud.get_combined_minimum_size())
+	_expect(hud.get_combined_minimum_size().x <= 342.0 and hud.get_combined_minimum_size().y <= 70.0, "HUD fits 342 px wide, 70 tall with the short names (P-017), got %s" % hud.get_combined_minimum_size())
 	hud.set_values(START)
 	_expect(hud.values() == START, "set_values")
 	hud.apply_changes([

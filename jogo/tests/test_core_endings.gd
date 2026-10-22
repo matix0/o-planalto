@@ -102,7 +102,7 @@ func _final_view() -> void:
 	_eq(v["meter"], "treasury", "catastrophe meter")
 	_eq(v["meters"].size(), 8, "8 meters with numbers on the final screen")
 	_check(v["closing_phrase"].begins_with("O país que você construiu"), "closing phrase (GDD §9.2)")
-	_check(v["description"].contains("a definir"), "short description is a placeholder")
+	_check(v["description"] != "" and not v["description"].contains("a definir"), "short description from endings.json (P-017)")
 	# Ending without a verified quote (gdd 02 §3.5): empty quote → the block is hidden.
 	f.run.ending = {"id": "END-005", "reason": "catastrophe", "meter": "integrity"}
 	_eq(f.final_view()["ending"]["quote"], "", "END-005 has no quote")

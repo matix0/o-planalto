@@ -140,7 +140,8 @@ func footer() -> CardFooter:
 func _show_stage(from_enter: bool) -> void:
 	_serial += 1
 	_locked = false
-	_footer.set_text(GameFlow.SCENE_FOOTER)   # every stage; a phase card brings its own
+	_update_header()
+	_footer.set_text(_scene_footer())   # every stage; a phase card brings its own
 	var animate := not from_enter and not bool(_view.get("readonly", false))
 	match String(_view.get("stage", "")):
 		"intro":
@@ -169,7 +170,7 @@ func _show_intro() -> void:
 	_tap_layer.visible = false
 	_consequence.hide_now()
 	_sheet.hide_now()
-	_footer.set_text(GameFlow.SCENE_FOOTER)
+	_footer.set_text(_scene_footer())
 	_intro_text.show_intro(String(_view.get("intro_text", "")))
 	_intro.visible = true
 	_intro.modulate.a = 1.0
@@ -196,7 +197,7 @@ func _show_phase(animate: bool) -> void:
 	_tap_layer.visible = false
 	_speaker.setup(String(view.get("speaker", "")), _portrait_on())
 	_problem.text = String(view.get("problem", ""))
-	_footer.set_text(String(view.get("footer", GameFlow.SCENE_FOOTER)))
+	_footer.set_text(String(view.get("footer", _scene_footer())))
 	_card.setup({
 		"title": view.get("title", ""),
 		"problem": view.get("problem", ""),
@@ -334,7 +335,7 @@ func _show_result(animate: bool) -> void:
 	_consequence.hide_now()
 	_sheet.hide_now()
 	_set_body(false)
-	_footer.set_text(GameFlow.SCENE_FOOTER)
+	_footer.set_text(_scene_footer())
 	_result.show_result(String(res.get("title", "")), String(res.get("text", "")))
 	_result.visible = true
 	_tap_layer.visible = true
@@ -618,3 +619,22 @@ func _unlock(serial: int) -> void:
 func _kill(t: Tween) -> void:
 	if t and t.is_valid():
 		t.kill()
+
+
+func _scene_footer() -> String:
+	return GameFlow.scene_footer(maxi(1, int(_view.get("phase", 1))), String(_view.get("stage", "")) == "result")
+
+
+## Header in the impeachment red, above the scoreboard (ideia inicial; P-017, D-199).
+func _update_header() -> void:
+	var header := get_node_or_null(^"SafeArea/Column/SceneHeader") as Label
+	if header == null:
+		header = Label.new()
+		header.name = "SceneHeader"
+		header.theme_type_variation = &"Caption"
+		header.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		header.uppercase = true
+		var gap: Node = $SafeArea/Column/HudGap
+		gap.add_sibling(header)
+	header.add_theme_color_override(&"font_color", Tokens.TEXT if Settings.high_contrast else Tokens.IMPEACH_ACCENT)
+	header.text = _scene_footer()

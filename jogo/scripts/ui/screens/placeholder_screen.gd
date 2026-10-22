@@ -1,9 +1,9 @@
 extends AppScreen
 ## Stand-in for screens that do not exist yet (wave 2: calibration, game, final).
-## Shows the screen id and "[em construção]"; the pause works on "calibration"
+## Shows the screen id and "Em construção"; the pause works on "calibration"
 ## and "game" so the shell can be tried end to end.
 
-const BUILDING := "[em construção]"
+const BUILDING := "Em construção"
 const PAUSABLE_IDS: Array[StringName] = [&"calibration", &"game", &"impeachment"]
 
 @onready var _safe_area: MarginContainer = %SafeArea

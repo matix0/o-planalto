@@ -46,12 +46,16 @@ static func build(step: int = Tokens.DEFAULT_STEP, high_contrast: bool = false) 
 		t.set_font(&"font", name, f["inter_600"])
 		t.set_font_size(&"font_size", name, btn_size)
 		t.set_stylebox(&"focus", name, _focus(Tokens.RADIUS_12))
-	var primary_fg := Tokens.HC_BG if high_contrast else Tokens.BG
+	# Primary: green of the ideia inicial (D-199), white text 5.1:1; high contrast keeps white.
+	var primary_fg := Tokens.HC_BG if high_contrast else Tokens.TEXT
+	var p_normal := Tokens.TEXT if high_contrast else Tokens.PRIMARY_BG
+	var p_hover := Tokens.TEXT if high_contrast else Tokens.PRIMARY_HOVER
+	var p_pressed := Tokens.HIGHLIGHT if high_contrast else Tokens.PRIMARY_PRESSED
 	_button_colors(t, "Primary", primary_fg)
-	t.set_stylebox(&"normal", &"Primary", _box(Tokens.TEXT, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
-	t.set_stylebox(&"hover", &"Primary", _box(Tokens.TEXT, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
-	t.set_stylebox(&"pressed", &"Primary", _box(text2 if not high_contrast else Tokens.HIGHLIGHT, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
-	t.set_stylebox(&"disabled", &"Primary", _box(Color(Tokens.TEXT, 0.5), Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
+	t.set_stylebox(&"normal", &"Primary", _box(p_normal, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
+	t.set_stylebox(&"hover", &"Primary", _box(p_hover, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
+	t.set_stylebox(&"pressed", &"Primary", _box(p_pressed, Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
+	t.set_stylebox(&"disabled", &"Primary", _box(Color(p_normal, 0.5), Tokens.RADIUS_12, 0, Color(), Tokens.ESP_16, Tokens.ESP_12))
 
 	_button_colors(t, "Secondary", Tokens.TEXT)
 	var sec_border := 2

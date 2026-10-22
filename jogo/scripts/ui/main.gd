@@ -14,7 +14,7 @@ signal screen_changed(screen_id: StringName)
 ## The pause menu opened (true) or closed (false) — e.g. SwipeCard.cancel_gesture().
 signal pause_changed(is_open: bool)
 
-## Screen ids → scenes. Missing files fall back to the placeholder ("[em construção]").
+## Screen ids → scenes. Missing files fall back to the placeholder ("Em construção").
 const SCREENS := {
 	&"title": "res://scenes/screens/title.tscn",
 	&"tutorial": "res://scenes/screens/tutorial.tscn",
@@ -42,10 +42,10 @@ const SCREEN_FADE := 0.3             # A-22 / A-27 (total: half out, half in)
 const FINAL_FADE := 1.0              # A-26 / D-184: to black (half) and from black (half)
 const FINAL_HOLD := 0.8              # D-184: pause on black before the final screen (DP-009, a validar)
 const SAVE_UNREADABLE_TEXT := "Não foi possível continuar o mandato"   # gdd 10 §5 (T-01.4)
-const SAVE_FAILED_TEXT := "[a definir — aviso de falha ao gravar]"      # C-21, T-14.1
-const ABANDON_TITLE := "[título — a definir]"
-const ABANDON_BODY_CALIBRATION := "[texto — a definir. Conteúdo: volta ao início, sem final (gdd 10 §3.3)]"
-const ABANDON_BODY_RUN := "[texto — a definir. Conteúdo: leva ao final “Renúncia” completo, com citação, epílogo, eixo e medidores (gdd 10 §3.3)]"
+const SAVE_FAILED_TEXT := "Não foi possível salvar automaticamente neste dispositivo."      # C-21, T-14.1
+const ABANDON_TITLE := "Sair da partida"
+const ABANDON_BODY_CALIBRATION := "Deseja sair do alinhamento e voltar ao menu inicial?"
+const ABANDON_BODY_RUN := "Abandonar o cargo agora encerrará seu governo como Renúncia."
 
 ## Game API: the `Game` autoload by default. Tests inject a fake before add_child().
 var game: Node = null

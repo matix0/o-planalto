@@ -14,14 +14,14 @@ extends Control
 ## own clicks. The sentence is centered in this control's rect with esp-24 on the sides —
 ## place it between the HUD and the footer, as in T-07.3.
 ## Read-only (run resumed after the app closed, gdd 10 §5): a tag
-## "[indicação de releitura — a definir]" shows above the sentence.
+## "Você já leu esta carta" shows above the sentence.
 
 signal continued
 
 const FADE_IN := 0.2          # A-11 (a validar); same with "Reduzir movimento"
 const FADE_OUT := 0.15
-const HINT_TEXT := "[toque para continuar — a definir]"
-const REREAD_TEXT := "[indicação de releitura — a definir]"
+const HINT_TEXT := "Toque na tela para continuar"
+const REREAD_TEXT := "Você já leu esta carta"
 
 ## A-11 is the same with "Reduzir movimento" (short fade); kept for symmetry with the sheet.
 var reduce_motion: bool = false

@@ -219,7 +219,7 @@ func _new_term_and_tutorial() -> void:
 	_expect(_main.current_id() == &"calibration", "tutorial ends in calibration (got %s)" % _main.current_id())
 	var ph: Node = _main.current_screen()
 	var labels := _texts(ph)
-	_expect(labels.has("[em construção]") and labels.has("Tela: calibration"), "calibration placeholder")
+	_expect(labels.has("Em construção") and labels.has("Tela: calibration"), "calibration placeholder")
 
 
 func _pause_checks() -> void:
@@ -336,12 +336,18 @@ func _settings_checks() -> void:
 
 
 func _about_checks() -> void:
+	# D-198: "Sobre" left the title; credits open from Configurações.
 	var title: Node = _main.current_screen()
 	var b: Array = title.buttons()
-	b[3].grab_focus()
-	b[3].pressed.emit()
+	_expect(b.size() == 3 and not title.get_node("%AboutButton").visible, "no Sobre on the title (D-198)")
+	b[2].pressed.emit()
 	await _settle()
-	_expect(_main.current_id() == &"about", "title → about")
+	var credits: Button = _main.current_screen().find_child("CreditsButton", true, false)
+	_expect(credits != null, "Configurações → Créditos e licenças")
+	credits.grab_focus()
+	credits.pressed.emit()
+	await _settle()
+	_expect(_main.current_id() == &"about", "settings → about")
 	var ab: Node = _main.current_screen()
 	var texts := _texts(ab)
 	for t in ["Idealização", "Mateus", "Professor Alisson", "Godot 4.7", "Poppins e Inter — Google Fonts, licença OFL"]:
@@ -385,8 +391,10 @@ func _about_checks() -> void:
 	close.pressed.emit()
 	await _settle()
 	await _frames(2)
-	_expect(_main.current_id() == &"title", "about closes to title")
-	_expect(_focus() == b[3], "focus back on Sobre")
+	_expect(_main.current_id() == &"settings", "about closes to settings")
+	_main.current_screen().close()
+	await _settle()
+	_expect(_main.current_id() == &"title", "settings closes to title")
 
 
 func _placeholder_and_esc_rule() -> void:

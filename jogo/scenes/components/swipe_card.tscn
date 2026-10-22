@@ -108,7 +108,7 @@ theme_override_constants/margin_bottom = 24
 layout_mode = 2
 size_flags_vertical = 3
 theme_type_variation = &"TitleM"
-text = "[título da carta]"
+text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -156,7 +156,7 @@ stretch_mode = 5
 [node name="Text" type="Label" parent="CardFit/Card/TapHint/Row"]
 layout_mode = 2
 theme_type_variation = &"Caption"
-text = "[dica do toque — a definir]"
+text = ""
 
 [node name="FocusRing" type="Panel" parent="CardFit/Card"]
 visible = false

@@ -9,6 +9,13 @@ Versionamento: [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Alterado (P-017, correções do playtest)
+- Nenhum texto "[a definir]" na tela: textos do PO e propostas (DP-025); novo `tests/test_no_placeholders.gd`
+- HUD: cor por medidor, sigla sob cada ícone, borda vermelha ≤ 20 e legenda ao tocar ou passar o mouse; nomes no tutorial 2/4
+- Calibração com cabeçalho "ALINHAMENTO INICIAL" e rodapé "Alinhamento · n/6"
+- Paleta da ideia inicial (D-199): primário verde, ciano em quem fala e título, cabeçalho vermelho no impeachment, fundo por categoria na tela final
+- "Sobre" vira "Créditos e licenças" em Configurações (D-198); descrições curtas dos 28 finais
+
 ### Alterado (balanceamento, D-197)
 - Gatilho alternativo do impeachment: 5 opções seguidas (era 3); custos de Capital Político pela metade e demais perdas ×0,7 nos docs 17 e `jogo/data/`; sonda `.claude/notas/execucao/ferramentas/bal.gd`
 

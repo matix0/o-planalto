@@ -8,6 +8,11 @@ extends VBoxContainer
 ## `show_number` is only for the final screen (T-10).
 
 signal animation_finished(meter_id: String)
+## Tap or click: the HUD shows the legend of this meter (P-017).
+signal tapped(meter_id: String)
+## Mouse over on a device without touch: the HUD shows the legend too. No built-in tooltip:
+## its popup swallows the next click (P-017).
+signal hovered(meter_id: String)
 
 const PX_PER_POINT := 0.32          # 32 px well / 100 points
 const FILL_TIME := 0.4              # A-07, 300-500 ms
@@ -30,6 +35,10 @@ const SHORT_FADE := 0.15            # "Reduzir movimento" keeps short fades
 		show_number = v
 		if is_node_ready():
 			_number.visible = v
+			_short.visible = not v
+
+## The well fills in the meter's own color (ideia inicial, D-199) instead of the cyan bands.
+@export var meter_colors: bool = true
 
 var value: int = 50
 var high_contrast: bool = false:
@@ -49,6 +58,7 @@ var _fx_tween: Tween
 @onready var _edge: Panel = $Well/Edge
 @onready var _broken: TextureRect = $Well/Broken
 @onready var _number: Label = $Number
+var _short: Label
 
 static var _textures: Dictionary = {}
 
@@ -61,6 +71,18 @@ func _ready() -> void:
 	_trail.visible = false
 	_broken.visible = false
 	_number.visible = show_number
+	_short = Label.new()
+	_short.name = "Short"
+	_short.theme_type_variation = &"Caption"
+	_short.add_theme_font_size_override(&"font_size", 10)
+	_short.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_short.visible = not show_number
+	add_child(_short)
+	mouse_filter = Control.MOUSE_FILTER_PASS   # the tap also reaches the screen (D-145 cancel)
+	gui_input.connect(_on_gui_input)
+	mouse_entered.connect(func() -> void:
+		if not DisplayServer.is_touchscreen_available():
+			hovered.emit(meter_id))
 	var edge := StyleBoxFlat.new()
 	edge.draw_center = false
 	edge.set_border_width_all(2)
@@ -77,7 +99,7 @@ func set_value(v: int) -> void:
 	_kill()
 	value = clampi(v, 0, 100)
 	_well.value = value
-	_well.tint_progress = Tokens.band_color(value)
+	_well.tint_progress = _tint(value)
 	_well.offset_transform_scale = Vector2.ONE
 	_well.offset_transform_position = Vector2.ZERO
 	_trail.visible = false
@@ -85,6 +107,7 @@ func set_value(v: int) -> void:
 	_broken.modulate.a = 1.0
 	_dot.show_static(EffectDot.Kind.NONE)
 	_number.text = str(value)
+	_update_edge()
 	_update_accessibility()
 
 
@@ -111,7 +134,7 @@ func animate_change(old_value: int, new_value: int, dot: StringName, reduce_moti
 	value = new_value
 	_number.text = str(new_value)
 	_well.value = old_value
-	_well.tint_progress = Tokens.band_color(old_value)
+	_well.tint_progress = _tint(old_value)
 	_well.offset_transform_scale = Vector2.ONE
 	_broken.visible = false
 	_dot.play(EffectDot.kind_from(dot), dot_delay, dot_lifetime, reduce_motion)
@@ -142,6 +165,7 @@ func band() -> int:
 
 
 func _on_done() -> void:
+	_update_edge()
 	_update_accessibility()
 	animation_finished.emit(meter_id)
 
@@ -160,7 +184,7 @@ func _band_change(new_value: int, reduce_motion: bool) -> void:
 	if _fx_tween and _fx_tween.is_valid():
 		_fx_tween.kill()
 	_fx_tween = create_tween().set_parallel(true)
-	_fx_tween.tween_property(_well, "tint_progress", Tokens.band_color(new_value), BAND_COLOR_TIME)
+	_fx_tween.tween_property(_well, "tint_progress", _tint(new_value), BAND_COLOR_TIME)
 	if not reduce_motion:
 		_fx_tween.tween_property(_well, "offset_transform_scale", Vector2.ONE * PULSE_SCALE, PULSE_TIME * 0.5) \
 			.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
@@ -191,15 +215,37 @@ func _place_trail(a: int, b: int) -> void:
 	_trail.size = Vector2(Tokens.METER_ICON, h)
 
 
+func _tint(v: int) -> Color:
+	return Tokens.METER_COLORS.get(meter_id, Tokens.band_color(v)) if meter_colors else Tokens.band_color(v)
+
+
+func _on_gui_input(event: InputEvent) -> void:
+	var tap: bool = (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT) \
+		or (event is InputEventScreenTouch and event.pressed)
+	if tap:
+		tapped.emit(meter_id)
+
+
 func _apply_glyph() -> void:
 	var path := "res://assets/icons/meter_%s.svg" % meter_id
 	if ResourceLoader.exists(path):
 		_glyph.texture = load(path)
+	if _short:
+		_short.text = String(Tokens.METER_SHORT.get(meter_id, ""))
 
 
 func _apply_contrast() -> void:
 	_well.texture_under = rounded_texture(Tokens.HC_BG if high_contrast else Tokens.CARD)
-	_edge.visible = high_contrast
+	_update_edge()
+
+
+## White edge in high contrast; red edge while the meter is critical (P-017, D-199).
+func _update_edge() -> void:
+	var critical := value <= Tokens.CRITICAL_AT
+	_edge.visible = high_contrast or critical
+	var box := _edge.get_theme_stylebox(&"panel") as StyleBoxFlat
+	if box:
+		box.border_color = Tokens.IMPEACH_ACCENT if critical and not high_contrast else Tokens.TEXT
 
 
 func _update_accessibility() -> void:

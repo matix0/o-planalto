@@ -44,7 +44,7 @@ theme_override_constants/separation = 24
 [node name="Title" type="Label" parent="Center/Panel/VBox"]
 layout_mode = 2
 theme_type_variation = &"TitleM"
-text = "[título do menu — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="Buttons" type="VBoxContainer" parent="Center/Panel/VBox"]

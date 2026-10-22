@@ -7,7 +7,7 @@ extends RefCounted
 # --- Colors: interface (neutral palette, D-159/D-172) ---
 const BG := Color("#263238")            # screen background
 const CARD := Color("#37474F")          # card, sheet, modal, toast, meter well
-const CRISIS_BG := Color("#1C2529")     # impeachment scene background (C-10)
+const CRISIS_BG := Color("#1A1416")     # impeachment scene background (C-10), darker and warm (P-017)
 const TEXT := Color("#FFFFFF")          # primary text, primary button, filete, focus ring, alert
 const TEXT2 := Color("#B0BEC5")         # secondary text, footer (6.90:1 on BG)
 const HIGHLIGHT := Color("#ECEFF1")     # neutral highlight (pulse ring, selection marks)
@@ -16,6 +16,51 @@ const INACTIVE := Color("#78909C")      # HUD divider, todo segments, switch off
 const PRESSED := Color("#455A64")       # icon button pressed, portrait bg, radar grid
 const SCRIM := Color(0, 0, 0, 0.62)     # dimmed background (D-160)
 const HC_BG := Color("#000000")         # high contrast (P2, D-169)
+
+# --- Colors: "ideia inicial" palette (D-199, P-017) ---
+const ACCENT := Color("#80DEEA")        # speaker, card title, section headers (cyan)
+const PRIMARY_BG := Color("#2E7D32")    # primary button (green), hover #296F2D, pressed #256428
+const PRIMARY_HOVER := Color("#296F2D")
+const PRIMARY_PRESSED := Color("#256428")
+const IMPEACH_ACCENT := Color("#EF5350") # impeachment header, "Não" count, critical meter
+const MONEY := Color("#F9A825")
+const DELTA_GOOD := Color("#A5D6A7")    # always with an arrow and a word
+const DELTA_BAD := Color("#FF8A80")
+const CRITICAL_AT := 20                  # meter at or below: red edge in the HUD
+## One color per meter (ideia inicial, desktop HUD). They share hues with the party colors;
+## the party color lives only on the card border, the meter color only in the HUD (D-199).
+## Lightened to ≥ 3:1 against the well #37474F (WCAG 1.4.11).
+const METER_COLORS := {
+	"dignity": Color("#4CAF50"), "awareness": Color("#CE93D8"), "sovereignty": Color("#9FA8DA"),
+	"security": Color("#42A5F5"), "integrity": Color("#26A69A"), "treasury": Color("#F9A825"),
+	"political_capital": Color("#FF7043"), "legitimacy": Color("#E57373"),
+}
+const METER_SHORT := {
+	"dignity": "DIGN", "awareness": "CONS", "sovereignty": "SOBER", "security": "SEG",
+	"integrity": "INTEG", "treasury": "CAIXA", "political_capital": "CAP", "legitimacy": "LEG",
+}
+## Legend shown when a meter is tapped or hovered (P-017; texts proposed, D-200).
+const METER_INFO := {
+	"dignity": "Condições de vida: saúde, comida, moradia e combate à fome.",
+	"awareness": "Educação, ciência e senso crítico da população.",
+	"sovereignty": "Autonomia do país diante de pressões de fora.",
+	"security": "Ordem pública e controle da violência.",
+	"integrity": "Combate à corrupção e transparência do governo.",
+	"treasury": "Dinheiro público disponível para manter o Estado.",
+	"political_capital": "Apoio no Congresso para aprovar leis e evitar o impeachment.",
+	"legitimacy": "Aprovação popular e confiança das ruas.",
+}
+## Final screen banner per ending category (ideia inicial: end.* gradients, D-199).
+const ENDING_BG := {
+	"catastrophe": [Color("#4A1010"), Color("#2A0808"), Color("#EF5350")],
+	"extermination": [Color("#4A1010"), Color("#2A0808"), Color("#EF5350")],
+	"democracy_loss": [Color("#0D2A4A"), Color("#07121F"), Color("#EF5350")],
+	"capture": [Color("#3E1F4F"), Color("#1A0D22"), Color("#CE93D8")],
+	"strengthening": [Color("#1B5E20"), Color("#0B2A0F"), Color("#81C784")],
+	"care_sovereignty": [Color("#1B5E20"), Color("#0B2A0F"), Color("#81C784")],
+	"neutral": [Color("#455A64"), Color("#1C252A"), Color("#F9A825")],
+	"exit": [Color("#455A64"), Color("#1C252A"), Color("#F9A825")],
+}
 
 # --- Colors: party (only on the card border, D-092) ---
 const PARTY := {
@@ -55,7 +100,7 @@ const RADIUS_PILL := 999
 const VIEWPORT := Vector2i(390, 844)     # D-170
 const COLUMN_MAX := 430                  # D-171 (canvas units)
 const TOUCH_MIN := 48
-const HUD_SIZE := Vector2(336, 52)
+const HUD_SIZE := Vector2(342, 70)       # 8 meters with short names (P-017)
 const METER_ICON := 32
 const METER_GLYPH := 20
 const PORTRAIT := 48

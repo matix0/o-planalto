@@ -26,18 +26,21 @@ const STEPS := [
 		"target": &"more", "coach": &"top", "margin": 4, "radius": 16, "sheet": true,
 	},
 ]
-const ADVANCE_TEXT := "[avançar — a definir]"
-const CARD_TEXT := "[carta de exemplo — a definir]"
-const SPEAKER_TEXT := "[quem fala — a definir]"
-const PROBLEM_TEXT := "[problema de exemplo — a definir]"
-const SHEET_TITLE := "[título do Aprendizado — a definir]"
-const SHEET_TEXT := "[texto do Aprendizado de exemplo — a definir]"
+const ADVANCE_TEXT := "Avançar"
+const START_TEXT := "Começar"     # last step (P-017)
+const CARD_TEXT := "Privatização da estatal"
+const SPEAKER_TEXT := "Congresso Nacional"
+const PROBLEM_TEXT := "O Congresso analisa um projeto de privatização da estatal de energia. O relator quer mudar o texto para beneficiar uma empresa doadora."
+const SHEET_TITLE := "Privatização da estatal"
+const SHEET_TEXT := "O relator tem poder de alterar o texto de um projeto. Isso se chama \"poder de agenda\"."
 const SHEET_MORE := "Saiba mais"
-const SHEET_MORE_TEXT := "[dados e fontes — a definir]"
+const SHEET_MORE_TEXT := "Aqui aparecem o dado real e o link da fonte de cada carta."
 const SHEET_CONTINUE := "Continuar"
+## Step 2: the 8 meter names under the approved text (P-017; the approved text is unchanged).
+const METER_LIST := "Sociais: Dignidade, Consciência, Soberania, Segurança, Integridade.\nPoder: Caixa, Capital Político, Legitimidade.\nToque em um medidor para ver o que ele mede."
 ## Step 3 illustration: effects of option B of INST-001, no multiplier
 ## (docs/17_ROTEIRO_DAS_CARTAS.md:71; T-02.3 — real tutorial example [a definir]).
-const EXAMPLE_EFFECTS := {"political_capital": 10, "sovereignty": -15, "treasury": 10, "integrity": -5}
+const EXAMPLE_EFFECTS := {"political_capital": 10, "sovereignty": -10, "treasury": 10, "integrity": -5}
 const SMALL_DOT_MAX := 10           # docs/14 §14.05: up to 10 = small dot
 const STEP_FADE := 0.2              # A-28: 200 ms (half out, half in); Reduzir movimento: igual
 const HUD_SCENE := "res://scenes/components/hud.tscn"   # C-02 (lote B)
@@ -165,7 +168,9 @@ func _show_step(i: int) -> void:
 	_step = i
 	var s: Dictionary = STEPS[i]
 	_coach_text.text = s["text"]
+	_meter_list().visible = s["target"] == &"hud" and not s.get("effects", false)
 	_progress.set_current(i + 1)
+	_advance.text = START_TEXT if i == STEPS.size() - 1 else ADVANCE_TEXT
 	_coach_box.alignment = BoxContainer.ALIGNMENT_BEGIN if s["coach"] == &"top" else BoxContainer.ALIGNMENT_END
 	var show_sheet: bool = s.get("sheet", false)
 	if show_sheet and not _sheet.visible and is_inside_tree():
@@ -175,6 +180,18 @@ func _show_step(i: int) -> void:
 	_sheet.visible = show_sheet
 	_show_meters(s.get("effects", false))
 	_queue_layout()
+
+
+func _meter_list() -> Label:
+	var label := _coach_text.get_parent().get_node_or_null(^"MeterList") as Label
+	if label == null:
+		label = Label.new()
+		label.name = "MeterList"
+		label.theme_type_variation = &"Caption"
+		label.text = METER_LIST
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		_coach_text.add_sibling(label)
+	return label
 
 
 ## Steps 1, 2 and 4: initial levels (gdd/GDD.md §13.1 via GameData). Step 3:
@@ -213,7 +230,7 @@ func _make_hud() -> Control:
 	fallback.custom_minimum_size = Tokens.HUD_SIZE
 	var label := Label.new()
 	label.theme_type_variation = &"Caption"
-	label.text = "[HUD — a definir]"
+	label.text = ""
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	fallback.add_child(label)

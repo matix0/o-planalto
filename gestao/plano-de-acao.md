@@ -427,10 +427,10 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | ⏳ Pendente (pedido do PO, 2026-10-22) |
+| **Status** | 🟡 Etapas 1-4 feitas (2026-10-22); 5-8 pendentes |
 | **Início** | — |
 | **Conclusão** | — |
-| **Decisões** | D-140, D-162, D-183 (a revisar) |
+| **Decisões** | D-198, D-199, D-200; DP-025 |
 | **Objetivo** | Corrigir o que os jogadores relataram: textos `[a definir]` na tela, HUD sem nomes, calibração vazia, falta de cor, radar ilegível, folha de Aprendizado no celular |
 | **Especificação** | `gestao/prompts/correcoes-p017-playtest.md` (8 etapas, com verificação prévia no código) |
 | **Depende de** | Nada; P-016 e revisão D-196 seguem em paralelo. Alinhamento total com a "ideia inicial" fica para plano futuro |

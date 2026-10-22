@@ -68,21 +68,21 @@ theme_type_variation = &"Tag"
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Caption"
-text = "[categoria]"
+text = ""
 
 [node name="EndingName" type="Label" parent="SafeArea/Scroll/Page/Column/Header"]
 unique_name_in_owner = true
 layout_mode = 2
 accessibility_live = 1
 theme_type_variation = &"TitleL"
-text = "[nome do final]"
+text = ""
 autowrap_mode = 3
 
 [node name="EndingDesc" type="Label" parent="SafeArea/Scroll/Page/Column/Header"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Muted"
-text = "[descrição curta do final — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="QuoteBlock" parent="SafeArea/Scroll/Page/Column" instance=ExtResource("2_quote")]
@@ -126,7 +126,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "[texto do eixo]"
+text = ""
 autowrap_mode = 3
 
 [node name="Country" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]
@@ -150,14 +150,14 @@ theme_override_constants/separation = 8
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "[padrão]"
+text = ""
 autowrap_mode = 3
 
 [node name="ClosingPhrase" type="Label" parent="SafeArea/Scroll/Page/Column/Country"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Quote"
-text = "[frase final]"
+text = ""
 autowrap_mode = 3
 
 [node name="Buttons" type="VBoxContainer" parent="SafeArea/Scroll/Page/Column"]

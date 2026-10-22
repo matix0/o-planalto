@@ -13,7 +13,7 @@ extends Control
 ## "Continuar" emits `continued`; the screen calls the Game action and then close().
 ## The 62% scrim stops every touch behind the sheet (D-160). Tap on the scrim: [a definir]
 ## (does nothing). Esc: not used here (a validar) — the screen decides.
-## Read-only (resumed run, gdd 10 §5): "[indicação de releitura — a definir]" above the title.
+## Read-only (resumed run, gdd 10 §5): "Você já leu esta carta" above the title.
 
 signal continued
 ## close() finished (the sheet is hidden).
@@ -33,8 +33,8 @@ const MORE_TITLE := "Saiba mais"
 const LIVED_LABEL := "O que você acabou de vivenciar"
 const DATA_LABEL := "Dados reais"
 const SOURCE_LABEL := "Fonte"
-const TECHNIQUE_LABEL := "[técnica de manipulação — rótulo a definir]"   # gdd 09: the card names it
-const REREAD_TEXT := "[indicação de releitura — a definir]"
+const TECHNIQUE_LABEL := "Técnica de manipulação"   # gdd 09: the card names it
+const REREAD_TEXT := "Você já leu esta carta"
 const LINK_A11Y := "Fonte: %s (abre o navegador)"
 const SHEET_A11Y := "Carta de Aprendizado: %s"
 const ICON_CHEVRON := preload("res://assets/icons/chevron_down.svg")

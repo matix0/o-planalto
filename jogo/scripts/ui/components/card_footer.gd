@@ -51,10 +51,10 @@ func set_text(text: String) -> void:
 
 ## C-19: "n/N" then N segments (done white, to do #78909C). The screen
 ## reader reads "<noun> n de N" (texto a validar).
-func set_progress(done: int, total: int, a11y_noun: String = "Pergunta") -> void:
+func set_progress(done: int, total: int, a11y_noun: String = "Pergunta", prefix: String = "") -> void:
 	_done = clampi(done, 0, total)
 	_total = maxi(total, 0)
-	_count.text = "%d/%d" % [_done, _total]
+	_count.text = ("%s · " % prefix if prefix != "" else "") + "%d/%d" % [_done, _total]
 	_steps.accessibility_name = "%s %d de %d" % [a11y_noun, _done, _total]
 	_text.visible = false
 	_steps.visible = true

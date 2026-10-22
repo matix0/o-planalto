@@ -17,15 +17,17 @@ const PHASE_NAMES: Array[String] = ["Lua de Mel", "Realidade Bate", "Crise", "De
 const CAPITAL := "political_capital"
 const EXIT_ENDING := "END-028"          # Renúncia (gdd 02 §3.1, gdd 10 §3.3)
 const IMPEACHMENT_ENDING := "END-007"   # gdd 02 §3.1
-const TBD := "[a definir]"
+const TBD := ""
 # Texts the repo leaves open (contract: visible "[a definir]" + named constant) — a validar.
-const CAPTURE_WARNING_TEXT := "[aviso curto de Captura — a definir]"   # gdd 02 §3.4, T-04.5
-const SCENE_INTRO_TEXT := "[texto de abertura — a definir]"           # T-09.1
-const SCENE_FOOTER := "[rodapé da cena — a definir]"                  # T-09 (D2)
-const ACQUITTAL_TITLE := "[título da absolvição — a definir]"         # T-09.7
-const CONVICTION_TITLE := "[título da condenação — a definir]"        # T-09.8
-const RESULT_TEXT := "[texto do resultado — a definir]"
-const ENDING_DESCRIPTION := "[descrição curta do final — a definir]"  # docs/14 §14.09
+const CAPTURE_WARNING_TEXT := "Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."   # gdd 02 §3.4, T-04.5
+const SCENE_INTRO_TEXT := "A oposição abriu um processo de impeachment. São 5 fases: em cada uma, sua escolha pode salvar ou afundar o mandato."           # T-09.1
+const SCENE_FOOTER := "Processo de Impeachment · Fase %d/%d"
+const SCENE_RESULT_FOOTER := "Processo de Impeachment · Resultado"                  # T-09 (D2)
+const ACQUITTAL_TITLE := "Absolvido"         # T-09.7
+const CONVICTION_TITLE := "Afastado"        # T-09.8
+const RESULT_TEXT := "O processo foi arquivado. Seu governo continua, mas a crise deixou marcas."
+const CONVICTION_TEXT := "O Senado aprovou seu afastamento. O mandato termina aqui."
+const ENDING_DESCRIPTION := ""   # fallback; each ending has its own "description" (P-017)  # docs/14 §14.09
 
 var data: GameDatabase
 var run: RunState = null
@@ -337,7 +339,7 @@ func impeachment_view() -> Dictionary:
 		"intro":
 			v["intro_text"] = SCENE_INTRO_TEXT
 		"phase":
-			v["card"] = _card_dict(_scene_card(phase), int(imp["side_a"]), SCENE_FOOTER, "impeachment")
+			v["card"] = _card_dict(_scene_card(phase), int(imp["side_a"]), scene_footer(phase), "impeachment")
 			v["scoreboard"] = ImpeachmentRules.scoreboard(phase, null)
 		"consequence":
 			var last: Dictionary = imp["last"]
@@ -353,7 +355,7 @@ func impeachment_view() -> Dictionary:
 				"outcome": imp["outcome"],
 				"automatic": imp["automatic"],
 				"title": CONVICTION_TITLE if convicted else ACQUITTAL_TITLE,
-				"text": RESULT_TEXT,
+				"text": CONVICTION_TEXT if convicted else RESULT_TEXT,
 				"changes": imp["result_changes"].duplicate(true),
 			}
 			v["scoreboard"] = ImpeachmentRules.result_scoreboard(convicted)
@@ -437,6 +439,11 @@ func continue_impeachment() -> bool:
 
 # --- Final screen (gdd 02, gdd 04, docs/14 §14.09) -----------------------------------------
 
+## Footer of the impeachment scene (P-017): "Fase n/5" on every stage, "Resultado" at the end.
+static func scene_footer(phase: int, result: bool = false) -> String:
+	return SCENE_RESULT_FOOTER if result else SCENE_FOOTER % [phase, ImpeachmentRules.PHASES]
+
+
 func final_view() -> Dictionary:
 	if state() != &"final":
 		return {}
@@ -456,7 +463,7 @@ func final_view() -> Dictionary:
 			"author": _text_or_empty(e.get("author")),
 			"source": _text_or_empty(e.get("source")),
 		},
-		"description": ENDING_DESCRIPTION,
+		"description": String(e.get("description", ENDING_DESCRIPTION)),
 		"reason": String(run.ending.get("reason", "")),
 		"meter": meter,
 		"meter_name": _meter_name(meter) if meter != "" else "",

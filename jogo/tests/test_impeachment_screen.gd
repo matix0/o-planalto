@@ -4,7 +4,7 @@ extends SceneTree
 ## test_playthrough) play until the scene opens; then the screen is driven like a player:
 ## arrows + Enter on the crisis card, Enter or a tap on the opening text, the consequence and
 ## the result. Checked on every stage: the scoreboard against api.md §5 (none in phases 1 and
-## 5; committee "[a definir]"; chamber "— / 513" before the vote, 342 when lost, "[< 342]" when
+## 5; committee "maioria"; chamber "— / 513" before the vote, 342 when lost, "< 342" when
 ## won; Senate only the target in phase 4 (D-168) and the bar at the result: 54 on conviction),
 ## the crisis card (C-10), no side words (D-084), no meter numbers, no green or red (D-156),
 ## Esc (D-167), the pause, live settings, the scene background, read-only stages after the app
@@ -181,7 +181,7 @@ func _play_scene(want_pass: bool, seed: int) -> String:
 	else:
 		_expect(_game.current_state() != &"impeachment", "%s: acquittal leaves the scene" % tag)
 	_expect(_main.current_id() == target, "%s: screen after the result is %s (got %s)" % [tag, target, _main.current_id()])
-	_expect(not _bg().has_theme_stylebox_override(&"panel"), "%s: backdrop reset after the scene" % tag)
+	_expect(target == &"final" or not _bg().has_theme_stylebox_override(&"panel"), "%s: backdrop reset after the scene (the final screen paints its own, D-199)" % tag)
 	return outcome
 
 
@@ -220,7 +220,7 @@ func _check_phase(screen: Node, phase: int, tag: String) -> void:
 		1, 5:
 			_expect(not sb.visible and sb.mode() == MODE_HIDDEN, "%s: no scoreboard" % where)
 		2:
-			_board(sb, where, MODE_BAR, "Comissão especial", "[—]", " / [nº de membros — a definir]", "quórum [a definir]", 0.0)
+			_board(sb, where, MODE_BAR, "Comissão especial", "—", "", "quórum maioria", 0.0)
 		3:
 			_board(sb, where, MODE_BAR, "Câmara", "—", " / 513", "quórum 342", 0.0)
 			_expect(is_equal_approx(sb.quorum_ratio(), 342.0 / 513.0), "%s: quorum line at 342/513" % where)
@@ -246,14 +246,14 @@ func _check_consequence(screen: Node, phase: int, tag: String) -> void:
 		1, 5:
 			_expect(not sb.visible, "%s: no scoreboard" % where)
 		2:
-			_board(sb, where, MODE_BAR, "Comissão especial", "[—]", " / [nº de membros — a definir]", "quórum [a definir]",
+			_board(sb, where, MODE_BAR, "Comissão especial", "—", "", "quórum maioria",
 				COMMITTEE_AT if lost else COMMITTEE_AT * BELOW_RATIO)
 		3:
 			if lost:
 				_board(sb, where, MODE_BAR, "Câmara", "342", " / 513", "quórum 342", 342.0 / 513.0)
 				_expect(sb.accessibility_name == "Câmara: 342 de 513 votos; quórum 342", "%s: chamber name (%s)" % [where, sb.accessibility_name])
 			else:
-				_board(sb, where, MODE_BAR, "Câmara", "[< 342]", " / 513", "quórum 342 · valor exato [a definir]", 342.0 / 513.0 * BELOW_RATIO)
+				_board(sb, where, MODE_BAR, "Câmara", "< 342", " / 513", "quórum 342", 342.0 / 513.0 * BELOW_RATIO)
 		4:
 			_board(sb, where, MODE_TARGET, "Senado", "—", " / 81", "quórum 54", 0.0)
 	# HUD = Game, no number shown.
@@ -276,8 +276,8 @@ func _check_result(screen: Node, outcome: String, tag: String) -> void:
 		_board(sb, where, MODE_BAR, "Senado", "54", " / 81", "quórum 54", 54.0 / 81.0)
 		_expect(sb.accessibility_name == "Senado: 54 de 81 votos; quórum 54", "%s: Senate name (%s)" % [where, sb.accessibility_name])
 	else:
-		_board(sb, where, MODE_BAR, "Senado", "[< 54]", " / 81", "quórum 54 · valor exato [a definir]", 54.0 / 81.0 * BELOW_RATIO)
-		_expect(sb.accessibility_name == "Senado: [votos a definir] de 81; quórum 54", "%s: Senate name (%s)" % [where, sb.accessibility_name])
+		_board(sb, where, MODE_BAR, "Senado", "< 54", " / 81", "quórum 54", 54.0 / 81.0 * BELOW_RATIO)
+		_expect(sb.accessibility_name == "Senado: menos votos que o quórum 54, de 81", "%s: Senate name (%s)" % [where, sb.accessibility_name])
 	# Acquittal effects reach the HUD (Capital ≥ 20, Legitimidade +10), never as numbers.
 	_expect(screen.hud().values() == _hud_values(), "%s: HUD shows Game's meters after the result" % where)
 	_check_tree(screen, where)

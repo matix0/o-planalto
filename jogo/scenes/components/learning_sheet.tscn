@@ -89,7 +89,7 @@ theme_type_variation = &"Tag"
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Caption"
-text = "[indicação de releitura — a definir]"
+text = ""
 autowrap_mode = 3
 
 [node name="Header" type="VBoxContainer" parent="SheetArea/Sheet/Body/ScrollWrap/Scroll/Content/Box"]

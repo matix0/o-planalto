@@ -9,9 +9,10 @@ extends AppScreen
 const TITLE := "Configurações"
 const CLOSE_NAME := "Fechar"        # a validar — rótulo do botão de fechar [a definir] (T-12/T-13)
 const AUDIO_TITLE := "Áudio"
-const AUDIO_TEXT := "[controles de áudio — a definir]"
+const AUDIO_TEXT := "O jogo ainda não tem som."
 const REDUCE_MOTION := "Reduzir movimento"
 const HIGH_CONTRAST := "Alto contraste"
+const CREDITS := "Créditos e licenças"   # T-13 moved here from T-01 (D-198)
 
 @onready var _safe_area: MarginContainer = %SafeArea
 @onready var _close: Button = %CloseButton
@@ -30,6 +31,15 @@ func _ready() -> void:
 	_reduce_motion.text = REDUCE_MOTION
 	_high_contrast.text = HIGH_CONTRAST
 	_close.pressed.connect(close)
+	var credits := Button.new()
+	credits.name = "CreditsButton"
+	credits.text = CREDITS
+	credits.theme_type_variation = &"Secondary"
+	credits.custom_minimum_size = Vector2(0, Tokens.TOUCH_MIN)
+	credits.pressed.connect(func() -> void: request.emit(&"about", {"push": true}))
+	var sections: Node = $SafeArea/Column/Scroll/Sections
+	sections.add_child(credits)
+	sections.move_child(credits, sections.get_child_count() - 2)   # above BottomPad
 	_text_size.step_selected.connect(func(step: int) -> void: Settings.set_value(&"text_step", step))
 	_reduce_motion.toggled.connect(func(on: bool) -> void: Settings.set_value(&"reduce_motion", on))
 	_high_contrast.toggled.connect(func(on: bool) -> void: Settings.set_value(&"high_contrast", on))

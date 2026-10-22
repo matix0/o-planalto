@@ -103,7 +103,7 @@ func _calibration_checks() -> void:
 	_expect(not Array(_texts(screen)).any(func(t: String) -> bool: return t.contains("HUD")), "T-03: no HUD box during the calibration (D-183)")
 	for i in 6:
 		var view: Dictionary = _game.calibration_view()
-		_expect(footer.display_text() == "%d/6" % (i + 1), "C-19 progress %d/6 (got %s)" % [i + 1, footer.display_text()])
+		_expect(footer.display_text() == "Alinhamento · %d/6" % (i + 1), "C-19 progress %d/6 (got %s)" % [i + 1, footer.display_text()])
 		_expect(card.accessibility_name == "Pergunta %d de 6: %s" % [i + 1, view.question], "T-03.1 card name %d" % (i + 1))
 		_expect(_texts(card).has(String(view.question)), "T-03.1 question on the card face")
 		_check_texts(screen, "calibration %d" % (i + 1))
@@ -123,7 +123,7 @@ func _calibration_checks() -> void:
 			_expect(not card.is_revealed(), "D-145: tap outside cancels the answer")
 		_choose(card, 1)
 		if i < 5:
-			_expect(await _wait(func() -> bool: return footer.display_text() == "%d/6" % (i + 2), 5.0), "next question %d" % (i + 2))
+			_expect(await _wait(func() -> bool: return footer.display_text() == "Alinhamento · %d/6" % (i + 2), 5.0), "next question %d" % (i + 2))
 	_expect(await _wait(func() -> bool: return _main.current_id() == &"game" and not _main.is_busy(), 6.0), "A-23: after 6 answers → game screen")
 
 
@@ -313,7 +313,7 @@ func _resume_checks() -> void:
 	_expect(line.text() == text and line.is_waiting(), "same sentence, waiting for the tap")
 	var cfooter := String(_game.consequence_view().get("footer", ""))
 	_expect(cfooter.begins_with("Ano ") and screen.footer().display_text() == cfooter, "resumed consequence keeps the footer 'Ano · Fase · n/7'")
-	_expect(_texts(line).has("[indicação de releitura — a definir]"), "T-08.3 reread tag on the consequence")
+	_expect(_texts(line).has("Você já leu esta carta"), "T-08.3 reread tag on the consequence")
 	_check_texts(screen, "resume")
 	_key(KEY_ENTER)
 	_expect(await _wait(func() -> bool: return _screen_step() == &"learning", 3.0), "Enter continues the consequence")
@@ -359,13 +359,13 @@ func _resume_in_calibration_checks() -> void:
 	var screen: Node = _main.current_screen()
 	for i in 2:
 		_choose(screen.card(), 1)
-		var want := "%d/6" % (i + 2)
+		var want := "Alinhamento · %d/6" % (i + 2)
 		_expect(await _wait(func() -> bool: return screen.footer().display_text() == want, 5.0), "calibration at %s before closing" % want)
 	var question := String(_game.calibration_view().question)
 	await _close_and_continue()
 	screen = _main.current_screen()
 	_expect(_main.current_id() == &"calibration", "Continuar → calibration (got %s)" % _main.current_id())
-	_expect(screen.footer().display_text() == "3/6", "resumed calibration at 3/6 (got %s)" % screen.footer().display_text())
+	_expect(screen.footer().display_text() == "Alinhamento · 3/6", "resumed calibration at 3/6 (got %s)" % screen.footer().display_text())
 	_expect(_texts(screen.card()).has(question), "resumed calibration: same question")
 
 
@@ -428,7 +428,7 @@ func _component_checks() -> void:
 	await _frames(3)
 	var texts := _texts(sheet)
 	_expect(texts.has("“Frase.”"), "C-09 impact quoted")
-	_expect(texts.has("[indicação de releitura — a definir]"), "C-09 reread tag when read-only")
+	_expect(texts.has("Você já leu esta carta"), "C-09 reread tag when read-only")
 	_expect(texts.has("Técnica Y"), "C-09 technique shown (gdd 09)")
 	sheet.more().folded = false
 	await _frames(3)
@@ -478,10 +478,10 @@ func _component_checks() -> void:
 	yc.held.connect(func() -> void: held.append(1))
 	yc.show_year({"year": 4, "phase": "Desfecho", "title": "Ano 4",
 		"capture_warning": [{"id": "security", "name": "Segurança"}],
-		"capture_warning_text": "[aviso curto de Captura — a definir]"}, {"security": 88}, false)
+		"capture_warning_text": "Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."}, {"security": 88}, false)
 	await _frames(2)
 	var yt: PackedStringArray = yc.display_texts()
-	_expect(yt.has("Ano 4") and yt.has("Desfecho") and yt.has("Segurança") and yt.has("[aviso curto de Captura — a definir]"), "C-16 capture warning texts")
+	_expect(yt.has("Ano 4") and yt.has("Desfecho") and yt.has("Segurança") and yt.has("Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."), "C-16 capture warning texts")
 	for t in _texts(yc):
 		_expect(not t.contains("88"), "C-16 never shows the meter number")
 	_expect(not await _wait(func() -> bool: return held.size() == 1, 1.0), "C-16 with the Captura warning waits for a tap (D-184)")
@@ -495,7 +495,7 @@ func _component_checks() -> void:
 	ev.show_event({"index": 2, "total": 3, "text": "Evento.", "origin_title": "Carta de origem"}, true)
 	await _frames(2)
 	var et: PackedStringArray = ev.display_texts()
-	_expect(et.has("[2 de 3 — indicador a definir]"), "C-17 n de N [a definir]")
+	_expect(et.has("2 de 3"), "C-17 n de N [a definir]")
 	_expect(not et.has("Carta de origem"), "C-17 origin hidden (P5 off)")
 	host.queue_free()
 	await _frames(1)

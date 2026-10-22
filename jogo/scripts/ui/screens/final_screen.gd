@@ -11,8 +11,8 @@ extends AppScreen
 ## Focus: the Scroll first (arrows, Page Up/Down, Home/End scroll it), then Tab → Jogar
 ## novamente → Compartilhar (T10a). Settings apply live (text size, high contrast).
 
-const SHARE_TEXT := "[Compartilhar — a definir]"    # 14A §14A.07 #7: content [a definir]
-const TBD := "[a definir]"
+const SHARE_TEXT := "Compartilhar chega em breve."    # 14A §14A.07 #7: content [a definir]
+const TBD := "—"
 const EVENT_ICON := preload("res://assets/icons/event_link.svg")
 const METER_ICON_SCENE := preload("res://scenes/components/meter_icon.tscn")
 const ROW_MIN_HEIGHT := 40                 # epilogue and meter rows (board: min-height 40)
@@ -87,8 +87,10 @@ func show_final(view: Dictionary) -> void:
 	_view = view
 	var ending: Dictionary = _dict(view.get("ending"))
 	_category.text = _text(ending.get("category_label"))
+	_apply_category(String(ending.get("category", "")))
 	_name.text = _text(ending.get("name"))
-	_description.text = _text(view.get("description"))
+	_description.text = _plain(view.get("description"))
+	_description.visible = _description.text != ""
 	_quote.set_quote(_plain(ending.get("quote")), _plain(ending.get("author")))
 	_fill_epilogue(_array(view.get("epilogue")))
 	var axis: Dictionary = _dict(view.get("axis"))
@@ -289,3 +291,41 @@ static func _dict(v: Variant) -> Dictionary:
 
 static func _array(v: Variant) -> Array:
 	return v if v is Array else []
+
+
+# --- Category colors (ideia inicial end.* palette; P-017, D-199) -----------------------------
+
+func _apply_category(category: String) -> void:
+	var c: Array = Tokens.ENDING_BG.get(category, Tokens.ENDING_BG["neutral"])
+	var hc: bool = Settings.high_contrast
+	var tag := StyleBoxFlat.new()
+	tag.bg_color = Tokens.TEXT if hc else c[2]
+	tag.set_corner_radius_all(Tokens.RADIUS_PILL)
+	tag.content_margin_left = Tokens.ESP_12
+	tag.content_margin_right = Tokens.ESP_12
+	tag.content_margin_top = Tokens.ESP_4
+	tag.content_margin_bottom = Tokens.ESP_4
+	%CategoryTag.add_theme_stylebox_override(&"panel", tag)
+	_category.add_theme_color_override(&"font_color", Tokens.HC_BG if hc else Tokens.BG)
+	_category.uppercase = true
+	_backdrop = Tokens.HC_BG if hc else c[0]
+	_apply_backdrop()
+
+
+var _backdrop := Tokens.BG
+
+
+func _apply_backdrop() -> void:
+	var a := app()
+	if a and is_visible_in_tree():
+		a.set_backdrop(_backdrop)
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_VISIBILITY_CHANGED and is_inside_tree():
+		if is_visible_in_tree():
+			_apply_backdrop()
+		elif app():
+			app().reset_backdrop()
+	elif what == NOTIFICATION_EXIT_TREE and app():
+		app().reset_backdrop()

@@ -17,4 +17,4 @@ const TECHNIQUE_NAMES := {
 static func technique_name(id: String) -> String:
 	if id == "":
 		return ""
-	return String(TECHNIQUE_NAMES.get(id, "[técnica a definir]"))
+	return String(TECHNIQUE_NAMES.get(id, ""))

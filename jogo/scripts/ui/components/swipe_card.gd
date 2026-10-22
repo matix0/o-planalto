@@ -37,7 +37,7 @@ const DRAG_VISIBLE_MIN := 0.6         # D-177 / DP-009: a dragged card keeps ≥
 const FIT_MIN_FONT := 14              # D-186 / DP-009: smallest size when a long word must shrink to fit
 const OPTION_BAND_MIN_SIZE := 36      # Option font size that triggers P7
 const TAP_HINT_DELAY := 4.0           # D-163: idle time "[a definir]" — a validar
-const TAP_HINT_TEXT := "[dica do toque — a definir]"
+const TAP_HINT_TEXT := "Arraste a carta ou toque em um lado para ver a opção"
 const TAP_SLOP := float(Tokens.ESP_8)        # travel before a press becomes a drag (a validar)
 const TAP_MAX_TRAVEL := float(Tokens.ESP_24) # a press that moved more is not a tap (a validar)
 const TEXT_FADE := 0.15               # A-04
@@ -880,6 +880,7 @@ func _build_styles() -> void:
 
 
 func _apply_contrast() -> void:
+	_title.add_theme_color_override(&"font_color", Tokens.TEXT if high_contrast else Tokens.ACCENT)   # D-199
 	var bg := Tokens.HC_BG if high_contrast else Tokens.BG
 	_pill_box.bg_color = bg
 	_pill_box.border_color = Tokens.TEXT if high_contrast else Tokens.OUTLINE

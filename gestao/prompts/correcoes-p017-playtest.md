@@ -1,7 +1,7 @@
 # P-017 — Correções do playtest (prompt de execução)
 
 **Fonte:** comando do PO de 2026-10-22 (diagnóstico do playtest) + PDFs do design system (`TELAS`, `Componentes`, `Fluxos`, `Em aberto`) e da "ideia inicial". O comando do PO é a prioridade; o alinhamento completo com a ideia inicial fica para um plano futuro.
-**Branch:** `claude/p017-playtest` (a partir da `main`). Escolhas no meio ficam provisórias em `gestao/decisoes-provisorias.md`; o PO valida no fim.
+**Branch:** `claude/p017-playtest`. **Feito em 2026-10-22:** etapas 1-4 (D-198 a D-200, DP-025). Escolhas no meio ficam provisórias em `gestao/decisoes-provisorias.md`; o PO valida no fim.
 **Regras:** GodotPrompter antes de cada sistema; testes em cópia isolada (`.claude/rules/isolamento.md`); `tests/run_all.sh` verde a cada etapa; captura de tela (390×844 e 1280×720) de cada tela tocada em `gestao/capturas-p017/`.
 
 ## Verificação prévia (fio principal, 2026-10-22)

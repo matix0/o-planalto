@@ -199,7 +199,7 @@ func _board_view(frame: String) -> Dictionary:
 			"category_label": EndingRules.category_label(String(e.get("category", ""))),
 			"quote": "" if e.get("quote") == null else e.get("quote"),
 			"author": "" if e.get("author") == null else e.get("author"), "source": ""},
-		"description": "[descrição curta do final — a definir]",
+		"description": String(e.get("description", "")),
 		"reason": f["reason"], "meter": "", "meter_name": "", "year": 3,
 		"epilogue": f["epi"],
 		"axis": {"said": SAID, "governed": GOVERNED, "names": Array(AxisRules.NAMES), "poles": AxisRules.POLES,

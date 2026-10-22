@@ -3,7 +3,7 @@ extends Control
 ## C-14 — modal de confirmação: "Novo mandato" com partida salva (T-01.3),
 ## abandonar na calibração (T-03.4) e abandonar na partida (T-11.2).
 ## Variante A (cancelar primário) × B (confirmar primário) aguardam o PO (D-173):
-## o padrão é A, por ser o mais seguro. Textos: "[a definir]".
+## o padrão é A, por ser o mais seguro. Textos: P-017 (D-200).
 ## A-18: fundo 0 → 62% + painel com fade e escala 0,96 → 1 em 200 ms;
 ## Reduzir movimento: só fade de 150 ms.
 
@@ -12,8 +12,8 @@ signal decided(confirmed: bool)
 const VARIANT := &"A"            # D-187: variante A, cancelar em destaque (fecha a D-173)
 const OPEN_TIME := 0.2
 const OPEN_TIME_REDUCED := 0.15
-const DEFAULT_CONFIRM := "[confirmar — a definir]"
-const DEFAULT_CANCEL := "[cancelar — a definir]"
+const DEFAULT_CONFIRM := "Confirmar"
+const DEFAULT_CANCEL := "Voltar"
 
 @onready var _scrim: ColorRect = %Scrim
 @onready var _panel: PanelContainer = %Panel

@@ -77,7 +77,7 @@ func _shots() -> void:
 	# T-04.5-like: the same card with a Capture warning (made-up view; Year 4 is rare here).
 	screen.year_card().show_year({"year": 4, "phase": "Desfecho", "title": "Ano 4",
 		"capture_warning": [{"id": "security", "name": "Segurança"}],
-		"capture_warning_text": "[aviso curto de Captura — a definir]"}, {"security": 88}, false)
+		"capture_warning_text": GameFlow.CAPTURE_WARNING_TEXT}, {"security": 88}, false)
 	await create_timer(0.25).timeout
 	await _frozen_shot("t04_5_like_capture")
 	if screen.year_card().is_waiting_tap():

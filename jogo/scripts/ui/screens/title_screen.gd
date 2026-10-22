@@ -5,8 +5,8 @@ extends AppScreen
 ## Primary por tela). Salvamento ilegível: aviso C-21 no topo e sem "Continuar".
 ## Novo mandato com partida salva: confirmação C-14 (variante A, D-173 pendente).
 
-const NEW_TERM_TITLE := "[título — a definir]"
-const NEW_TERM_BODY := "[texto — a definir. Conteúdo: a partida salva será apagada, sem gerar final (gdd 10 §5)]"
+const NEW_TERM_TITLE := "Novo mandato"
+const NEW_TERM_BODY := "Iniciar um novo mandato apagará a partida salva atual."
 
 @onready var _safe_area: MarginContainer = %SafeArea
 @onready var _continue: Button = %ContinueButton
@@ -19,7 +19,7 @@ func _ready() -> void:
 	_continue.pressed.connect(_on_continue)
 	_new_term.pressed.connect(_on_new_term)
 	_settings.pressed.connect(func() -> void: request.emit(&"settings", {"push": true}))
-	_about.pressed.connect(func() -> void: request.emit(&"about", {"push": true}))
+	_about.visible = false   # D-198: credits live in Configurações
 
 
 func enter(params: Dictionary = {}) -> void:
@@ -41,7 +41,7 @@ func refresh(grab: bool = true) -> void:
 
 
 func buttons() -> Array[Button]:
-	return [_continue, _new_term, _settings, _about]
+	return [_continue, _new_term, _settings]
 
 
 func _on_continue() -> void:

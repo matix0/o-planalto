@@ -21,7 +21,7 @@ const EXIT_TIME := 0.2
 const RISE := 8.0                 # A-24 offset_transform_position.y (a validar)
 const RM_FADE := 0.15
 const CAPTURE_WAITS_TAP := true   # D-184: the Capture warning waits for a tap (P4 adopted)
-const TAP_HINT_TEXT := "[toque para continuar — a definir]"
+const TAP_HINT_TEXT := "Toque na tela para continuar"
 const METER_SCENE := preload("res://scenes/components/meter_icon.tscn")
 
 var _waiting_tap := false

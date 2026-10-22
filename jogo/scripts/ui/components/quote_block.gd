@@ -11,7 +11,7 @@ extends VBoxContainer
 ## show only the name. true = the author exactly as in the data, which also keeps qualifiers
 ## such as "(atribuída)" and "(paráfrase de entrevista, 2023)"; false = name only.
 const SHOW_AUTHOR_DETAILS := true
-const AUTHOR_TBD := "[autor — a definir]"
+const AUTHOR_TBD := "Autor desconhecido"
 const OPEN_QUOTE := "“"
 const CLOSE_QUOTE := "”"
 const DASH := "— "

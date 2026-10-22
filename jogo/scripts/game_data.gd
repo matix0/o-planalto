@@ -5,7 +5,7 @@ extends Node
 ## (gdd/sistemas/07_atores.md §5). Autoload name: GameData.
 
 const DATA_DIR := "res://data/"
-const SPEAKER_TBD := "[quem fala — a definir]"   # D-164; a validar (temáticas e cena)
+const SPEAKER_TBD := ""   # no quem_fala: the name line hides (P-017)   # D-164; a validar (temáticas e cena)
 const CALIBRATION_QUESTIONS := 6                 # docs/15 §15.04
 const SCENE_PHASES := 5                          # gdd/sistemas/03_impeachment.md §3.2
 const TEST_OPS := ["<", ">", "<=", ">="]
