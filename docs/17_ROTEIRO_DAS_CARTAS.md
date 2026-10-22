@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 57 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 77 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -228,6 +228,384 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 
 *(As demais 14 cartas do Modo Congresso ainda não foram escritas.)*
 
+### INST-007 — Ministro aliado sob suspeita
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ministro aliado sob suspeita |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Uma CPI convoca seu ministro, de um partido aliado, suspeito de desvio em obras. O partido ameaça deixar a base se ele cair. |
+| **Opção A** | Demitir o ministro |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "O partido aliado deixa a base. A CPI segue sem o ministro no cargo." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` -1, `ACT-023` +1, `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Esperar a Justiça |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -5, `Legitimidade` -5 |
+| **Consequência B** | "O aliado fica na base. A oposição diz que você acoberta o ministro." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-003` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-007 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-008 — Urgência contra crime ambiental
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Urgência contra crime ambiental |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-018` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | Seu projeto que endurece a pena por crime ambiental está parado numa comissão da bancada ruralista. Você pode pedir urgência. |
+| **Opção A** | Pedir urgência |
+| **Efeitos A** | `Soberania` +10, `Segurança` +10, `Capital Político` -15 |
+| **Consequência A** | "A pauta trava até a votação. A lei passa, e o agro promete revanche." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-018` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar na comissão |
+| **Efeitos B** | `Capital Político` +15, `Soberania` -10, `Segurança` -5 |
+| **Consequência B** | "O projeto dorme na comissão. A bancada ruralista apoia seus outros projetos." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-011` +1, `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-008 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-009 — Jabuti no projeto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Jabuti no projeto |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Azul |
+| **Problema** | Seu projeto de carro menos poluente volta da Câmara com um jabuti: um trecho fora do tema. Ele taxa compras pequenas em sites de fora. |
+| **Opção A** | Vetar o jabuti |
+| **Efeitos A** | `Legitimidade` +10, `Dignidade` +5, `Capital Político` -10, `Soberania` -5 |
+| **Consequência A** | "Os sites de fora seguem sem a taxa. A Câmara ameaça derrubar o veto." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar o texto todo |
+| **Efeitos B** | `Caixa` +10, `Soberania` +5, `Legitimidade` -10, `Dignidade` -5 |
+| **Consequência B** | "A taxa vale. Lojas do país comemoram, e quem compra online paga mais." |
+| **Eixo B** | [-1, -1, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-009 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-010 — PEC da maioridade penal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | PEC da maioridade penal |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | A Câmara vota uma emenda à Constituição que reduz a maioridade penal. Você não pode vetar: só a sua base pode barrar. |
+| **Opção A** | Orientar a base contra |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Legitimidade` -10 |
+| **Consequência A** | "A PEC cai na Câmara. Nas ruas, muita gente cobra mais rigor." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1, `ACT-024` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar a base |
+| **Efeitos B** | `Segurança` +10, `Legitimidade` +5, `Dignidade` -10 |
+| **Consequência B** | "A PEC é promulgada. Adolescentes já podem ir para presídios de adultos." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | "Facções recrutam os adolescentes nos presídios" · atraso 2 · `Segurança` -10, `Dignidade` -5 |
+| **Aprendizado** | APR-010 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-011 — Escola sem Partido
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Escola sem Partido |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | O Congresso aprova o Escola sem Partido: o professor não pode dar opinião política em aula. Se você não vetar no prazo, a lei vale. |
+| **Opção A** | Vetar a lei |
+| **Efeitos A** | `Consciência` +10, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "Professores comemoram. Os autores da lei prometem derrubar o veto." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar o prazo correr |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "O prazo acaba, e a lei vale sem a sua assinatura. Professores protestam." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-011 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-012 — Decreto das armas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Decreto das armas |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Senado Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Seu decreto limita a compra de armas por atiradores e caçadores. A Câmara aprova um projeto que derruba o decreto. Falta o Senado. |
+| **Opção A** | Defender o decreto |
+| **Efeitos A** | `Segurança` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "O Senado mantém o decreto. A bancada da bala trava seus projetos." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Afrouxar o decreto |
+| **Efeitos B** | `Capital Político` +10, `Segurança` -5, `Integridade` -5 |
+| **Consequência B** | "O Congresso engaveta o projeto. Atiradores voltam a comprar mais armas." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-011` +1, `ACT-014` -1 |
+| **Evento B** | "O crime compra armas desviadas de clubes de tiro" · atraso 2 · `Segurança` -10, `Integridade` -5 |
+| **Aprendizado** | APR-012 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-013 — Venda dos Correios
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Venda dos Correios |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Laranja |
+| **Problema** | Você vetou a venda dos Correios. Uma gigante estrangeira de entregas quer comprar, e o Congresso se reúne para derrubar o veto. |
+| **Opção A** | Liberar emendas pelo veto |
+| **Efeitos A** | `Soberania` +10, `Dignidade` +5, `Caixa` -15, `Integridade` -5 |
+| **Consequência A** | "O veto se mantém. Os Correios seguem públicos, e as emendas saem do caixa." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-009` +1, `ACT-011` +1, `ACT-002` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar a derrubada |
+| **Efeitos B** | `Caixa` +15, `Capital Político` +5, `Soberania` -15 |
+| **Consequência B** | "O veto cai. A gigante estrangeira compra os Correios." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-002` +1, `ACT-009` -1 |
+| **Evento B** | "A nova dona fecha agências em cidades pequenas" · atraso 1 · `Dignidade` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-013 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-014 — Acordo com o banco
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Acordo com o banco |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Senado Federal |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | A CPI conclui que um banco lesou aposentados com empréstimos falsos. O banco oferece devolver parte do dinheiro se não for processado. |
+| **Opção A** | Processar o banco |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Dignidade` -5, `Caixa` -5 |
+| **Consequência A** | "O processo começa. Os aposentados esperam anos pelo dinheiro." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-023` +1, `ACT-002` -1 |
+| **Evento A** | "A Justiça condena o banco a devolver tudo" · atraso 2 · `Dignidade` +10 |
+| **Opção B** | Aceitar o acordo |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` +5, `Integridade` -10 |
+| **Consequência B** | "Os aposentados recebem parte do dinheiro. Ninguém do banco é punido." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-014 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-015 — Ocupação como terrorismo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ocupação como terrorismo |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | A Câmara vota um projeto que trata ocupação de terra e de prédio como terrorismo. Sua base pode obstruir e deixar a sessão sem quórum. |
+| **Opção A** | Obstruir a votação |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Segurança` -5 |
+| **Consequência A** | "Sem quórum, o projeto sai da pauta. Ruralistas dizem que você protege invasores." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1, `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar a votação |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "O projeto passa. Ocupar terra ou prédio vazio vira terrorismo." |
+| **Eixo B** | [+1, 0, 0, -2] |
+| **Atores B** | `ACT-001` +1, `ACT-016` -1, `ACT-017` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-015 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-016 — Licença-paternidade
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Licença-paternidade |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Pais ganham poucos dias de licença quando o filho nasce. Você quer ampliar: por medida provisória ou por projeto de lei? |
+| **Opção A** | Usar medida provisória |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -5, `Capital Político` -10 |
+| **Consequência A** | "A licença maior vale hoje. O Congresso reclama da medida provisória." |
+| **Eixo A** | [0, 0, +1, -1] |
+| **Atores A** | `ACT-015` +1, `ACT-004` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Enviar projeto de lei |
+| **Efeitos B** | `Capital Político` +5, `Legitimidade` -5 |
+| **Consequência B** | "O projeto entra na fila do Congresso. Os pais seguem com poucos dias." |
+| **Eixo B** | [0, 0, +1, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-015` -1 |
+| **Evento B** | "O Congresso aprova a licença, com menos dias" · atraso 1 · `Dignidade` +5, `Caixa` -5 |
+| **Aprendizado** | APR-016 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-017 — Assinaturas pelo SUS
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Assinaturas pelo SUS |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Um projeto de iniciativa popular, com assinaturas de todo o país, fixa mais verba para o SUS. A equipe econômica é contra. |
+| **Opção A** | Apoiar o projeto popular |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +10, `Caixa` -15, `Capital Político` -5 |
+| **Consequência A** | "O Congresso aprova. O SUS ganha verba fixa, e sobra menos para o resto." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-014` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Enviar um texto próprio |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` +5, `Legitimidade` -10, `Caixa` -5 |
+| **Consequência B** | "Seu texto, com aumento menor e gradual, passa. Quem assinou se sente ignorado." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-017 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-018 — Crime que não prescreve
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Crime que não prescreve |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Famílias de vítimas da ditadura pedem que o Brasil entre num tratado da ONU. Nele, crime contra a humanidade não prescreve. |
+| **Opção A** | Enviar ao Congresso |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "O tratado vai a voto no Congresso. Militares da reserva veem ameaça à anistia." |
+| **Eixo A** | [0, +1, +1, +1] |
+| **Atores A** | `ACT-010` +1, `ACT-023` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar o tratado de lado |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Consciência` -10, `Legitimidade` -5 |
+| **Consequência B** | "O tratado fica na gaveta. Famílias de desaparecidos seguem sem resposta." |
+| **Eixo B** | [0, -1, -1, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-023` -1 |
+| **Evento B** | "A Corte Interamericana volta a cobrar o Brasil" · atraso 2 · `Legitimidade` -10 |
+| **Aprendizado** | APR-018 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-019 — Destaque na lei da IA
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Destaque na lei da IA |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | A Câmara aprova a lei da IA. Um destaque quer votar à parte e tirar o trecho que paga artistas cujas obras treinam a IA. |
+| **Opção A** | Manter o pagamento |
+| **Efeitos A** | `Soberania` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência A** | "O destaque cai, e o trecho fica. Big techs dizem que a lei afasta investimento." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-019` +1, `ACT-020` -1 |
+| **Evento A** | "Big techs adiam centros de dados no país" · atraso 1 · `Caixa` -10 |
+| **Opção B** | Aceitar o destaque |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Soberania` -10, `Dignidade` -5 |
+| **Consequência B** | "O trecho cai. A IA pode usar obras de artistas sem pagar por elas." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-020` +1, `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-019 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-020 — Limite ao salário mínimo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Limite ao salário mínimo |
+| **Tipo** | Institucional |
+| **Modo** | Congresso |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Líderes querem aprovar um limite ao aumento do salário mínimo em votação simbólica, sem registrar o voto de cada deputado. |
+| **Opção A** | Pedir votação nominal |
+| **Efeitos A** | `Integridade` +10, `Dignidade` +10, `Capital Político` -10, `Caixa` -10 |
+| **Consequência A** | "Cada voto fica registrado. Com medo do eleitor, deputados derrubam o limite." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-015` +1, `ACT-011` -1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar o voto simbólico |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "O limite passa em segundos. Ninguém sabe quem votou a favor." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-006` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-020 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.03 — Cartas do Modo Orçamento (20)
@@ -285,6 +663,168 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-022 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-023 — Furar o teto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Furar o teto |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | A arrecadação sobe, mas o teto de gastos impede gastar mais. Sem verba, as obras de casas populares param. |
+| **Opção A** | Furar o teto |
+| **Efeitos A** | `Dignidade` +15, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "O Congresso aprova a exceção, e as obras voltam. O mercado desconfia." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-016` +1, `ACT-003` +1, `ACT-006` -1 |
+| **Evento A** | "Os juros sobem com a desconfiança do mercado" · atraso 1 · `Caixa` -10 |
+| **Opção B** | Cumprir o teto |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "A regra se mantém, e o mercado aprova. As obras seguem paradas." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1, `ACT-007` +1, `ACT-016` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-023 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-024 — Bloqueio das emendas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Bloqueio das emendas |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | A receita cai, e você precisa bloquear verbas. Pode cortar também as emendas, que pagam shows e obras nas bases dos deputados. |
+| **Opção A** | Cortar as emendas também |
+| **Efeitos A** | `Dignidade` +5, `Integridade` +5, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "O corte se divide por igual. Deputados ameaçam travar seus projetos." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-007` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Poupar as emendas |
+| **Efeitos B** | `Capital Político` +15, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "Os shows seguem. O corte cai inteiro sobre saúde, escolas e bolsas." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-024 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-025 — Juros do Plano Safra
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juros do Plano Safra |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | O Tesouro paga parte dos juros do crédito rural. A verba não dá para todos: grandes exportadores ou pequenos agricultores? |
+| **Opção A** | Priorizar os pequenos |
+| **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Capital Político` -10 |
+| **Consequência A** | "O crédito barato chega à agricultura familiar. Grandes produtores reclamam." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Priorizar os exportadores |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Dignidade` -10 |
+| **Consequência B** | "As exportações crescem. Pequenos agricultores ficam sem crédito barato." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-017` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-025 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-026 — Quem paga a conta
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Quem paga a conta |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-002` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Você precisa de receita para um programa social: taxar grandes fortunas ou o consumo? Investidores ameaçam tirar o dinheiro do país. |
+| **Opção A** | Taxar grandes fortunas |
+| **Efeitos A** | `Caixa` +10, `Dignidade` +5, `Capital Político` -15 |
+| **Consequência A** | "Quem tem mais paga mais. Parte das fortunas sai do país, e a receita vem menor." |
+| **Eixo A** | [-2, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-002` -1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Taxar o consumo |
+| **Efeitos B** | `Caixa` +15, `Capital Político` +5, `Dignidade` -10, `Legitimidade` -10 |
+| **Consequência B** | "Tudo fica mais caro no mercado. Quem ganha pouco sente mais no bolso." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-026 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-027 — Piso da educação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Piso da educação |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | A equipe econômica quer tirar da Constituição o piso de gasto com educação. Diz que assim o orçamento fica livre. |
+| **Opção A** | Manter o piso |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "A educação segue com verba garantida. Sobra menos para outras áreas." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-007` -1 |
+| **Evento A** | — |
+| **Opção B** | Acabar com o piso |
+| **Efeitos B** | `Caixa` +15, `Capital Político` +5, `Consciência` -10, `Dignidade` -10 |
+| **Consequência B** | "O Congresso aprova a mudança. A educação passa a disputar verba com tudo." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-005` +1, `ACT-013` -1 |
+| **Evento B** | "Estados e cidades cortam verba das escolas" · atraso 2 · `Consciência` -10 |
+| **Aprendizado** | APR-027 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-028 — Edital na gaveta
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Edital na gaveta |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Um edital de cultura premia filmes sobre diversidade sexual. Pastores aliados pedem que você segure a verba, já prevista no orçamento. |
+| **Opção A** | Liberar a verba |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "Os filmes saem do papel. Pastores dizem que o governo ataca a família." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-019` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Segurar a verba |
+| **Efeitos B** | `Capital Político` +15, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "A verba fica parada, sem corte oficial. Artistas denunciam censura." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-019` -1 |
+| **Evento B** | "A Justiça manda liberar a verba do edital" · atraso 1 · `Legitimidade` -5, `Integridade` -5 |
+| **Aprendizado** | APR-028 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -1876,10 +2416,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 55 | 200 |
+| **Institucionais** | 75 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **57** | **340** |
+| **Total** | **77** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

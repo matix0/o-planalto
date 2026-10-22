@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 62 Cartas de Aprendizado ligadas às 62 cartas do doc 17 (57 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 106 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 82 Cartas de Aprendizado ligadas às 82 cartas do doc 17 (77 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 86 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -69,7 +69,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.02 — Cartas de Aprendizado do Modo Congresso (6 de 20)
+## 18.02 — Cartas de Aprendizado do Modo Congresso (20 de 20)
 
 ### APR-001 — Privatização da Estatal
 
@@ -255,9 +255,463 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-010):** [Exame, 2026](https://exame.com/brasil/quanto-ganha-um-deputado-federal-em-2026/)
 **Fonte verificada (P-010):** [Decreto 12.797/2025](https://cnbsp.org.br/2025/12/30/dou-decreto-presidencia-da-republica-n-12-797-2025-dispoe-sobre-o-valor-do-salario-minimo-a-vigorar-a-partir-de-1o-de-janeiro-de-2026/)
 
+### APR-007 — Ministro aliado sob suspeita
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-007                            │
+│  Ministro aliado sob suspeita                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se demitia um ministro aliado sob suspeita ou │
+│  se esperava a decisão da Justiça.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No presidencialismo de coalizão, o presidente divide       │
+│  ministérios com partidos em troca de votos. Demitir é      │
+│  decisão política; condenar cabe à Justiça.                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Nas eleições de 2026, a maior bancada da Câmara ficou com  │
+│  121 dos 513 deputados (23,6%). Nenhum partido tem maioria  │
+│  sozinho.                                                   │
+│                                                             │
+│  FONTE: Agência Senado, 5 de outubro de 2026.               │
+│                                                             │
+│  "Afastar não é condenar. Manter também é escolha."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Senado, 2026](https://www12.senado.leg.br/noticias/materias/2026/10/05/camara-pl-obtem-a-maior-bancada-federacao-pt-pcdob-pv-e-a-segunda-forca)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-008 — Urgência contra crime ambiental
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-008                            │
+│  Urgência contra crime ambiental                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia urgência para endurecer a pena por   │
+│  crime ambiental ou se deixava o projeto na comissão.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O presidente pode pedir urgência para um projeto seu: se a │
+│  Câmara não vota no prazo, a pauta tranca. Comissões podem  │
+│  segurar projetos por anos.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Desde 2023, a Câmara só arquiva os projetos de deputados   │
+│  após 3 legislaturas completas: de 12 a 16 anos de          │
+│  tramitação.                                                │
+│                                                             │
+│  FONTE: Agência Câmara, 8 de fevereiro de 2023.             │
+│                                                             │
+│  "Quem controla a pauta decide o que nunca é votado."       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Câmara, 2023](https://www.camara.leg.br/noticias/938043-MUDANCA-NO-REGIMENTO-INTERNO-REDUZ-NUMERO-DE-PROJETOS-ARQUIVADOS-NA-CAMARA-DOS-DEPUTADOS)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-009 — Jabuti no projeto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-009                            │
+│  Jabuti no projeto                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava o jabuti que taxa compras pequenas  │
+│  em sites estrangeiros ou se sancionava o texto todo.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Jabuti é um trecho sem relação com o tema, posto num       │
+│  projeto para passar de carona. O presidente pode vetar só  │
+│  esse trecho: é o veto parcial.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2024, uma emenda da Câmara pôs no projeto do Mover, de  │
+│  carros menos poluentes, a taxa de 20% sobre compras até US$│
+│  50. O presidente vetou 4 trechos, não esse.                │
+│                                                             │
+│  FONTE: Agência Senado, 28 de junho de 2024.                │
+│                                                             │
+│  "Jabuti não sobe em árvore sozinho."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Senado, 2024](https://www12.senado.leg.br/noticias/materias/2024/06/28/lula-sanciona-taxacao-de-compra-internacional-e-criacao-do-programa-mover)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-010 — PEC da maioridade penal
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-010                            │
+│  PEC da maioridade penal                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se usava sua base contra a PEC que reduz a    │
+│  maioridade penal, sem o poder de vetá-la.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma PEC muda a Constituição. Exige maioria qualificada nas │
+│  duas Casas, e o presidente não pode vetar. A arma dele é a │
+│  base no voto.                                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em junho de 2026, a CCJ da Câmara aprovou por 44 a 18 que a│
+│  PEC da maioridade penal siga adiante. No Plenário, ela     │
+│  precisa de 308 dos 513 deputados, em 2 turnos.             │
+│                                                             │
+│  FONTE: Agência Brasil, 10 de junho de 2026.                │
+│                                                             │
+│  "Na PEC, o presidente não tem caneta. Tem base."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Brasil, 2026](https://agenciabrasil.ebc.com.br/politica/noticia/2026-06/entenda-os-proximos-passos-do-projeto-para-reduzir-maioridade-penal) — fonte de imprensa
+
+**Status:** pendente de revisão (D-196)
+
+### APR-011 — Escola sem Partido
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-011                            │
+│  Escola sem Partido                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava o Escola sem Partido ou se deixava a│
+│  lei valer sem a sua assinatura.                            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O presidente tem prazo para sancionar ou vetar. Se fica em │
+│  silêncio, a lei vale: é a sanção tácita. O STF já barrou   │
+│  leis parecidas nos estados.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em fevereiro de 2026, o STF invalidou por unanimidade a lei│
+│  de uma cidade do Paraná que criou o Escola sem Partido.    │
+│  Citou a liberdade de ensinar e o pluralismo.               │
+│                                                             │
+│  FONTE: Notícias do STF, 19 de fevereiro de 2026.           │
+│                                                             │
+│  "Ficar calado também é assinar."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Notícias do STF, 2026](https://noticias.stf.jus.br/postsnoticias/stf-invalida-lei-de-municipio-paranaense-que-instituiu-programa-escola-sem-partido/)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-012 — Decreto das armas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-012                            │
+│  Decreto das armas                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia no Senado seu decreto que limita  │
+│  armas de atiradores ou se afrouxava as regras.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Congresso pode derrubar, com um decreto legislativo, o   │
+│  decreto do presidente que passa dos limites da lei. Decreto│
+│  é rápido, mas frágil.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2024, a Câmara aprovou um projeto de decreto legislativo│
+│  para sustar trechos do decreto de armas de 2023. O Senado o│
+│  retirou de pauta; em 2026, seguia na CCJ.                  │
+│                                                             │
+│  FONTE: Senado Federal, ficha do PDL 206/2024.              │
+│                                                             │
+│  "Decreto se faz com caneta. E se desfaz com voto."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Senado, PDL 206/2024](https://www25.senado.leg.br/web/atividade/materias/-/materia/164091)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-013 — Venda dos Correios
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-013                            │
+│  Venda dos Correios                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava emendas para manter seu veto à    │
+│  venda dos Correios ou se aceitava a derrubada.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Todo veto volta ao Congresso, que pode derrubá-lo em sessão│
+│  conjunta de deputados e senadores. Para manter um veto, o  │
+│  governo negocia votos, às vezes com emendas.               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em agosto de 2026, 99 vetos aguardavam análise do          │
+│  Congresso, e 87 trancavam a pauta. Derrubar um veto exige  │
+│  maioria absoluta dos votos de deputados e senadores.       │
+│                                                             │
+│  FONTE: Agência Câmara, 5 de agosto de 2026.                │
+│                                                             │
+│  "O veto é a última palavra só até o Congresso falar."      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Câmara, 2026](https://www.camara.leg.br/noticias/1295191-mais-de-80-vetos-trancam-pauta-do-congresso-na-volta-do-recesso)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-014 — Acordo com o banco
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-014                            │
+│  Acordo com o banco                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se processava o banco que lesou aposentados ou│
+│  se fazia um acordo para reaver parte do dinheiro.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A CPI investiga, mas não pune: manda o relatório ao        │
+│  Ministério Público. Um acordo devolve dinheiro rápido, mas │
+│  pode livrar culpados.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "CPI não prende. Ela entrega o caso."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-015 — Ocupação como terrorismo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-015                            │
+│  Ocupação como terrorismo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se sua base obstruía a votação do projeto que │
+│  trata ocupação de terra e prédio como terrorismo.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Para votar, o plenário precisa de quórum, a presença mínima│
+│  de deputados. Obstruir é sair ou adiar para a votação não  │
+│  acontecer.                                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Às vezes, quem não vota decide a votação."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-016 — Licença-paternidade
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-016                            │
+│  Licença-paternidade                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se ampliava a licença-paternidade por medida  │
+│  provisória, que vale na hora, ou por projeto de lei.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A medida provisória vale na hora, mas perde a validade se o│
+│  Congresso não a votar a tempo. O projeto de lei demora, mas│
+│  nasce negociado.                                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Cuidar do filho também é trabalho de pai."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-017 — Assinaturas pelo SUS
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-017                            │
+│  Assinaturas pelo SUS                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava o projeto popular por mais verba   │
+│  para o SUS ou se mandava um texto próprio.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Eleitores também podem propor leis: basta juntar           │
+│  assinaturas suficientes em vários estados. Depois, o       │
+│  projeto segue o mesmo caminho dos outros no Congresso.     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2013, o movimento Saúde+10 reuniu quase 2 milhões de    │
+│  assinaturas por um projeto que pedia 10% da receita bruta  │
+│  da União para a saúde.                                     │
+│                                                             │
+│  FONTE: Agência Câmara, 09/10/2013                          │
+│                                                             │
+│  "A lei também pode nascer de uma assinatura sua."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Câmara, 09/10/2013](https://www.camara.leg.br/noticias/417418-entidades-cobram-aprovacao-de-10-das-receitas-para-a-saude/)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-018 — Crime que não prescreve
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-018                            │
+│  Crime que não prescreve                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mandava ao Congresso o tratado da ONU que  │
+│  diz: crime contra a humanidade não prescreve.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O presidente assina tratados, mas eles só valem no Brasil  │
+│  depois que o Congresso aprova. A Lei de Anistia perdoou    │
+│  também agentes do Estado que torturaram.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em 2026, o Brasil ainda não tinha ratificado a Convenção da│
+│  ONU de 1968 sobre a imprescritibilidade dos crimes de      │
+│  guerra e contra a humanidade.                              │
+│                                                             │
+│  FONTE: MPF/PFDC, Normativas internacionais, 2026           │
+│                                                             │
+│  "Esquecer também é uma decisão."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [MPF/PFDC, normativas internacionais, 2026](https://www.mpf.mp.br/atuacao/pfdc/comissoes-e-rts/memoria-e-verdade-e-defesa-da-democracia/normativas-internacionais-e-nacionais)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-019 — Destaque na lei da IA
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-019                            │
+│  Destaque na lei da IA                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia o trecho da lei da IA que paga    │
+│  artistas ou se aceitava o destaque.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No plenário, primeiro se vota o texto-base. Depois, cada   │
+│  destaque vota um trecho à parte, que pode cair. Uma lei    │
+│  aprovada pode perder seu ponto central.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em dezembro de 2024, o Senado aprovou a lei da IA: usar    │
+│  obras protegidas para treinar IA comercial dá direito de   │
+│  remuneração aos titulares. O texto foi à Câmara.           │
+│                                                             │
+│  FONTE: Agência Senado, 10/12/2024                          │
+│                                                             │
+│  "Aprovar o texto não garante o trecho."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte verificada (P-015):** [Agência Senado, 10/12/2024](https://www12.senado.leg.br/noticias/materias/2024/12/10/senado-aprova-regulamentacao-da-inteligencia-artificial-texto-vai-a-camara)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-020 — Limite ao salário mínimo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-020                            │
+│  Limite ao salário mínimo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia votação nominal no limite ao aumento │
+│  do salário mínimo ou se aceitava o voto simbólico.         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na votação simbólica, ninguém registra o voto de cada      │
+│  deputado. Na nominal, cada voto fica no painel. Só assim o │
+│  eleitor sabe quem decidiu.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Voto que não aparece não se cobra."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.03 — Cartas de Aprendizado do Modo Orçamento (2 de 20)
+## 18.03 — Cartas de Aprendizado do Modo Orçamento (8 de 20)
 
 ### APR-021 — Corte na Saúde
 
@@ -319,6 +773,192 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [InfoMoney, 2025](https://www.infomoney.com.br/economia/gasto-com-juros-do-setor-publico-em-2024-e-o-maior-da-serie-historica-diz-bc/)
+
+### APR-023 — Furar o teto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-023                            │
+│  Furar o teto                                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se furava o teto de gastos para retomar as    │
+│  obras de casas populares ou se cumpria a regra.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O teto limita o gasto do governo, mesmo com a arrecadação  │
+│  em alta. Gastar acima exige mudar a regra no Congresso.    │
+│  Regra firme acalma credores; rígida trava obras.           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ter dinheiro não basta: a regra decide se ele sai."       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-024 — Bloqueio das emendas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-024                            │
+│  Bloqueio das emendas                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cortava também as emendas dos deputados no │
+│  bloqueio de verbas ou se poupava as emendas.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Emendas são verbas que deputados e senadores levam às suas │
+│  bases, e parte delas é obrigatória. No bloqueio, o governo │
+│  pode cortá-las na proporção dos outros gastos.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quando o corte poupa um lado, o outro paga mais."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-025 — Juros do Plano Safra
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-025                            │
+│  Juros do Plano Safra                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu quem recebia antes o juro pago pelo Tesouro no│
+│  crédito rural: pequenos ou exportadores.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Subsídio também é gasto. No crédito rural, o banco cobra   │
+│  juros menores, e o Tesouro paga a diferença. Decidir quem  │
+│  recebe é escolher prioridades.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Juro barato para um é conta paga por todos."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-026 — Quem paga a conta
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-026                            │
+│  Quem paga a conta                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pagava um programa social com imposto sobre│
+│  grandes fortunas ou com imposto sobre o consumo.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Imposto sobre consumo pesa mais para quem ganha pouco,     │
+│  porque gasta quase tudo. Imposto sobre fortunas cobra de   │
+│  quem tem mais, mas arrecada menos e pode estimular fuga.   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Todo imposto tem endereço."                               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-027 — Piso da educação
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-027                            │
+│  Piso da educação                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha na Constituição o piso de gasto   │
+│  com educação ou se acabava com ele.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição obriga governos a gastar uma parte da       │
+│  receita com educação. O piso protege a escola dos cortes,  │
+│  mas deixa menos verba livre para outras áreas.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O piso existe para a escola não ser a primeira a cair."   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-028 — Edital na gaveta
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-028                            │
+│  Edital na gaveta                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava a verba de um edital de filmes    │
+│  sobre diversidade sexual ou se a segurava.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lei do orçamento prevê a verba, mas quem libera é o      │
+│  governo. Segurar o dinheiro de quem incomoda é censura     │
+│  disfarçada. A Justiça pode mandar pagar.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Censura também se faz com a caneta do caixa."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -2138,550 +2778,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Congresso
 
-#### APR-007 — Escândalo de Corrupção
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-007                            │
-│  Escândalo de corrupção                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se exonerava ou protegia um ministro          │
-│  envolvido em escândalo de corrupção.                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A CPI pode convocar ministros. O governo precisa negociar. │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Banco Master revelou um esquema de fraudes bilionárias   │
-│  que envolveu políticos de diferentes partidos.             │
-│                                                             │
-│  FONTE: Polícia Federal, 2026. [não verificado]             │
-│                                                             │
-│  "A corrupção não tem ideologia. Tem apenas interesse."     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-008 — Aumento de Pena para Crimes Ambientais
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-008                            │
-│  Crimes ambientais                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava o aumento de pena     │
-│  para crimes ambientais.                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A bancada ruralista atua para flexibilizar a legislação    │
-│  ambiental.                                                 │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil desmatou 62,2% mais na Amazônia em 2022.          │
-│  A fiscalização foi desmontada.                             │
-│                                                             │
-│  FONTE: INPE, 2023. [não verificado]                        │
-│                                                             │
-│  "O agronegócio destrói a floresta e ainda chama de         │
-│   'progresso'."                                             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-009 — Taxa sobre Grandes Fortunas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-009                            │
-│  Taxa sobre grandes fortunas                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava a base para taxar grandes       │
-│  fortunas ou recuava.                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Taxar grandes fortunas é uma forma de reduzir a            │
-│  desigualdade. O Brasil é um dos países que menos taxa      │
-│  heranças e grandes patrimônios.                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O 1% mais rico do Brasil concentra 27% da renda total.     │
-│  Os 40% mais pobres dividem 12%.                            │
-│                                                             │
-│  FONTE: World Inequality Report, 2024. [não verificado]     │
-│                                                             │
-│  "O pobre paga mais. O rico continua rico."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-010 — Redução da Maioridade Penal
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-010                            │
-│  Redução da maioridade penal                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a redução da maioridade  │
-│  penal.                                                     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A redução da maioridade penal não reduz a violência.       │
-│  Apenas encarcera mais jovens.                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o 3º país que mais encarcera no mundo.          │
-│  69% da população carcerária é negra.                       │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "Mais adolescentes presos. A violência não cai."           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-011 — Escola sem Partido
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-011                            │
-│  Escola sem Partido                                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava o "Escola sem Partido".  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O "Escola sem Partido" é uma tentativa de censurar o       │
-│  debate em sala de aula.                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Lei 13.415/2017 retirou a obrigatoriedade de Filosofia   │
-│  e Sociologia. O pensamento crítico foi desativado.         │
-│                                                             │
-│  FONTE: Ministério da Educação, 2017. [não verificado]      │
-│                                                             │
-│  "A educação crítica é a única arma que o povo tem."        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-012 — Flexibilização do Porte de Armas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-012                            │
-│  Flexibilização do porte de armas                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava contra ou apoiava a             │
-│  flexibilização do porte de armas.                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais armas nas ruas significam mais mortes. A bancada da   │
-│  bala lucra com o medo.                                     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Estatuto do Desarmamento reduziu mortes por arma de      │
-│  fogo entre 2003 e 2010.                                    │
-│                                                             │
-│  FONTE: Ministério da Justiça, 2012. [não verificado]       │
-│                                                             │
-│  "Mais armas. Mais mortes."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-013 — Privatização dos Correios
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-013                            │
-│  Privatização dos Correios                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se negociava com senadores ou deixava         │
-│  derrubar seu veto à privatização dos Correios.             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Os Correios são um serviço público que garante a           │
-│  universalização. A privatização fragiliza o modelo.        │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Os Correios atendem 5.570 municípios. A privatização       │
-│  excluiria as populações mais pobres.                       │
-│                                                             │
-│  FONTE: Correios, 2024. [não verificado]                    │
-│                                                             │
-│  "O serviço público não é mercadoria."                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-014 — CPI das Bets
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-014                            │
-│  CPI das Bets                                               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou engavetava a CPI das Bets.      │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A CPI das Bets foi instalada para investigar apostas       │
-│  online e lavagem de dinheiro.                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O relatório final foi rejeitado por 4 votos a 3.           │
-│  Virgínia Fonseca e mais 15 escaparam.                      │
-│                                                             │
-│  FONTE: Agência Senado, 2025. [não verificado]              │
-│                                                             │
-│  "A impunidade é a regra. O crime compensa."                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-015 — Criminalização de Movimentos Sociais
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-015                            │
-│  Criminalização de movimentos                               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a criminalização de      │
-│  movimentos sociais.                                        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Criminalizar movimentos sociais é uma estratégia para      │
-│  silenciar a resistência.                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O MST tem mais de 1,5 milhão de membros. A CUT, a UNE e    │
-│  outros movimentos são alvos constantes de projetos de lei. │
-│                                                             │
-│  FONTE: CPT, 2025. [não verificado]                         │
-│                                                             │
-│  "A criminalização da luta é a arma dos que têm medo da     │
-│   organização popular."                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-016 — Licença-Paternidade
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-016                            │
-│  Licença-paternidade                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava a ampliação da        │
-│  licença-paternidade para 20 dias.                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A licença-paternidade é uma pauta feminista e de cuidado.  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil tem uma das menores licenças-paternidade do       │
-│  mundo (5 dias). A ampliação para 20 dias é uma conquista.  │
-│                                                             │
-│  FONTE: OIT, 2024. [não verificado]                         │
-│                                                             │
-│  "O cuidado é uma responsabilidade de todos."               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-017 — Gastar 10% do PIB em Saúde
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-017                            │
-│  10% do PIB em saúde                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava a proposta de gastar  │
-│  10% do PIB em saúde.                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O SUS precisa de financiamento estável. O teto de gastos   │
-│  retirou R$ 37 bilhões do SUS entre 2018 e 2022.            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A expectativa de vida caiu de 76,2 para 72,8 anos.         │
-│                                                             │
-│  FONTE: IBGE, 2023. [não verificado]                        │
-│                                                             │
-│  "O subfinanciamento do SUS é uma escolha política."        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-018 — Anistia aos Crimes da Ditadura
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-018                            │
-│  Anistia aos crimes da ditadura                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a anistia aos crimes     │
-│  da ditadura.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A anistia aos crimes da ditadura é uma tentativa de        │
-│  apagar a memória.                                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Comissão da Verdade documentou 434 mortes e              │
-│  desaparecimentos. Ninguém foi punido.                      │
-│                                                             │
-│  FONTE: Comissão Nacional da Verdade, 2014. [não verificado]│
-│                                                             │
-│  "A memória é a única garantia de que a ditadura não        │
-│   volta."                                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-019 — Educação Financeira em vez de Filosofia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-019                            │
-│  Educação financeira                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava professores ou apoiava a        │
-│  substituição de Filosofia por educação financeira.         │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Substituir Filosofia por educação financeira é formar      │
-│  consumidores, não cidadãos.                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A retirada de Filosofia e Sociologia do currículo é a      │
-│  desativação do pensamento crítico.                         │
-│                                                             │
-│  FONTE: Ministério da Educação, 2017. [não verificado]      │
-│                                                             │
-│  "A escola deve formar cidadãos, não consumidores."         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-020 — Redução do Salário Mínimo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-020                            │
-│  Redução do salário mínimo                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a redução do salário     │
-│  mínimo.                                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O salário mínimo é uma conquista histórica. Reduzi-lo é    │
-│  atacar a classe trabalhadora.                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O salário mínimo brasileiro é um dos menores do mundo      │
-│  em poder de compra.                                        │
-│                                                             │
-│  FONTE: DIEESE, 2024. [não verificado]                      │
-│                                                             │
-│  "O trabalhador ganha menos. O patrão lucra mais."          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Orçamento
-
-#### APR-023 — Teto de Gastos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-023                            │
-│  Teto de gastos                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se propunha uma PEC para revogar o teto de    │
-│  gastos ou mantinha o teto.                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O teto de gastos é um dispositivo constitucional que       │
-│  congela investimentos por 20 anos.                         │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A PEC 09/2023 reduziu de 30% para 25% o investimento       │
-│  mínimo em educação.                                        │
-│                                                             │
-│  FONTE: Congresso Nacional, 2023. [não verificado]          │
-│                                                             │
-│  "O teto de gastos é uma escolha política. E mata."         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-024 — Emenda para Show
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-024                            │
-│  Emenda para show                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se redirecionava uma emenda de show para o    │
-│  hospital local.                                            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As emendas parlamentares são verbas que deputados e        │
-│  senadores destinam a projetos em suas bases eleitorais.    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Entre janeiro de 2024 e março de 2026, cem artistas        │
-│  acumularam mais de R$ 5 bilhões em cachês pagos por        │
-│  prefeituras e governos estaduais.                          │
-│                                                             │
-│  FONTE: De Olho nos Ruralistas, 2026. [não verificado]      │
-│                                                             │
-│  "O show acontece. O hospital não. A emenda é uma escolha   │
-│   política."                                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-025 — Subsídio para Agronegócio
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-025                            │
-│  Subsídio para agronegócio                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se priorizava a agricultura familiar ou o     │
-│  agronegócio.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O agronegócio exporta. A agricultura familiar alimenta     │
-│  o povo.                                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  No Plano Safra 2025/2026, o agronegócio recebeu            │
-│  R$ 516 bilhões. A agricultura familiar recebeu R$ 89       │
-│  bilhões.                                                   │
-│                                                             │
-│  FONTE: MAPA, 2025. [não verificado]                        │
-│                                                             │
-│  "O agro exporta. O povo passa fome."                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-026 — Taxar Grandes Fortunas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-026                            │
-│  Taxar grandes fortunas                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava grandes fortunas ou taxava o        │
-│  consumo.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Taxar o consumo é regressivo. Taxar grandes fortunas é     │
-│  progressivo.                                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é um dos países que menos taxa heranças e         │
-│  grandes patrimônios.                                       │
-│                                                             │
-│  FONTE: World Inequality Report, 2024. [não verificado]     │
-│                                                             │
-│  "O pobre paga mais. O rico continua rico."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-027 — Corte na Educação
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-027                            │
-│  Corte na educação                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recompunha o orçamento da educação ou      │
-│  mantinha o corte.                                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O sucateamento da educação é deliberado. Justifica a       │
-│  privatização.                                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em São Paulo, a PEC 09/2023 reduziu de 30% para 25% o      │
-│  investimento mínimo em educação.                           │
-│                                                             │
-│  FONTE: Alesp, 2023. [não verificado]                       │
-│                                                             │
-│  "A educação é a única arma que o povo tem."                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-028 — Corte na Cultura
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-028                            │
-│  Corte na cultura                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava a cultura ou cortava o orçamento.  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A cultura é um direito. A Lei Rouanet é atacada, mas os    │
-│  maiores beneficiários são artistas bolsonaristas.          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Gusttavo Lima recebeu R$ 52 milhões via Lei Rouanet.       │
-│  Leonardo, R$ 42 milhões.                                   │
-│                                                             │
-│  FONTE: Senado Federal, 2024. [não verificado]              │
-│                                                             │
-│  "A cultura é uma ferramenta de resistência."               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-029 — Ampliação do Bolsa Família
 
@@ -5042,10 +5141,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 55 | 106 | 200 |
+| **Institucionais** | 75 | 86 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **57** | **106** | **340** |
+| **Total** | **77** | **86** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
