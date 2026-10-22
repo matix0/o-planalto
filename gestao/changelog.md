@@ -10,6 +10,7 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Alterado (P-018)
+- Responsividade conferida em 390×680, 390×844 e 1280×720; cartão do ano cresce quando o texto grande não cabe; seletor de texto selecionado volta a ter texto (contraste testado em `test_theme.gd`); docs 13, 14 (§14.14), 14A, 16 e GDD alinhados ao P-017/P-018
 - Opções sempre visíveis nos cantos da carta com seta (D-202); verde ao subir e vermelho ao cair nos medidores (D-203); "Boi, Bala e Bíblia" (D-205)
 
 ### Alterado (P-017, correções do playtest)

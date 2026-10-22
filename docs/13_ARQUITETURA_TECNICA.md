@@ -426,8 +426,9 @@ Trecho de `jogo/data/endings.json:2-17`.
 | `quote` | String | Citação de impacto; falta nos finais sem fonte verificada, `END-005` e `END-012` (D-091) |
 | `author` | String | Autor e obra ou data da citação |
 | `source` | String | Link da fonte (D-091) |
+| `description` | String | Descrição curta do final (P-017, D-200), mostrada sob o nome na tela final |
 
-Não existem nos dados `descricao`, `cor` e `icone`. Cor e ícone não são usados: a tela final mostra só o nome da categoria como etiqueta (`CATEGORY_LABELS`, `jogo/scripts/core/ending_rules.gd:8-17`). A descrição curta que o doc 14 §14.09 pede aparece como o marcador "[descrição curta do final — a definir]" (`jogo/scripts/core/game_flow.gd:28,459`), ponto aberto no relatório de sincronização. Regras de prioridade no fim do mandato: `gdd/sistemas/02_finais.md` (§13.4.5).
+Não existem nos dados `cor` e `icone`: a cor vem da categoria (`Tokens.ENDING_BG`, D-199) e a etiqueta de `CATEGORY_LABELS` (`jogo/scripts/core/ending_rules.gd:8-17`). Antes do P-017, a descrição curta aparecia como marcador, ponto aberto no relatório de sincronização. Regras de prioridade no fim do mandato: `gdd/sistemas/02_finais.md` (§13.4.5).
 
 ### 13.3.7. Configurações do Jogador
 

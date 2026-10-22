@@ -79,8 +79,10 @@ static func build(step: int = Tokens.DEFAULT_STEP, high_contrast: bool = false) 
 		t.set_stylebox(state, &"Link", _box(Color(0, 0, 0, 0), Tokens.RADIUS_12, 0, Color(), 0, Tokens.ESP_12))
 
 	_button_colors(t, "Segment", Tokens.TEXT)
-	t.set_color(&"font_pressed_color", &"Segment", primary_fg)
-	t.set_color(&"font_hover_pressed_color", &"Segment", primary_fg)
+	# The selected segment is a white pill: dark text (the green primary now has white text).
+	var segment_fg := Tokens.HC_BG if high_contrast else Tokens.BG
+	t.set_color(&"font_pressed_color", &"Segment", segment_fg)
+	t.set_color(&"font_hover_pressed_color", &"Segment", segment_fg)
 	t.set_stylebox(&"normal", &"Segment", _box(Color(0, 0, 0, 0), Tokens.RADIUS_12, 2, outline, Tokens.ESP_12, Tokens.ESP_12))
 	t.set_stylebox(&"hover", &"Segment", _box(Color(0, 0, 0, 0), Tokens.RADIUS_12, 2, outline, Tokens.ESP_12, Tokens.ESP_12))
 	t.set_stylebox(&"pressed", &"Segment", _box(Tokens.TEXT, Tokens.RADIUS_12, 2, Tokens.TEXT, Tokens.ESP_12, Tokens.ESP_12))

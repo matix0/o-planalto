@@ -45,7 +45,10 @@ func _ready() -> void:
 	_card.offset_transform_enabled = true
 	_card.accessibility_live = AccessibilityServer.LIVE_POLITE
 	_tap_hint.text = TAP_HINT_TEXT
-	resized.connect(_layout_fit)
+	resized.connect(func() -> void:
+		_wide = false
+		_layout_fit())
+	_card.minimum_size_changed.connect(_queue_fit)   # text size or capture rows changed
 	_layout_fit()
 	_restyle()
 
@@ -58,6 +61,7 @@ func _notification(what: int) -> void:
 ## Shows Game.year_view(): {year, phase, title, capture_warning: [{id, name}],
 ## capture_warning_text}. `values` = meter values {id: int} for the glyph fill.
 func show_year(view: Dictionary, values: Dictionary = {}, reduce_motion: bool = false) -> void:
+	_wide = false
 	_kill()
 	_fill(view, values)
 	visible = true
@@ -191,7 +195,18 @@ func _add_meter_row(id: String, meter_name: String, value: int, text: String) ->
 
 # --- Layout and style ------------------------------------------------------------------------
 
+var _fit_queued := false
+var _wide := false
+
+
+func _queue_fit() -> void:
+	if not _fit_queued:
+		_fit_queued = true
+		_layout_fit.call_deferred()
+
+
 func _layout_fit() -> void:
+	_fit_queued = false
 	if _fit == null:
 		return
 	var h := minf(Tokens.CARD_MAX.y, size.y)
@@ -199,6 +214,16 @@ func _layout_fit() -> void:
 	if w > size.x:
 		w = size.x
 		h = w / Tokens.CARD_RATIO
+	# P-018 (responsive): big text on a short screen widens the card to the column and lets it
+	# grow in height up to the room, instead of spilling out. Sticky (_wide) so the new width,
+	# which rewraps the text, never flips the decision back (no layout loop).
+	var card := _fit.get_child(0) as Control
+	if card:
+		if not _wide and card.get_combined_minimum_size().y > h + 0.5:
+			_wide = true
+		if _wide:
+			w = size.x
+			h = minf(size.y, maxf(h, card.get_combined_minimum_size().y))
 	_fit.size = Vector2(w, h)
 	_fit.position = ((size - _fit.size) * 0.5).round()
 

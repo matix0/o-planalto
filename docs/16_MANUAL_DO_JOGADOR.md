@@ -74,7 +74,7 @@ No topo da tela ficam **8 ícones de medidor**. Eles enchem e esvaziam conforme 
 
 ### 16.03.3. Como ler os medidores
 
-A cor do ícone muda conforme a faixa, numa escala de ciano do escuro ao claro (doc 14 §14.11.3).
+Cada medidor tem sua cor e sua sigla (DIGN, CONS, SOBER, SEG, INTEG, CAIXA, CAP, LEG). Toque no medidor (ou passe o mouse) para ver o nome e o que ele mede. O ícone enche conforme a faixa; a borda fica vermelha quando o medidor chega a 20 ou menos. Depois de uma escolha, o medidor pisca em verde se subiu e em vermelho se caiu (D-199, D-203).
 
 | Faixa | Significado |
 | :--- | :--- |

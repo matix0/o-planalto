@@ -241,7 +241,7 @@ Calibração → Turno 1 → Turno 2 → Turno 3 → Turno 4 → Final + Eixo
 
 **Descrição:** O jogador arrasta a carta para a esquerda ou direita para escolher uma das duas opções.
 
-**Regra (D-084):** os lados existem no design, mas **o jogo nunca rotula as opções como "esquerda" ou "direita"** nem associa o lado a uma ideologia. Ao arrastar, o jogador vê apenas o texto da opção daquele lado e o que ela provoca.
+**Regra (D-084; setas permitidas pela D-202):** os lados existem no design, mas **o jogo nunca rotula as opções como "esquerda" ou "direita"** nem associa o lado a uma ideologia. Ao arrastar, o jogador vê apenas o texto da opção daquele lado e o que ela provoca.
 
 | Elemento | No design (dados) | Para o jogador |
 | :--- | :--- | :--- |
@@ -548,17 +548,16 @@ Vale o 1º padrão que casa, na ordem da tabela. "Alto" = acima de 60; "baixo" =
 
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
-| Primária | Branco (neutro — D-159) | `#FFFFFF` |
-| Secundária | Cinza-azulado, contorno (neutro — D-172) | `#90A4AE` |
+| Primária (botão) | Verde, texto branco (D-199) | `#2E7D32` |
+| Destaque | Ciano (quem fala, título da carta) | `#80DEEA` |
 | Terciária | Cinza | `#37474F` |
-| Alerta | Branco + forma ou ícone (neutro — D-172) | `#FFFFFF` |
-| Destaque | Cinza-claro (neutro — D-172) | `#ECEFF1` |
+| Alerta | Vermelho (impeachment, medidor ≤ 20) | `#EF5350` |
 | Fundo | Cinza-escuro | `#263238` |
 | Texto | Branco | `#FFFFFF` |
 
-**D-172:** azul, vermelho e amarelo são cores partidárias; por isso secundária, alerta e destaque são neutras. Histórico (não usar): secundária `#1565C0`, alerta `#C62828`, destaque `#F9A825`. Tons do protótipo: `jogo/scripts/ui/tokens.gd:11-16`.
+**D-199 (2026-10-22):** volta a paleta da "ideia inicial" (revê a D-159 e a D-172). A cor partidária fica só na borda da opção (D-092); cada medidor tem cor própria só no HUD. Tabela completa: doc 14 §14.11.1 e `jogo/scripts/ui/tokens.gd`.
 
-**Faixas dos medidores:** escala ciano `#0097A7` · `#00ACC1` · `#26C6DA` · `#4DD0E1` · `#80DEEA` (0-20 a 81-100; doc 14 §14.11.3). **Bordas partidárias:** contorno branco de 2-3 px.
+**Medidores:** cor própria (Dignidade `#4CAF50`, Consciência `#CE93D8`, Soberania `#9FA8DA`, Segurança `#42A5F5`, Integridade `#26A69A`, Caixa `#F9A825`, Capital Político `#FF7043`, Legitimidade `#E57373`), sigla sob o ícone, borda vermelha ≤ 20, verde ao subir e vermelho ao cair (D-203). **Bordas partidárias:** contorno branco de 2-3 px.
 
 ### 10.2. Tipografia
 
@@ -574,7 +573,7 @@ Vale o 1º padrão que casa, na ordem da tabela. "Alto" = acima de 60; "baixo" =
 | :--- | :--- |
 | **Tela Inicial** | Título + botões (Iniciar, Config, Sobre) |
 | **Calibração** | 6 perguntas, uma por tela |
-| **Carta** | Barra de medidores + carta central; ao arrastar, mostra só o texto da opção daquele lado (D-084) |
+| **Carta** | Barra de medidores + carta central; as duas opções aparecem nos cantos com seta (D-202); ao arrastar, mostra o texto da opção daquele lado (D-084) |
 | **Consequência** | Frase curta + botão continuar |
 | **Carta de Aprendizado** | 5 blocos + botão continuar |
 | **Impeachment** | 5 cartas sequenciais |

@@ -443,7 +443,7 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🟡 Itens 1-4 feitos (2026-10-22); 5 aguarda o PO escolher |
+| **Status** | ✅ Itens 1-5 feitos (2026-10-22); falta o teste do PO no celular |
 | **Decisões** | D-202 a D-205 |
 | **Objetivo** | Fechar os pontos do playtest que o P-017 não cobriu |
 
@@ -453,7 +453,7 @@
 | 2 | Verde ao subir, vermelho ao cair (D-203) | ✅ |
 | 3 | Impacto não antecipado (D-204) | ✅ (sem mudança) |
 | 4 | "Bancada BBB" em termos comuns (D-205) | ✅ |
-| 5 | Próximo bloco: responsividade em várias resoluções + alinhamento dos docs / ações próprias (cartas do DeepSeek foram para o P-016) | ⏳ PO |
+| 5 | Responsividade (390×680, 390×844, 1280×720; cartão do ano cresce com texto grande; seletor "18 px" sem texto corrigido) + docs 13, 14, 14A, 16 e GDD alinhados (doc 14 §14.14) | ✅ |
 | — | Travas de toque no celular (Áudio 1) | ⏳ teste do PO |
 
 ---

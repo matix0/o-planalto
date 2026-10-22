@@ -117,7 +117,7 @@ Cada opção tem uma **cor partidária** (D-092). Enquanto o jogador arrasta, a 
 
 **Alternativa ao arraste (D-145):** exigida pelo WCAG 2.2, critério 2.5.7 (nível AA). Não mostra rótulo de lado (D-084). Tocar a outra metade troca a opção revelada; tocar fora da carta cancela; sem tempo limite. O 2º toque só é aceito 0,5 s depois do 1º (D-157).
 
-**Dica contextual (D-163):** se a carta fica parada, uma dica curta mostra que dá para tocar numa metade; texto e tempo `[a definir]`, sem rótulo de lado.
+**Dica contextual (D-163):** se a carta fica parada 4 s, aparece "Arraste a carta ou toque em um lado para ver a opção" (P-017). As duas opções também ficam sempre nos cantos de baixo da carta, com seta (D-202).
 
 **Sensibilidade (D-158):** nas Configurações, o jogador pode baixar o limite de arraste de 40% até 25% da largura.
 
@@ -233,19 +233,23 @@ Opção nas configurações. Remove pulsos, "pop", deslizes, zoom e flash. Mant�
 
 ### 14.11.1. Paleta da interface (GDD §10.1)
 
-**D-172:** secundária, alerta e destaque passam a ser neutras (branco e cinzas), porque azul, vermelho e amarelo são cores partidárias. Os hex da tabela ficam só como histórico. Viewport base 390×844 com `canvas_items` + `expand` (D-170); coluna do PC até 430 px (D-171).
+**D-199 (P-017, 2026-10-22):** volta a paleta da "ideia inicial" e revê a D-159 e a D-172. A cor partidária continua só na borda da opção (D-092); a cor do medidor só no HUD. Viewport base 390×844 com `canvas_items` + `expand` (D-170); coluna do PC até 430 px (D-171). Valores em `jogo/scripts/ui/tokens.gd`.
 
 | Uso | Cor | HEX |
 | :--- | :--- | :--- |
-| Primária | Branco (neutro — D-159) | `#FFFFFF` |
-| Secundária | Azul | `#1565C0` |
-| Terciária | Cinza | `#37474F` |
-| Alerta | Vermelho | `#C62828` |
-| Destaque | Amarelo | `#F9A825` |
+| Botão primário | Verde (texto branco, 5,1:1) | `#2E7D32` (hover `#296F2D`, pressionado `#256428`) |
+| Destaque (quem fala, título da carta, cabeçalho da calibração) | Ciano | `#80DEEA` |
+| Impeachment e medidor crítico (≤ 20) | Vermelho | `#EF5350` |
+| Medidor subiu / caiu (D-203) | Verde-claro / vermelho-claro | `#A5D6A7` / `#FF8A80` |
 | Fundo | Cinza-escuro | `#263238` |
 | Fundo da carta | Cinza-médio | `#37474F` |
+| Fundo da cena de impeachment | Quase preto | `#1A1416` |
 | Texto | Branco | `#FFFFFF` |
 | Texto secundário | Cinza-claro | `#B0BEC5` |
+
+**Cor de cada medidor no HUD** (clareada a ≥ 3:1 sobre o poço `#37474F`): Dignidade `#4CAF50`, Consciência `#CE93D8`, Soberania `#9FA8DA`, Segurança `#42A5F5`, Integridade `#26A69A`, Caixa `#F9A825`, Capital Político `#FF7043`, Legitimidade `#E57373`.
+
+**Tela final** (fundo e selo por categoria): catástrofe e extermínio `#4A1010` + selo `#EF5350`; perda da democracia `#0D2A4A` + `#EF5350`; captura `#3E1F4F` + `#CE93D8`; fortalecimento e cuidado `#1B5E20` + `#81C784`; neutro e saída `#455A64` + `#F9A825`. Alto contraste: fundo preto.
 
 **Contraste do texto (calculado pelo TA, WCAG):** branco sobre `#263238` 13,24:1; branco sobre `#37474F` 9,65:1; `#B0BEC5` sobre `#263238` 6,94:1; `#B0BEC5` sobre `#37474F` 5,06:1. Todos passam AA.
 
@@ -326,6 +330,26 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 | 6 | Modo daltônico | Pós-MVP |
 | 7 | Nova escala de ciano (D-162) | TA + PO |
 | 8 | Texto e tempo da dica do toque (D-163) | UX + PO |
+
+---
+
+## 14.14 — Atualização pós-playtest (P-017 e P-018, 2026-10-22)
+
+O playtest de 2026-10-21 mudou estas regras. Onde este doc diz outra coisa, vale esta seção.
+
+| Tema | Agora | Decisão | Revê |
+| :--- | :--- | :--- | :--- |
+| HUD | Sigla sob cada medidor (DIGN, CONS…), cor própria, borda vermelha ≤ 20; tocar ou passar o mouse abre uma faixa com nome e função. Continua sem números na partida | D-199 | — |
+| Animação do medidor | Rastro e borda verdes ao subir, vermelhos ao cair; os pontos seguem sem direção | D-203 | D-156 |
+| Opções | Sempre visíveis nos cantos de baixo da carta, "← A" e "B →"; somem quando uma é revelada. Setas permitidas; "esquerda/direita" seguem proibidas | D-202 | D-084 |
+| Impacto | Não aparece antes da escolha | D-204 | — |
+| Calibração | Cabeçalho "ALINHAMENTO INICIAL" + subtítulo no lugar do HUD; rodapé "Alinhamento · n/6" | P-017 | D-183 |
+| Impeachment | Cabeçalho vermelho "Processo de Impeachment · Fase n/5"; rodapé "Impeachment · Fase n/5" / "· Resultado" | D-201 | — |
+| Créditos | Saem da tela inicial; "Créditos e licenças" em Configurações | D-198 | — |
+| Tela final | Fundo por categoria; descrição curta de cada final em `endings.json`; radar com Prática (ciano) e Promessa (dourado) + 4 barras por eixo | D-199 | — |
+| Textos | Nenhum `[a definir]` na tela (`jogo/tests/test_no_placeholders.gd`); textos em D-200/DP-025 | D-200, D-201 | — |
+| Folha de Aprendizado | O "Saiba mais" aberto deixa o dedo rolar até a fonte | P-017 | — |
+| Responsividade | Conferida em 390×680, 390×844 e 1280×720 (`.claude/notas/execucao/ferramentas/varredura-resolucoes.sh`); o cartão do ano cresce quando o texto grande não cabe | P-018 | — |
 
 ---
 

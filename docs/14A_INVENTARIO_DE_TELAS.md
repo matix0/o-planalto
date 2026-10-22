@@ -22,7 +22,7 @@ Este anexo não cria regras. Ele lista, em forma de checklist, o que os docs 14,
 | # | Regra | Fonte |
 | :--- | :--- | :--- |
 | 1 | Retrato; mobile em tela cheia; PC e Web em coluna central | doc 14 §14.02 (`docs/14_UI_UX_DESIGN.md:27-29`) |
-| 2 | Nunca escrever "esquerda", "direita", "◀" ou "▶" | D-084 (`docs/14_UI_UX_DESIGN.md:90`) |
+| 2 | Nunca escrever "esquerda", "direita", "◀" ou "▶"; as setas ← → das opções são permitidas (D-202) | D-084, D-202 |
 | 3 | Nenhuma pista sobre os medidores durante o arraste | doc 14 §14.05 |
 | 4 | Medidores sem números durante a partida; números só na tela final | `docs/14_UI_UX_DESIGN.md:59` |
 | 5 | Borda partidária sempre com contorno branco de 2-3 px; não há borda neutra | doc 14 §14.04.3 |
@@ -182,7 +182,7 @@ Fonte: doc 14 §14.12-14.12.1; doc 14 §14.10.3.
 
 | Código | Estado | Conteúdo | Status |
 | :--- | :--- | :--- | :--- |
-| T-12.1 | Padrão | Áudio (controles `[a definir]`), tamanho do texto (16 / 20 / 24), reduzir movimento, alto contraste, sensibilidade do arraste 25–40% (D-158) | ⏳ |
+| T-12.1 | Padrão | Áudio ("O jogo ainda não tem som.", P-017); "Créditos e licenças" no fim (D-198), tamanho do texto (16 / 20 / 24), reduzir movimento, alto contraste, sensibilidade do arraste 25–40% (D-158) | ⏳ |
 
 ### T-13 — Sobre
 
@@ -248,7 +248,7 @@ Fonte: doc 14 §14.02.
 | C-17 | Aviso de evento | Destaque na borda + ícone + texto | doc 14 §14.10.1 | ⏳ |
 | C-18 | Aviso de conteúdo | Lista dos 4 avisos da tela inicial | GDD §14.3 | ⏳ |
 | C-19 | Indicador de progresso | Tutorial (1/4 a 4/4); calibração (1/6 a 6/6) | doc 16 Parte B; doc 15 §15.04 | ⏳ |
-| C-20 | Controles de configuração | Seletor de tamanho (16 / 18 / 20 / 24, D-165); chaves de reduzir movimento e alto contraste; áudio `[a definir]` | doc 14 §14.12.1 | ⏳ |
+| C-20 | Controles de configuração | Seletor de tamanho (16 / 18 / 20 / 24, D-165); chaves de reduzir movimento e alto contraste; áudio: aviso "O jogo ainda não tem som." (P-017) | doc 14 §14.12.1 | ⏳ |
 | C-21 | Aviso discreto | Falha ao gravar; salvamento ilegível | `gdd/sistemas/10_estado_partida.md` §5 | ⏳ |
 
 ---
@@ -308,16 +308,16 @@ Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 fai
 | 4 | ~~Como abrir o menu de pausa~~ — resolvido: botão no rodapé à direita + Esc (D-150) | T-11 | D-150 |
 | 5 | Controles de áudio | T-12, C-20 | não definido nos docs |
 | 6 | Tratamento visual do modo Influenciador | T-06.8 | não definido nos docs |
-| 7 | Conteúdo de "Compartilhar" | T-10.1 | não definido nos docs |
+| 7 | Conteúdo de "Compartilhar" (hoje: aviso "Compartilhar chega em breve.", P-017) | T-10.1 | não definido nos docs |
 | 8 | Tamanho das pranchetas (mobile e PC) | Todas | não definido nos docs |
 | 9 | Modo daltônico | C-01, C-05 | pós-MVP (doc 14 §14.13 #6) |
 | 10 | Leitor de tela no Android e no iOS | Todas | aguardando suporte do Godot (D-152) |
-| 11 | Nova escala de ciano dos medidores | C-01, C-02 | D-162 |
-| 12 | Texto e tempo da dica do toque | C-04, T-06 | D-163 |
+| 11 | ~~Nova escala de ciano dos medidores~~ — substituída pela cor de cada medidor (D-199) | C-01, C-02 | D-162, D-199 |
+| 12 | ~~Texto e tempo da dica do toque~~ — resolvido: 4 s, "Arraste a carta ou toque em um lado para ver a opção" (P-017) | C-04, T-06 | D-163 |
 
 ---
 
 **Total:** 16 telas (64 estados e variantes), 21 componentes, 8 fluxos.
 
-**Última atualização:** 2026-10-19 (avaliação dos wireframes, D-161 a D-169)
+**Última atualização:** 2026-10-22 (pós-playtest: ver doc 14 §14.14)
 **Versão:** 1.0
