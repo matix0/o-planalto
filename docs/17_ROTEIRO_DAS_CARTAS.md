@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 137 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 157 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -3137,6 +3137,195 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-113 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-114 — Cachê da festa junina
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cachê da festa junina |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Uma emenda paga o cachê de um cantor famoso na festa junina da cidade. Quadrilhas e artesãos locais pedem a verba para eles. |
+| **Opção A** | Exigir grupos locais |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência A** | "A festa fica menor e cheia de gente da terra. O deputado reclama." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-019` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Pagar o cantor famoso |
+| **Efeitos B** | `Capital Político` +10, `Legitimidade` +5, `Consciência` -5, `Caixa` -5 |
+| **Consequência B** | "O show lota a praça. As quadrilhas da cidade ficam sem verba." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-114 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-115 — Presídio de gestão privada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Presídio de gestão privada |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Deputados de um estado juntam emendas para um presídio novo, gerido por empresa. Ela recebe por preso. |
+| **Opção A** | Exigir gestão pública |
+| **Efeitos A** | `Integridade` +10, `Dignidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "A obra atrasa para o Estado contratar agentes. A bancada do estado reclama." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-009` +1, `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar a cogestão |
+| **Efeitos B** | `Segurança` +10, `Capital Político` +10, `Integridade` -10 |
+| **Consequência B** | "O presídio abre rápido. A empresa assume a rotina das celas." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-003` +1, `ACT-009` -1 |
+| **Evento B** | "A empresa cobra por preso e pede vagas sempre cheias" · atraso 2 · `Dignidade` -10, `Caixa` -5 |
+| **Aprendizado** | APR-115 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-116 — Cesta básica com culto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cesta básica com culto |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Uma emenda paga cestas básicas por meio de uma ONG ligada a uma igreja. Famílias relatam que a cesta só sai depois do culto. |
+| **Opção A** | Exigir entrega sem culto |
+| **Efeitos A** | `Legitimidade` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência A** | "A ONG assina a regra. Pastores aliados acusam o governo de perseguição." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-012` -1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter o convênio |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` +5, `Legitimidade` -10, `Integridade` -5 |
+| **Consequência B** | "As cestas chegam. A regra do culto segue nos bairros." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-116 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-117 — Teto para grandes shows
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Teto para grandes shows |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Laranja |
+| **Problema** | Na lei de incentivo, empresas patrocinam cultura com imposto devido. Artistas de periferia dizem que só turnês de fora são escolhidas. |
+| **Opção A** | Limitar grandes eventos |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Projetos pequenos captam mais. Grandes produtoras perdem patrocínio." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-019` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar a escolha livre |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -5, `Dignidade` -5 |
+| **Consequência B** | "Os grandes eventos seguem. Coletivos de bairro buscam outro caminho." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-006` +1, `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-117 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-118 — Estrada para a mina
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Estrada para a mina |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Deputados juntam emendas para asfaltar uma estrada até a jazida de uma mineradora estrangeira. Vilas no caminho querem a obra. |
+| **Opção A** | Cobrar contrapartida |
+| **Efeitos A** | `Soberania` +10, `Caixa` +5, `Capital Político` -10 |
+| **Consequência A** | "A mineradora paga parte da obra e atrasa o projeto. Os deputados reclamam." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-021` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar a obra |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` +5, `Soberania` -10, `Caixa` -5 |
+| **Consequência B** | "As vilas ganham asfalto. Os caminhões da mina usam a estrada primeiro." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-021` +1, `ACT-011` +1 |
+| **Evento B** | "A mina contamina o rio das vilas perto da estrada" · atraso 2 · `Dignidade` -10, `Soberania` -5 |
+| **Aprendizado** | APR-118 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-119 — Drones com condição
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Drones com condição |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Amarelo |
+| **Problema** | Deputados oferecem emendas para comprar drones de fiscalização ambiental. Em troca, querem que as operações evitem a região deles. |
+| **Opção A** | Recusar a condição |
+| **Efeitos A** | `Integridade` +10, `Soberania` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "Os fiscais compram menos drones. A bancada corta outro apoio." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-018` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar os drones |
+| **Efeitos B** | `Segurança` +10, `Caixa` +5, `Integridade` -10, `Soberania` -5 |
+| **Consequência B** | "Os drones voam em outras regiões. Na região dos deputados, o fogo segue." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento B** | "Satélites mostram desmate na região poupada" · atraso 2 · `Soberania` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-119 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-120 — Hospital sem médicos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Hospital sem médicos |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Uma emenda ergue um hospital novo na cidade do deputado. Não há verba para pagar médicos nem remédios depois da inauguração. |
+| **Opção A** | Trocar por custeio |
+| **Efeitos A** | `Dignidade` +15, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Postos da região ganham equipe. O deputado perde a placa da inauguração." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Inaugurar o hospital |
+| **Efeitos B** | `Capital Político` +10, `Legitimidade` +5, `Caixa` -10, `Dignidade` -5 |
+| **Consequência B** | "A festa de inauguração enche a cidade. As alas seguem fechadas." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-003` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-120 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.08 — Cartas do Modo Bancadas (20)
@@ -3167,6 +3356,357 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-121 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-122 — Vaga do STF negociada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vaga do STF negociada |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | A bancada religiosa promete votar sua reforma se a próxima vaga no STF for de um nome indicado por ela. |
+| **Opção A** | Indicar pelo currículo |
+| **Efeitos A** | `Legitimidade` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A reforma perde votos. Juristas elogiam a escolha." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-012` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar o nome da bancada |
+| **Efeitos B** | `Capital Político` +15, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "A reforma passa. O novo ministro deve a vaga a uma bancada." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-122 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-123 — Indenização no Marco Temporal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Indenização no Marco Temporal |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | A bancada ruralista quer pôr o marco temporal na Constituição. Você pode oferecer indenização a quem comprou terra indígena de boa-fé. |
+| **Opção A** | Oferecer indenização |
+| **Efeitos A** | `Soberania` +10, `Legitimidade` +5, `Caixa` -15 |
+| **Consequência A** | "Parte da bancada aceita o acordo. A conta sai do Tesouro." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento A** | "Fazendeiros sem título pedem a mesma indenização" · atraso 2 · `Caixa` -10, `Integridade` -5 |
+| **Opção B** | Não negociar |
+| **Efeitos B** | `Integridade` +5, `Capital Político` -15, `Segurança` -5 |
+| **Consequência B** | "A PEC avança na Câmara. No campo, a tensão cresce." |
+| **Eixo B** | [0, 0, +1, 0] |
+| **Atores B** | `ACT-001` -1, `ACT-018` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-123 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-124 — Internação mais longa
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Internação mais longa |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | A bancada da bala troca a PEC da maioridade por mais tempo de internação para adolescentes. As unidades já estão cheias. |
+| **Opção A** | Reforçar o socioeducativo |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "A bancada volta à PEC. As unidades ganham escola e equipe." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Ampliar a internação |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Dignidade` -10, `Caixa` -5 |
+| **Consequência B** | "A PEC sai da pauta. Adolescentes ficam mais tempo nas unidades lotadas." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | "Rebelião numa unidade lotada vira notícia" · atraso 2 · `Segurança` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-124 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-125 — Propaganda de apostas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Propaganda de apostas |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | A bancada das apostas quer liberar anúncio de bets em camisa de time e no intervalo do jogo. Clubes dizem que dependem dessa verba. |
+| **Opção A** | Proibir os anúncios |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Os anúncios somem da TV. Clubes pequenos perdem patrocínio." |
+| **Eixo A** | [-1, -1, 0, -1] |
+| **Atores A** | `ACT-022` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar com taxa extra |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Dignidade` -10, `Consciência` -5 |
+| **Consequência B** | "A taxa entra no caixa. Jovens veem apostas em todo jogo." |
+| **Eixo B** | [+1, +1, 0, +1] |
+| **Atores B** | `ACT-022` +1, `ACT-006` +1 |
+| **Evento B** | "Famílias endividadas com apostas procuram o SUS" · atraso 2 · `Dignidade` -10, `Caixa` -5 |
+| **Aprendizado** | APR-125 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-126 — Piso regional menor
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Piso regional menor |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Uma frente de empresários propõe um salário mínimo menor nas regiões mais pobres. Dizem que assim abrem mais vagas formais. |
+| **Opção A** | Manter o piso nacional |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "O piso segue igual no país. Empresários do Norte e Nordeste reclamam." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar piso regional |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Dignidade` -15 |
+| **Consequência B** | "O piso cai nas regiões pobres. Empresas anunciam vagas." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-126 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-127 — Multa por salário desigual
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Multa por salário desigual |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | A bancada feminina, de vários partidos, cobra multa para empresas que pagam menos às mulheres no mesmo cargo. O empresariado pede adiar. |
+| **Opção A** | Aplicar as multas |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +10, `Capital Político` -10 |
+| **Consequência A** | "Empresas revisam salários. Associações vão à Justiça contra a regra." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-024` +1 |
+| **Evento A** | — |
+| **Opção B** | Adiar a fiscalização |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Legitimidade` -10 |
+| **Consequência B** | "A regra fica no papel por mais um ano. A bancada feminina rompe com você." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-127 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-128 — Revisão das cotas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Revisão das cotas |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Chega a hora de revisar a lei de cotas. Uma bancada quer só o critério de renda; o movimento negro quer manter renda e raça. |
+| **Opção A** | Manter renda e raça |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "A lei segue com os dois critérios. A bancada promete nova tentativa." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Só critério de renda |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Consciência` -5 |
+| **Consequência B** | "A cota racial sai da lei. Estudantes negros protestam nas federais." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-128 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-129 — Fundeb para aposentados
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fundeb para aposentados |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Prefeitos pedem à bancada municipalista usar o fundo da educação básica para pagar professores aposentados. Escolas perdem verba. |
+| **Opção A** | Vetar o uso |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "A verba fica nas escolas. Prefeitos atrasam outros pagamentos." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar o uso |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +10, `Consciência` -10 |
+| **Consequência B** | "As prefeituras pagam as aposentadorias. Salas ficam sem reforma." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | "Escolas sem reforma fecham salas no inverno" · atraso 2 · `Consciência` -10, `Dignidade` -5 |
+| **Aprendizado** | APR-129 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-130 — Isenção para agrotóxico
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Isenção para agrotóxico |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Verde |
+| **Problema** | Agrotóxicos têm isenção de impostos. A bancada ruralista diz que o fim dela encarece a comida no mercado. |
+| **Opção A** | Acabar com a isenção |
+| **Efeitos A** | `Caixa` +10, `Soberania` +5, `Capital Político` -10, `Dignidade` -5 |
+| **Consequência A** | "A receita sobe. O agro repassa parte do custo para o preço da comida." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-001` -1, `ACT-018` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter a isenção |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` +5, `Caixa` -10, `Soberania` -5 |
+| **Consequência B** | "A comida não sobe agora. Rios perto das lavouras seguem com veneno." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-130 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-131 — Blindados ou perícia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Blindados ou perícia |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | A bancada da bala quer verba para carros blindados nas polícias. Peritos dizem que faltam laboratórios e muitos crimes ficam sem solução. |
+| **Opção A** | Investir em perícia |
+| **Efeitos A** | `Segurança` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "Os inquéritos andam. A bancada diz que você desarma a polícia." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-007` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Comprar os blindados |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Dignidade` -10, `Caixa` -5 |
+| **Consequência B** | "Os blindados chegam às ruas. Os laboratórios seguem sem equipamento." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-131 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-132 — Obstrução pela palavra gênero
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Obstrução pela palavra gênero |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | A bancada religiosa trava a votação do orçamento até o governo tirar a palavra gênero do plano nacional de educação. |
+| **Opção A** | Manter o texto |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "O orçamento atrasa semanas. O plano segue com a palavra." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-012` -1 |
+| **Evento A** | "Servidores ficam sem reajuste com o orçamento parado" · atraso 1 · `Capital Político` -10 |
+| **Opção B** | Tirar a palavra |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Consciência` -10 |
+| **Consequência B** | "O orçamento passa. Professores dizem que perdem apoio contra o preconceito." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-132 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-133 — Multa trocada por plantio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Multa trocada por plantio |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | A bancada ruralista quer anistiar multas de desmate em troca de replantio. Compradores da Europa ameaçam boicote. |
+| **Opção A** | Cobrar as multas |
+| **Efeitos A** | `Soberania` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "As multas seguem na Justiça. A bancada trava seus projetos." |
+| **Eixo A** | [-1, +1, 0, 0] |
+| **Atores A** | `ACT-018` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Trocar multa por plantio |
+| **Efeitos B** | `Capital Político` +15, `Soberania` +5, `Integridade` -10, `Caixa` -5 |
+| **Consequência B** | "Parte das áreas volta a ter mata. Quem desmatou não paga a multa." |
+| **Eixo B** | [+1, -1, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento B** | "Novos desmates esperam a próxima anistia" · atraso 2 · `Soberania` -10, `Integridade` -5 |
+| **Aprendizado** | APR-133 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-134 — Repasse fixo para cultura
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Repasse fixo para cultura |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Uma frente parlamentar quer repasse fixo da União para a cultura de estados e cidades. Hoje a verba depende de edital. |
+| **Opção A** | Criar o repasse fixo |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Caixa` -15 |
+| **Consequência A** | "Cidades pequenas abrem casas de cultura. O caixa da União aperta." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-019` +1, `ACT-007` -1 |
+| **Evento A** | "Prefeituras gastam a verba na festa da cidade" · atraso 2 · `Integridade` -10, `Caixa` -5 |
+| **Opção B** | Manter os editais |
+| **Efeitos B** | `Caixa` +10, `Consciência` -10, `Capital Político` -5 |
+| **Consequência B** | "A verba segue por edital. Quem sabe escrever projeto leva mais." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-134 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -4036,10 +4576,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 135 | 200 |
+| **Institucionais** | 155 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **137** | **340** |
+| **Total** | **157** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

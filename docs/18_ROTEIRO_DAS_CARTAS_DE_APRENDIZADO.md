@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 142 Cartas de Aprendizado ligadas às 142 cartas do doc 17 (137 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 26 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 162 Cartas de Aprendizado ligadas às 162 cartas do doc 17 (157 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 6 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -3237,7 +3237,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.07 — Cartas de Aprendizado do Modo Emendas (13 de 20)
+## 18.07 — Cartas de Aprendizado do Modo Emendas (20 de 20)
 
 ### APR-101 — Emenda para Show
 
@@ -3640,9 +3640,226 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-114 — Cachê da festa junina
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-114                            │
+│  Cachê da festa junina                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a emenda da festa junina pagava um cantor  │
+│  famoso ou os grupos da própria cidade.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Emenda parlamentar é a parte do orçamento que cada deputado│
+│  e senador indica. O governo executa, mas pode exigir regras│
+│  para o gasto.                                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Festa também é política pública. Quem recebe?"            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-115 — Presídio de gestão privada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-115                            │
+│  Presídio de gestão privada                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o presídio pago por emendas de bancada     │
+│  ficava com o Estado ou com uma empresa.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Emendas de bancada reúnem os parlamentares de um estado    │
+│  numa obra só. Quando a empresa recebe por preso, ela ganha │
+│  com a cela cheia.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem lucra com a cela cheia quer cela vazia?"             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-116 — Cesta básica com culto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-116                            │
+│  Cesta básica com culto                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a ONG religiosa paga por emenda podia      │
+│  exigir culto antes de entregar a cesta básica.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Estado pode repassar verba a entidades religiosas para   │
+│  ações sociais. Pelo Estado laico, o serviço pago com       │
+│  dinheiro público vale para todos, sem exigir fé.           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Dinheiro público não escolhe religião."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-117 — Teto para grandes shows
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-117                            │
+│  Teto para grandes shows                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se limitava o patrocínio de grandes eventos na│
+│  lei de incentivo à cultura.                                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na lei de incentivo, a empresa abate do imposto o que      │
+│  patrocina. O dinheiro é público, mas quem escolhe o projeto│
+│  é o departamento de marketing.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Imposto que vira patrocínio ainda é dinheiro público."    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-118 — Estrada para a mina
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-118                            │
+│  Estrada para a mina                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a estrada paga por emendas até uma mina    │
+│  estrangeira saía de graça para a empresa.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Obra pública pode servir a uma empresa privada. A          │
+│  contrapartida é o que a empresa devolve à região pelo que  │
+│  ganha com a obra.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Toda estrada leva a algum lugar. A quem?"                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-119 — Drones com condição
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-119                            │
+│  Drones com condição                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava drones para a fiscalização        │
+│  ambiental em troca de poupar a região de uns deputados.    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A emenda vem com regras escritas na lei. Às vezes vem      │
+│  também um acordo que ninguém registra: é aí que mora o     │
+│  risco.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O acordo que não está no papel também tem preço."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-120 — Hospital sem médicos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-120                            │
+│  Hospital sem médicos                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a emenda pagava o prédio de um hospital    │
+│  novo ou o custeio da saúde que já existia.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Investimento é construir; custeio é manter funcionando, com│
+│  salário e remédio. Prédio rende placa, custeio não, e o    │
+│  hospital vazio custa caro.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prédio sem médico não cura ninguém."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.08 — Cartas de Aprendizado do Modo Bancadas (1 de 20)
+## 18.08 — Cartas de Aprendizado do Modo Bancadas (14 de 20)
 
 ### APR-121 — Bancada BBB
 
@@ -3674,6 +3891,406 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-013):** [Diário do Poder](https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/frente-parlamentar-do-agro-declara-apoio-a-hugo-motta-para-suceder-lira) — fonte fraca
+
+### APR-122 — Vaga do STF negociada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-122                            │
+│  Vaga do STF negociada                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a vaga no STF ia para um nome pelo         │
+│  currículo ou para o nome pedido por uma bancada.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bancada temática reúne parlamentares de vários partidos em │
+│  torno de um interesse. Ela vota em bloco e cobra caro pelo │
+│  apoio.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Toda vaga tem dono. Quem deve o cargo deve favores."      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-123 — Indenização no Marco Temporal
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-123                            │
+│  Indenização no Marco Temporal                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se oferecia indenização a fazendeiros para    │
+│  esvaziar a PEC do marco temporal.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma PEC muda a Constituição e não passa pelo veto do       │
+│  presidente. Contra ela, sobra negociar votos ou oferecer   │
+│  outra saída.                                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Contra uma PEC, o presidente só tem a conversa."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-124 — Internação mais longa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-124                            │
+│  Internação mais longa                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava internação mais longa para        │
+│  adolescentes em troca de tirar a PEC da pauta.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O ECA prevê medidas socioeducativas para adolescentes, com │
+│  escola e acompanhamento. Mudar a lei comum é mais fácil que│
+│  mudar a Constituição.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prender por mais tempo não é o mesmo que educar."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-125 — Propaganda de apostas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-125                            │
+│  Propaganda de apostas                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava anúncios de apostas no futebol em │
+│  troca de uma taxa extra.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Lobby é a pressão organizada de um setor sobre quem faz as │
+│  leis. É legal, mas pesa mais para quem tem mais dinheiro.  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem patrocina o jogo também patrocina o voto?"           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-126 — Piso regional menor
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-126                            │
+│  Piso regional menor                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o salário mínimo ficava igual no país ou   │
+│  menor nas regiões mais pobres.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Frentes parlamentares reúnem deputados em torno de um      │
+│  setor. O salário mínimo nacional é uma regra para que      │
+│  ninguém ganhe menos por morar longe.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Piso menor é desigualdade com carteira assinada."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-127 — Multa por salário desigual
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-127                            │
+│  Multa por salário desigual                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se multava empresas que pagam menos às        │
+│  mulheres no mesmo cargo ou se adiava a fiscalização.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma lei só muda a vida quando alguém fiscaliza. A bancada  │
+│  feminina reúne deputadas de partidos rivais em torno de    │
+│  pautas comuns.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Lei sem fiscal é promessa."                               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-128 — Revisão das cotas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-128                            │
+│  Revisão das cotas                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a lei de cotas mantinha o critério racial  │
+│  ou ficava só com a renda.                                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Algumas leis trazem prazo de revisão, e cada revisão reabre│
+│  a disputa. Cota racial e cota de renda tratam de           │
+│  desigualdades que se somam.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Pobreza e racismo andam juntos, mas não são iguais."      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-129 — Fundeb para aposentados
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-129                            │
+│  Fundeb para aposentados                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o fundo da educação básica podia pagar     │
+│  aposentadorias de professores.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Parte do dinheiro público é carimbada para um fim, como a  │
+│  educação. Usar a verba em outra coisa alivia hoje e tira da│
+│  escola.                                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Dinheiro carimbado só protege se ninguém apaga o carimbo."│
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-130 — Isenção para agrotóxico
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-130                            │
+│  Isenção para agrotóxico                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se acabava com a isenção de impostos dos      │
+│  agrotóxicos ou se a mantinha.                              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Isenção é imposto que o governo deixa de cobrar de um      │
+│  setor. Ela não aparece como gasto, mas pesa no caixa como  │
+│  um.                                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Isenção também é gasto, só que ninguém vê."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-131 — Blindados ou perícia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-131                            │
+│  Blindados ou perícia                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a verba da segurança comprava blindados ou │
+│  laboratórios de perícia.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Polícia que investiga resolve crimes; polícia que só       │
+│  patrulha reage a eles. A bancada da bala costuma pedir mais│
+│  armas, não mais perícia.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Crime sem solução volta a acontecer."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-132 — Obstrução pela palavra gênero
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-132                            │
+│  Obstrução pela palavra gênero                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se tirava a palavra gênero do plano de        │
+│  educação para destravar o orçamento.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Obstrução é travar votações para forçar um acordo. Uma     │
+│  bancada pequena e unida consegue segurar o governo inteiro.│
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Às vezes uma palavra vale o orçamento inteiro."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-133 — Multa trocada por plantio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-133                            │
+│  Multa trocada por plantio                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trocava as multas de desmate por replantio │
+│  ou se cobrava as multas.                                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Anistia perdoa uma punição. Quando ela se repete, quem     │
+│  infringe a lei aprende a esperar a próxima.                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Perdão que se repete vira regra."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-134 — Repasse fixo para cultura
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-134                            │
+│  Repasse fixo para cultura                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a cultura de estados e cidades recebia um  │
+│  repasse fixo ou seguia por editais.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No repasse fundo a fundo, a verba cai todo ano sem         │
+│  concurso. No edital, ganha quem apresenta o melhor projeto,│
+│  e nem todos sabem escrever um.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Edital premia quem já sabe pedir."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -4654,518 +5271,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Emendas
 
-#### APR-114 — Emenda para Festa Junina
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-114                            │
-│  Emenda para festa junina                                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  festa junina.                                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A festa acontece. O hospital não. A cultura é um direito,  │
-│  mas não pode ser usada como moeda de troca.                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O uso de emendas para eventos é uma prática comum.         │
-│                                                             │
-│  FONTE: Portal da Transparência, 2024. [não verificado]     │
-│                                                             │
-│  "A festa acontece. O hospital não."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-115 — Emenda para Presídios
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-115                            │
-│  Emenda para presídios                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para         │
-│  construir presídios.                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais presídios. Mais facções. O encarceramento em massa    │
-│  não reduz a violência.                                     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o 3º país que mais encarcera no mundo.          │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "Mais presídios. Mais facções."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-116 — Emenda para ONG Religiosa
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-116                            │
-│  Emenda para ONG religiosa                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  ONG ligada a uma igreja.                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Estado financia a fé. O Estado é laico.                  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A bancada evangélica pressiona por verbas para ONGs        │
-│  religiosas.                                                │
-│                                                             │
-│  FONTE: Congresso em Foco, 2024. [não verificado]           │
-│                                                             │
-│  "O Estado financia a fé."                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-117 — Emenda para Cultura
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-117                            │
-│  Emenda para cultura                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para a        │
-│  cultura.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A cultura resiste. A arte é uma arma.                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Lei Rouanet é atacada, mas os maiores beneficiários      │
-│  são artistas bolsonaristas.                                │
-│                                                             │
-│  FONTE: Senado Federal, 2024. [não verificado]              │
-│                                                             │
-│  "A cultura resiste."                                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-118 — Emenda para Mineradora
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-118                            │
-│  Emenda para mineradora                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  mineradora.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A mineradora lucra. O povo sofre. A mineração é uma        │
-│  questão de soberania.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Vale foi privatizada por R$ 3 bilhões e vale             │
-│  R$ 300 bilhões.                                            │
-│                                                             │
-│  FONTE: BNDES, 2024. [não verificado]                       │
-│                                                             │
-│  "A mineradora lucra. O povo sofre."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-119 — Emenda para Fiscalização Ambiental
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-119                            │
-│  Emenda para fiscalização ambiental                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para a        │
-│  fiscalização ambiental.                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O desmatamento continua. A fiscalização é fundamental.     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil desmatou 62,2% mais na Amazônia em 2022.          │
-│                                                             │
-│  FONTE: INPE, 2023. [não verificado]                        │
-│                                                             │
-│  "O desmatamento continua."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-120 — Emenda para Hospital
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-120                            │
-│  Emenda para hospital                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para um       │
-│  hospital.                                                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O hospital é construído. A saúde é um direito.             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O investimento em saúde é fundamental.                     │
-│                                                             │
-│  FONTE: MS, 2024. [não verificado]                          │
-│                                                             │
-│  "O hospital é construído."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Bancadas
-
-#### APR-122 — Indicação para o STF (Bancadas)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-122                            │
-│  Indicação para o STF                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou aceitava a indicação de um     │
-│  ministro conservador para o STF.                           │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O STF não é laico. Os ministros são indicados por          │
-│  políticos.                                                 │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A bancada evangélica pressiona por nomes conservadores.    │
-│                                                             │
-│  FONTE: Senado Federal, 2024. [não verificado]              │
-│                                                             │
-│  "O STF se torna conservador."                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-123 — Marco Temporal (Bancadas)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-123                            │
-│  Marco Temporal                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava o Marco Temporal.        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Marco Temporal é uma disputa entre o Congresso e o STF.  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O STF declarou o Marco Temporal inconstitucional em 2023.  │
-│                                                             │
-│  FONTE: STF, 2023. [não verificado]                         │
-│                                                             │
-│  "Os indígenas perdem."                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-124 — Redução da Maioridade Penal (Bancadas)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-124                            │
-│  Redução da maioridade penal                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a redução da maioridade  │
-│  penal.                                                     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais adolescentes presos. A violência não cai.             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o 3º país que mais encarcera no mundo.          │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "Mais adolescentes presos."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-125 — Bancada das Bets
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-125                            │
-│  Bancada das bets                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava ou não as apostas.                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A bancada das bets pressiona para não taxar as apostas.    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Blaze destinou R$ 330 milhões à propaganda.              │
-│                                                             │
-│  FONTE: Piauí, 2024. [não verificado]                       │
-│                                                             │
-│  "As bets lucram. O povo perde."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-126 — Salário Mínimo (Bancadas)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-126                            │
-│  Salário mínimo                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava o aumento do          │
-│  salário mínimo.                                            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O trabalhador ganha mais. A bancada sindical pressiona.    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O salário mínimo é uma conquista histórica.                │
-│                                                             │
-│  FONTE: DIEESE, 2024. [não verificado]                      │
-│                                                             │
-│  "O trabalhador ganha mais."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-127 — Igualdade Salarial
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-127                            │
-│  Igualdade salarial                                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava a igualdade salarial. │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As mulheres continuam ganhando menos. A bancada feminina   │
-│  pressiona por igualdade.                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A lei de igualdade salarial é uma conquista.               │
-│                                                             │
-│  FONTE: IBGE, 2024. [não verificado]                        │
-│                                                             │
-│  "As mulheres continuam ganhando menos."                    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-128 — Cotas Raciais
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-128                            │
-│  Cotas raciais                                              │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava as cotas raciais.     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O racismo estrutural continua. A bancada negra pressiona   │
-│  por cotas.                                                 │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  As cotas são uma forma de reparação histórica.             │
-│                                                             │
-│  FONTE: IBGE, 2024. [não verificado]                        │
-│                                                             │
-│  "O racismo estrutural continua."                           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-129 — Fundeb
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-129                            │
-│  Fundeb                                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava o Fundeb.             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A educação melhora. O Fundeb é fundamental para o          │
-│  financiamento da educação básica.                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A bancada da educação pressiona por mais verbas.           │
-│                                                             │
-│  FONTE: MEC, 2024. [não verificado]                         │
-│                                                             │
-│  "A educação melhora."                                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-130 — Isenção para Agro
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-130                            │
-│  Isenção para agro                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia à isenção para o         │
-│  agronegócio.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O agro exporta mais. O povo paga. A isenção fiscal para    │
-│  exportação é um privilégio.                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O agronegócio recebeu R$ 516 bilhões no Plano Safra        │
-│  2025/2026.                                                 │
-│                                                             │
-│  FONTE: MAPA, 2025. [não verificado]                        │
-│                                                             │
-│  "O agro exporta mais. O povo paga."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-131 — Mais Armas para Polícia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-131                            │
-│  Mais armas para polícia                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia mais armas para a        │
-│  polícia.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais armas. Mais violência. A bancada da bala pressiona.   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A letalidade policial é a maior do mundo.                  │
-│                                                             │
-│  FONTE: FBSP, 2024. [não verificado]                        │
-│                                                             │
-│  "Mais armas. Mais violência."                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-132 — Proibição de Ensino de Gênero
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-132                            │
-│  Proibição de ensino de gênero                              │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a proibição do ensino    │
-│  de gênero.                                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A diversidade é silenciada. A bancada evangélica           │
-│  pressiona pela proibição.                                  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A "ideologia de gênero" é uma invenção.                    │
-│                                                             │
-│  FONTE: ANPED, 2024. [não verificado]                       │
-│                                                             │
-│  "A diversidade é silenciada."                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-133 — Anistia a Crimes Ambientais
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-133                            │
-│  Anistia a crimes ambientais                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a anistia a crimes       │
-│  ambientais.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O desmatamento é legalizado. A bancada ruralista           │
-│  pressiona por anistia.                                     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A floresta é um patrimônio nacional.                       │
-│                                                             │
-│  FONTE: INPE, 2024. [não verificado]                        │
-│                                                             │
-│  "O desmatamento é legalizado."                             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-134 — Verbas para Cultura (Bancadas)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-134                            │
-│  Verbas para cultura                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava as verbas para a      │
-│  cultura.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A cultura resiste. A arte é uma arma.                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A bancada da cultura pressiona por verbas.                 │
-│                                                             │
-│  FONTE: MinC, 2024. [não verificado]                        │
-│                                                             │
-│  "A cultura resiste."                                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-135 — Legalização de Cassinos
 
@@ -5420,10 +5528,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 135 | 26 | 200 |
+| **Institucionais** | 155 | 6 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **137** | **26** | **340** |
+| **Total** | **157** | **6** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
