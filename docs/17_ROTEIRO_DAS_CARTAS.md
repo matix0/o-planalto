@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 231 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 271 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -6552,6 +6552,1126 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-THEM-030 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### THEM-031 — Remédio com patente
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Remédio com patente |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Saúde |
+| **Quem fala** | Ministério da Saúde |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Um remédio novo para uma doença comum custa caro demais para o SUS. O laboratório estrangeiro não aceita baixar o preço. |
+| **Opção A** | Licenciar a patente |
+| **Efeitos A** | `Soberania` +15, `Dignidade` +10, `Capital Político` -10 |
+| **Consequência A** | "O remédio sai pela metade do preço. O governo dos EUA reclama." |
+| **Eixo A** | [0, -1, 0, +1] |
+| **Atores A** | `ACT-021` -1, `ACT-006` -1 |
+| **Evento A** | "Os EUA põem o Brasil numa lista de vigilância comercial." · atraso 1 · `Caixa` -10 |
+| **Opção B** | Pagar o preço da patente |
+| **Efeitos B** | `Caixa` -20, `Dignidade` -5, `Capital Político` +5 |
+| **Consequência B** | "O laboratório estrangeiro mantém o preço. A fila do remédio cresce." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-021` +1, `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-031 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-032 — Plano nega o tratamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Plano nega o tratamento |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Saúde |
+| **Quem fala** | Supremo Tribunal Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Planos de saúde negam terapias que não estão numa lista oficial. O STF julga se a lista é fechada ou só um mínimo. |
+| **Opção A** | Obrigar a cobertura |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "O plano cobre o tratamento. As operadoras falam em reajuste." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a lista fechada |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "A lista vale como está. Famílias voltam para a fila do SUS." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-032 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-033 — Médicos de outro país
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Médicos de outro país |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Saúde |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Milhares de cidades do interior não têm médico. Um acordo traria médicos de outro país, sem a prova de revalidação. |
+| **Opção A** | Trazer médicos de fora |
+| **Efeitos A** | `Dignidade` +15, `Capital Político` -10, `Integridade` -5 |
+| **Consequência A** | "Cidades sem médico ganham atendimento. Conselhos médicos protestam." |
+| **Eixo A** | [0, +1, 0, +1] |
+| **Atores A** | `ACT-014` -1 |
+| **Evento A** | — |
+| **Opção B** | Abrir cursos privados |
+| **Efeitos B** | `Caixa` -5, `Capital Político` +10, `Dignidade` -5 |
+| **Consequência B** | "Novas faculdades abrem. Os formados preferem as capitais." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-005` +1, `ACT-014` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-033 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-034 — Fila de cirurgias
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fila de cirurgias |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Saúde |
+| **Quem fala** | Ministério da Saúde |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Vermelho |
+| **Problema** | A fila de cirurgias eletivas dobrou. Você pode comprar vagas em hospitais privados ou ampliar a rede pública. |
+| **Opção A** | Pagar hospital privado |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -15, `Soberania` -5 |
+| **Consequência A** | "A fila anda rápido. O dinheiro público vai para hospitais privados." |
+| **Eixo A** | [+1, 0, 0, -1] |
+| **Atores A** | `ACT-006` +1 |
+| **Evento A** | — |
+| **Opção B** | Abrir leitos públicos |
+| **Efeitos B** | `Caixa` -20, `Dignidade` +5, `Capital Político` -5 |
+| **Consequência B** | "As obras começam. A fila espera os novos leitos." |
+| **Eixo B** | [-1, 0, 0, +1] |
+| **Atores B** | `ACT-009` +1 |
+| **Evento B** | "Os novos leitos públicos abrem e a fila anda." · atraso 2 · `Dignidade` +15 |
+| **Aprendizado** | APR-THEM-034 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-035 — Psicólogo na escola
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Psicólogo na escola |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Saúde |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Crescem as crises de ansiedade entre estudantes. Uma empresa oferece um aplicativo de terapia no lugar de psicólogos. |
+| **Opção A** | Psicólogo em cada escola |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Caixa` -15 |
+| **Consequência A** | "As escolas ganham psicólogos. Os estados pedem verba." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Aplicativo de terapia |
+| **Efeitos B** | `Caixa` -5, `Dignidade` -5, `Integridade` -5 |
+| **Consequência B** | "Os alunos ganham um aplicativo. Os dados vão para a empresa." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-020` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-035 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-036 — Cigarro eletrônico
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cigarro eletrônico |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Saúde |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Um projeto libera a venda de cigarro eletrônico com imposto. Médicos dizem que o produto vicia adolescentes. |
+| **Opção A** | Manter a proibição |
+| **Efeitos A** | `Dignidade` +5, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "A venda segue proibida. O vape segue à venda nas redes." |
+| **Eixo A** | [0, 0, -1, +1] |
+| **Atores A** | `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Liberar e taxar |
+| **Efeitos B** | `Caixa` +15, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O vape vira produto legal. A propaganda chega aos adolescentes." |
+| **Eixo B** | [+1, 0, +1, -1] |
+| **Atores B** | `ACT-022` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-036 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-037 — Agentes ou ambulâncias
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Agentes ou ambulâncias |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Saúde |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | A dengue volta a crescer. Deputados querem gastar a verba em ambulâncias com seu nome, não em agentes de saúde. |
+| **Opção A** | Contratar agentes |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "Agentes visitam as casas. Os deputados perdem a vitrine." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | "Os agentes acham focos do mosquito antes da epidemia." · atraso 1 · `Segurança` +10 |
+| **Opção B** | Ambulância do deputado |
+| **Efeitos B** | `Capital Político` +15, `Integridade` -10, `Dignidade` -5 |
+| **Consequência B** | "As ambulâncias chegam com adesivo. Ninguém visita as casas." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-037 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-038 — Tuberculose no presídio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tuberculose no presídio |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Saúde |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Vermelho |
+| **Problema** | A tuberculose se espalha num presídio lotado. Tratar os presos custa caro e rende críticas. |
+| **Opção A** | Mutirão de saúde |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +5, `Capital Político` -10 |
+| **Consequência A** | "Equipes tratam os presos. Políticos dizem que preso tem regalia." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Isolar sem tratar |
+| **Efeitos B** | `Caixa` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Os doentes ficam numa ala isolada. A doença segue sem remédio." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | — |
+| **Evento B** | "A doença sai do presídio com os visitantes." · atraso 2 · `Dignidade` -10 |
+| **Aprendizado** | APR-THEM-038 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-039 — Remédio pela Justiça
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Remédio pela Justiça |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Saúde |
+| **Quem fala** | Advocacia-Geral da União |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Amarelo |
+| **Problema** | Um juiz manda o SUS pagar um remédio caríssimo para uma criança. O valor sai de outros programas. |
+| **Opção A** | Pagar o remédio |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -20 |
+| **Consequência A** | "A criança recebe o remédio. Outro programa perde verba." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | — |
+| **Evento A** | — |
+| **Opção B** | Recorrer da decisão |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O governo recorre. A família vai às redes contra você." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-039 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-040 — Nova pandemia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Nova pandemia |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Saúde |
+| **Quem fala** | Ministério da Saúde |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Verde |
+| **Problema** | Um vírus novo se espalha rápido. A OMS recomenda restringir a circulação, e o comércio teme quebrar. |
+| **Opção A** | Fechar o comércio |
+| **Efeitos A** | `Segurança` +10, `Caixa` -15, `Capital Político` -10 |
+| **Consequência A** | "As ruas esvaziam. Comerciantes protestam." |
+| **Eixo A** | [-1, +1, -1, +1] |
+| **Atores A** | `ACT-004` -1, `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter tudo aberto |
+| **Efeitos B** | `Caixa` +10, `Segurança` -15, `Legitimidade` -5 |
+| **Consequência B** | "O comércio segue. Os hospitais começam a encher." |
+| **Eixo B** | [+1, -1, +1, -1] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | "Os hospitais lotam na segunda onda." · atraso 1 · `Segurança` -15 |
+| **Aprendizado** | APR-THEM-040 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-041 — Entregador sem patrão
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Entregador sem patrão |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Entregadores de aplicativo trabalham sem seguro nem descanso. As empresas dizem que eles são parceiros, não empregados. |
+| **Opção A** | Garantir direitos |
+| **Efeitos A** | `Dignidade` +15, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Entregadores ganham piso e seguro. As empresas sobem a taxa." |
+| **Eixo A** | [-2, 0, 0, +1] |
+| **Atores A** | `ACT-015` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar como autônomos |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Nada muda. Os entregadores fazem greve no fim de semana." |
+| **Eixo B** | [+2, 0, 0, -1] |
+| **Atores B** | `ACT-006` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-041 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-042 — Lista suja
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Lista suja |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Empresas flagradas com trabalho escravo entram numa lista pública. A bancada ruralista quer suspender a lista. |
+| **Opção A** | Manter a lista suja |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A lista segue pública. A bancada ruralista trava suas pautas." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Suspender a lista |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -15, `Integridade` -5 |
+| **Consequência B** | "A lista sai do ar. Os fazendeiros comemoram." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | "Fiscais acham trabalho escravo numa fazenda que vende ao exterior." · atraso 2 · `Legitimidade` -10 |
+| **Aprendizado** | APR-THEM-042 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-043 — Greve dos servidores
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Greve dos servidores |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Servidores federais estão em greve há um mês. O INSS e as universidades param, e o caixa está apertado. |
+| **Opção A** | Dar o reajuste |
+| **Efeitos A** | `Caixa` -20, `Dignidade` +5, `Capital Político` +5 |
+| **Consequência A** | "Os servidores voltam ao trabalho. O Tesouro corta outras despesas." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-009` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Cortar o ponto |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -5, `Legitimidade` -5 |
+| **Consequência B** | "Os grevistas perdem o salário. O atendimento para por semanas." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-009` -1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-043 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-044 — Cacau com trabalho infantil
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cacau com trabalho infantil |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Trabalho |
+| **Quem fala** | Ministério das Relações Exteriores |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | Compradores europeus ameaçam barrar o cacau brasileiro por causa de trabalho infantil nas fazendas. |
+| **Opção A** | Fiscalizar as fazendas |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "Fiscais vão ao campo. A Europa mantém as compras." |
+| **Eixo A** | [0, +1, 0, +1] |
+| **Atores A** | `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Acusar protecionismo |
+| **Efeitos B** | `Soberania` +5, `Dignidade` -10, `Caixa` -5 |
+| **Consequência B** | "O governo nega o problema. Os compradores ficam desconfiados." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | "O comprador europeu suspende as compras de cacau." · atraso 1 · `Caixa` -15 |
+| **Aprendizado** | APR-THEM-044 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-045 — Contribuição sindical
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Contribuição sindical |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | Os sindicatos perderam a maior parte da renda e negociam pouco. Um projeto traz de volta uma contribuição dos trabalhadores. |
+| **Opção A** | Volta da contribuição |
+| **Efeitos A** | `Consciência` +5, `Dignidade` +5, `Legitimidade` -10 |
+| **Consequência A** | "Os sindicatos ganham fôlego. Trabalhadores reclamam do desconto." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-015` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o fim |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -5, `Consciência` -5 |
+| **Consequência B** | "Os sindicatos encolhem. Os patrões negociam com quem sobrou." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-004` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-045 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-046 — Robôs na fábrica
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Robôs na fábrica |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | Uma montadora pede subsídio para trocar operários por robôs. Você pode exigir os empregos em troca. |
+| **Opção A** | Exigir os empregos |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "A fábrica mantém os empregos com subsídio. Os donos ficam irritados." |
+| **Eixo A** | [-1, -1, 0, +1] |
+| **Atores A** | `ACT-004` -1, `ACT-015` +1 |
+| **Evento A** | "A empresa leva parte da fábrica para o país vizinho." · atraso 2 · `Caixa` -10 |
+| **Opção B** | Pagar requalificação |
+| **Efeitos B** | `Caixa` -10, `Capital Político` +10, `Dignidade` -5 |
+| **Consequência B** | "Os robôs chegam. Os demitidos ganham cursos e poucas vagas." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-046 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-047 — Fim da Justiça do Trabalho
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fim da Justiça do Trabalho |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Trabalho |
+| **Quem fala** | Supremo Tribunal Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Verde |
+| **Problema** | Uma PEC quer acabar com a Justiça do Trabalho e passar os processos para a Justiça comum. |
+| **Opção A** | Defender a Justiça |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "A Justiça do Trabalho fica. O mercado fala em custo Brasil." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-006` -1, `ACT-015` +1 |
+| **Evento A** | — |
+| **Opção B** | Juntar à Justiça comum |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Os processos trabalhistas vão para a Justiça comum. A fila cresce." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-047 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-048 — Trabalho de presos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Trabalho de presos |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Trabalho |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Empresas querem usar presos como mão de obra. Você pode exigir salário e redução de pena, ou ceder os presos baratos. |
+| **Opção A** | Salário e menos pena |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +5, `Caixa` -10 |
+| **Consequência A** | "Os presos trabalham com salário e reduzem a pena. A volta ao crime cai." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-015` +1 |
+| **Evento A** | — |
+| **Opção B** | Mão de obra barata |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "As empresas lucram com presos que ganham quase nada." |
+| **Eixo B** | [+1, 0, -1, 0] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-048 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-049 — Escola técnica
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Escola técnica |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Trabalho |
+| **Quem fala** | Ministério da Educação |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Azul |
+| **Problema** | Jovens saem da escola sem profissão. Você pode abrir escolas técnicas públicas ou pagar cursos dentro das empresas. |
+| **Opção A** | Escolas técnicas públicas |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Caixa` -15 |
+| **Consequência A** | "Novos institutos abrem. Os primeiros técnicos se formam." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Cursos das empresas |
+| **Efeitos B** | `Caixa` -5, `Consciência` -10, `Capital Político` +5 |
+| **Consequência B** | "As empresas treinam para a vaga delas. A formação geral fica de fora." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-049 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-050 — Caminhoneiros na estrada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Caminhoneiros na estrada |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Trabalho |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Caminhoneiros bloqueiam estradas contra o preço do diesel. Postos e mercados começam a esvaziar. |
+| **Opção A** | Negociar o frete |
+| **Efeitos A** | `Caixa` -15, `Segurança` +10, `Capital Político` -5 |
+| **Consequência A** | "Os caminhões voltam a rodar. O frete sobe para todos." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-015` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Mandar desbloquear |
+| **Efeitos B** | `Segurança` +5, `Legitimidade` -10, `Dignidade` -5 |
+| **Consequência B** | "A polícia libera as estradas. Os caminhoneiros prometem voltar." |
+| **Eixo B** | [+1, 0, -1, -1] |
+| **Atores B** | `ACT-015` -1, `ACT-008` +1 |
+| **Evento B** | "Faltam alimentos nos mercados por uma semana." · atraso 1 · `Dignidade` -10 |
+| **Aprendizado** | APR-THEM-050 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-051 — Revista pela aparência
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Revista pela aparência |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Racismo |
+| **Quem fala** | Supremo Tribunal Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | O STF julga se a polícia pode revistar alguém só pela aparência. Jovens negros são os mais parados. |
+| **Opção A** | Proibir a abordagem |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "A busca exige motivo concreto. Policiais dizem que perdem uma ferramenta." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o critério |
+| **Efeitos B** | `Segurança` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Nada muda. Jovens negros seguem parados na rua." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-051 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-052 — Racismo na arquibancada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Racismo na arquibancada |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Racismo |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Jogadores negros sofrem insultos racistas nos estádios. Um projeto tira pontos dos clubes, e a bancada da bola resiste. |
+| **Opção A** | Tirar pontos do clube |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Clubes perdem pontos por racismo da torcida. A bancada da bola reclama." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Só multar o clube |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -5, `Integridade` -5 |
+| **Consequência B** | "Os clubes pagam a multa. Os insultos seguem nos jogos." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-052 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-053 — Crédito negado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Crédito negado |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Racismo |
+| **Quem fala** | Ministério da Fazenda |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Empreendedores negros têm mais crédito negado nos bancos. Você pode criar uma linha só para eles ou uma linha geral. |
+| **Opção A** | Crédito para negros |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -15, `Capital Político` -5 |
+| **Consequência A** | "Pequenos negócios de pessoas negras crescem. Bancos reclamam da regra." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-002` -1 |
+| **Evento A** | — |
+| **Opção B** | Crédito igual para todos |
+| **Efeitos B** | `Caixa` -5, `Dignidade` -5, `Capital Político` +5 |
+| **Consequência B** | "A linha abre para todos. Os bancos seguem com os mesmos clientes." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-053 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-054 — Terreiro atacado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Terreiro atacado |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Racismo |
+| **Quem fala** | Ministério dos Direitos Humanos |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Terreiros de religiões de matriz africana são atacados num bairro. A polícia registra os casos como briga de vizinhos. |
+| **Opção A** | Delegacia especializada |
+| **Efeitos A** | `Segurança` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "Os ataques viram inquérito. Os terreiros voltam a abrir." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | — |
+| **Evento A** | — |
+| **Opção B** | Briga de vizinhos |
+| **Efeitos B** | `Capital Político` +5, `Segurança` -10, `Dignidade` -5 |
+| **Consequência B** | "Os casos ficam como desavença. Ninguém responde por eles." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | — |
+| **Evento B** | "Outro terreiro é atacado no mesmo bairro." · atraso 1 · `Segurança` -10 |
+| **Aprendizado** | APR-THEM-054 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-055 — Visto para haitianos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Visto para haitianos |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Racismo |
+| **Quem fala** | Ministério das Relações Exteriores |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | Imigrantes haitianos e africanos pedem visto humanitário. Nas redes, campanhas pedem para barrar estrangeiros negros. |
+| **Opção A** | Dar visto humanitário |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Famílias chegam com documentos. Grupos nas redes reclamam." |
+| **Eixo A** | [0, +1, +1, 0] |
+| **Atores A** | `ACT-022` -1 |
+| **Evento A** | — |
+| **Opção B** | Fechar o visto |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -10, `Soberania` +5 |
+| **Consequência B** | "O visto fecha. Famílias tentam entrar pela mata." |
+| **Eixo B** | [0, -1, -1, -1] |
+| **Atores B** | `ACT-022` +1 |
+| **Evento B** | "A ONU critica o Brasil por discriminar imigrantes negros." · atraso 1 · `Legitimidade` -10 |
+| **Aprendizado** | APR-THEM-055 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-056 — Reparação da escravidão
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Reparação da escravidão |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Racismo |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 3 |
+| **Cor A** | Preto |
+| **Cor B** | Verde |
+| **Problema** | Um projeto propõe reparar os descendentes de pessoas escravizadas. A alternativa é só um pedido oficial de desculpas. |
+| **Opção A** | Fundo de reparação |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +10, `Caixa` -20 |
+| **Consequência A** | "O fundo financia moradia e estudo. O mercado critica o gasto." |
+| **Eixo A** | [-2, 0, +1, 0] |
+| **Atores A** | `ACT-006` -1 |
+| **Evento A** | "Escolas e museus passam a contar a história da reparação." · atraso 2 · `Consciência` +10 |
+| **Opção B** | Só pedir desculpas |
+| **Efeitos B** | `Consciência` +5, `Dignidade` -10, `Capital Político` +5 |
+| **Consequência B** | "O Estado pede desculpas. Nenhuma política muda." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-056 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-057 — Câmera que erra
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Câmera que erra |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Racismo |
+| **Quem fala** | `ACT-020` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | Câmeras de uma empresa estrangeira identificam suspeitos nas estações. O sistema erra mais com pessoas negras. |
+| **Opção A** | Suspender o sistema |
+| **Efeitos A** | `Dignidade` +10, `Segurança` -5, `Capital Político` -5 |
+| **Consequência A** | "As câmeras param de identificar rostos. A polícia reclama." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-020` -1 |
+| **Evento A** | — |
+| **Opção B** | Ampliar as câmeras |
+| **Efeitos B** | `Segurança` +10, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "Mais estações ganham câmeras estrangeiras. Os erros também crescem." |
+| **Eixo B** | [+1, +1, -1, -1] |
+| **Atores B** | `ACT-020` +1, `ACT-021` +1 |
+| **Evento B** | "Um rapaz inocente é preso por erro da câmera." · atraso 1 · `Legitimidade` -10 |
+| **Aprendizado** | APR-THEM-057 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-058 — Aterro no bairro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aterro no bairro |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Racismo |
+| **Quem fala** | `ACT-003` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Uma emenda paga um aterro de lixo ao lado de um bairro de maioria negra. Levar para longe custa mais. |
+| **Opção A** | Levar o aterro longe |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -15, `Capital Político` -5 |
+| **Consequência A** | "O aterro vai para longe das casas. A obra custa mais." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Aterro no bairro pobre |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O aterro fica perto das casas. O cheiro chega às escolas." |
+| **Eixo B** | [+1, 0, -1, 0] |
+| **Atores B** | `ACT-003` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-058 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-059 — Racismo no parto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Racismo no parto |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Racismo |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Mulheres negras recebem menos anestesia e morrem mais no parto. Um projeto cria um protocolo nacional com metas. |
+| **Opção A** | Protocolo com metas |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "Hospitais seguem o protocolo. Menos mães negras morrem no parto." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar a cada hospital |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "Cada hospital decide. As diferenças seguem iguais." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-059 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-060 — Poucos juízes negros
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Poucos juízes negros |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Racismo |
+| **Quem fala** | Conselho Nacional de Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Poucos juízes são negros num país de maioria negra. Você pode apoiar cotas nos concursos da magistratura. |
+| **Opção A** | Cota no concurso |
+| **Efeitos A** | `Legitimidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "Os concursos reservam vagas. Associações de juízes reclamam." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-007` -1 |
+| **Evento A** | — |
+| **Opção B** | Concurso só por nota |
+| **Efeitos B** | `Capital Político` +5, `Legitimidade` -5, `Consciência` -5 |
+| **Consequência B** | "Nada muda. Os tribunais seguem quase todos brancos." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-007` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-060 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-061 — Quem escolhe o patrocínio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Quem escolhe o patrocínio |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Cultura |
+| **Quem fala** | Ministério da Cultura |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Roxo |
+| **Problema** | Na lei de incentivo, as empresas escolhem quem patrocinar com imposto devido. Quase tudo vai para as capitais. |
+| **Opção A** | Fundo por editais |
+| **Efeitos A** | `Consciência` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "O dinheiro vai a artistas de todo o país. Grandes produtoras reclamam." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-019` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Empresas escolhem |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "As empresas seguem com quem dá vitrine. O interior fica sem." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-061 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-062 — Streaming estrangeiro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Streaming estrangeiro |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Cultura |
+| **Quem fala** | `ACT-021` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Plataformas de streaming estrangeiras não pagam a taxa do cinema nacional. Um projeto cria taxa e cota de conteúdo brasileiro. |
+| **Opção A** | Cota e taxa |
+| **Efeitos A** | `Soberania` +10, `Consciência` +5, `Capital Político` -5 |
+| **Consequência A** | "As plataformas investem em filmes daqui. O governo dos EUA reclama." |
+| **Eixo A** | [0, -1, 0, +1] |
+| **Atores A** | `ACT-021` -1, `ACT-019` +1 |
+| **Evento A** | "Os EUA ameaçam retaliar o audiovisual brasileiro." · atraso 1 · `Caixa` -10 |
+| **Opção B** | Deixar livre |
+| **Efeitos B** | `Caixa` +5, `Soberania` -10, `Consciência` -5 |
+| **Consequência B** | "Nada muda. As telas seguem cheias de séries de fora." |
+| **Eixo B** | [+1, +1, 0, -1] |
+| **Atores B** | `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-062 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-063 — Museu sem manutenção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Museu sem manutenção |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Cultura |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Preto |
+| **Problema** | Um museu nacional tem fiação velha e nenhuma brigada. Os deputados preferem emendas para obras com placa. |
+| **Opção A** | Emendas para o museu |
+| **Efeitos A** | `Consciência` +10, `Segurança` +5, `Capital Político` -10 |
+| **Consequência A** | "O museu ganha brigada e reforma. Deputados perdem verba de vitrine." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Leiloar o prédio |
+| **Efeitos B** | `Caixa` +10, `Consciência` -10, `Capital Político` +5 |
+| **Consequência B** | "O prédio é vendido. O acervo vai para um depósito." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-003` +1 |
+| **Evento B** | "A fiação do depósito falha e parte do acervo se perde." · atraso 2 · `Consciência` -10 |
+| **Aprendizado** | APR-THEM-063 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-064 — Grafite ou pichação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Grafite ou pichação |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Cultura |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Prefeituras apagam murais e prendem jovens que pintam muros. Grafiteiros pedem espaços liberados. |
+| **Opção A** | Liberar muros |
+| **Efeitos A** | `Consciência` +5, `Dignidade` +5, `Segurança` +5, `Capital Político` -10 |
+| **Consequência A** | "Muros viram galeria a céu aberto. Parte dos moradores reclama." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Prender pichadores |
+| **Efeitos B** | `Segurança` +5, `Consciência` -10, `Dignidade` -5 |
+| **Consequência B** | "Jovens são presos por grafite. Os muros voltam a ficar cinza." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-019` -1 |
+| **Evento B** | "Murais famosos são apagados na cidade." · atraso 1 · `Consciência` -10 |
+| **Aprendizado** | APR-THEM-064 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-065 — Arte na grade
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Arte na grade |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Cultura |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | A reforma da grade escolar corta artes e música para dar mais aulas de português e matemática. |
+| **Opção A** | Música e arte na grade |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Caixa` -10 |
+| **Consequência A** | "Escolas contratam professores de arte. Sobram menos horas para provas." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Mais horas de prova |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "As notas sobem um pouco. A arte some da escola." |
+| **Eixo B** | [+1, 0, -1, 0] |
+| **Atores B** | `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-065 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-066 — IA copia artistas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | IA copia artistas |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Cultura |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Preto |
+| **Problema** | Empresas de IA treinam programas com obras de artistas brasileiros sem pedir nem pagar. Os artistas vão à Justiça. |
+| **Opção A** | Pagar aos artistas |
+| **Efeitos A** | `Soberania` +10, `Consciência` +5, `Capital Político` -5 |
+| **Consequência A** | "As big techs pagam pelas obras usadas. Elas ameaçam sair do país." |
+| **Eixo A** | [0, -1, 0, +1] |
+| **Atores A** | `ACT-019` +1, `ACT-020` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar o treino |
+| **Efeitos B** | `Caixa` +5, `Soberania` -10, `Dignidade` -5 |
+| **Consequência B** | "As empresas treinam IA com tudo. Artistas perdem trabalho." |
+| **Eixo B** | [+1, +1, 0, -1] |
+| **Atores B** | `ACT-020` +1, `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-066 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-067 — Exposição sob ataque
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Exposição sob ataque |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Cultura |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Laranja |
+| **Problema** | Uma bancada pede o fechamento de uma exposição num museu público, que chama de imoral. A curadoria diz que é censura. |
+| **Opção A** | Manter a exposição |
+| **Efeitos A** | `Consciência` +5, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A mostra fica aberta. A bancada promete retaliar." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Fechar a mostra |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Legitimidade` -5 |
+| **Consequência B** | "A exposição fecha. Outros museus cancelam mostras." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-019` -1 |
+| **Evento B** | "Artistas cancelam obras por medo de ataque." · atraso 2 · `Consciência` -10 |
+| **Aprendizado** | APR-THEM-067 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-068 — Jogos feitos aqui
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Jogos feitos aqui |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Cultura |
+| **Quem fala** | Ministério da Cultura |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Jovens jogam muito, mas quase nenhum jogo é feito no Brasil. Você pode criar um fundo nacional ou atrair estúdios estrangeiros. |
+| **Opção A** | Fundo para games |
+| **Efeitos A** | `Soberania` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "Estúdios brasileiros lançam jogos. Críticos dizem que é gasto com diversão." |
+| **Eixo A** | [-1, -1, 0, +1] |
+| **Atores A** | `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Isentar estúdios de fora |
+| **Efeitos B** | `Caixa` +5, `Soberania` -10, `Consciência` -5 |
+| **Consequência B** | "Grandes estúdios abrem filiais. Os jogos seguem pensados lá fora." |
+| **Eixo B** | [+1, +1, 0, -1] |
+| **Atores B** | `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-068 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-069 — Manto na Europa
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Manto na Europa |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Cultura |
+| **Quem fala** | Ministério dos Povos Indígenas |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Roxo |
+| **Problema** | Um museu europeu guarda um manto sagrado indígena levado no tempo colonial. O povo de origem pede a devolução. |
+| **Opção A** | Pedir a devolução |
+| **Efeitos A** | `Consciência` +10, `Soberania` +5, `Capital Político` -5 |
+| **Consequência A** | "O manto volta ao Brasil. O museu europeu cobra a viagem." |
+| **Eixo A** | [0, -1, +1, 0] |
+| **Atores A** | `ACT-010` +1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar um empréstimo |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -5, `Soberania` -5 |
+| **Consequência B** | "O manto vem por um ano e volta. Os indígenas protestam." |
+| **Eixo B** | [0, +1, 0, 0] |
+| **Atores B** | `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-069 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-070 — Vale-cultura jovem
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vale-cultura jovem |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Cultura |
+| **Quem fala** | Ministério da Cultura |
+| **Ano mínimo** | 2 |
+| **Cor A** | Laranja |
+| **Cor B** | Verde |
+| **Problema** | Quase não há cinema nem teatro nos bairros periféricos. Um projeto dá um vale-cultura a jovens de baixa renda. |
+| **Opção A** | Vale-cultura jovem |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Caixa` -15 |
+| **Consequência A** | "Jovens da periferia vão a cinema e teatro. O gasto pesa no caixa." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Cinema no shopping |
+| **Efeitos B** | `Caixa` +5, `Consciência` -10, `Capital Político` +5 |
+| **Consequência B** | "As salas ficam onde já estão. O bairro segue sem cinema." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-070 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.13 — Cartas de Atores (70)
@@ -6604,9 +7724,9 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
 | **Institucionais** | 200 | 200 |
-| **Temáticas** | 30 | 70 |
+| **Temáticas** | 70 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **231** | **340** |
+| **Total** | **271** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

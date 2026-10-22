@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 236 Cartas de Aprendizado ligadas às 236 cartas do doc 17 (231 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 276 Cartas de Aprendizado ligadas às 276 cartas do doc 17 (271 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -6569,7 +6569,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.12 — Cartas de Aprendizado Temáticas (30 de 70)
+## 18.12 — Cartas de Aprendizado Temáticas (70 de 70)
 
 ### APR-THEM-001 — Reforma agrária
 
@@ -7489,6 +7489,1245 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-THEM-031 — Remédio com patente
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-031                            │
+│  Remédio com patente                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se licenciava a patente de um remédio caro ou │
+│  se pagava o preço do laboratório estrangeiro.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A licença compulsória deixa o país produzir ou comprar um  │
+│  genérico sem a permissão do dono da patente, pagando       │
+│  royalties, em caso de interesse público.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Patente protege a invenção. Não pode matar na fila."      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-032 — Plano nega o tratamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-032                            │
+│  Plano nega o tratamento                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia que os planos cubram tratamentos  │
+│  fora da lista oficial ou se a lista ficava fechada.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A agência reguladora define o mínimo que os planos de saúde│
+│  devem cobrir. Se a lista é fechada, o que fica fora vai    │
+│  para a Justiça ou para o SUS.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem paga plano também acaba no SUS."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-033 — Médicos de outro país
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-033                            │
+│  Médicos de outro país                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trazia médicos de outro país para o        │
+│  interior ou se abria mais cursos privados de medicina.     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Formar médicos não basta: eles se concentram onde há       │
+│  hospital e renda. Programas de provimento tentam levar o   │
+│  atendimento para onde ninguém quer ir.                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Diploma não escolhe CEP. Política escolhe."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-034 — Fila de cirurgias
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-034                            │
+│  Fila de cirurgias                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se comprava cirurgias em hospitais privados ou│
+│  se ampliava os leitos da rede pública.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O SUS pode contratar hospitais privados para completar a   │
+│  rede. Comprar resolve a fila rápido; construir demora, mas │
+│  fica para o público.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Comprar vaga resolve hoje. Construir resolve sempre."     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-035 — Psicólogo na escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-035                            │
+│  Psicólogo na escola                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se contratava psicólogos para as escolas ou se│
+│  dava um aplicativo de terapia aos alunos.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Atendimento em saúde mental exige vínculo e acompanhamento.│
+│  Aplicativos ajudam, mas coletam dados sensíveis e não      │
+│  substituem a equipe na escola.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ansiedade não se resolve com notificação."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-036 — Cigarro eletrônico
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-036                            │
+│  Cigarro eletrônico                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha a proibição do cigarro eletrônico │
+│  ou se liberava a venda com imposto.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Proibir não acaba com a venda, mas evita a propaganda.     │
+│  Liberar traz imposto e controle, e também marketing para   │
+│  jovens. Saúde pública pesa os dois lados.                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Imposto não paga um pulmão."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-037 — Agentes ou ambulâncias
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-037                            │
+│  Agentes ou ambulâncias                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se usava a verba em agentes comunitários de   │
+│  saúde ou em ambulâncias com o nome dos deputados.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Agentes comunitários visitam as casas e evitam doenças     │
+│  antes do hospital. Prevenção quase não aparece na foto, por│
+│  isso perde para a obra com placa.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prevenção não dá foto. Dá vida."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-038 — Tuberculose no presídio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-038                            │
+│  Tuberculose no presídio                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fazia um mutirão de saúde num presídio com │
+│  tuberculose ou se só isolava os doentes.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Doença dentro da prisão não fica lá dentro: visitas,       │
+│  agentes e solturas levam a infecção para fora. Cuidar do   │
+│  preso é cuidar da cidade.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O muro da cadeia não para bactéria."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-039 — Remédio pela Justiça
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-039                            │
+│  Remédio pela Justiça                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pagava um remédio caríssimo mandado pela   │
+│  Justiça ou se recorria da decisão.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando a Justiça manda o SUS pagar um tratamento, o        │
+│  dinheiro sai do mesmo orçamento. Um caso ganha, e a        │
+│  política para todos perde.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Toda sentença de saúde tem um custo escondido."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-040 — Nova pandemia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-040                            │
+│  Nova pandemia                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fechava o comércio numa nova pandemia ou se│
+│  mantinha tudo aberto.                                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Medidas de isolamento atrasam o contágio para os hospitais │
+│  darem conta. Sem ajuda de renda, quem vive do dia a dia não│
+│  consegue ficar em casa.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Achatar a curva exige pagar a conta da casa."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-041 — Entregador sem patrão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-041                            │
+│  Entregador sem patrão                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se garantia direitos aos entregadores de      │
+│  aplicativo ou se eles seguiam como autônomos.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Plataformas chamam o trabalhador de parceiro para não pagar│
+│  direitos. Ele assume o risco, o custo da moto e o tempo de │
+│  espera sem receber.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Parceiro que não negocia é empregado sem carteira."       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-042 — Lista suja
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-042                            │
+│  Lista suja                                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha pública a lista de empresas       │
+│  flagradas com trabalho escravo ou se a suspendia.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lista suja expõe quem foi flagrado com trabalho análogo à│
+│  escravidão. Bancos e compradores a usam para cortar crédito│
+│  e contratos.                                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Escravidão não acabou. Mudou de endereço."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-043 — Greve dos servidores
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-043                            │
+│  Greve dos servidores                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava o reajuste aos servidores em greve ou │
+│  se cortava o ponto dos grevistas.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Servidor público pode fazer greve, mas não há lei própria  │
+│  que a regule. Quando o serviço para, quem mais sente é quem│
+│  depende dele.                                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Greve no serviço público para quem mais precisa."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-044 — Cacau com trabalho infantil
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-044                            │
+│  Cacau com trabalho infantil                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fiscalizava trabalho infantil no cacau ou  │
+│  se acusava os compradores europeus de protecionismo.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Compradores estrangeiros passaram a exigir cadeias livres  │
+│  de trabalho infantil. Proteger crianças virou também       │
+│  condição para exportar.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Infância não é custo de produção."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-045 — Contribuição sindical
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-045                            │
+│  Contribuição sindical                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trazia de volta a contribuição aos         │
+│  sindicatos ou se mantinha o fim da cobrança.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sindicato sem dinheiro negocia pior. Contribuição          │
+│  obrigatória dá força, mas pode sustentar sindicato que não │
+│  representa ninguém.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Negociar sozinho é aceitar o que vier."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-046 — Robôs na fábrica
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-046                            │
+│  Robôs na fábrica                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia manter os empregos em troca do      │
+│  subsídio ou se pagava cursos para os demitidos.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Automação aumenta a produção e corta vagas. Quem decide    │
+│  para onde vai o ganho, salário, lucro ou imposto, é a      │
+│  política, não o robô.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O robô não vota. Quem perde o emprego vota."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-047 — Fim da Justiça do Trabalho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-047                            │
+│  Fim da Justiça do Trabalho                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia a Justiça do Trabalho ou se       │
+│  apoiava juntar os processos à Justiça comum.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Justiça do Trabalho existe porque patrão e empregado não │
+│  negociam de igual para igual. Juízes especializados julgam │
+│  mais rápido essas causas.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sem juiz, direito vira favor."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-048 — Trabalho de presos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-048                            │
+│  Trabalho de presos                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o trabalho dos presos teria salário e      │
+│  redução de pena ou se seria mão de obra barata.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lei prevê que o preso que trabalha reduz a pena e recebe │
+│  pagamento. Trabalho com direitos ajuda na volta à vida     │
+│  fora; sem direitos, vira exploração.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Trabalho na prisão abre a porta ou prende de novo."       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-049 — Escola técnica
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-049                            │
+│  Escola técnica                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria escolas técnicas públicas ou se      │
+│  pagava cursos dentro das empresas.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Ensino técnico público forma para uma profissão e para a   │
+│  vida. Curso feito pela empresa treina para a vaga dela, e o│
+│  aluno fica preso a ela.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Profissão é para a vida, não para uma vaga."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-050 — Caminhoneiros na estrada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-050                            │
+│  Caminhoneiros na estrada                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se negociava o frete com os caminhoneiros ou  │
+│  se mandava a polícia desbloquear as estradas.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quase tudo no país anda de caminhão. Uma greve de          │
+│  transporte para a comida e o remédio em poucos dias, e dá a│
+│  uma categoria grande poder de pressão.                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem move as cargas move o governo."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-051 — Revista pela aparência
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-051                            │
+│  Revista pela aparência                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia proibir revistas baseadas só na   │
+│  aparência ou se mantinha o critério do policial.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lei exige fundada suspeita para revistar alguém. Quando o│
+│  critério é a aparência, a cor da pele vira suspeita, e o   │
+│  mesmo grupo é parado de novo.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Suspeito não é cor de pele."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-052 — Racismo na arquibancada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-052                            │
+│  Racismo na arquibancada                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o clube perdia pontos por racismo da       │
+│  torcida ou se pagava só uma multa.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Multa pequena vira custo do negócio. Punição que mexe na   │
+│  tabela faz o clube agir contra o racismo na própria        │
+│  torcida.                                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Multa se paga. Ponto perdido se sente."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-053 — Crédito negado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-053                            │
+│  Crédito negado                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma linha de crédito para           │
+│  empreendedores negros ou uma linha igual para todos.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Regra igual para pontos de partida diferentes mantém a     │
+│  distância. Ação afirmativa trata desigual o que já é       │
+│  desigual para chegar perto da igualdade.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Tratar igual quem largou atrás é manter atrás."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-054 — Terreiro atacado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-054                            │
+│  Terreiro atacado                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma delegacia contra ataques a      │
+│  terreiros ou se os casos ficavam como briga de vizinhos.   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Ataque a terreiro é crime de intolerância religiosa, ligado│
+│  ao racismo. Quando vira briga de vizinhos, some das        │
+│  estatísticas e ninguém responde.                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fé de matriz africana também tem direito a altar."        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-055 — Visto para haitianos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-055                            │
+│  Visto para haitianos                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava visto humanitário a imigrantes        │
+│  haitianos e africanos ou se fechava o visto.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Migrantes brancos e negros costumam ser recebidos de forma │
+│  diferente. Visto humanitário dá documento, trabalho legal e│
+│  proteção contra exploração.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fronteira que escolhe cor de pele tem nome."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-056 — Reparação da escravidão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-056                            │
+│  Reparação da escravidão                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava um fundo de reparação pela          │
+│  escravidão ou se o Estado só pedia desculpas.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A escravidão terminou sem terra, escola nem indenização    │
+│  para os libertos. Reparação discute como o Estado corrige  │
+│  uma desigualdade que ele mesmo criou.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Desculpa sem reparação é só discurso."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-057 — Câmera que erra
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-057                            │
+│  Câmera que erra                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se suspendia o reconhecimento facial que erra │
+│  com pessoas negras ou se ampliava as câmeras.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sistemas de reconhecimento facial aprendem com bancos de   │
+│  rostos pouco diversos. O erro cai sobre quem já é mais     │
+│  parado pela polícia.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Máquina treinada com preconceito repete preconceito."     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-058 — Aterro no bairro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-058                            │
+│  Aterro no bairro                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se levava o aterro de lixo para longe ou se   │
+│  ele ficava ao lado de um bairro de maioria negra.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Racismo ambiental é quando lixões, indústrias e enchentes  │
+│  caem sempre nos mesmos bairros. O custo da cidade fica com │
+│  quem tem menos voz.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O lixo da cidade sempre acha o mesmo CEP."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-059 — Racismo no parto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-059                            │
+│  Racismo no parto                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava um protocolo nacional contra o      │
+│  racismo no parto ou se deixava a cada hospital.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Racismo institucional acontece sem ninguém declarar ódio:  │
+│  está nas rotinas que tratam pior um grupo. Metas e dados   │
+│  por cor mostram onde mudar.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Racismo também mora no protocolo."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-060 — Poucos juízes negros
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-060                            │
+│  Poucos juízes negros                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava cotas para negros nos concursos de │
+│  juiz ou se o concurso seguia só pela nota.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quem julga também traz a própria vivência. Um Judiciário   │
+│  parecido com a população tem mais confiança e enxerga casos│
+│  que antes passavam batido.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Justiça cega não precisa ser toda da mesma cor."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-061 — Quem escolhe o patrocínio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-061                            │
+│  Quem escolhe o patrocínio                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a lei de incentivo virava um fundo com     │
+│  editais ou se as empresas seguiam escolhendo.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na renúncia fiscal, o dinheiro é público, mas a escolha é  │
+│  privada. A empresa patrocina o que dá marca, e regiões sem │
+│  grandes empresas ficam de fora.                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Dinheiro público com escolha privada."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-062 — Streaming estrangeiro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-062                            │
+│  Streaming estrangeiro                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cobrava taxa e cota de conteúdo nacional do│
+│  streaming estrangeiro ou se deixava livre.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  TV e cinema pagam uma taxa que financia filmes nacionais; o│
+│  streaming estrangeiro ainda não. A cota garante espaço para│
+│  histórias daqui.                                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem não conta a própria história assiste à dos outros."  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-063 — Museu sem manutenção
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-063                            │
+│  Museu sem manutenção                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se usava emendas na manutenção de um museu ou │
+│  se leiloava o prédio.                                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Patrimônio precisa de manutenção que ninguém vê. Quando    │
+│  falta, um incêndio apaga em horas a memória de séculos.    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Memória queimada não volta."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-064 — Grafite ou pichação
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-064                            │
+│  Grafite ou pichação                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava muros para o grafite ou se mandava│
+│  prender quem pinta na rua.                                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Grafite e pichação são tratados de forma diferente pela    │
+│  lei. Espaços liberados dão voz à juventude; a repressão    │
+│  costuma atingir os mesmos bairros.                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Muro pintado é bairro que fala."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-065 — Arte na grade
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-065                            │
+│  Arte na grade                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha música e artes na grade escolar ou│
+│  se dava mais horas às matérias de prova.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Arte na escola desenvolve leitura do mundo, criatividade e │
+│  pertencimento. Quando sai da grade, fica só para quem pode │
+│  pagar curso fora.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Arte na escola não é luxo. É direito."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-066 — IA copia artistas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-066                            │
+│  IA copia artistas                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia pagamento aos artistas pelas obras  │
+│  usadas na IA ou se liberava o treino.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  IA generativa aprende com obras de pessoas reais. Sem regra│
+│  de autorização e pagamento, o artista financia a máquina   │
+│  que vai competir com ele.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A máquina aprendeu com alguém. Esse alguém come."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-067 — Exposição sob ataque
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-067                            │
+│  Exposição sob ataque                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha aberta uma exposição atacada como │
+│  imoral ou se a fechava.                                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Censura nem sempre vem por lei: pressão política e ameaça  │
+│  de corte de verba fazem artistas e museus desistirem antes.│
+│  Isso se chama autocensura.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem fecha uma mostra fecha outras cem."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-068 — Jogos feitos aqui
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-068                            │
+│  Jogos feitos aqui                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava um fundo para jogos brasileiros ou  │
+│  se dava isenção a estúdios estrangeiros.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Jogos também são cultura e indústria. Quem produz decide   │
+│  que histórias, sotaques e lugares aparecem na tela de      │
+│  milhões de jovens.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem faz o jogo escolhe o herói."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-069 — Manto na Europa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-069                            │
+│  Manto na Europa                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia a devolução de um manto indígena     │
+│  guardado na Europa ou se aceitava só um empréstimo.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Muitos objetos sagrados de povos colonizados foram levados │
+│  para museus europeus. Pedir a volta é discutir a quem      │
+│  pertence a memória.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Memória roubada não vira peça de vitrine."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-070 — Vale-cultura jovem
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-070                            │
+│  Vale-cultura jovem                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava um vale-cultura a jovens de baixa     │
+│  renda ou se deixava o cinema onde já está.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Cinemas e teatros se concentram em áreas ricas. Sem sala   │
+│  perto nem dinheiro para o ingresso, a cultura vira         │
+│  privilégio de quem mora no centro.                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Cultura longe de casa é cultura para poucos."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
 ## 18.13 — Cartas de Aprendizado de Atores (1 de 70)
@@ -7569,9 +8808,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
 | **Institucionais** | 200 | 0 | 200 |
-| **Temáticas** | 30 | 0 | 70 |
+| **Temáticas** | 70 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **231** | **0** | **340** |
+| **Total** | **271** | **0** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
