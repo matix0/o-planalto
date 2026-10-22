@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 117 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 137 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -2566,6 +2566,222 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-092 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-093 — Relator da ONU pede visita
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Relator da ONU pede visita |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Um relator da ONU pede para visitar bairros onde operações policiais mataram moradores. Governadores dizem que é intromissão. |
+| **Opção A** | Abrir as portas |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +10, `Capital Político` -10, `Soberania` -5 |
+| **Consequência A** | "O relator visita os bairros e ouve as famílias. Governadores se irritam." |
+| **Eixo A** | [0, +1, +1, +1] |
+| **Atores A** | `ACT-010` +1, `ACT-008` -1 |
+| **Evento A** | "O relatório da ONU sai e cobra o Brasil." · atraso 2 · `Legitimidade` -10, `Consciência` +5 |
+| **Opção B** | Adiar a visita |
+| **Efeitos B** | `Capital Político` +10, `Soberania` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "A visita fica para depois. Lá fora, o Brasil passa a ser visto com suspeita." |
+| **Eixo B** | [0, -1, -1, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-093 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-094 — Imposto extra sobre armas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Imposto extra sobre armas |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Fazenda |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | A reforma tributária pode pôr um imposto extra sobre armas e munição, muitas importadas. Clubes de tiro e fabricantes reagem. |
+| **Opção A** | Taxar armas e munição |
+| **Efeitos A** | `Caixa` +10, `Segurança` +5, `Capital Político` -10 |
+| **Consequência A** | "O imposto sobe. Clubes de tiro protestam, e a receita cresce." |
+| **Eixo A** | [-1, -1, +1, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-021` -1 |
+| **Evento A** | — |
+| **Opção B** | Isentar o setor |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Segurança` -5 |
+| **Consequência B** | "Armas seguem baratas. A bancada da bala apoia seus projetos." |
+| **Eixo B** | [+1, +1, -1, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-094 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-095 — Armas da polícia no crime
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Armas da polícia no crime |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Armas e munição apreendidas somem dos depósitos da polícia e voltam ao crime. Marcar e rastrear cada lote custa caro. |
+| **Opção A** | Marcar e rastrear lotes |
+| **Efeitos A** | `Integridade` +10, `Segurança` +10, `Caixa` -15 |
+| **Consequência A** | "Cada lote ganha marca. Policiais reclamam do controle, e os desvios caem." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-008` -1, `ACT-023` +1 |
+| **Evento A** | "O rastreio leva a uma rede dentro da polícia." · atraso 2 · `Integridade` +10, `Legitimidade` -5 |
+| **Opção B** | Deixar à corregedoria |
+| **Efeitos B** | `Caixa` +5, `Capital Político` +5, `Segurança` -10, `Integridade` -10 |
+| **Consequência B** | "A corregedoria investiga em silêncio. As armas não param de sumir." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-095 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-096 — Testemunha contra a milícia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Testemunha contra a milícia |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Uma moradora pode depor contra uma milícia. O programa de proteção a testemunhas está sem verba e com fila. |
+| **Opção A** | Reforçar o programa |
+| **Efeitos A** | `Segurança` +10, `Integridade` +5, `Caixa` -15 |
+| **Consequência A** | "A moradora muda de cidade com proteção. O processo contra a milícia anda." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Pagar por denúncia |
+| **Efeitos B** | `Segurança` +5, `Caixa` -5, `Integridade` -5, `Dignidade` -10 |
+| **Consequência B** | "Chegam denúncias, muitas falsas. A moradora segue sem proteção." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | — |
+| **Evento B** | — |
+| **Aprendizado** | APR-096 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-097 — PF investiga governador aliado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | PF investiga governador aliado |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | A Polícia Federal investiga um governador aliado. Ele pede que você troque o diretor da PF e promete os votos do estado. |
+| **Opção A** | Manter o diretor |
+| **Efeitos A** | `Integridade` +15, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "A investigação segue. A bancada do estado passa a votar contra você." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Trocar o diretor |
+| **Efeitos B** | `Capital Político` +15, `Integridade` -15, `Legitimidade` -10 |
+| **Consequência B** | "O novo diretor muda a equipe do caso. A bancada do estado fecha com você." |
+| **Eixo B** | [0, 0, 0, -2] |
+| **Atores B** | `ACT-011` +1, `ACT-023` -1 |
+| **Evento B** | "Uma reportagem liga a troca ao governador." · atraso 2 · `Legitimidade` -10, `Integridade` -5 |
+| **Aprendizado** | APR-097 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-098 — Presas grávidas sem julgamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Presas grávidas sem julgamento |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Presas grávidas ou com filhos pequenos esperam julgamento atrás das grades. A Defensoria quer rever os casos e pedir prisão em casa. |
+| **Opção A** | Apoiar o mutirão |
+| **Efeitos A** | `Dignidade` +15, `Consciência` +5, `Segurança` -5, `Caixa` -5 |
+| **Consequência A** | "Muitas mães vão para casa à espera do juiz. Críticos falam em brecha." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-014` +1, `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter as prisões |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Dignidade` -15 |
+| **Consequência B** | "As presas seguem nas celas. Bebês nascem e crescem dentro da prisão." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-098 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-099 — Polícia de carreira única
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Polícia de carreira única |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Uma PEC une as polícias militar e civil numa só, de carreira civil. Oficiais dizem que a tropa vai perder o comando. |
+| **Opção A** | Apoiar a PEC |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -15, `Segurança` -5 |
+| **Consequência A** | "A PEC entra em debate. Quartéis se agitam contra a mudança." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-008` -1, `ACT-009` +1 |
+| **Evento A** | "Policiais fazem operação lenta contra a PEC." · atraso 1 · `Segurança` -10, `Capital Político` -5 |
+| **Opção B** | Manter o modelo |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Consciência` -5, `Dignidade` -5 |
+| **Consequência B** | "Nada muda na estrutura. A tropa elogia, e as críticas seguem." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-099 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-100 — Preso por foto no álbum
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Preso por foto no álbum |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 3 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Jovens negros são presos só porque a vítima os apontou num álbum de fotos. Uma regra pode exigir outras provas. |
+| **Opção A** | Exigir outras provas |
+| **Efeitos A** | `Dignidade` +15, `Integridade` +5, `Segurança` -5, `Capital Político` -5 |
+| **Consequência A** | "A regra vale. Delegados reclamam, e menos inocentes vão presos." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-024` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter o álbum |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Dignidade` -15, `Consciência` -5 |
+| **Consequência B** | "Os álbuns seguem nas delegacias. Os erros também." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | — |
+| **Evento B** | "Um inocente preso por foto vira notícia." · atraso 2 · `Legitimidade` -10, `Consciência` +5 |
+| **Aprendizado** | APR-100 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.07 — Cartas do Modo Emendas (20)
@@ -2596,6 +2812,330 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-101 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-102 — Estádio no lugar do esgoto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Estádio no lugar do esgoto |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Um deputado manda sua emenda para um estádio gigante numa cidade pequena. O bairro ao lado não tem esgoto. |
+| **Opção A** | Barrar por falha técnica |
+| **Efeitos A** | `Dignidade` +5, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "O projeto volta por erro técnico. O deputado promete revanche na votação." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` -1, `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Pagar a emenda |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Dignidade` -5 |
+| **Consequência B** | "O estádio sai. O bairro segue sem esgoto, e a obra rende foto." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-003` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-102 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-103 — Emenda para templo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emenda para templo |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Uma emenda paga a reforma de um grande templo, chamado de centro cultural no papel. A Constituição separa Estado e religião. |
+| **Opção A** | Vetar o repasse |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "O repasse cai. Pastores acusam o governo de perseguir a fé." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Liberar o repasse |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10, `Caixa` -5 |
+| **Consequência B** | "O templo é reformado com verba pública. A bancada religiosa fecha com você." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-103 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-104 — Emendas pela reforma
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emendas pela reforma |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Sua reforma tributária precisa de votos. Líderes pedem que você libere as emendas dos deputados na véspera da votação. |
+| **Opção A** | Liberar na véspera |
+| **Efeitos A** | `Capital Político` +15, `Caixa` -10, `Integridade` -10 |
+| **Consequência A** | "A reforma passa. Líderes já falam no preço da próxima votação." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` +1 |
+| **Evento A** | "O Centrão pede mais emendas para a próxima pauta." · atraso 2 · `Caixa` -10, `Integridade` -5 |
+| **Opção B** | Negociar só o texto |
+| **Efeitos B** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência B** | "A votação adia. Você ganha votos um a um, no debate do texto." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` -1, `ACT-023` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-104 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-105 — Fuzis para a guarda municipal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fuzis para a guarda municipal |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Uma emenda compra fuzis para a guarda municipal de uma cidade. O prefeito queria a verba para iluminar ruas e praças. |
+| **Opção A** | Trocar por iluminação |
+| **Efeitos A** | `Segurança` +5, `Dignidade` +10, `Capital Político` -10 |
+| **Consequência A** | "Ruas e praças ganham luz. O deputado diz que você desarmou a cidade." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Comprar os fuzis |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Dignidade` -10, `Caixa` -5 |
+| **Consequência B** | "A guarda ganha fuzis. As praças seguem escuras à noite." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-105 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-106 — Título de terra no assentamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Título de terra no assentamento |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | Uma emenda paga títulos para assentados. O título individual deixa vender o lote; a concessão de uso mantém a terra com a família. |
+| **Opção A** | Dar título individual |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` +5, `Soberania` -10 |
+| **Consequência A** | "Famílias ganham a escritura. Fazendeiros vizinhos já fazem ofertas." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-017` -1 |
+| **Evento A** | "Grandes fazendas compram lotes dos assentados." · atraso 2 · `Soberania` -10, `Dignidade` -5 |
+| **Opção B** | Dar concessão de uso |
+| **Efeitos B** | `Soberania` +5, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência B** | "A terra fica com as famílias, sem venda. Ruralistas falam em tutela." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-106 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-107 — Emenda para ONG de fachada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emenda para ONG de fachada |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Uma emenda paga uma ONG sem sede que patrocina times locais. Ela recebe dinheiro de casas de apostas com sede fora do país. |
+| **Opção A** | Suspender e investigar |
+| **Efeitos A** | `Integridade` +15, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "O repasse para. Times locais ficam sem patrocínio, e o deputado reclama." |
+| **Eixo A** | [0, -1, 0, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-011` -1 |
+| **Evento A** | "A PF acha lavagem de dinheiro na ONG." · atraso 1 · `Integridade` +10, `Legitimidade` +5 |
+| **Opção B** | Pagar a emenda |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O dinheiro chega à ONG. Ninguém sabe ao certo para onde ele vai." |
+| **Eixo B** | [0, +1, 0, -1] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-107 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-108 — Emenda Pix para escola
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emenda Pix para escola |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Uma emenda Pix cai direto no caixa de uma prefeitura, sem projeto nem prestação de contas. O deputado diz que é para escolas. |
+| **Opção A** | Exigir plano de uso |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "A prefeitura apresenta o plano. O deputado reclama da burocracia." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Liberar sem plano |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` +5, `Integridade` -10 |
+| **Consequência B** | "O dinheiro cai. Parte vai para escolas; o resto, ninguém sabe." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-108 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-109 — Trator parado no pátio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Trator parado no pátio |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Vermelho |
+| **Cor B** | Verde |
+| **Problema** | Emendas compraram tratores para pequenos agricultores, mas o prefeito só os empresta a aliados. O resto fica parado. |
+| **Opção A** | Dar a chave ao conselho |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "Um conselho de agricultores faz a escala. O prefeito perde um trunfo." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-017` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar com o prefeito |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -5, `Integridade` -5 |
+| **Consequência B** | "Os tratores seguem com o prefeito. Quem não é aliado espera." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-017` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-109 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-110 — Estrada até a fazenda
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Estrada até a fazenda |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | Senado Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Um senador manda emenda para asfaltar uma estrada que passa nas terras dele. Ela também liga dois povoados isolados. |
+| **Opção A** | Barrar por conflito |
+| **Efeitos A** | `Integridade` +10, `Dignidade` -5, `Capital Político` -10 |
+| **Consequência A** | "A obra para. Os povoados seguem isolados, e o senador vira oposição." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-023` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Asfaltar a estrada |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` +5, `Integridade` -10, `Caixa` -5 |
+| **Consequência B** | "Os povoados ganham estrada. A fazenda do senador também." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-003` +1, `ACT-001` +1 |
+| **Evento B** | "Uma reportagem mostra a fazenda valorizada." · atraso 2 · `Integridade` -10 |
+| **Aprendizado** | APR-110 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-111 — Emendas para o tempo integral
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emendas para o tempo integral |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Deputados de um estado podem juntar emendas para cumprir a meta de escola em tempo integral. Cada um prefere a própria obra. |
+| **Opção A** | Juntar no tempo integral |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "As escolas ganham turno integral. Deputados perdem placas com o nome." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar cada um decidir |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -5, `Consciência` -5 |
+| **Consequência B** | "Cada deputado faz sua obra. A meta de educação fica para depois." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-111 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-112 — Exame na clínica do deputado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Exame na clínica do deputado |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Uma emenda paga exames numa clínica privada ligada a um deputado. O posto da cidade tem o aparelho, mas falta técnico. |
+| **Opção A** | Pôr técnico no posto |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "O aparelho do posto volta a funcionar. A clínica perde o contrato." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Pagar a clínica |
+| **Efeitos B** | `Dignidade` +5, `Capital Político` +10, `Integridade` -10, `Caixa` -5 |
+| **Consequência B** | "A fila de exames anda. O aparelho do posto segue parado." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | "A clínica sobe o preço no ano seguinte." · atraso 2 · `Caixa` -10 |
+| **Aprendizado** | APR-112 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-113 — Ônibus elétrico de fora
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ônibus elétrico de fora |
+| **Tipo** | Institucional |
+| **Modo** | Emendas |
+| **Quem fala** | `ACT-021` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | Emendas de bancada compram ônibus elétricos para capitais. Os chineses são mais baratos; os feitos no país geram empregos aqui. |
+| **Opção A** | Comprar os importados |
+| **Efeitos A** | `Caixa` +10, `Dignidade` +5, `Soberania` -10 |
+| **Consequência A** | "Mais ônibus rodam com a mesma verba. Fábricas do país reclamam." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-021` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Exigir peças nacionais |
+| **Efeitos B** | `Soberania` +10, `Caixa` -10, `Dignidade` -5 |
+| **Consequência B** | "Menos ônibus chegam, mas fábricas daqui contratam." |
+| **Eixo B** | [-1, -1, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-015` +1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-113 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -3496,10 +4036,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 115 | 200 |
+| **Institucionais** | 135 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **117** | **340** |
+| **Total** | **137** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

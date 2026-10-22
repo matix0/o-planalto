@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 122 Cartas de Aprendizado ligadas às 122 cartas do doc 17 (117 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 46 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 142 Cartas de Aprendizado ligadas às 142 cartas do doc 17 (137 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 26 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -2615,7 +2615,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.06 — Cartas de Aprendizado do Modo Prisional e Policial (12 de 20)
+## 18.06 — Cartas de Aprendizado do Modo Prisional e Policial (20 de 20)
 
 ### APR-081 — Superlotação Prisional
 
@@ -2988,9 +2988,256 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-093 — Relator da ONU pede visita
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-093                            │
+│  Relator da ONU pede visita                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria as portas a um relator da ONU que    │
+│  investiga mortes em operações policiais.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Relatores da ONU visitam países para ouvir vítimas e       │
+│  autoridades. Não punem ninguém, mas o relatório pesa na    │
+│  imagem e nos acordos do país.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem não deve não teme visita."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-094 — Imposto extra sobre armas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-094                            │
+│  Imposto extra sobre armas                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se punha um imposto extra sobre armas e       │
+│  munição ou se isentava o setor.                            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Imposto também muda comportamento: o imposto seletivo      │
+│  encarece o que faz mal, como cigarro e bebida. A dúvida é  │
+│  se arma entra na lista.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Imposto também é política de segurança."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-095 — Armas da polícia no crime
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-095                            │
+│  Armas da polícia no crime                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se marcava e rastreava as armas apreendidas ou│
+│  se deixava o caso com a corregedoria.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sem marca no lote, ninguém sabe de onde veio a bala.       │
+│  Rastrear armas e munição ajuda a achar desvios dentro e    │
+│  fora do Estado.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Bala sem origem não tem culpado."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-096 — Testemunha contra a milícia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-096                            │
+│  Testemunha contra a milícia                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se reforçava a proteção a testemunhas ou se   │
+│  pagava por denúncias anônimas.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sem testemunha protegida, o crime organizado não chega ao  │
+│  tribunal. Proteger custa caro: mudar a pessoa de cidade,   │
+│  dar renda e nova rotina.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sem proteção, o silêncio vence."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-097 — PF investiga governador aliado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-097                            │
+│  PF investiga governador aliado                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha o diretor da PF ou se o trocava a │
+│  pedido de um governador investigado.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O presidente nomeia o diretor da Polícia Federal. Trocar o │
+│  chefe no meio de uma investigação pode virar interferência │
+│  e até crime.                                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem nomeia o chefe não manda no inquérito."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-098 — Presas grávidas sem julgamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-098                            │
+│  Presas grávidas sem julgamento                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava um mutirão para que presas grávidas│
+│  e mães esperassem o julgamento em casa.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lei permite trocar a prisão antes do julgamento pela     │
+│  prisão em casa para gestantes e mães de crianças pequenas. │
+│  Na prática, muitos juízes negam.                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Pena não passa da mãe para o filho."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-099 — Polícia de carreira única
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-099                            │
+│  Polícia de carreira única                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava unir as polícias militar e civil   │
+│  numa carreira só ou se mantinha o modelo atual.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição divide a polícia que patrulha, militar, da  │
+│  que investiga, civil. Mudar isso exige emenda e mexe com a │
+│  carreira de muita gente.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem desenha a polícia desenha a segurança."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-100 — Preso por foto no álbum
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-100                            │
+│  Preso por foto no álbum                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia outras provas além do reconhecimento│
+│  por foto ou se mantinha os álbuns nas delegacias.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A memória falha, e o viés racial pesa na hora de apontar um│
+│  rosto. Prender só por foto põe inocentes atrás das grades. │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Foto não é prova. Racismo também erra rosto."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.07 — Cartas de Aprendizado do Modo Emendas (1 de 20)
+## 18.07 — Cartas de Aprendizado do Modo Emendas (13 de 20)
 
 ### APR-101 — Emenda para Show
 
@@ -3022,6 +3269,376 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [De Olho nos Ruralistas, 2026](https://deolhonosruralistas.com.br/2026/09/18/farras-atualizado/)
+
+### APR-102 — Estádio no lugar do esgoto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-102                            │
+│  Estádio no lugar do esgoto                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se barrava por falha técnica a emenda de um   │
+│  estádio ou se pagava a obra.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Hoje boa parte das emendas é impositiva: o governo é       │
+│  obrigado a pagar. Só pode travar se houver impedimento     │
+│  técnico no projeto.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Obrigado a pagar, não a concordar."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-103 — Emenda para templo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-103                            │
+│  Emenda para templo                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se barrava ou liberava uma emenda que         │
+│  reformava um templo chamado de centro cultural.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Estado laico não tem religião oficial nem paga culto.    │
+│  Pode apoiar ações sociais de igrejas, mas não a obra do    │
+│  próprio templo.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Laico não é contra a fé. É a favor de todas."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-104 — Emendas pela reforma
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-104                            │
+│  Emendas pela reforma                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava as emendas dos deputados na       │
+│  véspera da votação da sua reforma.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O governo escolhe quando pagar as emendas. Liberar perto de│
+│  uma votação vira moeda de troca: o voto sai, mas o preço   │
+│  sobe a cada pauta.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Voto comprado volta a ser cobrado."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-105 — Fuzis para a guarda municipal
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-105                            │
+│  Fuzis para a guarda municipal                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trocava a emenda de fuzis para a guarda    │
+│  municipal por iluminação de ruas e praças.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Guarda municipal protege bens e serviços da cidade. Luz,   │
+│  praça ocupada e transporte também previnem crime, sem um   │
+│  tiro.                                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Rua acesa também é segurança pública."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-106 — Título de terra no assentamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-106                            │
+│  Título de terra no assentamento                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava título individual aos assentados ou   │
+│  concessão de uso que mantém a terra na família.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Com título individual, o assentado vira dono e pode vender.│
+│  Com concessão de uso, a família fica na terra, mas não     │
+│  vende. Cada forma tem um risco.                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Escritura na mão nem sempre é terra garantida."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-107 — Emenda para ONG de fachada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-107                            │
+│  Emenda para ONG de fachada                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se suspendia a emenda de uma ONG sem sede,    │
+│  ligada a casas de apostas de fora, ou se pagava.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Emenda a ONG precisa mostrar quem recebe e no que gasta.   │
+│  Sem isso, o dinheiro público pode servir para lavar        │
+│  dinheiro do crime.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Dinheiro sem rastro tem dono escondido."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-108 — Emenda Pix para escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-108                            │
+│  Emenda Pix para escola                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia um plano de uso da emenda Pix ou se │
+│  liberava o dinheiro sem plano.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na emenda Pix, o dinheiro vai direto à prefeitura, sem     │
+│  convênio. É rápido, mas fica difícil saber onde foi parar. │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Rápido demais para ser fiscalizado."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-109 — Trator parado no pátio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-109                            │
+│  Trator parado no pátio                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se passava a escala dos tratores a um conselho│
+│  de agricultores ou se deixava com o prefeito.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Comprar com emenda é só o começo. Sem regra de uso e       │
+│  controle social, a máquina vira favor político.            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Máquina pública não é presente do padrinho."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-110 — Estrada até a fazenda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-110                            │
+│  Estrada até a fazenda                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se barrava a emenda de estrada que valoriza a │
+│  fazenda do autor ou se asfaltava para os povoados.         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Conflito de interesses é quando quem decide ganha com a    │
+│  decisão. A obra pode ser útil e, ainda assim, beneficiar o │
+│  próprio autor.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Obra útil não apaga o interesse do dono."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-111 — Emendas para o tempo integral
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-111                            │
+│  Emendas para o tempo integral                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se juntava as emendas na meta de tempo        │
+│  integral ou se cada deputado escolhia a própria obra.      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Plano Nacional de Educação fixa metas por dez anos.      │
+│  Emendas espalhadas em pequenas obras raramente ajudam a    │
+│  cumprir alguma.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Plano sem verba é só papel."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-112 — Exame na clínica do deputado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-112                            │
+│  Exame na clínica do deputado                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se contratava técnico para o posto ou se      │
+│  pagava exames na clínica ligada a um deputado.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O SUS pode contratar o setor privado quando a rede pública │
+│  não basta. Se o público tem o aparelho parado, pagar o     │
+│  privado vira escolha política.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Aparelho parado também custa caro."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-113 — Ônibus elétrico de fora
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-113                            │
+│  Ônibus elétrico de fora                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se comprava ônibus elétricos importados, mais │
+│  baratos, ou se exigia peças feitas no país.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Compras públicas podem exigir conteúdo local para gerar    │
+│  emprego e indústria. O custo é pagar mais e levar menos por│
+│  um tempo.                                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Barato hoje pode sair caro amanhã."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -4033,525 +4650,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Prisional e Policial
 
-#### APR-093 — Chacina Policial
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-093                            │
-│  Chacina policial                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investigava ou apoiava uma chacina         │
-│  policial que matou 121 pessoas.                            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A Operação Contenção matou 121 pessoas. A maior chacina    │
-│  da história.                                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A letalidade policial é a maior do mundo.                  │
-│                                                             │
-│  FONTE: ISP-RJ, 2024. [não verificado]                      │
-│                                                             │
-│  "A maior chacina da história é esquecida."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-094 — Taxação de Armas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-094                            │
-│  Taxação de armas                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava ou não taxava as armas.             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais armas significam mais mortes. A bancada da bala       │
-│  lucra com o medo.                                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Estatuto do Desarmamento reduziu mortes por arma de      │
-│  fogo.                                                      │
-│                                                             │
-│  FONTE: Ministério da Justiça, 2012. [não verificado]       │
-│                                                             │
-│  "Mais armas nas ruas."                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-095 — Policial Vende Armas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-095                            │
-│  Policial vende armas                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se punia ou protegia um policial flagrado     │
-│  vendendo armas para facções.                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A corrupção policial é blindada. A impunidade é a regra.   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A corrupção policial é um dos principais problemas de      │
-│  segurança pública.                                         │
-│                                                             │
-│  FONTE: PF, 2024. [não verificado]                          │
-│                                                             │
-│  "A corrupção policial é blindada."                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-096 — Proteção a Testemunhas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-096                            │
-│  Proteção a testemunhas                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava ou não um programa de proteção      │
-│  a testemunhas.                                             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As testemunhas são mortas. O Estado não protege.           │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A proteção a testemunhas é fundamental para o combate      │
-│  ao crime organizado.                                       │
-│                                                             │
-│  FONTE: MJSP, 2024. [não verificado]                        │
-│                                                             │
-│  "As testemunhas são mortas."                               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-097 — PF Investiga Governador
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-097                            │
-│  PF investiga governador                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se deixava ou interferia na PF investigar     │
-│  um governador aliado.                                      │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A PF é autônoma. Interferir é obstruir a justiça.          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A impunidade dos poderosos é a regra.                      │
-│                                                             │
-│  FONTE: PF, 2024. [não verificado]                          │
-│                                                             │
-│  "A corrupção é blindada."                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-098 — Sistema Prisional Feminino
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-098                            │
-│  Sistema prisional feminino                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia ou ignorava o sistema             │
-│  prisional feminino.                                        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A dignidade menstrual é um direito. As presas são          │
-│  esquecidas.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O sistema prisional feminino é abandonado.                 │
-│                                                             │
-│  FONTE: DEPEN, 2024. [não verificado]                       │
-│                                                             │
-│  "A dignidade menstrual é negada."                          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-099 — Desmilitarização da Polícia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-099                            │
-│  Desmilitarização da polícia                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se desmilitarizava ou mantinha a polícia      │
-│  militar.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A polícia militar é herdeira da ditadura. Desmilitarizar   │
-│  é democratizar.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A segurança pública deve ser civil.                        │
-│                                                             │
-│  FONTE: FBSP, 2024. [não verificado]                        │
-│                                                             │
-│  "A polícia continua sendo exército."                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-100 — População Carcerária Negra
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-100                            │
-│  População carcerária negra                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava cotas para negros no sistema        │
-│  prisional ou ignorava.                                     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O racismo estrutural encarcera mais negros. A justiça      │
-│  é seletiva.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  69% da população carcerária é negra.                       │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "O racismo estrutural continua."                           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Emendas
-
-#### APR-102 — Emenda para Obra Faraônica
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-102                            │
-│  Emenda para obra faraônica                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  obra faraônica.                                            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A obra faraônica sai. O hospital não. As emendas            │
-│  parlamentares são moeda de troca.                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O cidadão pode fiscalizar pelo Orçamento Aberto.           │
-│                                                             │
-│  FONTE: Portal da Transparência, 2024. [não verificado]     │
-│                                                             │
-│  "A obra faraônica sai. O hospital não."                    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-103 — Emenda para Templo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-103                            │
-│  Emenda para templo                                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para um     │
-│  templo religioso.                                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Estado financia a fé. O Estado é laico.                  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A bancada evangélica pressiona por verbas para templos.    │
-│                                                             │
-│  FONTE: Congresso em Foco, 2024. [não verificado]           │
-│                                                             │
-│  "O Estado financia a fé."                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-104 — Emenda em Troca de Voto
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-104                            │
-│  Emenda em troca de voto                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda em troca    │
-│  de voto.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O voto é comprado. A política virou mercado.               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O presidencialismo de coalizão é isso: o Executivo         │
-│  precisa do Legislativo para governar.                      │
-│                                                             │
-│  FONTE: Abranches, 2018. [não verificado]                   │
-│                                                             │
-│  "O voto é comprado."                                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-105 — Emenda para Armas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-105                            │
-│  Emenda para armas                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para        │
-│  comprar armas para a polícia.                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais armas. Mais violência. A bancada da bala pressiona.   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A letalidade policial é a maior do mundo.                  │
-│                                                             │
-│  FONTE: FBSP, 2024. [não verificado]                        │
-│                                                             │
-│  "Mais armas. Mais violência."                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-106 — Emenda para Reforma Agrária
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-106                            │
-│  Emenda para reforma agrária                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para a        │
-│  reforma agrária.                                           │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A reforma agrária avança. O agro reage.                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A função social da terra é um princípio constitucional.    │
-│                                                             │
-│  FONTE: CPT, 2024. [não verificado]                         │
-│                                                             │
-│  "A reforma agrária avança."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-107 — Emenda para Bets
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-107                            │
-│  Emenda para bets                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava ou não taxava as bets.              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As bets lucram com a miséria. Taxá-las é uma decisão       │
-│  política.                                                  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Blaze destinou R$ 330 milhões à propaganda.              │
-│                                                             │
-│  FONTE: Piauí, 2024. [não verificado]                       │
-│                                                             │
-│  "As bets lucram. O povo perde."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-108 — Emenda para Escola
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-108                            │
-│  Emenda para escola                                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para uma      │
-│  escola.                                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A escola é construída. A educação é um direito.            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O investimento em educação é fundamental para o            │
-│  desenvolvimento.                                           │
-│                                                             │
-│  FONTE: INEP, 2024. [não verificado]                        │
-│                                                             │
-│  "A escola é construída."                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-109 — Emenda para Agro
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-109                            │
-│  Emenda para agro                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para o      │
-│  agronegócio.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O agro exporta mais. O povo paga. A isenção fiscal para    │
-│  exportação é um privilégio.                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O agronegócio recebeu R$ 516 bilhões no Plano Safra        │
-│  2025/2026.                                                 │
-│                                                             │
-│  FONTE: MAPA, 2025. [não verificado]                        │
-│                                                             │
-│  "O agro exporta mais. O povo paga."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-110 — Emenda para Rodovia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-110                            │
-│  Emenda para rodovia                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  rodovia que beneficia a empresa de um senador.             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O conflito de interesses é ignorado. A rodovia beneficia   │
-│  a empresa do senador.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A corrupção é estrutural.                                  │
-│                                                             │
-│  FONTE: PF, 2024. [não verificado]                          │
-│                                                             │
-│  "O conflito de interesses é ignorado."                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-111 — Emenda para Educação
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-111                            │
-│  Emenda para educação                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para a        │
-│  educação.                                                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Plano Nacional de Educação avança. A educação é um       │
-│  direito.                                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O investimento em educação é fundamental.                  │
-│                                                             │
-│  FONTE: MEC, 2024. [não verificado]                         │
-│                                                             │
-│  "O Plano Nacional de Educação avança."                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-112 — Emenda para Clínica Privada
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-112                            │
-│  Emenda para clínica privada                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se recusava ou cedia a uma emenda para uma    │
-│  clínica privada.                                           │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O dinheiro público financia o lucro privado. A saúde é     │
-│  um direito, não uma mercadoria.                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O SUS é subfinanciado.                                     │
-│                                                             │
-│  FONTE: MS, 2024. [não verificado]                          │
-│                                                             │
-│  "O dinheiro público financia o lucro privado."             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-113 — Emenda para Ônibus Elétricos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-113                            │
-│  Emenda para ônibus elétricos                               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se cedia ou recusava uma emenda para          │
-│  ônibus elétricos.                                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O transporte público melhora. A mobilidade urbana é um     │
-│  direito.                                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A sustentabilidade é uma questão política.                 │
-│                                                             │
-│  FONTE: ANTP, 2024. [não verificado]                        │
-│                                                             │
-│  "O transporte público melhora."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-114 — Emenda para Festa Junina
 
@@ -5319,10 +5420,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 115 | 46 | 200 |
+| **Institucionais** | 135 | 26 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **117** | **46** | **340** |
+| **Total** | **137** | **26** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
