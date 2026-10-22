@@ -52,6 +52,7 @@ CARD_FIELDS = {"Título", "Tipo", "Modo", "Tema", "Função", "Fase", "Quem fala
                "Técnica", "Problema", "Aprendizado", "Status"}
 OPTION_FIELDS = {"Opção", "Cor", "Efeitos", "Consequência", "Eixo", "Atores", "Evento",
                  "Reação", "Teste"}
+PENDING = "Em conferência (P-016)."   # D-196: Aprendizado sem fonte conferida ainda
 LIMITS = {"title_words": 5, "problem": 140, "option": 25, "consequence": 80}
 
 
@@ -119,8 +120,10 @@ def parse_doc18(path=DOC18):
                     lines.append(inner)
         blocks = _blocks(lines)
         link = re.search(r"\*\*Fonte verificada[^*]*\*\*:?\s*\[([^\]]+)\]\((https?://[^)]+)\)", body)
+        pending = bool(re.search(r"\*\*Fonte em conferência", body))
         out[m.group(1)] = {"title": m.group(2).strip(), "blocks": blocks, "line": text.count("\n", 0, m.start()) + 1,
-                           "link_label": link.group(1) if link else "", "url": link.group(2) if link else ""}
+                           "link_label": link.group(1) if link else "", "url": link.group(2) if link else "",
+                           "pending": pending and not link}
     return out
 
 
@@ -456,7 +459,7 @@ def check_learning(code, l, warnings=None):
         errs.append("%s: sem FONTE" % code)
     if not b["impact"]:
         errs.append("%s: sem frase de impacto" % code)
-    if not l["url"]:
+    if not l["url"] and not l.get("pending"):
         errs.append("%s: sem link de fonte verificada — a carta fica fora do baralho (D-091, D-102)" % code)
     for key in ("lived", "concept", "data", "impact"):
         txt = _join(b[key])
@@ -628,6 +631,8 @@ def cmd_export(args):
         entry = {"id": c["learning_id"], "lived": _join(b["lived"]), "concept": _join(b["concept"]),
                  "data": _join(b["data"]), "source": {"label": b["source"], "url": l["url"]},
                  "impact": _join(b["impact"]).strip('"“”')}
+        if l.get("pending"):   # D-196: no data shown, plain-text source, conferred later (P-016)
+            entry.update(data="", source={"label": "Fonte em conferência", "url": ""}, unverified=True)
         apr.append(entry)
     for name, data in (("cards.json", deck), ("impeachment.json", scene), ("learning.json", apr),
                        ("actor_cards.json", owners)):
@@ -680,8 +685,11 @@ def render_box(a):
     out.append("└" + "─" * (BOX_INNER + 2) + "┘")
     out.append("```")
     out.append("")
-    note = a.get("verified_note", "P-015")
-    out.append("**Fonte verificada (%s):** [%s](%s)" % (note, a["url_label"], a["url"]))
+    if a.get("pending") or not a.get("url"):
+        out.append("**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)")
+    else:
+        note = a.get("verified_note", "P-015")
+        out.append("**Fonte verificada (%s):** [%s](%s)" % (note, a["url_label"], a["url"]))
     return "\n".join(out) + "\n"
 
 
@@ -842,7 +850,7 @@ def cmd_insert(args):
             continue
         a = dict(a, verified_note=note)
         box = render_box(a)
-        if a.get("strength") in ("imprensa", "fraca"):
+        if a.get("url") and a.get("strength") in ("imprensa", "fraca"):
             box = box.rstrip("\n") + " — fonte %s\n" % ("de imprensa" if a["strength"] == "imprensa" else "fraca")
         box += "\n**Status:** %s\n" % args.status
         t18 = _insert_sorted(t18, SECTION_18[sec], code, box, r"(?m)^### (APR-(?:\d{3}|THEM-\d{3}|ATOR-\d{3}|IMP-[1-5])) — ")

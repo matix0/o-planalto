@@ -205,6 +205,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-193 | A branch `claude/eloquent-einstein-gez6rk` não entra no `main` (contradiz D-090, D-091, D-094, D-104, D-105, D-109); suas 342 cartas ficam como rascunho em `gestao/rascunhos/` para as ondas do P-015 | 2026-10-21 | Escolha do PO |
 | D-194 | O jogo usa o baralho real: as cartas do doc 17 com Aprendizado no doc 18 vão para `jogo/data/` (hoje 57 + 5 da cena); o baralho fictício (D-139) fica só como dado de teste em `jogo/tests/fixtures/data/`. Fontes conferidas depois, no P-016 | 2026-10-21 | Escolha do PO (foco em jogo jogável) |
 | D-195 | O workflow do site exporta o jogo para Web (preset da D-188) e o publica em `/jogar/`, com link na barra lateral | 2026-10-21 | Escolha do PO |
+| D-196 | Cartas do P-015 entram no baralho sem conferir fontes e sem revisão do PSI: Aprendizado "em conferência" (sem bloco de dados, fonte sem link) e status "pendente de revisão (D-196)"; o PO valida tudo no fim e o P-016 confere as fontes. Exceção à D-091/D-102 | 2026-10-22 | Escolha do PO (baralho completo funcionando primeiro) |
 
 ---
 
@@ -372,6 +373,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-193 | Rascunho das 342 cartas fora do baralho |
 | D-194 | Baralho real no jogo |
 | D-195 | Jogo no site em /jogar/ |
+| D-196 | Cartas sem fonte e sem PSI, pendentes de revisão |
 
 ### Governança
 

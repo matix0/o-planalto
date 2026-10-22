@@ -321,13 +321,14 @@ func _validate_learning() -> void:
 	for id in learning.keys():
 		var l: Dictionary = learning[id]
 		var problems: PackedStringArray = []
+		var pending := bool(l.get("unverified", false))   # D-196: source conferred later (P-016)
 		for key in ["lived", "concept", "data", "impact"]:
-			if String(l.get(key, "")).is_empty():
+			if String(l.get(key, "")).is_empty() and not (pending and key == "data"):
 				problems.append("missing " + key)
 		var source = l.get("source", {})
 		if typeof(source) != TYPE_DICTIONARY or String(source.get("label", "")).is_empty():
 			problems.append("source needs a label")
-		elif not bool(l.get("fictitious", false)):
+		elif not bool(l.get("fictitious", false)) and not pending:
 			var url := String(source.get("url", ""))
 			if not (url.begins_with("https://") or url.begins_with("http://")):
 				problems.append("source needs a verified link (D-091)")

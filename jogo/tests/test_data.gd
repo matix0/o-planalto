@@ -75,6 +75,15 @@ func _initialize() -> void:
 	strict._validate_learning()
 	_expect(failures, not strict.learning.has("APR-001"), "real learning without a link is dropped (V-015)")
 	_expect(failures, Array(strict.errors).any(func(e: String) -> bool: return e.contains("verified link")), "error names the missing link")
+	# D-196: a Learning Card marked unverified stays without data and without a link (P-016).
+	var pending: Dictionary = real.duplicate(true)
+	pending["data"] = ""
+	pending["source"] = {"label": "Fonte em conferência", "url": ""}
+	pending["unverified"] = true
+	strict.learning = {"APR-001": pending}
+	strict.errors.clear()
+	strict._validate_learning()
+	_expect(failures, strict.learning.has("APR-001"), "unverified learning kept without data or link (D-196)")
 	var linked: Dictionary = real.duplicate(true)
 	linked["source"] = {"label": "IBGE", "url": "https://www.ibge.gov.br/"}
 	strict.learning = {"APR-001": linked}
