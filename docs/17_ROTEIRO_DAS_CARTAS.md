@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 157 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 177 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -3708,6 +3708,168 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-134 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-135 — Cassino no resort
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cassino no resort |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Laranja |
+| **Problema** | O Senado aprova cassinos em resorts de grupos estrangeiros. O Centrão quer a sanção; pastores e médicos alertam para o vício. |
+| **Opção A** | Vetar os cassinos |
+| **Efeitos A** | `Integridade` +10, `Dignidade` +5, `Capital Político` -15, `Caixa` -5 |
+| **Consequência A** | "Os pastores aplaudem. O Centrão segura seus projetos na Câmara." |
+| **Eixo A** | [0, -1, -1, -1] |
+| **Atores A** | `ACT-012` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar a lei |
+| **Efeitos B** | `Caixa` +15, `Capital Político` +10, `Integridade` -10, `Dignidade` -5 |
+| **Consequência B** | "Os resorts abrem salões de jogo. Igrejas fazem vigílias contra o vício." |
+| **Eixo B** | [+1, +1, +1, +1] |
+| **Atores B** | `ACT-011` +1, `ACT-012` -1, `ACT-002` +1 |
+| **Evento B** | "Um cassino novo vira lavanderia de dinheiro do crime." · atraso 2 · `Integridade` -10, `Segurança` -10 |
+| **Aprendizado** | APR-135 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-136 — Porte em toda a fazenda
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Porte em toda a fazenda |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Roxo |
+| **Problema** | As bancadas da bala e do boi querem porte de arma em toda a área da fazenda. Movimentos do campo temem mais mortes em conflitos. |
+| **Opção A** | Apoiar o porte rural |
+| **Efeitos A** | `Segurança` +10, `Capital Político` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência A** | "Fazendeiros comemoram. Posseiros e sem-terra temem os vizinhos armados." |
+| **Eixo A** | [0, 0, -1, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-011` +1, `ACT-017` -1 |
+| **Evento A** | "Um conflito por terra termina com mortos no campo." · atraso 1 · `Dignidade` -10, `Segurança` -10 |
+| **Opção B** | Barrar o porte rural |
+| **Efeitos B** | `Dignidade` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência B** | "O porte fica restrito à sede. A bancada do boi trava a sua pauta." |
+| **Eixo B** | [0, 0, +1, 0] |
+| **Atores B** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-136 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-137 — Data do orgulho hétero
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Data do orgulho hétero |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | A bancada religiosa aprova um Dia do Orgulho Hétero. Coletivos LGBT dizem que a data zomba de quem sofre violência. |
+| **Opção A** | Vetar a data |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "A data cai. Em cultos, pastores dizem que o governo persegue a fé." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-024` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar a data |
+| **Efeitos B** | `Capital Político` +15, `Dignidade` -10, `Consciência` -5 |
+| **Consequência B** | "A data entra no calendário. Coletivos relatam mais ataques nas redes." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-137 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-138 — Escala de seis por um
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Escala de seis por um |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Um abaixo-assinado enorme pede o fim da escala de seis dias por um. O empresariado só aceita uma transição lenta. |
+| **Opção A** | Apoiar o fim já |
+| **Efeitos A** | `Dignidade` +15, `Consciência` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "Trabalhadores lotam as galerias. A bancada empresarial promete obstruir." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-004` -1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Negociar a transição |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Dignidade` -5, `Consciência` -5 |
+| **Consequência B** | "A escala muda aos poucos. Nas redes, dizem que você cedeu ao patrão." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-138 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-139 — Quem libera o veneno
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Quem libera o veneno |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | A bancada do boi quer que só a Agricultura libere agrotóxicos, sem saúde nem meio ambiente. Alguns são proibidos na Europa. |
+| **Opção A** | Manter os três órgãos |
+| **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Capital Político` -15 |
+| **Consequência A** | "Saúde e ambiente seguem no processo. O agro diz que a fila trava a safra." |
+| **Eixo A** | [-1, +1, 0, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-018` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Concentrar na Agricultura |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +10, `Dignidade` -10, `Soberania` -5 |
+| **Consequência B** | "As liberações saem mais rápido. Médicos alertam para veneno no prato." |
+| **Eixo B** | [+1, -1, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-014` -1 |
+| **Evento B** | "Um rio aparece contaminado perto das lavouras." · atraso 2 · `Dignidade` -10, `Soberania` -5 |
+| **Aprendizado** | APR-139 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-140 — Petróleo para a escola
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Petróleo para a escola |
+| **Tipo** | Institucional |
+| **Modo** | Bancadas |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Uma frente de deputados de vários partidos quer pôr o dinheiro do petróleo na escola. O Mercado quer usar para pagar a dívida. |
+| **Opção A** | Petróleo para a escola |
+| **Efeitos A** | `Consciência` +15, `Dignidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "As escolas ganham verba fixa. O Mercado reage, e os juros sobem." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Abater a dívida |
+| **Efeitos B** | `Caixa` +15, `Consciência` -10, `Dignidade` -5 |
+| **Consequência B** | "A dívida cai um pouco. Professores marcam greve contra a escolha." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-140 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.09 — Modo Impeachment
@@ -3845,6 +4007,384 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Eixo B** | [0, 0, 0, 0] |
 | **Aprendizado** | APR-IMP-5 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-141 — Pedidos na gaveta
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pedidos na gaveta |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | O presidente da Câmara guarda pedidos de impeachment contra você na gaveta. Ele quer um ministério para o partido dele. |
+| **Opção A** | Ceder o ministério |
+| **Efeitos A** | `Capital Político` +15, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência A** | "Os pedidos seguem na gaveta. A imprensa chama o acordo de seguro." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` +1, `ACT-023` -1 |
+| **Evento A** | — |
+| **Opção B** | Recusar a pressão |
+| **Efeitos B** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência B** | "Você não cede. A gaveta vira ameaça em cada votação." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` -1, `ACT-023` +1 |
+| **Evento B** | "Aliados do presidente da Câmara falam em impeachment na TV." · atraso 1 · `Capital Político` -10 |
+| **Aprendizado** | APR-141 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-142 — Atraso no repasse
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Atraso no repasse |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Falta dinheiro para pagar um benefício social. Técnicos sugerem atrasar o repasse ao banco público que paga as famílias. |
+| **Opção A** | Atrasar o repasse |
+| **Efeitos A** | `Dignidade` +10, `Integridade` -10, `Capital Político` -10 |
+| **Consequência A** | "As famílias recebem em dia. O Tribunal de Contas abre uma auditoria." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-007` -1, `ACT-015` +1 |
+| **Evento A** | "A oposição chama o atraso de crime e coleta assinaturas." · atraso 1 · `Legitimidade` -10, `Capital Político` -5 |
+| **Opção B** | Cortar o benefício |
+| **Efeitos B** | `Caixa` +10, `Integridade` +5, `Dignidade` -15 |
+| **Consequência B** | "As contas fecham. Milhares de famílias perdem o benefício no mês." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-142 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-143 — Recado do general
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Recado do general |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Com o governo em baixa, um general da ativa posta que o Exército está atento à ordem. Aliados pedem punição. |
+| **Opção A** | Punir o general |
+| **Efeitos A** | `Legitimidade` +10, `Integridade` +5, `Segurança` -10, `Capital Político` -5 |
+| **Consequência A** | "O general vai para a reserva. Nos quartéis, cresce o mal-estar." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-008` -1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Ignorar o recado |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Legitimidade` -10, `Consciência` -5 |
+| **Consequência B** | "Nada acontece. Outros oficiais passam a opinar sobre o governo." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-143 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-144 — Púlpito contra o governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Púlpito contra o governo |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Azul |
+| **Problema** | Pastores pregam que o governo ameaça a fé e falam em impeachment. Eles param se você ampliar a isenção dos templos. |
+| **Opção A** | Ampliar a isenção |
+| **Efeitos A** | `Capital Político` +10, `Legitimidade` +5, `Caixa` -10, `Integridade` -5 |
+| **Consequência A** | "Os sermões mudam de tom. Outras igrejas pedem o mesmo benefício." |
+| **Eixo A** | [0, 0, -1, 0] |
+| **Atores A** | `ACT-012` +1, `ACT-019` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a regra |
+| **Efeitos B** | `Integridade` +5, `Caixa` +5, `Legitimidade` -10, `Capital Político` -10 |
+| **Consequência B** | "A isenção fica igual. Os sermões contra você se multiplicam." |
+| **Eixo B** | [0, 0, +1, 0] |
+| **Atores B** | `ACT-012` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-144 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-145 — Panelaço nas janelas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Panelaço nas janelas |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Bairros inteiros batem panelas contra você. Assessores querem um pronunciamento na TV; outros, entrevistas à imprensa. |
+| **Opção A** | Falar em rede nacional |
+| **Efeitos A** | `Legitimidade` +10, `Capital Político` +5, `Consciência` -5 |
+| **Consequência A** | "Você fala em horário nobre. Muita gente desliga a TV e bate panela." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` +1 |
+| **Evento A** | "O pronunciamento vira o maior panelaço do ano." · atraso 1 · `Legitimidade` -10 |
+| **Opção B** | Responder perguntas |
+| **Efeitos B** | `Consciência` +10, `Integridade` +5, `Legitimidade` -5, `Capital Político` -5 |
+| **Consequência B** | "Você encara as perguntas duras. A oposição recorta as respostas." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-023` +1, `ACT-011` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-145 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-146 — Vice conversa com a oposição
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vice conversa com a oposição |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Seu vice se reúne com a oposição e promete, se assumir, a pauta de costumes da bancada religiosa. |
+| **Opção A** | Romper com o vice |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência A** | "O vice vira oposição aberta. Parte do partido dele vai junto." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-024` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Dar a pauta ao vice |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "O vice fica do seu lado, por ora. A pauta dele entra no governo." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-146 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-147 — Greve geral pelo governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Greve geral pelo governo |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-015` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Centrais sindicais querem uma greve geral contra a ameaça de impeachment. Empresários dizem que é chantagem com a economia. |
+| **Opção A** | Apoiar a greve geral |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Legitimidade` +5, `Caixa` -15 |
+| **Consequência A** | "O país para um dia. Empresários acusam o governo de usar os sindicatos." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-004` -1 |
+| **Evento A** | "Empresas cortam o ponto dos grevistas." · atraso 1 · `Dignidade` -5, `Capital Político` -5 |
+| **Opção B** | Pedir calma às centrais |
+| **Efeitos B** | `Caixa` +5, `Capital Político` +5, `Consciência` -10 |
+| **Consequência B** | "A greve é adiada. Sindicalistas dizem que você teme o próprio povo." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-015` -1, `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-147 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-148 — Show pela democracia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Show pela democracia |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Artistas fazem um show pela democracia e convidam você para subir ao palco. Coaches dizem que é campanha com verba pública. |
+| **Opção A** | Subir ao palco |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Integridade` -5, `Capital Político` -5 |
+| **Consequência A** | "A plateia canta seu nome. Vídeos de coaches chamam o show de comício." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-019` +1, `ACT-022` -1 |
+| **Evento A** | — |
+| **Opção B** | Ficar fora do palco |
+| **Efeitos B** | `Integridade` +5, `Capital Político` +5, `Consciência` -10 |
+| **Consequência B** | "O show acontece sem você. Artistas reclamam de falta de coragem." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-148 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-149 — Anúncios pelo impeachment
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Anúncios pelo impeachment |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-020` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Anúncios pagos pedem seu impeachment nas redes. A plataforma estrangeira não diz quem paga e chama isso de liberdade. |
+| **Opção A** | Exigir quem pagou |
+| **Efeitos A** | `Integridade` +10, `Soberania` +5, `Capital Político` -10, `Legitimidade` -5 |
+| **Consequência A** | "A plataforma mostra os pagadores. A oposição fala em censura." |
+| **Eixo A** | [0, -1, 0, -1] |
+| **Atores A** | `ACT-020` -1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar a rede livre |
+| **Efeitos B** | `Capital Político` +5, `Integridade` -5, `Soberania` -5 |
+| **Consequência B** | "Os anúncios seguem sem dono. Você evita a briga com a plataforma." |
+| **Eixo B** | [0, +1, 0, +1] |
+| **Atores B** | `ACT-020` +1 |
+| **Evento B** | "Anúncios pagos de fora inundam as redes contra você." · atraso 1 · `Legitimidade` -10, `Consciência` -5 |
+| **Aprendizado** | APR-149 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-150 — Ministro tutor
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ministro tutor |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Vermelho |
+| **Problema** | Líderes da Câmara prometem esfriar o impeachment se um nome deles comandar a Casa Civil e a pauta. |
+| **Opção A** | Aceitar o tutor |
+| **Efeitos A** | `Capital Político` +15, `Legitimidade` -10, `Consciência` -5 |
+| **Consequência A** | "O impeachment esfria. Quem decide o governo é o ministro da Câmara." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-011` +1, `ACT-015` -1 |
+| **Evento A** | — |
+| **Opção B** | Governar sem tutela |
+| **Efeitos B** | `Legitimidade` +5, `Integridade` +5, `Capital Político` -15 |
+| **Consequência B** | "Você mantém a caneta. Os líderes avisam que a paciência acabou." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-011` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-150 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-151 — Denúncia lá fora
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Denúncia lá fora |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Você discursa num fórum internacional. Diplomatas sugerem denunciar a ameaça de golpe; outros pedem que você fale de economia. |
+| **Opção A** | Denunciar o golpe |
+| **Efeitos A** | `Legitimidade` +5, `Consciência` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Jornais de fora repercutem. No Congresso, dizem que você expõe o país." |
+| **Eixo A** | [0, +1, 0, +1] |
+| **Atores A** | `ACT-010` -1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Falar de economia |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Consciência` -5, `Legitimidade` -5 |
+| **Consequência B** | "Investidores gostam do tom. Apoiadores acham que você se calou." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-010` +1, `ACT-002` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-151 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-152 — Acampamento em Brasília
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Acampamento em Brasília |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Movimentos querem acampar diante do Congresso até o fim da ameaça de impeachment. A segurança do Planalto teme confronto. |
+| **Opção A** | Apoiar o acampamento |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Segurança` -10 |
+| **Consequência A** | "Barracas tomam a Esplanada. Deputados dizem que estão sob pressão." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1, `ACT-017` +1, `ACT-011` -1 |
+| **Evento A** | "Um empurra-empurra com a polícia vira manchete." · atraso 1 · `Legitimidade` -10, `Segurança` -5 |
+| **Opção B** | Pedir que dispersem |
+| **Efeitos B** | `Segurança` +10, `Capital Político` +5, `Consciência` -10 |
+| **Consequência B** | "A Esplanada fica vazia. Os movimentos dizem que você os abandonou." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-016` -1, `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-152 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-153 — Bondade antes da pesquisa
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Bondade antes da pesquisa |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Sua aprovação cai. O marqueteiro sugere zerar a conta de luz dos mais pobres; técnicos dizem que não há dinheiro. |
+| **Opção A** | Zerar a conta de luz |
+| **Efeitos A** | `Legitimidade` +10, `Dignidade` +5, `Caixa` -15 |
+| **Consequência A** | "A aprovação sobe. Técnicos alertam que a conta não fecha no ano." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-007` -1, `ACT-016` +1 |
+| **Evento A** | "O rombo vira argumento da oposição no Congresso." · atraso 2 · `Integridade` -5, `Capital Político` -10 |
+| **Opção B** | Manter as contas |
+| **Efeitos B** | `Caixa` +10, `Integridade` +5, `Legitimidade` -10 |
+| **Consequência B** | "As contas fecham. A pesquisa seguinte traz você ainda mais baixo." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-153 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-154 — Delação sem prova
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Delação sem prova |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | Um ex-ministro preso cita você numa delação, sem prova. A oposição quer usar o depoimento para pedir seu impeachment. |
+| **Opção A** | Abrir suas contas |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Suas contas ficam públicas. A oposição procura falhas linha por linha." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Atacar o delator |
+| **Efeitos B** | `Capital Político` +5, `Legitimidade` +5, `Integridade` -10, `Consciência` -5 |
+| **Consequência B** | "Sua base repete o ataque. Jornalistas dizem que você foge do assunto." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-154 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -4576,10 +5116,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 155 | 200 |
+| **Institucionais** | 175 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **157** | **340** |
+| **Total** | **177** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

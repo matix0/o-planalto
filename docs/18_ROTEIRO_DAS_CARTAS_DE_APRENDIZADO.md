@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 162 Cartas de Aprendizado ligadas às 162 cartas do doc 17 (157 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 6 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 182 Cartas de Aprendizado ligadas às 182 cartas do doc 17 (177 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -3859,7 +3859,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.08 — Cartas de Aprendizado do Modo Bancadas (14 de 20)
+## 18.08 — Cartas de Aprendizado do Modo Bancadas (20 de 20)
 
 ### APR-121 — Bancada BBB
 
@@ -4292,9 +4292,195 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-135 — Cassino no resort
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-135                            │
+│  Cassino no resort                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava a lei que libera cassinos em resorts│
+│  ou se sancionava em troca de apoio e receita.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bancadas temáticas juntam deputados de vários partidos em  │
+│  torno de um interesse. Quando duas bancadas brigam, o      │
+│  presidente vira o fiel da balança.                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "No jogo do Congresso, a banca também aposta."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-136 — Porte em toda a fazenda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-136                            │
+│  Porte em toda a fazenda                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava o porte de arma em toda a fazenda  │
+│  ou se barrava o projeto das bancadas da bala e do boi.     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bancadas se somam: a do boi e a da bala votam juntas quando│
+│  o tema une as duas. A soma vira maioria sem precisar de    │
+│  partido.                                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quando duas bancadas se somam, o voto vira muro."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-137 — Data do orgulho hétero
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-137                            │
+│  Data do orgulho hétero                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava uma data do orgulho hétero ou se    │
+│  sancionava para agradar a bancada religiosa.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Leis simbólicas, como datas no calendário, custam pouco e  │
+│  marcam posição. Bancadas usam esses projetos para mostrar  │
+│  força e medir o governo.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Lei simbólica não custa dinheiro. Custa alguém."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-138 — Escala de seis por um
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-138                            │
+│  Escala de seis por um                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava o fim imediato da escala de seis   │
+│  dias por um ou se negociava uma transição lenta.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bancadas não são só de deputados. Uma pressão de fora, como│
+│  um abaixo-assinado viral, pode pôr um tema na pauta e      │
+│  forçar cada bancada a se mostrar.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Folga também é pauta política."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-139 — Quem libera o veneno
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-139                            │
+│  Quem libera o veneno                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha saúde e meio ambiente na liberação│
+│  de agrotóxicos ou se deixava a decisão com a Agricultura.  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quem assina a liberação decide o risco aceito. Tirar órgãos│
+│  de saúde e ambiente do processo muda a regra sem mudar a   │
+│  lei de cada produto.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem assina o registro escolhe o risco."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-140 — Petróleo para a escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-140                            │
+│  Petróleo para a escola                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se punha o dinheiro do petróleo na educação ou│
+│  se usava a verba para pagar a dívida.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Frentes parlamentares, como a da educação, unem deputados  │
+│  de partidos rivais. Vincular uma receita a uma área protege│
+│  a verba, mas engessa o orçamento.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Verba carimbada não muda de dono."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.09 — Cartas de Aprendizado do Modo Impeachment (cena: 5; comuns: 0 de 20)
+## 18.09 — Cartas de Aprendizado do Modo Impeachment (cena: 5; comuns: 14 de 20)
 
 ### APR-IMP-1 — O Pedido
 
@@ -4438,6 +4624,440 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-013):** [História do Mundo](https://www.historiadomundo.com.br/amp/idade-contemporanea/impeachment-dilma-rousseff.htm) — fonte fraca
+
+### APR-141 — Pedidos na gaveta
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-141                            │
+│  Pedidos na gaveta                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cedia um ministério ao presidente da Câmara│
+│  ou se recusava a pressão dos pedidos guardados.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Só o presidente da Câmara decide se um pedido de           │
+│  impeachment anda. Os pedidos parados viram moeda de troca  │
+│  contra o governo.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Gaveta fechada também é poder."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-142 — Atraso no repasse
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-142                            │
+│  Atraso no repasse                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se atrasava o repasse ao banco público para   │
+│  pagar um benefício ou se cortava o benefício.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Crime de responsabilidade é uma lista de condutas do       │
+│  presidente previstas em lei. Uma manobra nas contas pode   │
+│  virar motivo para o Congresso agir.                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "No impeachment, a conta vira argumento."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-143 — Recado do general
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-143                            │
+│  Recado do general                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se punia um general da ativa que mandou um    │
+│  recado político ou se ignorava a fala.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Militares da ativa não podem fazer manifestação política.  │
+│  Quando falam em ordem num governo fraco, o recado pesa     │
+│  sobre o Congresso e as ruas.                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Farda não tem voto."                                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-144 — Púlpito contra o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-144                            │
+│  Púlpito contra o governo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se ampliava a isenção dos templos para calar  │
+│  os sermões contra o governo ou se mantinha a regra.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A legitimidade de um governo se disputa também fora do     │
+│  Congresso. Quem fala para multidões toda semana ajuda a    │
+│  decidir se um impeachment parece justo.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem fala toda semana molda o voto."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-145 — Panelaço nas janelas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-145                            │
+│  Panelaço nas janelas                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se respondia ao panelaço com um pronunciamento│
+│  na TV ou com entrevistas à imprensa.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Antes de qualquer pedido, o impeachment se constrói na     │
+│  opinião pública. Protestos dão ao Congresso a sensação de  │
+│  que derrubar é seguro.                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O Congresso escuta a rua antes de votar."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-146 — Vice conversa com a oposição
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-146                            │
+│  Vice conversa com a oposição                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se rompia com o vice que negociava com a      │
+│  oposição ou se dava a ele a pauta que queria.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Num impeachment, quem assume é o vice. Por isso a lealdade │
+│  dele vale votos: um vice que promete agradar o Congresso   │
+│  torna a troca mais fácil.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O impeachment começa por quem herda a cadeira."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-147 — Greve geral pelo governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-147                            │
+│  Greve geral pelo governo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava uma greve geral contra a ameaça de │
+│  impeachment ou se pedia calma às centrais.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A greve é um direito na Constituição. Usada em defesa de um│
+│  governo, mostra força nas ruas, mas também dá à oposição o │
+│  discurso da crise.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Parar o país é recado. Para os dois lados."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-148 — Show pela democracia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-148                            │
+│  Show pela democracia                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se subia ao palco de um show pela democracia  │
+│  ou se ficava longe para evitar a acusação de campanha.     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Artistas ajudam a dar sentido a uma crise. Quando o governo│
+│  aparece no ato, a defesa da democracia pode ser lida como  │
+│  defesa de um partido.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Defender a democracia não é defender um nome."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-149 — Anúncios pelo impeachment
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-149                            │
+│  Anúncios pelo impeachment                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia que a plataforma mostrasse quem paga│
+│  os anúncios pelo seu impeachment ou se deixava livre.      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Anúncio político sem dono esconde quem financia a pressão. │
+│  Exigir transparência protege o debate, mas pode ser lido   │
+│  como controle do governo.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sem saber quem paga, não se sabe quem pede."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-150 — Ministro tutor
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-150                            │
+│  Ministro tutor                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se entregava a Casa Civil a um nome da Câmara │
+│  para esfriar o impeachment ou se governava sem tutela.     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sob ameaça, um presidente pode ceder o comando do governo  │
+│  ao Congresso. O voto do eleitor muda de dono sem eleição   │
+│  nem mudança na lei.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sobreviver no cargo não é governar."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-151 — Denúncia lá fora
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-151                            │
+│  Denúncia lá fora                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se denunciava num fórum internacional a ameaça│
+│  de golpe ou se falava só de economia.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Governos ameaçados buscam apoio lá fora. Isso pode proteger│
+│  a democracia, mas o adversário acusa o presidente de pôr o │
+│  país em xeque.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Pedir apoio de fora também tem preço dentro."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-152 — Acampamento em Brasília
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-152                            │
+│  Acampamento em Brasília                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava o acampamento dos movimentos diante│
+│  do Congresso ou se pedia que dispersassem.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Protesto pacífico é direito. Perto do Congresso, ele       │
+│  pressiona o voto, mas qualquer confronto vira prova contra │
+│  o governo que o apoiou.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A rua pressiona. E também pode ser usada contra."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-153 — Bondade antes da pesquisa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-153                            │
+│  Bondade antes da pesquisa                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se zerava a conta de luz dos mais pobres para │
+│  subir na pesquisa ou se mantinha as contas em ordem.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Aprovação baixa deixa o governo exposto. Medidas populares │
+│  sem dinheiro previsto aliviam hoje e podem virar a acusação│
+│  de amanhã.                                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Popularidade comprada cobra juros."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-154 — Delação sem prova
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-154                            │
+│  Delação sem prova                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria suas contas diante de uma delação sem│
+│  prova ou se atacava a credibilidade do delator.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Delação premiada é um acordo: o preso conta o que sabe em  │
+│  troca de pena menor. Sozinha, a palavra do delator não     │
+│  basta para condenar ninguém.                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Delação é pista, não sentença."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -5275,250 +5895,11 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Bancadas
 
-#### APR-135 — Legalização de Cassinos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-135                            │
-│  Legalização de cassinos                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se proibia ou legalizava os cassinos.         │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A jogatina destrói famílias. A bancada das bets pressiona  │
-│  pela legalização.                                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O crime organizado lucra com o jogo.                       │
-│                                                             │
-│  FONTE: PF, 2024. [não verificado]                          │
-│                                                             │
-│  "A jogatina destrói famílias."                             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-136 — Armamento da População
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-136                            │
-│  Armamento da população                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava o armamento da           │
-│  população.                                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais armas. Mais mortes. A bancada da bala pressiona       │
-│  pelo armamento.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Estatuto do Desarmamento salvou vidas.                   │
-│                                                             │
-│  FONTE: Ministério da Justiça, 2012. [não verificado]       │
-│                                                             │
-│  "Mais armas. Mais mortes."                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-137 — Dia do Orgulho Heterossexual
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-137                            │
-│  Dia do Orgulho Heterossexual                               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a criação do "Dia do     │
-│  Orgulho Heterossexual".                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A pauta conservadora avança. A bancada evangélica          │
-│  pressiona.                                                 │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A diversidade é silenciada.                                │
-│                                                             │
-│  FONTE: Congresso em Foco, 2024. [não verificado]           │
-│                                                             │
-│  "A pauta conservadora avança."                             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-138 — Fim da Escala 6x1
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-138                            │
-│  Fim da escala 6x1                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava o fim da escala 6x1.  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O trabalhador continua escravizado. A bancada sindical     │
-│  pressiona pelo fim da escala 6x1.                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A jornada de trabalho é uma conquista histórica.           │
-│                                                             │
-│  FONTE: DIEESE, 2024. [não verificado]                      │
-│                                                             │
-│  "O trabalhador continua escravizado."                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-139 — Liberação de Agrotóxicos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-139                            │
-│  Liberação de agrotóxicos                                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se proibia ou liberava mais agrotóxicos.      │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O veneno chega à mesa. A bancada ruralista pressiona       │
-│  pela liberação.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o país que mais usa agrotóxicos no mundo.       │
-│                                                             │
-│  FONTE: ANVISA, 2024. [não verificado]                      │
-│                                                             │
-│  "O veneno chega à mesa."                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-140 — Revogação do Teto de Gastos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-140                            │
-│  Revogação do teto de gastos                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou bloqueava a revogação do        │
-│  teto de gastos.                                            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A educação respira. O teto de gastos retirou R$ 37         │
-│  bilhões do SUS.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A revogação é uma questão de soberania.                    │
-│                                                             │
-│  FONTE: Congresso Nacional, 2024. [não verificado]          │
-│                                                             │
-│  "A educação respira."                                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Impeachment
 
 *Os 3 rascunhos abaixo repetem Aprendizados já ligados à cena (APR-IMP-3..5, §18.09) e ficam só como histórico; os Aprendizados das 20 cartas comuns do modo (INST-141..160) são novos (Onda 0 do P-015).*
-
-#### APR-143 — A Votação na Câmara
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-143                            │
-│  A Votação na Câmara                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava a base ou respeitava a          │
-│  consciência de cada parlamentar.                           │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A Câmara autoriza a instauração do processo por 2/3 dos    │
-│  votos (342 deputados).                                     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em 2016, Dilma perdeu a votação por 367 votos a 137. A     │
-│  pergunta não era se ela tinha cometido crime, mas se       │
-│  tinha apoio político.                                      │
-│                                                             │
-│  FONTE: Câmara dos Deputados, 2016. [não verificado]        │
-│                                                             │
-│  "O impeachment não é justiça. É o Congresso te dando um    │
-│   recado."                                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-144 — O Julgamento no Senado
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-144                            │
-│  O Julgamento no Senado                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se renunciava ou lutava até o fim.            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Senado julga o presidente sob a presidência do STF. A    │
-│  condenação exige 2/3 dos votos (54 senadores).             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em 2016, Dilma foi condenada por 61 votos a 20. Mas        │
-│  manteve seus direitos políticos. O processo foi vendido    │
-│  como rigoroso, mas era político.                           │
-│                                                             │
-│  FONTE: Senado Federal, 2016. [não verificado]              │
-│                                                             │
-│  "O impeachment é um julgamento político, não jurídico."    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-145 — O Desfecho
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-145                            │
-│  O Desfecho                                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se aceitava a absolvição ou a condenação.     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O impeachment é um julgamento político, não jurídico. A    │
-│  condenação não exige prova de crime, mas sim a perda de    │
-│  sustentação política.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em 2016, Dilma foi condenada por pedaladas fiscais. O      │
-│  próprio relator admitiu que não eram crime. Foi um golpe   │
-│  institucional.                                             │
-│                                                             │
-│  FONTE: Revista Acervo, 2025. [não verificado]              │
-│                                                             │
-│  "O golpe foi consumado. A democracia foi ferida."          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-*(... continuando com as demais cartas do Modo Impeachment e todos os outros modos. O documento completo tem 340 Cartas de Aprendizado.)*
 
 ---
 
@@ -5528,10 +5909,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 155 | 6 | 200 |
+| **Institucionais** | 175 | 0 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **157** | **6** | **340** |
+| **Total** | **177** | **0** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
