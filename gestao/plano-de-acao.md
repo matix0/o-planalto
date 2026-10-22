@@ -400,15 +400,15 @@
 
 ---
 
-## P-016 — Conferência das fontes das cartas
+## P-016 — Validação das cartas (revisão D-196 + fontes)
 
 | Campo | Valor |
 | :--- | :--- |
 | **Status** | ⏳ Pendente (separado do P-015 a pedido do PO, 2026-10-21) |
 | **Início** | — |
 | **Conclusão** | — |
-| **Decisões** | D-091, D-102 |
-| **Objetivo** | Conferir na web as fontes dos Aprendizados (trecho literal + link) antes de as cartas valerem como reais; o P-015 segue com o texto das cartas e o jogo fica jogável antes |
+| **Decisões** | D-091, D-102, D-193, D-196 |
+| **Objetivo** | Validar as 340 cartas já no jogo: revisão do PO das cartas "pendente de revisão (D-196)", comparação com as cartas antigas do rascunho (DeepSeek, D-193) e conferência das fontes. Conferir na web as fontes dos Aprendizados (trecho literal + link) antes de as cartas valerem como reais; o P-015 segue com o texto das cartas e o jogo fica jogável antes |
 | **Depende de** | Acesso às páginas oficiais (`senado.leg.br`, `camara.leg.br`, `agenciabrasil.ebc.com.br`, `stf.jus.br` etc.). Na nuvem, a política de rede bloqueou essas páginas em 2026-10-21 (WebFetch e `curl` com 403); só a busca funcionou. Liberar os domínios no ambiente ou rodar localmente |
 
 ### Etapas
@@ -420,6 +420,8 @@
 | 3 | Ondas 7 em diante: fontes de cada onda escrita pelo GD | ⏳ | — |
 | 4 | Reconferências marcadas: diplomação de 2026 (APR-007), bets proibidas pela MP 1.394/2026 (APR-193/194, INST-181), taxa zerada (APR-009) | ⏳ | diário `gestao/execucao-p014-p015.md` |
 | 5 | 5 fontes de cada onda reabertas à mão pelo fio principal | ⏳ | — |
+| 6 | Revisão do PO das 340 cartas pendentes (D-196), em lotes por modo | ⏳ | `docs/17`, `docs/18` |
+| 7 | Comparar com as cartas antigas do DeepSeek (`gestao/rascunhos/roteiro-cartas-342-eloquent.md`, D-193) e aproveitar o que servir | ⏳ | — |
 
 ---
 
@@ -451,7 +453,7 @@
 | 2 | Verde ao subir, vermelho ao cair (D-203) | ✅ |
 | 3 | Impacto não antecipado (D-204) | ✅ (sem mudança) |
 | 4 | "Bancada BBB" em termos comuns (D-205) | ✅ |
-| 5 | Próximo bloco: responsividade em várias resoluções + alinhamento dos docs / ações próprias / cartas do DeepSeek | ⏳ PO |
+| 5 | Próximo bloco: responsividade em várias resoluções + alinhamento dos docs / ações próprias (cartas do DeepSeek foram para o P-016) | ⏳ PO |
 | — | Travas de toque no celular (Áudio 1) | ⏳ teste do PO |
 
 ---
