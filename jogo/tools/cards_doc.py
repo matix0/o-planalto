@@ -757,13 +757,17 @@ def _insert_sorted(text, heading, item_id, block, item_re):
     nxt = re.search(r"(?m)^## ", text[start + 3:])
     end = start + 3 + nxt.start() if nxt else len(text)
     section = text[start:end]
-    kind, num = item_id.split("-")[0], int(item_id.split("-")[1])
+    def key(iid):   # "INST-012" → ("INST", 12); "APR-THEM-002" → ("APR-THEM", 2)
+        head, _, tail = iid.rpartition("-")
+        return head, int(tail) if tail.isdigit() else None
+    kind, num = key(item_id)
     items = [(m.group(1), m.start()) for m in re.finditer(item_re, section)]
     if any(i == item_id for i, _ in items):
         raise ValueError("%s já está no documento" % item_id)
     pos = None
     for iid, at in items:
-        if iid.split("-")[0] == kind and iid.split("-")[1].isdigit() and int(iid.split("-")[1]) > num:
+        k, n = key(iid)
+        if k == kind and n is not None and num is not None and n > num:
             pos = start + at
             break
     if pos is None:

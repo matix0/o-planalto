@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 207 Cartas de Aprendizado ligadas às 207 cartas do doc 17 (202 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 236 Cartas de Aprendizado ligadas às 236 cartas do doc 17 (231 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -6569,7 +6569,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.12 — Cartas de Aprendizado Temáticas (1 de 70)
+## 18.12 — Cartas de Aprendizado Temáticas (30 de 70)
 
 ### APR-THEM-001 — Reforma agrária
 
@@ -6603,6 +6603,891 @@ As Cartas de Aprendizado seguem **6 princípios**:
 **Fonte verificada (P-015):** [Congresso em Foco, 2025](https://www.congressoemfoco.com.br/noticia/109843/plano-safra-25-26-preve-r-89-bilhoes-para-agricultura-familiar) — fonte de imprensa; o trecho "agricultura familiar" do dado.
 
 **Status:** dado ajustado, provisório (DP-020): sai a frase sobre MST e FPA, sem fonte.
+
+### APR-THEM-002 — Pistoleiros no acampamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-002                            │
+│  Pistoleiros no acampamento                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mandava a Força Nacional a um acampamento  │
+│  ameaçado ou se deixava o caso com o estado.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A segurança pública cabe aos estados. A União só entra com │
+│  a Força Nacional a pedido do governador ou em casos        │
+│  previstos em lei.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem protege o acampado se a polícia é do fazendeiro?"    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-003 — Indenização da fazenda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-003                            │
+│  Indenização da fazenda                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pagava uma fazenda improdutiva com títulos │
+│  ou se aceitava a indenização pedida pelo dono.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição manda a propriedade cumprir uma função      │
+│  social. Terra improdutiva pode ser desapropriada, com      │
+│  indenização em títulos da dívida agrária.                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Terra parada também tem preço. Quem paga é você."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-004 — Confisco por trabalho escravo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-004                            │
+│  Confisco por trabalho escravo                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se regulamentava o confisco de terras com     │
+│  trabalho escravo ou se ficava só na multa.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Algumas regras da Constituição dependem de uma lei para    │
+│  valer na prática. Sem ela, o direito fica no papel.        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Direito sem lei que o regule fica no papel."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-005 — Assentamento sem luz
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-005                            │
+│  Assentamento sem luz                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se usava a verba para estruturar assentamentos│
+│  antigos ou para abrir assentamentos novos.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Reforma agrária não é só dar terra. Sem crédito, estrada e │
+│  assistência técnica, a família não consegue produzir e     │
+│  ficar.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Terra sem estrada vira terra vendida."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-006 — Grilagem no cartório
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-006                            │
+│  Grilagem no cartório                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cancelava títulos falsos de terra pública  │
+│  ou se regularizava quem já ocupava a área.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Grilagem é tomar terra pública com papel falso. Quando o   │
+│  Estado regulariza depois, ensina que invadir compensa.     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem regulariza a grilagem convida a próxima."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-007 — Escola do campo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-007                            │
+│  Escola do campo                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha a escola do assentamento ou se    │
+│  levava os alunos de ônibus para a cidade.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Educação do campo é ensinar a partir da vida de quem mora  │
+│  na roça. Fechar escolas rurais afasta jovens da terra.     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Escola fechada no campo é êxodo aberto."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-008 — Royalty sobre sementes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-008                            │
+│  Royalty sobre sementes                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se protegia as sementes guardadas pelos       │
+│  agricultores ou se cumpria o acordo das patentes.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sementes crioulas são guardadas e trocadas entre           │
+│  agricultores há gerações. Patentes dão a uma empresa o     │
+│  direito de cobrar por elas.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem é dono da semente é dono da comida."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-009 — CPI contra as cooperativas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-009                            │
+│  CPI contra as cooperativas                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia as cooperativas dos assentados ou │
+│  se suspendia os repasses pedidos pela CPI.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma CPI pode investigar, mas não condena. Quando vira      │
+│  palanque, serve para desgastar um adversário antes de      │
+│  qualquer prova.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "CPI investiga. Quem julga é a Justiça."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-010 — Terra comprada a prazo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-010                            │
+│  Terra comprada a prazo                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se trocava a desapropriação por crédito para  │
+│  comprar terra ou se mantinha a desapropriação.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na reforma agrária de mercado, o agricultor compra a terra │
+│  com crédito. Na desapropriação, o Estado toma a terra      │
+│  improdutiva e indeniza o dono.                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Terra a prazo também pode virar dívida."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-011 — Petróleo na foz do rio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-011                            │
+│  Petróleo na foz do rio                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava um poço de petróleo perto da foz  │
+│  de um grande rio ou se barrava a perfuração.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Licença ambiental é a autorização técnica para uma obra    │
+│  arriscada. O órgão avalia o risco, mas a pressão política  │
+│  pesa sobre ele.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Petróleo paga hoje. O clima cobra depois."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-012 — Fundo da floresta
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-012                            │
+│  Fundo da floresta                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava verba estrangeira para a floresta │
+│  com auditoria externa ou se recusava o controle.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Cooperação internacional traz verba, mas também regras.    │
+│  Cada país decide quanto da sua soberania aceita dividir.   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Soberania sem verba também é escolha."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-013 — Licença por autodeclaração
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-013                            │
+│  Licença por autodeclaração                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava a licença ambiental por             │
+│  autodeclaração ou se sancionava o projeto.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na autodeclaração, a própria empresa diz que cumpre as     │
+│  regras e o órgão confere depois. Ganha-se tempo e perde-se │
+│  controle.                                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem se fiscaliza sozinho raramente se reprova."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-014 — Bairro na beira do rio
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-014                            │
+│  Bairro na beira do rio                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se reassentava as famílias atingidas pela     │
+│  enchente ou se reconstruía as casas no mesmo lugar.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Adaptação climática é preparar a cidade para eventos       │
+│  extremos que vão se repetir. Custa caro antes e mais caro  │
+│  depois.                                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A chuva não escolhe bairro. A cidade escolhe."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-015 — Fogo no Cerrado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-015                            │
+│  Fogo no Cerrado                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se contratava brigadas fixas contra o fogo ou │
+│  se mandava o Exército para o Cerrado.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A maior parte do fogo no Brasil é posta por gente. Prevenir│
+│  exige equipe local o ano inteiro, não só na época da seca. │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fogo se apaga antes de começar."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-016 — Pacto contra a soja desmatada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-016                            │
+│  Pacto contra a soja desmatada                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se defendia o pacto contra a soja de área     │
+│  desmatada ou se punia as empresas que o assinaram.         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pactos de mercado podem proteger a floresta quando o       │
+│  comprador exige origem limpa. Quem perde mercado reage na  │
+│  política.                                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O cliente de fora também vota na floresta."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-017 — Fim do lixão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-017                            │
+│  Fim do lixão                                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fechava os lixões com usinas que incluem os│
+│  catadores ou se aceitava adiar o prazo.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A lei manda trocar lixões por aterros e reciclagem. O prazo│
+│  foi adiado várias vezes por pressão de prefeitos.          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Lixo também é questão de quem limpa."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-018 — Clima na sala de aula
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-018                            │
+│  Clima na sala de aula                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se lançava material escolar sobre a crise do  │
+│  clima ou se engavetava o tema para evitar polêmica.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Consenso científico é quando a maioria dos estudos aponta o│
+│  mesmo resultado. Negar o consenso não cria um outro lado.  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fato não tem dois lados. Opinião tem."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-019 — Hidrelétrica e ribeirinhos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-019                            │
+│  Hidrelétrica e ribeirinhos                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se parava a hidrelétrica para consultar os    │
+│  ribeirinhos ou se recorria para manter a obra.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Povos tradicionais têm direito a consulta prévia, livre e  │
+│  informada antes de obras que afetam seus territórios.      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Energia limpa para quem? Pergunte a quem sai."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-020 — Taxa sobre o carbono
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-020                            │
+│  Taxa sobre o carbono                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma taxa sobre o carbono no diesel  │
+│  ou se isentava o combustível.                              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Precificar o carbono é cobrar de quem polui para mudar o   │
+│  comportamento. Pesa mais em quem depende do combustível    │
+│  para trabalhar.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem polui paga. Mas quem paga primeiro?"                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-021 — Merenda congelada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-021                            │
+│  Merenda congelada                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se reajustava a verba da merenda ou se        │
+│  mantinha o valor congelado.                                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Para muitas crianças, a merenda é a principal refeição do  │
+│  dia. Verba parada perde valor com a inflação.              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prato vazio na escola esvazia a sala."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-022 — Arroz caro no mercado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-022                            │
+│  Arroz caro no mercado                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se taxava a exportação de arroz para segurar o│
+│  preço ou se deixava a venda livre.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando o dólar sobe, vender lá fora rende mais. O alimento │
+│  sai do país e o preço sobe para quem compra aqui.          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Comida também é moeda. Quem fica sem troco?"              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-023 — Estoque de feijão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-023                            │
+│  Estoque de feijão                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se recompunha os estoques públicos de alimento│
+│  ou se deixava o preço por conta do mercado.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Estoque regulador é comprar comida quando sobra e vender   │
+│  quando falta. Segura o preço, mas exige armazém e dinheiro │
+│  parado.                                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Armazém vazio é preço sem freio."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-024 — Cozinha com nome de deputado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-024                            │
+│  Cozinha com nome de deputado                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava a verba de um deputado com o nome │
+│  dele na cozinha comunitária ou se recusava.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Política pública não tem dono. Usar a verba de todos como  │
+│  vitrine pessoal é personalismo, e a lei proíbe promoção    │
+│  pessoal.                                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Comida pública não tem padrinho."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-025 — Comida no lixo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-025                            │
+│  Comida no lixo                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava a doação de sobras dos            │
+│  supermercados ou se vetava o projeto por risco sanitário.  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Fome e desperdício convivem quando a lei pune quem doa.    │
+│  Mudar a regra de responsabilidade pode levar comida a quem │
+│  precisa.                                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fome e lixo cheio na mesma rua."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-026 — Direito à comida na Justiça
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-026                            │
+│  Direito à comida na Justiça                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cumpria a ordem da Justiça para dar comida │
+│  às famílias ou se recorria.                                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A alimentação é um direito social na Constituição. Quando o│
+│  Estado falha, a Justiça pode mandar cumprir.               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fome também é direito violado."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-027 — Salgadinho no desenho
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-027                            │
+│  Salgadinho no desenho                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se proibia anúncios de ultraprocessados para  │
+│  crianças ou se deixava a indústria se regular.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Fome também é comer mal. Ultraprocessados baratos e        │
+│  anunciados enchem a barriga sem nutrir.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Criança não escolhe anúncio. O anúncio escolhe criança."  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-028 — Cesta da facção
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-028                            │
+│  Cesta da facção                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se levava programa social a um bairro onde a  │
+│  facção distribuía cestas ou se mandava a polícia.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Onde o Estado falta, outro poder ocupa o espaço. Facções   │
+│  ganham apoio quando oferecem o que o Estado não dá.        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem dá a comida ganha a lealdade."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-029 — Arroz para outro país
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-029                            │
+│  Arroz para outro país                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se doava arroz a um país em guerra ou se      │
+│  guardava os estoques para a fome daqui.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Ajuda humanitária dá peso a um país no mundo. Mas a        │
+│  política externa também responde a quem passa fome em casa.│
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Solidariedade lá fora começa aqui dentro?"                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-THEM-030 — Pente-fino no benefício
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — THEM-030                            │
+│  Pente-fino no benefício                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha o benefício até revisar o cadastro│
+│  ou se cortava na hora quem tinha erro.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Todo cidadão tem direito de se defender antes de perder um │
+│  direito. Cortar primeiro e revisar depois pune quem não    │
+│  errou.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Erro no cadastro não enche a geladeira."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -6684,9 +7569,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
 | **Institucionais** | 200 | 0 | 200 |
-| **Temáticas** | 1 | 0 | 70 |
+| **Temáticas** | 30 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **202** | **0** | **340** |
+| **Total** | **231** | **0** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

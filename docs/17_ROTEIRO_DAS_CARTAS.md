@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 202 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 231 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -5740,6 +5740,818 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-THEM-001 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
 
+### THEM-002 — Pistoleiros no acampamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pistoleiros no acampamento |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Pistoleiros ameaçam um acampamento sem-terra. A polícia local é próxima dos fazendeiros da região. |
+| **Opção A** | Enviar a Força Nacional |
+| **Efeitos A** | `Segurança` +10, `Dignidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "A Força Nacional chega. Os fazendeiros acusam o governo de invadir o estado." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar com o estado |
+| **Efeitos B** | `Capital Político` +10, `Segurança` -10, `Legitimidade` -5 |
+| **Consequência B** | "O governador agradece. As ameaças no acampamento continuam." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | "Um líder do acampamento é morto numa emboscada" · atraso 1 · `Dignidade` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-THEM-002 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-003 — Indenização da fazenda
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Indenização da fazenda |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Justiça Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Um laudo diz que uma fazenda não cumpre a função social. O dono recorre e pede indenização acima do valor de mercado. |
+| **Opção A** | Pagar com títulos |
+| **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Capital Político` -10 |
+| **Consequência A** | "A terra vai para a reforma. O dono recebe títulos a longo prazo." |
+| **Eixo A** | [-2, 0, 0, +1] |
+| **Atores A** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Pagar o valor pedido |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -20, `Integridade` -5 |
+| **Consequência B** | "O dono sai satisfeito. Sobra menos verba para outras famílias." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-003 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-004 — Confisco por trabalho escravo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Confisco por trabalho escravo |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Verde |
+| **Problema** | Fiscais acham trabalho escravo numa fazenda. A Constituição manda confiscar a terra, mas falta a lei que regula o confisco. |
+| **Opção A** | Regulamentar o confisco |
+| **Efeitos A** | `Dignidade` +15, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A lei passa por pouco. A bancada do agro promete revanche." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-001` -1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Só multar o dono |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "O dono paga a multa e segue com a terra." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-004 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-005 — Assentamento sem luz
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Assentamento sem luz |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Ministério do Planejamento |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Roxo |
+| **Problema** | Famílias assentadas há anos seguem sem luz, água e assistência técnica. A verba só cobre novos assentamentos. |
+| **Opção A** | Estruturar os antigos |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Os assentados ganham luz e poço. Os acampados protestam na estrada." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-017` -1 |
+| **Evento A** | — |
+| **Opção B** | Abrir novos assentamentos |
+| **Efeitos B** | `Dignidade` +5, `Soberania` +5, `Caixa` -10, `Legitimidade` -5 |
+| **Consequência B** | "Novas famílias recebem terra. As antigas seguem sem estrutura." |
+| **Eixo B** | [-2, 0, 0, 0] |
+| **Atores B** | `ACT-017` +1 |
+| **Evento B** | "Lotes sem apoio são vendidos a fazendeiros" · atraso 2 · `Dignidade` -10, `Integridade` -5 |
+| **Aprendizado** | APR-THEM-005 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-006 — Grilagem no cartório
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Grilagem no cartório |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Conselho Nacional de Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Verde |
+| **Problema** | Um cartório registra títulos falsos de terra pública. Os grileiros pedem que o governo regularize as áreas já ocupadas. |
+| **Opção A** | Cancelar os registros |
+| **Efeitos A** | `Integridade` +10, `Soberania` +5, `Capital Político` -15 |
+| **Consequência A** | "Os títulos falsos caem. A bancada do agro trava a pauta do governo." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Regularizar as áreas |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Integridade` -15 |
+| **Consequência B** | "Os grileiros ganham o papel. A terra pública vira privada." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-001` +1 |
+| **Evento B** | "Novas invasões de terra pública aparecem" · atraso 2 · `Soberania` -10, `Integridade` -5 |
+| **Aprendizado** | APR-THEM-006 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-007 — Escola do campo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Escola do campo |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Ministério da Educação |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Um assentamento pede escola com currículo do campo. A prefeitura quer fechar a escola e levar os alunos de ônibus à cidade. |
+| **Opção A** | Manter a escola do campo |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +10, `Caixa` -10 |
+| **Consequência A** | "A escola fica. As crianças estudam perto de casa." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-017` +1 |
+| **Evento A** | — |
+| **Opção B** | Transportar à cidade |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -5, `Consciência` -5 |
+| **Consequência B** | "A prefeitura economiza. As crianças passam horas na estrada." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-007 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-008 — Royalty sobre sementes
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Royalty sobre sementes |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Uma multinacional cobra royalties de sementes guardadas por pequenos agricultores. Um acordo comercial exige o pagamento. |
+| **Opção A** | Proteger as sementes |
+| **Efeitos A** | `Soberania` +10, `Dignidade` +5, `Caixa` -5, `Capital Político` -5 |
+| **Consequência A** | "Os agricultores guardam as sementes. O parceiro comercial ameaça retaliar." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-021` -1, `ACT-006` -1, `ACT-017` +1 |
+| **Evento A** | — |
+| **Opção B** | Cumprir o acordo |
+| **Efeitos B** | `Caixa` +10, `Soberania` -10, `Dignidade` -5 |
+| **Consequência B** | "O acordo segue. O pequeno agricultor paga para plantar a própria colheita." |
+| **Eixo B** | [+1, +2, 0, 0] |
+| **Atores B** | `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-008 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-009 — CPI contra as cooperativas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | CPI contra as cooperativas |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | A bancada ruralista abre uma CPI contra o movimento sem-terra. Quer cortar os repasses às cooperativas dos assentados. |
+| **Opção A** | Defender as cooperativas |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "Os repasses seguem. A CPI acusa o governo de proteger invasores." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Suspender os repasses |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Consciência` -5 |
+| **Consequência B** | "A bancada comemora. Cooperativas fecham e a produção cai." |
+| **Eixo B** | [+1, 0, -1, -1] |
+| **Atores B** | `ACT-001` +1, `ACT-017` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-009 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-010 — Terra comprada a prazo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Terra comprada a prazo |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Reforma Agrária |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Laranja |
+| **Cor B** | Roxo |
+| **Problema** | O Banco Mundial oferece crédito para o agricultor comprar terra a prazo. Deputados querem trocar a desapropriação por esse modelo. |
+| **Opção A** | Aceitar o crédito |
+| **Efeitos A** | `Capital Político` +10, `Dignidade` +5, `Caixa` -10 |
+| **Consequência A** | "O crédito sai. O agricultor assume uma dívida longa com o banco." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-011` +1, `ACT-006` +1 |
+| **Evento A** | "Agricultores endividados devolvem a terra ao banco" · atraso 2 · `Dignidade` -10, `Legitimidade` -5 |
+| **Opção B** | Manter a desapropriação |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência B** | "O latifúndio improdutivo segue na mira. Os deputados travam suas emendas." |
+| **Eixo B** | [-1, 0, 0, +1] |
+| **Atores B** | `ACT-011` -1, `ACT-017` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-010 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-011 — Petróleo na foz do rio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Petróleo na foz do rio |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Ibama |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Verde |
+| **Problema** | A estatal quer furar um poço de petróleo perto da foz de um grande rio. Parceiros do clima pedem que o país desista. |
+| **Opção A** | Liberar a perfuração |
+| **Efeitos A** | `Caixa` +15, `Soberania` +5, `Legitimidade` -10 |
+| **Consequência A** | "A sonda começa a furar. Parceiros do clima cobram coerência." |
+| **Eixo A** | [0, -1, 0, -1] |
+| **Atores A** | `ACT-018` -1 |
+| **Evento A** | "Um vazamento atinge a costa e os pescadores" · atraso 2 · `Dignidade` -10, `Legitimidade` -5 |
+| **Opção B** | Barrar o poço |
+| **Efeitos B** | `Legitimidade` +5, `Consciência` +5, `Caixa` -15 |
+| **Consequência B** | "O poço fica no papel. Estados da região perdem a receita esperada." |
+| **Eixo B** | [0, +1, 0, +1] |
+| **Atores B** | `ACT-018` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-011 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-012 — Fundo da floresta
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fundo da floresta |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Itamaraty |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | Países doadores oferecem verba para proteger a floresta. Em troca, pedem metas e auditoria externa. |
+| **Opção A** | Aceitar a auditoria |
+| **Efeitos A** | `Caixa` +10, `Legitimidade` +5, `Soberania` -10 |
+| **Consequência A** | "A verba chega. Militares dizem que estrangeiros mandam na Amazônia." |
+| **Eixo A** | [0, +2, 0, 0] |
+| **Atores A** | `ACT-018` +1, `ACT-021` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Recusar o controle |
+| **Efeitos B** | `Soberania` +10, `Caixa` -10, `Legitimidade` -5 |
+| **Consequência B** | "O país mantém o controle total. A fiscalização fica sem dinheiro." |
+| **Eixo B** | [0, -2, 0, 0] |
+| **Atores B** | `ACT-008` +1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-012 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-013 — Licença por autodeclaração
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Licença por autodeclaração |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Um projeto cria licença ambiental por autodeclaração para obras médias. Empreiteiras celebram; técnicos falam em risco de desastre. |
+| **Opção A** | Vetar a autodeclaração |
+| **Efeitos A** | `Integridade` +10, `Segurança` +5, `Capital Político` -15 |
+| **Consequência A** | "O veto sai. As empreiteiras prometem derrubá-lo no Congresso." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-003` -1, `ACT-018` +1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar o projeto |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Segurança` -10 |
+| **Consequência B** | "As obras andam mais rápido. Os técnicos perdem o poder de barrar." |
+| **Eixo B** | [+2, 0, 0, -1] |
+| **Atores B** | `ACT-003` +1, `ACT-018` -1 |
+| **Evento B** | "Uma barragem licenciada às pressas se rompe" · atraso 2 · `Dignidade` -15, `Legitimidade` -10 |
+| **Aprendizado** | APR-THEM-013 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-014 — Bairro na beira do rio
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Bairro na beira do rio |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Ministério das Cidades |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Uma enchente alaga bairros na beira do rio. Dá para reconstruir as casas no mesmo lugar ou reassentar as famílias longe da água. |
+| **Opção A** | Reassentar com moradia |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +10, `Caixa` -20 |
+| **Consequência A** | "As famílias ganham casa segura. Muitas perdem o trabalho perto de casa." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1 |
+| **Evento A** | — |
+| **Opção B** | Reconstruir no local |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -5, `Segurança` -10 |
+| **Consequência B** | "As casas voltam rápido. O rio segue no mesmo lugar." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-003` +1 |
+| **Evento B** | "A enchente volta e atinge os mesmos bairros" · atraso 2 · `Segurança` -10, `Dignidade` -10 |
+| **Aprendizado** | APR-THEM-014 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-015 — Fogo no Cerrado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fogo no Cerrado |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Incêndios criminosos avançam no Cerrado. Militares querem o comando; brigadistas locais pedem verba e contratos fixos. |
+| **Opção A** | Brigadas permanentes |
+| **Efeitos A** | `Segurança` +10, `Dignidade` +5, `Caixa` -10 |
+| **Consequência A** | "Os brigadistas ganham contrato. Os militares se queixam de perder espaço." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-009` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Mandar o Exército |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +10, `Caixa` -10, `Legitimidade` -5 |
+| **Consequência B** | "As tropas chegam. Saem quando a fumaça baixa." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-015 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-016 — Pacto contra a soja desmatada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pacto contra a soja desmatada |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Amarelo |
+| **Problema** | Grandes compradores prometem não comprar soja de área desmatada. A bancada do agro quer punir as empresas do pacto. |
+| **Opção A** | Defender o pacto |
+| **Efeitos A** | `Legitimidade` +10, `Capital Político` -15, `Caixa` -5 |
+| **Consequência A** | "O pacto segue. Os exportadores mantêm os clientes de fora." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-018` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Punir as empresas |
+| **Efeitos B** | `Capital Político` +10, `Legitimidade` -10, `Soberania` -5 |
+| **Consequência B** | "A bancada comemora. Compradores de fora desconfiam da soja do país." |
+| **Eixo B** | [+1, -1, 0, -1] |
+| **Atores B** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-016 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-017 — Fim do lixão
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fim do lixão |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Prefeitos usam emendas para adiar o fim dos lixões. Catadores temem perder a renda com a usina nova. |
+| **Opção A** | Usina com cooperativas |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "O lixão fecha. Os catadores viram cooperados da usina." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1, `ACT-015` +1 |
+| **Evento A** | — |
+| **Opção B** | Adiar o fim dos lixões |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Segurança` -5 |
+| **Consequência B** | "Os prefeitos agradecem. O chorume segue no lençol de água." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-017 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-018 — Clima na sala de aula
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Clima na sala de aula |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Ministério da Educação |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Um canal diz que a crise do clima é invenção. É falso. Escolas pedem material sobre o tema; a oposição fala em doutrinação. |
+| **Opção A** | Lançar o material |
+| **Efeitos A** | `Consciência` +15, `Capital Político` -10 |
+| **Consequência A** | "O material chega às escolas. A oposição pede CPI do livro didático." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-022` -1 |
+| **Evento A** | — |
+| **Opção B** | Engavetar o material |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -10 |
+| **Consequência B** | "A polêmica esfria. Os alunos aprendem o tema pelo canal." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-013` -1, `ACT-022` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-018 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-019 — Hidrelétrica e ribeirinhos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Hidrelétrica e ribeirinhos |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Justiça Federal |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Vermelho |
+| **Problema** | Ribeirinhos pedem na Justiça para parar uma hidrelétrica. Sem ela, falta energia barata no plano de expansão. |
+| **Opção A** | Consultar as comunidades |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -10 |
+| **Consequência A** | "A obra para até a consulta. O setor elétrico fala em apagão." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-018` +1, `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Recorrer pela obra |
+| **Efeitos B** | `Caixa` +10, `Soberania` +5, `Dignidade` -10 |
+| **Consequência B** | "A obra segue. As famílias deixam as margens do rio." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-003` +1, `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-019 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-020 — Taxa sobre o carbono
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Taxa sobre o carbono |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Meio Ambiente |
+| **Quem fala** | Ministério da Fazenda |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Amarelo |
+| **Problema** | Uma taxa sobre carbono encarece o diesel. A receita pagaria energia limpa; caminhoneiros ameaçam greve. |
+| **Opção A** | Criar a taxa |
+| **Efeitos A** | `Caixa` +10, `Capital Político` -10, `Dignidade` -5 |
+| **Consequência A** | "A taxa entra em vigor. O frete sobe junto com o diesel." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-006` +1 |
+| **Evento A** | "Caminhoneiros param as estradas" · atraso 1 · `Segurança` -10, `Caixa` -5 |
+| **Opção B** | Isentar o diesel |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10 |
+| **Consequência B** | "Os caminhoneiros recuam. A conta do clima fica para depois." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-020 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-021 — Merenda congelada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Merenda congelada |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Fome |
+| **Quem fala** | Ministério da Educação |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | A verba da merenda não sobe há anos. Prefeituras trocam comida fresca por ultraprocessados baratos. |
+| **Opção A** | Reajustar a merenda |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Caixa` -15 |
+| **Consequência A** | "A comida fresca volta ao prato. O ajuste fiscal aperta." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter o valor |
+| **Efeitos B** | `Caixa` +5, `Dignidade` -10 |
+| **Consequência B** | "As contas fecham. O biscoito vira almoço." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-013` -1 |
+| **Evento B** | "Crianças faltam à aula nos dias sem merenda" · atraso 2 · `Dignidade` -10, `Consciência` -5 |
+| **Aprendizado** | APR-THEM-021 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-022 — Arroz caro no mercado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Arroz caro no mercado |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Fome |
+| **Quem fala** | Ministério da Agricultura |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Laranja |
+| **Problema** | O arroz dispara no mercado interno. Com o dólar alto, exportadores querem vender toda a safra lá fora. |
+| **Opção A** | Taxar a exportação |
+| **Efeitos A** | `Dignidade` +10, `Caixa` +5, `Capital Político` -10 |
+| **Consequência A** | "O arroz fica no país. Os exportadores acusam o governo de quebrar contratos." |
+| **Eixo A** | [-1, -1, 0, +1] |
+| **Atores A** | `ACT-001` -1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a venda livre |
+| **Efeitos B** | `Capital Político` +5, `Caixa` +5, `Dignidade` -10 |
+| **Consequência B** | "Os exportadores lucram. O preço no mercado da esquina sobe." |
+| **Eixo B** | [+1, +1, 0, -1] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | "O arroz some da mesa das periferias" · atraso 1 · `Dignidade` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-THEM-022 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-023 — Estoque de feijão
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Estoque de feijão |
+| **Tipo** | Temática |
+| **Modo** | Orçamento |
+| **Tema** | Fome |
+| **Quem fala** | Conab |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | O governo não tem estoque para segurar o preço do feijão. Montar estoque custa caro, e o mercado chama de intervenção. |
+| **Opção A** | Recompor os estoques |
+| **Efeitos A** | `Dignidade` +10, `Soberania` +5, `Caixa` -15 |
+| **Consequência A** | "Os armazéns enchem. O mercado fala em gasto sem fim." |
+| **Eixo A** | [-2, 0, 0, +1] |
+| **Atores A** | `ACT-006` -1, `ACT-017` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar o mercado agir |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10 |
+| **Consequência B** | "O caixa respira. O preço do feijão sobe e desce sem freio." |
+| **Eixo B** | [+2, 0, 0, -1] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-023 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-024 — Cozinha com nome de deputado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cozinha com nome de deputado |
+| **Tipo** | Temática |
+| **Modo** | Emendas |
+| **Tema** | Fome |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Cozinhas comunitárias pedem verba fixa. Um deputado só libera a emenda se a cozinha levar o nome dele na fachada. |
+| **Opção A** | Recusar a placa |
+| **Efeitos A** | `Integridade` +10, `Dignidade` -5, `Capital Político` -5 |
+| **Consequência A** | "A cozinha fica sem a verba deste ano. A placa também." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar a placa |
+| **Efeitos B** | `Dignidade` +10, `Integridade` -10 |
+| **Consequência B** | "A comida chega. O deputado inaugura a cozinha como dono." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-016` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-024 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-025 — Comida no lixo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Comida no lixo |
+| **Tipo** | Temática |
+| **Modo** | Congresso |
+| **Tema** | Fome |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Azul |
+| **Problema** | Supermercados jogam fora comida boa por medo de processo. Um projeto libera a doação e protege quem doa. |
+| **Opção A** | Sancionar a doação |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -5 |
+| **Consequência A** | "As sobras vão para bancos de alimentos. Os mercados ganham desconto no imposto." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-004` +1 |
+| **Evento A** | — |
+| **Opção B** | Vetar por risco sanitário |
+| **Efeitos B** | `Segurança` +5, `Integridade` +5, `Dignidade` -10 |
+| **Consequência B** | "A regra antiga fica. A comida boa segue para o lixo." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-014` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-025 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-026 — Direito à comida na Justiça
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Direito à comida na Justiça |
+| **Tipo** | Temática |
+| **Modo** | Judiciário |
+| **Tema** | Fome |
+| **Quem fala** | Defensoria Pública |
+| **Ano mínimo** | 3 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | A Defensoria pede na Justiça que o Estado garanta comida às famílias de uma ocupação. O juiz manda cumprir. |
+| **Opção A** | Cumprir a decisão |
+| **Efeitos A** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -10 |
+| **Consequência A** | "As famílias recebem comida. A área econômica fala em conta que não cabe." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-016` +1 |
+| **Evento A** | — |
+| **Opção B** | Recorrer da decisão |
+| **Efeitos B** | `Caixa` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O recurso ganha tempo. As famílias esperam com fome." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-016` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-026 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-027 — Salgadinho no desenho
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Salgadinho no desenho |
+| **Tipo** | Temática |
+| **Modo** | Currículo e Mídia |
+| **Tema** | Fome |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Fabricantes de salgadinho anunciam para crianças em desenhos e jogos. Nutricionistas pedem proibir esse tipo de anúncio. |
+| **Opção A** | Proibir para crianças |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Os anúncios saem dos desenhos. A indústria fala em censura." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-004` -1, `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar o setor se regular |
+| **Efeitos B** | `Caixa` +5, `Capital Político` +5, `Consciência` -10 |
+| **Consequência B** | "A indústria promete cuidado. Os anúncios continuam nos jogos." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-004` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-027 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-028 — Cesta da facção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cesta da facção |
+| **Tipo** | Temática |
+| **Modo** | Prisional e Policial |
+| **Tema** | Fome |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | No bairro sem renda, uma facção distribui cestas e cobra lealdade. A polícia quer operação; assistentes pedem programa social. |
+| **Opção A** | Programa social no bairro |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +5, `Caixa` -10 |
+| **Consequência A** | "O Estado chega com renda e cozinha. A facção perde clientes." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-016` +1 |
+| **Evento A** | — |
+| **Opção B** | Operação contra a facção |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +10, `Dignidade` -10 |
+| **Consequência B** | "A operação prende alguns. As cestas param de chegar." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | "A facção volta com mais cestas que antes" · atraso 2 · `Segurança` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-THEM-028 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-029 — Arroz para outro país
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Arroz para outro país |
+| **Tipo** | Temática |
+| **Modo** | Geopolítico |
+| **Tema** | Fome |
+| **Quem fala** | Itamaraty |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Um programa da ONU pede arroz brasileiro para um país em guerra. Aqui, a fome também voltou. |
+| **Opção A** | Doar o arroz |
+| **Efeitos A** | `Soberania` +5, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "O arroz chega ao país em guerra. Aqui, a oposição pergunta pelo povo." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-010` +1 |
+| **Evento A** | — |
+| **Opção B** | Abastecer primeiro aqui |
+| **Efeitos B** | `Dignidade` +5, `Capital Político` +5, `Legitimidade` -10 |
+| **Consequência B** | "O arroz fica no país. Diplomatas falam em imagem arranhada." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-THEM-029 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### THEM-030 — Pente-fino no benefício
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pente-fino no benefício |
+| **Tipo** | Temática |
+| **Modo** | Bancadas |
+| **Tema** | Fome |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | A bancada fiscal exige cortar benefícios com erro no cadastro. Famílias perdem a renda antes de poder se defender. |
+| **Opção A** | Pagar até a revisão |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -10, `Integridade` -5 |
+| **Consequência A** | "As famílias seguem com a renda. Fraudes também, até a revisão." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Cortar na hora |
+| **Efeitos B** | `Caixa` +10, `Integridade` +5, `Dignidade` -15 |
+| **Consequência B** | "O gasto cai. Famílias sem erro também perdem o benefício." |
+| **Eixo B** | [+1, 0, 0, +1] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | "Famílias cortadas por engano vão à Justiça" · atraso 2 · `Legitimidade` -10, `Caixa` -5 |
+| **Aprendizado** | APR-THEM-030 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.13 — Cartas de Atores (70)
@@ -5792,9 +6604,9 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
 | **Institucionais** | 200 | 200 |
-| **Temáticas** | 1 | 70 |
+| **Temáticas** | 30 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **202** | **340** |
+| **Total** | **231** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---
