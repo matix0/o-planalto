@@ -1,6 +1,6 @@
 # Estado do Projeto — O Planalto
 
-**Última atualização:** 2026-10-21
+**Última atualização:** 2026-10-22
 **Fase atual:** Protótipo validado (P-005); correções e cartas planejadas (P-014, P-015)
 **Próxima fase:** P-014 (correções) e P-015 (cartas reais), em paralelo
 
@@ -160,6 +160,8 @@ O projeto "O Planalto" está em **estágio avançado de design conceitual**. A d
 ---
 
 ## Próximo Passo
+
+**P-017 concluído (2026-10-22):** correções do playtest publicadas em /jogar/ (`gestao/entrega-p017.md`, D-198 a D-201). Falta o PO testar no celular as travas de toque. Balanceamento D-197 publicado.
 
 **Jogo jogável no navegador (2026-10-21):** https://matix0.github.io/o-planalto/jogar/ — baralho real com 57 cartas + 5 da cena (D-194), exportado pelo workflow do site (D-195). As cartas crescem com as ondas do P-015; a conferência das fontes ficou no P-016.
 

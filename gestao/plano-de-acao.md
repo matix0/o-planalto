@@ -427,7 +427,7 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🟡 Etapas 1-6 feitas (2026-10-22); 7-8 pendentes |
+| **Status** | ✅ Concluído (2026-10-22), salvo a etapa 7 (teste do PO no celular); `gestao/entrega-p017.md` |
 | **Início** | — |
 | **Conclusão** | — |
 | **Decisões** | D-198 a D-201 |
