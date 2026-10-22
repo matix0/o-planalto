@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 306 Cartas de Aprendizado ligadas às 306 cartas do doc 17 (301 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 345 Cartas de Aprendizado ligadas às 345 cartas do doc 17 (340 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -8730,7 +8730,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.13 — Cartas de Aprendizado de Atores (31 de 70)
+## 18.13 — Cartas de Aprendizado de Atores (70 de 70)
 
 ### APR-ATOR-001 — O Latifundiário cobra o favor
 
@@ -9690,6 +9690,1214 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-ATOR-032 — O Centrão estende a mão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-032                            │
+│  O Centrão estende a mão                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava o apoio do Centrão sem preço      │
+│  declarado ou se negociava voto a voto.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No presidencialismo de coalizão, apoio no Congresso vira   │
+│  crédito. Favor sem preço declarado costuma ser cobrado     │
+│  depois, em cargos ou emendas.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Favor de graça tem data de vencimento."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-033 — Imunidade para a gráfica
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-033                            │
+│  Imunidade para a gráfica                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a isenção dos templos valia também para as │
+│  empresas ligadas à igreja.                                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição protege o culto de impostos para garantir a │
+│  liberdade religiosa. A dúvida é até onde vai: o templo ou  │
+│  os negócios em volta dele.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fé é livre. Negócio paga imposto?"                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-034 — Fiéis fora da escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-034                            │
+│  Fiéis fora da escola                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se liberava o ensino em casa, como pediam os  │
+│  Pastores, ou se mantinha a escola obrigatória.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A escola não só ensina conteúdo. É também onde a rede de   │
+│  proteção vê a criança e onde ela convive com quem pensa    │
+│  diferente.                                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Escola é mais que aula. É janela."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-035 — Pastores oferecem os púlpitos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-035                            │
+│  Pastores oferecem os púlpitos                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se usava os templos aliados para levar        │
+│  serviços aos bairros ou se ficava só com a rede pública.   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Igrejas chegam a bairros onde o Estado mal entra. Parceria │
+│  amplia o alcance, mas aproxima governo e religião num      │
+│  Estado laico.                                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem leva o recado também escolhe o tom."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-036 — Professor temporário para sempre
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-036                            │
+│  Professor temporário para sempre                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria concurso para professores ou se      │
+│  renovava os contratos temporários.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Professor temporário muda de escola todo ano e não cria    │
+│  vínculo com a turma. Concurso dá estabilidade, mas pesa no │
+│  orçamento por muito tempo.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Vínculo também se aprende."                               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-037 — Greve das escolas na Justiça
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-037                            │
+│  Greve das escolas na Justiça                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia à Justiça o corte do ponto dos       │
+│  professores em greve ou se negociava.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Greve no serviço público mexe com o direito do trabalhador │
+│  e com o serviço à população. Quando não há acordo, a       │
+│  Justiça decide os limites.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Greve longa: todo mundo perde a aula."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-038 — Professores criam cursinho popular
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-038                            │
+│  Professores criam cursinho popular                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria as escolas à noite para o cursinho   │
+│  dos professores ou se comprava um curso online.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Cursinhos populares nasceram para dar a jovens pobres e    │
+│  negros a chance de disputar vaga em universidade pública   │
+│  com quem pagou cursinho caro.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Vaga na federal também se disputa à noite."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-039 — Piso da enfermagem
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-039                            │
+│  Piso da enfermagem                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pagava o piso da enfermagem ou se adiava   │
+│  para proteger hospitais filantrópicos.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Piso salarial garante renda mínima a uma categoria. Quando │
+│  quem paga é estado, município ou hospital privado, alguém  │
+│  precisa dizer de onde sai o dinheiro.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem cuida também precisa ser cuidado."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-040 — Remédio caro por patente
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-040                            │
+│  Remédio caro por patente                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se quebrava a patente de um remédio caro ou se│
+│  negociava o preço com o laboratório estrangeiro.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A licença compulsória permite produzir um remédio          │
+│  patenteado em caso de interesse público. Baixa o preço, mas│
+│  cria atrito com o dono da patente.                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Patente protege a ideia. E quem protege o doente?"        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-041 — Postos contra a violência
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-041                            │
+│  Postos contra a violência                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se os postos de saúde acolhiam vítimas de     │
+│  violência ou se o caso ia direto para a polícia.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Muita vítima de violência doméstica tem medo da delegacia. │
+│  O posto de saúde é uma porta mais segura e pode acionar a  │
+│  rede de proteção.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Pedir socorro não pode dar mais medo."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-042 — Direitos para entregadores
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-042                            │
+│  Direitos para entregadores                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava previdência e seguro para          │
+│  entregadores de aplicativo ou se deixava tudo como estava. │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Plataformas tratam entregadores como autônomos. Sem        │
+│  vínculo, quem se acidenta ou envelhece fica sem proteção, e│
+│  o custo vai para o SUS e a família.                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Autônomo até o dia do acidente."                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-043 — Ocupação da fábrica
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-043                            │
+│  Ocupação da fábrica                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mandava a polícia desocupar a fábrica ou se│
+│  mediava uma saída com os trabalhadores.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando uma fábrica fecha, os trabalhadores às vezes ocupam │
+│  e tentam assumir a produção em cooperativa. É a chamada    │
+│  fábrica recuperada.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A máquina vai embora. O operário fica."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-044 — Trégua salarial
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-044                            │
+│  Trégua salarial                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma mesa permanente com os          │
+│  sindicatos ou se negociava com cada categoria.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Mesa permanente dá voz aos trabalhadores e evita greve de  │
+│  surpresa. Em troca, o governo perde parte da liberdade de  │
+│  decidir sozinho.                                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Conversa fixa custa menos que greve."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-045 — Prédios vazios no centro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-045                            │
+│  Prédios vazios no centro                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se transformava prédios públicos vazios em    │
+│  moradia ou se leiloava os imóveis.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição diz que a propriedade deve cumprir função   │
+│  social. Prédio vazio no centro e família morando longe são │
+│  duas faces da mesma cidade.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prédio vazio, gente sem teto."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-046 — Movimento rompe com o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-046                            │
+│  Movimento rompe com o governo                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se lançava casas para reatar com os movimentos│
+│  ou se aceitava o rompimento.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Movimentos sociais apoiam governos em troca de pautas.     │
+│  Quando a promessa não vira entrega, o apoio vira cobrança, │
+│  e a rua muda de lado.                                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Promessa sem obra vira protesto."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-047 — Casas em mutirão
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-047                            │
+│  Casas em mutirão                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se dava terreno e material para casas em      │
+│  mutirão ou se licitava a obra para uma construtora.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na autogestão, as famílias organizam a obra e decidem o    │
+│  projeto. A casa ganha a cara de quem mora, mas depende de  │
+│  assessoria técnica e tempo.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem levanta a parede conhece a casa."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-048 — Compra da safra assentada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-048                            │
+│  Compra da safra assentada                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se o governo comprava a safra dos             │
+│  assentamentos ou se mantinha a licitação comum.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Compra pública garante renda a quem produz pouco e não tem │
+│  acesso ao grande mercado. Em troca, o governo pode pagar   │
+│  mais do que no atacado.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Garantir a venda segura o produtor no campo."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-049 — Jornada de ocupações
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-049                            │
+│  Jornada de ocupações                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mandava a Força Nacional às fazendas       │
+│  ocupadas ou se vistoriava se eram produtivas.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição manda desapropriar a terra que não cumpre   │
+│  função social. Ocupar é a forma de pressão para a vistoria │
+│  sair do papel.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Terra parada também é escolha."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-050 — Doação para a enchente
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-050                            │
+│  Doação para a enchente                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava a doação de alimentos dos         │
+│  sem-terra para cidades alagadas ou se comprava no atacado. │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Em desastres, a ajuda chega mais rápido por quem já tem    │
+│  rede organizada. Aceitar ajuda de um movimento também dá a │
+│  ele visibilidade política.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Na enchente, quem chega primeiro é lembrado."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-051 — Fiscais contra o desmate
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-051                            │
+│  Fiscais contra o desmate                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se contratava fiscais para a floresta ou se   │
+│  comprava monitoramento por satélite estrangeiro.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Satélite mostra onde a floresta cai. Mas só multa, embargo │
+│  e apreensão no local fazem o desmatador parar.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ver o fogo não apaga o fogo."                             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-052 — Campanha de boicote lá fora
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-052                            │
+│  Campanha de boicote lá fora                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se rastreava a origem do gado ou se acusava os│
+│  ativistas que pediram boicote.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sem rastreio, o boi de área desmatada passa por fazendas   │
+│  limpas antes do abate. Compradores de fora usam essa brecha│
+│  para barrar a carne toda.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Boi sem origem leva a fama de todos."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-053 — Árvores nos bairros quentes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-053                            │
+│  Árvores nos bairros quentes                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava jovens das periferias no plantio de│
+│  árvores ou se deixava a tarefa para a prefeitura.          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bairros pobres costumam ter menos árvores e mais calor que │
+│  os ricos. É a ilha de calor, que adoece mais quem já tem   │
+│  menos.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A sombra também é desigual."                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-054 — Streaming paga pouco
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-054                            │
+│  Streaming paga pouco                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava uma lei para o streaming pagar mais│
+│  aos compositores ou se esperava acordo.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  No streaming, o artista recebe uma fração por música       │
+│  tocada. A maior parte fica com plataforma e gravadora, e o │
+│  independente fica com migalhas.                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Muito play, pouco aluguel."                               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-055 — Música contra o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-055                            │
+│  Música contra o governo                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se chamava o artista para conversar ou se     │
+│  cortava o patrocínio estatal do festival dele.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando o governo tira verba de quem o critica, a punição   │
+│  vira propaganda para a crítica. E abre caminho para calar  │
+│  quem não tem fama.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Calar o artista amplia o refrão."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-056 — Festival nas periferias
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-056                            │
+│  Festival nas periferias                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se montava o palco para um festival gratuito  │
+│  nas periferias ou se recusava a proposta.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Equipamentos culturais se concentram nos centros ricos.    │
+│  Festival no bairro leva cultura a quem raramente pode pagar│
+│  ingresso ou transporte.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Cultura perto de casa também é direito."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-057 — Imunidade das plataformas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-057                            │
+│  Imunidade das plataformas                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se as plataformas só respondiam por posts após│
+│  ordem judicial ou se tinham dever de cuidado.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Se a plataforma só age após ordem judicial, golpe e ódio   │
+│  ficam no ar por meses. Se age sozinha, pode apagar crítica │
+│  legítima por medo de multa.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem lucra com o post responde por ele?"                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-058 — Notícias somem do feed
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-058                            │
+│  Notícias somem do feed                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cedia à Meta para trazer as notícias de    │
+│  volta ou se financiava o jornalismo local.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando uma plataforma tira as notícias do feed, a          │
+│  informação apurada some e o boato fica. Isso mostra o poder│
+│  de uma empresa sobre o debate público.                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Feed sem notícia não fica vazio. Fica com boato."         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-059 — Parceria contra golpes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-059                            │
+│  Parceria contra golpes                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava a ferramenta da Meta contra golpes│
+│  ou se criava uma ferramenta pública.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Parceria com big tech traz tecnologia pronta. Em troca, a  │
+│  empresa pode ganhar acesso a dados de cidadãos e poder     │
+│  sobre o próprio Estado.                                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ferramenta de graça cobra em dados."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-060 — Voto na ONU
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-060                            │
+│  Voto na ONU                                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se votava com uma potência na ONU em troca de │
+│  investimentos ou se o Brasil se abstinha.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Voto na ONU é moeda diplomática. Alinhar-se a uma potência │
+│  rende favores, mas fecha portas com o rival e reduz a      │
+│  margem de negociar com os dois.                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Voto vendido não se compra de volta."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-061 — Embargo à carne brasileira
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-061                            │
+│  Embargo à carne brasileira                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cedia à potência para derrubar o embargo à │
+│  carne ou se buscava novos mercados.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Barreira sanitária pode esconder pressão política. Depender│
+│  de um só comprador deixa o país exposto a esse tipo de     │
+│  chantagem.                                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Um só freguês manda no preço."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-062 — Diploma de curso online
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-062                            │
+│  Diploma de curso online                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se reconhecia os cursos online do Coach como  │
+│  formação técnica ou se exigia avaliação do MEC.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Diploma reconhecido passa por avaliação de currículo,      │
+│  professores e estrutura. Sem isso, o título vale o que o   │
+│  mercado decidir, e o aluno paga o risco.                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Diploma fácil cobra a conta depois."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-063 — Imposto é roubo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-063                            │
+│  Imposto é roubo                                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se acionava a Receita contra o Coach que      │
+│  ensinava a sonegar ou se ignorava o vídeo.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Imposto paga escola, posto e estrada. Quem ensina a sonegar│
+│  joga a conta em quem não pode fugir, que paga embutido no  │
+│  preço.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem sonega joga a conta no vizinho."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-064 — Coach vende o programa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-064                            │
+│  Coach vende o programa                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se gravava com o Coach para divulgar o        │
+│  primeiro emprego ou se divulgava pelas escolas.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Influenciador alcança quem a propaganda oficial não        │
+│  alcança. Mas a parceria empresta a credibilidade do governo│
+│  a quem vende outra coisa.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Selo emprestado vira propaganda alheia."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-065 — Sigilo nos gastos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-065                            │
+│  Sigilo nos gastos                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria os dados de visitas e gastos do      │
+│  palácio ou se mantinha o sigilo.                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Lei de Acesso à Informação faz da transparência a regra e│
+│  do sigilo a exceção. Sigilo amplo protege o governo, mas   │
+│  alimenta a suspeita.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O que se esconde parece pior."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-066 — Reportagem contra o ministro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-066                            │
+│  Reportagem contra o ministro                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se processava o jornalista que expôs um       │
+│  ministro ou se mandava investigar o ministro.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Processo contra jornalista, mesmo perdido, custa tempo e   │
+│  dinheiro. Por isso é usado para intimidar: o castigo é o   │
+│  próprio processo.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O castigo é o processo, não a sentença."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-067 — Checagem contra boatos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-067                            │
+│  Checagem contra boatos                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se levava oficinas de checagem às escolas ou  │
+│  se usava o material pronto de uma big tech.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Educação midiática ensina a perguntar quem fez, quando e   │
+│  com que interesse. Quem aprende a checar fica mais difícil │
+│  de enganar.                                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Antes de passar adiante, pergunte quem fez."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-068 — Verba para canais independentes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-068                            │
+│  Verba para canais independentes                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se a publicidade do governo ia também para    │
+│  canais independentes ou se mantinha as regras.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Publicidade oficial pode fortalecer uma imprensa diversa ou│
+│  comprar silêncio. O critério de quem recebe decide se é    │
+│  política pública ou favor.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Verba para aliado é favor ou pluralidade?"                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-069 — Live contra o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-069                            │
+│  Live contra o governo                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se entrava na live do influenciador que acusou│
+│  o governo ou se ignorava a crítica.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Crítica de aliado pesa mais que a do adversário, porque    │
+│  fala com quem votou em você. Responder expõe erros; calar  │
+│  deixa a versão dele sozinha.                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fogo amigo também queima."                                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-ATOR-070 — Namoro sem controle
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — ATOR-070                            │
+│  Namoro sem controle                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava a série do influenciador sobre     │
+│  namoro abusivo ou se fazia uma campanha oficial.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Controle do celular, ciúme e isolamento costumam vir antes │
+│  da agressão. Reconhecer esses sinais cedo ajuda a pedir    │
+│  ajuda a tempo.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ciúme que vigia não é cuidado."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
 ## 18.14 — Rascunho: aguardando carta
@@ -9738,8 +10946,8 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 | :--- | :--- | :--- | :--- |
 | **Institucionais** | 200 | 0 | 200 |
 | **Temáticas** | 70 | 0 | 70 |
-| **Atores** | 31 | 0 | 70 |
-| **Total** | **301** | **0** | **340** |
+| **Atores** | 70 | 0 | 70 |
+| **Total** | **340** | **0** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
