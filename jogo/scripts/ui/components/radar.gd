@@ -24,7 +24,21 @@ const GOVERNED_WIDTH := 2.5
 const GRID_WIDTH := 1.0
 const DASH := 6.0
 const DASH_GAP := 4.0
-const FILL_ALPHA := 0.10
+const FILL_ALPHA := 0.35
+## P-017 (playtest: "gráfico complexo de ler"): two colors, not only two line styles (D-199).
+## Governed = cyan filled polygon; said = gold dashed line with dots at the vertices. High
+## contrast keeps the white/grey pair. Under the chart, one bar per axis compares both.
+const GOVERNED_COLOR := Color("#80DEEA")
+const GOVERNED_FILL := Color("#00BCD4")
+const SAID_COLOR := Color("#FFD54F")
+const GOVERNED_WIDTH_COLOR := 3.0
+const SAID_WIDTH_COLOR := 2.5
+const VERTEX_DOT := 3.0
+const SAID_TEXT := "Promessa (o que você disse)"
+const GOVERNED_TEXT := "Prática (como você governou)"
+const BAR_HEIGHT := 28
+const BAR_TRACK := 6.0
+const BAR_MARK := 7.0
 const RING_POINTS := 96
 const SCALE := 10.0                  # positions go from −10 to +10 (gdd 04 §4)
 const A11Y_NAME := "Radar ideológico"   # T-10.1 board
@@ -85,6 +99,13 @@ func _ready() -> void:
 	_governed_label.add_theme_color_override(&"font_color", Tokens.TEXT)
 	_chart.accessibility_name = A11Y_NAME
 	_chart.draw.connect(_draw_chart)
+	_said_label.text = SAID_TEXT
+	_governed_label.text = GOVERNED_TEXT
+	for l: Label in [_said_label, _governed_label]:   # longer texts must wrap at 36 px
+		l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		(l.get_parent() as Control).custom_minimum_size.x = 300   # one legend item per line
+	_build_bars()
 	_said_sample.draw.connect(_draw_said_sample)
 	_governed_sample.draw.connect(_draw_governed_sample)
 	_chart.resized.connect(_queue_layout)
@@ -270,6 +291,8 @@ func _apply_texts() -> void:
 		_key_labels[k].text = KEY_FORMAT % [k + 1, pole_name(k)]
 	_set_pole_texts(_keyed)
 	_chart.accessibility_description = describe()
+	if not _bars.is_empty():
+		_update_bar_texts()
 
 
 # --- Drawing --------------------------------------------------------------------------------
@@ -282,25 +305,32 @@ func _draw_chart() -> void:
 	for k in 4:   # spokes k and k + 4 are opposite: one line per axis
 		var d := _dir(float(SPOKES[k][0])) * r
 		_chart.draw_line(c - d, c + d, Tokens.PRESSED, GRID_WIDTH, true)
-	var dash_color := said_color()
-	for seg: Array in segments(points_for(said)):
-		_dashed(_chart, seg[0], seg[1], dash_color, SAID_WIDTH)
 	var gov := points_for(governed)
 	_fill(gov)
 	for seg: Array in segments(gov):
-		_chart.draw_line(seg[0], seg[1], Tokens.TEXT, GOVERNED_WIDTH, true)
+		_chart.draw_line(seg[0], seg[1], governed_color(), _governed_width(), true)
 		for p: Vector2 in seg:   # round caps and joins (stroke-linejoin: round on the board)
-			_chart.draw_circle(p, GOVERNED_WIDTH * 0.5, Tokens.TEXT, true, -1.0, true)
+			_chart.draw_circle(p, _governed_width() * 0.5, governed_color(), true, -1.0, true)
+	var dash_color := said_color()
+	var said_pts := points_for(said)
+	for seg: Array in segments(said_pts):
+		_dashed(_chart, seg[0], seg[1], dash_color, _said_width())
+	if not _hc():
+		for p: Vector2 in said_pts:
+			if p.distance_to(c) > 0.01:
+				_chart.draw_circle(p, VERTEX_DOT, dash_color, true, -1.0, true)
+	for bar in _bars:
+		bar.queue_redraw()
 
 
 func _draw_said_sample() -> void:
 	var y := _said_sample.size.y * 0.5
-	_dashed(_said_sample, Vector2(1.0, y), Vector2(_said_sample.size.x - 1.0, y), said_color(), SAID_WIDTH)
+	_dashed(_said_sample, Vector2(1.0, y), Vector2(_said_sample.size.x - 1.0, y), said_color(), _said_width())
 
 
 func _draw_governed_sample() -> void:
 	var y := _governed_sample.size.y * 0.5
-	_governed_sample.draw_line(Vector2(1.0, y), Vector2(_governed_sample.size.x - 1.0, y), Tokens.TEXT, GOVERNED_WIDTH, true)
+	_governed_sample.draw_line(Vector2(1.0, y), Vector2(_governed_sample.size.x - 1.0, y), governed_color(), _governed_width(), true)
 
 
 ## Triangle fan from the center: the shape is star-shaped around it, so this is exact
@@ -317,7 +347,7 @@ func _fill(points: PackedVector2Array) -> void:
 		return
 	var colors := PackedColorArray()
 	colors.resize(verts.size())
-	colors.fill(Color(Tokens.TEXT, FILL_ALPHA))
+	colors.fill(Color(Tokens.TEXT, 0.10) if _hc() else Color(GOVERNED_FILL, FILL_ALPHA))
 	RenderingServer.canvas_item_add_triangle_array(_chart.get_canvas_item(), indices, verts, colors)
 
 
@@ -360,6 +390,8 @@ static func _dashed(item: CanvasItem, a: Vector2, b: Vector2, color: Color, widt
 
 
 func said_color() -> Color:
+	if not _hc():
+		return SAID_COLOR
 	if has_theme_color(&"font_color", &"Caption"):
 		return get_theme_color(&"font_color", &"Caption")
 	return Tokens.TEXT2
@@ -384,3 +416,84 @@ func _pole_text(i: int, pos: float) -> String:
 	var pair: Array = poles[i]
 	var amount := ("%.1f" % absf(pos)).replace(".", ",").trim_suffix(",0")
 	return A11Y_POLE % [String(pair[0] if pos < 0.0 else pair[1]), amount]
+
+
+func governed_color() -> Color:
+	return Tokens.TEXT if _hc() else GOVERNED_COLOR
+
+
+func _governed_width() -> float:
+	return GOVERNED_WIDTH if _hc() else GOVERNED_WIDTH_COLOR
+
+
+func _said_width() -> float:
+	return SAID_WIDTH if _hc() else SAID_WIDTH_COLOR
+
+
+func _hc() -> bool:
+	# Through the tree, not the autoload name: test scripts compile this class before autoloads.
+	var s: Node = get_node_or_null(^"/root/Settings") if is_inside_tree() else null
+	return s != null and bool(s.get(&"high_contrast"))
+
+
+# --- Promise × practice bars (P-017) ---------------------------------------------------------
+
+var _bars: Array[Control] = []
+var _bar_labels: Array[Label] = []
+
+
+func bars() -> Array[Control]:
+	return _bars
+
+
+## One row per axis: "Economia: Coletivismo ↔ Mercado", a track from −10 to +10, a gold
+## ring at the promise and a cyan dot at the practice (shape + color, never color alone).
+func _build_bars() -> void:
+	var box := VBoxContainer.new()
+	box.name = "Bars"
+	box.add_theme_constant_override(&"separation", Tokens.ESP_8)
+	add_child(box)
+	for i in 4:
+		var label := Label.new()
+		label.theme_type_variation = &"Caption"
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		box.add_child(label)
+		_bar_labels.append(label)
+		var bar := Control.new()
+		bar.custom_minimum_size = Vector2(0, BAR_HEIGHT)
+		bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bar.draw.connect(_draw_bar.bind(bar, i))
+		box.add_child(bar)
+		_bars.append(bar)
+	_update_bar_texts()
+
+
+func _update_bar_texts() -> void:
+	for i in _bar_labels.size():
+		var pair: Array = poles[i]
+		_bar_labels[i].text = "%s: %s ↔ %s" % [names[i], pair[0], pair[1]]
+		_bars[i].accessibility_name = A11Y_AXIS % [names[i], _pole_text(i, float(said[i])), _pole_text(i, float(governed[i]))]
+		_bars[i].queue_redraw()
+
+
+func _draw_bar(bar: Control, i: int) -> void:
+	var w := bar.size.x
+	var y := bar.size.y * 0.5
+	var pad := BAR_MARK + 2.0
+	bar.draw_line(Vector2(pad, y), Vector2(w - pad, y), Tokens.PRESSED, BAR_TRACK, true)
+	bar.draw_line(Vector2(w * 0.5, y - BAR_TRACK), Vector2(w * 0.5, y + BAR_TRACK), Tokens.INACTIVE, 1.0, true)
+	var x_of := func(v: float) -> float: return lerpf(pad, w - pad, (clampf(v, -SCALE, SCALE) + SCALE) / (2.0 * SCALE))
+	var gx: float = x_of.call(float(governed[i]))
+	var sx: float = x_of.call(float(said[i]))
+	bar.draw_line(Vector2(w * 0.5, y), Vector2(gx, y), Color(governed_color(), 0.6), BAR_TRACK, true)
+	bar.draw_circle(Vector2(gx, y), BAR_MARK, governed_color(), true, -1.0, true)
+	bar.draw_arc(Vector2(sx, y), BAR_MARK, 0.0, TAU, 32, said_color(), 2.5, true)
+
+
+## Redraws chart, legend and bars (high contrast switched on the final screen).
+func queue_redraw_all() -> void:
+	_chart.queue_redraw()
+	_said_sample.queue_redraw()
+	_governed_sample.queue_redraw()
+	for bar in _bars:
+		bar.queue_redraw()

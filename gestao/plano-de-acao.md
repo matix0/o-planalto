@@ -427,7 +427,7 @@
 
 | Campo | Valor |
 | :--- | :--- |
-| **Status** | 🟡 Etapas 1-5 feitas (2026-10-22); 6-8 pendentes |
+| **Status** | 🟡 Etapas 1-6 feitas (2026-10-22); 7-8 pendentes |
 | **Início** | — |
 | **Conclusão** | — |
 | **Decisões** | D-198 a D-201 |

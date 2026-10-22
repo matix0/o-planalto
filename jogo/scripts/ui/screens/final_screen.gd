@@ -168,6 +168,9 @@ func _fill_meters(meters: Array) -> void:
 			dot_slot.visible = false
 		icon.custom_minimum_size = Vector2(Tokens.METER_ICON, Tokens.METER_ICON)
 		icon.show_number = false   # the number sits at the end of the row (board), not under the well
+		var short := icon.get_node_or_null(^"Short") as Control
+		if short:
+			short.visible = false   # the full name is beside it (P-017)
 		icon.set_value(value)
 		icon.high_contrast = Settings.high_contrast
 		_icons.append(icon)
@@ -253,6 +256,8 @@ func _on_settings_changed(key: StringName) -> void:
 		for icon in _icons:
 			if is_instance_valid(icon):
 				icon.high_contrast = Settings.high_contrast
+		_apply_category(String(_dict(_view.get("ending")).get("category", "")))
+		_radar.queue_redraw_all()
 
 
 ## Focus ring of the Scroll: white 3 px inside the page edge, only while the Scroll itself

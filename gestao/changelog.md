@@ -17,6 +17,7 @@ Versionamento: [SemVer](https://semver.org/).
 - "Sobre" vira "Créditos e licenças" em Configurações (D-198); descrições curtas dos 28 finais
 - Folha de Aprendizado rola com o dedo no celular até o link da fonte (o "Saiba mais" aberto travava o arraste); conferido no Chromium como celular; `tests/test_learning_touch.gd`
 - Rodapé da cena "Impeachment · Fase X/5" (D-201)
+- Radar da tela final: Prática em ciano preenchido, Promessa em dourado tracejado com pontos; 4 barras Promessa × Prática por eixo; legenda uma por linha
 
 ### Alterado (balanceamento, D-197)
 - Gatilho alternativo do impeachment: 5 opções seguidas (era 3); custos de Capital Político pela metade e demais perdas ×0,7 nos docs 17 e `jogo/data/`; sonda `.claude/notas/execucao/ferramentas/bal.gd`

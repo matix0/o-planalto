@@ -290,7 +290,9 @@ func _settings_live() -> void:
 	_settings.set_value(&"high_contrast", false)
 	await _frames(3)
 	_expect(icons.all(func(i): return not i.high_contrast), "high contrast off again")
-	_eq(radar.said_color(), Tokens.TEXT2, "'disse' track #B0BEC5")
+	_eq(radar.said_color(), Radar.SAID_COLOR, "'disse' track gold #FFD54F (P-017, D-199)")
+	_eq(radar.governed_color(), Radar.GOVERNED_COLOR, "'governou' track cyan #80DEEA (P-017)")
+	_expect(radar.bars().size() == 4, "4 promise × practice bars under the radar (P-017)")
 
 
 func _pc_column() -> void:
