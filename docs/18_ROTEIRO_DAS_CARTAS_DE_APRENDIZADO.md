@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 82 Cartas de Aprendizado ligadas às 82 cartas do doc 17 (77 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 86 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 92 Cartas de Aprendizado ligadas às 92 cartas do doc 17 (87 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 76 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -711,7 +711,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.03 — Cartas de Aprendizado do Modo Orçamento (8 de 20)
+## 18.03 — Cartas de Aprendizado do Modo Orçamento (10 de 20)
 
 ### APR-021 — Corte na Saúde
 
@@ -960,9 +960,71 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-039 — Isenção que ninguém vê
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-039                            │
+│  Isenção que ninguém vê                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cortava ou renovava uma isenção de imposto │
+│  para montadoras.                                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Isenção é dinheiro que o governo deixa de cobrar. Ela pesa │
+│  no caixa como um gasto, mas quase nunca é votada todo ano  │
+│  como o resto do orçamento.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Imposto que não se cobra também é gasto."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-040 — Teto do imposto sobre herança
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-040                            │
+│  Teto do imposto sobre herança                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava um teto maior para o imposto       │
+│  estadual sobre heranças grandes.                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O imposto sobre herança é cobrado pelos estados, mas o     │
+│  Senado define o teto. Um teto baixo limita quanto os       │
+│  estados podem cobrar de grandes heranças.                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Herança grande também é renda que ninguém trabalhou."     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.04 — Cartas de Aprendizado do Modo Currículo e Mídia (2 de 20)
+## 18.04 — Cartas de Aprendizado do Modo Currículo e Mídia (10 de 20)
 
 ### APR-041 — Retirada de Filosofia/Sociologia
 
@@ -1026,6 +1088,254 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [Congresso em Foco](https://www.congressoemfoco.com.br/noticia/45409/igrejas-controlam-9-dos-50-veiculos-mais-influentes-do-pais)
+
+### APR-043 — Aula contra o abuso
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-043                            │
+│  Aula contra o abuso                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha as aulas que ensinam crianças a   │
+│  reconhecer abuso e a pedir ajuda.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Ensinar o nome das partes do corpo e quem procurar ajuda a │
+│  criança a contar um abuso. O silêncio protege quem abusa,  │
+│  não a criança.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Criança que sabe nomear consegue pedir ajuda."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-044 — Mentira no telejornal
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-044                            │
+│  Mentira no telejornal                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia direito de resposta ou a cassação de │
+│  uma emissora que espalhou mentira.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O direito de resposta obriga o veículo a publicar a        │
+│  correção. Cassar uma concessão de TV depende do Congresso e│
+│  da Justiça, e pode soar como censura.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Corrigir a mentira é mais forte que calar quem mente."    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-045 — Livro didático recolhido
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-045                            │
+│  Livro didático recolhido                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha um livro didático que mostra      │
+│  famílias de vários tipos ou se o recolhia.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Livros das escolas públicas passam por avaliação técnica   │
+│  antes da escolha. Recolher um livro por pressão política   │
+│  troca o critério técnico pelo voto.                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem não se vê no livro aprende que não conta."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-046 — TV pública à venda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-046                            │
+│  TV pública à venda                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha a TV pública com um conselho      │
+│  independente ou se a vendia.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  TV pública não é TV do governo: deve ter conselho e        │
+│  jornalismo independentes. Vender tira um canal que não     │
+│  depende de anúncio para existir.                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Público não é o mesmo que do governo."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-047 — Alfabetizar adultos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-047                            │
+│  Alfabetizar adultos                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava círculos de leitura ligados à vida │
+│  do aluno ou se comprava apostilas prontas.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na educação de jovens e adultos, partir do que o aluno já  │
+│  vive ajuda a manter a turma. Ler a própria realidade é o   │
+│  primeiro passo para mudar a vida.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ler o mundo vem antes de ler a palavra."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-048 — Rádio da quebrada
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-048                            │
+│  Rádio da quebrada                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se agilizava as licenças das rádios           │
+│  comunitárias ou se mantinha a fila.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Rádio comunitária precisa de licença do governo para       │
+│  funcionar. Sem licença, é fechada, mesmo quando é a única  │
+│  voz do bairro no ar.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem tem antena tem voz."                                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-049 — Aula de finanças do banco
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-049                            │
+│  Aula de finanças do banco                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava o material grátis de educação     │
+│  financeira feito por um banco estrangeiro.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Material grátis com marca na escola é propaganda para quem │
+│  ainda está aprendendo. Educação financeira de verdade      │
+│  ensina a desconfiar do crédito fácil.                      │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Na escola, o aluno não pode ser cliente."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-050 — Coach na aula de cidadania
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-050                            │
+│  Coach na aula de cidadania                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pagava um coach famoso por um curso de     │
+│  cidadania ou se apoiava o curso dos professores.           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Alcance não é o mesmo que ensino. Um curso de cidadania    │
+│  precisa de quem conhece a turma e a lei, não só de quem tem│
+│  seguidores.                                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Seguidor não é aluno."                                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -3047,274 +3357,9 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 └─────────────────────────────────────────────────────────────┘
 ```
 
-#### APR-039 — Verba para Cisternas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-039                            │
-│  Verba para cisternas                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava a bancada do Nordeste ou        │
-│  deixava como está.                                         │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O semiárido precisa de políticas estruturantes. O          │
-│  Congresso resiste.                                         │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A seca não é um fenômeno natural. É uma questão política.  │
-│                                                             │
-│  FONTE: ASA Brasil, 2024. [não verificado]                  │
-│                                                             │
-│  "A seca continua. O povo continua sofrendo."               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-040 — Taxar Grandes Heranças
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-040                            │
-│  Taxar grandes heranças                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se taxava grandes heranças ou não taxava.     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O imposto sobre grandes heranças é uma forma de reduzir    │
-│  a desigualdade.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é um dos países que menos taxa heranças no mundo. │
-│                                                             │
-│  FONTE: World Inequality Report, 2024. [não verificado]     │
-│                                                             │
-│  "A desigualdade se perpetua."                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Currículo e Mídia
-
-#### APR-043 — Educação Sexual
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-043                            │
-│  Educação sexual                                            │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou retirava a educação sexual do   │
-│  currículo.                                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A educação sexual previne gravidez na adolescência e       │
-│  abusos.                                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil tem uma das maiores taxas de gravidez na          │
-│  adolescência da América Latina.                            │
-│                                                             │
-│  FONTE: IBGE, 2024. [não verificado]                        │
-│                                                             │
-│  "A desinformação sobre o tema é uma arma do pânico moral." │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-044 — Fake News em Emissora
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-044                            │
-│  Fake news em emissora                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se revogava ou mantinha a concessão de uma    │
-│  emissora acusada de fake news.                             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A concessão de TV pode ser revogada por fake news.         │
-│  Raramente acontece.                                        │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A divulgação de conteúdos falsos com IA mais que triplicou │
-│  entre 2024 e 2025. 554 vídeos deepfake foram publicados    │
-│  nas eleições de 2026.                                      │
-│                                                             │
-│  FONTE: NetLab-UFRJ, 2026. [não verificado]                 │
-│                                                             │
-│  "A mentira repetida mil vezes torna-se verdade."           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-045 — Proibição de "Ideologia de Gênero"
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-045                            │
-│  Proibição de "ideologia de gênero"                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a proibição do ensino    │
-│  de "ideologia de gênero".                                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  "Ideologia de gênero" é uma invenção. O que existe é       │
-│  diversidade.                                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A proibição do debate é uma forma de censura disfarçada    │
-│  de neutralidade.                                           │
-│                                                             │
-│  FONTE: ANPED, 2024. [não verificado]                       │
-│                                                             │
-│  "A diversidade é um direito. A censura é uma ameaça."      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-046 — Privatização da TV Pública
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-046                            │
-│  Privatização da TV pública                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia na TV pública ou a privatizava.   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A TV pública é um espaço de diversidade. Privatizá-la é    │
-│  entregar a narrativa.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A TV pública é um espaço de resistência. A Globo teme a    │
-│  concorrência.                                              │
-│                                                             │
-│  FONTE: EBC, 2024. [não verificado]                         │
-│                                                             │
-│  "A comunicação é um direito, não uma mercadoria."          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-047 — Método Paulo Freire
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-047                            │
-│  Método Paulo Freire                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou proibia o método Paulo Freire   │
-│  nas escolas.                                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Paulo Freire é o patrono da educação brasileira. Sua       │
-│  pedagogia é libertadora.                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A pedagogia de Freire é baseada no diálogo e na            │
-│  conscientização.                                           │
-│                                                             │
-│  FONTE: Lei 12.612/2012. [não verificado]                   │
-│                                                             │
-│  "A educação não transforma o mundo. Educação muda as       │
-│   pessoas. Pessoas transformam o mundo."                    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-048 — TV Comunitária
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-048                            │
-│  TV comunitária                                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava ou desistia de uma TV comunitária.  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A TV comunitária é um espaço de resistência. A Globo teme  │
-│  a concorrência.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A comunicação é um direito, não uma mercadoria.            │
-│                                                             │
-│  FONTE: FNDC, 2024. [não verificado]                        │
-│                                                             │
-│  "A voz da comunidade não é ouvida."                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-049 — Educação Financeira em vez de Sociologia
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-049                            │
-│  Educação financeira em vez de Sociologia                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mobilizava professores ou apoiava a        │
-│  substituição de Sociologia por educação financeira.        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Educação financeira ensina a poupar. Sociologia ensina a   │
-│  questionar.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A retirada de Sociologia do currículo é a desativação do   │
-│  pensamento crítico.                                        │
-│                                                             │
-│  FONTE: Ministério da Educação, 2017. [não verificado]      │
-│                                                             │
-│  "A escola deve formar cidadãos, não consumidores."         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-050 — Influenciadora dando Aula de Cidadania
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-050                            │
-│  Influenciadora dando aula de cidadania                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se contratava professores ou mantinha a       │
-│  influenciadora dando aula de cidadania.                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Cidadania não se aprende com influenciador. Se aprende     │
-│  com educação crítica.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A educação vira entretenimento.                            │
-│                                                             │
-│  FONTE: ANPED, 2024. [não verificado]                       │
-│                                                             │
-│  "A cidadania não é um produto. É uma prática."             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-051 — Censura a Documentário
 
@@ -5141,10 +5186,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 75 | 86 | 200 |
+| **Institucionais** | 85 | 76 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **77** | **86** | **340** |
+| **Total** | **87** | **76** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

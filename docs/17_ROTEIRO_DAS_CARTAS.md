@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 77 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 87 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -826,6 +826,60 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-028 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-039 — Isenção que ninguém vê
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Isenção que ninguém vê |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Montadoras pedem renovar uma isenção de imposto. Ela não aparece como gasto no orçamento, mas tira verba de escolas e postos. |
+| **Opção A** | Cortar a isenção |
+| **Efeitos A** | `Caixa` +15, `Dignidade` +5, `Capital Político` -10 |
+| **Consequência A** | "A verba volta ao orçamento. As montadoras ameaçam cortar vagas." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-007` +1 |
+| **Evento A** | "Uma montadora fecha uma fábrica e culpa o governo." · atraso 1 · `Legitimidade` -10 |
+| **Opção B** | Renovar a isenção |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -15, `Integridade` -5 |
+| **Consequência B** | "As fábricas ficam. A conta some do orçamento, mas não do Tesouro." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-015` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-039 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-040 — Teto do imposto sobre herança
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Teto do imposto sobre herança |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | Senado Federal |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | O imposto sobre herança é dos estados, mas o Senado fixa o teto. Governadores pedem um teto maior para heranças grandes. |
+| **Opção A** | Apoiar o teto maior |
+| **Efeitos A** | `Dignidade` +10, `Caixa` +10, `Capital Político` -15 |
+| **Consequência A** | "Os estados ganham receita. Famílias ricas correm para doar em vida." |
+| **Eixo A** | [-2, 0, 0, 0] |
+| **Atores A** | `ACT-002` -1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o teto |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -10, `Caixa` -5 |
+| **Consequência B** | "Nada muda. Grandes fortunas passam de geração em geração quase intactas." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-040 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.04 — Cartas do Modo Currículo e Mídia (20)
@@ -883,6 +937,222 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-042 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-043 — Aula contra o abuso
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aula contra o abuso |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-012` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Escolas querem ensinar crianças a reconhecer abuso e a pedir ajuda. Pastores dizem que é educação sexual e pedem para barrar. |
+| **Opção A** | Manter as aulas |
+| **Efeitos A** | `Consciência` +10, `Segurança` +10, `Capital Político` -10 |
+| **Consequência A** | "As crianças aprendem a quem contar. Pastores acusam o governo nos cultos." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-012` -1, `ACT-013` +1, `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Barrar as aulas |
+| **Efeitos B** | `Capital Político` +15, `Consciência` -10, `Segurança` -10 |
+| **Consequência B** | "Os pastores comemoram. O tema sai da escola e volta ao silêncio." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-043 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-044 — Mentira no telejornal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mentira no telejornal |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Vermelho |
+| **Problema** | Um telejornal diz que a vacina do governo causa doença grave. É falso. Aliados pedem cassar a concessão; a lei prevê direito de resposta. |
+| **Opção A** | Pedir direito de resposta |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "A correção vai ao ar. Muita gente já tinha visto a mentira." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Pedir a cassação |
+| **Efeitos B** | `Consciência` +5, `Legitimidade` -15, `Integridade` -5 |
+| **Consequência B** | "A emissora vira vítima no ar. O processo de cassação leva anos." |
+| **Eixo B** | [0, 0, 0, -2] |
+| **Atores B** | `ACT-023` -1, `ACT-024` +1 |
+| **Evento B** | "Outras emissoras falam em censura e se unem contra você." · atraso 1 · `Legitimidade` -10, `Capital Político` -5 |
+| **Aprendizado** | APR-044 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-045 — Livro didático recolhido
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Livro didático recolhido |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Deputados pedem recolher um livro didático que mostra famílias de vários tipos. Técnicos o escolheram por avaliação pública. |
+| **Opção A** | Manter o livro |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +5, `Capital Político` -15 |
+| **Consequência A** | "O livro fica. A bancada religiosa trava dois projetos seus." |
+| **Eixo A** | [0, 0, +2, 0] |
+| **Atores A** | `ACT-012` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Recolher o livro |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Caixa` -5 |
+| **Consequência B** | "Os livros voltam ao depósito. Alunos de famílias diferentes somem da página." |
+| **Eixo B** | [0, 0, -2, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-045 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-046 — TV pública à venda
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | TV pública à venda |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Azul |
+| **Problema** | A equipe econômica quer vender a TV pública a um grupo estrangeiro. Ela leva notícia a cidades sem emissora local. |
+| **Opção A** | Manter com conselho |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Caixa` -10 |
+| **Consequência A** | "A TV fica, com conselho de fora do governo. O prejuízo segue no caixa." |
+| **Eixo A** | [-1, -1, 0, +1] |
+| **Atores A** | `ACT-007` -1, `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Vender a emissora |
+| **Efeitos B** | `Caixa` +15, `Consciência` -10, `Soberania` -5 |
+| **Consequência B** | "O caixa respira. O novo dono corta o jornal local." |
+| **Eixo B** | [+2, +1, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-006` +1 |
+| **Evento B** | "Cidades do interior ficam sem telejornal local." · atraso 2 · `Consciência` -10 |
+| **Aprendizado** | APR-046 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-047 — Alfabetizar adultos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Alfabetizar adultos |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Muitos adultos não sabem ler. Professores propõem círculos que partem da vida do aluno. Uma empresa oferece apostilas prontas. |
+| **Opção A** | Apoiar os círculos |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "Adultos leem a conta de luz. Críticos dizem que o método doutrina." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-005` -1 |
+| **Evento A** | — |
+| **Opção B** | Comprar as apostilas |
+| **Efeitos B** | `Caixa` -10, `Consciência` +5, `Integridade` -5 |
+| **Consequência B** | "As apostilas chegam rápido. Muitos alunos desistem no meio." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-005` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-047 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-048 — Rádio da quebrada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Rádio da quebrada |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Rádios comunitárias da periferia esperam licença há anos. Sem ela, a fiscalização fecha a rádio e leva o transmissor. |
+| **Opção A** | Agilizar as licenças |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "As rádios saem da sombra. Deputados donos de emissoras reclamam." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a fila |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Legitimidade` -5 |
+| **Consequência B** | "A fila segue. Mais um transmissor apreendido no bairro." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-011` +1, `ACT-016` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-048 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-049 — Aula de finanças do banco
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aula de finanças do banco |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-006` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Azul |
+| **Problema** | Um banco estrangeiro oferece às escolas material grátis de educação financeira. O material traz a marca do banco e indica seus produtos. |
+| **Opção A** | Recusar o material |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Caixa` -10 |
+| **Consequência A** | "A rede faz o próprio material, mais devagar e mais caro." |
+| **Eixo A** | [-1, -1, 0, +1] |
+| **Atores A** | `ACT-002` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Aceitar o material |
+| **Efeitos B** | `Caixa` +10, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "As aulas começam já. O logo do banco vira parte do caderno." |
+| **Eixo B** | [+2, +1, 0, -1] |
+| **Atores B** | `ACT-002` +1, `ACT-022` +1 |
+| **Evento B** | "Alunos endividados com o cartão do banco viram notícia." · atraso 2 · `Dignidade` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-049 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-050 — Coach na aula de cidadania
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Coach na aula de cidadania |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-022` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Vermelho |
+| **Problema** | O MEC pode pagar um coach famoso por um curso de cidadania em vídeo nas escolas. Professores querem fazer o próprio curso. |
+| **Opção A** | Contratar o coach |
+| **Efeitos A** | `Capital Político` +10, `Caixa` -10, `Consciência` -5 |
+| **Consequência A** | "O vídeo viraliza. Os professores se sentem trocados." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-022` +1, `ACT-013` -1 |
+| **Evento A** | "O coach usa o curso para vender mentoria aos alunos." · atraso 1 · `Integridade` -10, `Consciência` -5 |
+| **Opção B** | Curso dos professores |
+| **Efeitos B** | `Consciência` +10, `Caixa` -5, `Legitimidade` -5 |
+| **Consequência B** | "O curso é bom, mas poucos assistem fora da sala." |
+| **Eixo B** | [-1, 0, 0, +1] |
+| **Atores B** | `ACT-013` +1, `ACT-022` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-050 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -2416,10 +2686,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 75 | 200 |
+| **Institucionais** | 85 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **77** | **340** |
+| **Total** | **87** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---
