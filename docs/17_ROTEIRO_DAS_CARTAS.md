@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 97 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 117 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -1424,6 +1424,276 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-050 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-051 — Documentário sobre a ditadura
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Documentário sobre a ditadura |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Um documentário sobre a ditadura, feito com verba pública, estreia na TV pública. Militares pedem que seja retirado do ar. |
+| **Opção A** | Manter o filme no ar |
+| **Efeitos A** | `Consciência` +15, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "O filme segue no ar. Militares reclamam em nota pública." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-008` -1, `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Retirar o filme |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Integridade` -5 |
+| **Consequência B** | "O filme sai do ar. Os militares agradecem em silêncio." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-019` -1 |
+| **Evento B** | "O filme vaza nas redes e vira assunto nacional." · atraso 1 · `Legitimidade` -10 |
+| **Aprendizado** | APR-051 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-052 — Emissora critica o governo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Emissora critica o governo |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-024` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | A maior emissora do país faz uma série de reportagens contra seu governo. Aliados pedem cortar dela a publicidade oficial. |
+| **Opção A** | Manter a regra técnica |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "A verba segue a audiência. Aliados dizem que você financia o inimigo." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-024` -1 |
+| **Evento A** | — |
+| **Opção B** | Cortar a verba |
+| **Efeitos B** | `Capital Político` +5, `Caixa` +10, `Integridade` -15 |
+| **Consequência B** | "A emissora perde a verba e acusa o governo de punir a imprensa." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-024` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-052 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-053 — História negra na escola
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | História negra na escola |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Uma lei obriga as escolas a ensinar a história africana e afro-brasileira. Muitas redes não cumprem, e prefeitos pedem mais prazo. |
+| **Opção A** | Formar professores |
+| **Efeitos A** | `Consciência` +15, `Dignidade` +5, `Caixa` -15 |
+| **Consequência A** | "Professores fazem o curso. O tema entra nas aulas de várias redes." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | "Alunos dizem que agora se veem nos livros." · atraso 2 · `Dignidade` +5, `Consciência` +5 |
+| **Opção B** | Dar mais prazo |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10, `Dignidade` -5 |
+| **Consequência B** | "Os prefeitos agradecem. A lei continua só no papel." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-053 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-054 — Perfil de jornalista derrubado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Perfil de jornalista derrubado |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Azul |
+| **Problema** | Uma rede social estrangeira derruba o perfil de um jornalista que investigava um aliado seu. A plataforma não explica o motivo. |
+| **Opção A** | Exigir explicação |
+| **Efeitos A** | `Soberania` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "A rede é chamada a explicar. Seu aliado fica exposto." |
+| **Eixo A** | [0, -1, 0, 0] |
+| **Atores A** | `ACT-020` -1, `ACT-023` +1 |
+| **Evento A** | "A rede reduz o alcance das páginas do governo." · atraso 1 · `Legitimidade` -10 |
+| **Opção B** | Não interferir |
+| **Efeitos B** | `Capital Político` +5, `Integridade` -10, `Consciência` -5 |
+| **Consequência B** | "O perfil segue fora do ar. A investigação some das redes." |
+| **Eixo B** | [0, +1, 0, 0] |
+| **Atores B** | `ACT-020` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-054 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-055 — Escola em tempo integral
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Escola em tempo integral |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Prefeituras pedem verba para escola em tempo integral, com esporte e arte. A equipe econômica prefere um bônus por nota em prova. |
+| **Opção A** | Financiar o integral |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +10, `Caixa` -20 |
+| **Consequência A** | "As escolas ficam abertas o dia todo. A conta pesa no orçamento." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-013` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Bônus por nota |
+| **Efeitos B** | `Capital Político` +5, `Caixa` -5, `Consciência` -10 |
+| **Consequência B** | "As escolas treinam para a prova. O resto do currículo encolhe." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-055 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-056 — Aula sobre o poder
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Aula sobre o poder |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | O MEC propõe aulas sobre como funcionam o voto, o Congresso e o orçamento. Deputados temem ser cobrados pelos alunos. |
+| **Opção A** | Incluir as aulas |
+| **Efeitos A** | `Consciência` +15, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "Os alunos aprendem a seguir o voto dos deputados. O Centrão reclama." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-011` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar opcional |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -10 |
+| **Consequência B** | "Poucas escolas oferecem as aulas. Os deputados respiram aliviados." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-056 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-057 — Piada racista na TV
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Piada racista na TV |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-019` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Um programa de humor de grande audiência faz uma piada racista. Movimentos pedem punição; a emissora fala em liberdade. |
+| **Opção A** | Abrir processo |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "O ministério abre processo. A emissora diz que é perseguição." |
+| **Eixo A** | [0, 0, +1, -1] |
+| **Atores A** | `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Deixar com a emissora |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -10, `Integridade` -5 |
+| **Consequência B** | "A emissora pede desculpas genéricas. O quadro continua no ar." |
+| **Eixo B** | [0, 0, -1, +1] |
+| **Atores B** | `ACT-019` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-057 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-058 — Multa por linguagem neutra
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Multa por linguagem neutra |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | A Câmara aprova multar escolas que usem linguagem neutra. Professores dizem que o uso é raro e temem virar alvo. |
+| **Opção A** | Vetar a multa |
+| **Efeitos A** | `Consciência` +5, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "O veto sai. Deputados dizem que você defende modismo." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar a multa |
+| **Efeitos B** | `Capital Político` +15, `Consciência` -10, `Dignidade` -5 |
+| **Consequência B** | "A lei vale. Escolas passam a revisar cada palavra das aulas." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-013` -1 |
+| **Evento B** | "Professores são denunciados por vídeos de aula." · atraso 1 · `Consciência` -10, `Integridade` -5 |
+| **Aprendizado** | APR-058 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-059 — Bibliotecas de bairro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Bibliotecas de bairro |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Coletivos de bairro mantêm bibliotecas comunitárias sem apoio. Uma plataforma estrangeira oferece um app de leitura com anúncios. |
+| **Opção A** | Apoiar as bibliotecas |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +10, `Caixa` -10 |
+| **Consequência A** | "As bibliotecas ganham livros e horário estendido. Mais leitores nos bairros." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1, `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Fechar com o app |
+| **Efeitos B** | `Caixa` +5, `Soberania` -10, `Consciência` -5 |
+| **Consequência B** | "O app chega a todos os celulares. Os dados dos leitores vão junto." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-020` +1, `ACT-016` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-059 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-060 — Denúncia contra professores
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Denúncia contra professores |
+| **Tipo** | Institucional |
+| **Modo** | Currículo e Mídia |
+| **Quem fala** | `ACT-022` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Verde |
+| **Cor B** | Preto |
+| **Problema** | Um deputado cria um canal para alunos filmarem e denunciarem professores. Ele pede o apoio do MEC para divulgar. |
+| **Opção A** | Recusar o canal |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "O MEC recusa. O deputado diz que o governo protege doutrinadores." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-022` -1, `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Apoiar o canal |
+| **Efeitos B** | `Capital Político` +10, `Consciência` -15, `Legitimidade` -5 |
+| **Consequência B** | "O canal recebe milhares de vídeos. Muitos são cortes fora de contexto." |
+| **Eixo B** | [0, 0, -1, -2] |
+| **Atores B** | `ACT-022` +1, `ACT-013` -1 |
+| **Evento B** | "Professores evitam temas difíceis por medo." · atraso 2 · `Consciência` -10 |
+| **Aprendizado** | APR-060 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.05 — Cartas do Modo Geopolítico (20)
@@ -2025,6 +2295,276 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-082 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-083 — Porte para uso pessoal
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Porte para uso pessoal |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Preto |
+| **Problema** | A lei não diz quanta droga é uso pessoal. A polícia decide na hora, e jovens com pouca droga são presos como traficantes. |
+| **Opção A** | Definir um critério |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A regra fica clara. Pastores acusam o governo de liberar a droga." |
+| **Eixo A** | [0, +1, +1, +1] |
+| **Atores A** | `ACT-012` -1, `ACT-014` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter a lei |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -10, `Caixa` -10 |
+| **Consequência B** | "Nada muda. A decisão segue com quem faz a abordagem." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1 |
+| **Evento B** | "Presídios recebem mais jovens presos com pouca droga." · atraso 2 · `Dignidade` -10, `Segurança` -5 |
+| **Aprendizado** | APR-083 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-084 — Operação com muitas mortes
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Operação com muitas mortes |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Uma operação policial num bairro termina com muitos mortos. O governador comemora; as famílias pedem perícia independente. |
+| **Opção A** | Pedir perícia federal |
+| **Efeitos A** | `Integridade` +10, `Dignidade` +10, `Capital Político` -15 |
+| **Consequência A** | "Peritos federais chegam. O governador diz que você está do lado do crime." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-023` +1, `ACT-019` +1 |
+| **Evento A** | — |
+| **Opção B** | Apoiar o governador |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Dignidade` -15, `Legitimidade` -5 |
+| **Consequência B** | "A operação vira modelo. As famílias seguem sem respostas." |
+| **Eixo B** | [0, 0, -1, -2] |
+| **Atores B** | `ACT-008` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-084 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-085 — Câmeras nas fardas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Câmeras nas fardas |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Estados pedem verba federal para câmeras nas fardas. Técnicos querem gravação sem pausa; associações de policiais rejeitam. |
+| **Opção A** | Exigir gravação contínua |
+| **Efeitos A** | `Segurança` +10, `Integridade` +10, `Caixa` -15 |
+| **Consequência A** | "As câmeras gravam o turno todo. Policiais reclamam de vigilância." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-007` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar a critério |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10 |
+| **Consequência B** | "Cada estado decide. Em muitos, a câmera liga só quando o policial quer." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-008` +1, `ACT-007` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-085 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-086 — Vans da facção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vans da facção |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Uma facção cobra taxa dos motoristas de van e controla as linhas de um bairro. Moradores pedem ônibus que chegue até lá. |
+| **Opção A** | Criar linha pública |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +5, `Caixa` -15 |
+| **Consequência A** | "O ônibus chega ao bairro. A facção perde parte da renda." |
+| **Eixo A** | [-1, 0, 0, +1] |
+| **Atores A** | `ACT-016` +1 |
+| **Evento A** | — |
+| **Opção B** | Ocupar com tropas |
+| **Efeitos B** | `Segurança` +10, `Caixa` -10, `Dignidade` -10 |
+| **Consequência B** | "Tropas ocupam o bairro. Os moradores passam a ser revistados todo dia." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-016` -1 |
+| **Evento B** | "A tropa sai e a facção volta a cobrar." · atraso 2 · `Segurança` -15 |
+| **Aprendizado** | APR-086 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-087 — Internação de adolescentes
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Internação de adolescentes |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | A Câmara quer ampliar o tempo de internação de adolescentes infratores. As unidades já estão lotadas. |
+| **Opção A** | Investir no meio aberto |
+| **Efeitos A** | `Dignidade` +10, `Segurança` -5, `Caixa` -10 |
+| **Consequência A** | "Jovens cumprem medida na escola e no trabalho. Críticos falam em impunidade." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1 |
+| **Evento A** | — |
+| **Opção B** | Ampliar a internação |
+| **Efeitos B** | `Segurança` +10, `Dignidade` -10, `Caixa` -15 |
+| **Consequência B** | "Os jovens ficam mais tempo internados. As unidades lotam de vez." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-012` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-087 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-088 — Presos separados por facção
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Presos separados por facção |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 3 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Presídios separam presos por facção para evitar mortes. Mas assim cada ala vira território da facção, que recruta quem chega. |
+| **Opção A** | Manter a separação |
+| **Efeitos A** | `Segurança` +10, `Integridade` -5, `Dignidade` -5 |
+| **Consequência A** | "As brigas diminuem. As facções continuam a recrutar nas alas." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | — |
+| **Evento A** | — |
+| **Opção B** | Misturar os presos |
+| **Efeitos B** | `Integridade` +10, `Segurança` -10, `Caixa` -10 |
+| **Consequência B** | "Os presos são misturados e a vigilância aumenta. A tensão sobe." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-009` +1 |
+| **Evento B** | "Uma briga entre facções deixa mortos num presídio." · atraso 1 · `Segurança` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-088 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-089 — Tiroteio perto da escola
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tiroteio perto da escola |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Escolas fecham por tiroteios durante operações. Professores pedem regra que evite operação perto da escola em horário de aula. |
+| **Opção A** | Criar a regra |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Segurança` -5 |
+| **Consequência A** | "Operações perto de escolas ficam para fora do horário de aula." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-013` +1, `ACT-008` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar com a polícia |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` -10, `Consciência` -5 |
+| **Consequência B** | "A polícia mantém a decisão. As aulas continuam suspensas." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-008` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-089 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-090 — Redução de danos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Redução de danos |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Prefeituras pedem verba para abrigar usuários de drogas na rua sem exigir abstinência. Comunidades religiosas querem a verba. |
+| **Opção A** | Financiar o cuidado |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +5, `Capital Político` -10, `Caixa` -10 |
+| **Consequência A** | "Mais gente sai da rua e procura tratamento. Pastores reclamam." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Comunidades religiosas |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -5, `Integridade` -5 |
+| **Consequência B** | "A verba vai para as comunidades. Quem não aceita a regra volta à rua." |
+| **Eixo B** | [+1, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-090 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-091 — Líder de bairro preso
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Líder de bairro preso |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Azul |
+| **Cor B** | Preto |
+| **Problema** | Um líder de bairro que denunciava abusos da polícia é preso, acusado sem prova pública de ligação com facção. A ONU cobra o Brasil. |
+| **Opção A** | Pedir apuração isenta |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "O caso é revisto por órgão independente. A polícia se diz desrespeitada." |
+| **Eixo A** | [0, +1, +1, +1] |
+| **Atores A** | `ACT-010` +1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Confiar na polícia |
+| **Efeitos B** | `Segurança` +5, `Capital Político` +5, `Integridade` -10 |
+| **Consequência B** | "A prisão é mantida. Outras lideranças param de denunciar." |
+| **Eixo B** | [0, -1, 0, -1] |
+| **Atores B** | `ACT-010` -1, `ACT-008` +1 |
+| **Evento B** | "Um relatório internacional cita o Brasil." · atraso 1 · `Legitimidade` -10 |
+| **Aprendizado** | APR-091 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-092 — Saída temporária
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Saída temporária |
+| **Tipo** | Institucional |
+| **Modo** | Prisional e Policial |
+| **Quem fala** | Congresso Nacional |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Amarelo |
+| **Problema** | O Congresso aprova o fim da saída temporária de presos para visitar a família. Diretores de presídio pedem o veto. |
+| **Opção A** | Vetar o fim |
+| **Efeitos A** | `Dignidade` +5, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "A saída continua. A oposição diz que você solta bandidos." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-009` +1 |
+| **Evento A** | — |
+| **Opção B** | Sancionar o fim |
+| **Efeitos B** | `Capital Político` +10, `Segurança` +5, `Dignidade` -10 |
+| **Consequência B** | "A saída acaba. Os presos perdem o contato com a família." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-009` -1 |
+| **Evento B** | "Sem visitas à família, crescem os motins." · atraso 2 · `Segurança` -10 |
+| **Aprendizado** | APR-092 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -2956,10 +3496,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 95 | 200 |
+| **Institucionais** | 115 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **97** | **340** |
+| **Total** | **117** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---

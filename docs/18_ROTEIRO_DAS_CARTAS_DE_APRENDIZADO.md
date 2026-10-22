@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 102 Cartas de Aprendizado ligadas às 102 cartas do doc 17 (97 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 66 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 122 Cartas de Aprendizado ligadas às 122 cartas do doc 17 (117 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 46 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -1334,7 +1334,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.04 — Cartas de Aprendizado do Modo Currículo e Mídia (10 de 20)
+## 18.04 — Cartas de Aprendizado do Modo Currículo e Mídia (20 de 20)
 
 ### APR-041 — Retirada de Filosofia/Sociologia
 
@@ -1639,6 +1639,316 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  FONTE: Em conferência (P-016).                             │
 │                                                             │
 │  "Seguidor não é aluno."                                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-051 — Documentário sobre a ditadura
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-051                            │
+│  Documentário sobre a ditadura                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha no ar um documentário sobre a     │
+│  ditadura ou se atendia aos militares.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Censura é o Estado impedir que uma obra circule. A         │
+│  Constituição veda a censura prévia; tirar do ar o que já   │
+│  foi aprovado tem o mesmo efeito.                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Esquecer também é uma escolha política."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-052 — Emissora critica o governo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-052                            │
+│  Emissora critica o governo                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha a publicidade oficial numa        │
+│  emissora crítica ou se a cortava.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O governo compra anúncios na mídia. Se a verba premia quem │
+│  elogia e castiga quem critica, vira ferramenta de pressão  │
+│  sobre a imprensa.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Verba pública não é prêmio por elogio."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-053 — História negra na escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-053                            │
+│  História negra na escola                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se formava professores para ensinar história  │
+│  afro-brasileira ou se dava mais prazo às redes.            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma lei obriga o ensino da história africana e             │
+│  afro-brasileira. Sem formação e verba, muitas escolas não  │
+│  cumprem: a lei existe, mas não pega.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Lei sem verba é promessa no papel."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-054 — Perfil de jornalista derrubado
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-054                            │
+│  Perfil de jornalista derrubado                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cobrava explicação da rede que derrubou um │
+│  jornalista ou se deixava a empresa decidir.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  As redes têm regras próprias para tirar perfis do ar. Sem  │
+│  transparência, a moderação pode virar censura privada,     │
+│  decidida fora do país.                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem modera a rede também edita o debate."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-055 — Escola em tempo integral
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-055                            │
+│  Escola em tempo integral                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se financiava a escola em tempo integral ou se│
+│  pagava bônus por nota em prova.                            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A escola integral junta aula, esporte e arte no mesmo dia. │
+│  O bônus por nota é mais barato, mas pode levar a escola a  │
+│  só treinar para a prova.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O que a prova não mede, a escola esquece."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-056 — Aula sobre o poder
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-056                            │
+│  Aula sobre o poder                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava aulas sobre como funciona o poder ou│
+│  se deixava o tema opcional.                                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Saber como votam deputados e como se faz o orçamento ajuda │
+│  o cidadão a cobrar. Por isso, quem é cobrado pode resistir │
+│  a esse ensino.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem entende o poder vigia quem o exerce."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-057 — Piada racista na TV
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-057                            │
+│  Piada racista na TV                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se abria processo contra uma piada racista na │
+│  TV ou se deixava a emissora resolver.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Racismo é crime no Brasil. Concessões de TV são públicas e │
+│  têm regras; liberdade de expressão não cobre o discurso que│
+│  humilha um grupo.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Humor que humilha não é só piada."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-058 — Multa por linguagem neutra
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-058                            │
+│  Multa por linguagem neutra                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava a multa a escolas que usem linguagem│
+│  neutra ou se sancionava a lei.                             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Leis que proíbem palavras na escola criam medo de punição. │
+│  O professor passa a evitar temas inteiros para não virar   │
+│  alvo de denúncia.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Proibir palavras ensina a ficar calado."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-059 — Bibliotecas de bairro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-059                            │
+│  Bibliotecas de bairro                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava bibliotecas comunitárias ou se     │
+│  fechava com um app estrangeiro de leitura.                 │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Bibliotecas comunitárias levam livros onde o poder público │
+│  não chega. O app é barato, mas troca leitura por anúncios e│
+│  dados dos leitores.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Livro de graça pode custar seus dados."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-060 — Denúncia contra professores
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-060                            │
+│  Denúncia contra professores                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se recusava um canal para alunos denunciarem  │
+│  professores ou se o apoiava.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Canais de denúncia de professores usam vídeos cortados para│
+│  expor e punir. O resultado é autocensura: o professor deixa│
+│  de tratar temas difíceis.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Medo na sala de aula ensina silêncio."                    │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -2305,7 +2615,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.06 — Cartas de Aprendizado do Modo Prisional e Policial (2 de 20)
+## 18.06 — Cartas de Aprendizado do Modo Prisional e Policial (12 de 20)
 
 ### APR-081 — Superlotação Prisional
 
@@ -2368,6 +2678,315 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Fonte verificada (P-010):** [Anuário 2025 (FBSP)](https://forumseguranca.org.br/wp-content/uploads/2025/07/anuario-2025.pdf)
 **Fonte verificada (P-010):** [Agência Brasil, out/2025](https://agenciabrasil.ebc.com.br/geral/noticia/2025-10/governo-do-rio-contabiliza-119-mortes-moradores-retiram-corpos-da-mata)
+
+### APR-083 — Porte para uso pessoal
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-083                            │
+│  Porte para uso pessoal                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se definia um critério para porte de droga ou │
+│  se deixava a decisão com a polícia.                        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Sem critério na lei, quem aborda decide se é usuário ou    │
+│  traficante. A decisão muda conforme o lugar e a pessoa, e a│
+│  prisão pesa mais sobre os pobres.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sem regra clara, decide quem aborda."                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-084 — Operação com muitas mortes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-084                            │
+│  Operação com muitas mortes                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia perícia federal numa operação com    │
+│  muitas mortes ou se apoiava o governador.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando a polícia investiga a si mesma, as mortes viram     │
+│  números sem resposta. Perícia independente é o que permite │
+│  saber o que houve.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Sem perícia, não há verdade nem justiça."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-085 — Câmeras nas fardas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-085                            │
+│  Câmeras nas fardas                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se exigia gravação contínua nas câmeras das   │
+│  fardas ou se deixava a regra com os estados.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Câmeras nas fardas registram a ação do policial e do       │
+│  cidadão. Quando o policial escolhe quando gravar, a prova  │
+│  some quando mais importa.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Câmera que desliga não protege ninguém."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-086 — Vans da facção
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-086                            │
+│  Vans da facção                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma linha pública de ônibus ou se   │
+│  ocupava o bairro com tropas.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Facções lucram onde o Estado não oferece serviço. Ocupar   │
+│  sem levar serviço resolve por um tempo; quando a tropa sai,│
+│  o controle volta.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Onde o Estado falta, outro poder manda."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-087 — Internação de adolescentes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-087                            │
+│  Internação de adolescentes                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se investia em medidas em meio aberto ou se   │
+│  ampliava a internação de adolescentes.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O ECA prevê medidas para adolescentes que cometem atos     │
+│  infracionais, da liberdade assistida à internação. Internar│
+│  mais tempo não garante menos crimes.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Prender mais cedo não é proteger mais."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-088 — Presos separados por facção
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-088                            │
+│  Presos separados por facção                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha os presos separados por facção ou │
+│  se os misturava.                                           │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Separar por facção evita mortes, mas entrega alas inteiras │
+│  ao crime organizado. A prisão lotada vira escritório e     │
+│  escola das facções.                                        │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A cadeia lotada recruta para o crime."                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-089 — Tiroteio perto da escola
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-089                            │
+│  Tiroteio perto da escola                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma regra para operações perto de   │
+│  escolas ou se deixava com a polícia.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Tiroteios fecham escolas e tiram dias de aula de quem mora │
+│  perto. A violência armada também é um problema de educação.│
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Dia sem aula também é vítima do tiroteio."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-090 — Redução de danos
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-090                            │
+│  Redução de danos                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se financiava a redução de danos ou se dava a │
+│  verba a comunidades religiosas.                            │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Redução de danos cuida da pessoa mesmo que ela ainda use   │
+│  drogas. Exigir abstinência na entrada afasta quem mais     │
+│  precisa de ajuda.                                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Cuidar não pode depender de parar antes."                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-091 — Líder de bairro preso
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-091                            │
+│  Líder de bairro preso                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia apuração isenta da prisão de um líder│
+│  de bairro ou se confiava na polícia.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Prender quem denuncia abusos sem prova pública intimida    │
+│  outras vozes. Órgãos internacionais acompanham a proteção  │
+│  de defensores de direitos.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Calar quem denuncia não acaba com o abuso."               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-092 — Saída temporária
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-092                            │
+│  Saída temporária                                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se vetava o fim da saída temporária de presos │
+│  ou se sancionava a lei.                                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A saída temporária mantém o preso ligado à família no fim  │
+│  da pena. Cortar esse laço pode dificultar a volta à vida   │
+│  fora da prisão.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem perde a família perde o caminho de volta."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -3406,271 +4025,6 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Currículo e Mídia
 
-#### APR-051 — Censura a Documentário
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-051                            │
-│  Censura a documentário                                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se liberava ou censurava um documentário      │
-│  sobre a ditadura.                                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A memória da ditadura é fundamental para que ela não se    │
-│  repita.                                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Comissão da Verdade documentou 434 mortes e              │
-│  desaparecimentos. Ninguém foi punido.                      │
-│                                                             │
-│  FONTE: Comissão Nacional da Verdade, 2014. [não verificado]│
-│                                                             │
-│  "A memória é a única garantia de que a ditadura não        │
-│   volta."                                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-052 — Globo Critica o Governo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-052                            │
-│  Globo critica o governo                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se dialogava ou revidava contra uma           │
-│  reportagem crítica da Globo.                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A Globo nasceu do golpe de 64. Sua história é marcada      │
-│  por golpes.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Globo elegeu Collor com uma edição fraudulenta em 1989.  │
-│                                                             │
-│  FONTE: Memórias da Ditadura, 2024. [não verificado]        │
-│                                                             │
-│  "Quem controla a narrativa controla o voto."               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-053 — Proibição de História Afro-Brasileira
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-053                            │
-│  Proibição de História Afro-Brasileira                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a proibição do ensino    │
-│  de História Afro-Brasileira.                               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A História Afro-Brasileira é fundamental para entender     │
-│  o racismo estrutural.                                      │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O ensino da cultura afro-brasileira é lei desde 2003.      │
-│  A proibição é um retrocesso.                               │
-│                                                             │
-│  FONTE: Lei 10.639/2003. [não verificado]                   │
-│                                                             │
-│  "O racismo estrutural é invisibilizado."                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-054 — Derrubada de Perfil de Jornalista
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-054                            │
-│  Derrubada de perfil de jornalista                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se intervia ou não na derrubada do perfil     │
-│  de um jornalista independente.                             │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A censura privada é tão grave quanto a estatal. As         │
-│  plataformas silenciam.                                     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A Meta derrubou perfis de jornalistas independentes antes  │
-│  das eleições.                                              │
-│                                                             │
-│  FONTE: FENAJ, 2024. [não verificado]                       │
-│                                                             │
-│  "A censura é a arma dos que não têm argumentos."           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-055 — Darcy Ribeiro e Paulo Freire no Currículo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-055                            │
-│  Darcy Ribeiro e Paulo Freire no currículo                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou retirava Darcy Ribeiro e        │
-│  Paulo Freire do currículo.                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Darcy Ribeiro e Paulo Freire são os patronos da educação   │
-│  brasileira.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A pedagogia da libertação é a base da educação crítica.    │
-│                                                             │
-│  FONTE: Lei 12.612/2012. [não verificado]                   │
-│                                                             │
-│  "A educação é a única arma que o povo tem."                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-056 — Educação para a Cidadania
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-056                            │
-│  Educação para a cidadania                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou substituía a Educação para a    │
-│  Cidadania por Educação Moral.                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Cidadania é sobre direitos. Moral é sobre dogma.           │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A educação para a cidadania forma sujeitos de direitos.    │
-│  A educação moral forma obedientes.                         │
-│                                                             │
-│  FONTE: ANPED, 2024. [não verificado]                       │
-│                                                             │
-│  "A cidadania não é um status. É uma prática."              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-057 — Emissora Acusada de Racismo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-057                            │
-│  Emissora acusada de racismo                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se punia ou ignorava uma emissora acusada     │
-│  de racismo.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O racismo na TV é estrutural. Punir é exceção.             │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A imprensa tem um papel fundamental no combate ao          │
-│  racismo, mas muitas vezes o reproduz.                      │
-│                                                             │
-│  FONTE: Coalizão Negra por Direitos, 2024. [não verificado] │
-│                                                             │
-│  "O racismo na TV continua."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-058 — Proibição de Linguagem Neutra
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-058                            │
-│  Proibição de linguagem neutra                              │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a proibição do uso de    │
-│  linguagem neutra nas escolas.                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A linguagem neutra é uma pauta de inclusão. Proibi-la é    │
-│  silenciar.                                                 │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A língua é viva e se transforma. A proibição é uma forma   │
-│  de censura.                                                │
-│                                                             │
-│  FONTE: ABL, 2024. [não verificado]                         │
-│                                                             │
-│  "A diversidade linguística é silenciada."                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-059 — Programa de Leitura nas Periferias
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-059                            │
-│  Programa de leitura nas periferias                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava ou não um programa de leitura nas   │
-│  periferias.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A leitura é uma ferramenta de libertação. A periferia      │
-│  precisa de bibliotecas.                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Sem acesso à leitura, a população fica presa à             │
-│  desinformação.                                             │
-│                                                             │
-│  FONTE: Instituto Pró-Livro, 2024. [não verificado]         │
-│                                                             │
-│  "A leitura é uma ferramenta de libertação."                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-060 — Debate Político em Sala
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-060                            │
-│  Debate político em sala                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se apoiava ou proibia o debate político       │
-│  em sala de aula.                                           │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Debater política é um direito. Proibir é censurar.         │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A liberdade de cátedra é um princípio constitucional.      │
-│                                                             │
-│  FONTE: Constituição Federal, 1988. [não verificado]        │
-│                                                             │
-│  "A política vira tabu."                                    │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Geopolítico
@@ -3678,272 +4032,6 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 ---
 
 ### Rascunho — Modo Prisional e Policial
-
-#### APR-083 — Descriminalização da Maconha
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-083                            │
-│  Descriminalização da maconha                               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se descriminalizava ou mantinha a             │
-│  criminalização do porte de maconha.                        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A guerra às drogas é uma guerra contra os pobres.          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  69% da população carcerária é negra. O Brasil é o 3º       │
-│  país que mais encarcera no mundo.                          │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "A guerra às drogas é uma guerra contra os pobres. E os    │
-│   pobres estão perdendo."                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-084 — Operação Policial Letal
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-084                            │
-│  Operação policial letal                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investigava ou elogiava uma operação       │
-│  policial que matou 10 pessoas em uma favela.               │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As chacinas policiais são tratadas como "incidentes".      │
-│  A imprensa minimiza.                                       │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em 2024, a polícia matou 11 pessoas por dia no Brasil.     │
-│  86% eram negras.                                           │
-│                                                             │
-│  FONTE: Anuário Brasileiro de Segurança Pública, 2024.      │
-│  [não verificado]                                           │
-│                                                             │
-│  "A chacina é esquecida."                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-085 — Câmeras em Uniformes
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-085                            │
-│  Câmeras em uniformes                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se instalava ou recuava das câmeras em        │
-│  uniformes policiais.                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As câmeras reduzem a violência policial. A corporação      │
-│  resiste.                                                   │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Estudos mostram que as câmeras reduzem em até 50% as       │
-│  mortes causadas por policiais.                             │
-│                                                             │
-│  FONTE: NEV-USP, 2024. [não verificado]                     │
-│                                                             │
-│  "A violência policial continua sem prova."                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-086 — Facção Controla Transporte
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-086                            │
-│  Facção controla transporte                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia em transporte público ou          │
-│  intervinha militarmente.                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O crime organizado ocupa o vácuo do Estado. A solução é    │
-│  presença estatal.                                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A intervenção militar não resolve as causas.               │
-│                                                             │
-│  FONTE: ISP-RJ, 2024. [não verificado]                      │
-│                                                             │
-│  "A cidade vira zona de guerra."                            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-087 — Redução da Maioridade Penal
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-087                            │
-│  Redução da maioridade penal                                │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava a redução da maioridade  │
-│  penal.                                                     │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A redução da maioridade penal não reduz a violência.       │
-│  Apenas encarcera mais jovens.                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o 3º país que mais encarcera no mundo.          │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "Mais adolescentes presos."                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-088 — Separação de Presos por Facção
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-088                            │
-│  Separação de presos por facção                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia em ressocialização ou isolava     │
-│  líderes de facções.                                        │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As facções se reorganizam. O sistema prisional é um        │
-│  labirinto de poder paralelo.                               │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A ressocialização é a única saída.                         │
-│                                                             │
-│  FONTE: DEPEN, 2024. [não verificado]                       │
-│                                                             │
-│  "As facções se reorganizam."                               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-089 — Polícia Invade Escola
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-089                            │
-│  Polícia invade escola                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investigava ou justificava a invasão de    │
-│  uma escola na periferia.                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A polícia trata a periferia como zona de guerra.           │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A comunidade fica com mais medo da polícia que dos         │
-│  bandidos.                                                  │
-│                                                             │
-│  FONTE: Anuário Brasileiro de Segurança Pública, 2024.      │
-│  [não verificado]                                           │
-│                                                             │
-│  "A comunidade fica com mais medo da polícia que dos        │
-│   bandidos."                                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-090 — Redução de Danos
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-090                            │
-│  Redução de danos                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava ou proibia um programa de redução   │
-│  de danos.                                                  │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A redução de danos salva vidas. A proibição mata.          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A política de drogas centrada na repressão fracassa.       │
-│                                                             │
-│  FONTE: MS, 2024. [não verificado]                          │
-│                                                             │
-│  "As mortes por overdose aumentam."                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-091 — Líder Comunitário Preso
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-091                            │
-│  Líder comunitário preso                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se soltava ou mantinha preso um líder         │
-│  comunitário sem provas.                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A criminalização da liderança comunitária é uma            │
-│  estratégia de controle.                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A justiça é seletiva.                                      │
-│                                                             │
-│  FONTE: CPT, 2024. [não verificado]                         │
-│                                                             │
-│  "A liderança é criminalizada."                             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-092 — Fim das Saidinhas
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-092                            │
-│  Fim das saidinhas                                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se mantinha ou acabava com as "saidinhas"     │
-│  dos presos.                                                │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  As saidinhas mantêm o vínculo familiar. Acabam com a       │
-│  ressocialização.                                           │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A ressocialização é a única saída para o sistema           │
-│  prisional.                                                 │
-│                                                             │
-│  FONTE: DEPEN, 2024. [não verificado]                       │
-│                                                             │
-│  "O preso perde o contato com a família."                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### APR-093 — Chacina Policial
 
@@ -5231,10 +5319,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 95 | 66 | 200 |
+| **Institucionais** | 115 | 46 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **97** | **66** | **340** |
+| **Total** | **117** | **46** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---
