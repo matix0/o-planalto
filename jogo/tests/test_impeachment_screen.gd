@@ -13,7 +13,7 @@ extends SceneTree
 
 const MAIN_SCENE := "res://scenes/main.tscn"
 const TEST_SETTINGS := "user://test_imp_screen_settings.cfg"
-const SIDE_WORDS := ["esquerda", "direita", "◀", "▶", "←", "→"]
+const SIDE_WORDS := ["esquerda", "direita", "◀", "▶"]   # ← → allowed on the option previews (D-202)
 const METER_IDS := ["dignity", "awareness", "sovereignty", "security", "integrity", "treasury", "political_capital", "legitimacy"]
 const MAX_SEEDS := 60
 const TIME_SCALE := 4.0

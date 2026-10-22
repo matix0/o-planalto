@@ -19,7 +19,7 @@ const EXIT_ENDING := "END-028"          # Renúncia (gdd 02 §3.1, gdd 10 §3.3)
 const IMPEACHMENT_ENDING := "END-007"   # gdd 02 §3.1
 const TBD := ""
 # Texts the repo leaves open (contract: visible "[a definir]" + named constant) — a validar.
-const CAPTURE_WARNING_TEXT := "Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."   # gdd 02 §3.4, T-04.5
+const CAPTURE_WARNING_TEXT := "Cuidado: poder demais também derruba um governo."   # gdd 02 §3.4, T-04.5
 const SCENE_INTRO_TEXT := "A oposição abriu um processo de impeachment. São 5 fases: em cada uma, sua escolha pode salvar ou afundar o mandato."           # T-09.1
 const SCENE_FOOTER := "Impeachment · Fase %d/%d"            # short: one line on the phone (PO, 2026-10-22)
 const SCENE_RESULT_FOOTER := "Impeachment · Resultado"

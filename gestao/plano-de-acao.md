@@ -437,6 +437,25 @@
 
 ---
 
+## P-018 — Pontos restantes do playtest
+
+| Campo | Valor |
+| :--- | :--- |
+| **Status** | 🟡 Itens 1-4 feitos (2026-10-22); 5 aguarda o PO escolher |
+| **Decisões** | D-202 a D-205 |
+| **Objetivo** | Fechar os pontos do playtest que o P-017 não cobriu |
+
+| # | Item | Status |
+| :--- | :--- | :--- |
+| 1 | Opções sempre visíveis nos cantos da carta, com seta (D-202) | ✅ |
+| 2 | Verde ao subir, vermelho ao cair (D-203) | ✅ |
+| 3 | Impacto não antecipado (D-204) | ✅ (sem mudança) |
+| 4 | "Bancada BBB" em termos comuns (D-205) | ✅ |
+| 5 | Próximo bloco: responsividade em várias resoluções + alinhamento dos docs / ações próprias / cartas do DeepSeek | ⏳ PO |
+| — | Travas de toque no celular (Áudio 1) | ⏳ teste do PO |
+
+---
+
 ## Legenda de Status
 
 | Status | Significado |

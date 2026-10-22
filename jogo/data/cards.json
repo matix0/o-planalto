@@ -6894,14 +6894,14 @@
   },
   {
     "id": "INST-121",
-    "title": "Bancada BBB",
+    "title": "Boi, Bala e Bíblia",
     "type": "institutional",
     "mode": "caucuses",
     "speaker": "Câmara dos Deputados",
     "prerequisites": {
       "min_year": 1
     },
-    "problem": "A bancada BBB quer aprovar uma lei que flexibiliza o licenciamento ambiental e aumenta o armamento civil. Em troca, apoia seu pacote fiscal.",
+    "problem": "Agro, segurança e evangélicos querem menos licença ambiental e mais armas. Em troca, apoiam seu pacote fiscal.",
     "option_a": {
       "text": "Recusar",
       "color": "red",
@@ -6917,7 +6917,7 @@
         "legitimacy": 5,
         "integrity": 10
       },
-      "consequence": "A bancada BBB se une contra você. Mas o meio ambiente é preservado.",
+      "consequence": "As três bancadas se unem contra você. Mas o meio ambiente é preservado.",
       "actors": {},
       "events": []
     },

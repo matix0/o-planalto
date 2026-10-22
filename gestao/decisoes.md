@@ -211,6 +211,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-199 | Paleta completa da "ideia inicial" já no P-017: botão primário verde `#2E7D32`; ciano `#80DEEA` em quem fala, título da carta e cabeçalho da calibração; vermelho `#EF5350` no impeachment (cabeçalho, medidor crítico ≤ 20); cor própria por medidor no HUD (clareada a ≥ 3:1 sobre o poço); fundo e selo por categoria na tela final. Revê a D-159 (primária neutra) e a D-162 (escala de ciano). A cor do medidor só no HUD; a cor partidária só na borda da opção | 2026-10-22 | Escolha do PO (P-017) |
 | D-200 | Textos que o comando do PO não cobriu são propostos pelo fio principal e ficam provisórios (DP-025) até o PO aprovar no fim | 2026-10-22 | Escolha do PO (P-017) |
 | D-201 | DP-025 aprovada (textos propostos do P-017 ficam); rodapé da cena encurtado para "Impeachment · Fase X/5" / "Impeachment · Resultado", e o cabeçalho vermelho mantém "Processo de Impeachment · …" | 2026-10-22 | Escolha do PO (P-017) |
+| D-202 | As duas opções aparecem sempre nos cantos de baixo da carta, com seta para o seu lado ("← A", "B →"), e somem quando uma é revelada. Revê a D-084 só nas setas: as palavras "esquerda/direita" seguem proibidas | 2026-10-22 | Escolha do PO (P-018; Áudios 1, 2 e 5, Sergio) |
+| D-203 | Medidor que sobe pisca em verde (`#A5D6A7`) e o que cai em vermelho (`#FF8A80`), no rastro e na borda, durante o preenchimento. Revê a D-156 (pontos sem direção seguem sem direção) | 2026-10-22 | Escolha do PO (P-018) |
+| D-204 | O impacto de uma decisão não é mostrado antes da escolha (a surpresa faz parte do jogo) | 2026-10-22 | Escolha do PO (P-018; Dâmaso) |
+| D-205 | INST-121 "Bancada BBB" vira "Boi, Bala e Bíblia", com o problema em termos comuns; a Carta de Aprendizado segue explicando a sigla. Aviso de Captura encurtado para "Cuidado: poder demais também derruba um governo." (cabe em 36 px) | 2026-10-22 | Escolha do PO (P-018) |
 
 ---
 
@@ -384,6 +388,10 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-199 | Paleta da ideia inicial |
 | D-200 | Textos propostos ficam provisórios |
 | D-201 | DP-025 aprovada; rodapé curto na cena |
+| D-202 | Opções sempre visíveis com seta |
+| D-203 | Verde ao subir, vermelho ao cair |
+| D-204 | Impacto não antecipado |
+| D-205 | "Boi, Bala e Bíblia"; aviso de Captura curto |
 
 ### Governança
 

@@ -9,6 +9,9 @@ Versionamento: [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Alterado (P-018)
+- Opções sempre visíveis nos cantos da carta com seta (D-202); verde ao subir e vermelho ao cair nos medidores (D-203); "Boi, Bala e Bíblia" (D-205)
+
 ### Alterado (P-017, correções do playtest)
 - Nenhum texto "[a definir]" na tela: textos do PO e propostas (DP-025); novo `tests/test_no_placeholders.gd`
 - HUD: cor por medidor, sigla sob cada ícone, borda vermelha ≤ 20 e legenda ao tocar ou passar o mouse; nomes no tutorial 2/4

@@ -9,7 +9,7 @@ extends SceneTree
 
 const MAIN_SCENE := "res://scenes/main.tscn"
 const TEST_SETTINGS := "user://test_shell_settings.cfg"
-const SIDE_WORDS := ["esquerda", "direita", "◀", "▶", "←", "→"]
+const SIDE_WORDS := ["esquerda", "direita", "◀", "▶"]   # ← → allowed on the option previews (D-202)
 const TUTORIAL_TEXTS := [
 	"Você é o Presidente. Cada carta traz um problema. Arraste para um lado ou para o outro para decidir.",
 	"No topo estão os 8 medidores do país. Se um deles zerar, seu mandato acaba na hora.",

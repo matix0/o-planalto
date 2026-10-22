@@ -4,7 +4,7 @@ extends SceneTree
 ## CardFooter, and no side words / no meter numbers in what is shown.
 ## godot --headless --path jogo -s res://tests/test_ui_kit.gd
 
-const SIDE_WORDS: Array[String] = ["esquerda", "direita", "◀", "▶", "←", "→", "⬅", "➡"]
+const SIDE_WORDS: Array[String] = ["esquerda", "direita", "◀", "▶", "⬅", "➡"]   # ← → allowed on the option previews (D-202)
 const START := {
 	"dignity": 45, "awareness": 40, "sovereignty": 40, "security": 50,
 	"integrity": 40, "treasury": 55, "political_capital": 50, "legitimacy": 55,
@@ -205,11 +205,16 @@ func _test_card(host: Control) -> void:
 	_drag(card, c, [c + Vector2(0.25 * w, 0)], 500.0)
 	_expect_events(["reveal:1", "hidden"], "slow release below the limit does not confirm")
 
+	# P-018 (D-202): both options show at the bottom corners until one is revealed.
+	card.reset()
+	var pv: Dictionary = card.preview_texts()
+	_expect(String(pv[-1]).begins_with("← ") and String(pv[1]).ends_with(" →"), "previews with arrows at rest (%s)" % str(pv))
 	# Two-step tap (D-145, D-157).
 	var right := c + Vector2(60, 40)
 	var left := c + Vector2(-60, 40)
 	_tap(card, right)
 	_expect_events(["reveal:1"], "1st tap reveals the touched half")
+	_expect(card.preview_texts().values().all(func(s): return s == ""), "previews hide while an option is revealed")
 	_expect(card.revealed_side() == 1 and option.horizontal_alignment == HORIZONTAL_ALIGNMENT_CENTER, "tap: centered full-width text")
 	_clock += 0.3
 	_tap(card, right)

@@ -3330,21 +3330,21 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 
 ## 17.08 — Cartas do Modo Bancadas (20)
 
-### INST-121 — Bancada BBB
+### INST-121 — Boi, Bala e Bíblia
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **Título** | Bancada BBB |
+| **Título** | Boi, Bala e Bíblia |
 | **Tipo** | Institucional |
 | **Modo** | Bancadas |
 | **Quem fala** | Câmara dos Deputados |
 | **Ano mínimo** | 1 |
 | **Cor A** | Vermelho |
 | **Cor B** | Preto |
-| **Problema** | A bancada BBB quer aprovar uma lei que flexibiliza o licenciamento ambiental e aumenta o armamento civil. Em troca, apoia seu pacote fiscal. |
+| **Problema** | Agro, segurança e evangélicos querem menos licença ambiental e mais armas. Em troca, apoiam seu pacote fiscal. |
 | **Opção A** | Recusar |
 | **Efeitos A** | `Capital Político` -10, `Soberania` +5, `Legitimidade` +5, `Integridade` +10 |
-| **Consequência A** | "A bancada BBB se une contra você. Mas o meio ambiente é preservado." |
+| **Consequência A** | "As três bancadas se unem contra você. Mas o meio ambiente é preservado." |
 | **Eixo A** | [-1, 0, +1, 0] |
 | **Atores A** | — |
 | **Evento A** | — |

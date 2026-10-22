@@ -14,7 +14,7 @@ extends SceneTree
 
 const MAIN_SCENE := "res://scenes/main.tscn"
 const TEST_SETTINGS := "user://test_final_settings.cfg"
-const SIDE_WORDS := ["esquerda", "direita", "◀", "▶", "←", "→"]
+const SIDE_WORDS := ["esquerda", "direita", "◀", "▶"]   # ← → allowed on the option previews (D-202)
 const MAX_SEED := 80
 const SHARE_TEXT := "Compartilhar chega em breve."
 const SCENARIOS := ["term_no_epilogue", "term_epilogue", "catastrophe_no_quote", "catastrophe_quote_epilogue", "impeachment"]

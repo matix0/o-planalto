@@ -3861,12 +3861,12 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ## 18.08 — Cartas de Aprendizado do Modo Bancadas (20 de 20)
 
-### APR-121 — Bancada BBB
+### APR-121 — Boi, Bala e Bíblia
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  CARTA DE APRENDIZADO — INST-121                            │
-│  Bancada BBB                                                │
+│  Boi, Bala e Bíblia                                         │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │

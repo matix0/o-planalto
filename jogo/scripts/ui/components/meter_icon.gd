@@ -98,6 +98,7 @@ func _ready() -> void:
 func set_value(v: int) -> void:
 	_kill()
 	value = clampi(v, 0, 100)
+	_trail.modulate = Color.WHITE
 	_well.value = value
 	_well.tint_progress = _tint(value)
 	_well.offset_transform_scale = Vector2.ONE
@@ -142,6 +143,7 @@ func animate_change(old_value: int, new_value: int, dot: StringName, reduce_moti
 		_place_trail(old_value, new_value)
 		_trail.modulate.a = 1.0
 		_trail.visible = true
+		_flash_direction(new_value > old_value)
 	var band_changed := Tokens.band_of(old_value) != Tokens.band_of(new_value)
 	var fx_time := 0.0
 	_tween = create_tween()
@@ -175,7 +177,10 @@ func _fade_trail() -> void:
 		_trail_tween.kill()
 	_trail_tween = create_tween()
 	_trail_tween.tween_property(_trail, "modulate:a", 0.0, TRAIL_FADE)
-	_trail_tween.tween_callback(func() -> void: _trail.visible = false)
+	_trail_tween.tween_callback(func() -> void:
+		_trail.visible = false
+		_trail.modulate = Color.WHITE
+		_update_edge())
 
 
 ## A-09: new band color in 250 ms + pulse 1.0 → 1.1 → 1.0 in 200 ms.
@@ -237,6 +242,17 @@ func _apply_glyph() -> void:
 func _apply_contrast() -> void:
 	_well.texture_under = rounded_texture(Tokens.HC_BG if high_contrast else Tokens.CARD)
 	_update_edge()
+
+
+## P-018 (PO; D-203): rise = green, fall = red, on the trail and the edge while the well fills;
+## the edge goes back to normal (or critical red) when the animation ends.
+func _flash_direction(up: bool) -> void:
+	var c := Tokens.DELTA_GOOD if up else Tokens.DELTA_BAD
+	_trail.modulate = Color(c, 1.0)
+	_edge.visible = true
+	var box := _edge.get_theme_stylebox(&"panel") as StyleBoxFlat
+	if box:
+		box.border_color = c
 
 
 ## White edge in high contrast; red edge while the meter is critical (P-017, D-199).

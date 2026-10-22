@@ -22,7 +22,7 @@ const TEST_SAVE := "user://test_game_screen_save.json"
 ## Calibration and cards always on side +1: this seed reaches the events of Year 2 after
 ## 7 cards (fictitious data, D-135).
 const RUN_SEED := 2
-const SIDE_WORDS := ["esquerda", "direita", "◀", "▶", "←", "→"]
+const SIDE_WORDS := ["esquerda", "direita", "◀", "▶"]   # ← → allowed on the option previews (D-202)
 const TIME_SCALE := 4.0
 
 var _failures: PackedStringArray = []
@@ -478,10 +478,10 @@ func _component_checks() -> void:
 	yc.held.connect(func() -> void: held.append(1))
 	yc.show_year({"year": 4, "phase": "Desfecho", "title": "Ano 4",
 		"capture_warning": [{"id": "security", "name": "Segurança"}],
-		"capture_warning_text": "Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."}, {"security": 88}, false)
+		"capture_warning_text": "Cuidado: poder demais também derruba um governo."}, {"security": 88}, false)
 	await _frames(2)
 	var yt: PackedStringArray = yc.display_texts()
-	_expect(yt.has("Ano 4") and yt.has("Desfecho") and yt.has("Segurança") and yt.has("Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."), "C-16 capture warning texts")
+	_expect(yt.has("Ano 4") and yt.has("Desfecho") and yt.has("Segurança") and yt.has("Cuidado: poder demais também derruba um governo."), "C-16 capture warning texts")
 	for t in _texts(yc):
 		_expect(not t.contains("88"), "C-16 never shows the meter number")
 	_expect(not await _wait(func() -> bool: return held.size() == 1, 1.0), "C-16 with the Captura warning waits for a tap (D-184)")

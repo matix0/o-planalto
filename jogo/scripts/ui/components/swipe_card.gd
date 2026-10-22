@@ -49,6 +49,11 @@ const ENTER_TIME := 0.25              # A-01 (a validar)
 const SHORT_FADE := 0.15              # reduce motion: fades only (RM board)
 const USE_SCREEN_VELOCITY := false    # D-154: velocity × screen_velocity, to test on devices
 const HALF_HIGHLIGHT_ALPHA := 0.06    # C-04: touched half +6% white (a validar)
+## P-018 (playtest: "não sei para qual lado é qual resposta"; D-202): both options always show
+## at the bottom corners of the card, each with an arrow to its side, until one is revealed.
+const PREVIEW_FORMAT_LEFT := "← %s"
+const PREVIEW_FORMAT_RIGHT := "%s →"
+const PREVIEW_ALPHA := 0.85
 const TITLE_DIM := 0.45               # C-04: title opacity with the option visible (a validar)
 const CRISIS_MARGIN := Tokens.ESP_12  # C-10: hatched frame around the card
 
@@ -118,6 +123,62 @@ var _option_band_box := StyleBoxFlat.new()
 @onready var _hint_timer: Timer = $HintTimer
 
 
+var _previews: Dictionary = {}   # side → Label
+
+
+func _build_previews() -> void:
+	for side in [-1, 1]:
+		var l := Label.new()
+		l.name = "Preview%s" % ("Left" if side < 0 else "Right")
+		l.theme_type_variation = &"Caption"
+		l.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		l.max_lines_visible = 3
+		l.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+		l.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT if side < 0 else HORIZONTAL_ALIGNMENT_RIGHT
+		l.anchor_left = 0.0 if side < 0 else 0.5
+		l.anchor_right = 0.5 if side < 0 else 1.0
+		l.anchor_top = 0.6
+		l.anchor_bottom = 1.0
+		l.offset_left = Tokens.ESP_16 if side < 0 else Tokens.ESP_4
+		l.offset_right = -Tokens.ESP_4 if side < 0 else -Tokens.ESP_16
+		l.offset_top = 0
+		l.offset_bottom = -Tokens.ESP_16
+		l.modulate.a = PREVIEW_ALPHA
+		_card.add_child(l)
+		_card.move_child(l, _face.get_index() + 1)
+		_previews[side] = l
+	option_revealed.connect(func(_s: int) -> void: _set_previews(false))
+	option_hidden.connect(func() -> void: _set_previews(true))
+
+
+func _update_previews() -> void:
+	for side in _previews:
+		var text := String(_sides.get(side, {}).get("text", ""))
+		var l: Label = _previews[side]
+		l.text = (PREVIEW_FORMAT_LEFT if side < 0 else PREVIEW_FORMAT_RIGHT) % text if text != "" else ""
+	# The title keeps the top of the card; the options take the bottom corners.
+	_face.add_theme_constant_override(&"margin_bottom", int(_card.size.y * 0.4) if _previews_on() else Tokens.ESP_24)
+	_set_previews(_text_side == 0)
+
+
+func _previews_on() -> bool:
+	return not _previews.is_empty() and String(_sides.get(-1, {}).get("text", "")) != ""
+
+
+func _set_previews(on: bool) -> void:
+	for l: Label in _previews.values():
+		l.visible = on and l.text != ""
+
+
+## Preview texts (tests): {-1: "← …", 1: "… →"}.
+func preview_texts() -> Dictionary:
+	var out := {}
+	for side in _previews:
+		out[side] = (_previews[side] as Label).text if (_previews[side] as Label).visible else ""
+	return out
+
+
 func _ready() -> void:
 	focus_mode = Control.FOCUS_ALL
 	mouse_filter = Control.MOUSE_FILTER_STOP
@@ -131,6 +192,8 @@ func _ready() -> void:
 	_hint_label.text = TAP_HINT_TEXT
 	_hint_label.add_theme_color_override(&"font_color", Tokens.TEXT)
 	_build_styles()
+	_build_previews()
+	_card.resized.connect(_update_previews)
 	_apply_contrast()
 	_hint_timer.one_shot = true
 	_hint_timer.timeout.connect(_on_hint_timeout)
@@ -165,6 +228,7 @@ func setup(view: Dictionary) -> void:
 	accessibility_name = "Carta: %s" % _title.text
 	accessibility_description = String(view.get("problem", ""))
 	reset()
+	_update_previews()
 
 
 ## Back to rest: centered, no text, no border; hint timer restarted.
