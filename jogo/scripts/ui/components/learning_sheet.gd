@@ -114,6 +114,9 @@ func _ready() -> void:
 	_more.title = MORE_TITLE
 	_more.folded = true
 	_more.focus_mode = Control.FOCUS_ALL
+	# P-017 (playtest, Alisson): the open "Saiba mais" swallowed the finger drag (STOP), so on a
+	# phone the sheet would not scroll down to the source link. PASS lets the drag reach Scroll.
+	_more.mouse_filter = Control.MOUSE_FILTER_PASS
 	_source_link.underline = LinkButton.UNDERLINE_MODE_ALWAYS
 	_source_link.focus_mode = Control.FOCUS_ALL
 	_chevron_down = _icon(ICON_CHEVRON, CHEVRON_SIZE, false)

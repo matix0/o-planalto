@@ -637,4 +637,4 @@ func _update_header() -> void:
 		var gap: Node = $SafeArea/Column/HudGap
 		gap.add_sibling(header)
 	header.add_theme_color_override(&"font_color", Tokens.TEXT if Settings.high_contrast else Tokens.IMPEACH_ACCENT)
-	header.text = _scene_footer()
+	header.text = GameFlow.SCENE_HEADER + _scene_footer().trim_prefix("Impeachment · ")

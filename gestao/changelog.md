@@ -15,6 +15,8 @@ Versionamento: [SemVer](https://semver.org/).
 - Calibração com cabeçalho "ALINHAMENTO INICIAL" e rodapé "Alinhamento · n/6"
 - Paleta da ideia inicial (D-199): primário verde, ciano em quem fala e título, cabeçalho vermelho no impeachment, fundo por categoria na tela final
 - "Sobre" vira "Créditos e licenças" em Configurações (D-198); descrições curtas dos 28 finais
+- Folha de Aprendizado rola com o dedo no celular até o link da fonte (o "Saiba mais" aberto travava o arraste); conferido no Chromium como celular; `tests/test_learning_touch.gd`
+- Rodapé da cena "Impeachment · Fase X/5" (D-201)
 
 ### Alterado (balanceamento, D-197)
 - Gatilho alternativo do impeachment: 5 opções seguidas (era 3); custos de Capital Político pela metade e demais perdas ×0,7 nos docs 17 e `jogo/data/`; sonda `.claude/notas/execucao/ferramentas/bal.gd`

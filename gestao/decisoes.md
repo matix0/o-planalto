@@ -210,6 +210,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-198 | Botão "Sobre" sai da tela inicial; créditos e licenças abrem em Configurações ("Créditos e licenças"), mantendo a D-140 | 2026-10-22 | Escolha do PO (P-017) |
 | D-199 | Paleta completa da "ideia inicial" já no P-017: botão primário verde `#2E7D32`; ciano `#80DEEA` em quem fala, título da carta e cabeçalho da calibração; vermelho `#EF5350` no impeachment (cabeçalho, medidor crítico ≤ 20); cor própria por medidor no HUD (clareada a ≥ 3:1 sobre o poço); fundo e selo por categoria na tela final. Revê a D-159 (primária neutra) e a D-162 (escala de ciano). A cor do medidor só no HUD; a cor partidária só na borda da opção | 2026-10-22 | Escolha do PO (P-017) |
 | D-200 | Textos que o comando do PO não cobriu são propostos pelo fio principal e ficam provisórios (DP-025) até o PO aprovar no fim | 2026-10-22 | Escolha do PO (P-017) |
+| D-201 | DP-025 aprovada (textos propostos do P-017 ficam); rodapé da cena encurtado para "Impeachment · Fase X/5" / "Impeachment · Resultado", e o cabeçalho vermelho mantém "Processo de Impeachment · …" | 2026-10-22 | Escolha do PO (P-017) |
 
 ---
 
@@ -382,6 +383,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-198 | Créditos em Configurações |
 | D-199 | Paleta da ideia inicial |
 | D-200 | Textos propostos ficam provisórios |
+| D-201 | DP-025 aprovada; rodapé curto na cena |
 
 ### Governança
 

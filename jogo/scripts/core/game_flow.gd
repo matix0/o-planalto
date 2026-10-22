@@ -21,8 +21,9 @@ const TBD := ""
 # Texts the repo leaves open (contract: visible "[a definir]" + named constant) — a validar.
 const CAPTURE_WARNING_TEXT := "Cuidado: poder demais num só medidor também derruba um governo no fim do mandato."   # gdd 02 §3.4, T-04.5
 const SCENE_INTRO_TEXT := "A oposição abriu um processo de impeachment. São 5 fases: em cada uma, sua escolha pode salvar ou afundar o mandato."           # T-09.1
-const SCENE_FOOTER := "Processo de Impeachment · Fase %d/%d"
-const SCENE_RESULT_FOOTER := "Processo de Impeachment · Resultado"                  # T-09 (D2)
+const SCENE_FOOTER := "Impeachment · Fase %d/%d"            # short: one line on the phone (PO, 2026-10-22)
+const SCENE_RESULT_FOOTER := "Impeachment · Resultado"
+const SCENE_HEADER := "Processo de Impeachment · "          # the header keeps the full name                  # T-09 (D2)
 const ACQUITTAL_TITLE := "Absolvido"         # T-09.7
 const CONVICTION_TITLE := "Afastado"        # T-09.8
 const RESULT_TEXT := "O processo foi arquivado. Seu governo continua, mas a crise deixou marcas."
