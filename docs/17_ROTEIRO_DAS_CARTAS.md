@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 271 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 301 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -7717,6 +7717,846 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 | **Aprendizado** | APR-ATOR-001 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
 
+### ATOR-002 — Tratores contra a lista suja
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tratores contra a lista suja |
+| **Tipo** | Ator |
+| **Modo** | Bancadas |
+| **Função** | `ACT-001` · Ataque |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Verde |
+| **Problema** | Fazendeiros fecham rodovias com tratores. Exigem que o governo pare de publicar quem usa trabalho escravo. |
+| **Opção A** | Manter a lista suja |
+| **Efeitos A** | `Dignidade` +15, `Integridade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "As rodovias seguem fechadas por dias. A lista continua pública." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-001` -1, `ACT-015` +1 |
+| **Evento A** | "Falta comida nos mercados do interior" · atraso 1 · `Segurança` -5, `Caixa` -5 |
+| **Opção B** | Suspender a lista |
+| **Efeitos B** | `Capital Político` +15, `Caixa` +5, `Dignidade` -15, `Integridade` -10 |
+| **Consequência B** | "As estradas abrem. Quem explora trabalhador some do cadastro público." |
+| **Eixo B** | [+1, 0, -1, -1] |
+| **Atores B** | `ACT-001` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-002 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-003 — Comitiva com os fazendeiros
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Comitiva com os fazendeiros |
+| **Tipo** | Ator |
+| **Modo** | Geopolítico |
+| **Função** | `ACT-001` · Oferta |
+| **Quem fala** | `ACT-001` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Azul |
+| **Problema** | Os fazendeiros abriram um mercado novo para a carne no exterior. Querem viajar na comitiva oficial do governo. |
+| **Opção A** | Levar na comitiva |
+| **Efeitos A** | `Caixa` +15, `Capital Político` +10 |
+| **Consequência A** | "Os contratos saem na viagem. A foto oficial tem mais chapéu que gravata." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-001` +1, `ACT-017` -1 |
+| **Evento A** | — |
+| **Opção B** | Viajar sem eles |
+| **Efeitos B** | `Soberania` +5, `Caixa` -5, `Capital Político` -10 |
+| **Consequência B** | "A comitiva fica menor. Os fazendeiros negociam por conta própria." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-001` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-003 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-004 — Previdência por capitalização
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Previdência por capitalização |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-002` · Exigência |
+| **Quem fala** | `ACT-002` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Vermelho |
+| **Problema** | Os investidores pedem que a aposentadoria vire poupança individual, aplicada pelos bancos. Prometem que o mercado sobe. |
+| **Opção A** | Criar a capitalização |
+| **Efeitos A** | `Caixa` +15, `Capital Político` +5, `Dignidade` -20 |
+| **Consequência A** | "Os bancos ganham clientes. Quem ganha pouco poupa pouco e se aposenta com menos." |
+| **Eixo A** | [+2, 0, 0, 0] |
+| **Atores A** | `ACT-002` +1, `ACT-015` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter o modelo público |
+| **Efeitos B** | `Dignidade` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência B** | "O mercado reclama. A aposentadoria segue paga por quem trabalha hoje." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-002` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-004 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-005 — Ameaça de fuga de capitais
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ameaça de fuga de capitais |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-002` · Ataque |
+| **Quem fala** | `ACT-002` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Os investidores ameaçam tirar dinheiro do país se você taxar os super-ricos. Os jornais falam em pânico. |
+| **Opção A** | Taxar os super-ricos |
+| **Efeitos A** | `Caixa` +10, `Dignidade` +10, `Capital Político` -15 |
+| **Consequência A** | "O imposto passa. Colunistas preveem o fim do mundo na mesma semana." |
+| **Eixo A** | [-2, 0, 0, 0] |
+| **Atores A** | `ACT-002` -1, `ACT-015` +1 |
+| **Evento A** | "Parte dos fundos muda de país" · atraso 2 · `Caixa` -10 |
+| **Opção B** | Recuar da taxação |
+| **Efeitos B** | `Capital Político` +10, `Caixa` +5, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O mercado acalma. Quem vive de salário paga mais, em proporção." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-005 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-006 — Fundo privado para casas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fundo privado para casas |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-002` · Oferta |
+| **Quem fala** | `ACT-002` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Laranja |
+| **Problema** | Os investidores oferecem dinheiro para erguer casas populares. Em troca, o governo garante o lucro deles por anos. |
+| **Opção A** | Fechar a parceria |
+| **Efeitos A** | `Dignidade` +15, `Caixa` +10 |
+| **Consequência A** | "As obras começam rápido. O contrato prende o orçamento por muito tempo." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-002` +1, `ACT-016` +1 |
+| **Evento A** | "A conta do lucro garantido chega" · atraso 2 · `Caixa` -10 |
+| **Opção B** | Fazer com verba pública |
+| **Efeitos B** | `Dignidade` +5, `Soberania` +5, `Caixa` -15 |
+| **Consequência B** | "O governo faz menos casas, mas não deve lucro a ninguém." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-002` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-006 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-007 — Casas longe de tudo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Casas longe de tudo |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-003` · Exigência |
+| **Quem fala** | `ACT-003` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | As construtoras querem erguer o novo conjunto popular num terreno barato, longe de emprego, escola e ônibus. |
+| **Opção A** | Aceitar o terreno |
+| **Efeitos A** | `Caixa` +10, `Capital Político` +5, `Dignidade` -15 |
+| **Consequência A** | "As casas saem rápido. As famílias passam horas no ônibus todo dia." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-003` +1, `ACT-016` -1 |
+| **Evento A** | — |
+| **Opção B** | Exigir área central |
+| **Efeitos B** | `Dignidade` +10, `Caixa` -15, `Capital Político` -5 |
+| **Consequência B** | "A obra atrasa. Prédios vazios do centro viram moradia." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-003` -1, `ACT-016` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-007 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-008 — Cartel nas licitações
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Cartel nas licitações |
+| **Tipo** | Ator |
+| **Modo** | Emendas |
+| **Função** | `ACT-003` · Ataque |
+| **Quem fala** | `ACT-003` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Azul |
+| **Problema** | Uma auditoria acha cartel nas obras federais. As construtoras ameaçam parar todos os canteiros se forem punidas. |
+| **Opção A** | Punir o cartel |
+| **Efeitos A** | `Integridade` +15, `Legitimidade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "As empresas ficam fora das licitações. Obras param à espera de novas firmas." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-003` -1 |
+| **Evento A** | — |
+| **Opção B** | Fazer acordo de leniência |
+| **Efeitos B** | `Caixa` +10, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "As obras seguem. As empresas pagam multa e voltam a disputar contratos." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-003` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-008 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-009 — Reconstrução depois da enchente
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Reconstrução depois da enchente |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-003` · Oferta |
+| **Quem fala** | `ACT-003` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Verde |
+| **Cor B** | Preto |
+| **Problema** | Depois de uma enchente, as construtoras oferecem reerguer pontes e casas já. Querem dispensa de licitação. |
+| **Opção A** | Aceitar a oferta |
+| **Efeitos A** | `Segurança` +15, `Dignidade` +10 |
+| **Consequência A** | "As pontes voltam em semanas. Ninguém confere bem o preço." |
+| **Eixo A** | [+1, 0, 0, -1] |
+| **Atores A** | `ACT-003` +1, `ACT-023` -1 |
+| **Evento A** | "Auditoria acha preço inflado" · atraso 2 · `Integridade` -10 |
+| **Opção B** | Manter a licitação |
+| **Efeitos B** | `Integridade` +10, `Dignidade` -10, `Capital Político` -5 |
+| **Consequência B** | "Tudo fica registrado. As famílias esperam mais pela casa nova." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-003` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-009 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-010 — Imposto nas compras de fora
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Imposto nas compras de fora |
+| **Tipo** | Ator |
+| **Modo** | Geopolítico |
+| **Função** | `ACT-004` · Exigência |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | A indústria pede imposto sobre compras baratas em sites estrangeiros. Diz que a loja do bairro não aguenta. |
+| **Opção A** | Taxar as compras |
+| **Efeitos A** | `Soberania` +10, `Caixa` +5, `Dignidade` -10, `Capital Político` -5 |
+| **Consequência A** | "As fábricas comemoram. Jovens reclamam do preço das roupas." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-004` +1, `ACT-021` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter sem imposto |
+| **Efeitos B** | `Dignidade` +5, `Legitimidade` +5, `Soberania` -10 |
+| **Consequência B** | "As compras seguem baratas. Lojas de bairro fecham as portas." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-004` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-010 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-011 — Fábrica fecha e culpa você
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fábrica fecha e culpa você |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-004` · Ataque |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Laranja |
+| **Problema** | Uma grande fábrica anuncia demissões em massa. Os donos culpam a nova regra contra a poluição e pedem que ela caia. |
+| **Opção A** | Manter a regra |
+| **Efeitos A** | `Consciência` +10, `Integridade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência A** | "O ar da cidade melhora. Os demitidos culpam o governo." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-018` +1 |
+| **Evento A** | "A cidade da fábrica protesta" · atraso 1 · `Legitimidade` -10 |
+| **Opção B** | Adiar a regra |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Consciência` -10, `Dignidade` -5 |
+| **Consequência B** | "A fábrica fica. A fumaça também." |
+| **Eixo B** | [+1, 0, -1, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-018` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-011 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-012 — Plataformas no estaleiro nacional
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Plataformas no estaleiro nacional |
+| **Tipo** | Ator |
+| **Modo** | Geopolítico |
+| **Função** | `ACT-004` · Oferta |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | A indústria naval oferece construir no país as plataformas de petróleo. Gera emprego, mas custa mais que comprar fora. |
+| **Opção A** | Encomendar no país |
+| **Efeitos A** | `Soberania` +15, `Dignidade` +10 |
+| **Consequência A** | "Os estaleiros voltam a contratar. As primeiras entregas atrasam." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-004` +1, `ACT-015` +1 |
+| **Evento A** | "A estatal paga mais pelas plataformas" · atraso 2 · `Caixa` -10 |
+| **Opção B** | Comprar no exterior |
+| **Efeitos B** | `Caixa` +10, `Soberania` -10, `Dignidade` -5 |
+| **Consequência B** | "A plataforma chega no prazo. Os estaleiros seguem vazios." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-004` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-012 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-013 — Enfermagem a distância
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Enfermagem a distância |
+| **Tipo** | Ator |
+| **Modo** | Currículo e Mídia |
+| **Função** | `ACT-005` · Exigência |
+| **Quem fala** | `ACT-005` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Verde |
+| **Problema** | As faculdades privadas pedem licença para formar enfermeiros só a distância. Dizem que levam o curso ao interior. |
+| **Opção A** | Liberar o curso |
+| **Efeitos A** | `Caixa` +10, `Capital Político` +5, `Dignidade` -10, `Consciência` -5 |
+| **Consequência A** | "Abrem vagas baratas. Hospitais desconfiam de quem nunca pisou num laboratório." |
+| **Eixo A** | [+1, 0, 0, +1] |
+| **Atores A** | `ACT-005` +1, `ACT-014` -1 |
+| **Evento A** | — |
+| **Opção B** | Exigir aula prática |
+| **Efeitos B** | `Dignidade` +5, `Consciência` +5, `Capital Político` -10 |
+| **Consequência B** | "O curso fica mais caro e mais raro. Quem se forma chega pronto ao plantão." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-005` -1, `ACT-014` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-013 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-014 — Faculdades vão ao Supremo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Faculdades vão ao Supremo |
+| **Tipo** | Ator |
+| **Modo** | Judiciário |
+| **Função** | `ACT-005` · Ataque |
+| **Quem fala** | `ACT-005` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Você limitou o lucro das faculdades com dinheiro do FIES. Elas vão ao Supremo e ameaçam fechar campi. |
+| **Opção A** | Defender a regra |
+| **Efeitos A** | `Caixa` +10, `Integridade` +10, `Capital Político` -10 |
+| **Consequência A** | "A Advocacia da União defende a regra. Os donos falam em perseguição." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-005` -1, `ACT-013` +1 |
+| **Evento A** | "Um campus fecha no meio do semestre" · atraso 1 · `Dignidade` -5, `Consciência` -5 |
+| **Opção B** | Negociar a regra |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
+| **Consequência B** | "As faculdades retiram a ação. O dinheiro público segue sem controle." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-005` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-014 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-015 — Bolsas para quem trabalha
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Bolsas para quem trabalha |
+| **Tipo** | Ator |
+| **Modo** | Currículo e Mídia |
+| **Função** | `ACT-005` · Oferta |
+| **Quem fala** | `ACT-005` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Laranja |
+| **Cor B** | Vermelho |
+| **Problema** | As faculdades oferecem bolsas para jovens que trabalham de dia. Pedem em troca mais tempo de isenção de impostos. |
+| **Opção A** | Aceitar as bolsas |
+| **Efeitos A** | `Consciência` +10, `Dignidade` +10 |
+| **Consequência A** | "Turmas noturnas lotam. A isenção dura mais que o previsto." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-005` +1, `ACT-013` -1 |
+| **Evento A** | — |
+| **Opção B** | Ampliar a federal |
+| **Efeitos B** | `Consciência` +10, `Caixa` -15, `Capital Político` -5 |
+| **Consequência B** | "Abrem turmas noturnas na universidade pública. A obra demora." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-005` -1, `ACT-013` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-015 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-016 — Fim da estabilidade no serviço
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fim da estabilidade no serviço |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-006` · Exigência |
+| **Quem fala** | `ACT-006` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Roxo |
+| **Problema** | O mercado cobra o fim da estabilidade dos novos servidores. Diz que só assim confia nas contas do país. |
+| **Opção A** | Propor o fim |
+| **Efeitos A** | `Caixa` +10, `Capital Político` +5, `Integridade` -10, `Dignidade` -5 |
+| **Consequência A** | "A bolsa sobe. Servidores temem perseguição de cada novo chefe." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-006` +1, `ACT-009` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a estabilidade |
+| **Efeitos B** | `Integridade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência B** | "Os servidores respiram. Os analistas cortam a previsão para o país." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-006` -1, `ACT-009` +1 |
+| **Evento B** | "Agências rebaixam a nota do país" · atraso 2 · `Caixa` -10 |
+| **Aprendizado** | APR-ATOR-016 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-017 — Dólar dispara num dia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Dólar dispara num dia |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-006` · Ataque |
+| **Quem fala** | `ACT-006` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Preto |
+| **Problema** | Especuladores apostam contra o real e o dólar dispara. Os preços nos mercados sobem na mesma semana. |
+| **Opção A** | Gastar as reservas |
+| **Efeitos A** | `Dignidade` +5, `Segurança` +5, `Soberania` -15 |
+| **Consequência A** | "O dólar acalma. O país fica com menos colchão para a próxima crise." |
+| **Eixo A** | [+1, +1, 0, 0] |
+| **Atores A** | `ACT-006` +1 |
+| **Evento A** | — |
+| **Opção B** | Controlar a saída |
+| **Efeitos B** | `Soberania` +10, `Dignidade` +5, `Caixa` -10, `Capital Político` -10 |
+| **Consequência B** | "A especulação para. Investidores dizem que o país virou armadilha." |
+| **Eixo B** | [-2, -1, 0, -1] |
+| **Atores B** | `ACT-006` -1, `ACT-002` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-017 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-018 — Mutirão contra as dívidas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mutirão contra as dívidas |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-006` · Oferta |
+| **Quem fala** | `ACT-006` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Verde |
+| **Cor B** | Vermelho |
+| **Problema** | Os bancos oferecem perdoar parte das dívidas das famílias. Pedem que o governo garanta o resto com dinheiro público. |
+| **Opção A** | Garantir o acordo |
+| **Efeitos A** | `Dignidade` +15, `Legitimidade` +5 |
+| **Consequência A** | "Milhões limpam o nome. Os bancos recebem o que davam por perdido." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-006` +1, `ACT-015` +1 |
+| **Evento A** | — |
+| **Opção B** | Limitar os juros |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência B** | "Os juros caem por lei. Os bancos cortam crédito para os mais pobres." |
+| **Eixo B** | [-2, 0, 0, -1] |
+| **Atores B** | `ACT-006` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-018 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-019 — Verba só por resultado
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Verba só por resultado |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-007` · Exigência |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | Os técnicos querem dar verba só às escolas que sobem a nota na prova. As que vão mal perdem dinheiro. |
+| **Opção A** | Adotar a regra |
+| **Efeitos A** | `Caixa` +10, `Integridade` +5, `Dignidade` -10, `Consciência` -5 |
+| **Consequência A** | "Algumas escolas melhoram. As mais pobres perdem verba e afundam." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-007` +1, `ACT-013` -1 |
+| **Evento A** | — |
+| **Opção B** | Dar mais a quem precisa |
+| **Efeitos B** | `Dignidade` +10, `Consciência` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência B** | "As escolas pobres recebem mais. Os técnicos dizem que ninguém cobra resultado." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-007` -1, `ACT-013` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-019 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-020 — Estudo contra seu programa
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Estudo contra seu programa |
+| **Tipo** | Ator |
+| **Modo** | Emendas |
+| **Função** | `ACT-007` · Ataque |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Vermelho |
+| **Problema** | Técnicos do próprio governo publicam um estudo que chama de desperdício o seu programa de cozinhas solidárias. |
+| **Opção A** | Rever o programa |
+| **Efeitos A** | `Integridade` +10, `Caixa` +10, `Dignidade` -10 |
+| **Consequência A** | "O programa encolhe. Quem comia ali procura outra porta." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-007` +1, `ACT-016` -1 |
+| **Evento A** | — |
+| **Opção B** | Defender o programa |
+| **Efeitos B** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência B** | "As cozinhas seguem. Você chama o estudo de frio e incompleto." |
+| **Eixo B** | [-1, 0, 0, 0] |
+| **Atores B** | `ACT-007` -1 |
+| **Evento B** | "A oposição usa o estudo na tribuna" · atraso 1 · `Capital Político` -10 |
+| **Aprendizado** | APR-ATOR-020 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-021 — Serviços públicos num aplicativo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Serviços públicos num aplicativo |
+| **Tipo** | Ator |
+| **Modo** | Orçamento |
+| **Função** | `ACT-007` · Oferta |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Roxo |
+| **Cor B** | Laranja |
+| **Problema** | Os técnicos oferecem pôr os serviços públicos num só aplicativo. A fila acaba, mas quem não tem internet fica de fora. |
+| **Opção A** | Lançar o aplicativo |
+| **Efeitos A** | `Caixa` +10, `Integridade` +10 |
+| **Consequência A** | "A fila some das agências. Os golpes por mensagem aumentam." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-007` +1, `ACT-014` -1 |
+| **Evento A** | "Idosos sem celular perdem benefícios" · atraso 2 · `Dignidade` -10 |
+| **Opção B** | Manter o balcão também |
+| **Efeitos B** | `Dignidade` +10, `Segurança` +5, `Caixa` -15 |
+| **Consequência B** | "O aplicativo sai, mas o atendimento de porta segue aberto." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-007` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-021 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-022 — Soldado julgado no quartel
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Soldado julgado no quartel |
+| **Tipo** | Ator |
+| **Modo** | Prisional e Policial |
+| **Função** | `ACT-008` · Exigência |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Roxo |
+| **Problema** | Os generais pedem que crimes de soldados contra civis, em operações nas cidades, sejam julgados pela Justiça Militar. |
+| **Opção A** | Aceitar o pedido |
+| **Efeitos A** | `Segurança` +10, `Capital Político` +5, `Integridade` -10, `Legitimidade` -10 |
+| **Consequência A** | "Os quartéis aplaudem. Famílias de vítimas perdem o júri comum." |
+| **Eixo A** | [0, 0, 0, -2] |
+| **Atores A** | `ACT-008` +1, `ACT-023` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter na Justiça comum |
+| **Efeitos B** | `Integridade` +10, `Legitimidade` +5, `Segurança` -10 |
+| **Consequência B** | "Os generais se calam em público. Nos bastidores, a conversa esfria." |
+| **Eixo B** | [0, 0, +1, +1] |
+| **Atores B** | `ACT-008` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-022 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-023 — Quartel cruza os braços
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Quartel cruza os braços |
+| **Tipo** | Ator |
+| **Modo** | Prisional e Policial |
+| **Função** | `ACT-008` · Ataque |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Laranja |
+| **Cor B** | Azul |
+| **Problema** | Você cortou verba dos quartéis. Os comandos suspendem o apoio às operações contra o tráfico de armas na fronteira. |
+| **Opção A** | Repor a verba |
+| **Efeitos A** | `Segurança` +10, `Soberania` +5, `Caixa` -15 |
+| **Consequência A** | "As operações voltam. Os quartéis aprendem que a pressão funciona." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-008` +1 |
+| **Evento A** | — |
+| **Opção B** | Usar a Polícia Federal |
+| **Efeitos B** | `Integridade` +10, `Segurança` -10, `Caixa` -5 |
+| **Consequência B** | "A PF assume a fronteira. Falta gente para tanto chão." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-008` -1 |
+| **Evento B** | "Armas entram sem patrulha" · atraso 1 · `Soberania` -5, `Segurança` -5 |
+| **Aprendizado** | APR-ATOR-023 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-024 — Hospital de campanha na aldeia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Hospital de campanha na aldeia |
+| **Tipo** | Ator |
+| **Modo** | Prisional e Policial |
+| **Função** | `ACT-008` · Oferta |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 3 |
+| **Cor A** | Verde |
+| **Cor B** | Vermelho |
+| **Problema** | Os militares oferecem montar hospitais de campanha numa terra indígena em crise de saúde. Pedem o comando da ação. |
+| **Opção A** | Aceitar o comando |
+| **Efeitos A** | `Dignidade` +10, `Segurança` +10 |
+| **Consequência A** | "O socorro chega rápido. Lideranças indígenas pedem voz nas decisões." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-008` +1, `ACT-018` -1 |
+| **Evento A** | — |
+| **Opção B** | Pôr a Saúde no comando |
+| **Efeitos B** | `Dignidade` +10, `Legitimidade` +5, `Caixa` -10 |
+| **Consequência B** | "Médicos civis lideram. Os quartéis apoiam com menos vontade." |
+| **Eixo B** | [0, 0, +1, +1] |
+| **Atores B** | `ACT-008` -1, `ACT-014` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-024 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-025 — Reajuste dos servidores
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Reajuste dos servidores |
+| **Tipo** | Ator |
+| **Modo** | Emendas |
+| **Função** | `ACT-009` · Exigência |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Os servidores federais pedem reajuste para repor anos sem aumento. Ameaçam greve nas agências e nos institutos. |
+| **Opção A** | Dar o reajuste |
+| **Efeitos A** | `Soberania` +5, `Capital Político` +5, `Caixa` -15 |
+| **Consequência A** | "A greve não sai. O caixa aperta para as outras áreas." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-009` +1 |
+| **Evento A** | — |
+| **Opção B** | Congelar os salários |
+| **Efeitos B** | `Caixa` +10, `Soberania` -10, `Legitimidade` -5 |
+| **Consequência B** | "O caixa respira. Os melhores técnicos pedem para sair." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-009` -1 |
+| **Evento B** | "Greve fecha agências do INSS" · atraso 1 · `Dignidade` -10, `Legitimidade` -5 |
+| **Aprendizado** | APR-ATOR-025 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-026 — Operação padrão nos portos
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Operação padrão nos portos |
+| **Tipo** | Ator |
+| **Modo** | Geopolítico |
+| **Função** | `ACT-009` · Ataque |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Preto |
+| **Problema** | Auditores fazem operação padrão nos portos. Cargas de exportação param e compradores de fora ameaçam cancelar pedidos. |
+| **Opção A** | Negociar com os auditores |
+| **Efeitos A** | `Soberania` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "Os portos voltam a girar. Outras categorias pedem o mesmo." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-009` +1 |
+| **Evento A** | — |
+| **Opção B** | Cortar o ponto |
+| **Efeitos B** | `Caixa` +10, `Capital Político` +5, `Soberania` -10, `Legitimidade` -5 |
+| **Consequência B** | "Os auditores voltam irritados. A fiscalização de cargas afrouxa." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-009` -1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-026 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-027 — Auditores contra a sonegação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Auditores contra a sonegação |
+| **Tipo** | Ator |
+| **Modo** | Geopolítico |
+| **Função** | `ACT-009` · Oferta |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Laranja |
+| **Problema** | Auditores da Receita oferecem um plano para cobrar impostos que multinacionais escondem lá fora. Pedem equipe e sistemas. |
+| **Opção A** | Dar a equipe |
+| **Efeitos A** | `Caixa` +15, `Soberania` +10 |
+| **Consequência A** | "As cobranças começam. Escritórios de advocacia lotam a Justiça de recursos." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-009` +1, `ACT-021` -1 |
+| **Evento A** | "Multinacionais ameaçam sair do país" · atraso 2 · `Capital Político` -10 |
+| **Opção B** | Deixar para depois |
+| **Efeitos B** | `Capital Político` +5, `Caixa` -5, `Integridade` -5 |
+| **Consequência B** | "O plano vai para a gaveta. As empresas seguem com imposto menor." |
+| **Eixo B** | [0, +1, 0, 0] |
+| **Atores B** | `ACT-009` -1, `ACT-021` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-027 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-028 — Tratado parado no Congresso
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tratado parado no Congresso |
+| **Tipo** | Ator |
+| **Modo** | Congresso |
+| **Função** | `ACT-010` · Exigência |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | Os diplomatas pedem que você gaste apoio no Congresso para aprovar um tratado contra o tráfico de armas. A bancada da bala resiste. |
+| **Opção A** | Brigar pelo tratado |
+| **Efeitos A** | `Segurança` +10, `Legitimidade` +5, `Capital Político` -15 |
+| **Consequência A** | "O tratado passa por pouco. A bancada da bala anota o seu nome." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-010` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Deixar na gaveta |
+| **Efeitos B** | `Capital Político` +10, `Segurança` -10, `Legitimidade` -5 |
+| **Consequência B** | "O tratado espera. O Brasil chega sem ele à próxima cúpula." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-028 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-029 — Venda de blindados a ditador
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Venda de blindados a ditador |
+| **Tipo** | Ator |
+| **Modo** | Bancadas |
+| **Função** | `ACT-010` · Ataque |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Preto |
+| **Problema** | Diplomatas vazam ao Senado que você autorizou vender blindados a um governo que reprime protestos. |
+| **Opção A** | Cancelar a venda |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Caixa` -10 |
+| **Consequência A** | "A indústria de defesa perde o contrato. Os diplomatas recuperam a voz." |
+| **Eixo A** | [0, +1, +1, +1] |
+| **Atores A** | `ACT-010` +1, `ACT-004` -1 |
+| **Evento A** | — |
+| **Opção B** | Manter a venda |
+| **Efeitos B** | `Caixa` +10, `Soberania` +5, `Legitimidade` -10, `Integridade` -5 |
+| **Consequência B** | "O contrato segue. O Itamaraty abre apuração do vazamento." |
+| **Eixo B** | [0, -1, 0, -1] |
+| **Atores B** | `ACT-010` -1, `ACT-004` +1 |
+| **Evento B** | "Blindados aparecem nas ruas de lá" · atraso 2 · `Legitimidade` -10 |
+| **Aprendizado** | APR-ATOR-029 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-030 — Ministério de porteira fechada
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ministério de porteira fechada |
+| **Tipo** | Ator |
+| **Modo** | Congresso |
+| **Função** | `ACT-011` · Exigência |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | O líder da Câmara quer um ministério inteiro para o partido, com todos os cargos. Em troca, entrega a base. |
+| **Opção A** | Entregar o ministério |
+| **Efeitos A** | `Capital Político` +20, `Integridade` -10, `Legitimidade` -10 |
+| **Consequência A** | "As votações andam. Técnicos dão lugar a indicados do partido." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-011` +1, `ACT-023` -1 |
+| **Evento A** | — |
+| **Opção B** | Oferecer só a chefia |
+| **Efeitos B** | `Integridade` +10, `Capital Político` -15 |
+| **Consequência B** | "O partido aceita a cadeira e cobra o resto em cada votação." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-030 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### ATOR-031 — Pauta-bomba na Câmara
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pauta-bomba na Câmara |
+| **Tipo** | Ator |
+| **Modo** | Bancadas |
+| **Função** | `ACT-011` · Ataque |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | Irritado, o líder da Câmara põe em votação gastos que estouram o orçamento. Você decide se veta. |
+| **Opção A** | Vetar os gastos |
+| **Efeitos A** | `Caixa` +10, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "O veto segura as contas. O líder promete o troco." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | "A Câmara derruba o veto" · atraso 2 · `Caixa` -10 |
+| **Opção B** | Ceder e negociar |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -15, `Integridade` -5 |
+| **Consequência B** | "A crise acaba. A conta fica para o próximo ano." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-ATOR-031 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.14 — Resumo do Roteiro
@@ -7725,8 +8565,8 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 | :--- | :--- | :--- |
 | **Institucionais** | 200 | 200 |
 | **Temáticas** | 70 | 70 |
-| **Atores** | 1 | 70 |
-| **Total** | **271** | **340** |
+| **Atores** | 31 | 70 |
+| **Total** | **301** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---
