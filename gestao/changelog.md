@@ -9,6 +9,9 @@ Versionamento: [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Alterado (balanceamento, D-197)
+- Gatilho alternativo do impeachment: 5 opções seguidas (era 3); custos de Capital Político pela metade e demais perdas ×0,7 nos docs 17 e `jogo/data/`; sonda `.claude/notas/execucao/ferramentas/bal.gd`
+
 ### Adicionado (jogo jogável)
 - O jogo usa as 57 cartas reais dos docs 17 e 18 (D-194); baralho fictício só nos testes (`jogo/tests/fixtures/data/`); novo `test_real_data.gd`
 - Jogo no navegador em `/jogar/` do site, exportado pelo workflow (D-195)

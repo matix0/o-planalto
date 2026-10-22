@@ -44,7 +44,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A base está rachada. Alguns aliados já negociam com a oposição.",
       "test": {
@@ -102,7 +102,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "A comissão suaviza o parecer. Mas o povo percebe a compra de votos.",
@@ -161,7 +161,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "security": -5
       },
       "consequence": "Alguns votos mudam de lado. O preço vem depois.",
@@ -220,7 +220,7 @@
       "effects": {
         "political_capital": 5,
         "legitimacy": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "Os cargos são aceitos. As promessas ao povo esperam.",
       "test": {

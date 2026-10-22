@@ -21,7 +21,7 @@ O jogador sente o cerco: o processo é político, não jurídico. Sobreviver exi
 | :--- | :--- | :--- |
 | Principal | `Legitimidade` < 20 E `Capital Político` < 20 | Ano 2 |
 | Crise | `Integridade` < 20 E `Consciência` < 20 | Ano 2 |
-| Alternativo | 3 opções seguidas com efeito negativo em `Capital Político`; a contagem zera ao abrir o Ano 2 (D-179) | Ano 2 |
+| Alternativo | 5 opções seguidas com efeito negativo em `Capital Político`; a contagem zera ao abrir o Ano 2 (D-179; 5 pela D-197) | Ano 2 |
 | Capital em 0 | `Capital Político` = 0 (D-095) | Ano 1 |
 
 Os gatilhos de medidor são checados no passo 6 do fechamento do turno (`gdd/sistemas/01_medidores.md` §3.4); `Capital Político` = 0, logo após a carta ou o evento (`gdd/sistemas/08_eventos.md` §5); o alternativo, depois da Carta de Aprendizado da 3ª opção da sequência (D-179).

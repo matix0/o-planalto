@@ -285,7 +285,7 @@ O impeachment não é negociação. É uma **cena de golpe**.
 | :--- | :--- | :--- |
 | **Principal** | `Legitimidade` < 20 **E** `Capital Político` < 20 | Ano 2 |
 | **Crise** | `Integridade` < 20 **E** `Consciência` < 20 | Ano 2 |
-| **Alternativo** | 3 opções seguidas com efeito negativo em `Capital Político` | Ano 2 |
+| **Alternativo** | 5 opções seguidas com efeito negativo em `Capital Político` (D-197) | Ano 2 |
 | **Capital em 0** | `Capital Político` = 0 (D-095) | Ano 1 |
 
 **Correção:** O impeachment pode ser acionado a partir do **Ano 2**, não apenas do Ano 3 (exceto Capital em 0, que vale em qualquer ano).

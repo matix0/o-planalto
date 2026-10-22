@@ -82,7 +82,7 @@ func _triggers() -> void:
 	_eq(both, ["capital_zero", "principal"], "two triggers")
 	_eq(ImpeachmentRules.min_support(both), 3, "capital 0 → support ≥ 3")
 	_eq(ImpeachmentRules.min_support(["principal"]), 2, "otherwise support ≥ 2")
-	_check(ImpeachmentRules.alternative_fires(3, 2) and not ImpeachmentRules.alternative_fires(3, 1) and not ImpeachmentRules.alternative_fires(2, 2), "alternative: 3 in a row from Ano 2")
+	_check(ImpeachmentRules.alternative_fires(5, 2) and not ImpeachmentRules.alternative_fires(5, 1) and not ImpeachmentRules.alternative_fires(4, 2), "alternative: 5 in a row (D-197) from Ano 2")
 	# Through the closing of Ano 2 (relations first, then step 6).
 	var f := _flow(2, {"legitimacy": 18, "political_capital": 15})
 	f._close_turn()
@@ -190,8 +190,8 @@ func _catastrophe_in_scene() -> void:
 	var f := _flow(2, {"treasury": 45})
 	f._start_impeachment(["principal"], "next_year")
 	f.continue_impeachment()
-	f.run.meters["treasury"] = 10
-	var r := f.choose_impeachment(-int(f.run.impeachment["side_a"]))   # phase 1 option B: treasury −10
+	f.run.meters["treasury"] = 5
+	var r := f.choose_impeachment(-int(f.run.impeachment["side_a"]))   # phase 1 option B: treasury −5 (D-197)
 	_eq([r["next"], r["ending_id"]], [&"final", "END-006"], "meter at 0 in the scene → catastrophe")
 	# §3.2.7: capital at 0 during the scene does nothing.
 	f = _flow(2, {"political_capital": 0})
@@ -234,7 +234,7 @@ func _alternative_trigger() -> void:
 	var card := _synthetic("INST-992", {"political_capital": -5, "dignity": 5}, [])
 	for year in [1, 2]:
 		var f := _flow(year, {})
-		for i in 3:
+		for i in ImpeachmentRules.ALTERNATIVE_STREAK:
 			f.run.state = &"card"
 			f.run.current_card = {"id": card["id"], "kind": "draw", "target": "", "side_a": 1}
 			f.run.played.erase(card["id"])
@@ -244,7 +244,7 @@ func _alternative_trigger() -> void:
 		if year == 1:
 			_check(f.run.impeachment.is_empty(), "alternative not before Ano 2")
 		else:
-			_eq([f.state(), f.run.impeachment["triggers"], f.run.impeachment["min_support"]], [&"impeachment", ["alternative"], 2], "3 options lowering capital → scene after the 3rd card")
+			_eq([f.state(), f.run.impeachment["triggers"], f.run.impeachment["min_support"]], [&"impeachment", ["alternative"], 2], "5 options lowering capital → scene after the 5th card (D-197)")
 
 
 ## D-179: options of Year 1 do not count — the streak restarts when Year 2 opens.

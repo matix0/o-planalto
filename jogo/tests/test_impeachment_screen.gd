@@ -47,6 +47,9 @@ func _run() -> void:
 	_saves = root.get_node(^"SaveManager")
 	_settings = root.get_node(^"Settings")
 	_data = root.get_node(^"GameData")
+	# Scene seeds are tuned to the fictitious fixture deck (D-139); the real deck rarely opens the scene (D-197).
+	_data.data_dir = "res://tests/fixtures/data/"
+	_data.load_all()
 	_order = Array(_data.meter_ids)
 	var real_settings: String = _settings.storage_path
 	_settings.storage_path = TEST_SETTINGS

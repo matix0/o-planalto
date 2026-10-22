@@ -206,6 +206,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-194 | O jogo usa o baralho real: as cartas do doc 17 com Aprendizado no doc 18 vão para `jogo/data/` (hoje 57 + 5 da cena); o baralho fictício (D-139) fica só como dado de teste em `jogo/tests/fixtures/data/`. Fontes conferidas depois, no P-016 | 2026-10-21 | Escolha do PO (foco em jogo jogável) |
 | D-195 | O workflow do site exporta o jogo para Web (preset da D-188) e o publica em `/jogar/`, com link na barra lateral | 2026-10-21 | Escolha do PO |
 | D-196 | Cartas do P-015 entram no baralho sem conferir fontes e sem revisão do PSI: Aprendizado "em conferência" (sem bloco de dados, fonte sem link) e status "pendente de revisão (D-196)"; o PO valida tudo no fim e o P-016 confere as fontes. Exceção à D-091/D-102 | 2026-10-22 | Escolha do PO (baralho completo funcionando primeiro) |
+| D-197 | Balanceamento do baralho real: gatilho alternativo do impeachment passa de 3 para 5 opções seguidas; custos de `Capital Político` nas cartas caem pela metade (múltiplo de 5, mínimo 5); demais perdas acima de 5 viram ×0,7 (múltiplo de 5); ganhos intactos. Simulação (200 partidas/perfil, `bal.gd`): aleatório 45%→13% de cena e 6%→63% de fim de mandato; cuidadoso 27%→0% de cena; perfil "só o certo" ainda 83% de cena (escolha correta custa Capital, por desenho) | 2026-10-22 | Relato de jogadores (muitos impeachments); ECO no fio principal |
 
 ---
 
@@ -374,6 +375,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-194 | Baralho real no jogo |
 | D-195 | Jogo no site em /jogar/ |
 | D-196 | Cartas sem fonte e sem PSI, pendentes de revisão |
+| D-197 | Balanceamento: impeachment alternativo em 5 e custos menores |
 
 ### Governança
 

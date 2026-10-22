@@ -19,7 +19,7 @@
         0
       ],
       "effects": {
-        "political_capital": -10,
+        "political_capital": -5,
         "sovereignty": 10
       },
       "consequence": "O relator é adversário. O projeto avança.",
@@ -37,7 +37,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "sovereignty": -15,
+        "sovereignty": -10,
         "treasury": 10,
         "integrity": -5
       },
@@ -67,7 +67,7 @@
         0
       ],
       "effects": {
-        "political_capital": -20,
+        "political_capital": -10,
         "dignity": 10,
         "integrity": 5
       },
@@ -85,7 +85,7 @@
         0
       ],
       "effects": {
-        "dignity": -10,
+        "dignity": -5,
         "political_capital": 5,
         "integrity": -5
       },
@@ -117,7 +117,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A CPI é instalada. O governo é investigado.",
       "actors": {},
@@ -133,9 +133,9 @@
         -1
       ],
       "effects": {
-        "treasury": -20,
+        "treasury": -15,
         "political_capital": 10,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "A CPI é arquivada. O povo não sabe de nada.",
       "actors": {},
@@ -163,7 +163,7 @@
         1
       ],
       "effects": {
-        "political_capital": -10,
+        "political_capital": -5,
         "awareness": 5,
         "integrity": 5
       },
@@ -181,7 +181,7 @@
         -1
       ],
       "effects": {
-        "political_capital": -20,
+        "political_capital": -10,
         "legitimacy": -5,
         "integrity": -5
       },
@@ -213,7 +213,7 @@
       "effects": {
         "sovereignty": 10,
         "dignity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os indígenas mantêm suas terras.",
       "actors": {},
@@ -230,8 +230,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "sovereignty": -10,
-        "dignity": -10,
+        "sovereignty": -5,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "Os indígenas perdem. O agronegócio comemora.",
@@ -261,7 +261,7 @@
       ],
       "effects": {
         "legitimacy": 10,
-        "political_capital": -20
+        "political_capital": -10
       },
       "consequence": "O povo aplaude. O Congresso reclama.",
       "actors": {},
@@ -278,7 +278,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "legitimacy": -15,
+        "legitimacy": -10,
         "integrity": -5
       },
       "consequence": "O povo vê que a casta política se protege.",
@@ -309,7 +309,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O partido aliado deixa a base. A CPI segue sem o ministro no cargo.",
       "actors": {
@@ -365,7 +365,7 @@
       "effects": {
         "sovereignty": 10,
         "security": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A pauta trava até a votação. A lei passa, e o agro promete revanche.",
       "actors": {
@@ -385,7 +385,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "security": -5
       },
       "consequence": "O projeto dorme na comissão. A bancada ruralista apoia seus outros projetos.",
@@ -420,7 +420,7 @@
       "effects": {
         "legitimacy": 10,
         "dignity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "sovereignty": -5
       },
       "consequence": "Os sites de fora seguem sem a taxa. A Câmara ameaça derrubar o veto.",
@@ -442,7 +442,7 @@
       "effects": {
         "treasury": 10,
         "sovereignty": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "dignity": -5
       },
       "consequence": "A taxa vale. Lojas do país comemoram, e quem compra online paga mais.",
@@ -475,8 +475,8 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
-        "legitimacy": -10
+        "political_capital": -5,
+        "legitimacy": -5
       },
       "consequence": "A PEC cai na Câmara. Nas ruas, muita gente cobra mais rigor.",
       "actors": {
@@ -498,7 +498,7 @@
       "effects": {
         "security": 10,
         "legitimacy": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A PEC é promulgada. Adolescentes já podem ir para presídios de adultos.",
       "actors": {
@@ -539,7 +539,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "Professores comemoram. Os autores da lei prometem derrubar o veto.",
@@ -560,7 +560,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "O prazo acaba, e a lei vale sem a sua assinatura. Professores protestam.",
@@ -594,7 +594,7 @@
       "effects": {
         "security": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O Senado mantém o decreto. A bancada da bala trava seus projetos.",
       "actors": {
@@ -658,7 +658,7 @@
       "effects": {
         "sovereignty": 10,
         "dignity": 5,
-        "treasury": -15,
+        "treasury": -10,
         "integrity": -5
       },
       "consequence": "O veto se mantém. Os Correios seguem públicos, e as emendas saem do caixa.",
@@ -681,7 +681,7 @@
       "effects": {
         "treasury": 15,
         "political_capital": 5,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "O veto cai. A gigante estrangeira compra os Correios.",
       "actors": {
@@ -753,7 +753,7 @@
       "effects": {
         "dignity": 10,
         "political_capital": 5,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "Os aposentados recebem parte do dinheiro. Ninguém do banco é punido.",
       "actors": {
@@ -785,7 +785,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "security": -5
       },
       "consequence": "Sem quórum, o projeto sai da pauta. Ruralistas dizem que você protege invasores.",
@@ -808,7 +808,7 @@
       "effects": {
         "political_capital": 10,
         "security": 5,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "O projeto passa. Ocupar terra ou prédio vazio vira terrorismo.",
@@ -843,7 +843,7 @@
       "effects": {
         "dignity": 10,
         "treasury": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A licença maior vale hoje. O Congresso reclama da medida provisória.",
       "actors": {
@@ -906,7 +906,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 10,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "O Congresso aprova. O SUS ganha verba fixa, e sobra menos para o resto.",
@@ -928,7 +928,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "treasury": -5
       },
       "consequence": "Seu texto, com aumento menor e gradual, passa. Quem assinou se sente ignorado.",
@@ -962,7 +962,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O tratado vai a voto no Congresso. Militares da reserva veem ameaça à anistia.",
       "actors": {
@@ -984,7 +984,7 @@
       "effects": {
         "political_capital": 10,
         "security": 5,
-        "awareness": -10,
+        "awareness": -5,
         "legitimacy": -5
       },
       "consequence": "O tratado fica na gaveta. Famílias de desaparecidos seguem sem resposta.",
@@ -1026,7 +1026,7 @@
       "effects": {
         "sovereignty": 10,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O destaque cai, e o trecho fica. Big techs dizem que a lei afasta investimento.",
       "actors": {
@@ -1055,7 +1055,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "dignity": -5
       },
       "consequence": "O trecho cai. A IA pode usar obras de artistas sem pagar por elas.",
@@ -1089,8 +1089,8 @@
       "effects": {
         "integrity": 10,
         "dignity": 10,
-        "political_capital": -10,
-        "treasury": -10
+        "political_capital": -5,
+        "treasury": -5
       },
       "consequence": "Cada voto fica registrado. Com medo do eleitor, deputados derrubam o limite.",
       "actors": {
@@ -1112,7 +1112,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "O limite passa em segundos. Ninguém sabe quem votou a favor.",
@@ -1145,7 +1145,7 @@
         0
       ],
       "effects": {
-        "political_capital": -20,
+        "political_capital": -10,
         "treasury": 30,
         "integrity": 5
       },
@@ -1163,7 +1163,7 @@
         0
       ],
       "effects": {
-        "dignity": -15,
+        "dignity": -10,
         "treasury": 20,
         "integrity": -5
       },
@@ -1195,7 +1195,7 @@
       "effects": {
         "sovereignty": 10,
         "treasury": 20,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os credores reagem. Mas o governo respira.",
       "actors": {},
@@ -1211,7 +1211,7 @@
         0
       ],
       "effects": {
-        "treasury": -20,
+        "treasury": -15,
         "political_capital": 10,
         "dignity": -5
       },
@@ -1242,7 +1242,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O Congresso aprova a exceção, e as obras voltam. O mercado desconfia.",
@@ -1273,7 +1273,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "A regra se mantém, e o mercado aprova. As obras seguem paradas.",
@@ -1309,7 +1309,7 @@
         "dignity": 5,
         "integrity": 5,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O corte se divide por igual. Deputados ameaçam travar seus projetos.",
       "actors": {
@@ -1329,7 +1329,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "Os shows seguem. O corte cai inteiro sobre saúde, escolas e bolsas.",
@@ -1363,7 +1363,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O crédito barato chega à agricultura familiar. Grandes produtores reclamam.",
       "actors": {
@@ -1384,7 +1384,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "As exportações crescem. Pequenos agricultores ficam sem crédito barato.",
       "actors": {
@@ -1417,7 +1417,7 @@
       "effects": {
         "treasury": 10,
         "dignity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Quem tem mais paga mais. Parte das fortunas sai do país, e a receita vem menor.",
       "actors": {
@@ -1439,8 +1439,8 @@
       "effects": {
         "treasury": 15,
         "political_capital": 5,
-        "dignity": -10,
-        "legitimacy": -10
+        "dignity": -5,
+        "legitimacy": -5
       },
       "consequence": "Tudo fica mais caro no mercado. Quem ganha pouco sente mais no bolso.",
       "actors": {
@@ -1473,7 +1473,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "A educação segue com verba garantida. Sobra menos para outras áreas.",
@@ -1495,8 +1495,8 @@
       "effects": {
         "treasury": 15,
         "political_capital": 5,
-        "awareness": -10,
-        "dignity": -10
+        "awareness": -5,
+        "dignity": -5
       },
       "consequence": "O Congresso aprova a mudança. A educação passa a disputar verba com tudo.",
       "actors": {
@@ -1538,7 +1538,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "Os filmes saem do papel. Pastores dizem que o governo ataca a família.",
@@ -1559,7 +1559,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "A verba fica parada, sem corte oficial. Artistas denunciam censura.",
@@ -1601,7 +1601,7 @@
       ],
       "effects": {
         "dignity": 20,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "As famílias entram no programa. Outros ministérios perdem verba e reclamam.",
@@ -1631,7 +1631,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -15,
+        "dignity": -10,
         "legitimacy": -5
       },
       "consequence": "As contas fecham. Na fila, as famílias seguem sem renda.",
@@ -1665,7 +1665,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Os leitos reabrem. A equipe econômica pede corte em outra área.",
       "actors": {
@@ -1686,7 +1686,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": -5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "As filas andam rápido. Os hospitais do SUS seguem sem verba.",
       "actors": {
@@ -1719,7 +1719,7 @@
       "effects": {
         "political_capital": 10,
         "sovereignty": -5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A obra vira vitrine do governo. A dívida com a potência cresce.",
       "actors": {
@@ -1748,7 +1748,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Corredores de ônibus chegam aos bairros. Ninguém inaugura nada vistoso.",
@@ -1782,7 +1782,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As cisternas ficam prontas devagar. Os deputados perdem o carro-pipa.",
       "actors": {
@@ -1810,7 +1810,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "A água chega rápido, com o nome dos deputados no caminhão.",
@@ -1843,7 +1843,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Os aposentados mantêm o ganho. O mercado vê o gasto subir todo ano.",
       "actors": {
@@ -1863,7 +1863,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "dignity": -15,
+        "dignity": -10,
         "legitimacy": -5
       },
       "consequence": "O gasto cresce menos. Os benefícios ficam para trás do salário.",
@@ -1897,7 +1897,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Sua base aplaude. O mercado lê ameaça à autonomia do banco.",
       "actors": {
@@ -1927,7 +1927,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "political_capital": -5
       },
       "consequence": "Os juros seguem altos. O emprego demora a voltar.",
@@ -1961,7 +1961,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A rede cresce perto de casa. Pastores dizem que você larga as famílias.",
       "actors": {
@@ -2015,7 +2015,7 @@
       "effects": {
         "security": 10,
         "political_capital": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "As obras começam, e as prisões seguem no mesmo ritmo.",
       "actors": {
@@ -2045,7 +2045,7 @@
       "effects": {
         "dignity": 10,
         "treasury": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "security": -5
       },
       "consequence": "Menos gente entra na cadeia. A oposição diz que você solta criminosos.",
@@ -2079,7 +2079,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As creches abrem sem festa. Mães voltam a trabalhar.",
       "actors": {
@@ -2100,7 +2100,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "A festa de lançamento lota. As obras antigas seguem paradas.",
@@ -2134,7 +2134,7 @@
       "effects": {
         "treasury": 15,
         "dignity": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O Tesouro arrecada mais. Uma fábrica anuncia demissões.",
       "actors": {
@@ -2155,7 +2155,7 @@
       "effects": {
         "political_capital": 5,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "As fábricas ficam. O imposto que não entra faz falta na saúde.",
       "actors": {
@@ -2188,7 +2188,7 @@
       "effects": {
         "treasury": 15,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A verba volta ao orçamento. As montadoras ameaçam cortar vagas.",
       "actors": {
@@ -2216,7 +2216,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -15,
+        "treasury": -10,
         "integrity": -5
       },
       "consequence": "As fábricas ficam. A conta some do orçamento, mas não do Tesouro.",
@@ -2250,7 +2250,7 @@
       "effects": {
         "dignity": 10,
         "treasury": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os estados ganham receita. Famílias ricas correm para doar em vida.",
       "actors": {
@@ -2270,7 +2270,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "Nada muda. Grandes fortunas passam de geração em geração quase intactas.",
@@ -2303,7 +2303,7 @@
       "effects": {
         "awareness": 15,
         "integrity": 10,
-        "political_capital": -20
+        "political_capital": -10
       },
       "consequence": "Os professores comemoram. Mas o Congresso ameaça retaliar.",
       "actors": {},
@@ -2320,8 +2320,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "awareness": -15,
-        "integrity": -10
+        "awareness": -10,
+        "integrity": -5
       },
       "consequence": "A lei passa. Os alunos aprendem 'educação financeira' em vez de pensar.",
       "actors": {},
@@ -2351,7 +2351,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A emissora aceita, mas faz campanha velada contra você.",
       "actors": {},
@@ -2368,8 +2368,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "awareness": -15,
-        "integrity": -10
+        "awareness": -10,
+        "integrity": -5
       },
       "consequence": "A TV elogia seu governo. Mas o que ela mostra não é a realidade.",
       "actors": {},
@@ -2399,7 +2399,7 @@
       "effects": {
         "awareness": 10,
         "security": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As crianças aprendem a quem contar. Pastores acusam o governo nos cultos.",
       "actors": {
@@ -2420,8 +2420,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "awareness": -10,
-        "security": -10
+        "awareness": -5,
+        "security": -5
       },
       "consequence": "Os pastores comemoram. O tema sai da escola e volta ao silêncio.",
       "actors": {
@@ -2454,7 +2454,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A correção vai ao ar. Muita gente já tinha visto a mentira.",
       "actors": {
@@ -2473,7 +2473,7 @@
       ],
       "effects": {
         "awareness": 5,
-        "legitimacy": -15,
+        "legitimacy": -10,
         "integrity": -5
       },
       "consequence": "A emissora vira vítima no ar. O processo de cassação leva anos.",
@@ -2516,7 +2516,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O livro fica. A bancada religiosa trava dois projetos seus.",
       "actors": {
@@ -2536,7 +2536,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "treasury": -5
       },
       "consequence": "Os livros voltam ao depósito. Alunos de famílias diferentes somem da página.",
@@ -2571,7 +2571,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A TV fica, com conselho de fora do governo. O prejuízo segue no caixa.",
       "actors": {
@@ -2591,7 +2591,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "awareness": -10,
+        "awareness": -5,
         "sovereignty": -5
       },
       "consequence": "O caixa respira. O novo dono corta o jornal local.",
@@ -2633,7 +2633,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Adultos leem a conta de luz. Críticos dizem que o método doutrina.",
@@ -2653,7 +2653,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "awareness": 5,
         "integrity": -5
       },
@@ -2688,7 +2688,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As rádios saem da sombra. Deputados donos de emissoras reclamam.",
       "actors": {
@@ -2708,7 +2708,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "legitimacy": -5
       },
       "consequence": "A fila segue. Mais um transmissor apreendido no bairro.",
@@ -2742,7 +2742,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A rede faz o próprio material, mais devagar e mais caro.",
       "actors": {
@@ -2762,7 +2762,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "As aulas começam já. O logo do banco vira parte do caderno.",
@@ -2804,7 +2804,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "awareness": -5
       },
       "consequence": "O vídeo viraliza. Os professores se sentem trocados.",
@@ -2868,7 +2868,7 @@
       "effects": {
         "awareness": 15,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O filme segue no ar. Militares reclamam em nota pública.",
       "actors": {
@@ -2888,7 +2888,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "O filme sai do ar. Os militares agradecem em silêncio.",
@@ -2930,7 +2930,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A verba segue a audiência. Aliados dizem que você financia o inimigo.",
       "actors": {
@@ -2951,7 +2951,7 @@
       "effects": {
         "political_capital": 5,
         "treasury": 10,
-        "integrity": -15
+        "integrity": -10
       },
       "consequence": "A emissora perde a verba e acusa o governo de punir a imprensa.",
       "actors": {
@@ -2984,7 +2984,7 @@
       "effects": {
         "awareness": 15,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Professores fazem o curso. O tema entra nas aulas de várias redes.",
       "actors": {
@@ -3012,7 +3012,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "dignity": -5
       },
       "consequence": "Os prefeitos agradecem. A lei continua só no papel.",
@@ -3046,7 +3046,7 @@
       "effects": {
         "sovereignty": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A rede é chamada a explicar. Seu aliado fica exposto.",
       "actors": {
@@ -3074,7 +3074,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "O perfil segue fora do ar. A investigação some das redes.",
@@ -3108,7 +3108,7 @@
       "effects": {
         "dignity": 10,
         "security": 10,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "As escolas ficam abertas o dia todo. A conta pesa no orçamento.",
       "actors": {
@@ -3129,7 +3129,7 @@
       "effects": {
         "political_capital": 5,
         "treasury": -5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "As escolas treinam para a prova. O resto do currículo encolhe.",
       "actors": {
@@ -3162,7 +3162,7 @@
       "effects": {
         "awareness": 15,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os alunos aprendem a seguir o voto dos deputados. O Centrão reclama.",
       "actors": {
@@ -3182,7 +3182,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "Poucas escolas oferecem as aulas. Os deputados respiram aliviados.",
       "actors": {
@@ -3214,7 +3214,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O ministério abre processo. A emissora diz que é perseguição.",
       "actors": {
@@ -3233,7 +3233,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "A emissora pede desculpas genéricas. O quadro continua no ar.",
@@ -3266,7 +3266,7 @@
       "effects": {
         "awareness": 5,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O veto sai. Deputados dizem que você defende modismo.",
       "actors": {
@@ -3286,7 +3286,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "awareness": -10,
+        "awareness": -5,
         "dignity": -5
       },
       "consequence": "A lei vale. Escolas passam a revisar cada palavra das aulas.",
@@ -3329,7 +3329,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "As bibliotecas ganham livros e horário estendido. Mais leitores nos bairros.",
       "actors": {
@@ -3349,7 +3349,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "awareness": -5
       },
       "consequence": "O app chega a todos os celulares. Os dados dos leitores vão junto.",
@@ -3383,7 +3383,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O MEC recusa. O deputado diz que o governo protege doutrinadores.",
       "actors": {
@@ -3403,7 +3403,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -15,
+        "awareness": -10,
         "legitimacy": -5
       },
       "consequence": "O canal recebe milhares de vídeos. Muitos são cortes fora de contexto.",
@@ -3462,7 +3462,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -15,
+        "sovereignty": -10,
         "integrity": -5
       },
       "consequence": "Os EUA elogiam o Brasil. Mas o país continua vulnerável a sanções.",
@@ -3492,7 +3492,7 @@
       ],
       "effects": {
         "sovereignty": 15,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": 5
       },
       "consequence": "O lítio fica no Brasil. A cadeia produtiva se desenvolve.",
@@ -3510,8 +3510,8 @@
       ],
       "effects": {
         "treasury": 25,
-        "sovereignty": -20,
-        "integrity": -10
+        "sovereignty": -15,
+        "integrity": -5
       },
       "consequence": "O lítio vai embora. O país importa tecnologia.",
       "actors": {},
@@ -3540,7 +3540,7 @@
       ],
       "effects": {
         "security": 10,
-        "treasury": -10,
+        "treasury": -5,
         "sovereignty": -5
       },
       "consequence": "A rede atrasa e fica mais cara. Os EUA aplaudem.",
@@ -3562,7 +3562,7 @@
       "effects": {
         "treasury": 10,
         "dignity": 5,
-        "security": -10
+        "security": -5
       },
       "consequence": "O 5G chega mais barato. Os EUA ameaçam rever a parceria.",
       "actors": {
@@ -3594,7 +3594,7 @@
       "effects": {
         "treasury": 20,
         "political_capital": 5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "O agro vende mais. A indústria perde espaço para os importados.",
       "actors": {
@@ -3625,8 +3625,8 @@
       "effects": {
         "sovereignty": 10,
         "dignity": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "As fábricas mantêm os empregos. O agro reclama no Congresso.",
       "actors": {
@@ -3659,7 +3659,7 @@
       ],
       "effects": {
         "treasury": 25,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "dignity": -5
       },
       "consequence": "O dinheiro chega. Técnicos do FMI passam a revisar suas contas.",
@@ -3689,7 +3689,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -15,
+        "treasury": -10,
         "dignity": -5
       },
       "consequence": "O dólar sobe. A crise continua sem dinheiro novo.",
@@ -3723,7 +3723,7 @@
       "effects": {
         "sovereignty": 10,
         "security": 5,
-        "treasury": -10,
+        "treasury": -5,
         "dignity": -5
       },
       "consequence": "A Embraer segue brasileira. Os acionistas perdem o negócio.",
@@ -3745,7 +3745,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "sovereignty": -15,
+        "sovereignty": -10,
         "security": -5
       },
       "consequence": "A venda sai. A nova dona decide os projetos lá fora.",
@@ -3779,7 +3779,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "legitimacy": -5
       },
       "consequence": "O comércio sai do dólar. Um banco do bloco passa a decidir seus juros.",
@@ -3800,7 +3800,7 @@
       ],
       "effects": {
         "sovereignty": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "O real fica. O comércio segue em dólar.",
       "actors": {
@@ -3833,7 +3833,7 @@
       "effects": {
         "treasury": 15,
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "legitimacy": -5
       },
       "consequence": "As tropas embarcam. Parte do país protesta contra a guerra.",
@@ -3864,7 +3864,7 @@
       "effects": {
         "sovereignty": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "security": -5
       },
       "consequence": "O Brasil fica fora da guerra. O aliado corta a ajuda militar.",
@@ -3898,7 +3898,7 @@
       ],
       "effects": {
         "sovereignty": 15,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "O potássio sai do chão, sem consulta. Povos indígenas vão à Justiça.",
@@ -3919,8 +3919,8 @@
       ],
       "effects": {
         "sovereignty": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "O agro reclama da demora. Cooperativas do campo começam a produzir.",
       "actors": {
@@ -3961,7 +3961,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "O diesel sobe. O frete e a comida ficam mais caros.",
       "actors": {
@@ -3991,7 +3991,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O diesel fica estável. A Petrobras lucra menos e o Mercado reclama.",
       "actors": {
@@ -4026,7 +4026,7 @@
         "sovereignty": 10,
         "treasury": 10,
         "dignity": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As big techs pagam. Os EUA anunciam tarifas sobre produtos do Brasil.",
       "actors": {
@@ -4047,7 +4047,7 @@
       "effects": {
         "treasury": 5,
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "legitimacy": -5
       },
       "consequence": "As tarifas não vêm. As big techs ficam sem o novo imposto.",
@@ -4137,7 +4137,7 @@
       "effects": {
         "treasury": 15,
         "political_capital": 10,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "Dinheiro de fora entra no campo. Fazendas de soja mudam de dono.",
       "actors": {
@@ -4158,7 +4158,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "A venda fica barrada. O Congresso ameaça derrubar o seu veto.",
@@ -4193,7 +4193,7 @@
       "effects": {
         "security": 15,
         "political_capital": 5,
-        "sovereignty": -15,
+        "sovereignty": -10,
         "dignity": -5
       },
       "consequence": "Drones vigiam as rotas do crime. Agentes dos EUA atuam no país.",
@@ -4223,7 +4223,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "security": -5
       },
       "consequence": "As facções seguem como caso de polícia. Os EUA cortam a cooperação.",
@@ -4257,7 +4257,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "O selo atrai investidores. O país adota as regras de transparência do clube.",
       "actors": {
@@ -4278,7 +4278,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "O Brasil fica fora do clube. O mercado diz que o país perdeu uma chance.",
       "actors": {
@@ -4311,7 +4311,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "A produção nacional leva meses. Os EUA aplicam sanções ao Brasil.",
@@ -4340,7 +4340,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15,
+        "treasury": -10,
         "sovereignty": -5
       },
       "consequence": "A vacinação começa. O SUS corta outras despesas para pagar a conta.",
@@ -4373,8 +4373,8 @@
       ],
       "effects": {
         "treasury": 20,
-        "sovereignty": -10,
-        "dignity": -10
+        "sovereignty": -5,
+        "dignity": -5
       },
       "consequence": "Foguetes estrangeiros sobem. Famílias quilombolas perdem suas terras.",
       "actors": {
@@ -4405,7 +4405,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "As famílias ficam. Sem o aluguel, o programa espacial segue sem dinheiro.",
       "actors": {
@@ -4439,7 +4439,7 @@
       "effects": {
         "sovereignty": 5,
         "dignity": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A obra chega a menos bairros. Parte do custo sai do seu caixa.",
       "actors": {
@@ -4495,7 +4495,7 @@
       "effects": {
         "treasury": 10,
         "security": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "awareness": -5
       },
       "consequence": "A potência agradece e prende o ex-agente na chegada.",
@@ -4517,7 +4517,7 @@
       "effects": {
         "awareness": 10,
         "sovereignty": 10,
-        "treasury": -15,
+        "treasury": -10,
         "security": -5
       },
       "consequence": "Ele publica novos segredos. A potência corta acordos com o Brasil.",
@@ -4551,7 +4551,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O bloco suspende o vizinho até nova eleição. Exportadores perdem vendas.",
@@ -4573,7 +4573,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "O comércio segue. A oposição do vizinho acusa você de apoiar o golpe.",
       "actors": {
@@ -4616,7 +4616,7 @@
       "effects": {
         "dignity": 10,
         "security": -5,
-        "treasury": -15,
+        "treasury": -10,
         "integrity": 5
       },
       "consequence": "A população diz que 'nada foi feito'. Mas menos jovens entram no sistema.",
@@ -4634,8 +4634,8 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -15,
-        "treasury": -20,
+        "dignity": -10,
+        "treasury": -15,
         "integrity": -5
       },
       "consequence": "Mais presos. Mais facções. O crime organizado se fortalece.",
@@ -4667,7 +4667,7 @@
         "dignity": 10,
         "awareness": 5,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A investigação começa. As famílias das vítimas finalmente são ouvidas.",
       "actors": {},
@@ -4684,7 +4684,7 @@
       ],
       "effects": {
         "security": 5,
-        "dignity": -15,
+        "dignity": -10,
         "integrity": -5
       },
       "consequence": "A impunidade policial continua.",
@@ -4715,7 +4715,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A regra fica clara. Pastores acusam o governo de liberar a droga.",
       "actors": {
@@ -4735,8 +4735,8 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10,
-        "treasury": -10
+        "dignity": -5,
+        "treasury": -5
       },
       "consequence": "Nada muda. A decisão segue com quem faz a abordagem.",
       "actors": {
@@ -4777,7 +4777,7 @@
       "effects": {
         "integrity": 10,
         "dignity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Peritos federais chegam. O governador diz que você está do lado do crime.",
       "actors": {
@@ -4798,7 +4798,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "dignity": -15,
+        "dignity": -10,
         "legitimacy": -5
       },
       "consequence": "A operação vira modelo. As famílias seguem sem respostas.",
@@ -4832,7 +4832,7 @@
       "effects": {
         "security": 10,
         "integrity": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "As câmeras gravam o turno todo. Policiais reclamam de vigilância.",
       "actors": {
@@ -4852,7 +4852,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "Cada estado decide. Em muitos, a câmera liga só quando o policial quer.",
       "actors": {
@@ -4885,7 +4885,7 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O ônibus chega ao bairro. A facção perde parte da renda.",
       "actors": {
@@ -4904,8 +4904,8 @@
       ],
       "effects": {
         "security": 10,
-        "treasury": -10,
-        "dignity": -10
+        "treasury": -5,
+        "dignity": -5
       },
       "consequence": "Tropas ocupam o bairro. Os moradores passam a ser revistados todo dia.",
       "actors": {
@@ -4946,7 +4946,7 @@
       "effects": {
         "dignity": 10,
         "security": -5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Jovens cumprem medida na escola e no trabalho. Críticos falam em impunidade.",
       "actors": {
@@ -4965,8 +4965,8 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -10,
-        "treasury": -15
+        "dignity": -5,
+        "treasury": -10
       },
       "consequence": "Os jovens ficam mais tempo internados. As unidades lotam de vez.",
       "actors": {
@@ -5016,8 +5016,8 @@
       ],
       "effects": {
         "integrity": 10,
-        "security": -10,
-        "treasury": -10
+        "security": -5,
+        "treasury": -5
       },
       "consequence": "Os presos são misturados e a vigilância aumenta. A tensão sobe.",
       "actors": {
@@ -5078,7 +5078,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "A polícia mantém a decisão. As aulas continuam suspensas.",
@@ -5112,8 +5112,8 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "political_capital": -10,
-        "treasury": -10
+        "political_capital": -5,
+        "treasury": -5
       },
       "consequence": "Mais gente sai da rua e procura tratamento. Pastores reclamam.",
       "actors": {
@@ -5167,7 +5167,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O caso é revisto por órgão independente. A polícia se diz desrespeitada.",
       "actors": {
@@ -5188,7 +5188,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "A prisão é mantida. Outras lideranças param de denunciar.",
       "actors": {
@@ -5229,7 +5229,7 @@
       "effects": {
         "dignity": 5,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A saída continua. A oposição diz que você solta bandidos.",
       "actors": {
@@ -5249,7 +5249,7 @@
       "effects": {
         "political_capital": 10,
         "security": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A saída acaba. Os presos perdem o contato com a família.",
       "actors": {
@@ -5289,7 +5289,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "sovereignty": -5
       },
       "consequence": "O relator visita os bairros e ouve as famílias. Governadores se irritam.",
@@ -5320,7 +5320,7 @@
       "effects": {
         "political_capital": 10,
         "sovereignty": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "A visita fica para depois. Lá fora, o Brasil passa a ser visto com suspeita.",
@@ -5354,7 +5354,7 @@
       "effects": {
         "treasury": 10,
         "security": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O imposto sobe. Clubes de tiro protestam, e a receita cresce.",
       "actors": {
@@ -5374,7 +5374,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "security": -5
       },
       "consequence": "Armas seguem baratas. A bancada da bala apoia seus projetos.",
@@ -5408,7 +5408,7 @@
       "effects": {
         "integrity": 10,
         "security": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Cada lote ganha marca. Policiais reclamam do controle, e os desvios caem.",
       "actors": {
@@ -5438,8 +5438,8 @@
       "effects": {
         "treasury": 5,
         "political_capital": 5,
-        "security": -10,
-        "integrity": -10
+        "security": -5,
+        "integrity": -5
       },
       "consequence": "A corregedoria investiga em silêncio. As armas não param de sumir.",
       "actors": {
@@ -5471,7 +5471,7 @@
       "effects": {
         "security": 10,
         "integrity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "A moradora muda de cidade com proteção. O processo contra a milícia anda.",
       "actors": {
@@ -5492,7 +5492,7 @@
         "security": 5,
         "treasury": -5,
         "integrity": -5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "Chegam denúncias, muitas falsas. A moradora segue sem proteção.",
       "actors": {},
@@ -5522,7 +5522,7 @@
       "effects": {
         "integrity": 15,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A investigação segue. A bancada do estado passa a votar contra você.",
       "actors": {
@@ -5542,8 +5542,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "integrity": -15,
-        "legitimacy": -10
+        "integrity": -10,
+        "legitimacy": -5
       },
       "consequence": "O novo diretor muda a equipe do caso. A bancada do estado fecha com você.",
       "actors": {
@@ -5607,7 +5607,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "dignity": -15
+        "dignity": -10
       },
       "consequence": "As presas seguem nas celas. Bebês nascem e crescem dentro da prisão.",
       "actors": {
@@ -5639,7 +5639,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -15,
+        "political_capital": -10,
         "security": -5
       },
       "consequence": "A PEC entra em debate. Quartéis se agitam contra a mudança.",
@@ -5725,7 +5725,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "dignity": -15,
+        "dignity": -10,
         "awareness": -5
       },
       "consequence": "Os álbuns seguem nas delegacias. Os erros também.",
@@ -5764,7 +5764,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "integrity": 5
       },
       "consequence": "O hospital recebe os recursos. O show é cancelado.",
@@ -5782,7 +5782,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -15,
+        "dignity": -10,
         "integrity": -5
       },
       "consequence": "O show acontece. O hospital fecha.",
@@ -5813,7 +5813,7 @@
       "effects": {
         "dignity": 5,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O projeto volta por erro técnico. O deputado promete revanche na votação.",
       "actors": {
@@ -5833,7 +5833,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "dignity": -5
       },
       "consequence": "O estádio sai. O bairro segue sem esgoto, e a obra rende foto.",
@@ -5867,7 +5867,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O repasse cai. Pastores acusam o governo de perseguir a fé.",
       "actors": {
@@ -5886,7 +5886,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "treasury": -5
       },
       "consequence": "O templo é reformado com verba pública. A bancada religiosa fecha com você.",
@@ -5919,8 +5919,8 @@
       ],
       "effects": {
         "political_capital": 15,
-        "treasury": -10,
-        "integrity": -10
+        "treasury": -5,
+        "integrity": -5
       },
       "consequence": "A reforma passa. Líderes já falam no preço da próxima votação.",
       "actors": {
@@ -5949,7 +5949,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A votação adia. Você ganha votos um a um, no debate do texto.",
       "actors": {
@@ -5982,7 +5982,7 @@
       "effects": {
         "security": 5,
         "dignity": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Ruas e praças ganham luz. O deputado diz que você desarmou a cidade.",
       "actors": {
@@ -6002,7 +6002,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "A guarda ganha fuzis. As praças seguem escuras à noite.",
@@ -6035,7 +6035,7 @@
       "effects": {
         "dignity": 10,
         "political_capital": 5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "Famílias ganham a escritura. Fazendeiros vizinhos já fazem ofertas.",
       "actors": {
@@ -6065,7 +6065,7 @@
       "effects": {
         "sovereignty": 5,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A terra fica com as famílias, sem venda. Ruralistas falam em tutela.",
       "actors": {
@@ -6097,7 +6097,7 @@
       ],
       "effects": {
         "integrity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "O repasse para. Times locais ficam sem patrocínio, e o deputado reclama.",
@@ -6127,7 +6127,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "O dinheiro chega à ONG. Ninguém sabe ao certo para onde ele vai.",
@@ -6160,7 +6160,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A prefeitura apresenta o plano. O deputado reclama da burocracia.",
       "actors": {
@@ -6181,7 +6181,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": 5,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "O dinheiro cai. Parte vai para escolas; o resto, ninguém sabe.",
       "actors": {
@@ -6213,7 +6213,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Um conselho de agricultores faz a escala. O prefeito perde um trunfo.",
       "actors": {
@@ -6267,7 +6267,7 @@
       "effects": {
         "integrity": 10,
         "dignity": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A obra para. Os povoados seguem isolados, e o senador vira oposição.",
       "actors": {
@@ -6288,7 +6288,7 @@
       "effects": {
         "dignity": 10,
         "political_capital": 5,
-        "integrity": -10,
+        "integrity": -5,
         "treasury": -5
       },
       "consequence": "Os povoados ganham estrada. A fazenda do senador também.",
@@ -6330,7 +6330,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As escolas ganham turno integral. Deputados perdem placas com o nome.",
       "actors": {
@@ -6384,7 +6384,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O aparelho do posto volta a funcionar. A clínica perde o contrato.",
@@ -6406,7 +6406,7 @@
       "effects": {
         "dignity": 5,
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "treasury": -5
       },
       "consequence": "A fila de exames anda. O aparelho do posto segue parado.",
@@ -6447,7 +6447,7 @@
       "effects": {
         "treasury": 10,
         "dignity": 5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "Mais ônibus rodam com a mesma verba. Fábricas do país reclamam.",
       "actors": {
@@ -6467,7 +6467,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10,
+        "treasury": -5,
         "dignity": -5
       },
       "consequence": "Menos ônibus chegam, mas fábricas daqui contratam.",
@@ -6502,7 +6502,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A festa fica menor e cheia de gente da terra. O deputado reclama.",
       "actors": {
@@ -6557,7 +6557,7 @@
       "effects": {
         "integrity": 10,
         "dignity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "A obra atrasa para o Estado contratar agentes. A bancada do estado reclama.",
@@ -6579,7 +6579,7 @@
       "effects": {
         "security": 10,
         "political_capital": 10,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "O presídio abre rápido. A empresa assume a rotina das celas.",
       "actors": {
@@ -6621,7 +6621,7 @@
       "effects": {
         "legitimacy": 10,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A ONG assina a regra. Pastores aliados acusam o governo de perseguição.",
       "actors": {
@@ -6642,7 +6642,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "integrity": -5
       },
       "consequence": "As cestas chegam. A regra do culto segue nos bairros.",
@@ -6675,7 +6675,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Projetos pequenos captam mais. Grandes produtoras perdem patrocínio.",
       "actors": {
@@ -6729,7 +6729,7 @@
       "effects": {
         "sovereignty": 10,
         "treasury": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A mineradora paga parte da obra e atrasa o projeto. Os deputados reclamam.",
       "actors": {
@@ -6750,7 +6750,7 @@
       "effects": {
         "dignity": 10,
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "treasury": -5
       },
       "consequence": "As vilas ganham asfalto. Os caminhões da mina usam a estrada primeiro.",
@@ -6793,7 +6793,7 @@
       "effects": {
         "integrity": 10,
         "sovereignty": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Os fiscais compram menos drones. A bancada corta outro apoio.",
@@ -6815,7 +6815,7 @@
       "effects": {
         "security": 10,
         "treasury": 5,
-        "integrity": -10,
+        "integrity": -5,
         "sovereignty": -5
       },
       "consequence": "Os drones voam em outras regiões. Na região dos deputados, o fogo segue.",
@@ -6857,7 +6857,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Postos da região ganham equipe. O deputado perde a placa da inauguração.",
@@ -6879,7 +6879,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "dignity": -5
       },
       "consequence": "A festa de inauguração enche a cidade. As alas seguem fechadas.",
@@ -6912,7 +6912,7 @@
         0
       ],
       "effects": {
-        "political_capital": -15,
+        "political_capital": -10,
         "sovereignty": 5,
         "legitimacy": 5,
         "integrity": 10
@@ -6932,9 +6932,9 @@
       ],
       "effects": {
         "political_capital": 20,
-        "sovereignty": -10,
-        "dignity": -10,
-        "integrity": -10
+        "sovereignty": -5,
+        "dignity": -5,
+        "integrity": -5
       },
       "consequence": "A lei passa. Mais desmatamento, mais armas. Mas o pacote fiscal é aprovado.",
       "actors": {},
@@ -6964,7 +6964,7 @@
       "effects": {
         "legitimacy": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A reforma perde votos. Juristas elogiam a escolha.",
       "actors": {
@@ -6984,7 +6984,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "A reforma passa. O novo ministro deve a vaga a uma bancada.",
@@ -7018,7 +7018,7 @@
       "effects": {
         "sovereignty": 10,
         "legitimacy": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Parte da bancada aceita o acordo. A conta sai do Tesouro.",
       "actors": {
@@ -7047,7 +7047,7 @@
       ],
       "effects": {
         "integrity": 5,
-        "political_capital": -15,
+        "political_capital": -10,
         "security": -5
       },
       "consequence": "A PEC avança na Câmara. No campo, a tensão cresce.",
@@ -7080,8 +7080,8 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "A bancada volta à PEC. As unidades ganham escola e equipe.",
       "actors": {
@@ -7102,7 +7102,7 @@
       "effects": {
         "political_capital": 10,
         "security": 5,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "A PEC sai da pauta. Adolescentes ficam mais tempo nas unidades lotadas.",
@@ -7145,7 +7145,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Os anúncios somem da TV. Clubes pequenos perdem patrocínio.",
@@ -7167,7 +7167,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "A taxa entra no caixa. Jovens veem apostas em todo jogo.",
@@ -7209,7 +7209,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "O piso segue igual no país. Empresários do Norte e Nordeste reclamam.",
@@ -7231,7 +7231,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -15
+        "dignity": -10
       },
       "consequence": "O piso cai nas regiões pobres. Empresas anunciam vagas.",
       "actors": {
@@ -7264,7 +7264,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Empresas revisam salários. Associações vão à Justiça contra a regra.",
       "actors": {
@@ -7285,7 +7285,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "A regra fica no papel por mais um ano. A bancada feminina rompe com você.",
       "actors": {
@@ -7318,7 +7318,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A lei segue com os dois critérios. A bancada promete nova tentativa.",
       "actors": {
@@ -7338,7 +7338,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "A cota racial sai da lei. Estudantes negros protestam nas federais.",
@@ -7372,7 +7372,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "A verba fica nas escolas. Prefeitos atrasam outros pagamentos.",
@@ -7394,7 +7394,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 10,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "As prefeituras pagam as aposentadorias. Salas ficam sem reforma.",
       "actors": {
@@ -7436,7 +7436,7 @@
       "effects": {
         "treasury": 10,
         "sovereignty": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "dignity": -5
       },
       "consequence": "A receita sobe. O agro repassa parte do custo para o preço da comida.",
@@ -7458,7 +7458,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "sovereignty": -5
       },
       "consequence": "A comida não sobe agora. Rios perto das lavouras seguem com veneno.",
@@ -7492,7 +7492,7 @@
       "effects": {
         "security": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os inquéritos andam. A bancada diz que você desarma a polícia.",
       "actors": {
@@ -7513,7 +7513,7 @@
       "effects": {
         "political_capital": 10,
         "security": 5,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "Os blindados chegam às ruas. Os laboratórios seguem sem equipamento.",
@@ -7547,8 +7547,8 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "O orçamento atrasa semanas. O plano segue com a palavra.",
       "actors": {
@@ -7577,7 +7577,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "O orçamento passa. Professores dizem que perdem apoio contra o preconceito.",
       "actors": {
@@ -7610,7 +7610,7 @@
       "effects": {
         "sovereignty": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "As multas seguem na Justiça. A bancada trava seus projetos.",
       "actors": {
@@ -7631,7 +7631,7 @@
       "effects": {
         "political_capital": 15,
         "sovereignty": 5,
-        "integrity": -10,
+        "integrity": -5,
         "treasury": -5
       },
       "consequence": "Parte das áreas volta a ter mata. Quem desmatou não paga a multa.",
@@ -7674,7 +7674,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Cidades pequenas abrem casas de cultura. O caixa da União aperta.",
       "actors": {
@@ -7703,7 +7703,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "awareness": -10,
+        "awareness": -5,
         "political_capital": -5
       },
       "consequence": "A verba segue por edital. Quem sabe escrever projeto leva mais.",
@@ -7737,7 +7737,7 @@
       "effects": {
         "integrity": 10,
         "dignity": 5,
-        "political_capital": -15,
+        "political_capital": -10,
         "treasury": -5
       },
       "consequence": "Os pastores aplaudem. O Centrão segura seus projetos na Câmara.",
@@ -7759,7 +7759,7 @@
       "effects": {
         "treasury": 15,
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "dignity": -5
       },
       "consequence": "Os resorts abrem salões de jogo. Igrejas fazem vigílias contra o vício.",
@@ -7803,7 +7803,7 @@
       "effects": {
         "security": 10,
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Fazendeiros comemoram. Posseiros e sem-terra temem os vizinhos armados.",
@@ -7835,7 +7835,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O porte fica restrito à sede. A bancada do boi trava a sua pauta.",
       "actors": {
@@ -7868,7 +7868,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "A data cai. Em cultos, pastores dizem que o governo persegue a fé.",
@@ -7889,7 +7889,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "A data entra no calendário. Coletivos relatam mais ataques nas redes.",
@@ -7923,8 +7923,8 @@
       "effects": {
         "dignity": 15,
         "awareness": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "Trabalhadores lotam as galerias. A bancada empresarial promete obstruir.",
       "actors": {
@@ -7980,7 +7980,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Saúde e ambiente seguem no processo. O agro diz que a fila trava a safra.",
       "actors": {
@@ -8002,7 +8002,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "sovereignty": -5
       },
       "consequence": "As liberações saem mais rápido. Médicos alertam para veneno no prato.",
@@ -8045,7 +8045,7 @@
       "effects": {
         "awareness": 15,
         "dignity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "As escolas ganham verba fixa. O Mercado reage, e os juros sobem.",
@@ -8066,7 +8066,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "awareness": -10,
+        "awareness": -5,
         "dignity": -5
       },
       "consequence": "A dívida cai um pouco. Professores marcam greve contra a escolha.",
@@ -8099,7 +8099,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "Os pedidos seguem na gaveta. A imprensa chama o acordo de seguro.",
@@ -8121,7 +8121,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Você não cede. A gaveta vira ameaça em cada votação.",
       "actors": {
@@ -8161,8 +8161,8 @@
       ],
       "effects": {
         "dignity": 10,
-        "integrity": -10,
-        "political_capital": -10
+        "integrity": -5,
+        "political_capital": -5
       },
       "consequence": "As famílias recebem em dia. O Tribunal de Contas abre uma auditoria.",
       "actors": {
@@ -8192,7 +8192,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "dignity": -15
+        "dignity": -10
       },
       "consequence": "As contas fecham. Milhares de famílias perdem o benefício no mês.",
       "actors": {
@@ -8225,7 +8225,7 @@
       "effects": {
         "legitimacy": 10,
         "integrity": 5,
-        "security": -10,
+        "security": -5,
         "political_capital": -5
       },
       "consequence": "O general vai para a reserva. Nos quartéis, cresce o mal-estar.",
@@ -8247,7 +8247,7 @@
       "effects": {
         "security": 5,
         "political_capital": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "awareness": -5
       },
       "consequence": "Nada acontece. Outros oficiais passam a opinar sobre o governo.",
@@ -8281,7 +8281,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "Os sermões mudam de tom. Outras igrejas pedem o mesmo benefício.",
@@ -8303,8 +8303,8 @@
       "effects": {
         "integrity": 5,
         "treasury": 5,
-        "legitimacy": -10,
-        "political_capital": -10
+        "legitimacy": -5,
+        "political_capital": -5
       },
       "consequence": "A isenção fica igual. Os sermões contra você se multiplicam.",
       "actors": {
@@ -8398,7 +8398,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O vice vira oposição aberta. Parte do partido dele vai junto.",
       "actors": {
@@ -8418,7 +8418,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "O vice fica do seu lado, por ora. A pauta dele entra no governo.",
@@ -8453,7 +8453,7 @@
         "awareness": 10,
         "dignity": 5,
         "legitimacy": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O país para um dia. Empresários acusam o governo de usar os sindicatos.",
       "actors": {
@@ -8483,7 +8483,7 @@
       "effects": {
         "treasury": 5,
         "political_capital": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "A greve é adiada. Sindicalistas dizem que você teme o próprio povo.",
       "actors": {
@@ -8538,7 +8538,7 @@
       "effects": {
         "integrity": 5,
         "political_capital": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "O show acontece sem você. Artistas reclamam de falta de coragem.",
       "actors": {
@@ -8570,7 +8570,7 @@
       "effects": {
         "integrity": 10,
         "sovereignty": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "A plataforma mostra os pagadores. A oposição fala em censura.",
@@ -8632,7 +8632,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "awareness": -5
       },
       "consequence": "O impeachment esfria. Quem decide o governo é o ministro da Câmara.",
@@ -8654,7 +8654,7 @@
       "effects": {
         "legitimacy": 5,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Você mantém a caneta. Os líderes avisam que a paciência acabou.",
       "actors": {
@@ -8686,7 +8686,7 @@
       "effects": {
         "legitimacy": 5,
         "awareness": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Jornais de fora repercutem. No Congresso, dizem que você expõe o país.",
@@ -8742,7 +8742,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "security": -10
+        "security": -5
       },
       "consequence": "Barracas tomam a Esplanada. Deputados dizem que estão sob pressão.",
       "actors": {
@@ -8773,7 +8773,7 @@
       "effects": {
         "security": 10,
         "political_capital": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "A Esplanada fica vazia. Os movimentos dizem que você os abandonou.",
       "actors": {
@@ -8806,7 +8806,7 @@
       "effects": {
         "legitimacy": 10,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "A aprovação sobe. Técnicos alertam que a conta não fecha no ano.",
       "actors": {
@@ -8836,7 +8836,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "As contas fecham. A pesquisa seguinte traz você ainda mais baixo.",
       "actors": {
@@ -8868,7 +8868,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Suas contas ficam públicas. A oposição procura falhas linha por linha.",
       "actors": {
@@ -8889,7 +8889,7 @@
       "effects": {
         "political_capital": 5,
         "legitimacy": 5,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "Sua base repete o ataque. Jornalistas dizem que você foge do assunto.",
@@ -8923,7 +8923,7 @@
       "effects": {
         "legitimacy": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O vice vira oposição. Os rivais ganham um nome para o dia seguinte.",
       "actors": {
@@ -8974,7 +8974,7 @@
       ],
       "effects": {
         "legitimacy": 10,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "political_capital": -5
       },
       "consequence": "A nota sai. Lá fora, você ganha aliados; aqui, a oposição fala em traição.",
@@ -9027,7 +9027,7 @@
       "effects": {
         "legitimacy": 5,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O STF analisa o caso. O presidente da Câmara se sente afrontado.",
       "actors": {
@@ -9054,7 +9054,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "A gaveta segue fechada. A cada votação, o preço sobe um pouco.",
@@ -9087,7 +9087,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O debate toma o país. O Congresso diz que você foge da crise.",
@@ -9140,7 +9140,7 @@
       "effects": {
         "dignity": 10,
         "treasury": 5,
-        "integrity": -15
+        "integrity": -10
       },
       "consequence": "Os benefícios saem em dia. A oposição guarda o caso para usar depois.",
       "actors": {
@@ -9168,7 +9168,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "dignity": -15,
+        "dignity": -10,
         "legitimacy": -5
       },
       "consequence": "As contas fecham dentro da lei. Famílias recebem menos este mês.",
@@ -9201,8 +9201,8 @@
       "effects": {
         "security": 10,
         "political_capital": 10,
-        "legitimacy": -15,
-        "integrity": -10
+        "legitimacy": -10,
+        "integrity": -5
       },
       "consequence": "Os quartéis ficam do seu lado. A democracia fica refém da farda.",
       "actors": {
@@ -9230,7 +9230,7 @@
       ],
       "effects": {
         "legitimacy": 15,
-        "security": -10,
+        "security": -5,
         "political_capital": -5
       },
       "consequence": "Você exige silêncio da tropa. O general sai irritado.",
@@ -9263,7 +9263,7 @@
       "effects": {
         "awareness": 15,
         "legitimacy": 10,
-        "political_capital": -30,
+        "political_capital": -15,
         "integrity": 15
       },
       "consequence": "O ministro é investigado. O STF entra em crise. A lei vale para todos.",
@@ -9280,9 +9280,9 @@
         -1
       ],
       "effects": {
-        "political_capital": -20,
-        "awareness": -15,
-        "integrity": -15
+        "political_capital": -10,
+        "awareness": -10,
+        "integrity": -10
       },
       "consequence": "O caso é arquivado. Mas o povo vê que a justiça é diferente para os poderosos.",
       "actors": {},
@@ -9312,7 +9312,7 @@
       "effects": {
         "integrity": 15,
         "awareness": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Associações de juízes reagem. O povo aplaude a proposta.",
       "actors": {
@@ -9339,7 +9339,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "O CNJ aposenta os juízes. Eles seguem com o salário em casa.",
@@ -9372,7 +9372,7 @@
       "effects": {
         "legitimacy": 10,
         "integrity": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A lei cai. Seu time escreve outra, e as vilas perto das lavouras esperam.",
       "actors": {
@@ -9392,8 +9392,8 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
-        "legitimacy": -10
+        "political_capital": -5,
+        "legitimacy": -5
       },
       "consequence": "A emenda avança. O STF e o Congresso entram em choque.",
       "actors": {
@@ -9426,7 +9426,7 @@
       "effects": {
         "integrity": 5,
         "legitimacy": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A AGU recorre. As famílias esperam meses pelas chaves.",
       "actors": {
@@ -9445,7 +9445,7 @@
       ],
       "effects": {
         "awareness": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "integrity": -5
       },
       "consequence": "Sua base vibra. Juristas dizem que você ameaça a Justiça.",
@@ -9487,7 +9487,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Políticos passam a ser julgados como todo mundo. Aliados se assustam.",
       "actors": {
@@ -9507,7 +9507,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "Os processos seguem no STF. A base agradece o silêncio.",
@@ -9540,7 +9540,7 @@
       "effects": {
         "security": 10,
         "integrity": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "Recursos sem fim acabam. Quem não tem bom advogado é preso mais cedo.",
       "actors": {
@@ -9559,7 +9559,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "security": -10,
+        "security": -5,
         "political_capital": -5
       },
       "consequence": "Só se prende ao fim dos recursos. Há quem fale em impunidade.",
@@ -9592,7 +9592,7 @@
       "effects": {
         "dignity": 15,
         "integrity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Mais defensores chegam às cadeias. Muitos presos sem julgamento saem.",
       "actors": {
@@ -9611,7 +9611,7 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O recurso fica mais difícil para todos, ricos e pobres.",
@@ -9644,7 +9644,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "O delegado é afastado. A imprensa diz que você protege o juiz.",
       "actors": {
@@ -9663,7 +9663,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "O caso segue nas manchetes. O juiz diz que é julgado antes do processo.",
@@ -9704,7 +9704,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Juízes esperam anos para entrar na política. Rivais falam em censura.",
       "actors": {
@@ -9723,7 +9723,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "Juízes podem sair do tribunal direto para a urna.",
       "actors": {
@@ -9754,8 +9754,8 @@
       ],
       "effects": {
         "political_capital": 10,
-        "legitimacy": -15,
-        "integrity": -10
+        "legitimacy": -10,
+        "integrity": -5
       },
       "consequence": "Você ganha a maioria na corte. O próximo presidente pode fazer o mesmo.",
       "actors": {
@@ -9784,7 +9784,7 @@
       "effects": {
         "legitimacy": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A corte fica como está. Suas leis seguem em risco.",
       "actors": {
@@ -9815,7 +9815,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "O despejo espera. Famílias e fazendeiro negociam uma saída.",
@@ -9836,7 +9836,7 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -15,
+        "dignity": -10,
         "legitimacy": -5
       },
       "consequence": "A polícia esvazia a fazenda. As famílias vão para a beira da estrada.",
@@ -9879,7 +9879,7 @@
       "effects": {
         "integrity": 10,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Mais juízes são contratados. Comarcas pequenas sofrem para se adaptar.",
       "actors": {
@@ -9898,7 +9898,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "integrity": -10,
+        "integrity": -5,
         "dignity": -5
       },
       "consequence": "O mesmo juiz segue do inquérito à sentença.",
@@ -9930,7 +9930,7 @@
       ],
       "effects": {
         "security": 15,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "As sentenças saem sem assinatura. A defesa não sabe quem julga.",
@@ -9950,7 +9950,7 @@
       ],
       "effects": {
         "security": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "A juíza ganha escolta. Outros juízes ameaçados também pedem.",
@@ -9983,7 +9983,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O projeto chega ao Congresso. Bancadas religiosas prometem barrar.",
       "actors": {
@@ -10045,7 +10045,7 @@
       "effects": {
         "integrity": 10,
         "treasury": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O tribunal fica mais técnico. A base cobra a vaga perdida.",
       "actors": {
@@ -10065,7 +10065,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "O aliado agora fiscaliza quem o indicou.",
@@ -10097,7 +10097,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -15,
+        "integrity": -10,
         "awareness": -5
       },
       "consequence": "A base respira. A imprensa diz que você fecha a porta da investigação.",
@@ -10127,7 +10127,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A delação segue. Nomes da sua base podem aparecer.",
       "actors": {
@@ -10160,7 +10160,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Associações de juízes vão ao STF contra a lei.",
       "actors": {
@@ -10188,7 +10188,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "Os auxílios seguem. Professores comparam com os próprios salários.",
@@ -10221,7 +10221,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "security": -10
+        "security": -5
       },
       "consequence": "Mais presos são ouvidos logo. Abusos na prisão aparecem mais cedo.",
       "actors": {
@@ -10240,7 +10240,7 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Menos presos saem na hora. Abusos ficam sem testemunha.",
@@ -10273,7 +10273,7 @@
       "effects": {
         "integrity": 15,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os escritórios perdem clientes. Juízes dizem que você pune a família.",
       "actors": {
@@ -10293,7 +10293,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "Cada juiz decide se deve sair do caso do parente.",
@@ -10327,7 +10327,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Queixas contra juízes ganham porta de entrada. Tribunais protestam.",
       "actors": {
@@ -10380,7 +10380,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O influenciador faz campanha contra você. Mas sua consciência está limpa.",
       "actors": {},
@@ -10399,8 +10399,8 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 15,
-        "awareness": -15,
-        "integrity": -10
+        "awareness": -10,
+        "integrity": -5
       },
       "consequence": "O influenciador elogia seu governo. Mas o dinheiro vem da perda de apostadores.",
       "actors": {},
@@ -10432,7 +10432,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "integrity": -15
+        "integrity": -10
       },
       "consequence": "A ministra cai. Para muita gente, a demissão prova o boato.",
       "actors": {
@@ -10452,7 +10452,7 @@
         1
       ],
       "effects": {
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5,
         "integrity": 10
       },
@@ -10488,7 +10488,7 @@
       "effects": {
         "legitimacy": 10,
         "political_capital": 5,
-        "integrity": -15,
+        "integrity": -10,
         "awareness": -5
       },
       "consequence": "Seu time solta um vídeo falso do rival. As redes viram uma guerra de mentiras.",
@@ -10519,7 +10519,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "A perícia prova a fraude. O desmentido chega a menos gente que a mentira.",
@@ -10554,8 +10554,8 @@
       "effects": {
         "legitimacy": 10,
         "political_capital": 5,
-        "dignity": -15,
-        "integrity": -10
+        "dignity": -10,
+        "integrity": -5
       },
       "consequence": "A fronteira fecha. Famílias ficam presas do outro lado.",
       "actors": {
@@ -10576,8 +10576,8 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "legitimacy": -10,
-        "treasury": -10
+        "legitimacy": -5,
+        "treasury": -5
       },
       "consequence": "Os refugiados ficam. Parte da cidade ajuda, parte tem medo.",
       "actors": {
@@ -10611,8 +10611,8 @@
       "effects": {
         "legitimacy": 10,
         "political_capital": 5,
-        "integrity": -10,
-        "awareness": -10
+        "integrity": -5,
+        "awareness": -5
       },
       "consequence": "O boato pega. O streamer perde patrocínio e para de falar de política.",
       "actors": {
@@ -10633,7 +10633,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "Você entra na live dele. A audiência bate recorde, e as críticas também.",
@@ -10669,7 +10669,7 @@
         "sovereignty": 10,
         "security": 5,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O mundo vê a interferência. A potência nega e ameaça retaliar.",
       "actors": {
@@ -10699,8 +10699,8 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "sovereignty": -15,
-        "integrity": -10
+        "sovereignty": -10,
+        "integrity": -5
       },
       "consequence": "O comércio segue. Os perfis falsos também.",
       "actors": {
@@ -10735,7 +10735,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "O canal perde a verba. Aliados dele no Congresso falam em censura.",
@@ -10757,7 +10757,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -15,
+        "awareness": -10,
         "dignity": -5
       },
       "consequence": "O canal cresce com dinheiro público. Nas escolas, alunos repetem a aula.",
@@ -10793,7 +10793,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "A plataforma paga a multa e acusa o Brasil de censurar a internet.",
@@ -10815,8 +10815,8 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
-        "integrity": -10
+        "dignity": -5,
+        "integrity": -5
       },
       "consequence": "A plataforma promete agir. Os anúncios falsos seguem no ar.",
       "actors": {
@@ -10851,8 +10851,8 @@
       "effects": {
         "legitimacy": 15,
         "political_capital": 5,
-        "treasury": -10,
-        "integrity": -15
+        "treasury": -5,
+        "integrity": -10
       },
       "consequence": "Os elogios inundam as redes. O debate fica mais barulhento e mais falso.",
       "actors": {
@@ -10881,7 +10881,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "Você fica só com perfis reais. Os ataques dominam as redes.",
@@ -10916,8 +10916,8 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -10,
-        "dignity": -10
+        "political_capital": -5,
+        "dignity": -5
       },
       "consequence": "A PF acha canais que vendem 'vacina natural'. O medo continua nas escolas.",
       "actors": {},
@@ -10936,7 +10936,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -15,
+        "treasury": -10,
         "legitimacy": -5
       },
       "consequence": "Médicos vão às escolas e às redes. A campanha custa caro e demora.",
@@ -10979,7 +10979,7 @@
       "effects": {
         "legitimacy": 10,
         "treasury": 5,
-        "awareness": -15,
+        "awareness": -10,
         "dignity": -5
       },
       "consequence": "Os jovens aprendem a culpar quem é pobre. Até a si mesmos.",
@@ -11001,7 +11001,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "Uma casa de apostas banca o curso. O coach chama você de inimigo.",
@@ -11036,7 +11036,7 @@
       "effects": {
         "integrity": 10,
         "treasury": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "A norma fica. O desmentido demora, e parte do país passa a evitar o Pix.",
@@ -11058,7 +11058,7 @@
       "effects": {
         "legitimacy": 10,
         "political_capital": 5,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "O recuo vira 'prova' do boato. A Receita deixa de enxergar o dinheiro digital.",
@@ -11102,7 +11102,7 @@
       "effects": {
         "integrity": 10,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O partido se sente traído e passa a votar contra seus projetos.",
       "actors": {
@@ -11123,8 +11123,8 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 10,
-        "integrity": -10,
-        "awareness": -10
+        "integrity": -5,
+        "awareness": -5
       },
       "consequence": "O ministro traz os fãs dele ao governo. E traz as casas de apostas.",
       "actors": {
@@ -11159,7 +11159,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -10,
+        "treasury": -5,
         "legitimacy": -5
       },
       "consequence": "A comissão acaba. Muitos influenciadores largam as apostas e viram oposição.",
@@ -11190,8 +11190,8 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "awareness": -10,
-        "dignity": -10
+        "awareness": -5,
+        "dignity": -5
       },
       "consequence": "As apostas seguem em alta. Os influenciadores lucram com cada perda.",
       "actors": {
@@ -11226,7 +11226,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "integrity": -15,
+        "integrity": -10,
         "awareness": -5
       },
       "consequence": "Sua base vai às ruas. Mas foram essas urnas que elegeram você.",
@@ -11258,7 +11258,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Você parabeniza os eleitos. Aliados dizem que você entregou o jogo.",
       "actors": {
@@ -11293,7 +11293,7 @@
       "effects": {
         "integrity": 10,
         "sovereignty": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "Os dados mostram robôs pagos pelo garimpo ilegal. A plataforma fala em censura.",
@@ -11316,7 +11316,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "awareness": -10,
+        "awareness": -5,
         "sovereignty": -5
       },
       "consequence": "A conta segue fora do ar. Outras vozes contra o garimpo se calam.",
@@ -11360,7 +11360,7 @@
       "effects": {
         "political_capital": 10,
         "legitimacy": 5,
-        "awareness": -15
+        "awareness": -10
       },
       "consequence": "Sua base se inflama. Nas famílias, quem vota no rival vira inimigo.",
       "actors": {
@@ -11381,7 +11381,7 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": -5
       },
       "consequence": "O canal obedece e acusa você de trair a base. A militância esfria.",
@@ -11417,7 +11417,7 @@
       "effects": {
         "legitimacy": 10,
         "sovereignty": 5,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "Você taxa os produtos do vizinho. Dias depois, o vídeo se revela falso.",
@@ -11448,7 +11448,7 @@
       "effects": {
         "integrity": 10,
         "security": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "O vizinho desmente o vídeo. Nas redes, o agro chama você de fraco.",
@@ -11484,8 +11484,8 @@
       "effects": {
         "security": 10,
         "integrity": 10,
-        "political_capital": -10,
-        "legitimacy": -10
+        "political_capital": -5,
+        "legitimacy": -5
       },
       "consequence": "A investigação leva meses. Ao fim, a Justiça bloqueia as contas da facção.",
       "actors": {
@@ -11506,7 +11506,7 @@
       "effects": {
         "legitimacy": 10,
         "security": 5,
-        "integrity": -10,
+        "integrity": -5,
         "dignity": -5
       },
       "consequence": "As prisões viram espetáculo. O dinheiro da facção some antes do bloqueio.",
@@ -11539,8 +11539,8 @@
       "effects": {
         "legitimacy": 10,
         "political_capital": 5,
-        "awareness": -10,
-        "dignity": -10
+        "awareness": -5,
+        "dignity": -5
       },
       "consequence": "Os bailes viram caso de polícia. Os jovens perdem o lazer do bairro.",
       "actors": {
@@ -11562,7 +11562,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "treasury": -5
       },
       "consequence": "Os bailes ganham alvará. Seus rivais dizem que você apoia o crime.",
@@ -11597,7 +11597,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A terra é repartida. O agro protesta.",
       "actors": {},
@@ -11614,7 +11614,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "A polícia despeja as famílias. O agro comemora.",
@@ -11646,7 +11646,7 @@
       "effects": {
         "security": 10,
         "dignity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "A Força Nacional chega. Os fazendeiros acusam o governo de invadir o estado.",
@@ -11667,7 +11667,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "security": -10,
+        "security": -5,
         "legitimacy": -5
       },
       "consequence": "O governador agradece. As ameaças no acampamento continuam.",
@@ -11710,7 +11710,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A terra vai para a reforma. O dono recebe títulos a longo prazo.",
       "actors": {
@@ -11730,7 +11730,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -20,
+        "treasury": -15,
         "integrity": -5
       },
       "consequence": "O dono sai satisfeito. Sobra menos verba para outras famílias.",
@@ -11764,7 +11764,7 @@
       "effects": {
         "dignity": 15,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A lei passa por pouco. A bancada do agro promete revanche.",
       "actors": {
@@ -11784,7 +11784,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "O dono paga a multa e segue com a terra.",
@@ -11818,7 +11818,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os assentados ganham luz e poço. Os acampados protestam na estrada.",
       "actors": {
@@ -11838,7 +11838,7 @@
       "effects": {
         "dignity": 5,
         "sovereignty": 5,
-        "treasury": -10,
+        "treasury": -5,
         "legitimacy": -5
       },
       "consequence": "Novas famílias recebem terra. As antigas seguem sem estrutura.",
@@ -11881,7 +11881,7 @@
       "effects": {
         "integrity": 10,
         "sovereignty": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os títulos falsos caem. A bancada do agro trava a pauta do governo.",
       "actors": {
@@ -11901,7 +11901,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 5,
-        "integrity": -15
+        "integrity": -10
       },
       "consequence": "Os grileiros ganham o papel. A terra pública vira privada.",
       "actors": {
@@ -11943,7 +11943,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A escola fica. As crianças estudam perto de casa.",
       "actors": {
@@ -12019,7 +12019,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "dignity": -5
       },
       "consequence": "O acordo segue. O pequeno agricultor paga para plantar a própria colheita.",
@@ -12053,7 +12053,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Os repasses seguem. A CPI acusa o governo de proteger invasores.",
       "actors": {
@@ -12073,7 +12073,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "A bancada comemora. Cooperativas fecham e a produção cai.",
@@ -12108,7 +12108,7 @@
       "effects": {
         "political_capital": 10,
         "dignity": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "O crédito sai. O agricultor assume uma dívida longa com o banco.",
       "actors": {
@@ -12137,7 +12137,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "O latifúndio improdutivo segue na mira. Os deputados travam suas emendas.",
@@ -12172,7 +12172,7 @@
       "effects": {
         "treasury": 15,
         "sovereignty": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "A sonda começa a furar. Parceiros do clima cobram coerência.",
       "actors": {
@@ -12201,7 +12201,7 @@
       "effects": {
         "legitimacy": 5,
         "awareness": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O poço fica no papel. Estados da região perdem a receita esperada.",
       "actors": {
@@ -12234,7 +12234,7 @@
       "effects": {
         "treasury": 10,
         "legitimacy": 5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "A verba chega. Militares dizem que estrangeiros mandam na Amazônia.",
       "actors": {
@@ -12255,7 +12255,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10,
+        "treasury": -5,
         "legitimacy": -5
       },
       "consequence": "O país mantém o controle total. A fiscalização fica sem dinheiro.",
@@ -12290,7 +12290,7 @@
       "effects": {
         "integrity": 10,
         "security": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O veto sai. As empreiteiras prometem derrubá-lo no Congresso.",
       "actors": {
@@ -12311,7 +12311,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 5,
-        "security": -10
+        "security": -5
       },
       "consequence": "As obras andam mais rápido. Os técnicos perdem o poder de barrar.",
       "actors": {
@@ -12354,7 +12354,7 @@
       "effects": {
         "dignity": 10,
         "security": 10,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "As famílias ganham casa segura. Muitas perdem o trabalho perto de casa.",
       "actors": {
@@ -12374,7 +12374,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": -5,
-        "security": -10
+        "security": -5
       },
       "consequence": "As casas voltam rápido. O rio segue no mesmo lugar.",
       "actors": {
@@ -12416,7 +12416,7 @@
       "effects": {
         "security": 10,
         "dignity": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Os brigadistas ganham contrato. Os militares se queixam de perder espaço.",
       "actors": {
@@ -12437,7 +12437,7 @@
       "effects": {
         "security": 5,
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "legitimacy": -5
       },
       "consequence": "As tropas chegam. Saem quando a fumaça baixa.",
@@ -12470,7 +12470,7 @@
       ],
       "effects": {
         "legitimacy": 10,
-        "political_capital": -15,
+        "political_capital": -10,
         "treasury": -5
       },
       "consequence": "O pacto segue. Os exportadores mantêm os clientes de fora.",
@@ -12491,7 +12491,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "sovereignty": -5
       },
       "consequence": "A bancada comemora. Compradores de fora desconfiam da soja do país.",
@@ -12525,7 +12525,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O lixão fecha. Os catadores viram cooperados da usina.",
@@ -12546,7 +12546,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "security": -5
       },
       "consequence": "Os prefeitos agradecem. O chorume segue no lençol de água.",
@@ -12579,7 +12579,7 @@
       ],
       "effects": {
         "awareness": 15,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O material chega às escolas. A oposição pede CPI do livro didático.",
       "actors": {
@@ -12599,7 +12599,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "A polêmica esfria. Os alunos aprendem o tema pelo canal.",
       "actors": {
@@ -12633,7 +12633,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A obra para até a consulta. O setor elétrico fala em apagão.",
       "actors": {
@@ -12654,7 +12654,7 @@
       "effects": {
         "treasury": 10,
         "sovereignty": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A obra segue. As famílias deixam as margens do rio.",
       "actors": {
@@ -12687,7 +12687,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "dignity": -5
       },
       "consequence": "A taxa entra em vigor. O frete sobe junto com o diesel.",
@@ -12716,7 +12716,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Os caminhoneiros recuam. A conta do clima fica para depois.",
       "actors": {
@@ -12749,7 +12749,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "A comida fresca volta ao prato. O ajuste fiscal aperta.",
       "actors": {
@@ -12768,7 +12768,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "As contas fecham. O biscoito vira almoço.",
       "actors": {
@@ -12810,7 +12810,7 @@
       "effects": {
         "dignity": 10,
         "treasury": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O arroz fica no país. Os exportadores acusam o governo de quebrar contratos.",
       "actors": {
@@ -12831,7 +12831,7 @@
       "effects": {
         "political_capital": 5,
         "treasury": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "Os exportadores lucram. O preço no mercado da esquina sobe.",
       "actors": {
@@ -12873,7 +12873,7 @@
       "effects": {
         "dignity": 10,
         "sovereignty": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Os armazéns enchem. O mercado fala em gasto sem fim.",
       "actors": {
@@ -12893,7 +12893,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "O caixa respira. O preço do feijão sobe e desce sem freio.",
       "actors": {
@@ -12945,7 +12945,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "A comida chega. O deputado inaugura a cozinha como dono.",
       "actors": {
@@ -12998,7 +12998,7 @@
       "effects": {
         "security": 5,
         "integrity": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A regra antiga fica. A comida boa segue para o lixo.",
       "actors": {
@@ -13031,7 +13031,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "As famílias recebem comida. A área econômica fala em conta que não cabe.",
       "actors": {
@@ -13050,7 +13050,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O recurso ganha tempo. As famílias esperam com fome.",
@@ -13084,7 +13084,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os anúncios saem dos desenhos. A indústria fala em censura.",
       "actors": {
@@ -13105,7 +13105,7 @@
       "effects": {
         "treasury": 5,
         "political_capital": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "A indústria promete cuidado. Os anúncios continuam nos jogos.",
       "actors": {
@@ -13138,7 +13138,7 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "O Estado chega com renda e cozinha. A facção perde clientes.",
       "actors": {
@@ -13158,7 +13158,7 @@
       "effects": {
         "security": 5,
         "political_capital": 10,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "A operação prende alguns. As cestas param de chegar.",
       "actors": {
@@ -13200,7 +13200,7 @@
       "effects": {
         "sovereignty": 5,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O arroz chega ao país em guerra. Aqui, a oposição pergunta pelo povo.",
       "actors": {
@@ -13220,7 +13220,7 @@
       "effects": {
         "dignity": 5,
         "political_capital": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O arroz fica no país. Diplomatas falam em imagem arranhada.",
       "actors": {
@@ -13252,7 +13252,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "As famílias seguem com a renda. Fraudes também, até a revisão.",
@@ -13273,7 +13273,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "dignity": -15
+        "dignity": -10
       },
       "consequence": "O gasto cai. Famílias sem erro também perdem o benefício.",
       "actors": {
@@ -13315,7 +13315,7 @@
       "effects": {
         "sovereignty": 15,
         "dignity": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O remédio sai pela metade do preço. O governo dos EUA reclama.",
       "actors": {
@@ -13342,7 +13342,7 @@
         0
       ],
       "effects": {
-        "treasury": -20,
+        "treasury": -15,
         "dignity": -5,
         "political_capital": 5
       },
@@ -13378,7 +13378,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O plano cobre o tratamento. As operadoras falam em reajuste.",
       "actors": {
@@ -13397,7 +13397,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "A lista vale como está. Famílias voltam para a fila do SUS.",
@@ -13430,7 +13430,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "integrity": -5
       },
       "consequence": "Cidades sem médico ganham atendimento. Conselhos médicos protestam.",
@@ -13484,7 +13484,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15,
+        "treasury": -10,
         "sovereignty": -5
       },
       "consequence": "A fila anda rápido. O dinheiro público vai para hospitais privados.",
@@ -13503,7 +13503,7 @@
         1
       ],
       "effects": {
-        "treasury": -20,
+        "treasury": -15,
         "dignity": 5,
         "political_capital": -5
       },
@@ -13546,7 +13546,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "As escolas ganham psicólogos. Os estados pedem verba.",
       "actors": {
@@ -13598,7 +13598,7 @@
       ],
       "effects": {
         "dignity": 5,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "A venda segue proibida. O vape segue à venda nas redes.",
@@ -13618,7 +13618,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O vape vira produto legal. A propaganda chega aos adolescentes.",
@@ -13651,8 +13651,8 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "Agentes visitam as casas. Os deputados perdem a vitrine.",
       "actors": {
@@ -13679,7 +13679,7 @@
       ],
       "effects": {
         "political_capital": 15,
-        "integrity": -10,
+        "integrity": -5,
         "dignity": -5
       },
       "consequence": "As ambulâncias chegam com adesivo. Ninguém visita as casas.",
@@ -13713,7 +13713,7 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Equipes tratam os presos. Políticos dizem que preso tem regalia.",
       "actors": {
@@ -13732,7 +13732,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Os doentes ficam numa ala isolada. A doença segue sem remédio.",
@@ -13772,7 +13772,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "A criança recebe o remédio. Outro programa perde verba.",
       "actors": {},
@@ -13789,7 +13789,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O governo recorre. A família vai às redes contra você.",
@@ -13822,8 +13822,8 @@
       ],
       "effects": {
         "security": 10,
-        "treasury": -15,
-        "political_capital": -10
+        "treasury": -10,
+        "political_capital": -5
       },
       "consequence": "As ruas esvaziam. Comerciantes protestam.",
       "actors": {
@@ -13843,7 +13843,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "security": -15,
+        "security": -10,
         "legitimacy": -5
       },
       "consequence": "O comércio segue. Os hospitais começam a encher.",
@@ -13884,7 +13884,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Entregadores ganham piso e seguro. As empresas sobem a taxa.",
@@ -13905,7 +13905,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Nada muda. Os entregadores fazem greve no fim de semana.",
@@ -13940,7 +13940,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A lista segue pública. A bancada ruralista trava suas pautas.",
       "actors": {
@@ -13959,7 +13959,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "dignity": -15,
+        "dignity": -10,
         "integrity": -5
       },
       "consequence": "A lista sai do ar. Os fazendeiros comemoram.",
@@ -13999,7 +13999,7 @@
         1
       ],
       "effects": {
-        "treasury": -20,
+        "treasury": -15,
         "dignity": 5,
         "political_capital": 5
       },
@@ -14055,7 +14055,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Fiscais vão ao campo. A Europa mantém as compras.",
@@ -14075,7 +14075,7 @@
       ],
       "effects": {
         "sovereignty": 5,
-        "dignity": -10,
+        "dignity": -5,
         "treasury": -5
       },
       "consequence": "O governo nega o problema. Os compradores ficam desconfiados.",
@@ -14117,7 +14117,7 @@
       "effects": {
         "awareness": 5,
         "dignity": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "Os sindicatos ganham fôlego. Trabalhadores reclamam do desconto.",
       "actors": {
@@ -14171,7 +14171,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "A fábrica mantém os empregos com subsídio. Os donos ficam irritados.",
@@ -14199,7 +14199,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": 10,
         "dignity": -5
       },
@@ -14233,7 +14233,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "A Justiça do Trabalho fica. O mercado fala em custo Brasil.",
@@ -14254,7 +14254,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Os processos trabalhistas vão para a Justiça comum. A fila cresce.",
@@ -14288,7 +14288,7 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Os presos trabalham com salário e reduzem a pena. A volta ao crime cai.",
       "actors": {
@@ -14307,7 +14307,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "As empresas lucram com presos que ganham quase nada.",
@@ -14341,7 +14341,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Novos institutos abrem. Os primeiros técnicos se formam.",
       "actors": {
@@ -14360,7 +14360,7 @@
       ],
       "effects": {
         "treasury": -5,
-        "awareness": -10,
+        "awareness": -5,
         "political_capital": 5
       },
       "consequence": "As empresas treinam para a vaga delas. A formação geral fica de fora.",
@@ -14392,7 +14392,7 @@
         1
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "security": 10,
         "political_capital": -5
       },
@@ -14414,7 +14414,7 @@
       ],
       "effects": {
         "security": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "dignity": -5
       },
       "consequence": "A polícia libera as estradas. Os caminhoneiros prometem voltar.",
@@ -14457,7 +14457,7 @@
       "effects": {
         "dignity": 10,
         "integrity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A busca exige motivo concreto. Policiais dizem que perdem uma ferramenta.",
       "actors": {
@@ -14477,7 +14477,7 @@
       ],
       "effects": {
         "security": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Nada muda. Jovens negros seguem parados na rua.",
@@ -14511,7 +14511,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Clubes perdem pontos por racismo da torcida. A bancada da bola reclama.",
       "actors": {
@@ -14563,7 +14563,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "Pequenos negócios de pessoas negras crescem. Bancos reclamam da regra.",
@@ -14617,7 +14617,7 @@
       "effects": {
         "security": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os ataques viram inquérito. Os terreiros voltam a abrir.",
       "actors": {},
@@ -14634,7 +14634,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "security": -10,
+        "security": -5,
         "dignity": -5
       },
       "consequence": "Os casos ficam como desavença. Ninguém responde por eles.",
@@ -14673,7 +14673,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Famílias chegam com documentos. Grupos nas redes reclamam.",
@@ -14693,7 +14693,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "sovereignty": 5
       },
       "consequence": "O visto fecha. Famílias tentam entrar pela mata.",
@@ -14735,7 +14735,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 10,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "O fundo financia moradia e estudo. O mercado critica o gasto.",
       "actors": {
@@ -14762,7 +14762,7 @@
       ],
       "effects": {
         "awareness": 5,
-        "dignity": -10,
+        "dignity": -5,
         "political_capital": 5
       },
       "consequence": "O Estado pede desculpas. Nenhuma política muda.",
@@ -14815,7 +14815,7 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "Mais estações ganham câmeras estrangeiras. Os erros também crescem.",
@@ -14857,7 +14857,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "O aterro vai para longe das casas. A obra custa mais.",
@@ -14877,7 +14877,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O aterro fica perto das casas. O cheiro chega às escolas.",
@@ -14911,7 +14911,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Hospitais seguem o protocolo. Menos mães negras morrem no parto.",
       "actors": {
@@ -14930,7 +14930,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "integrity": -5
       },
       "consequence": "Cada hospital decide. As diferenças seguem iguais.",
@@ -14964,7 +14964,7 @@
       "effects": {
         "legitimacy": 10,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os concursos reservam vagas. Associações de juízes reclamam.",
       "actors": {
@@ -15016,7 +15016,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "O dinheiro vai a artistas de todo o país. Grandes produtoras reclamam.",
@@ -15037,7 +15037,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "As empresas seguem com quem dá vitrine. O interior fica sem.",
@@ -15099,7 +15099,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "awareness": -5
       },
       "consequence": "Nada muda. As telas seguem cheias de séries de fora.",
@@ -15133,7 +15133,7 @@
       "effects": {
         "awareness": 10,
         "security": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O museu ganha brigada e reforma. Deputados perdem verba de vitrine.",
       "actors": {
@@ -15152,7 +15152,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "awareness": -10,
+        "awareness": -5,
         "political_capital": 5
       },
       "consequence": "O prédio é vendido. O acervo vai para um depósito.",
@@ -15195,7 +15195,7 @@
         "awareness": 5,
         "dignity": 5,
         "security": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Muros viram galeria a céu aberto. Parte dos moradores reclama.",
       "actors": {
@@ -15214,7 +15214,7 @@
       ],
       "effects": {
         "security": 5,
-        "awareness": -10,
+        "awareness": -5,
         "dignity": -5
       },
       "consequence": "Jovens são presos por grafite. Os muros voltam a ficar cinza.",
@@ -15256,7 +15256,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Escolas contratam professores de arte. Sobram menos horas para provas.",
       "actors": {
@@ -15275,7 +15275,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "awareness": -10,
+        "awareness": -5,
         "integrity": -5
       },
       "consequence": "As notas sobem um pouco. A arte some da escola.",
@@ -15329,7 +15329,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "dignity": -5
       },
       "consequence": "As empresas treinam IA com tudo. Artistas perdem trabalho.",
@@ -15364,7 +15364,7 @@
       "effects": {
         "awareness": 5,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A mostra fica aberta. A bancada promete retaliar.",
       "actors": {
@@ -15383,7 +15383,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
+        "awareness": -5,
         "legitimacy": -5
       },
       "consequence": "A exposição fecha. Outros museus cancelam mostras.",
@@ -15424,7 +15424,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Estúdios brasileiros lançam jogos. Críticos dizem que é gasto com diversão.",
@@ -15444,7 +15444,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "awareness": -5
       },
       "consequence": "Grandes estúdios abrem filiais. Os jogos seguem pensados lá fora.",
@@ -15531,7 +15531,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Jovens da periferia vão a cinema e teatro. O gasto pesa no caixa.",
       "actors": {
@@ -15550,7 +15550,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "awareness": -10,
+        "awareness": -5,
         "political_capital": 5
       },
       "consequence": "As salas ficam onde já estão. O bairro segue sem cinema.",
@@ -15581,7 +15581,7 @@
         1
       ],
       "effects": {
-        "political_capital": -15,
+        "political_capital": -10,
         "dignity": 10,
         "integrity": 5
       },
@@ -15602,8 +15602,8 @@
       ],
       "effects": {
         "political_capital": 20,
-        "dignity": -15,
-        "integrity": -10
+        "dignity": -10,
+        "integrity": -5
       },
       "consequence": "O Latifundiário garante votos. Mas a impunidade aumenta.",
       "actors": {
@@ -15635,8 +15635,8 @@
       "effects": {
         "dignity": 15,
         "integrity": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "As rodovias seguem fechadas por dias. A lista continua pública.",
       "actors": {
@@ -15666,8 +15666,8 @@
       "effects": {
         "political_capital": 15,
         "treasury": 5,
-        "dignity": -15,
-        "integrity": -10
+        "dignity": -10,
+        "integrity": -5
       },
       "consequence": "As estradas abrem. Quem explora trabalhador some do cadastro público.",
       "actors": {
@@ -15720,7 +15720,7 @@
       "effects": {
         "sovereignty": 5,
         "treasury": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A comitiva fica menor. Os fazendeiros negociam por conta própria.",
       "actors": {
@@ -15752,7 +15752,7 @@
       "effects": {
         "treasury": 15,
         "political_capital": 5,
-        "dignity": -20
+        "dignity": -15
       },
       "consequence": "Os bancos ganham clientes. Quem ganha pouco poupa pouco e se aposenta com menos.",
       "actors": {
@@ -15772,7 +15772,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "O mercado reclama. A aposentadoria segue paga por quem trabalha hoje.",
@@ -15805,7 +15805,7 @@
       "effects": {
         "treasury": 10,
         "dignity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O imposto passa. Colunistas preveem o fim do mundo na mesma semana.",
       "actors": {
@@ -15834,7 +15834,7 @@
       "effects": {
         "political_capital": 10,
         "treasury": 5,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "O mercado acalma. Quem vive de salário paga mais, em proporção.",
@@ -15895,7 +15895,7 @@
       "effects": {
         "dignity": 5,
         "sovereignty": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O governo faz menos casas, mas não deve lucro a ninguém.",
       "actors": {
@@ -15927,7 +15927,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -15
+        "dignity": -10
       },
       "consequence": "As casas saem rápido. As famílias passam horas no ônibus todo dia.",
       "actors": {
@@ -15947,7 +15947,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "A obra atrasa. Prédios vazios do centro viram moradia.",
@@ -15981,8 +15981,8 @@
       "effects": {
         "integrity": 15,
         "legitimacy": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "As empresas ficam fora das licitações. Obras param à espera de novas firmas.",
       "actors": {
@@ -16001,7 +16001,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "integrity": -10,
+        "integrity": -5,
         "legitimacy": -5
       },
       "consequence": "As obras seguem. As empresas pagam multa e voltam a disputar contratos.",
@@ -16062,7 +16062,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "dignity": -10,
+        "dignity": -5,
         "political_capital": -5
       },
       "consequence": "Tudo fica registrado. As famílias esperam mais pela casa nova.",
@@ -16095,7 +16095,7 @@
       "effects": {
         "sovereignty": 10,
         "treasury": 5,
-        "dignity": -10,
+        "dignity": -5,
         "political_capital": -5
       },
       "consequence": "As fábricas comemoram. Jovens reclamam do preço das roupas.",
@@ -16117,7 +16117,7 @@
       "effects": {
         "dignity": 5,
         "legitimacy": 5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "As compras seguem baratas. Lojas de bairro fecham as portas.",
       "actors": {
@@ -16149,8 +16149,8 @@
       "effects": {
         "awareness": 10,
         "integrity": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "O ar da cidade melhora. Os demitidos culpam o governo.",
       "actors": {
@@ -16179,7 +16179,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "awareness": -10,
+        "awareness": -5,
         "dignity": -5
       },
       "consequence": "A fábrica fica. A fumaça também.",
@@ -16240,7 +16240,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "dignity": -5
       },
       "consequence": "A plataforma chega no prazo. Os estaleiros seguem vazios.",
@@ -16273,7 +16273,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "Abrem vagas baratas. Hospitais desconfiam de quem nunca pisou num laboratório.",
@@ -16295,7 +16295,7 @@
       "effects": {
         "dignity": 5,
         "awareness": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O curso fica mais caro e mais raro. Quem se forma chega pronto ao plantão.",
       "actors": {
@@ -16328,7 +16328,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "A Advocacia da União defende a regra. Os donos falam em perseguição.",
       "actors": {
@@ -16357,7 +16357,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "integrity": -5
       },
       "consequence": "As faculdades retiram a ação. O dinheiro público segue sem controle.",
@@ -16409,7 +16409,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "Abrem turmas noturnas na universidade pública. A obra demora.",
@@ -16443,7 +16443,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "integrity": -10,
+        "integrity": -5,
         "dignity": -5
       },
       "consequence": "A bolsa sobe. Servidores temem perseguição de cada novo chefe.",
@@ -16464,7 +16464,7 @@
       ],
       "effects": {
         "integrity": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Os servidores respiram. Os analistas cortam a previsão para o país.",
@@ -16506,7 +16506,7 @@
       "effects": {
         "dignity": 5,
         "security": 5,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "O dólar acalma. O país fica com menos colchão para a próxima crise.",
       "actors": {
@@ -16526,8 +16526,8 @@
       "effects": {
         "sovereignty": 10,
         "dignity": 5,
-        "treasury": -10,
-        "political_capital": -10
+        "treasury": -5,
+        "political_capital": -5
       },
       "consequence": "A especulação para. Investidores dizem que o país virou armadilha.",
       "actors": {
@@ -16579,7 +16579,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10,
+        "political_capital": -5,
         "treasury": -5
       },
       "consequence": "Os juros caem por lei. Os bancos cortam crédito para os mais pobres.",
@@ -16612,7 +16612,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "dignity": -10,
+        "dignity": -5,
         "awareness": -5
       },
       "consequence": "Algumas escolas melhoram. As mais pobres perdem verba e afundam.",
@@ -16634,7 +16634,7 @@
       "effects": {
         "dignity": 10,
         "awareness": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "As escolas pobres recebem mais. Os técnicos dizem que ninguém cobra resultado.",
@@ -16668,7 +16668,7 @@
       "effects": {
         "integrity": 10,
         "treasury": 10,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "O programa encolhe. Quem comia ali procura outra porta.",
       "actors": {
@@ -16689,7 +16689,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "As cozinhas seguem. Você chama o estudo de frio e incompleto.",
@@ -16758,7 +16758,7 @@
       "effects": {
         "dignity": 10,
         "security": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O aplicativo sai, mas o atendimento de porta segue aberto.",
       "actors": {
@@ -16790,8 +16790,8 @@
       "effects": {
         "security": 10,
         "political_capital": 5,
-        "integrity": -10,
-        "legitimacy": -10
+        "integrity": -5,
+        "legitimacy": -5
       },
       "consequence": "Os quartéis aplaudem. Famílias de vítimas perdem o júri comum.",
       "actors": {
@@ -16812,7 +16812,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "security": -10
+        "security": -5
       },
       "consequence": "Os generais se calam em público. Nos bastidores, a conversa esfria.",
       "actors": {
@@ -16844,7 +16844,7 @@
       "effects": {
         "security": 10,
         "sovereignty": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "As operações voltam. Os quartéis aprendem que a pressão funciona.",
       "actors": {
@@ -16863,7 +16863,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "security": -10,
+        "security": -5,
         "treasury": -5
       },
       "consequence": "A PF assume a fronteira. Falta gente para tanto chão.",
@@ -16925,7 +16925,7 @@
       "effects": {
         "dignity": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "Médicos civis lideram. Os quartéis apoiam com menos vontade.",
       "actors": {
@@ -16958,7 +16958,7 @@
       "effects": {
         "sovereignty": 5,
         "political_capital": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "A greve não sai. O caixa aperta para as outras áreas.",
       "actors": {
@@ -16977,7 +16977,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "legitimacy": -5
       },
       "consequence": "O caixa respira. Os melhores técnicos pedem para sair.",
@@ -17018,7 +17018,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Os portos voltam a girar. Outras categorias pedem o mesmo.",
@@ -17039,7 +17039,7 @@
       "effects": {
         "treasury": 10,
         "political_capital": 5,
-        "sovereignty": -10,
+        "sovereignty": -5,
         "legitimacy": -5
       },
       "consequence": "Os auditores voltam irritados. A fiscalização de cargas afrouxa.",
@@ -17134,7 +17134,7 @@
       "effects": {
         "security": 10,
         "legitimacy": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O tratado passa por pouco. A bancada da bala anota o seu nome.",
       "actors": {
@@ -17154,7 +17154,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "security": -10,
+        "security": -5,
         "legitimacy": -5
       },
       "consequence": "O tratado espera. O Brasil chega sem ele à próxima cúpula.",
@@ -17187,7 +17187,7 @@
       "effects": {
         "integrity": 10,
         "legitimacy": 5,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "A indústria de defesa perde o contrato. Os diplomatas recuperam a voz.",
       "actors": {
@@ -17208,7 +17208,7 @@
       "effects": {
         "treasury": 10,
         "sovereignty": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "integrity": -5
       },
       "consequence": "O contrato segue. O Itamaraty abre apuração do vazamento.",
@@ -17249,8 +17249,8 @@
       ],
       "effects": {
         "political_capital": 20,
-        "integrity": -10,
-        "legitimacy": -10
+        "integrity": -5,
+        "legitimacy": -5
       },
       "consequence": "As votações andam. Técnicos dão lugar a indicados do partido.",
       "actors": {
@@ -17270,7 +17270,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O partido aceita a cadeira e cobra o resto em cada votação.",
       "actors": {
@@ -17302,7 +17302,7 @@
       "effects": {
         "treasury": 10,
         "integrity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O veto segura as contas. O líder promete o troco.",
       "actors": {
@@ -17329,7 +17329,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -15,
+        "treasury": -10,
         "integrity": -5
       },
       "consequence": "A crise acaba. A conta fica para o próximo ano.",
@@ -17389,7 +17389,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Você fica sem dívida. A prioridade chega mais magra.",
       "actors": {
@@ -17419,7 +17419,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "legitimacy": 10,
         "integrity": -5
       },
@@ -17441,7 +17441,7 @@
       "effects": {
         "treasury": 5,
         "integrity": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O culto segue livre de imposto. A empresa da igreja paga como as outras.",
       "actors": {
@@ -17481,7 +17481,7 @@
       ],
       "effects": {
         "legitimacy": 10,
-        "awareness": -15,
+        "awareness": -10,
         "dignity": -5
       },
       "consequence": "Os Pastores comemoram. Muitas crianças somem da vista da escola.",
@@ -17502,7 +17502,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "A matrícula segue obrigatória. Os templos dizem que o governo odeia a família.",
@@ -17553,7 +17553,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "dignity": 5,
         "legitimacy": -5
       },
@@ -17587,7 +17587,7 @@
       "effects": {
         "awareness": 10,
         "dignity": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Os professores fincam raiz. A folha de pagamento cresce por décadas.",
       "actors": {
@@ -17606,7 +17606,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "O caixa respira. Todo ano a turma troca de professor.",
       "actors": {
@@ -17646,7 +17646,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "awareness": -10,
+        "awareness": -5,
         "legitimacy": -5
       },
       "consequence": "A Justiça manda voltar às aulas. Os professores voltam, ressentidos.",
@@ -17666,7 +17666,7 @@
       ],
       "effects": {
         "awareness": 5,
-        "treasury": -15,
+        "treasury": -10,
         "political_capital": -5
       },
       "consequence": "A mesa reabre. A greve acaba, e a conta fica para o orçamento.",
@@ -17717,7 +17717,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "awareness": 5
       },
       "consequence": "Uma plataforma de fora entra nas escolas. Sem professor perto.",
@@ -17750,7 +17750,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "A enfermagem comemora. A União banca a diferença das santas casas.",
       "actors": {
@@ -17769,7 +17769,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "Os leitos ficam abertos. A enfermagem segue com dois empregos.",
@@ -17811,7 +17811,7 @@
       "effects": {
         "dignity": 15,
         "sovereignty": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "O genérico chega ao SUS. O laboratório estrangeiro ameaça ir embora.",
       "actors": {
@@ -17830,7 +17830,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "dignity": 5,
         "legitimacy": -5
       },
@@ -17892,7 +17892,7 @@
       ],
       "effects": {
         "security": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "O caso vai direto à delegacia. Muita vítima desiste antes de entrar.",
       "actors": {
@@ -17923,7 +17923,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Os entregadores ganham proteção. As plataformas ameaçam subir a taxa.",
       "actors": {
@@ -17943,7 +17943,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "As plataformas agradecem. Quem cai da moto segue por conta própria.",
       "actors": {
@@ -17984,8 +17984,8 @@
       ],
       "effects": {
         "security": 5,
-        "legitimacy": -10,
-        "dignity": -10
+        "legitimacy": -5,
+        "dignity": -5
       },
       "consequence": "A fábrica é desocupada à força. As máquinas seguem para outro país.",
       "actors": {
@@ -18014,8 +18014,8 @@
       ],
       "effects": {
         "dignity": 5,
-        "political_capital": -10,
-        "treasury": -10
+        "political_capital": -5,
+        "treasury": -5
       },
       "consequence": "O governo media. Os trabalhadores ganham tempo para propor uma cooperativa.",
       "actors": {
@@ -18065,7 +18065,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O governo mantém as mãos livres. Cada categoria briga sozinha.",
       "actors": {
@@ -18096,7 +18096,7 @@
       ],
       "effects": {
         "dignity": 15,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Famílias moram perto do trabalho. As construtoras perdem o terreno nobre.",
@@ -18117,7 +18117,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "O leilão enche o caixa. Os prédios viram escritórios de luxo.",
       "actors": {
@@ -18149,7 +18149,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -20
+        "treasury": -15
       },
       "consequence": "As obras começam às pressas. O rompimento vira trégua.",
       "actors": {
@@ -18168,7 +18168,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "O governo segura o caixa. Perde a rua que o defendia.",
@@ -18227,7 +18227,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "dignity": 5
       },
       "consequence": "A construtora ganha a licitação. A obra demora, mas sai no padrão.",
@@ -18260,7 +18260,7 @@
       ],
       "effects": {
         "dignity": 10,
-        "treasury": -10,
+        "treasury": -5,
         "political_capital": -5
       },
       "consequence": "Os assentamentos vendem garantido. O agronegócio reclama de favoritismo.",
@@ -18281,7 +18281,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "dignity": -10
+        "dignity": -5
       },
       "consequence": "Ganha quem dá o menor preço. A colheita do assentamento apodrece.",
       "actors": {
@@ -18321,7 +18321,7 @@
       ],
       "effects": {
         "security": 10,
-        "dignity": -10,
+        "dignity": -5,
         "legitimacy": -5
       },
       "consequence": "As fazendas são esvaziadas. Os sem-terra voltam à beira da estrada.",
@@ -18342,7 +18342,7 @@
       ],
       "effects": {
         "dignity": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "O Incra vistoria. Os ruralistas acusam o governo de premiar invasão.",
       "actors": {
@@ -18400,7 +18400,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "dignity": 5
       },
       "consequence": "O governo compra e distribui sozinho. Sai mais caro e demora mais.",
@@ -18433,7 +18433,7 @@
       "effects": {
         "sovereignty": 10,
         "awareness": 5,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Os fiscais voltam à floresta. O desmate recua, e a conta sobe.",
       "actors": {
@@ -18453,7 +18453,7 @@
       ],
       "effects": {
         "treasury": -5,
-        "sovereignty": -10
+        "sovereignty": -5
       },
       "consequence": "O satélite vê tudo. Sem fiscal, ninguém chega a tempo.",
       "actors": {
@@ -18486,7 +18486,7 @@
       "effects": {
         "sovereignty": 5,
         "awareness": 5,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "Cada boi ganha origem conhecida. Os pecuaristas reclamam do custo.",
       "actors": {
@@ -18506,7 +18506,7 @@
       ],
       "effects": {
         "political_capital": 10,
-        "treasury": -10,
+        "treasury": -5,
         "legitimacy": -5
       },
       "consequence": "O governo fala em traição da pátria. As compras lá fora caem.",
@@ -18567,7 +18567,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "awareness": -10
+        "awareness": -5
       },
       "consequence": "A prefeitura planta quando pode. O asfalto segue quente como brasa.",
       "actors": {
@@ -18599,7 +18599,7 @@
       "effects": {
         "legitimacy": 10,
         "dignity": 5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "Compositores comemoram. As plataformas cortam os planos baratos.",
       "actors": {
@@ -18619,7 +18619,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "As plataformas negociam com as grandes gravadoras. Quem é pequeno segue fora.",
       "actors": {
@@ -18650,7 +18650,7 @@
         1
       ],
       "effects": {
-        "political_capital": -10,
+        "political_capital": -5,
         "legitimacy": 5
       },
       "consequence": "O artista aceita o convite. Mas canta a música na porta do palácio.",
@@ -18670,7 +18670,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "awareness": -5
       },
       "consequence": "A estatal tira o apoio ao festival. A música toca ainda mais.",
@@ -18730,7 +18730,7 @@
       ],
       "effects": {
         "treasury": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O dinheiro fica no caixa. A praça segue vazia no fim de semana.",
       "actors": {
@@ -18762,7 +18762,7 @@
       "effects": {
         "political_capital": 5,
         "legitimacy": 5,
-        "awareness": -15
+        "awareness": -10
       },
       "consequence": "A Meta segue sem dever de agir. Golpes e ódio esperam o juiz.",
       "actors": {
@@ -18782,7 +18782,7 @@
       "effects": {
         "awareness": 10,
         "legitimacy": -5,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As plataformas passam a remover mais. Elas falam em censura.",
       "actors": {
@@ -18814,8 +18814,8 @@
       ],
       "effects": {
         "political_capital": 5,
-        "awareness": -10,
-        "sovereignty": -10
+        "awareness": -5,
+        "sovereignty": -5
       },
       "consequence": "As notícias voltam ao feed. A Meta aprende que ameaçar funciona.",
       "actors": {
@@ -18843,7 +18843,7 @@
       ],
       "effects": {
         "awareness": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "Jornais pequenos ganham fôlego. O feed segue sem notícia por meses.",
       "actors": {
@@ -18902,7 +18902,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "sovereignty": 5
       },
       "consequence": "A polícia desenvolve a sua. Fica pronta depois de muitos golpes.",
@@ -18934,7 +18934,7 @@
       ],
       "effects": {
         "treasury": 15,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "Os investimentos chegam. O rival corta compras de produtos brasileiros.",
       "actors": {
@@ -18954,7 +18954,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -10
+        "treasury": -5
       },
       "consequence": "O Itamaraty mantém a tradição de não alinhar. A potência esfria o acordo.",
       "actors": {
@@ -18986,7 +18986,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "sovereignty": -15
+        "sovereignty": -10
       },
       "consequence": "O embargo cai em semanas. A potência aprende o caminho da pressão.",
       "actors": {
@@ -19005,7 +19005,7 @@
       ],
       "effects": {
         "sovereignty": 10,
-        "treasury": -15
+        "treasury": -10
       },
       "consequence": "O Itamaraty abre outros portos. Até lá, frigoríficos demitem.",
       "actors": {
@@ -19046,7 +19046,7 @@
       ],
       "effects": {
         "legitimacy": 10,
-        "awareness": -15
+        "awareness": -10
       },
       "consequence": "Os jovens ganham diploma rápido. O mercado não sabe o que ele vale.",
       "actors": {
@@ -19066,7 +19066,7 @@
       ],
       "effects": {
         "awareness": 5,
-        "legitimacy": -10
+        "legitimacy": -5
       },
       "consequence": "O curso passa por prova. O Coach chama o MEC de inimigo do sucesso.",
       "actors": {
@@ -19106,7 +19106,7 @@
       ],
       "effects": {
         "treasury": 10,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "political_capital": -5
       },
       "consequence": "A Receita autua o Coach. Ele vira mártir e vende curso sobre perseguição.",
@@ -19126,7 +19126,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "treasury": -10,
+        "treasury": -5,
         "awareness": -5
       },
       "consequence": "O vídeo passa sem resposta. A sonegação vira moda entre os seguidores.",
@@ -19185,7 +19185,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "dignity": 5
       },
       "consequence": "A campanha chega pelas escolas técnicas. Mais lenta, sem vendedor.",
@@ -19217,7 +19217,7 @@
       ],
       "effects": {
         "integrity": 15,
-        "political_capital": -10
+        "political_capital": -5
       },
       "consequence": "As planilhas saem. Aliados aparecem em lugares estranhos.",
       "actors": {
@@ -19237,7 +19237,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "integrity": -10,
+        "integrity": -5,
         "awareness": -5
       },
       "consequence": "Os aliados respiram. A palavra sigilo vira manchete toda semana.",
@@ -19279,8 +19279,8 @@
       ],
       "effects": {
         "political_capital": 10,
-        "awareness": -10,
-        "legitimacy": -10
+        "awareness": -5,
+        "legitimacy": -5
       },
       "consequence": "O processo se arrasta. O jornalista gasta o que não tem.",
       "actors": {
@@ -19299,7 +19299,7 @@
       ],
       "effects": {
         "integrity": 10,
-        "political_capital": -15
+        "political_capital": -10
       },
       "consequence": "A Controladoria abre apuração. O ministro ameaça levar o partido embora.",
       "actors": {
@@ -19349,7 +19349,7 @@
         0
       ],
       "effects": {
-        "treasury": -10,
+        "treasury": -5,
         "awareness": 5
       },
       "consequence": "A big tech entra na escola com vídeos prontos. E com a marca dela.",
@@ -19383,7 +19383,7 @@
       "effects": {
         "awareness": 5,
         "legitimacy": 5,
-        "integrity": -10
+        "integrity": -5
       },
       "consequence": "Canais pequenos crescem. A oposição fala em mesada para aliados.",
       "actors": {
@@ -19434,7 +19434,7 @@
         1
       ],
       "effects": {
-        "political_capital": -10,
+        "political_capital": -5,
         "awareness": 5
       },
       "consequence": "Você assume erros ao vivo. Parte da base volta, parte não perdoa.",
@@ -19454,7 +19454,7 @@
       ],
       "effects": {
         "political_capital": 5,
-        "legitimacy": -10,
+        "legitimacy": -5,
         "awareness": -5
       },
       "consequence": "O governo segue calado. Os jovens trocam o voto pela abstenção.",
@@ -19513,7 +19513,7 @@
         0
       ],
       "effects": {
-        "treasury": -15,
+        "treasury": -10,
         "security": 5
       },
       "consequence": "A campanha sai com cara de governo. Poucos jovens compartilham.",
