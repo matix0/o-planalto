@@ -390,10 +390,10 @@ func _check_texts(node: Node, where: String, numbers: bool) -> void:
 			_expect(rx.search(cleaned) == null, "%s: meter value %d (%s) in '%s'" % [where, values[id], id, t])
 
 
-## Card / learning ids ("THEM-004"), "n de N", "Ano N", "Fase N" and the scene's vote counts
+## Card / learning ids ("THEM-004"), durations ("48 horas"), "n de N", "Ano N", "Fase N" and the scene's vote counts
 ## (513, 342, 81, 54: gdd 03 §3.3) are not meter values.
 func _strip_ids(t: String) -> String:
-	var rx := RegEx.create_from_string("[A-Z]+-\\d+|\\d+ de \\d+|Ano \\d|[Ff]ase \\d|\\d+/\\d+|\\b(513|342|81|54)\\b")
+	var rx := RegEx.create_from_string("[A-Z]+-\\d+|\\d+ (horas|dias|meses|anos)\\b|\\d+ de \\d+|Ano \\d|[Ff]ase \\d|\\d+/\\d+|\\b(513|342|81|54)\\b")
 	return rx.sub(t, "", true)
 
 

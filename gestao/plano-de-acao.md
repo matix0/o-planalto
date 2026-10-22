@@ -389,7 +389,7 @@
 | # | Etapa | Status | Evidência |
 | :--- | :--- | :--- | :--- |
 | 0 | Onda 0: 5 decisões do PO (modo Impeachment, número-alvo, temas THEM, formato, IDs) | ✅ provisória | `ded652b`; DP-011 a DP-017 (o PO valida no fim) |
-| 1 | Ondas 1..N: 10 cartas + 10 Aprendizados por onda (GD → dados → PSI → QA → PO) | 🟡 | Ondas 1-4 gravadas (Influenciador e Geopolítico completos; 57 de 340; DP-021 a DP-024); diário em `gestao/execucao-p014-p015.md` |
+| 1 | Ondas 1..N: 10 cartas + 10 Aprendizados por onda (GD → dados → PSI → QA → PO) | 🟡 | 340 de 340 escritas (Ondas 1-33); Ondas 5-33 sem PSI, pendentes de revisão (D-196) |
 | 2 | ECO a cada ~40 cartas | ⏳ | — |
 | 3 | Migração para `jogo/data/cards.json` e `learning.json`, testes e simulação com o baralho real | 🟡 | D-194: 57 cartas + 5 da cena em `jogo/data/`; 21/21 testes; simulação de 1.150 partidas sem travar. Repetir a cada onda nova (`cards_doc.py export`) |
 | 4 | `/fechar-plano`; liberar o P-006 | ⏳ | — |

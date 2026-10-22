@@ -11,7 +11,9 @@
       "sovereignty"
     ],
     "cards": {
-      "demand": "ATOR-001"
+      "demand": "ATOR-001",
+      "attack": "ATOR-002",
+      "offer": "ATOR-003"
     }
   },
   {
@@ -25,7 +27,11 @@
     "costs": [
       "dignity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-004",
+      "attack": "ATOR-005",
+      "offer": "ATOR-006"
+    }
   },
   {
     "id": "ACT-003",
@@ -38,7 +44,11 @@
     "costs": [
       "dignity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-007",
+      "attack": "ATOR-008",
+      "offer": "ATOR-009"
+    }
   },
   {
     "id": "ACT-004",
@@ -51,7 +61,11 @@
     "costs": [
       "dignity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-010",
+      "attack": "ATOR-011",
+      "offer": "ATOR-012"
+    }
   },
   {
     "id": "ACT-005",
@@ -64,7 +78,11 @@
     "costs": [
       "awareness"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-013",
+      "attack": "ATOR-014",
+      "offer": "ATOR-015"
+    }
   },
   {
     "id": "ACT-006",
@@ -77,7 +95,11 @@
     "costs": [
       "dignity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-016",
+      "attack": "ATOR-017",
+      "offer": "ATOR-018"
+    }
   },
   {
     "id": "ACT-007",
@@ -90,7 +112,11 @@
     "costs": [
       "dignity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-019",
+      "attack": "ATOR-020",
+      "offer": "ATOR-021"
+    }
   },
   {
     "id": "ACT-008",
@@ -103,7 +129,11 @@
     "costs": [
       "legitimacy"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-022",
+      "attack": "ATOR-023",
+      "offer": "ATOR-024"
+    }
   },
   {
     "id": "ACT-009",
@@ -116,7 +146,11 @@
     "costs": [
       "treasury"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-025",
+      "attack": "ATOR-026",
+      "offer": "ATOR-027"
+    }
   },
   {
     "id": "ACT-010",
@@ -129,7 +163,10 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-028",
+      "attack": "ATOR-029"
+    }
   },
   {
     "id": "ACT-011",
@@ -142,7 +179,11 @@
     "costs": [
       "legitimacy"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-030",
+      "attack": "ATOR-031",
+      "offer": "ATOR-032"
+    }
   },
   {
     "id": "ACT-012",
@@ -155,7 +196,11 @@
     "costs": [
       "integrity"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-033",
+      "attack": "ATOR-034",
+      "offer": "ATOR-035"
+    }
   },
   {
     "id": "ACT-013",
@@ -168,7 +213,11 @@
     "costs": [
       "treasury"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-036",
+      "attack": "ATOR-037",
+      "offer": "ATOR-038"
+    }
   },
   {
     "id": "ACT-014",
@@ -181,7 +230,11 @@
     "costs": [
       "treasury"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-039",
+      "attack": "ATOR-040",
+      "offer": "ATOR-041"
+    }
   },
   {
     "id": "ACT-015",
@@ -194,7 +247,11 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-042",
+      "attack": "ATOR-043",
+      "offer": "ATOR-044"
+    }
   },
   {
     "id": "ACT-016",
@@ -207,7 +264,11 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-045",
+      "attack": "ATOR-046",
+      "offer": "ATOR-047"
+    }
   },
   {
     "id": "ACT-017",
@@ -220,7 +281,11 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-048",
+      "attack": "ATOR-049",
+      "offer": "ATOR-050"
+    }
   },
   {
     "id": "ACT-018",
@@ -233,7 +298,11 @@
     "costs": [
       "treasury"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-051",
+      "attack": "ATOR-052",
+      "offer": "ATOR-053"
+    }
   },
   {
     "id": "ACT-019",
@@ -246,7 +315,11 @@
     "costs": [
       "security"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-054",
+      "attack": "ATOR-055",
+      "offer": "ATOR-056"
+    }
   },
   {
     "id": "ACT-020",
@@ -259,7 +332,11 @@
     "costs": [
       "awareness"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-057",
+      "attack": "ATOR-058",
+      "offer": "ATOR-059"
+    }
   },
   {
     "id": "ACT-021",
@@ -272,7 +349,10 @@
     "costs": [
       "sovereignty"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-060",
+      "attack": "ATOR-061"
+    }
   },
   {
     "id": "ACT-022",
@@ -285,7 +365,11 @@
     "costs": [
       "awareness"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-062",
+      "attack": "ATOR-063",
+      "offer": "ATOR-064"
+    }
   },
   {
     "id": "ACT-023",
@@ -298,7 +382,11 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-065",
+      "attack": "ATOR-066",
+      "offer": "ATOR-067"
+    }
   },
   {
     "id": "ACT-024",
@@ -311,6 +399,10 @@
     "costs": [
       "political_capital"
     ],
-    "cards": {}
+    "cards": {
+      "demand": "ATOR-068",
+      "attack": "ATOR-069",
+      "offer": "ATOR-070"
+    }
   }
 ]

@@ -44,6 +44,10 @@ func _run() -> void:
 		printerr("FAIL: test_game_screen timed out (%s)" % ", ".join(_failures))
 		quit(1))
 	await process_frame
+	# Scenario seeds and events are tuned to the fictitious fixture deck (D-139, D-194).
+	var gdata: Node = root.get_node(^"GameData")
+	gdata.data_dir = "res://tests/fixtures/data/"
+	gdata.load_all()
 	# Headless windows are 64×64: GUI picking (the pause button click) needs the phone canvas.
 	root.size = Vector2i(Tokens.VIEWPORT)
 	await process_frame

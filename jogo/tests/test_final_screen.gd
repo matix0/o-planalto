@@ -41,6 +41,9 @@ func _run() -> void:
 	_saves = root.get_node(^"SaveManager")
 	_settings = root.get_node(^"Settings")
 	_data = root.get_node(^"GameData")
+	# Scenario seeds are tuned to the fictitious fixture deck (D-139, D-194).
+	_data.data_dir = "res://tests/fixtures/data/"
+	_data.load_all()
 	_order = Array(_data.meter_ids)
 	var real_save: String = _saves.path
 	_saves.path = "user://test_final_screen_%d.json" % OS.get_process_id()

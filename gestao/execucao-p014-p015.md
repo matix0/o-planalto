@@ -179,3 +179,13 @@ Parado a pedido do membro (limite de uso semanal). Tudo está commitado e no `or
 - Simulação (`sim.gd`, 50 por perfil, 1.150 partidas) com o baralho real: 0 travadas, 0 fora de 0-100, 0 não determinísticas; motivos: catástrofe 615, impeachment 405, fim de mandato 130 (com o fictício: 958 / 182 / 10). Ainda baralho curto: o ECO avalia no fim do P-015.
 - Workflow do site exporta o jogo (Godot 4.7.2 + modelo Web sem threads, com cache) para `site/public/jogar/`; link "Jogar no navegador" na barra lateral.
 
+### 2026-10-22 — baralho completo no jogo (D-196)
+
+- PO: fazer todas as cartas sem validar agora; tudo "pendente de revisão (D-196)", revisão no fim; fontes no P-016.
+- Ondas 5 a 33 escritas por subagentes GD (sem PSI) e gravadas com `cards_doc.py insert`: doc 17 com 340 cartas + 5 da cena; doc 18 com 345 Aprendizados (os sem fonte conferida ficam "Em conferência (P-016)"). `cards_doc.py check`: 0 erros.
+- `cards_doc.py`: aceita Aprendizado em conferência; `insert` ordena IDs compostos (APR-THEM, APR-ATOR).
+- `jogo/data/`: 340 cartas exportadas; `actors.json` com as 3 cartas de cada ator (2 em ACT-010 e ACT-021).
+- Testes: `test_game_screen` e `test_final_screen` passam a usar o baralho de teste (cenários dependem dele); `test_e2e` não confunde duração ("48 horas") com valor de medidor; `test_playthrough` ignora URL de fonte na busca de palavra de lado. `run_all.sh` numa cópia: 21/21 OK.
+- Simulação (1.150 partidas): 0 travadas, 0 fora de 0-100, 0 não determinísticas; catástrofe 685, impeachment 277, fim de mandato 188; 18 finais distintos; 8.430 eventos.
+- Para a revisão do PO: títulos repetidos (INST-141 e INST-157 "Pedidos na gaveta"), temas próximos (INST-146 × 155; 118 × 110; 116 × 103), metas de eixo abaixo em algumas ondas, propostas e dúvidas do PSI no fim de cada `onda-NN/cartas.md`.
+

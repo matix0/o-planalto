@@ -66,6 +66,164 @@
     "impact": "Enquanto o povo passa fome, o Congresso aumenta o próprio salário."
   },
   {
+    "id": "APR-007",
+    "lived": "Você decidiu se demitia um ministro aliado sob suspeita ou se esperava a decisão da Justiça.",
+    "concept": "No presidencialismo de coalizão, o presidente divide ministérios com partidos em troca de votos. Demitir é decisão política; condenar cabe à Justiça.",
+    "data": "Nas eleições de 2026, a maior bancada da Câmara ficou com 121 dos 513 deputados (23,6%). Nenhum partido tem maioria sozinho.",
+    "source": {
+      "label": "Agência Senado, 5 de outubro de 2026.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/10/05/camara-pl-obtem-a-maior-bancada-federacao-pt-pcdob-pv-e-a-segunda-forca"
+    },
+    "impact": "Afastar não é condenar. Manter também é escolha."
+  },
+  {
+    "id": "APR-008",
+    "lived": "Você decidiu se pedia urgência para endurecer a pena por crime ambiental ou se deixava o projeto na comissão.",
+    "concept": "O presidente pode pedir urgência para um projeto seu: se a Câmara não vota no prazo, a pauta tranca. Comissões podem segurar projetos por anos.",
+    "data": "Desde 2023, a Câmara só arquiva os projetos de deputados após 3 legislaturas completas: de 12 a 16 anos de tramitação.",
+    "source": {
+      "label": "Agência Câmara, 8 de fevereiro de 2023.",
+      "url": "https://www.camara.leg.br/noticias/938043-MUDANCA-NO-REGIMENTO-INTERNO-REDUZ-NUMERO-DE-PROJETOS-ARQUIVADOS-NA-CAMARA-DOS-DEPUTADOS"
+    },
+    "impact": "Quem controla a pauta decide o que nunca é votado."
+  },
+  {
+    "id": "APR-009",
+    "lived": "Você decidiu se vetava o jabuti que taxa compras pequenas em sites estrangeiros ou se sancionava o texto todo.",
+    "concept": "Jabuti é um trecho sem relação com o tema, posto num projeto para passar de carona. O presidente pode vetar só esse trecho: é o veto parcial.",
+    "data": "Em 2024, uma emenda da Câmara pôs no projeto do Mover, de carros menos poluentes, a taxa de 20% sobre compras até US$ 50. O presidente vetou 4 trechos, não esse.",
+    "source": {
+      "label": "Agência Senado, 28 de junho de 2024.",
+      "url": "https://www12.senado.leg.br/noticias/materias/2024/06/28/lula-sanciona-taxacao-de-compra-internacional-e-criacao-do-programa-mover"
+    },
+    "impact": "Jabuti não sobe em árvore sozinho."
+  },
+  {
+    "id": "APR-010",
+    "lived": "Você decidiu se usava sua base contra a PEC que reduz a maioridade penal, sem o poder de vetá-la.",
+    "concept": "Uma PEC muda a Constituição. Exige maioria qualificada nas duas Casas, e o presidente não pode vetar. A arma dele é a base no voto.",
+    "data": "Em junho de 2026, a CCJ da Câmara aprovou por 44 a 18 que a PEC da maioridade penal siga adiante. No Plenário, ela precisa de 308 dos 513 deputados, em 2 turnos.",
+    "source": {
+      "label": "Agência Brasil, 10 de junho de 2026.",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-06/entenda-os-proximos-passos-do-projeto-para-reduzir-maioridade-penal"
+    },
+    "impact": "Na PEC, o presidente não tem caneta. Tem base."
+  },
+  {
+    "id": "APR-011",
+    "lived": "Você decidiu se vetava o Escola sem Partido ou se deixava a lei valer sem a sua assinatura.",
+    "concept": "O presidente tem prazo para sancionar ou vetar. Se fica em silêncio, a lei vale: é a sanção tácita. O STF já barrou leis parecidas nos estados.",
+    "data": "Em fevereiro de 2026, o STF invalidou por unanimidade a lei de uma cidade do Paraná que criou o Escola sem Partido. Citou a liberdade de ensinar e o pluralismo.",
+    "source": {
+      "label": "Notícias do STF, 19 de fevereiro de 2026.",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-invalida-lei-de-municipio-paranaense-que-instituiu-programa-escola-sem-partido/"
+    },
+    "impact": "Ficar calado também é assinar."
+  },
+  {
+    "id": "APR-012",
+    "lived": "Você decidiu se defendia no Senado seu decreto que limita armas de atiradores ou se afrouxava as regras.",
+    "concept": "O Congresso pode derrubar, com um decreto legislativo, o decreto do presidente que passa dos limites da lei. Decreto é rápido, mas frágil.",
+    "data": "Em 2024, a Câmara aprovou um projeto de decreto legislativo para sustar trechos do decreto de armas de 2023. O Senado o retirou de pauta; em 2026, seguia na CCJ.",
+    "source": {
+      "label": "Senado Federal, ficha do PDL 206/2024.",
+      "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/164091"
+    },
+    "impact": "Decreto se faz com caneta. E se desfaz com voto."
+  },
+  {
+    "id": "APR-013",
+    "lived": "Você decidiu se liberava emendas para manter seu veto à venda dos Correios ou se aceitava a derrubada.",
+    "concept": "Todo veto volta ao Congresso, que pode derrubá-lo em sessão conjunta de deputados e senadores. Para manter um veto, o governo negocia votos, às vezes com emendas.",
+    "data": "Em agosto de 2026, 99 vetos aguardavam análise do Congresso, e 87 trancavam a pauta. Derrubar um veto exige maioria absoluta dos votos de deputados e senadores.",
+    "source": {
+      "label": "Agência Câmara, 5 de agosto de 2026.",
+      "url": "https://www.camara.leg.br/noticias/1295191-mais-de-80-vetos-trancam-pauta-do-congresso-na-volta-do-recesso"
+    },
+    "impact": "O veto é a última palavra só até o Congresso falar."
+  },
+  {
+    "id": "APR-014",
+    "lived": "Você decidiu se processava o banco que lesou aposentados ou se fazia um acordo para reaver parte do dinheiro.",
+    "concept": "A CPI investiga, mas não pune: manda o relatório ao Ministério Público. Um acordo devolve dinheiro rápido, mas pode livrar culpados.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "CPI não prende. Ela entrega o caso.",
+    "unverified": true
+  },
+  {
+    "id": "APR-015",
+    "lived": "Você decidiu se sua base obstruía a votação do projeto que trata ocupação de terra e prédio como terrorismo.",
+    "concept": "Para votar, o plenário precisa de quórum, a presença mínima de deputados. Obstruir é sair ou adiar para a votação não acontecer.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Às vezes, quem não vota decide a votação.",
+    "unverified": true
+  },
+  {
+    "id": "APR-016",
+    "lived": "Você decidiu se ampliava a licença-paternidade por medida provisória, que vale na hora, ou por projeto de lei.",
+    "concept": "A medida provisória vale na hora, mas perde a validade se o Congresso não a votar a tempo. O projeto de lei demora, mas nasce negociado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cuidar do filho também é trabalho de pai.",
+    "unverified": true
+  },
+  {
+    "id": "APR-017",
+    "lived": "Você decidiu se apoiava o projeto popular por mais verba para o SUS ou se mandava um texto próprio.",
+    "concept": "Eleitores também podem propor leis: basta juntar assinaturas suficientes em vários estados. Depois, o projeto segue o mesmo caminho dos outros no Congresso.",
+    "data": "Em 2013, o movimento Saúde+10 reuniu quase 2 milhões de assinaturas por um projeto que pedia 10% da receita bruta da União para a saúde.",
+    "source": {
+      "label": "Agência Câmara, 09/10/2013",
+      "url": "https://www.camara.leg.br/noticias/417418-entidades-cobram-aprovacao-de-10-das-receitas-para-a-saude/"
+    },
+    "impact": "A lei também pode nascer de uma assinatura sua."
+  },
+  {
+    "id": "APR-018",
+    "lived": "Você decidiu se mandava ao Congresso o tratado da ONU que diz: crime contra a humanidade não prescreve.",
+    "concept": "O presidente assina tratados, mas eles só valem no Brasil depois que o Congresso aprova. A Lei de Anistia perdoou também agentes do Estado que torturaram.",
+    "data": "Em 2026, o Brasil ainda não tinha ratificado a Convenção da ONU de 1968 sobre a imprescritibilidade dos crimes de guerra e contra a humanidade.",
+    "source": {
+      "label": "MPF/PFDC, Normativas internacionais, 2026",
+      "url": "https://www.mpf.mp.br/atuacao/pfdc/comissoes-e-rts/memoria-e-verdade-e-defesa-da-democracia/normativas-internacionais-e-nacionais"
+    },
+    "impact": "Esquecer também é uma decisão."
+  },
+  {
+    "id": "APR-019",
+    "lived": "Você decidiu se defendia o trecho da lei da IA que paga artistas ou se aceitava o destaque.",
+    "concept": "No plenário, primeiro se vota o texto-base. Depois, cada destaque vota um trecho à parte, que pode cair. Uma lei aprovada pode perder seu ponto central.",
+    "data": "Em dezembro de 2024, o Senado aprovou a lei da IA: usar obras protegidas para treinar IA comercial dá direito de remuneração aos titulares. O texto foi à Câmara.",
+    "source": {
+      "label": "Agência Senado, 10/12/2024",
+      "url": "https://www12.senado.leg.br/noticias/materias/2024/12/10/senado-aprova-regulamentacao-da-inteligencia-artificial-texto-vai-a-camara"
+    },
+    "impact": "Aprovar o texto não garante o trecho."
+  },
+  {
+    "id": "APR-020",
+    "lived": "Você decidiu se pedia votação nominal no limite ao aumento do salário mínimo ou se aceitava o voto simbólico.",
+    "concept": "Na votação simbólica, ninguém registra o voto de cada deputado. Na nominal, cada voto fica no painel. Só assim o eleitor sabe quem decidiu.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Voto que não aparece não se cobra.",
+    "unverified": true
+  },
+  {
     "id": "APR-021",
     "lived": "Você decidiu onde cortar R$ 50 bilhões do orçamento.",
     "concept": "O orçamento público não é como o de casa. O governo pode gastar mais do que arrecada para investir e gerar arrecadação futura.",
@@ -88,6 +246,222 @@
     "impact": "A dívida pública é impagável. Renegociá-la é uma decisão política."
   },
   {
+    "id": "APR-023",
+    "lived": "Você decidiu se furava o teto de gastos para retomar as obras de casas populares ou se cumpria a regra.",
+    "concept": "O teto limita o gasto do governo, mesmo com a arrecadação em alta. Gastar acima exige mudar a regra no Congresso. Regra firme acalma credores; rígida trava obras.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ter dinheiro não basta: a regra decide se ele sai.",
+    "unverified": true
+  },
+  {
+    "id": "APR-024",
+    "lived": "Você decidiu se cortava também as emendas dos deputados no bloqueio de verbas ou se poupava as emendas.",
+    "concept": "Emendas são verbas que deputados e senadores levam às suas bases, e parte delas é obrigatória. No bloqueio, o governo pode cortá-las na proporção dos outros gastos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quando o corte poupa um lado, o outro paga mais.",
+    "unverified": true
+  },
+  {
+    "id": "APR-025",
+    "lived": "Você decidiu quem recebia antes o juro pago pelo Tesouro no crédito rural: pequenos ou exportadores.",
+    "concept": "Subsídio também é gasto. No crédito rural, o banco cobra juros menores, e o Tesouro paga a diferença. Decidir quem recebe é escolher prioridades.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Juro barato para um é conta paga por todos.",
+    "unverified": true
+  },
+  {
+    "id": "APR-026",
+    "lived": "Você decidiu se pagava um programa social com imposto sobre grandes fortunas ou com imposto sobre o consumo.",
+    "concept": "Imposto sobre consumo pesa mais para quem ganha pouco, porque gasta quase tudo. Imposto sobre fortunas cobra de quem tem mais, mas arrecada menos e pode estimular fuga.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Todo imposto tem endereço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-027",
+    "lived": "Você decidiu se mantinha na Constituição o piso de gasto com educação ou se acabava com ele.",
+    "concept": "A Constituição obriga governos a gastar uma parte da receita com educação. O piso protege a escola dos cortes, mas deixa menos verba livre para outras áreas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O piso existe para a escola não ser a primeira a cair.",
+    "unverified": true
+  },
+  {
+    "id": "APR-028",
+    "lived": "Você decidiu se liberava a verba de um edital de filmes sobre diversidade sexual ou se a segurava.",
+    "concept": "A lei do orçamento prevê a verba, mas quem libera é o governo. Segurar o dinheiro de quem incomoda é censura disfarçada. A Justiça pode mandar pagar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Censura também se faz com a caneta do caixa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-029",
+    "lived": "Você decidiu se zerava a fila do Bolsa Família ou se mantinha as contas fechadas.",
+    "concept": "Um programa social só atende quem cabe na verba prevista no orçamento. Para pôr mais gente, o governo precisa tirar dinheiro de outra área ou pedir crédito extra.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fila de programa social também é decisão de orçamento.",
+    "unverified": true
+  },
+  {
+    "id": "APR-030",
+    "lived": "Você decidiu se reajustava a tabela que paga os hospitais do SUS ou se comprava vagas privadas.",
+    "concept": "O SUS paga hospitais por uma tabela de preços. Se ela não sobe, a verba encolhe sem nenhum corte anunciado, e hospitais fecham leitos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Congelar o preço também é cortar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-031",
+    "lived": "Você decidiu se fazia um trem-bala com crédito estrangeiro ou se renovava os ônibus das periferias.",
+    "concept": "Uma obra grande dá vitrine; muitas obras pequenas atendem mais gente. Crédito de fora também vira dívida e dependência de quem empresta.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Toda obra escolhe quem chega primeiro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-032",
+    "lived": "Você decidiu se construía cisternas no sertão ou se mandava carros-pipa pedidos por deputados.",
+    "concept": "Gasto de emergência se repete a cada seca; investimento permanente custa no começo e resolve por anos. Quem distribui a ajuda pode usá-la para ganhar votos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Água com nome de político não é política pública.",
+    "unverified": true
+  },
+  {
+    "id": "APR-033",
+    "lived": "Você decidiu se mantinha aposentadorias e benefícios ligados ao salário mínimo ou se soltava um do outro.",
+    "concept": "Muitos benefícios sobem junto com o salário mínimo. Isso protege quem depende deles, mas faz o gasto obrigatório crescer sempre que o mínimo sobe.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem depende do mínimo sente cada mudança na regra.",
+    "unverified": true
+  },
+  {
+    "id": "APR-034",
+    "lived": "Você decidiu se cobrava em público o Banco Central pelos juros altos ou se respeitava a autonomia dele.",
+    "concept": "O Banco Central define os juros básicos sem ordem do presidente. Juros altos seguram a inflação, mas encarecem a dívida pública e o crédito.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Os juros também são uma escolha, só que de outra mesa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-035",
+    "lived": "Você decidiu se ampliava os CAPS ou se pagava comunidades terapêuticas para cuidar de dependentes.",
+    "concept": "Os CAPS tratam sofrimento mental e dependência em liberdade, perto de casa. A reforma psiquiátrica trocou os manicômios por essa rede aberta.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cuidar não é trancar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-036",
+    "lived": "Você decidiu se construía presídios ou se apostava em penas fora da prisão para crimes leves.",
+    "concept": "Cada vaga nova na prisão custa caro para construir e manter. Se a porta de entrada não muda, os presídios novos lotam também.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Vaga nova não resolve se a porta continua aberta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-037",
+    "lived": "Você decidiu se terminava creches com obra parada ou se lançava um programa novo com a sua marca.",
+    "concept": "Inaugurar rende foto; terminar obra antiga, quase nunca. Por isso o dinheiro público costuma ir para o novo enquanto o começado apodrece.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Obra parada é dinheiro público enterrado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-038",
+    "lived": "Você decidiu se cortava a isenção de impostos das montadoras ou se renovava o benefício.",
+    "concept": "Quando o governo perdoa impostos de um setor, deixa de arrecadar. Essa renúncia fiscal é um gasto que não aparece como despesa no orçamento.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto perdoado também sai do seu bolso.",
+    "unverified": true
+  },
+  {
+    "id": "APR-039",
+    "lived": "Você decidiu se cortava ou renovava uma isenção de imposto para montadoras.",
+    "concept": "Isenção é dinheiro que o governo deixa de cobrar. Ela pesa no caixa como um gasto, mas quase nunca é votada todo ano como o resto do orçamento.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto que não se cobra também é gasto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-040",
+    "lived": "Você decidiu se apoiava um teto maior para o imposto estadual sobre heranças grandes.",
+    "concept": "O imposto sobre herança é cobrado pelos estados, mas o Senado define o teto. Um teto baixo limita quanto os estados podem cobrar de grandes heranças.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Herança grande também é renda que ninguém trabalhou.",
+    "unverified": true
+  },
+  {
     "id": "APR-041",
     "lived": "Você decidiu se vetava ou apoiava a retirada de Filosofia e Sociologia do currículo.",
     "concept": "A Lei 13.415/2017 rebaixou Filosofia e Sociologia de \"disciplinas obrigatórias\" para \"estudos e práticas\".",
@@ -108,6 +482,222 @@
       "url": "https://www.congressoemfoco.com.br/noticia/45409/igrejas-controlam-9-dos-50-veiculos-mais-influentes-do-pais"
     },
     "impact": "Quem controla a TV controla a narrativa. Quem controla a narrativa controla o voto."
+  },
+  {
+    "id": "APR-043",
+    "lived": "Você decidiu se mantinha as aulas que ensinam crianças a reconhecer abuso e a pedir ajuda.",
+    "concept": "Ensinar o nome das partes do corpo e quem procurar ajuda a criança a contar um abuso. O silêncio protege quem abusa, não a criança.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Criança que sabe nomear consegue pedir ajuda.",
+    "unverified": true
+  },
+  {
+    "id": "APR-044",
+    "lived": "Você decidiu se pedia direito de resposta ou a cassação de uma emissora que espalhou mentira.",
+    "concept": "O direito de resposta obriga o veículo a publicar a correção. Cassar uma concessão de TV depende do Congresso e da Justiça, e pode soar como censura.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Corrigir a mentira é mais forte que calar quem mente.",
+    "unverified": true
+  },
+  {
+    "id": "APR-045",
+    "lived": "Você decidiu se mantinha um livro didático que mostra famílias de vários tipos ou se o recolhia.",
+    "concept": "Livros das escolas públicas passam por avaliação técnica antes da escolha. Recolher um livro por pressão política troca o critério técnico pelo voto.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem não se vê no livro aprende que não conta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-046",
+    "lived": "Você decidiu se mantinha a TV pública com um conselho independente ou se a vendia.",
+    "concept": "TV pública não é TV do governo: deve ter conselho e jornalismo independentes. Vender tira um canal que não depende de anúncio para existir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Público não é o mesmo que do governo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-047",
+    "lived": "Você decidiu se apoiava círculos de leitura ligados à vida do aluno ou se comprava apostilas prontas.",
+    "concept": "Na educação de jovens e adultos, partir do que o aluno já vive ajuda a manter a turma. Ler a própria realidade é o primeiro passo para mudar a vida.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ler o mundo vem antes de ler a palavra.",
+    "unverified": true
+  },
+  {
+    "id": "APR-048",
+    "lived": "Você decidiu se agilizava as licenças das rádios comunitárias ou se mantinha a fila.",
+    "concept": "Rádio comunitária precisa de licença do governo para funcionar. Sem licença, é fechada, mesmo quando é a única voz do bairro no ar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem tem antena tem voz.",
+    "unverified": true
+  },
+  {
+    "id": "APR-049",
+    "lived": "Você decidiu se aceitava o material grátis de educação financeira feito por um banco estrangeiro.",
+    "concept": "Material grátis com marca na escola é propaganda para quem ainda está aprendendo. Educação financeira de verdade ensina a desconfiar do crédito fácil.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Na escola, o aluno não pode ser cliente.",
+    "unverified": true
+  },
+  {
+    "id": "APR-050",
+    "lived": "Você decidiu se pagava um coach famoso por um curso de cidadania ou se apoiava o curso dos professores.",
+    "concept": "Alcance não é o mesmo que ensino. Um curso de cidadania precisa de quem conhece a turma e a lei, não só de quem tem seguidores.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Seguidor não é aluno.",
+    "unverified": true
+  },
+  {
+    "id": "APR-051",
+    "lived": "Você decidiu se mantinha no ar um documentário sobre a ditadura ou se atendia aos militares.",
+    "concept": "Censura é o Estado impedir que uma obra circule. A Constituição veda a censura prévia; tirar do ar o que já foi aprovado tem o mesmo efeito.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Esquecer também é uma escolha política.",
+    "unverified": true
+  },
+  {
+    "id": "APR-052",
+    "lived": "Você decidiu se mantinha a publicidade oficial numa emissora crítica ou se a cortava.",
+    "concept": "O governo compra anúncios na mídia. Se a verba premia quem elogia e castiga quem critica, vira ferramenta de pressão sobre a imprensa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Verba pública não é prêmio por elogio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-053",
+    "lived": "Você decidiu se formava professores para ensinar história afro-brasileira ou se dava mais prazo às redes.",
+    "concept": "Uma lei obriga o ensino da história africana e afro-brasileira. Sem formação e verba, muitas escolas não cumprem: a lei existe, mas não pega.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Lei sem verba é promessa no papel.",
+    "unverified": true
+  },
+  {
+    "id": "APR-054",
+    "lived": "Você decidiu se cobrava explicação da rede que derrubou um jornalista ou se deixava a empresa decidir.",
+    "concept": "As redes têm regras próprias para tirar perfis do ar. Sem transparência, a moderação pode virar censura privada, decidida fora do país.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem modera a rede também edita o debate.",
+    "unverified": true
+  },
+  {
+    "id": "APR-055",
+    "lived": "Você decidiu se financiava a escola em tempo integral ou se pagava bônus por nota em prova.",
+    "concept": "A escola integral junta aula, esporte e arte no mesmo dia. O bônus por nota é mais barato, mas pode levar a escola a só treinar para a prova.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O que a prova não mede, a escola esquece.",
+    "unverified": true
+  },
+  {
+    "id": "APR-056",
+    "lived": "Você decidiu se criava aulas sobre como funciona o poder ou se deixava o tema opcional.",
+    "concept": "Saber como votam deputados e como se faz o orçamento ajuda o cidadão a cobrar. Por isso, quem é cobrado pode resistir a esse ensino.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem entende o poder vigia quem o exerce.",
+    "unverified": true
+  },
+  {
+    "id": "APR-057",
+    "lived": "Você decidiu se abria processo contra uma piada racista na TV ou se deixava a emissora resolver.",
+    "concept": "Racismo é crime no Brasil. Concessões de TV são públicas e têm regras; liberdade de expressão não cobre o discurso que humilha um grupo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Humor que humilha não é só piada.",
+    "unverified": true
+  },
+  {
+    "id": "APR-058",
+    "lived": "Você decidiu se vetava a multa a escolas que usem linguagem neutra ou se sancionava a lei.",
+    "concept": "Leis que proíbem palavras na escola criam medo de punição. O professor passa a evitar temas inteiros para não virar alvo de denúncia.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Proibir palavras ensina a ficar calado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-059",
+    "lived": "Você decidiu se apoiava bibliotecas comunitárias ou se fechava com um app estrangeiro de leitura.",
+    "concept": "Bibliotecas comunitárias levam livros onde o poder público não chega. O app é barato, mas troca leitura por anúncios e dados dos leitores.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Livro de graça pode custar seus dados.",
+    "unverified": true
+  },
+  {
+    "id": "APR-060",
+    "lived": "Você decidiu se recusava um canal para alunos denunciarem professores ou se o apoiava.",
+    "concept": "Canais de denúncia de professores usam vídeos cortados para expor e punir. O resultado é autocensura: o professor deixa de tratar temas difíceis.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Medo na sala de aula ensina silêncio.",
+    "unverified": true
   },
   {
     "id": "APR-061",
@@ -352,6 +942,222 @@
     "impact": "Agência Brasil, 2025. \"O Estado que mata não protege. Ele extermina."
   },
   {
+    "id": "APR-083",
+    "lived": "Você decidiu se definia um critério para porte de droga ou se deixava a decisão com a polícia.",
+    "concept": "Sem critério na lei, quem aborda decide se é usuário ou traficante. A decisão muda conforme o lugar e a pessoa, e a prisão pesa mais sobre os pobres.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem regra clara, decide quem aborda.",
+    "unverified": true
+  },
+  {
+    "id": "APR-084",
+    "lived": "Você decidiu se pedia perícia federal numa operação com muitas mortes ou se apoiava o governador.",
+    "concept": "Quando a polícia investiga a si mesma, as mortes viram números sem resposta. Perícia independente é o que permite saber o que houve.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem perícia, não há verdade nem justiça.",
+    "unverified": true
+  },
+  {
+    "id": "APR-085",
+    "lived": "Você decidiu se exigia gravação contínua nas câmeras das fardas ou se deixava a regra com os estados.",
+    "concept": "Câmeras nas fardas registram a ação do policial e do cidadão. Quando o policial escolhe quando gravar, a prova some quando mais importa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Câmera que desliga não protege ninguém.",
+    "unverified": true
+  },
+  {
+    "id": "APR-086",
+    "lived": "Você decidiu se criava uma linha pública de ônibus ou se ocupava o bairro com tropas.",
+    "concept": "Facções lucram onde o Estado não oferece serviço. Ocupar sem levar serviço resolve por um tempo; quando a tropa sai, o controle volta.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Onde o Estado falta, outro poder manda.",
+    "unverified": true
+  },
+  {
+    "id": "APR-087",
+    "lived": "Você decidiu se investia em medidas em meio aberto ou se ampliava a internação de adolescentes.",
+    "concept": "O ECA prevê medidas para adolescentes que cometem atos infracionais, da liberdade assistida à internação. Internar mais tempo não garante menos crimes.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prender mais cedo não é proteger mais.",
+    "unverified": true
+  },
+  {
+    "id": "APR-088",
+    "lived": "Você decidiu se mantinha os presos separados por facção ou se os misturava.",
+    "concept": "Separar por facção evita mortes, mas entrega alas inteiras ao crime organizado. A prisão lotada vira escritório e escola das facções.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A cadeia lotada recruta para o crime.",
+    "unverified": true
+  },
+  {
+    "id": "APR-089",
+    "lived": "Você decidiu se criava uma regra para operações perto de escolas ou se deixava com a polícia.",
+    "concept": "Tiroteios fecham escolas e tiram dias de aula de quem mora perto. A violência armada também é um problema de educação.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dia sem aula também é vítima do tiroteio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-090",
+    "lived": "Você decidiu se financiava a redução de danos ou se dava a verba a comunidades religiosas.",
+    "concept": "Redução de danos cuida da pessoa mesmo que ela ainda use drogas. Exigir abstinência na entrada afasta quem mais precisa de ajuda.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cuidar não pode depender de parar antes.",
+    "unverified": true
+  },
+  {
+    "id": "APR-091",
+    "lived": "Você decidiu se pedia apuração isenta da prisão de um líder de bairro ou se confiava na polícia.",
+    "concept": "Prender quem denuncia abusos sem prova pública intimida outras vozes. Órgãos internacionais acompanham a proteção de defensores de direitos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Calar quem denuncia não acaba com o abuso.",
+    "unverified": true
+  },
+  {
+    "id": "APR-092",
+    "lived": "Você decidiu se vetava o fim da saída temporária de presos ou se sancionava a lei.",
+    "concept": "A saída temporária mantém o preso ligado à família no fim da pena. Cortar esse laço pode dificultar a volta à vida fora da prisão.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem perde a família perde o caminho de volta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-093",
+    "lived": "Você decidiu se abria as portas a um relator da ONU que investiga mortes em operações policiais.",
+    "concept": "Relatores da ONU visitam países para ouvir vítimas e autoridades. Não punem ninguém, mas o relatório pesa na imagem e nos acordos do país.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem não deve não teme visita.",
+    "unverified": true
+  },
+  {
+    "id": "APR-094",
+    "lived": "Você decidiu se punha um imposto extra sobre armas e munição ou se isentava o setor.",
+    "concept": "Imposto também muda comportamento: o imposto seletivo encarece o que faz mal, como cigarro e bebida. A dúvida é se arma entra na lista.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto também é política de segurança.",
+    "unverified": true
+  },
+  {
+    "id": "APR-095",
+    "lived": "Você decidiu se marcava e rastreava as armas apreendidas ou se deixava o caso com a corregedoria.",
+    "concept": "Sem marca no lote, ninguém sabe de onde veio a bala. Rastrear armas e munição ajuda a achar desvios dentro e fora do Estado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Bala sem origem não tem culpado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-096",
+    "lived": "Você decidiu se reforçava a proteção a testemunhas ou se pagava por denúncias anônimas.",
+    "concept": "Sem testemunha protegida, o crime organizado não chega ao tribunal. Proteger custa caro: mudar a pessoa de cidade, dar renda e nova rotina.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem proteção, o silêncio vence.",
+    "unverified": true
+  },
+  {
+    "id": "APR-097",
+    "lived": "Você decidiu se mantinha o diretor da PF ou se o trocava a pedido de um governador investigado.",
+    "concept": "O presidente nomeia o diretor da Polícia Federal. Trocar o chefe no meio de uma investigação pode virar interferência e até crime.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem nomeia o chefe não manda no inquérito.",
+    "unverified": true
+  },
+  {
+    "id": "APR-098",
+    "lived": "Você decidiu se apoiava um mutirão para que presas grávidas e mães esperassem o julgamento em casa.",
+    "concept": "A lei permite trocar a prisão antes do julgamento pela prisão em casa para gestantes e mães de crianças pequenas. Na prática, muitos juízes negam.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Pena não passa da mãe para o filho.",
+    "unverified": true
+  },
+  {
+    "id": "APR-099",
+    "lived": "Você decidiu se apoiava unir as polícias militar e civil numa carreira só ou se mantinha o modelo atual.",
+    "concept": "A Constituição divide a polícia que patrulha, militar, da que investiga, civil. Mudar isso exige emenda e mexe com a carreira de muita gente.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem desenha a polícia desenha a segurança.",
+    "unverified": true
+  },
+  {
+    "id": "APR-100",
+    "lived": "Você decidiu se exigia outras provas além do reconhecimento por foto ou se mantinha os álbuns nas delegacias.",
+    "concept": "A memória falha, e o viés racial pesa na hora de apontar um rosto. Prender só por foto põe inocentes atrás das grades.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Foto não é prova. Racismo também erra rosto.",
+    "unverified": true
+  },
+  {
     "id": "APR-101",
     "lived": "Você decidiu se redirecionava uma emenda de show para o hospital local.",
     "concept": "As emendas parlamentares são verbas que deputados e senadores destinam a projetos em suas bases eleitorais.",
@@ -363,6 +1169,234 @@
     "impact": "O show acontece. O hospital não. A emenda é uma escolha política."
   },
   {
+    "id": "APR-102",
+    "lived": "Você decidiu se barrava por falha técnica a emenda de um estádio ou se pagava a obra.",
+    "concept": "Hoje boa parte das emendas é impositiva: o governo é obrigado a pagar. Só pode travar se houver impedimento técnico no projeto.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Obrigado a pagar, não a concordar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-103",
+    "lived": "Você decidiu se barrava ou liberava uma emenda que reformava um templo chamado de centro cultural.",
+    "concept": "O Estado laico não tem religião oficial nem paga culto. Pode apoiar ações sociais de igrejas, mas não a obra do próprio templo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Laico não é contra a fé. É a favor de todas.",
+    "unverified": true
+  },
+  {
+    "id": "APR-104",
+    "lived": "Você decidiu se liberava as emendas dos deputados na véspera da votação da sua reforma.",
+    "concept": "O governo escolhe quando pagar as emendas. Liberar perto de uma votação vira moeda de troca: o voto sai, mas o preço sobe a cada pauta.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Voto comprado volta a ser cobrado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-105",
+    "lived": "Você decidiu se trocava a emenda de fuzis para a guarda municipal por iluminação de ruas e praças.",
+    "concept": "Guarda municipal protege bens e serviços da cidade. Luz, praça ocupada e transporte também previnem crime, sem um tiro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Rua acesa também é segurança pública.",
+    "unverified": true
+  },
+  {
+    "id": "APR-106",
+    "lived": "Você decidiu se dava título individual aos assentados ou concessão de uso que mantém a terra na família.",
+    "concept": "Com título individual, o assentado vira dono e pode vender. Com concessão de uso, a família fica na terra, mas não vende. Cada forma tem um risco.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Escritura na mão nem sempre é terra garantida.",
+    "unverified": true
+  },
+  {
+    "id": "APR-107",
+    "lived": "Você decidiu se suspendia a emenda de uma ONG sem sede, ligada a casas de apostas de fora, ou se pagava.",
+    "concept": "Emenda a ONG precisa mostrar quem recebe e no que gasta. Sem isso, o dinheiro público pode servir para lavar dinheiro do crime.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro sem rastro tem dono escondido.",
+    "unverified": true
+  },
+  {
+    "id": "APR-108",
+    "lived": "Você decidiu se exigia um plano de uso da emenda Pix ou se liberava o dinheiro sem plano.",
+    "concept": "Na emenda Pix, o dinheiro vai direto à prefeitura, sem convênio. É rápido, mas fica difícil saber onde foi parar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Rápido demais para ser fiscalizado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-109",
+    "lived": "Você decidiu se passava a escala dos tratores a um conselho de agricultores ou se deixava com o prefeito.",
+    "concept": "Comprar com emenda é só o começo. Sem regra de uso e controle social, a máquina vira favor político.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Máquina pública não é presente do padrinho.",
+    "unverified": true
+  },
+  {
+    "id": "APR-110",
+    "lived": "Você decidiu se barrava a emenda de estrada que valoriza a fazenda do autor ou se asfaltava para os povoados.",
+    "concept": "Conflito de interesses é quando quem decide ganha com a decisão. A obra pode ser útil e, ainda assim, beneficiar o próprio autor.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Obra útil não apaga o interesse do dono.",
+    "unverified": true
+  },
+  {
+    "id": "APR-111",
+    "lived": "Você decidiu se juntava as emendas na meta de tempo integral ou se cada deputado escolhia a própria obra.",
+    "concept": "O Plano Nacional de Educação fixa metas por dez anos. Emendas espalhadas em pequenas obras raramente ajudam a cumprir alguma.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Plano sem verba é só papel.",
+    "unverified": true
+  },
+  {
+    "id": "APR-112",
+    "lived": "Você decidiu se contratava técnico para o posto ou se pagava exames na clínica ligada a um deputado.",
+    "concept": "O SUS pode contratar o setor privado quando a rede pública não basta. Se o público tem o aparelho parado, pagar o privado vira escolha política.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Aparelho parado também custa caro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-113",
+    "lived": "Você decidiu se comprava ônibus elétricos importados, mais baratos, ou se exigia peças feitas no país.",
+    "concept": "Compras públicas podem exigir conteúdo local para gerar emprego e indústria. O custo é pagar mais e levar menos por um tempo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Barato hoje pode sair caro amanhã.",
+    "unverified": true
+  },
+  {
+    "id": "APR-114",
+    "lived": "Você decidiu se a emenda da festa junina pagava um cantor famoso ou os grupos da própria cidade.",
+    "concept": "Emenda parlamentar é a parte do orçamento que cada deputado e senador indica. O governo executa, mas pode exigir regras para o gasto.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Festa também é política pública. Quem recebe?",
+    "unverified": true
+  },
+  {
+    "id": "APR-115",
+    "lived": "Você decidiu se o presídio pago por emendas de bancada ficava com o Estado ou com uma empresa.",
+    "concept": "Emendas de bancada reúnem os parlamentares de um estado numa obra só. Quando a empresa recebe por preso, ela ganha com a cela cheia.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem lucra com a cela cheia quer cela vazia?",
+    "unverified": true
+  },
+  {
+    "id": "APR-116",
+    "lived": "Você decidiu se a ONG religiosa paga por emenda podia exigir culto antes de entregar a cesta básica.",
+    "concept": "O Estado pode repassar verba a entidades religiosas para ações sociais. Pelo Estado laico, o serviço pago com dinheiro público vale para todos, sem exigir fé.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro público não escolhe religião.",
+    "unverified": true
+  },
+  {
+    "id": "APR-117",
+    "lived": "Você decidiu se limitava o patrocínio de grandes eventos na lei de incentivo à cultura.",
+    "concept": "Na lei de incentivo, a empresa abate do imposto o que patrocina. O dinheiro é público, mas quem escolhe o projeto é o departamento de marketing.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto que vira patrocínio ainda é dinheiro público.",
+    "unverified": true
+  },
+  {
+    "id": "APR-118",
+    "lived": "Você decidiu se a estrada paga por emendas até uma mina estrangeira saía de graça para a empresa.",
+    "concept": "Obra pública pode servir a uma empresa privada. A contrapartida é o que a empresa devolve à região pelo que ganha com a obra.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Toda estrada leva a algum lugar. A quem?",
+    "unverified": true
+  },
+  {
+    "id": "APR-119",
+    "lived": "Você decidiu se aceitava drones para a fiscalização ambiental em troca de poupar a região de uns deputados.",
+    "concept": "A emenda vem com regras escritas na lei. Às vezes vem também um acordo que ninguém registra: é aí que mora o risco.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O acordo que não está no papel também tem preço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-120",
+    "lived": "Você decidiu se a emenda pagava o prédio de um hospital novo ou o custeio da saúde que já existia.",
+    "concept": "Investimento é construir; custeio é manter funcionando, com salário e remédio. Prédio rende placa, custeio não, e o hospital vazio custa caro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prédio sem médico não cura ninguém.",
+    "unverified": true
+  },
+  {
     "id": "APR-121",
     "lived": "Você decidiu se aceitava ou recusava o acordo da bancada BBB.",
     "concept": "As bancadas BBB (Boi, Bíblia, Bala) controlam o Congresso. Elas são informais, mas poderosas.",
@@ -372,6 +1406,234 @@
       "url": "https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/frente-parlamentar-do-agro-declara-apoio-a-hugo-motta-para-suceder-lira"
     },
     "impact": "As bancadas BBB controlam o Congresso. Elas são informais, mas poderosas."
+  },
+  {
+    "id": "APR-122",
+    "lived": "Você decidiu se a vaga no STF ia para um nome pelo currículo ou para o nome pedido por uma bancada.",
+    "concept": "Bancada temática reúne parlamentares de vários partidos em torno de um interesse. Ela vota em bloco e cobra caro pelo apoio.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Toda vaga tem dono. Quem deve o cargo deve favores.",
+    "unverified": true
+  },
+  {
+    "id": "APR-123",
+    "lived": "Você decidiu se oferecia indenização a fazendeiros para esvaziar a PEC do marco temporal.",
+    "concept": "Uma PEC muda a Constituição e não passa pelo veto do presidente. Contra ela, sobra negociar votos ou oferecer outra saída.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Contra uma PEC, o presidente só tem a conversa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-124",
+    "lived": "Você decidiu se aceitava internação mais longa para adolescentes em troca de tirar a PEC da pauta.",
+    "concept": "O ECA prevê medidas socioeducativas para adolescentes, com escola e acompanhamento. Mudar a lei comum é mais fácil que mudar a Constituição.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prender por mais tempo não é o mesmo que educar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-125",
+    "lived": "Você decidiu se liberava anúncios de apostas no futebol em troca de uma taxa extra.",
+    "concept": "Lobby é a pressão organizada de um setor sobre quem faz as leis. É legal, mas pesa mais para quem tem mais dinheiro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem patrocina o jogo também patrocina o voto?",
+    "unverified": true
+  },
+  {
+    "id": "APR-126",
+    "lived": "Você decidiu se o salário mínimo ficava igual no país ou menor nas regiões mais pobres.",
+    "concept": "Frentes parlamentares reúnem deputados em torno de um setor. O salário mínimo nacional é uma regra para que ninguém ganhe menos por morar longe.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Piso menor é desigualdade com carteira assinada.",
+    "unverified": true
+  },
+  {
+    "id": "APR-127",
+    "lived": "Você decidiu se multava empresas que pagam menos às mulheres no mesmo cargo ou se adiava a fiscalização.",
+    "concept": "Uma lei só muda a vida quando alguém fiscaliza. A bancada feminina reúne deputadas de partidos rivais em torno de pautas comuns.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Lei sem fiscal é promessa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-128",
+    "lived": "Você decidiu se a lei de cotas mantinha o critério racial ou ficava só com a renda.",
+    "concept": "Algumas leis trazem prazo de revisão, e cada revisão reabre a disputa. Cota racial e cota de renda tratam de desigualdades que se somam.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Pobreza e racismo andam juntos, mas não são iguais.",
+    "unverified": true
+  },
+  {
+    "id": "APR-129",
+    "lived": "Você decidiu se o fundo da educação básica podia pagar aposentadorias de professores.",
+    "concept": "Parte do dinheiro público é carimbada para um fim, como a educação. Usar a verba em outra coisa alivia hoje e tira da escola.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro carimbado só protege se ninguém apaga o carimbo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-130",
+    "lived": "Você decidiu se acabava com a isenção de impostos dos agrotóxicos ou se a mantinha.",
+    "concept": "Isenção é imposto que o governo deixa de cobrar de um setor. Ela não aparece como gasto, mas pesa no caixa como um.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Isenção também é gasto, só que ninguém vê.",
+    "unverified": true
+  },
+  {
+    "id": "APR-131",
+    "lived": "Você decidiu se a verba da segurança comprava blindados ou laboratórios de perícia.",
+    "concept": "Polícia que investiga resolve crimes; polícia que só patrulha reage a eles. A bancada da bala costuma pedir mais armas, não mais perícia.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Crime sem solução volta a acontecer.",
+    "unverified": true
+  },
+  {
+    "id": "APR-132",
+    "lived": "Você decidiu se tirava a palavra gênero do plano de educação para destravar o orçamento.",
+    "concept": "Obstrução é travar votações para forçar um acordo. Uma bancada pequena e unida consegue segurar o governo inteiro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Às vezes uma palavra vale o orçamento inteiro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-133",
+    "lived": "Você decidiu se trocava as multas de desmate por replantio ou se cobrava as multas.",
+    "concept": "Anistia perdoa uma punição. Quando ela se repete, quem infringe a lei aprende a esperar a próxima.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Perdão que se repete vira regra.",
+    "unverified": true
+  },
+  {
+    "id": "APR-134",
+    "lived": "Você decidiu se a cultura de estados e cidades recebia um repasse fixo ou seguia por editais.",
+    "concept": "No repasse fundo a fundo, a verba cai todo ano sem concurso. No edital, ganha quem apresenta o melhor projeto, e nem todos sabem escrever um.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Edital premia quem já sabe pedir.",
+    "unverified": true
+  },
+  {
+    "id": "APR-135",
+    "lived": "Você decidiu se vetava a lei que libera cassinos em resorts ou se sancionava em troca de apoio e receita.",
+    "concept": "Bancadas temáticas juntam deputados de vários partidos em torno de um interesse. Quando duas bancadas brigam, o presidente vira o fiel da balança.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "No jogo do Congresso, a banca também aposta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-136",
+    "lived": "Você decidiu se apoiava o porte de arma em toda a fazenda ou se barrava o projeto das bancadas da bala e do boi.",
+    "concept": "Bancadas se somam: a do boi e a da bala votam juntas quando o tema une as duas. A soma vira maioria sem precisar de partido.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quando duas bancadas se somam, o voto vira muro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-137",
+    "lived": "Você decidiu se vetava uma data do orgulho hétero ou se sancionava para agradar a bancada religiosa.",
+    "concept": "Leis simbólicas, como datas no calendário, custam pouco e marcam posição. Bancadas usam esses projetos para mostrar força e medir o governo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Lei simbólica não custa dinheiro. Custa alguém.",
+    "unverified": true
+  },
+  {
+    "id": "APR-138",
+    "lived": "Você decidiu se apoiava o fim imediato da escala de seis dias por um ou se negociava uma transição lenta.",
+    "concept": "Bancadas não são só de deputados. Uma pressão de fora, como um abaixo-assinado viral, pode pôr um tema na pauta e forçar cada bancada a se mostrar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Folga também é pauta política.",
+    "unverified": true
+  },
+  {
+    "id": "APR-139",
+    "lived": "Você decidiu se mantinha saúde e meio ambiente na liberação de agrotóxicos ou se deixava a decisão com a Agricultura.",
+    "concept": "Quem assina a liberação decide o risco aceito. Tirar órgãos de saúde e ambiente do processo muda a regra sem mudar a lei de cada produto.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem assina o registro escolhe o risco.",
+    "unverified": true
+  },
+  {
+    "id": "APR-140",
+    "lived": "Você decidiu se punha o dinheiro do petróleo na educação ou se usava a verba para pagar a dívida.",
+    "concept": "Frentes parlamentares, como a da educação, unem deputados de partidos rivais. Vincular uma receita a uma área protege a verba, mas engessa o orçamento.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Verba carimbada não muda de dono.",
+    "unverified": true
   },
   {
     "id": "APR-IMP-1",
@@ -429,6 +1691,246 @@
     "impact": "O mandato acaba. A história continua."
   },
   {
+    "id": "APR-141",
+    "lived": "Você decidiu se cedia um ministério ao presidente da Câmara ou se recusava a pressão dos pedidos guardados.",
+    "concept": "Só o presidente da Câmara decide se um pedido de impeachment anda. Os pedidos parados viram moeda de troca contra o governo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Gaveta fechada também é poder.",
+    "unverified": true
+  },
+  {
+    "id": "APR-142",
+    "lived": "Você decidiu se atrasava o repasse ao banco público para pagar um benefício ou se cortava o benefício.",
+    "concept": "Crime de responsabilidade é uma lista de condutas do presidente previstas em lei. Uma manobra nas contas pode virar motivo para o Congresso agir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "No impeachment, a conta vira argumento.",
+    "unverified": true
+  },
+  {
+    "id": "APR-143",
+    "lived": "Você decidiu se punia um general da ativa que mandou um recado político ou se ignorava a fala.",
+    "concept": "Militares da ativa não podem fazer manifestação política. Quando falam em ordem num governo fraco, o recado pesa sobre o Congresso e as ruas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Farda não tem voto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-144",
+    "lived": "Você decidiu se ampliava a isenção dos templos para calar os sermões contra o governo ou se mantinha a regra.",
+    "concept": "A legitimidade de um governo se disputa também fora do Congresso. Quem fala para multidões toda semana ajuda a decidir se um impeachment parece justo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem fala toda semana molda o voto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-145",
+    "lived": "Você decidiu se respondia ao panelaço com um pronunciamento na TV ou com entrevistas à imprensa.",
+    "concept": "Antes de qualquer pedido, o impeachment se constrói na opinião pública. Protestos dão ao Congresso a sensação de que derrubar é seguro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O Congresso escuta a rua antes de votar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-146",
+    "lived": "Você decidiu se rompia com o vice que negociava com a oposição ou se dava a ele a pauta que queria.",
+    "concept": "Num impeachment, quem assume é o vice. Por isso a lealdade dele vale votos: um vice que promete agradar o Congresso torna a troca mais fácil.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O impeachment começa por quem herda a cadeira.",
+    "unverified": true
+  },
+  {
+    "id": "APR-147",
+    "lived": "Você decidiu se apoiava uma greve geral contra a ameaça de impeachment ou se pedia calma às centrais.",
+    "concept": "A greve é um direito na Constituição. Usada em defesa de um governo, mostra força nas ruas, mas também dá à oposição o discurso da crise.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Parar o país é recado. Para os dois lados.",
+    "unverified": true
+  },
+  {
+    "id": "APR-148",
+    "lived": "Você decidiu se subia ao palco de um show pela democracia ou se ficava longe para evitar a acusação de campanha.",
+    "concept": "Artistas ajudam a dar sentido a uma crise. Quando o governo aparece no ato, a defesa da democracia pode ser lida como defesa de um partido.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Defender a democracia não é defender um nome.",
+    "unverified": true
+  },
+  {
+    "id": "APR-149",
+    "lived": "Você decidiu se exigia que a plataforma mostrasse quem paga os anúncios pelo seu impeachment ou se deixava livre.",
+    "concept": "Anúncio político sem dono esconde quem financia a pressão. Exigir transparência protege o debate, mas pode ser lido como controle do governo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem saber quem paga, não se sabe quem pede.",
+    "unverified": true
+  },
+  {
+    "id": "APR-150",
+    "lived": "Você decidiu se entregava a Casa Civil a um nome da Câmara para esfriar o impeachment ou se governava sem tutela.",
+    "concept": "Sob ameaça, um presidente pode ceder o comando do governo ao Congresso. O voto do eleitor muda de dono sem eleição nem mudança na lei.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sobreviver no cargo não é governar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-151",
+    "lived": "Você decidiu se denunciava num fórum internacional a ameaça de golpe ou se falava só de economia.",
+    "concept": "Governos ameaçados buscam apoio lá fora. Isso pode proteger a democracia, mas o adversário acusa o presidente de pôr o país em xeque.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Pedir apoio de fora também tem preço dentro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-152",
+    "lived": "Você decidiu se apoiava o acampamento dos movimentos diante do Congresso ou se pedia que dispersassem.",
+    "concept": "Protesto pacífico é direito. Perto do Congresso, ele pressiona o voto, mas qualquer confronto vira prova contra o governo que o apoiou.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A rua pressiona. E também pode ser usada contra.",
+    "unverified": true
+  },
+  {
+    "id": "APR-153",
+    "lived": "Você decidiu se zerava a conta de luz dos mais pobres para subir na pesquisa ou se mantinha as contas em ordem.",
+    "concept": "Aprovação baixa deixa o governo exposto. Medidas populares sem dinheiro previsto aliviam hoje e podem virar a acusação de amanhã.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Popularidade comprada cobra juros.",
+    "unverified": true
+  },
+  {
+    "id": "APR-154",
+    "lived": "Você decidiu se abria suas contas diante de uma delação sem prova ou se atacava a credibilidade do delator.",
+    "concept": "Delação premiada é um acordo: o preso conta o que sabe em troca de pena menor. Sozinha, a palavra do delator não basta para condenar ninguém.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Delação é pista, não sentença.",
+    "unverified": true
+  },
+  {
+    "id": "APR-155",
+    "lived": "Você decidiu se rompia com o vice que conversa com a oposição ou se dava a ele mais poder.",
+    "concept": "Se o presidente cai, o vice assume. Por isso, num governo frágil, o vice vira peça da oposição: a queda do titular é a chance dele.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem assume no seu lugar também faz política.",
+    "unverified": true
+  },
+  {
+    "id": "APR-156",
+    "lived": "Você decidiu se aceitava uma nota de governos vizinhos em defesa do seu mandato.",
+    "concept": "Blocos regionais têm cláusulas de defesa da democracia. Apoio de fora dá peso a uma denúncia, mas a oposição usa o apoio como prova de interferência.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Apoio de fora pesa, mas cobra explicação em casa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-157",
+    "lived": "Você decidiu se pedia ao STF um prazo para a Câmara decidir os pedidos de impeachment ou se cedia.",
+    "concept": "Só o presidente da Câmara decide se um pedido de impeachment anda. Sem prazo para decidir, a gaveta vira moeda de troca.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Pedido parado também é recado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-158",
+    "lived": "Você decidiu se propunha uma consulta popular sobre o seu mandato, algo que a lei não prevê.",
+    "concept": "Alguns países deixam o povo votar se o governante fica, o chamado recall. Aqui, só o Congresso pode tirar um presidente antes do fim.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem dá o mandato pode tirá-lo?",
+    "unverified": true
+  },
+  {
+    "id": "APR-159",
+    "lived": "Você decidiu se atrasava repasses a bancos públicos para pagar benefícios ou se cortava os benefícios.",
+    "concept": "Impeachment exige crime de responsabilidade, previsto em lei. Manobras nas contas podem entrar nessa lista, e a oposição decide quando usar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O crime de responsabilidade vira arma no tempo certo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-160",
+    "lived": "Você decidiu se aceitava a garantia de um general contra o Congresso, em troca de voz nas decisões.",
+    "concept": "Forças Armadas obedecem à Constituição, não a um governo. Usar a tropa para segurar um mandato troca um processo político por um golpe.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Farda não é base de governo.",
+    "unverified": true
+  },
+  {
     "id": "APR-161",
     "lived": "Você decidiu se apoiava ou defendia um ministro do STF investigado.",
     "concept": "A blindagem institucional protege magistrados corruptos com aposentadoria integral.",
@@ -438,6 +1940,234 @@
       "url": "https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/"
     },
     "impact": "A justiça é seletiva. Para os pobres, a prisão. Para os ricos, a blindagem."
+  },
+  {
+    "id": "APR-162",
+    "lived": "Você decidiu se propunha o fim da aposentadoria como punição para juízes que vendem sentenças.",
+    "concept": "A punição administrativa mais dura para um juiz é a aposentadoria compulsória, com salário. Perder o cargo exige processo na Justiça.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Para o juiz, a pena máxima pode ser férias pagas.",
+    "unverified": true
+  },
+  {
+    "id": "APR-163",
+    "lived": "Você decidiu se cumpria a decisão do STF que derrubou sua lei ou se tentava driblar com uma emenda.",
+    "concept": "O STF pode declarar uma lei contrária à Constituição. O Congresso pode mudar a Constituição, mas não pode tocar nas cláusulas pétreas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A última palavra muda de mão.",
+    "unverified": true
+  },
+  {
+    "id": "APR-164",
+    "lived": "Você decidiu se recorria em silêncio da liminar que parou seu programa de moradia ou se atacava o juiz.",
+    "concept": "Liminar é uma decisão provisória, dada antes do julgamento final. Um só juiz pode suspender um programa inteiro até o recurso.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Um juiz sozinho pode parar uma obra inteira.",
+    "unverified": true
+  },
+  {
+    "id": "APR-165",
+    "lived": "Você decidiu se apoiava a PEC que acaba com o foro especial de deputados ou se mantinha a regra.",
+    "concept": "Foro especial é o direito de certas autoridades serem julgadas por um tribunal superior. Defensores dizem que protege o cargo; críticos, a pessoa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O endereço do processo muda a pena.",
+    "unverified": true
+  },
+  {
+    "id": "APR-166",
+    "lived": "Você decidiu se apoiava a prisão após a segunda instância ou se defendia a presunção de inocência.",
+    "concept": "Pela Constituição, ninguém é culpado até o fim dos recursos. O STF já mudou de posição sobre isso mais de uma vez.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Inocente até quando?",
+    "unverified": true
+  },
+  {
+    "id": "APR-167",
+    "lived": "Você decidiu se ampliava a Defensoria ou se restringia o habeas corpus após a soltura de um banqueiro.",
+    "concept": "Habeas corpus protege quem está preso de forma ilegal. Vale para todos, mas quem tem advogado caro chega antes ao juiz.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A lei é a mesma; o advogado, não.",
+    "unverified": true
+  },
+  {
+    "id": "APR-168",
+    "lived": "Você decidiu se punia quem vazou um inquérito sigiloso contra um juiz ou se defendia a imprensa.",
+    "concept": "Inquérito sob sigilo protege a investigação e o investigado. O vazamento pode anular provas, mas o jornalista não precisa revelar a fonte.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Vazar ajuda a manchete e pode salvar o réu.",
+    "unverified": true
+  },
+  {
+    "id": "APR-169",
+    "lived": "Você decidiu se apoiava uma quarentena para juízes que querem disputar eleição ou se liberava a candidatura.",
+    "concept": "Juiz não pode ter partido. A quarentena tenta evitar que uma sentença vire palanque; críticos dizem que limita o direito de ser votado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A toga não pode ser palanque.",
+    "unverified": true
+  },
+  {
+    "id": "APR-170",
+    "lived": "Você decidiu se aumentava o número de ministros do STF para nomear a maioria ou se mantinha a corte.",
+    "concept": "Mudar o tamanho de uma corte para controlar suas decisões se chama empacotamento. A regra pode servir ao próximo governo também.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A régua que você muda mede o próximo também.",
+    "unverified": true
+  },
+  {
+    "id": "APR-171",
+    "lived": "Você decidiu se pedia mediação antes de despejar famílias acampadas numa fazenda parada ou se cumpria a ordem.",
+    "concept": "A Constituição exige que a terra cumpra função social. Antes de despejos coletivos, a Justiça pode abrir comissões de conflitos fundiários.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ordem cumprida nem sempre é conflito resolvido.",
+    "unverified": true
+  },
+  {
+    "id": "APR-172",
+    "lived": "Você decidiu se implantava já o juiz das garantias, com custo, ou se adiava a regra.",
+    "concept": "O juiz das garantias cuida das decisões da investigação. Outro juiz dá a sentença, sem ter se envolvido com as provas desde o início.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem investiga não deveria julgar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-173",
+    "lived": "Você decidiu se criava sentenças sem nome do juiz ou se dava escolta federal à juíza ameaçada pela milícia.",
+    "concept": "Varas colegiadas dividem a sentença entre juízes para proteger cada um. Juiz sem rosto vai além e esconde quem julga, o que fere a defesa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Proteger o juiz sem cegar a defesa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-174",
+    "lived": "Você decidiu se enviava uma lei contra a homofobia ou se deixava a proteção só com a decisão do STF.",
+    "concept": "Quando o Congresso não faz uma lei que a Constituição exige, o STF pode declarar a omissão e aplicar uma regra até a lei sair.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Direito sem lei fica por um fio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-175",
+    "lived": "Você decidiu se indicava um auditor de carreira ou um ex-deputado aliado para o Tribunal de Contas.",
+    "concept": "O Tribunal de Contas ajuda o Congresso a fiscalizar o dinheiro público. Parte das vagas é indicação política, e o indicado julga quem o escolheu.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fiscal escolhido pelo fiscalizado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-176",
+    "lived": "Você decidiu se limitava as delações premiadas quando um banqueiro preso quis delatar políticos.",
+    "concept": "Na delação premiada, o réu conta o que sabe em troca de pena menor. A palavra dele precisa de provas, mas a simples menção já fere reputações.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem delata quer pena menor, não verdade.",
+    "unverified": true
+  },
+  {
+    "id": "APR-177",
+    "lived": "Você decidiu se propunha cortar os auxílios que levam salários de juízes acima do teto ou se evitava a briga.",
+    "concept": "A Constituição fixa um teto para salários públicos. Auxílios chamados de indenização ficam fora da conta e furam o limite.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O teto existe; o extra passa por baixo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-178",
+    "lived": "Você decidiu se ampliava ou se limitava as audiências de custódia para presos em flagrante.",
+    "concept": "Na audiência de custódia, o juiz vê o preso logo após a prisão. Decide se ele espera solto ou preso e se houve abuso.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ver o juiz logo é direito, não prêmio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-179",
+    "lived": "Você decidiu se proibia parentes de juízes de advogar nos tribunais deles ou se confiava na suspeição.",
+    "concept": "O juiz deve deixar o caso quando tem laço com uma das partes: é o impedimento. A regra depende do próprio juiz se declarar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem decide se está impedido é o próprio juiz.",
+    "unverified": true
+  },
+  {
+    "id": "APR-180",
+    "lived": "Você decidiu se criava uma ouvidoria do Judiciário com cidadãos de fora ou se mantinha o controle interno.",
+    "concept": "O CNJ fiscaliza juízes e tem membros de fora da magistratura, mas em minoria. Ouvidoria externa dá ao cidadão um canal próprio.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem fiscaliza o juiz?",
+    "unverified": true
   },
   {
     "id": "APR-181",
@@ -671,6 +2401,834 @@
     "impact": "A terra é para quem trabalha nela. Não para quem especula."
   },
   {
+    "id": "APR-THEM-002",
+    "lived": "Você decidiu se mandava a Força Nacional a um acampamento ameaçado ou se deixava o caso com o estado.",
+    "concept": "A segurança pública cabe aos estados. A União só entra com a Força Nacional a pedido do governador ou em casos previstos em lei.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem protege o acampado se a polícia é do fazendeiro?",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-003",
+    "lived": "Você decidiu se pagava uma fazenda improdutiva com títulos ou se aceitava a indenização pedida pelo dono.",
+    "concept": "A Constituição manda a propriedade cumprir uma função social. Terra improdutiva pode ser desapropriada, com indenização em títulos da dívida agrária.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Terra parada também tem preço. Quem paga é você.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-004",
+    "lived": "Você decidiu se regulamentava o confisco de terras com trabalho escravo ou se ficava só na multa.",
+    "concept": "Algumas regras da Constituição dependem de uma lei para valer na prática. Sem ela, o direito fica no papel.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Direito sem lei que o regule fica no papel.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-005",
+    "lived": "Você decidiu se usava a verba para estruturar assentamentos antigos ou para abrir assentamentos novos.",
+    "concept": "Reforma agrária não é só dar terra. Sem crédito, estrada e assistência técnica, a família não consegue produzir e ficar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Terra sem estrada vira terra vendida.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-006",
+    "lived": "Você decidiu se cancelava títulos falsos de terra pública ou se regularizava quem já ocupava a área.",
+    "concept": "Grilagem é tomar terra pública com papel falso. Quando o Estado regulariza depois, ensina que invadir compensa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem regulariza a grilagem convida a próxima.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-007",
+    "lived": "Você decidiu se mantinha a escola do assentamento ou se levava os alunos de ônibus para a cidade.",
+    "concept": "Educação do campo é ensinar a partir da vida de quem mora na roça. Fechar escolas rurais afasta jovens da terra.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Escola fechada no campo é êxodo aberto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-008",
+    "lived": "Você decidiu se protegia as sementes guardadas pelos agricultores ou se cumpria o acordo das patentes.",
+    "concept": "Sementes crioulas são guardadas e trocadas entre agricultores há gerações. Patentes dão a uma empresa o direito de cobrar por elas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem é dono da semente é dono da comida.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-009",
+    "lived": "Você decidiu se defendia as cooperativas dos assentados ou se suspendia os repasses pedidos pela CPI.",
+    "concept": "Uma CPI pode investigar, mas não condena. Quando vira palanque, serve para desgastar um adversário antes de qualquer prova.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "CPI investiga. Quem julga é a Justiça.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-010",
+    "lived": "Você decidiu se trocava a desapropriação por crédito para comprar terra ou se mantinha a desapropriação.",
+    "concept": "Na reforma agrária de mercado, o agricultor compra a terra com crédito. Na desapropriação, o Estado toma a terra improdutiva e indeniza o dono.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Terra a prazo também pode virar dívida.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-011",
+    "lived": "Você decidiu se liberava um poço de petróleo perto da foz de um grande rio ou se barrava a perfuração.",
+    "concept": "Licença ambiental é a autorização técnica para uma obra arriscada. O órgão avalia o risco, mas a pressão política pesa sobre ele.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Petróleo paga hoje. O clima cobra depois.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-012",
+    "lived": "Você decidiu se aceitava verba estrangeira para a floresta com auditoria externa ou se recusava o controle.",
+    "concept": "Cooperação internacional traz verba, mas também regras. Cada país decide quanto da sua soberania aceita dividir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Soberania sem verba também é escolha.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-013",
+    "lived": "Você decidiu se vetava a licença ambiental por autodeclaração ou se sancionava o projeto.",
+    "concept": "Na autodeclaração, a própria empresa diz que cumpre as regras e o órgão confere depois. Ganha-se tempo e perde-se controle.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem se fiscaliza sozinho raramente se reprova.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-014",
+    "lived": "Você decidiu se reassentava as famílias atingidas pela enchente ou se reconstruía as casas no mesmo lugar.",
+    "concept": "Adaptação climática é preparar a cidade para eventos extremos que vão se repetir. Custa caro antes e mais caro depois.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A chuva não escolhe bairro. A cidade escolhe.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-015",
+    "lived": "Você decidiu se contratava brigadas fixas contra o fogo ou se mandava o Exército para o Cerrado.",
+    "concept": "A maior parte do fogo no Brasil é posta por gente. Prevenir exige equipe local o ano inteiro, não só na época da seca.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fogo se apaga antes de começar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-016",
+    "lived": "Você decidiu se defendia o pacto contra a soja de área desmatada ou se punia as empresas que o assinaram.",
+    "concept": "Pactos de mercado podem proteger a floresta quando o comprador exige origem limpa. Quem perde mercado reage na política.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O cliente de fora também vota na floresta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-017",
+    "lived": "Você decidiu se fechava os lixões com usinas que incluem os catadores ou se aceitava adiar o prazo.",
+    "concept": "A lei manda trocar lixões por aterros e reciclagem. O prazo foi adiado várias vezes por pressão de prefeitos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Lixo também é questão de quem limpa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-018",
+    "lived": "Você decidiu se lançava material escolar sobre a crise do clima ou se engavetava o tema para evitar polêmica.",
+    "concept": "Consenso científico é quando a maioria dos estudos aponta o mesmo resultado. Negar o consenso não cria um outro lado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fato não tem dois lados. Opinião tem.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-019",
+    "lived": "Você decidiu se parava a hidrelétrica para consultar os ribeirinhos ou se recorria para manter a obra.",
+    "concept": "Povos tradicionais têm direito a consulta prévia, livre e informada antes de obras que afetam seus territórios.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Energia limpa para quem? Pergunte a quem sai.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-020",
+    "lived": "Você decidiu se criava uma taxa sobre o carbono no diesel ou se isentava o combustível.",
+    "concept": "Precificar o carbono é cobrar de quem polui para mudar o comportamento. Pesa mais em quem depende do combustível para trabalhar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem polui paga. Mas quem paga primeiro?",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-021",
+    "lived": "Você decidiu se reajustava a verba da merenda ou se mantinha o valor congelado.",
+    "concept": "Para muitas crianças, a merenda é a principal refeição do dia. Verba parada perde valor com a inflação.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prato vazio na escola esvazia a sala.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-022",
+    "lived": "Você decidiu se taxava a exportação de arroz para segurar o preço ou se deixava a venda livre.",
+    "concept": "Quando o dólar sobe, vender lá fora rende mais. O alimento sai do país e o preço sobe para quem compra aqui.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Comida também é moeda. Quem fica sem troco?",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-023",
+    "lived": "Você decidiu se recompunha os estoques públicos de alimento ou se deixava o preço por conta do mercado.",
+    "concept": "Estoque regulador é comprar comida quando sobra e vender quando falta. Segura o preço, mas exige armazém e dinheiro parado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Armazém vazio é preço sem freio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-024",
+    "lived": "Você decidiu se aceitava a verba de um deputado com o nome dele na cozinha comunitária ou se recusava.",
+    "concept": "Política pública não tem dono. Usar a verba de todos como vitrine pessoal é personalismo, e a lei proíbe promoção pessoal.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Comida pública não tem padrinho.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-025",
+    "lived": "Você decidiu se liberava a doação de sobras dos supermercados ou se vetava o projeto por risco sanitário.",
+    "concept": "Fome e desperdício convivem quando a lei pune quem doa. Mudar a regra de responsabilidade pode levar comida a quem precisa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fome e lixo cheio na mesma rua.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-026",
+    "lived": "Você decidiu se cumpria a ordem da Justiça para dar comida às famílias ou se recorria.",
+    "concept": "A alimentação é um direito social na Constituição. Quando o Estado falha, a Justiça pode mandar cumprir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fome também é direito violado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-027",
+    "lived": "Você decidiu se proibia anúncios de ultraprocessados para crianças ou se deixava a indústria se regular.",
+    "concept": "Fome também é comer mal. Ultraprocessados baratos e anunciados enchem a barriga sem nutrir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Criança não escolhe anúncio. O anúncio escolhe criança.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-028",
+    "lived": "Você decidiu se levava programa social a um bairro onde a facção distribuía cestas ou se mandava a polícia.",
+    "concept": "Onde o Estado falta, outro poder ocupa o espaço. Facções ganham apoio quando oferecem o que o Estado não dá.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem dá a comida ganha a lealdade.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-029",
+    "lived": "Você decidiu se doava arroz a um país em guerra ou se guardava os estoques para a fome daqui.",
+    "concept": "Ajuda humanitária dá peso a um país no mundo. Mas a política externa também responde a quem passa fome em casa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Solidariedade lá fora começa aqui dentro?",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-030",
+    "lived": "Você decidiu se mantinha o benefício até revisar o cadastro ou se cortava na hora quem tinha erro.",
+    "concept": "Todo cidadão tem direito de se defender antes de perder um direito. Cortar primeiro e revisar depois pune quem não errou.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Erro no cadastro não enche a geladeira.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-031",
+    "lived": "Você decidiu se licenciava a patente de um remédio caro ou se pagava o preço do laboratório estrangeiro.",
+    "concept": "A licença compulsória deixa o país produzir ou comprar um genérico sem a permissão do dono da patente, pagando royalties, em caso de interesse público.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Patente protege a invenção. Não pode matar na fila.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-032",
+    "lived": "Você decidiu se defendia que os planos cubram tratamentos fora da lista oficial ou se a lista ficava fechada.",
+    "concept": "A agência reguladora define o mínimo que os planos de saúde devem cobrir. Se a lista é fechada, o que fica fora vai para a Justiça ou para o SUS.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem paga plano também acaba no SUS.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-033",
+    "lived": "Você decidiu se trazia médicos de outro país para o interior ou se abria mais cursos privados de medicina.",
+    "concept": "Formar médicos não basta: eles se concentram onde há hospital e renda. Programas de provimento tentam levar o atendimento para onde ninguém quer ir.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Diploma não escolhe CEP. Política escolhe.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-034",
+    "lived": "Você decidiu se comprava cirurgias em hospitais privados ou se ampliava os leitos da rede pública.",
+    "concept": "O SUS pode contratar hospitais privados para completar a rede. Comprar resolve a fila rápido; construir demora, mas fica para o público.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Comprar vaga resolve hoje. Construir resolve sempre.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-035",
+    "lived": "Você decidiu se contratava psicólogos para as escolas ou se dava um aplicativo de terapia aos alunos.",
+    "concept": "Atendimento em saúde mental exige vínculo e acompanhamento. Aplicativos ajudam, mas coletam dados sensíveis e não substituem a equipe na escola.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ansiedade não se resolve com notificação.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-036",
+    "lived": "Você decidiu se mantinha a proibição do cigarro eletrônico ou se liberava a venda com imposto.",
+    "concept": "Proibir não acaba com a venda, mas evita a propaganda. Liberar traz imposto e controle, e também marketing para jovens. Saúde pública pesa os dois lados.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto não paga um pulmão.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-037",
+    "lived": "Você decidiu se usava a verba em agentes comunitários de saúde ou em ambulâncias com o nome dos deputados.",
+    "concept": "Agentes comunitários visitam as casas e evitam doenças antes do hospital. Prevenção quase não aparece na foto, por isso perde para a obra com placa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prevenção não dá foto. Dá vida.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-038",
+    "lived": "Você decidiu se fazia um mutirão de saúde num presídio com tuberculose ou se só isolava os doentes.",
+    "concept": "Doença dentro da prisão não fica lá dentro: visitas, agentes e solturas levam a infecção para fora. Cuidar do preso é cuidar da cidade.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O muro da cadeia não para bactéria.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-039",
+    "lived": "Você decidiu se pagava um remédio caríssimo mandado pela Justiça ou se recorria da decisão.",
+    "concept": "Quando a Justiça manda o SUS pagar um tratamento, o dinheiro sai do mesmo orçamento. Um caso ganha, e a política para todos perde.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Toda sentença de saúde tem um custo escondido.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-040",
+    "lived": "Você decidiu se fechava o comércio numa nova pandemia ou se mantinha tudo aberto.",
+    "concept": "Medidas de isolamento atrasam o contágio para os hospitais darem conta. Sem ajuda de renda, quem vive do dia a dia não consegue ficar em casa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Achatar a curva exige pagar a conta da casa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-041",
+    "lived": "Você decidiu se garantia direitos aos entregadores de aplicativo ou se eles seguiam como autônomos.",
+    "concept": "Plataformas chamam o trabalhador de parceiro para não pagar direitos. Ele assume o risco, o custo da moto e o tempo de espera sem receber.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Parceiro que não negocia é empregado sem carteira.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-042",
+    "lived": "Você decidiu se mantinha pública a lista de empresas flagradas com trabalho escravo ou se a suspendia.",
+    "concept": "A lista suja expõe quem foi flagrado com trabalho análogo à escravidão. Bancos e compradores a usam para cortar crédito e contratos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Escravidão não acabou. Mudou de endereço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-043",
+    "lived": "Você decidiu se dava o reajuste aos servidores em greve ou se cortava o ponto dos grevistas.",
+    "concept": "Servidor público pode fazer greve, mas não há lei própria que a regule. Quando o serviço para, quem mais sente é quem depende dele.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Greve no serviço público para quem mais precisa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-044",
+    "lived": "Você decidiu se fiscalizava trabalho infantil no cacau ou se acusava os compradores europeus de protecionismo.",
+    "concept": "Compradores estrangeiros passaram a exigir cadeias livres de trabalho infantil. Proteger crianças virou também condição para exportar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Infância não é custo de produção.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-045",
+    "lived": "Você decidiu se trazia de volta a contribuição aos sindicatos ou se mantinha o fim da cobrança.",
+    "concept": "Sindicato sem dinheiro negocia pior. Contribuição obrigatória dá força, mas pode sustentar sindicato que não representa ninguém.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Negociar sozinho é aceitar o que vier.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-046",
+    "lived": "Você decidiu se exigia manter os empregos em troca do subsídio ou se pagava cursos para os demitidos.",
+    "concept": "Automação aumenta a produção e corta vagas. Quem decide para onde vai o ganho, salário, lucro ou imposto, é a política, não o robô.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O robô não vota. Quem perde o emprego vota.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-047",
+    "lived": "Você decidiu se defendia a Justiça do Trabalho ou se apoiava juntar os processos à Justiça comum.",
+    "concept": "A Justiça do Trabalho existe porque patrão e empregado não negociam de igual para igual. Juízes especializados julgam mais rápido essas causas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem juiz, direito vira favor.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-048",
+    "lived": "Você decidiu se o trabalho dos presos teria salário e redução de pena ou se seria mão de obra barata.",
+    "concept": "A lei prevê que o preso que trabalha reduz a pena e recebe pagamento. Trabalho com direitos ajuda na volta à vida fora; sem direitos, vira exploração.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Trabalho na prisão abre a porta ou prende de novo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-049",
+    "lived": "Você decidiu se abria escolas técnicas públicas ou se pagava cursos dentro das empresas.",
+    "concept": "Ensino técnico público forma para uma profissão e para a vida. Curso feito pela empresa treina para a vaga dela, e o aluno fica preso a ela.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Profissão é para a vida, não para uma vaga.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-050",
+    "lived": "Você decidiu se negociava o frete com os caminhoneiros ou se mandava a polícia desbloquear as estradas.",
+    "concept": "Quase tudo no país anda de caminhão. Uma greve de transporte para a comida e o remédio em poucos dias, e dá a uma categoria grande poder de pressão.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem move as cargas move o governo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-051",
+    "lived": "Você decidiu se defendia proibir revistas baseadas só na aparência ou se mantinha o critério do policial.",
+    "concept": "A lei exige fundada suspeita para revistar alguém. Quando o critério é a aparência, a cor da pele vira suspeita, e o mesmo grupo é parado de novo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Suspeito não é cor de pele.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-052",
+    "lived": "Você decidiu se o clube perdia pontos por racismo da torcida ou se pagava só uma multa.",
+    "concept": "Multa pequena vira custo do negócio. Punição que mexe na tabela faz o clube agir contra o racismo na própria torcida.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Multa se paga. Ponto perdido se sente.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-053",
+    "lived": "Você decidiu se criava uma linha de crédito para empreendedores negros ou uma linha igual para todos.",
+    "concept": "Regra igual para pontos de partida diferentes mantém a distância. Ação afirmativa trata desigual o que já é desigual para chegar perto da igualdade.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Tratar igual quem largou atrás é manter atrás.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-054",
+    "lived": "Você decidiu se criava uma delegacia contra ataques a terreiros ou se os casos ficavam como briga de vizinhos.",
+    "concept": "Ataque a terreiro é crime de intolerância religiosa, ligado ao racismo. Quando vira briga de vizinhos, some das estatísticas e ninguém responde.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fé de matriz africana também tem direito a altar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-055",
+    "lived": "Você decidiu se dava visto humanitário a imigrantes haitianos e africanos ou se fechava o visto.",
+    "concept": "Migrantes brancos e negros costumam ser recebidos de forma diferente. Visto humanitário dá documento, trabalho legal e proteção contra exploração.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fronteira que escolhe cor de pele tem nome.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-056",
+    "lived": "Você decidiu se criava um fundo de reparação pela escravidão ou se o Estado só pedia desculpas.",
+    "concept": "A escravidão terminou sem terra, escola nem indenização para os libertos. Reparação discute como o Estado corrige uma desigualdade que ele mesmo criou.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Desculpa sem reparação é só discurso.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-057",
+    "lived": "Você decidiu se suspendia o reconhecimento facial que erra com pessoas negras ou se ampliava as câmeras.",
+    "concept": "Sistemas de reconhecimento facial aprendem com bancos de rostos pouco diversos. O erro cai sobre quem já é mais parado pela polícia.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Máquina treinada com preconceito repete preconceito.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-058",
+    "lived": "Você decidiu se levava o aterro de lixo para longe ou se ele ficava ao lado de um bairro de maioria negra.",
+    "concept": "Racismo ambiental é quando lixões, indústrias e enchentes caem sempre nos mesmos bairros. O custo da cidade fica com quem tem menos voz.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O lixo da cidade sempre acha o mesmo CEP.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-059",
+    "lived": "Você decidiu se criava um protocolo nacional contra o racismo no parto ou se deixava a cada hospital.",
+    "concept": "Racismo institucional acontece sem ninguém declarar ódio: está nas rotinas que tratam pior um grupo. Metas e dados por cor mostram onde mudar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Racismo também mora no protocolo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-060",
+    "lived": "Você decidiu se apoiava cotas para negros nos concursos de juiz ou se o concurso seguia só pela nota.",
+    "concept": "Quem julga também traz a própria vivência. Um Judiciário parecido com a população tem mais confiança e enxerga casos que antes passavam batido.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Justiça cega não precisa ser toda da mesma cor.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-061",
+    "lived": "Você decidiu se a lei de incentivo virava um fundo com editais ou se as empresas seguiam escolhendo.",
+    "concept": "Na renúncia fiscal, o dinheiro é público, mas a escolha é privada. A empresa patrocina o que dá marca, e regiões sem grandes empresas ficam de fora.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro público com escolha privada.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-062",
+    "lived": "Você decidiu se cobrava taxa e cota de conteúdo nacional do streaming estrangeiro ou se deixava livre.",
+    "concept": "TV e cinema pagam uma taxa que financia filmes nacionais; o streaming estrangeiro ainda não. A cota garante espaço para histórias daqui.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem não conta a própria história assiste à dos outros.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-063",
+    "lived": "Você decidiu se usava emendas na manutenção de um museu ou se leiloava o prédio.",
+    "concept": "Patrimônio precisa de manutenção que ninguém vê. Quando falta, um incêndio apaga em horas a memória de séculos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Memória queimada não volta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-064",
+    "lived": "Você decidiu se liberava muros para o grafite ou se mandava prender quem pinta na rua.",
+    "concept": "Grafite e pichação são tratados de forma diferente pela lei. Espaços liberados dão voz à juventude; a repressão costuma atingir os mesmos bairros.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Muro pintado é bairro que fala.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-065",
+    "lived": "Você decidiu se mantinha música e artes na grade escolar ou se dava mais horas às matérias de prova.",
+    "concept": "Arte na escola desenvolve leitura do mundo, criatividade e pertencimento. Quando sai da grade, fica só para quem pode pagar curso fora.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Arte na escola não é luxo. É direito.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-066",
+    "lived": "Você decidiu se exigia pagamento aos artistas pelas obras usadas na IA ou se liberava o treino.",
+    "concept": "IA generativa aprende com obras de pessoas reais. Sem regra de autorização e pagamento, o artista financia a máquina que vai competir com ele.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A máquina aprendeu com alguém. Esse alguém come.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-067",
+    "lived": "Você decidiu se mantinha aberta uma exposição atacada como imoral ou se a fechava.",
+    "concept": "Censura nem sempre vem por lei: pressão política e ameaça de corte de verba fazem artistas e museus desistirem antes. Isso se chama autocensura.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem fecha uma mostra fecha outras cem.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-068",
+    "lived": "Você decidiu se criava um fundo para jogos brasileiros ou se dava isenção a estúdios estrangeiros.",
+    "concept": "Jogos também são cultura e indústria. Quem produz decide que histórias, sotaques e lugares aparecem na tela de milhões de jovens.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem faz o jogo escolhe o herói.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-069",
+    "lived": "Você decidiu se pedia a devolução de um manto indígena guardado na Europa ou se aceitava só um empréstimo.",
+    "concept": "Muitos objetos sagrados de povos colonizados foram levados para museus europeus. Pedir a volta é discutir a quem pertence a memória.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Memória roubada não vira peça de vitrine.",
+    "unverified": true
+  },
+  {
+    "id": "APR-THEM-070",
+    "lived": "Você decidiu se dava um vale-cultura a jovens de baixa renda ou se deixava o cinema onde já está.",
+    "concept": "Cinemas e teatros se concentram em áreas ricas. Sem sala perto nem dinheiro para o ingresso, a cultura vira privilégio de quem mora no centro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cultura longe de casa é cultura para poucos.",
+    "unverified": true
+  },
+  {
     "id": "APR-ATOR-001",
     "lived": "Você decidiu se cedia ou não ao Latifundiário.",
     "concept": "O coronelismo é o clientelismo. O voto de cabresto ainda existe.",
@@ -680,5 +3238,833 @@
       "url": "https://univates.br/revistas/index.php/destaques/article/download/3389/2391/11005"
     },
     "impact": "O coronel não pede. Ele cobra. E a moeda é a lealdade."
+  },
+  {
+    "id": "APR-ATOR-002",
+    "lived": "Você decidiu se mantinha pública a lista de quem usa trabalho escravo ou se cedia ao bloqueio das estradas.",
+    "concept": "Expor quem explora trabalhadores fecha portas de crédito e de compradores. Por isso a lista vira alvo de pressão de quem aparece nela.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Esconder o nome também protege o explorador.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-003",
+    "lived": "Você decidiu se levava os fazendeiros na comitiva oficial para fechar um mercado de carne lá fora.",
+    "concept": "Missões oficiais abrem portas para empresas do país. Quem viaja junto ganha acesso e prestígio, e o governo se associa a esse setor.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem viaja com o governo fala em nome do país.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-004",
+    "lived": "Você decidiu se trocava a Previdência pública por contas individuais aplicadas pelos bancos.",
+    "concept": "No modelo público, quem trabalha hoje paga quem se aposentou. Na capitalização, cada um poupa para si e assume o risco do mercado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Poupar sozinho é difícil para quem ganha pouco.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-005",
+    "lived": "Você decidiu se taxava os super-ricos mesmo com a ameaça de fuga de capitais.",
+    "concept": "Ameaçar tirar dinheiro do país é uma forma de pressão. Parte do capital sai de fato; parte fica, porque o lucro aqui segue alto.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ameaça de saída também é jeito de negociar.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-006",
+    "lived": "Você decidiu se aceitava dinheiro privado para casas populares em troca de lucro garantido pelo governo.",
+    "concept": "Na parceria público-privada, a empresa investe e o governo paga depois, com lucro combinado. A obra sai antes; a conta fica para os próximos governos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro rápido hoje é parcela amanhã.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-007",
+    "lived": "Você decidiu se aceitava casas populares em terreno distante ou se exigia área com emprego e transporte.",
+    "concept": "Terra barata fica longe. A casa sai mais em conta para quem constrói, mas a família paga em tempo e passagem pelo resto da vida.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Morar longe também custa caro.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-008",
+    "lived": "Você decidiu se punia o cartel das construtoras ou se fazia acordo para manter as obras.",
+    "concept": "No acordo de leniência, a empresa confessa, paga e segue no mercado. Punir mais forte dá exemplo, mas pode parar obras e empregos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem é grande demais para punir manda no preço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-009",
+    "lived": "Você decidiu se dispensava a licitação para reconstruir depois da enchente ou se mantinha o controle.",
+    "concept": "Na emergência, a lei permite contratar sem licitação. A ajuda chega antes, mas o controle de preço e de qualidade fica mais fraco.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A pressa da tragédia também abre o cofre.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-010",
+    "lived": "Você decidiu se taxava as compras baratas em sites estrangeiros para proteger a indústria do país.",
+    "concept": "Imposto de importação protege quem produz aqui, mas encarece o que o consumidor compra. Toda tarifa escolhe quem paga a conta.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Proteger a fábrica também encarece a sacola.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-011",
+    "lived": "Você decidiu se mantinha a regra contra a poluição mesmo com a fábrica que culpava o governo pelas demissões.",
+    "concept": "Empresas usam o emprego como argumento contra regras. Às vezes o fechamento já estava decidido, e a regra vira a desculpa pública.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Emprego vira refém quando a regra incomoda.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-012",
+    "lived": "Você decidiu se encomendava plataformas de petróleo no país, mais caras, ou se comprava fora.",
+    "concept": "Conteúdo local obriga parte da produção a ficar no país. Gera emprego e tecnologia, mas encarece e atrasa as encomendas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Comprar fora é barato até faltar quem saiba fazer.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-013",
+    "lived": "Você decidiu se liberava cursos de enfermagem só a distância ou se exigia aula prática.",
+    "concept": "Curso a distância barateia e alcança mais gente. Em profissões de cuidado, a falta de prática pode chegar ao paciente.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Diploma barato pode sair caro no plantão.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-014",
+    "lived": "Você decidiu se defendia na Justiça o limite ao lucro das faculdades com o FIES ou se negociava.",
+    "concept": "O FIES financia a mensalidade com dinheiro público. Sem regra de qualidade e preço, o lucro é privado e a dívida fica com o aluno.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Dinheiro público sem regra vira lucro sem dono.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-015",
+    "lived": "Você decidiu se trocava isenção de impostos por bolsas privadas ou se abria vagas na universidade pública.",
+    "concept": "Bolsas em troca de isenção põem jovens na faculdade rápido. O governo deixa de arrecadar e depende da qualidade da escola privada.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Toda bolsa tem alguém pagando.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-016",
+    "lived": "Você decidiu se acabava com a estabilidade dos novos servidores para agradar o mercado.",
+    "concept": "A estabilidade protege o servidor de ser demitido por quem assume o poder. Críticos dizem que ela também protege quem trabalha mal.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Sem estabilidade, o chefe novo manda mais.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-017",
+    "lived": "Você decidiu se gastava as reservas para segurar o dólar ou se controlava a saída de dinheiro do país.",
+    "concept": "Reservas em dólar servem para acalmar crises. Controlar a saída de capital trava a especulação, mas assusta quem investe.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem aposta contra a moeda lucra com o susto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-018",
+    "lived": "Você decidiu se garantia com dinheiro público um acordo de dívidas com os bancos ou se limitava os juros.",
+    "concept": "Renegociar dívidas alivia as famílias. Se o governo garante o resto, o banco recebe sem risco; limitar juros ataca a causa, mas reduz o crédito.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Limpar o nome não baixa os juros.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-019",
+    "lived": "Você decidiu se dava verba só às escolas com nota alta ou se dava mais às que mais precisavam.",
+    "concept": "Premiar resultado incentiva, mas quem começa atrás tem menos chance de subir. Verba por necessidade corrige a largada, sem cobrar avanço.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Premiar a nota pode castigar a pobreza.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-020",
+    "lived": "Você decidiu se revia o programa de cozinhas solidárias depois de um estudo técnico contra ele.",
+    "concept": "Avaliar política pública é necessário. Mas o estudo escolhe o que mede: um prato de comida não aparece igual numa planilha de custo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A planilha também escolhe o que não vê.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-021",
+    "lived": "Você decidiu se punha todos os serviços públicos num aplicativo ou se mantinha o atendimento presencial.",
+    "concept": "Serviço digital corta filas e custos. Quem não tem celular, internet ou leitura fácil pode perder direitos sem que ninguém perceba.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fila digital também deixa gente na porta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-022",
+    "lived": "Você decidiu se crimes de soldados contra civis iam para a Justiça Militar ou ficavam na comum.",
+    "concept": "A Justiça Militar é formada em parte por militares. Julgar ali crimes contra civis pode proteger a tropa e enfraquecer o controle de fora.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem julga o colega olha com outros olhos.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-023",
+    "lived": "Você decidiu se repunha a verba dos quartéis ou trocava os militares pela PF na fronteira.",
+    "concept": "Forças Armadas dependem do governo civil, mas podem pressionar ao reduzir o que fazem. Ceder ensina que a pressão funciona.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ceder ao quartel ensina o quartel a pedir.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-024",
+    "lived": "Você decidiu se entregava aos militares o comando do socorro numa terra indígena ou se a Saúde liderava.",
+    "concept": "Militares têm logística para chegar rápido a lugares isolados. Quem comanda a ação decide também quanto os povos atendidos são ouvidos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Socorro que não escuta também fere.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-025",
+    "lived": "Você decidiu se dava reajuste aos servidores federais ou se congelava os salários.",
+    "concept": "Salário congelado perde valor com a inflação. Economiza no curto prazo, mas afasta técnicos e enfraquece o serviço.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Congelar salário também é cortar serviço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-026",
+    "lived": "Você decidiu se negociava com os auditores em operação padrão nos portos ou se cortava o ponto.",
+    "concept": "Na operação padrão, o servidor cumpre cada regra à risca e tudo fica lento. É pressão sem greve, que mostra o peso da função.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cumprir a regra à risca também é protesto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-027",
+    "lived": "Você decidiu se dava equipe aos auditores para cobrar impostos escondidos por multinacionais.",
+    "concept": "Empresas globais movem lucro para países de imposto baixo. Cobrar exige técnicos, sistemas e acordos com outros países.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Imposto que viaja precisa de fiscal que viaja.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-028",
+    "lived": "Você decidiu se gastava apoio no Congresso para aprovar um tratado contra o tráfico de armas.",
+    "concept": "O presidente assina tratados, mas eles só valem no país depois que o Congresso aprova. Cada tratado disputa o mesmo apoio das outras pautas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Assinar é fácil. Aprovar custa apoio.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-029",
+    "lived": "Você decidiu se cancelava a venda de blindados a um governo que reprime protestos.",
+    "concept": "Vender armas gera emprego e divisas, mas o país vendedor também responde pelo uso delas. A diplomacia pesa o contrato contra a imagem.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem vende a arma também assina o uso.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-030",
+    "lived": "Você decidiu se entregava um ministério inteiro ao partido do líder da Câmara em troca de votos.",
+    "concept": "Porteira fechada é quando o partido leva o ministério com todos os cargos. O governo ganha votos e perde o controle técnico da área.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem leva os cargos leva também a agenda.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-031",
+    "lived": "Você decidiu se vetava os gastos aprovados para punir o governo ou se cedia ao líder da Câmara.",
+    "concept": "Pauta-bomba é aprovar gastos que o governo não pode pagar, para pressioná-lo. O veto pode cair se a maioria do Congresso quiser.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O orçamento também vira arma.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-032",
+    "lived": "Você decidiu se aceitava o apoio do Centrão sem preço declarado ou se negociava voto a voto.",
+    "concept": "No presidencialismo de coalizão, apoio no Congresso vira crédito. Favor sem preço declarado costuma ser cobrado depois, em cargos ou emendas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Favor de graça tem data de vencimento.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-033",
+    "lived": "Você decidiu se a isenção dos templos valia também para as empresas ligadas à igreja.",
+    "concept": "A Constituição protege o culto de impostos para garantir a liberdade religiosa. A dúvida é até onde vai: o templo ou os negócios em volta dele.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fé é livre. Negócio paga imposto?",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-034",
+    "lived": "Você decidiu se liberava o ensino em casa, como pediam os Pastores, ou se mantinha a escola obrigatória.",
+    "concept": "A escola não só ensina conteúdo. É também onde a rede de proteção vê a criança e onde ela convive com quem pensa diferente.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Escola é mais que aula. É janela.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-035",
+    "lived": "Você decidiu se usava os templos aliados para levar serviços aos bairros ou se ficava só com a rede pública.",
+    "concept": "Igrejas chegam a bairros onde o Estado mal entra. Parceria amplia o alcance, mas aproxima governo e religião num Estado laico.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem leva o recado também escolhe o tom.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-036",
+    "lived": "Você decidiu se abria concurso para professores ou se renovava os contratos temporários.",
+    "concept": "Professor temporário muda de escola todo ano e não cria vínculo com a turma. Concurso dá estabilidade, mas pesa no orçamento por muito tempo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Vínculo também se aprende.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-037",
+    "lived": "Você decidiu se pedia à Justiça o corte do ponto dos professores em greve ou se negociava.",
+    "concept": "Greve no serviço público mexe com o direito do trabalhador e com o serviço à população. Quando não há acordo, a Justiça decide os limites.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Greve longa: todo mundo perde a aula.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-038",
+    "lived": "Você decidiu se abria as escolas à noite para o cursinho dos professores ou se comprava um curso online.",
+    "concept": "Cursinhos populares nasceram para dar a jovens pobres e negros a chance de disputar vaga em universidade pública com quem pagou cursinho caro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Vaga na federal também se disputa à noite.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-039",
+    "lived": "Você decidiu se pagava o piso da enfermagem ou se adiava para proteger hospitais filantrópicos.",
+    "concept": "Piso salarial garante renda mínima a uma categoria. Quando quem paga é estado, município ou hospital privado, alguém precisa dizer de onde sai o dinheiro.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem cuida também precisa ser cuidado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-040",
+    "lived": "Você decidiu se quebrava a patente de um remédio caro ou se negociava o preço com o laboratório estrangeiro.",
+    "concept": "A licença compulsória permite produzir um remédio patenteado em caso de interesse público. Baixa o preço, mas cria atrito com o dono da patente.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Patente protege a ideia. E quem protege o doente?",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-041",
+    "lived": "Você decidiu se os postos de saúde acolhiam vítimas de violência ou se o caso ia direto para a polícia.",
+    "concept": "Muita vítima de violência doméstica tem medo da delegacia. O posto de saúde é uma porta mais segura e pode acionar a rede de proteção.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Pedir socorro não pode dar mais medo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-042",
+    "lived": "Você decidiu se apoiava previdência e seguro para entregadores de aplicativo ou se deixava tudo como estava.",
+    "concept": "Plataformas tratam entregadores como autônomos. Sem vínculo, quem se acidenta ou envelhece fica sem proteção, e o custo vai para o SUS e a família.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Autônomo até o dia do acidente.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-043",
+    "lived": "Você decidiu se mandava a polícia desocupar a fábrica ou se mediava uma saída com os trabalhadores.",
+    "concept": "Quando uma fábrica fecha, os trabalhadores às vezes ocupam e tentam assumir a produção em cooperativa. É a chamada fábrica recuperada.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A máquina vai embora. O operário fica.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-044",
+    "lived": "Você decidiu se criava uma mesa permanente com os sindicatos ou se negociava com cada categoria.",
+    "concept": "Mesa permanente dá voz aos trabalhadores e evita greve de surpresa. Em troca, o governo perde parte da liberdade de decidir sozinho.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Conversa fixa custa menos que greve.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-045",
+    "lived": "Você decidiu se transformava prédios públicos vazios em moradia ou se leiloava os imóveis.",
+    "concept": "A Constituição diz que a propriedade deve cumprir função social. Prédio vazio no centro e família morando longe são duas faces da mesma cidade.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Prédio vazio, gente sem teto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-046",
+    "lived": "Você decidiu se lançava casas para reatar com os movimentos ou se aceitava o rompimento.",
+    "concept": "Movimentos sociais apoiam governos em troca de pautas. Quando a promessa não vira entrega, o apoio vira cobrança, e a rua muda de lado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Promessa sem obra vira protesto.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-047",
+    "lived": "Você decidiu se dava terreno e material para casas em mutirão ou se licitava a obra para uma construtora.",
+    "concept": "Na autogestão, as famílias organizam a obra e decidem o projeto. A casa ganha a cara de quem mora, mas depende de assessoria técnica e tempo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem levanta a parede conhece a casa.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-048",
+    "lived": "Você decidiu se o governo comprava a safra dos assentamentos ou se mantinha a licitação comum.",
+    "concept": "Compra pública garante renda a quem produz pouco e não tem acesso ao grande mercado. Em troca, o governo pode pagar mais do que no atacado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Garantir a venda segura o produtor no campo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-049",
+    "lived": "Você decidiu se mandava a Força Nacional às fazendas ocupadas ou se vistoriava se eram produtivas.",
+    "concept": "A Constituição manda desapropriar a terra que não cumpre função social. Ocupar é a forma de pressão para a vistoria sair do papel.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Terra parada também é escolha.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-050",
+    "lived": "Você decidiu se aceitava a doação de alimentos dos sem-terra para cidades alagadas ou se comprava no atacado.",
+    "concept": "Em desastres, a ajuda chega mais rápido por quem já tem rede organizada. Aceitar ajuda de um movimento também dá a ele visibilidade política.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Na enchente, quem chega primeiro é lembrado.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-051",
+    "lived": "Você decidiu se contratava fiscais para a floresta ou se comprava monitoramento por satélite estrangeiro.",
+    "concept": "Satélite mostra onde a floresta cai. Mas só multa, embargo e apreensão no local fazem o desmatador parar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ver o fogo não apaga o fogo.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-052",
+    "lived": "Você decidiu se rastreava a origem do gado ou se acusava os ativistas que pediram boicote.",
+    "concept": "Sem rastreio, o boi de área desmatada passa por fazendas limpas antes do abate. Compradores de fora usam essa brecha para barrar a carne toda.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Boi sem origem leva a fama de todos.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-053",
+    "lived": "Você decidiu se apoiava jovens das periferias no plantio de árvores ou se deixava a tarefa para a prefeitura.",
+    "concept": "Bairros pobres costumam ter menos árvores e mais calor que os ricos. É a ilha de calor, que adoece mais quem já tem menos.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "A sombra também é desigual.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-054",
+    "lived": "Você decidiu se apoiava uma lei para o streaming pagar mais aos compositores ou se esperava acordo.",
+    "concept": "No streaming, o artista recebe uma fração por música tocada. A maior parte fica com plataforma e gravadora, e o independente fica com migalhas.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Muito play, pouco aluguel.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-055",
+    "lived": "Você decidiu se chamava o artista para conversar ou se cortava o patrocínio estatal do festival dele.",
+    "concept": "Quando o governo tira verba de quem o critica, a punição vira propaganda para a crítica. E abre caminho para calar quem não tem fama.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Calar o artista amplia o refrão.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-056",
+    "lived": "Você decidiu se montava o palco para um festival gratuito nas periferias ou se recusava a proposta.",
+    "concept": "Equipamentos culturais se concentram nos centros ricos. Festival no bairro leva cultura a quem raramente pode pagar ingresso ou transporte.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Cultura perto de casa também é direito.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-057",
+    "lived": "Você decidiu se as plataformas só respondiam por posts após ordem judicial ou se tinham dever de cuidado.",
+    "concept": "Se a plataforma só age após ordem judicial, golpe e ódio ficam no ar por meses. Se age sozinha, pode apagar crítica legítima por medo de multa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem lucra com o post responde por ele?",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-058",
+    "lived": "Você decidiu se cedia à Meta para trazer as notícias de volta ou se financiava o jornalismo local.",
+    "concept": "Quando uma plataforma tira as notícias do feed, a informação apurada some e o boato fica. Isso mostra o poder de uma empresa sobre o debate público.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Feed sem notícia não fica vazio. Fica com boato.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-059",
+    "lived": "Você decidiu se aceitava a ferramenta da Meta contra golpes ou se criava uma ferramenta pública.",
+    "concept": "Parceria com big tech traz tecnologia pronta. Em troca, a empresa pode ganhar acesso a dados de cidadãos e poder sobre o próprio Estado.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ferramenta de graça cobra em dados.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-060",
+    "lived": "Você decidiu se votava com uma potência na ONU em troca de investimentos ou se o Brasil se abstinha.",
+    "concept": "Voto na ONU é moeda diplomática. Alinhar-se a uma potência rende favores, mas fecha portas com o rival e reduz a margem de negociar com os dois.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Voto vendido não se compra de volta.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-061",
+    "lived": "Você decidiu se cedia à potência para derrubar o embargo à carne ou se buscava novos mercados.",
+    "concept": "Barreira sanitária pode esconder pressão política. Depender de um só comprador deixa o país exposto a esse tipo de chantagem.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Um só freguês manda no preço.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-062",
+    "lived": "Você decidiu se reconhecia os cursos online do Coach como formação técnica ou se exigia avaliação do MEC.",
+    "concept": "Diploma reconhecido passa por avaliação de currículo, professores e estrutura. Sem isso, o título vale o que o mercado decidir, e o aluno paga o risco.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Diploma fácil cobra a conta depois.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-063",
+    "lived": "Você decidiu se acionava a Receita contra o Coach que ensinava a sonegar ou se ignorava o vídeo.",
+    "concept": "Imposto paga escola, posto e estrada. Quem ensina a sonegar joga a conta em quem não pode fugir, que paga embutido no preço.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Quem sonega joga a conta no vizinho.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-064",
+    "lived": "Você decidiu se gravava com o Coach para divulgar o primeiro emprego ou se divulgava pelas escolas.",
+    "concept": "Influenciador alcança quem a propaganda oficial não alcança. Mas a parceria empresta a credibilidade do governo a quem vende outra coisa.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Selo emprestado vira propaganda alheia.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-065",
+    "lived": "Você decidiu se abria os dados de visitas e gastos do palácio ou se mantinha o sigilo.",
+    "concept": "A Lei de Acesso à Informação faz da transparência a regra e do sigilo a exceção. Sigilo amplo protege o governo, mas alimenta a suspeita.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O que se esconde parece pior.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-066",
+    "lived": "Você decidiu se processava o jornalista que expôs um ministro ou se mandava investigar o ministro.",
+    "concept": "Processo contra jornalista, mesmo perdido, custa tempo e dinheiro. Por isso é usado para intimidar: o castigo é o próprio processo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "O castigo é o processo, não a sentença.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-067",
+    "lived": "Você decidiu se levava oficinas de checagem às escolas ou se usava o material pronto de uma big tech.",
+    "concept": "Educação midiática ensina a perguntar quem fez, quando e com que interesse. Quem aprende a checar fica mais difícil de enganar.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Antes de passar adiante, pergunte quem fez.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-068",
+    "lived": "Você decidiu se a publicidade do governo ia também para canais independentes ou se mantinha as regras.",
+    "concept": "Publicidade oficial pode fortalecer uma imprensa diversa ou comprar silêncio. O critério de quem recebe decide se é política pública ou favor.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Verba para aliado é favor ou pluralidade?",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-069",
+    "lived": "Você decidiu se entrava na live do influenciador que acusou o governo ou se ignorava a crítica.",
+    "concept": "Crítica de aliado pesa mais que a do adversário, porque fala com quem votou em você. Responder expõe erros; calar deixa a versão dele sozinha.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Fogo amigo também queima.",
+    "unverified": true
+  },
+  {
+    "id": "APR-ATOR-070",
+    "lived": "Você decidiu se apoiava a série do influenciador sobre namoro abusivo ou se fazia uma campanha oficial.",
+    "concept": "Controle do celular, ciúme e isolamento costumam vir antes da agressão. Reconhecer esses sinais cedo ajuda a pedir ajuda a tempo.",
+    "data": "",
+    "source": {
+      "label": "Fonte em conferência",
+      "url": ""
+    },
+    "impact": "Ciúme que vigia não é cuidado.",
+    "unverified": true
   }
 ]

@@ -201,6 +201,8 @@ func _scan_current() -> void:
 ## No displayed text names a side (D-084).
 func _scan(v: Variant, where: String) -> void:
 	if v is String:
+		if (v as String).begins_with("http"):   # a source link is not a displayed side word
+			return
 		var low := (v as String).to_lower()
 		for w in FORBIDDEN:
 			if low.contains(w):
