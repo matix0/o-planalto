@@ -172,6 +172,7 @@ static func third_party_text() -> String:
 
 func _add_fold(parent: Container, title: String, text: String) -> FoldableContainer:
 	var fold := FoldableContainer.new()
+	fold.mouse_filter = Control.MOUSE_FILTER_PASS   # an open license must not block the finger scroll (P-018)
 	fold.title = title
 	# The title does not wrap: trim it instead of widening the column (24 px, +30 %).
 	fold.title_text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS

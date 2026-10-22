@@ -82,6 +82,9 @@ func _ready() -> void:
 	_coach_text.accessibility_live = AccessibilityServer.LIVE_POLITE
 	_progress.setup(STEPS.size(), ProgressIndicator.Surface.PANEL, &"step")
 	_dim.color = Color(0, 0, 0, DIM_ALPHA)
+	# Step 2 says "Toque em um medidor": the dim layer lets taps reach the HUD legend (P-018).
+	# The rest of the demo board ignores input, so nothing else reacts.
+	_dim.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_hud = _make_hud()
 	_hud_slot.add_child(_hud)
 	_advance.pressed.connect(advance)

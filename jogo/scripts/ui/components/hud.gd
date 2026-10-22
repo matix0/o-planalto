@@ -34,32 +34,46 @@ var _pending := 0
 var _legend: PanelContainer
 var _legend_text: Label
 var _legend_id := ""
+var _legend_by_hover := false
 var _legend_timer: SceneTreeTimer
 
 @onready var _divider_line: ColorRect = $MeterDivider/Line
 
 
+const METER_CELL := 40.0   # 8 × 40 + 16 divider = 336: the cells touch, no dead gap to tap (P-018)
+
+
 func _ready() -> void:
 	_divider_line.color = Tokens.INACTIVE
+	add_theme_constant_override(&"separation", 0)
+	for m in meters():
+		m.custom_minimum_size.x = METER_CELL
 	for m in meters():
 		m.animation_finished.connect(_on_meter_done)
 		m.tapped.connect(show_legend)
 		m.hovered.connect(func(id: String) -> void:
 			if _legend_id != id:
-				show_legend(id))
+				show_legend(id, true))
 	_build_legend()
 
 
 ## Strip under the HUD with the name and role of a meter (tap on mobile, click on PC; hover
 ## also shows the tooltip). A 2nd tap on the same meter closes it (P-017).
-func show_legend(id: String) -> void:
-	if _legend.visible and _legend_id == id:
+func show_legend(id: String, from_hover: bool = false) -> void:
+	# A click on a legend the mouse just opened keeps it (hover, then click, must not close it).
+	if _legend.visible and _legend_id == id and not from_hover and not _legend_by_hover:
 		hide_legend()
 		return
+	_legend_by_hover = from_hover
 	_legend_id = id
 	_legend_text.text = "%s — %s" % [Tokens.METER_NAMES.get(id, id), Tokens.METER_INFO.get(id, "")]
 	_legend.add_theme_stylebox_override(&"panel", _legend_box(Tokens.METER_COLORS.get(id, Tokens.TEXT)))
-	_legend.size = Vector2(size.x, 0)
+	# Fixed width first, so the wrapped text gets its real height (with width 0 the label wrapped
+	# one word per line and the strip grew 1200 px tall, an invisible wall over the screen).
+	var pad := Tokens.ESP_12 * 2 + Tokens.ESP_4
+	_legend_text.custom_minimum_size.x = maxf(0.0, size.x - pad)
+	_fit_legend()
+	_fit_legend.call_deferred()   # again once the label has wrapped at its real width
 	_legend.global_position = global_position + Vector2(0, size.y + Tokens.ESP_4)
 	_legend.visible = true
 	_legend_text.accessibility_live = AccessibilityServer.LIVE_POLITE
@@ -68,6 +82,12 @@ func show_legend(id: String) -> void:
 	timer.timeout.connect(func() -> void:
 		if _legend_timer == timer:
 			hide_legend())
+
+
+func _fit_legend() -> void:
+	_legend.size = Vector2(size.x, 0)
+	_legend.reset_size()
+	_legend.size = Vector2(size.x, _legend_text.get_combined_minimum_size().y + Tokens.ESP_8 * 2)
 
 
 func hide_legend() -> void:
@@ -82,19 +102,25 @@ func legend_text() -> String:
 func _build_legend() -> void:
 	_legend = PanelContainer.new()
 	_legend.name = "Legend"
-	_legend.top_level = true
 	_legend.visible = false
-	_legend.z_index = 10
 	_legend.mouse_filter = Control.MOUSE_FILTER_STOP
 	_legend.gui_input.connect(func(e: InputEvent) -> void:
-		if (e is InputEventMouseButton and e.pressed) or (e is InputEventScreenTouch and e.pressed):
+		if e is InputEventMouseButton and e.pressed:   # touch arrives as an emulated click
 			hide_legend())
 	_legend_text = Label.new()
 	_legend_text.theme_type_variation = &"Caption"
 	_legend_text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_legend_text.add_theme_color_override(&"font_color", Tokens.TEXT)
 	_legend.add_child(_legend_text)
-	add_child(_legend)
+	# Under a plain Control, not straight under this HBoxContainer: the container kept resizing the
+	# strip (it grew to the screen height and blocked every tap below the HUD).
+	var host := Control.new()
+	host.name = "LegendHost"
+	host.top_level = true
+	host.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	host.z_index = 10
+	add_child(host)
+	host.add_child(_legend)
 
 
 func _legend_box(accent: Color) -> StyleBoxFlat:

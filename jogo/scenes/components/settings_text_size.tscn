@@ -16,6 +16,7 @@ text = "Tamanho do texto"
 autowrap_mode = 3
 
 [node name="Frame" type="PanelContainer" parent="."]
+mouse_filter = 1
 unique_name_in_owner = true
 layout_mode = 2
 

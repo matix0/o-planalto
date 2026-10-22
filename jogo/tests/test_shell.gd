@@ -207,6 +207,20 @@ func _new_term_and_tutorial() -> void:
 		_expect(p.get_child(0).name == "Count", "C-19: n/N before the segments")
 		_expect(tut.spotlight_rect().size.x > 0.0 and tut.spotlight_rect().size.y > 0.0, "spotlight on step %d" % (i + 1))
 		_check_tree(tut, "tutorial step %d" % (i + 1))
+		if i == 1:   # P-018: step 2 says "Toque em um medidor" — a tap through the dim opens the legend
+			var hud: Node = tut.get("_hud")
+			var m: Control = hud.meters()[0]
+			var at: Vector2 = root.get_final_transform() * m.get_global_rect().get_center()   # window coords
+			for pressed in [true, false]:
+				var e := InputEventMouseButton.new()
+				e.button_index = MOUSE_BUTTON_LEFT
+				e.position = at
+				e.global_position = at
+				e.pressed = pressed
+				root.push_input(e)
+			await _frames(2)
+			_expect(String(hud.legend_text()).begins_with("Dignidade"), "tutorial step 2: tap on a meter opens its legend (%s)" % hud.legend_text())
+			hud.hide_legend()
 		var adv := tut.find_child("AdvanceButton", true, false) as Button
 		_expect(_focus() == adv, "focus on advance (step %d)" % (i + 1))
 		adv.pressed.emit()

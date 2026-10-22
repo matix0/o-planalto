@@ -9,7 +9,14 @@ Versionamento: [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
-### Alterado (P-018)
+### Corrigido (P-018, toque no celular)
+- Medidor não respondia ao toque: cada toque chegava duas vezes (toque + clique emulado) e a legenda abria e fechava; agora só o clique emulado
+- Faixa da legenda crescia até 1300 px, invisível, e bloqueava toques na tela (ex.: pausa); agora tem a altura do texto
+- Vãos entre os medidores não respondiam: cada medidor ocupa uma célula de 40 px
+- Tutorial passo 2 ("Toque em um medidor") bloqueava o toque na camada escura
+- Desktop: passar o mouse abria a legenda e o clique a fechava
+- Licenças em Créditos e o seletor de tamanho de texto seguravam a rolagem com o dedo
+- Novo `tests/test_touch_scroll.gd` (rolagem com o dedo e toque em dobro); conferido no Chromium como celular
 - Responsividade conferida em 390×680, 390×844 e 1280×720; cartão do ano cresce quando o texto grande não cabe; seletor de texto selecionado volta a ter texto (contraste testado em `test_theme.gd`); docs 13, 14 (§14.14), 14A, 16 e GDD alinhados ao P-017/P-018
 - Opções sempre visíveis nos cantos da carta com seta (D-202); verde ao subir e vermelho ao cair nos medidores (D-203); "Boi, Bala e Bíblia" (D-205)
 

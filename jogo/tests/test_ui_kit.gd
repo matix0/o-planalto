@@ -105,6 +105,14 @@ func _test_hud(host: Control) -> void:
 		ids.append(m.meter_id)
 	_expect(ids == PackedStringArray(Hud.ORDER), "8 meters in GDD order: %s" % ", ".join(ids))
 	_expect(hud.get_combined_minimum_size().x <= 342.0 and hud.get_combined_minimum_size().y <= 70.0, "HUD fits 342 px wide, 70 tall with the short names (P-017), got %s" % hud.get_combined_minimum_size())
+	for m in hud.meters():   # P-018: every meter is a full tap cell (no dead gap), ≥ 40 × 48
+		_expect(m.custom_minimum_size.x >= 40.0 and m.get_combined_minimum_size().y >= 48.0 and m.mouse_filter != Control.MOUSE_FILTER_IGNORE, "%s is a tap cell" % m.meter_id)
+	_expect(hud.get_theme_constant(&"separation") == 0, "HUD cells touch (separation 0)")
+	hud.show_legend("dignity")
+	await process_frame
+	var lg: Control = hud.get_node("LegendHost/Legend")
+	_expect(lg.visible and lg.size.y < 120.0 and absf(lg.size.x - hud.size.x) < 1.0, "legend strip is one short block under the HUD (%s)" % lg.size)
+	hud.hide_legend()
 	hud.set_values(START)
 	_expect(hud.values() == START, "set_values")
 	hud.apply_changes([

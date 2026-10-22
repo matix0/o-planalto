@@ -225,8 +225,9 @@ func _tint(v: int) -> Color:
 
 
 func _on_gui_input(event: InputEvent) -> void:
-	var tap: bool = (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT) \
-		or (event is InputEventScreenTouch and event.pressed)
+	# Mouse only: on a phone Godot turns each touch into a mouse click too (emulate_mouse_from_touch),
+	# so reading the touch event as well fired twice and the legend opened and closed at once.
+	var tap: bool = event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT
 	if tap:
 		tapped.emit(meter_id)
 
