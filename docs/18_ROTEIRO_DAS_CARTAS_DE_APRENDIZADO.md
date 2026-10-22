@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 182 Cartas de Aprendizado ligadas às 182 cartas do doc 17 (177 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 207 Cartas de Aprendizado ligadas às 207 cartas do doc 17 (202 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 0 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -4480,7 +4480,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.09 — Cartas de Aprendizado do Modo Impeachment (cena: 5; comuns: 14 de 20)
+## 18.09 — Cartas de Aprendizado do Modo Impeachment (cena: 5; comuns: 20 de 20)
 
 ### APR-IMP-1 — O Pedido
 
@@ -5059,9 +5059,195 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 **Status:** pendente de revisão (D-196)
 
+### APR-155 — Vice conversa com rivais
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-155                            │
+│  Vice conversa com rivais                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se rompia com o vice que conversa com a       │
+│  oposição ou se dava a ele mais poder.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Se o presidente cai, o vice assume. Por isso, num governo  │
+│  frágil, o vice vira peça da oposição: a queda do titular é │
+│  a chance dele.                                             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem assume no seu lugar também faz política."            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-156 — Nota de governos estrangeiros
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-156                            │
+│  Nota de governos estrangeiros                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava uma nota de governos vizinhos em  │
+│  defesa do seu mandato.                                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Blocos regionais têm cláusulas de defesa da democracia.    │
+│  Apoio de fora dá peso a uma denúncia, mas a oposição usa o │
+│  apoio como prova de interferência.                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Apoio de fora pesa, mas cobra explicação em casa."        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-157 — Pedidos na gaveta
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-157                            │
+│  Pedidos na gaveta                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia ao STF um prazo para a Câmara decidir│
+│  os pedidos de impeachment ou se cedia.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Só o presidente da Câmara decide se um pedido de           │
+│  impeachment anda. Sem prazo para decidir, a gaveta vira    │
+│  moeda de troca.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Pedido parado também é recado."                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-158 — Consulta sobre o mandato
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-158                            │
+│  Consulta sobre o mandato                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se propunha uma consulta popular sobre o seu  │
+│  mandato, algo que a lei não prevê.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Alguns países deixam o povo votar se o governante fica, o  │
+│  chamado recall. Aqui, só o Congresso pode tirar um         │
+│  presidente antes do fim.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem dá o mandato pode tirá-lo?"                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-159 — Manobra nas contas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-159                            │
+│  Manobra nas contas                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se atrasava repasses a bancos públicos para   │
+│  pagar benefícios ou se cortava os benefícios.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Impeachment exige crime de responsabilidade, previsto em   │
+│  lei. Manobras nas contas podem entrar nessa lista, e a     │
+│  oposição decide quando usar.                               │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O crime de responsabilidade vira arma no tempo certo."    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-160 — Recado do quartel
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-160                            │
+│  Recado do quartel                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aceitava a garantia de um general contra o │
+│  Congresso, em troca de voz nas decisões.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Forças Armadas obedecem à Constituição, não a um governo.  │
+│  Usar a tropa para segurar um mandato troca um processo     │
+│  político por um golpe.                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Farda não é base de governo."                             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
 ---
 
-## 18.10 — Cartas de Aprendizado do Modo Judiciário (1 de 20)
+## 18.10 — Cartas de Aprendizado do Modo Judiciário (20 de 20)
 
 ### APR-161 — Ministro do STF
 
@@ -5094,6 +5280,594 @@ As Cartas de Aprendizado seguem **6 princípios**:
 ```
 
 **Fonte verificada (P-010):** [Poder360, 2026](https://www.poder360.com.br/poder-justica/leia-as-integras-de-documentos-que-revelam-relacao-de-moraes-com-vorcaro/)
+
+### APR-162 — Sentenças à venda
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-162                            │
+│  Sentenças à venda                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se propunha o fim da aposentadoria como       │
+│  punição para juízes que vendem sentenças.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A punição administrativa mais dura para um juiz é a        │
+│  aposentadoria compulsória, com salário. Perder o cargo     │
+│  exige processo na Justiça.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Para o juiz, a pena máxima pode ser férias pagas."        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-163 — Lei derrubada no Supremo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-163                            │
+│  Lei derrubada no Supremo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cumpria a decisão do STF que derrubou sua  │
+│  lei ou se tentava driblar com uma emenda.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O STF pode declarar uma lei contrária à Constituição. O    │
+│  Congresso pode mudar a Constituição, mas não pode tocar nas│
+│  cláusulas pétreas.                                         │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A última palavra muda de mão."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-164 — Liminar trava a moradia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-164                            │
+│  Liminar trava a moradia                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se recorria em silêncio da liminar que parou  │
+│  seu programa de moradia ou se atacava o juiz.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Liminar é uma decisão provisória, dada antes do julgamento │
+│  final. Um só juiz pode suspender um programa inteiro até o │
+│  recurso.                                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Um juiz sozinho pode parar uma obra inteira."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-165 — Fim do foro especial
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-165                            │
+│  Fim do foro especial                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava a PEC que acaba com o foro especial│
+│  de deputados ou se mantinha a regra.                       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Foro especial é o direito de certas autoridades serem      │
+│  julgadas por um tribunal superior. Defensores dizem que    │
+│  protege o cargo; críticos, a pessoa.                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O endereço do processo muda a pena."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-166 — Prisão em segunda instância
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-166                            │
+│  Prisão em segunda instância                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava a prisão após a segunda instância  │
+│  ou se defendia a presunção de inocência.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Pela Constituição, ninguém é culpado até o fim dos         │
+│  recursos. O STF já mudou de posição sobre isso mais de uma │
+│  vez.                                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Inocente até quando?"                                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-167 — Habeas corpus em um dia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-167                            │
+│  Habeas corpus em um dia                                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se ampliava a Defensoria ou se restringia o   │
+│  habeas corpus após a soltura de um banqueiro.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Habeas corpus protege quem está preso de forma ilegal. Vale│
+│  para todos, mas quem tem advogado caro chega antes ao juiz.│
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A lei é a mesma; o advogado, não."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-168 — Vazamento do inquérito
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-168                            │
+│  Vazamento do inquérito                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se punia quem vazou um inquérito sigiloso     │
+│  contra um juiz ou se defendia a imprensa.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Inquérito sob sigilo protege a investigação e o            │
+│  investigado. O vazamento pode anular provas, mas o         │
+│  jornalista não precisa revelar a fonte.                    │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Vazar ajuda a manchete e pode salvar o réu."              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-169 — Quarentena para juiz candidato
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-169                            │
+│  Quarentena para juiz candidato                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se apoiava uma quarentena para juízes que     │
+│  querem disputar eleição ou se liberava a candidatura.      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Juiz não pode ter partido. A quarentena tenta evitar que   │
+│  uma sentença vire palanque; críticos dizem que limita o    │
+│  direito de ser votado.                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A toga não pode ser palanque."                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-170 — Mais cadeiras no Supremo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-170                            │
+│  Mais cadeiras no Supremo                                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se aumentava o número de ministros do STF para│
+│  nomear a maioria ou se mantinha a corte.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Mudar o tamanho de uma corte para controlar suas decisões  │
+│  se chama empacotamento. A regra pode servir ao próximo     │
+│  governo também.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "A régua que você muda mede o próximo também."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-171 — Despejo de acampamento
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-171                            │
+│  Despejo de acampamento                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se pedia mediação antes de despejar famílias  │
+│  acampadas numa fazenda parada ou se cumpria a ordem.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição exige que a terra cumpra função social.     │
+│  Antes de despejos coletivos, a Justiça pode abrir comissões│
+│  de conflitos fundiários.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ordem cumprida nem sempre é conflito resolvido."          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-172 — Juiz das garantias
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-172                            │
+│  Juiz das garantias                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se implantava já o juiz das garantias, com    │
+│  custo, ou se adiava a regra.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O juiz das garantias cuida das decisões da investigação.   │
+│  Outro juiz dá a sentença, sem ter se envolvido com as      │
+│  provas desde o início.                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem investiga não deveria julgar."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-173 — Juíza ameaçada pela milícia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-173                            │
+│  Juíza ameaçada pela milícia                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava sentenças sem nome do juiz ou se    │
+│  dava escolta federal à juíza ameaçada pela milícia.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Varas colegiadas dividem a sentença entre juízes para      │
+│  proteger cada um. Juiz sem rosto vai além e esconde quem   │
+│  julga, o que fere a defesa.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Proteger o juiz sem cegar a defesa."                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-174 — Homofobia como crime
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-174                            │
+│  Homofobia como crime                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se enviava uma lei contra a homofobia ou se   │
+│  deixava a proteção só com a decisão do STF.                │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando o Congresso não faz uma lei que a Constituição      │
+│  exige, o STF pode declarar a omissão e aplicar uma regra   │
+│  até a lei sair.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Direito sem lei fica por um fio."                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-175 — Vaga no Tribunal de Contas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-175                            │
+│  Vaga no Tribunal de Contas                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se indicava um auditor de carreira ou um      │
+│  ex-deputado aliado para o Tribunal de Contas.              │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Tribunal de Contas ajuda o Congresso a fiscalizar o      │
+│  dinheiro público. Parte das vagas é indicação política, e o│
+│  indicado julga quem o escolheu.                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fiscal escolhido pelo fiscalizado."                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-176 — Delação do banqueiro
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-176                            │
+│  Delação do banqueiro                                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se limitava as delações premiadas quando um   │
+│  banqueiro preso quis delatar políticos.                    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na delação premiada, o réu conta o que sabe em troca de    │
+│  pena menor. A palavra dele precisa de provas, mas a simples│
+│  menção já fere reputações.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem delata quer pena menor, não verdade."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-177 — Penduricalhos acima do teto
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-177                            │
+│  Penduricalhos acima do teto                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se propunha cortar os auxílios que levam      │
+│  salários de juízes acima do teto ou se evitava a briga.    │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  A Constituição fixa um teto para salários públicos.        │
+│  Auxílios chamados de indenização ficam fora da conta e     │
+│  furam o limite.                                            │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "O teto existe; o extra passa por baixo."                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-178 — Audiência de custódia
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-178                            │
+│  Audiência de custódia                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se ampliava ou se limitava as audiências de   │
+│  custódia para presos em flagrante.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Na audiência de custódia, o juiz vê o preso logo após a    │
+│  prisão. Decide se ele espera solto ou preso e se houve     │
+│  abuso.                                                     │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Ver o juiz logo é direito, não prêmio."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-179 — Parentes de juízes na causa
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-179                            │
+│  Parentes de juízes na causa                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se proibia parentes de juízes de advogar nos  │
+│  tribunais deles ou se confiava na suspeição.               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O juiz deve deixar o caso quando tem laço com uma das      │
+│  partes: é o impedimento. A regra depende do próprio juiz se│
+│  declarar.                                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem decide se está impedido é o próprio juiz."           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-180 — Ouvidoria de fora
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-180                            │
+│  Ouvidoria de fora                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se criava uma ouvidoria do Judiciário com     │
+│  cidadãos de fora ou se mantinha o controle interno.        │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O CNJ fiscaliza juízes e tem membros de fora da            │
+│  magistratura, mas em minoria. Ouvidoria externa dá ao      │
+│  cidadão um canal próprio.                                  │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem fiscaliza o juiz?"                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
 
 ---
 
@@ -5909,10 +6683,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 175 | 0 | 200 |
+| **Institucionais** | 200 | 0 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **177** | **0** | **340** |
+| **Total** | **202** | **0** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

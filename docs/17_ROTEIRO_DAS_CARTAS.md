@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 177 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 202 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -4386,6 +4386,168 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Aprendizado** | APR-154 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
+### INST-155 — Vice conversa com rivais
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vice conversa com rivais |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | Seu vice janta com líderes da oposição. Nos corredores, já falam do governo dele. Você pode romper em público ou trazê-lo para perto. |
+| **Opção A** | Romper com o vice |
+| **Efeitos A** | `Legitimidade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência A** | "O vice vira oposição. Os rivais ganham um nome para o dia seguinte." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Dar um ministério a ele |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -5, `Legitimidade` -5 |
+| **Consequência B** | "O vice ganha poder e sorri na foto. A conversa com a oposição continua." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-155 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-156 — Nota de governos estrangeiros
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Nota de governos estrangeiros |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-010` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Preto |
+| **Problema** | Governos vizinhos querem soltar uma nota em defesa do seu mandato. A oposição diz que é interferência de fora na política do país. |
+| **Opção A** | Aceitar a nota |
+| **Efeitos A** | `Legitimidade` +10, `Soberania` -10, `Capital Político` -5 |
+| **Consequência A** | "A nota sai. Lá fora, você ganha aliados; aqui, a oposição fala em traição." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-010` +1 |
+| **Evento A** | — |
+| **Opção B** | Recusar a nota |
+| **Efeitos B** | `Soberania` +10, `Legitimidade` -5, `Consciência` -5 |
+| **Consequência B** | "Você trata a crise em casa. Ninguém de fora fala pelo seu governo." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-010` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-156 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-157 — Pedidos na gaveta
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Pedidos na gaveta |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | Câmara dos Deputados |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | O presidente da Câmara guarda pedidos de impeachment na gaveta. Ele não arquiva nem abre: usa os pedidos como ameaça a cada votação. |
+| **Opção A** | Pedir prazo ao STF |
+| **Efeitos A** | `Legitimidade` +5, `Integridade` +5, `Capital Político` -15 |
+| **Consequência A** | "O STF analisa o caso. O presidente da Câmara se sente afrontado." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` -1 |
+| **Evento A** | "A Câmara trava suas pautas em resposta" · atraso 1 · `Capital Político` -10 |
+| **Opção B** | Ceder nas votações |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
+| **Consequência B** | "A gaveta segue fechada. A cada votação, o preço sobe um pouco." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-157 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-158 — Consulta sobre o mandato
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Consulta sobre o mandato |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-024` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Azul |
+| **Problema** | Um aliado propõe que o povo vote se você fica no cargo. A lei não prevê esse voto, e mudar a regra leva tempo. |
+| **Opção A** | Propor a consulta |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +5, `Caixa` -10, `Capital Político` -5 |
+| **Consequência A** | "O debate toma o país. O Congresso diz que você foge da crise." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-024` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Governar sem consulta |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -5 |
+| **Consequência B** | "A ideia some. A crise segue nas mãos do Congresso." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-158 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-159 — Manobra nas contas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Manobra nas contas |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | O caixa não fecha. Um técnico sugere atrasar repasses aos bancos públicos para pagar benefícios. Juristas veem crime de responsabilidade. |
+| **Opção A** | Atrasar os repasses |
+| **Efeitos A** | `Dignidade` +10, `Caixa` +5, `Integridade` -15 |
+| **Consequência A** | "Os benefícios saem em dia. A oposição guarda o caso para usar depois." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-007` +1 |
+| **Evento A** | "A oposição usa as contas num pedido de impeachment" · atraso 2 · `Capital Político` -15, `Legitimidade` -5 |
+| **Opção B** | Cortar benefícios |
+| **Efeitos B** | `Integridade` +10, `Dignidade` -15, `Legitimidade` -5 |
+| **Consequência B** | "As contas fecham dentro da lei. Famílias recebem menos este mês." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-159 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-160 — Recado do quartel
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Recado do quartel |
+| **Tipo** | Institucional |
+| **Modo** | Impeachment |
+| **Quem fala** | `ACT-008` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Azul |
+| **Problema** | Um general diz, em segredo, que a tropa garante seu mandato se o Congresso tentar te tirar. Em troca, quer voz nas decisões. |
+| **Opção A** | Aceitar a garantia |
+| **Efeitos A** | `Segurança` +10, `Capital Político` +10, `Legitimidade` -15, `Integridade` -10 |
+| **Consequência A** | "Os quartéis ficam do seu lado. A democracia fica refém da farda." |
+| **Eixo A** | [0, 0, 0, -2] |
+| **Atores A** | `ACT-008` +1 |
+| **Evento A** | "Militares cobram cargos no governo" · atraso 1 · `Integridade` -10, `Capital Político` -5 |
+| **Opção B** | Recusar a garantia |
+| **Efeitos B** | `Legitimidade` +15, `Segurança` -10, `Capital Político` -5 |
+| **Consequência B** | "Você exige silêncio da tropa. O general sai irritado." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-008` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-160 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
 ---
 
 ## 17.10 — Cartas do Modo Judiciário (20)
@@ -4416,6 +4578,519 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Evento B** | — |
 | **Aprendizado** | APR-161 (doc 18) |
 | **Status** | aprovado; campos novos e ajustes provisórios (DP-016) |
+
+### INST-162 — Sentenças à venda
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Sentenças à venda |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Amarelo |
+| **Problema** | A PF prova que juízes de um tribunal vendiam sentenças. A punição máxima deles é a aposentadoria, com salário. Você pode propor mudar isso. |
+| **Opção A** | Propor o fim da regalia |
+| **Efeitos A** | `Integridade` +15, `Consciência` +10, `Capital Político` -15 |
+| **Consequência A** | "Associações de juízes reagem. O povo aplaude a proposta." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-023` +1 |
+| **Evento A** | "Tribunais atrasam processos do governo" · atraso 2 · `Capital Político` -10 |
+| **Opção B** | Deixar com o CNJ |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10, `Consciência` -5 |
+| **Consequência B** | "O CNJ aposenta os juízes. Eles seguem com o salário em casa." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-162 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-163 — Lei derrubada no Supremo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Lei derrubada no Supremo |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | Supremo Tribunal Federal |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Verde |
+| **Problema** | O STF derruba sua lei que proíbe espalhar agrotóxico de avião. Ambientalistas pedem uma emenda à Constituição para driblar a decisão. |
+| **Opção A** | Cumprir e reescrever |
+| **Efeitos A** | `Legitimidade` +10, `Integridade` +5, `Dignidade` -10 |
+| **Consequência A** | "A lei cai. Seu time escreve outra, e as vilas perto das lavouras esperam." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-001` +1, `ACT-018` -1 |
+| **Evento A** | — |
+| **Opção B** | Driblar com emenda |
+| **Efeitos B** | `Dignidade` +10, `Capital Político` -10, `Legitimidade` -10 |
+| **Consequência B** | "A emenda avança. O STF e o Congresso entram em choque." |
+| **Eixo B** | [-1, 0, 0, -1] |
+| **Atores B** | `ACT-018` +1, `ACT-001` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-163 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-164 — Liminar trava a moradia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Liminar trava a moradia |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-016` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Roxo |
+| **Problema** | Um juiz suspende sozinho seu programa de moradia, numa decisão provisória. As obras param até o tribunal julgar o recurso. |
+| **Opção A** | Recorrer em silêncio |
+| **Efeitos A** | `Integridade` +5, `Legitimidade` +5, `Dignidade` -10 |
+| **Consequência A** | "A AGU recorre. As famílias esperam meses pelas chaves." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-016` -1 |
+| **Evento A** | — |
+| **Opção B** | Atacar o juiz em público |
+| **Efeitos B** | `Consciência` +5, `Legitimidade` -10, `Integridade` -5 |
+| **Consequência B** | "Sua base vibra. Juristas dizem que você ameaça a Justiça." |
+| **Eixo B** | [0, 0, 0, -1] |
+| **Atores B** | `ACT-016` +1, `ACT-023` -1 |
+| **Evento B** | "Juízes se unem contra o governo" · atraso 1 · `Capital Político` -10 |
+| **Aprendizado** | APR-164 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-165 — Fim do foro especial
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fim do foro especial |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Laranja |
+| **Cor B** | Amarelo |
+| **Problema** | Deputados só podem ser julgados no STF, onde os casos andam devagar. Uma PEC leva esses processos para a primeira instância. |
+| **Opção A** | Apoiar a PEC |
+| **Efeitos A** | `Integridade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência A** | "Políticos passam a ser julgados como todo mundo. Aliados se assustam." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-011` -1, `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter o foro |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Os processos seguem no STF. A base agradece o silêncio." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-165 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-166 — Prisão em segunda instância
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Prisão em segunda instância |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Preto |
+| **Cor B** | Vermelho |
+| **Problema** | Uma PEC permite prender o réu após a condenação em segunda instância, antes do fim dos recursos. Você decide a posição do governo. |
+| **Opção A** | Apoiar a PEC |
+| **Efeitos A** | `Segurança` +10, `Integridade` +5, `Dignidade` -10 |
+| **Consequência A** | "Recursos sem fim acabam. Quem não tem bom advogado é preso mais cedo." |
+| **Eixo A** | [0, 0, -1, -1] |
+| **Atores A** | `ACT-008` +1 |
+| **Evento A** | — |
+| **Opção B** | Defender a presunção |
+| **Efeitos B** | `Dignidade` +10, `Segurança` -10, `Capital Político` -5 |
+| **Consequência B** | "Só se prende ao fim dos recursos. Há quem fale em impunidade." |
+| **Eixo B** | [0, 0, +1, +1] |
+| **Atores B** | `ACT-023` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-166 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-167 — Habeas corpus em um dia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Habeas corpus em um dia |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Um banqueiro preso sai com habeas corpus em um dia. Na mesma semana, presos pobres esperam meses por um defensor público. |
+| **Opção A** | Ampliar a Defensoria |
+| **Efeitos A** | `Dignidade` +15, `Integridade` +5, `Caixa` -15 |
+| **Consequência A** | "Mais defensores chegam às cadeias. Muitos presos sem julgamento saem." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-009` +1 |
+| **Evento A** | — |
+| **Opção B** | Restringir o habeas |
+| **Efeitos B** | `Segurança` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O recurso fica mais difícil para todos, ricos e pobres." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-167 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-168 — Vazamento do inquérito
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vazamento do inquérito |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Vermelho |
+| **Problema** | Um inquérito sigiloso contra um juiz vaza para a imprensa. O vazamento saiu da PF, que responde ao seu governo. |
+| **Opção A** | Punir quem vazou |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Consciência` -10 |
+| **Consequência A** | "O delegado é afastado. A imprensa diz que você protege o juiz." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-023` -1 |
+| **Evento A** | — |
+| **Opção B** | Defender a imprensa |
+| **Efeitos B** | `Consciência` +10, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O caso segue nas manchetes. O juiz diz que é julgado antes do processo." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-023` +1 |
+| **Evento B** | "A defesa do juiz pede a anulação das provas" · atraso 2 · `Integridade` -10 |
+| **Aprendizado** | APR-168 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-169 — Quarentena para juiz candidato
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Quarentena para juiz candidato |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Laranja |
+| **Problema** | Juízes que ficam famosos com grandes casos deixam o cargo e logo disputam eleição. Um projeto cria um prazo de espera antes da candidatura. |
+| **Opção A** | Apoiar a quarentena |
+| **Efeitos A** | `Integridade` +10, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Juízes esperam anos para entrar na política. Rivais falam em censura." |
+| **Eixo A** | [0, 0, 0, -1] |
+| **Atores A** | `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Liberar a candidatura |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10 |
+| **Consequência B** | "Juízes podem sair do tribunal direto para a urna." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-169 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-170 — Mais cadeiras no Supremo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Mais cadeiras no Supremo |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | O STF derruba suas leis em série. Aliados propõem aumentar o número de ministros para você nomear a maioria da corte. |
+| **Opção A** | Aumentar o Supremo |
+| **Efeitos A** | `Capital Político` +10, `Legitimidade` -15, `Integridade` -10 |
+| **Consequência A** | "Você ganha a maioria na corte. O próximo presidente pode fazer o mesmo." |
+| **Eixo A** | [0, 0, 0, -2] |
+| **Atores A** | `ACT-011` +1 |
+| **Evento A** | "Organismos internacionais criticam a mudança" · atraso 1 · `Legitimidade` -10, `Soberania` -5 |
+| **Opção B** | Respeitar o tamanho |
+| **Efeitos B** | `Legitimidade` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência B** | "A corte fica como está. Suas leis seguem em risco." |
+| **Eixo B** | [0, 0, 0, +1] |
+| **Atores B** | `ACT-011` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-170 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-171 — Despejo de acampamento
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Despejo de acampamento |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Verde |
+| **Problema** | Um juiz manda despejar famílias acampadas numa fazenda parada há anos. Você pode pedir uma mesa de mediação antes da polícia. |
+| **Opção A** | Pedir mediação |
+| **Efeitos A** | `Dignidade` +10, `Capital Político` -10, `Caixa` -5 |
+| **Consequência A** | "O despejo espera. Famílias e fazendeiro negociam uma saída." |
+| **Eixo A** | [-1, 0, +1, 0] |
+| **Atores A** | `ACT-017` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Cumprir a ordem |
+| **Efeitos B** | `Segurança` +10, `Dignidade` -15, `Legitimidade` -5 |
+| **Consequência B** | "A polícia esvazia a fazenda. As famílias vão para a beira da estrada." |
+| **Eixo B** | [+1, 0, 0, -1] |
+| **Atores B** | `ACT-017` -1, `ACT-001` +1 |
+| **Evento B** | "As famílias despejadas acampam em outra área" · atraso 1 · `Dignidade` -10, `Segurança` -5 |
+| **Aprendizado** | APR-171 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-172 — Juiz das garantias
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juiz das garantias |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Um juiz conduz a investigação e outro julga o caso: é o juiz das garantias. Faltam juízes no interior para cumprir a regra. |
+| **Opção A** | Implantar já |
+| **Efeitos A** | `Integridade` +10, `Dignidade` +5, `Caixa` -15 |
+| **Consequência A** | "Mais juízes são contratados. Comarcas pequenas sofrem para se adaptar." |
+| **Eixo A** | [-1, 0, +1, +1] |
+| **Atores A** | `ACT-009` +1 |
+| **Evento A** | — |
+| **Opção B** | Adiar a regra |
+| **Efeitos B** | `Caixa` +10, `Integridade` -10, `Dignidade` -5 |
+| **Consequência B** | "O mesmo juiz segue do inquérito à sentença." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-009` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-172 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-173 — Juíza ameaçada pela milícia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juíza ameaçada pela milícia |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Azul |
+| **Problema** | Uma juíza que julga chefes de milícia recebe ameaças. Juízes pedem sentenças assinadas sem nome, para não virar alvo. |
+| **Opção A** | Criar juiz sem rosto |
+| **Efeitos A** | `Segurança` +15, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência A** | "As sentenças saem sem assinatura. A defesa não sabe quem julga." |
+| **Eixo A** | [0, 0, -1, -1] |
+| **Atores A** | `ACT-008` +1 |
+| **Evento A** | — |
+| **Opção B** | Dar escolta federal |
+| **Efeitos B** | `Segurança` +10, `Caixa` -10, `Capital Político` -5 |
+| **Consequência B** | "A juíza ganha escolta. Outros juízes ameaçados também pedem." |
+| **Eixo B** | [-1, 0, 0, +1] |
+| **Atores B** | `ACT-009` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-173 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-174 — Homofobia como crime
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Homofobia como crime |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | Supremo Tribunal Federal |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | O Congresso nunca votou uma lei contra a homofobia. O STF decide que ela é crime, como o racismo, até a lei sair. |
+| **Opção A** | Enviar lei própria |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência A** | "O projeto chega ao Congresso. Bancadas religiosas prometem barrar." |
+| **Eixo A** | [0, 0, +2, 0] |
+| **Atores A** | `ACT-012` -1, `ACT-024` +1 |
+| **Evento A** | "Pastores convocam atos contra o projeto" · atraso 1 · `Capital Político` -10 |
+| **Opção B** | Deixar com o Supremo |
+| **Efeitos B** | `Capital Político` +5, `Legitimidade` -5, `Consciência` -5 |
+| **Consequência B** | "A proteção depende da decisão do STF. O Congresso segue calado." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-174 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-175 — Vaga no Tribunal de Contas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Vaga no Tribunal de Contas |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Abre uma vaga no Tribunal de Contas, que fiscaliza seus gastos. Aliados querem um ex-deputado; técnicos pedem um auditor de carreira. |
+| **Opção A** | Indicar o auditor |
+| **Efeitos A** | `Integridade` +10, `Caixa` +5, `Capital Político` -15 |
+| **Consequência A** | "O tribunal fica mais técnico. A base cobra a vaga perdida." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-009` +1, `ACT-011` -1 |
+| **Evento A** | — |
+| **Opção B** | Indicar o ex-deputado |
+| **Efeitos B** | `Capital Político` +15, `Integridade` -10, `Legitimidade` -5 |
+| **Consequência B** | "O aliado agora fiscaliza quem o indicou." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-175 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-176 — Delação do banqueiro
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Delação do banqueiro |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Amarelo |
+| **Cor B** | Azul |
+| **Problema** | Um banqueiro preso quer delatar políticos em troca de pena menor. Seus aliados pedem uma lei que limite as delações. |
+| **Opção A** | Limitar as delações |
+| **Efeitos A** | `Capital Político` +10, `Integridade` -15, `Consciência` -5 |
+| **Consequência A** | "A base respira. A imprensa diz que você fecha a porta da investigação." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-011` +1, `ACT-023` -1 |
+| **Evento A** | "A delação vaza mesmo assim" · atraso 2 · `Integridade` -10 |
+| **Opção B** | Manter as regras |
+| **Efeitos B** | `Integridade` +10, `Consciência` +5, `Capital Político` -15 |
+| **Consequência B** | "A delação segue. Nomes da sua base podem aparecer." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` -1, `ACT-023` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-176 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-177 — Penduricalhos acima do teto
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Penduricalhos acima do teto |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-009` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Laranja |
+| **Cor B** | Amarelo |
+| **Problema** | Juízes recebem auxílios que somam muito acima do teto salarial. Você pode propor uma lei que corte esses extras. |
+| **Opção A** | Cortar os extras |
+| **Efeitos A** | `Caixa` +10, `Integridade` +10, `Capital Político` -15 |
+| **Consequência A** | "Associações de juízes vão ao STF contra a lei." |
+| **Eixo A** | [+1, 0, 0, 0] |
+| **Atores A** | `ACT-009` -1 |
+| **Evento A** | "Tribunais julgam a lei em causa própria" · atraso 2 · `Legitimidade` -5, `Integridade` -5 |
+| **Opção B** | Evitar a briga |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
+| **Consequência B** | "Os auxílios seguem. Professores comparam com os próprios salários." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-177 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-178 — Audiência de custódia
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Audiência de custódia |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | Ministério da Justiça |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Preto |
+| **Problema** | Todo preso em flagrante deve ver um juiz logo. Policiais dizem que a regra solta criminosos; juízes dizem que ela evita abusos. |
+| **Opção A** | Ampliar as audiências |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Segurança` -10 |
+| **Consequência A** | "Mais presos são ouvidos logo. Abusos na prisão aparecem mais cedo." |
+| **Eixo A** | [0, 0, +1, +1] |
+| **Atores A** | `ACT-023` +1 |
+| **Evento A** | — |
+| **Opção B** | Limitar as audiências |
+| **Efeitos B** | `Segurança` +10, `Dignidade` -10, `Legitimidade` -5 |
+| **Consequência B** | "Menos presos saem na hora. Abusos ficam sem testemunha." |
+| **Eixo B** | [0, 0, -1, -1] |
+| **Atores B** | `ACT-008` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-178 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-179 — Parentes de juízes na causa
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Parentes de juízes na causa |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-023` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Verde |
+| **Problema** | Escritórios de parentes de juízes defendem grandes fazendeiros nos tribunais onde eles julgam. Uma lei pode proibir essa atuação. |
+| **Opção A** | Proibir a atuação |
+| **Efeitos A** | `Integridade` +15, `Legitimidade` +5, `Capital Político` -10 |
+| **Consequência A** | "Os escritórios perdem clientes. Juízes dizem que você pune a família." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-023` +1, `ACT-001` -1 |
+| **Evento A** | — |
+| **Opção B** | Confiar na suspeição |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -10, `Consciência` -5 |
+| **Consequência B** | "Cada juiz decide se deve sair do caso do parente." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-001` +1, `ACT-023` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-179 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-180 — Ouvidoria de fora
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Ouvidoria de fora |
+| **Tipo** | Institucional |
+| **Modo** | Judiciário |
+| **Quem fala** | `ACT-024` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Movimentos pedem uma ouvidoria do Judiciário com cidadãos de fora dos tribunais. Juízes dizem que é ataque à independência. |
+| **Opção A** | Criar a ouvidoria |
+| **Efeitos A** | `Consciência` +10, `Legitimidade` +10, `Capital Político` -15 |
+| **Consequência A** | "Queixas contra juízes ganham porta de entrada. Tribunais protestam." |
+| **Eixo A** | [0, 0, 0, +1] |
+| **Atores A** | `ACT-024` +1 |
+| **Evento A** | — |
+| **Opção B** | Manter o controle interno |
+| **Efeitos B** | `Capital Político` +5, `Consciência` -5, `Legitimidade` -5 |
+| **Consequência B** | "Juízes seguem fiscalizados por juízes." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-024` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-180 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
 
 ---
 
@@ -5116,10 +5791,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 175 | 200 |
+| **Institucionais** | 200 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **177** | **340** |
+| **Total** | **202** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---
