@@ -4,7 +4,7 @@
 
 Este documento é a **fonte única** do texto das Cartas de Aprendizado (D-090). O doc 17 só aponta o código `APR-xxx`, que usa o número da carta com o prefixo do tipo (INST-001 → APR-001; THEM-001 → APR-THEM-001; ATOR-001 → APR-ATOR-001; cena IMP-1 → APR-IMP-1; DP-015, provisória). Cada Carta de Aprendizado tem 5 blocos: vivência, conceito, dados, fonte e frase de impacto.
 
-**Status (Onda 0 do P-015, 2026-10-20):** 92 Cartas de Aprendizado ligadas às 92 cartas do doc 17 (87 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 76 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
+**Status (Onda 0 do P-015, 2026-10-20):** 102 Cartas de Aprendizado ligadas às 102 cartas do doc 17 (97 dentro das 340 + 5 da cena de impeachment, §18.02-18.13) e 66 rascunhos úteis aguardando carta (§18.14; os 3 do modo Impeachment repetem a cena). Formato de saída para o jogo: DP-014.
 
 **Regra de dados (D-091):** dado só entra no jogo com fonte verificada (link). Toda fonte sem link está marcada `[não verificado]`. Os dados das 22 Cartas de Aprendizado ligadas foram verificados na web no P-010; onde há fonte confirmada, o link aparece logo abaixo da carta.
 
@@ -711,7 +711,7 @@ As Cartas de Aprendizado seguem **6 princípios**:
 
 ---
 
-## 18.03 — Cartas de Aprendizado do Modo Orçamento (10 de 20)
+## 18.03 — Cartas de Aprendizado do Modo Orçamento (20 de 20)
 
 ### APR-021 — Corte na Saúde
 
@@ -952,6 +952,316 @@ As Cartas de Aprendizado seguem **6 princípios**:
 │  FONTE: Em conferência (P-016).                             │
 │                                                             │
 │  "Censura também se faz com a caneta do caixa."             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-029 — Fila do Bolsa Família
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-029                            │
+│  Fila do Bolsa Família                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se zerava a fila do Bolsa Família ou se       │
+│  mantinha as contas fechadas.                               │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Um programa social só atende quem cabe na verba prevista no│
+│  orçamento. Para pôr mais gente, o governo precisa tirar    │
+│  dinheiro de outra área ou pedir crédito extra.             │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Fila de programa social também é decisão de orçamento."   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-030 — Tabela do SUS
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-030                            │
+│  Tabela do SUS                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se reajustava a tabela que paga os hospitais  │
+│  do SUS ou se comprava vagas privadas.                      │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O SUS paga hospitais por uma tabela de preços. Se ela não  │
+│  sobe, a verba encolhe sem nenhum corte anunciado, e        │
+│  hospitais fecham leitos.                                   │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Congelar o preço também é cortar."                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-031 — Trem-bala ou Ônibus
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-031                            │
+│  Trem-bala ou Ônibus                                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se fazia um trem-bala com crédito estrangeiro │
+│  ou se renovava os ônibus das periferias.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Uma obra grande dá vitrine; muitas obras pequenas atendem  │
+│  mais gente. Crédito de fora também vira dívida e           │
+│  dependência de quem empresta.                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Toda obra escolhe quem chega primeiro."                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-032 — Carro-pipa ou Cisterna
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-032                            │
+│  Carro-pipa ou Cisterna                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se construía cisternas no sertão ou se mandava│
+│  carros-pipa pedidos por deputados.                         │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Gasto de emergência se repete a cada seca; investimento    │
+│  permanente custa no começo e resolve por anos. Quem        │
+│  distribui a ajuda pode usá-la para ganhar votos.           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Água com nome de político não é política pública."        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-033 — Benefícios Ligados ao Mínimo
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-033                            │
+│  Benefícios Ligados ao Mínimo                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se mantinha aposentadorias e benefícios       │
+│  ligados ao salário mínimo ou se soltava um do outro.       │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Muitos benefícios sobem junto com o salário mínimo. Isso   │
+│  protege quem depende deles, mas faz o gasto obrigatório    │
+│  crescer sempre que o mínimo sobe.                          │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Quem depende do mínimo sente cada mudança na regra."      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-034 — Juros do Banco Central
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-034                            │
+│  Juros do Banco Central                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cobrava em público o Banco Central pelos   │
+│  juros altos ou se respeitava a autonomia dele.             │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  O Banco Central define os juros básicos sem ordem do       │
+│  presidente. Juros altos seguram a inflação, mas encarecem a│
+│  dívida pública e o crédito.                                │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Os juros também são uma escolha, só que de outra mesa."   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-035 — CAPS ou Internação
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-035                            │
+│  CAPS ou Internação                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se ampliava os CAPS ou se pagava comunidades  │
+│  terapêuticas para cuidar de dependentes.                   │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Os CAPS tratam sofrimento mental e dependência em          │
+│  liberdade, perto de casa. A reforma psiquiátrica trocou os │
+│  manicômios por essa rede aberta.                           │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Cuidar não é trancar."                                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-036 — Presídios Lotados
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-036                            │
+│  Presídios Lotados                                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se construía presídios ou se apostava em penas│
+│  fora da prisão para crimes leves.                          │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Cada vaga nova na prisão custa caro para construir e       │
+│  manter. Se a porta de entrada não muda, os presídios novos │
+│  lotam também.                                              │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Vaga nova não resolve se a porta continua aberta."        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-037 — Creches Inacabadas
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-037                            │
+│  Creches Inacabadas                                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se terminava creches com obra parada ou se    │
+│  lançava um programa novo com a sua marca.                  │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Inaugurar rende foto; terminar obra antiga, quase nunca.   │
+│  Por isso o dinheiro público costuma ir para o novo enquanto│
+│  o começado apodrece.                                       │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Obra parada é dinheiro público enterrado."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Fonte em conferência (P-016):** dado e fonte a conferir (D-196)
+
+**Status:** pendente de revisão (D-196)
+
+### APR-038 — Isenção das Montadoras
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CARTA DE APRENDIZADO — INST-038                            │
+│  Isenção das Montadoras                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
+│  Você decidiu se cortava a isenção de impostos das          │
+│  montadoras ou se renovava o benefício.                     │
+│                                                             │
+│  O CONCEITO POR TRÁS:                                       │
+│  Quando o governo perdoa impostos de um setor, deixa de     │
+│  arrecadar. Essa renúncia fiscal é um gasto que não aparece │
+│  como despesa no orçamento.                                 │
+│                                                             │
+│  DADOS REAIS:                                               │
+│  Em conferência (P-016).                                    │
+│                                                             │
+│  FONTE: Em conferência (P-016).                             │
+│                                                             │
+│  "Imposto perdoado também sai do seu bolso."                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -3092,271 +3402,6 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 ### Rascunho — Modo Orçamento
 
-#### APR-029 — Ampliação do Bolsa Família
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-029                            │
-│  Ampliação do Bolsa Família                                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se ampliava ou mantinha o valor do Bolsa      │
-│  Família.                                                   │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O Bolsa Família tirou o Brasil do Mapa da Fome.            │
-│  Cortá-lo é uma escolha política.                           │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  Em 2022, 33 milhões de brasileiros passaram fome.          │
-│                                                             │
-│  FONTE: ONU, 2023. [não verificado]                         │
-│                                                             │
-│  "A fome não é um acidente. É uma escolha política."        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-030 — Verba para o SUS
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-030                            │
-│  Verba para o SUS                                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se furava o teto para investir no SUS ou      │
-│  respeitava o teto.                                         │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O subfinanciamento do SUS é uma escolha. A saúde pública   │
-│  está sucateada.                                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A expectativa de vida caiu de 76,2 para 72,8 anos no       │
-│  governo Bolsonaro.                                         │
-│                                                             │
-│  FONTE: IBGE, 2023. [não verificado]                        │
-│                                                             │
-│  "O SUS precisa de financiamento estável. E o teto impede." │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-031 — Trem-Bala
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-031                            │
-│  Trem-bala                                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia em transporte público nas         │
-│  periferias ou construía o trem-bala.                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O trem-bala nunca saiu do papel. O transporte público      │
-│  nas periferias continua precário.                          │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O investimento em mobilidade urbana é uma escolha          │
-│  política.                                                  │
-│                                                             │
-│  FONTE: Ministério dos Transportes, 2024. [não verificado]  │
-│                                                             │
-│  "O trem-bala nunca saiu do papel. O ônibus continua        │
-│   lotado."                                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-032 — Cisternas no Nordeste
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-032                            │
-│  Cisternas no Nordeste                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se criava um programa de cisternas ou         │
-│  enviava carros-pipa.                                       │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Cisternas são solução estruturante. Carros-pipa são        │
-│  paliativos.                                                │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O semiárido precisa de políticas de convivência com a      │
-│  seca, não de assistencialismo.                             │
-│                                                             │
-│  FONTE: ASA Brasil, 2024. [não verificado]                  │
-│                                                             │
-│  "A seca não é um fenômeno natural. É uma questão           │
-│   política."                                                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-033 — Corte no Salário Mínimo
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-033                            │
-│  Corte no salário mínimo                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se vetava ou apoiava o corte no salário       │
-│  mínimo.                                                    │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  O salário mínimo é uma conquista histórica. Reduzi-lo é    │
-│  atacar a classe trabalhadora.                              │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O salário mínimo brasileiro é um dos menores do mundo      │
-│  em poder de compra.                                        │
-│                                                             │
-│  FONTE: DIEESE, 2024. [não verificado]                      │
-│                                                             │
-│  "O trabalhador ganha menos. O patrão lucra mais."          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-034 — Pagamento da Dívida
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-034                            │
-│  Pagamento da dívida                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se renegociava a dívida ou pagava.            │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A dívida pública é impagável. Renegociá-la é uma decisão   │
-│  política.                                                  │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil paga R$ 1,2 trilhão por ano em juros.             │
-│                                                             │
-│  FONTE: Tesouro Nacional, 2024. [não verificado]            │
-│                                                             │
-│  "Os banqueiros comemoram. O povo chora."                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-035 — CAPS e Saúde Mental
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-035                            │
-│  CAPS e saúde mental                                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia nos CAPS ou abria comunidades     │
-│  terapêuticas.                                              │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A luta antimanicomial garantiu a Lei 10.216/2001. Os       │
-│  CAPS são a resistência.                                    │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A tentativa de recolocar a saúde mental em uma lógica      │
-│  asilar é um retrocesso.                                    │
-│                                                             │
-│  FONTE: Ministério da Saúde, 2024. [não verificado]         │
-│                                                             │
-│  "A saúde mental é uma questão política."                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-036 — Construção de Presídios
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-036                            │
-│  Construção de presídios                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se investia em prevenção ou construía mais    │
-│  presídios.                                                 │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Mais presídios significam mais facções. O encarceramento   │
-│  em massa não reduz a violência.                            │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  O Brasil é o 3º país que mais encarcera no mundo.          │
-│  69% da população carcerária é negra.                       │
-│                                                             │
-│  FONTE: Infopen, 2024. [não verificado]                     │
-│                                                             │
-│  "Mais presídios. Mais facções. Menos esperança."           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-037 — Creches
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-037                            │
-│  Creches                                                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se construía creches ou dava voucher para     │
-│  creches privadas.                                          │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  Creches públicas são direito. Vouchers são mercadoria.     │
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A educação infantil é a base da formação cidadã. As mães   │
-│  pobres precisam de creche para poder trabalhar.            │
-│                                                             │
-│  FONTE: INEP, 2024. [não verificado]                        │
-│                                                             │
-│  "As mães pobres continuam sem creche."                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### APR-038 — Corte na Cultura (2)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  CARTA DE APRENDIZADO — INST-038                            │
-│  Corte na cultura (2)                                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  O QUE VOCÊ ACABOU DE VIVENCIAR:                            │
-│  Você decidiu se protegia a cultura ou cortava o orçamento. │
-│                                                             │
-│  O CONCEITO POR TRÁS:                                       │
-│  A cultura é um direito. Cortá-la é silenciar a resistência.│
-│                                                             │
-│  DADOS REAIS:                                               │
-│  A arte é uma arma do povo contra a opressão.               │
-│                                                             │
-│  FONTE: Fundação Palmares, 2024. [não verificado]           │
-│                                                             │
-│  "A arte é uma arma. E não vamos entregar a nossa."         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ### Rascunho — Modo Currículo e Mídia
@@ -5186,10 +5231,10 @@ Cartas de Aprendizado escritas antes da carta correspondente existir no doc 17. 
 
 | Tipo | Ligadas a cartas | Rascunho | Total previsto |
 | :--- | :--- | :--- | :--- |
-| **Institucionais** | 85 | 76 | 200 |
+| **Institucionais** | 95 | 66 | 200 |
 | **Temáticas** | 1 | 0 | 70 |
 | **Atores** | 1 | 0 | 70 |
-| **Total** | **87** | **76** | **340** |
+| **Total** | **97** | **66** | **340** |
 | Cena de impeachment (fora das 340) | 5 | — | 5 |
 
 ---

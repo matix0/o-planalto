@@ -2,7 +2,7 @@
 
 **Roteiro das cartas do jogo "O Planalto"**
 
-Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 87 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
+Este documento guarda o texto das cartas, organizadas por modo e por tipo. **Status: 97 de 340 cartas escritas + 5 cartas da cena de impeachment (`IMP-1..5`, fora das 340, D-101).** Contagem refeita na Onda 0 do P-015 (DP-012); cartas novas escritas em ondas (`gestao/prompts/criacao-cartas.md`). Revisado no P-010 (2026-10-13): cor por opção (D-092), opções A/B com lado sorteado (D-084), Carta de Aprendizado no doc 18 (D-090).
 
 ---
 
@@ -824,6 +824,276 @@ X = A ou B. Medidor sempre entre crases e com sinal (`+10`, `-10`). Campo vazio 
 | **Atores B** | `ACT-012` +1, `ACT-019` -1 |
 | **Evento B** | "A Justiça manda liberar a verba do edital" · atraso 1 · `Legitimidade` -5, `Integridade` -5 |
 | **Aprendizado** | APR-028 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-029 — Fila do Bolsa Família
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Fila do Bolsa Família |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Famílias que cumprem as regras esperam na fila do Bolsa Família. Zerar a fila pede verba extra, tirada de outra área. |
+| **Opção A** | Zerar a fila |
+| **Efeitos A** | `Dignidade` +20, `Caixa` -15, `Capital Político` -5 |
+| **Consequência A** | "As famílias entram no programa. Outros ministérios perdem verba e reclamam." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-016` +1, `ACT-007` -1 |
+| **Evento A** | "O comércio dos bairros pobres vende mais" · atraso 2 · `Caixa` +5, `Dignidade` +5 |
+| **Opção B** | Manter a fila |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -15, `Legitimidade` -5 |
+| **Consequência B** | "As contas fecham. Na fila, as famílias seguem sem renda." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-007` +1, `ACT-006` +1, `ACT-016` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-029 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-030 — Tabela do SUS
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Tabela do SUS |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Hospitais que atendem pelo SUS recebem por uma tabela sem reajuste há anos. Muitos fecham leitos. Reajustar custa caro. |
+| **Opção A** | Reajustar a tabela |
+| **Efeitos A** | `Dignidade` +15, `Caixa` -15 |
+| **Consequência A** | "Os leitos reabrem. A equipe econômica pede corte em outra área." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Comprar vagas privadas |
+| **Efeitos B** | `Capital Político` +10, `Dignidade` -5, `Caixa` -10 |
+| **Consequência B** | "As filas andam rápido. Os hospitais do SUS seguem sem verba." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-002` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-030 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-031 — Trem-bala ou ônibus
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Trem-bala ou ônibus |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-003` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Amarelo |
+| **Cor B** | Roxo |
+| **Problema** | Uma potência estrangeira oferece crédito para um trem-bala entre duas capitais. A mesma verba renovaria os ônibus das periferias. |
+| **Opção A** | Fazer o trem-bala |
+| **Efeitos A** | `Capital Político` +10, `Soberania` -5, `Caixa` -10 |
+| **Consequência A** | "A obra vira vitrine do governo. A dívida com a potência cresce." |
+| **Eixo A** | [0, +1, 0, 0] |
+| **Atores A** | `ACT-003` +1, `ACT-021` +1 |
+| **Evento A** | "A obra atrasa e o custo sobe" · atraso 2 · `Caixa` -10, `Integridade` -5 |
+| **Opção B** | Ônibus na periferia |
+| **Efeitos B** | `Dignidade` +15, `Capital Político` -10, `Caixa` -5 |
+| **Consequência B** | "Corredores de ônibus chegam aos bairros. Ninguém inaugura nada vistoso." |
+| **Eixo B** | [0, -1, 0, 0] |
+| **Atores B** | `ACT-016` +1, `ACT-021` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-031 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-032 — Carro-pipa ou cisterna
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Carro-pipa ou cisterna |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-017` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Verde |
+| **Cor B** | Amarelo |
+| **Problema** | A seca volta ao sertão. Deputados pedem carros-pipa, que eles mesmos distribuem. Cisternas resolvem por anos, mas demoram. |
+| **Opção A** | Construir cisternas |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "As cisternas ficam prontas devagar. Os deputados perdem o carro-pipa." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-017` +1, `ACT-011` -1 |
+| **Evento A** | "A seca seguinte castiga menos" · atraso 2 · `Dignidade` +10 |
+| **Opção B** | Mandar carros-pipa |
+| **Efeitos B** | `Capital Político` +10, `Caixa` -10, `Integridade` -5 |
+| **Consequência B** | "A água chega rápido, com o nome dos deputados no caminhão." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-017` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-032 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-033 — Benefícios ligados ao mínimo
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Benefícios ligados ao mínimo |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-007` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Azul |
+| **Problema** | Aposentadorias e benefícios sobem junto com o salário mínimo. A equipe econômica quer soltar um do outro para conter o gasto. |
+| **Opção A** | Manter a ligação |
+| **Efeitos A** | `Dignidade` +10, `Caixa` -15 |
+| **Consequência A** | "Os aposentados mantêm o ganho. O mercado vê o gasto subir todo ano." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-006` -1 |
+| **Evento A** | — |
+| **Opção B** | Desvincular |
+| **Efeitos B** | `Caixa` +15, `Dignidade` -15, `Legitimidade` -5 |
+| **Consequência B** | "O gasto cresce menos. Os benefícios ficam para trás do salário." |
+| **Eixo B** | [+1, 0, 0, 0] |
+| **Atores B** | `ACT-006` +1, `ACT-007` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-033 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-034 — Juros do Banco Central
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Juros do Banco Central |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-002` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Os juros altos encarecem a dívida pública e travam empregos. O Banco Central, que é autônomo, não quer baixar. |
+| **Opção A** | Cobrar o Banco Central |
+| **Efeitos A** | `Capital Político` +10, `Caixa` -10 |
+| **Consequência A** | "Sua base aplaude. O mercado lê ameaça à autonomia do banco." |
+| **Eixo A** | [-1, 0, 0, 0] |
+| **Atores A** | `ACT-015` +1, `ACT-002` -1, `ACT-006` -1 |
+| **Evento A** | "O dólar sobe com a briga" · atraso 1 · `Caixa` -10, `Soberania` -5 |
+| **Opção B** | Respeitar a autonomia |
+| **Efeitos B** | `Caixa` +10, `Dignidade` -10, `Capital Político` -5 |
+| **Consequência B** | "Os juros seguem altos. O emprego demora a voltar." |
+| **Eixo B** | [+1, 0, 0, +1] |
+| **Atores B** | `ACT-006` +1, `ACT-015` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-034 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-035 — CAPS ou internação
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | CAPS ou internação |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-014` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Roxo |
+| **Cor B** | Amarelo |
+| **Problema** | Há verba para cuidar de quem sofre com álcool e drogas. Os CAPS tratam em liberdade; as comunidades terapêuticas internam. |
+| **Opção A** | Ampliar os CAPS |
+| **Efeitos A** | `Dignidade` +10, `Consciência` +5, `Capital Político` -10 |
+| **Consequência A** | "A rede cresce perto de casa. Pastores dizem que você larga as famílias." |
+| **Eixo A** | [0, 0, +1, 0] |
+| **Atores A** | `ACT-014` +1, `ACT-012` -1 |
+| **Evento A** | — |
+| **Opção B** | Pagar as comunidades |
+| **Efeitos B** | `Capital Político` +10, `Integridade` -5, `Dignidade` -5 |
+| **Consequência B** | "Igrejas recebem a verba. Fiscais pedem regras para as internações." |
+| **Eixo B** | [0, 0, -1, 0] |
+| **Atores B** | `ACT-012` +1, `ACT-014` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-035 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-036 — Presídios lotados
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Presídios lotados |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-011` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Preto |
+| **Cor B** | Vermelho |
+| **Problema** | Os presídios estão lotados. Parte da Câmara quer verba para novas vagas; outra parte, penas fora da prisão para crimes leves. |
+| **Opção A** | Construir presídios |
+| **Efeitos A** | `Segurança` +10, `Capital Político` +5, `Caixa` -15 |
+| **Consequência A** | "As obras começam, e as prisões seguem no mesmo ritmo." |
+| **Eixo A** | [0, 0, -1, -1] |
+| **Atores A** | `ACT-003` +1, `ACT-011` +1 |
+| **Evento A** | "Os novos presídios também lotam" · atraso 2 · `Segurança` -10, `Dignidade` -5 |
+| **Opção B** | Penas alternativas |
+| **Efeitos B** | `Dignidade` +10, `Caixa` +5, `Capital Político` -10, `Segurança` -5 |
+| **Consequência B** | "Menos gente entra na cadeia. A oposição diz que você solta criminosos." |
+| **Eixo B** | [0, 0, +1, +1] |
+| **Atores B** | `ACT-011` -1, `ACT-014` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-036 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-037 — Creches inacabadas
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Creches inacabadas |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-013` |
+| **Ano mínimo** | 2 |
+| **Cor A** | Azul |
+| **Cor B** | Amarelo |
+| **Problema** | Há creches com obra parada em várias cidades. Terminar não rende foto. Um programa novo, com a sua marca, rende. |
+| **Opção A** | Terminar as obras |
+| **Efeitos A** | `Dignidade` +10, `Integridade` +5, `Capital Político` -10 |
+| **Consequência A** | "As creches abrem sem festa. Mães voltam a trabalhar." |
+| **Eixo A** | [0, 0, 0, 0] |
+| **Atores A** | `ACT-013` +1, `ACT-003` +1 |
+| **Evento A** | — |
+| **Opção B** | Lançar programa novo |
+| **Efeitos B** | `Capital Político` +10, `Legitimidade` +5, `Caixa` -10, `Integridade` -5 |
+| **Consequência B** | "A festa de lançamento lota. As obras antigas seguem paradas." |
+| **Eixo B** | [0, 0, 0, 0] |
+| **Atores B** | `ACT-011` +1, `ACT-013` -1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-037 (doc 18) |
+| **Status** | pendente de revisão (D-196) |
+
+### INST-038 — Isenção das montadoras
+
+| Campo | Conteúdo |
+| :--- | :--- |
+| **Título** | Isenção das montadoras |
+| **Tipo** | Institucional |
+| **Modo** | Orçamento |
+| **Quem fala** | `ACT-004` |
+| **Ano mínimo** | 1 |
+| **Cor A** | Vermelho |
+| **Cor B** | Laranja |
+| **Problema** | Montadoras estrangeiras pagam menos imposto há anos e pedem renovação. Ameaçam fechar fábricas se o benefício acabar. |
+| **Opção A** | Cortar a isenção |
+| **Efeitos A** | `Caixa` +15, `Dignidade` -5, `Capital Político` -10 |
+| **Consequência A** | "O Tesouro arrecada mais. Uma fábrica anuncia demissões." |
+| **Eixo A** | [-1, -1, 0, 0] |
+| **Atores A** | `ACT-004` -1, `ACT-015` -1 |
+| **Evento A** | — |
+| **Opção B** | Renovar a isenção |
+| **Efeitos B** | `Capital Político` +5, `Dignidade` +5, `Caixa` -15 |
+| **Consequência B** | "As fábricas ficam. O imposto que não entra faz falta na saúde." |
+| **Eixo B** | [+1, +1, 0, 0] |
+| **Atores B** | `ACT-004` +1, `ACT-015` +1 |
+| **Evento B** | — |
+| **Aprendizado** | APR-038 (doc 18) |
 | **Status** | pendente de revisão (D-196) |
 
 ### INST-039 — Isenção que ninguém vê
@@ -2686,10 +2956,10 @@ Numeração sequencial por ator, na ordem exigência → ataque → oferta; `ACT
 
 | Tipo | Escritas | Total |
 | :--- | :--- | :--- |
-| **Institucionais** | 85 | 200 |
+| **Institucionais** | 95 | 200 |
 | **Temáticas** | 1 | 70 |
 | **Atores** | 1 | 70 |
-| **Total** | **87** | **340** |
+| **Total** | **97** | **340** |
 | Cena de impeachment (fora das 340) | 5 | 5 |
 
 ---
