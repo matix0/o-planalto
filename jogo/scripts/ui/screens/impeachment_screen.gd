@@ -572,9 +572,9 @@ func _rm() -> bool:
 	return Settings.reduce_motion
 
 
-## P1 (D-169): no portrait at 36 px.
+## P1 (D-169): no portrait at the largest text scale (150%).
 func _portrait_on() -> bool:
-	return Settings.text_step < Settings.TEST_TEXT_STEP
+	return Settings.text_step < Settings.P1_TEXT_STEP
 
 
 func _show_board(board: Dictionary, animate: bool) -> void:
@@ -634,6 +634,8 @@ func _update_header() -> void:
 		header.theme_type_variation = &"Caption"
 		header.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		header.uppercase = true
+		header.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART   # 150% must not widen the column
+		header.custom_minimum_size.x = 0
 		var gap: Node = $SafeArea/Column/HudGap
 		gap.add_sibling(header)
 	header.add_theme_color_override(&"font_color", Tokens.TEXT if Settings.high_contrast else Tokens.IMPEACH_ACCENT)

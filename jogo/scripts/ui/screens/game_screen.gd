@@ -20,7 +20,7 @@ const CONTEXT_ENTER := 0.25        # they come back with the next card (A-01 tim
 const EVENT_FINAL_HOLD := 0.8      # read-only event that ended the run: time to read (a validar)
 const EVENT_DOTS := false          # T-05.1: effect dots on events [a definir] — none
 const CLOSING_DOTS := false        # T-04: turn closing changes animate without dots (a validar)
-const P1_STEP := 36                # D-169: test base P1 — no portrait, the problem scrolls
+const P1_STEP := 150               # D-169: at 150% no portrait, the problem scrolls
 const P1_PROBLEM_LINES := 4        # T-15.6: 4 visible lines + gradient + bar
 const YEAR_FOOTER := ""            # T-04: footer during the year card [a definir] — empty
 

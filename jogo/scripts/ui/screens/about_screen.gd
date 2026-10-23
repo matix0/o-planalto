@@ -25,14 +25,14 @@ const ASSETS := [
 		"files": ["icons/*.svg"],   # assets/icons/README.md, D-140
 	},
 	{
-		"text": "Fontes Poppins e Inter: Google Fonts, licença OFL 1.1 (textos abaixo).",
+		"text": "Fontes Plus Jakarta Sans e DM Sans: Google Fonts, licença OFL 1.1 (textos abaixo).",
 		"files": ["fonts/*.ttf", "fonts/OFL-*.txt"],
 	},
 ]
-const FONTS_TEXT := "Poppins e Inter — Google Fonts, licença OFL"
+const FONTS_TEXT := "Plus Jakarta Sans e DM Sans — Google Fonts, licença OFL"
 const FONT_LICENSES := [
-	["Inter", "res://assets/fonts/OFL-Inter.txt"],
-	["Poppins", "res://assets/fonts/OFL-Poppins.txt"],
+	["DM Sans", "res://assets/fonts/OFL-DMSans.txt"],
+	["Plus Jakarta Sans", "res://assets/fonts/OFL-PlusJakartaSans.txt"],
 ]
 const GODOT_TEXT := "Feito com o Godot Engine, licença MIT. O Godot inclui componentes de terceiros, cada um com a sua licença."
 const GODOT_LICENSE_TITLE := "Licença MIT — Godot Engine"

@@ -216,7 +216,7 @@ func _test_card(host: Control) -> void:
 	# P-018 (D-202): both options show at the bottom corners until one is revealed.
 	card.reset()
 	var pv: Dictionary = card.preview_texts()
-	_expect(String(pv[-1]).begins_with("← ") and String(pv[1]).ends_with(" →"), "previews with arrows at rest (%s)" % str(pv))
+	_expect(String(pv[-1]).begins_with("←\u00A0") and String(pv[1]).ends_with("\u00A0→"), "previews with arrows at rest (%s)" % str(pv))
 	# Two-step tap (D-145, D-157).
 	var right := c + Vector2(60, 40)
 	var left := c + Vector2(-60, 40)
@@ -339,28 +339,28 @@ func _test_card(host: Control) -> void:
 	_expect(hint_timer.is_stopped(), "hint can be disabled")
 	_events.clear()
 
-	# PROPOSTA P7: option in a band at the top at 36 px (off by default).
+	# PROPOSTA P7: option in a band at the top at 150% (off by default).
 	var band: Control = card.get_node("OptionBand")
-	slot.theme = ThemeBuilder.build(36)
+	slot.theme = ThemeBuilder.build(150)
 	await process_frame
 	card.reset()
 	card.preview_drag(1, 0.40)
-	_expect(option.visible and not band.visible, "36 px without P7: text stays on the card")
+	_expect(option.visible and not band.visible, "150% without P7: text stays on the card")
 	card.option_band = true
 	card.reset()
 	card.preview_drag(1, 0.40)
-	_expect(band.visible and not option.visible and band.get_node("BandLabel").text == "Aceitar as mudanças", "P7 band at 36 px")
+	_expect(band.visible and not option.visible and band.get_node("BandLabel").text == "Aceitar as mudanças", "P7 band at 150%")
 	card.preview_tap(-1)
-	_expect(option.visible and not band.visible, "tap reveal stays on the card at 36 px")
+	_expect(option.visible and not band.visible, "tap reveal stays on the card at 150%")
 	card.option_band = false
 	slot.theme = null
 	await process_frame
 	_events.clear()
 
-	# D-177 at every text size (16-36 px) and both ends of the drag limit (25%, 40%, D-158):
+	# D-177 at every text scale (100-150%) and both ends of the drag limit (25%, 40%, D-158):
 	# the option text stays on screen, inside the visible part of the card, words whole.
 	var old_limit := card.drag_limit
-	for px in [16, 18, 20, 24, 36]:
+	for px in [100, 125, 150]:
 		slot.theme = ThemeBuilder.build(px)
 		await process_frame
 		for limit in [0.25, 0.40]:
@@ -369,7 +369,7 @@ func _test_card(host: Control) -> void:
 				card.reset()
 				card.preview_drag(side, limit)
 				await process_frame
-				var where := "%d px, limit %.2f, side %+d" % [px, limit, side]
+				var where := "%d%%, limit %.2f, side %+d" % [px, limit, side]
 				var vis: Vector2 = card.visible_span(card_node.offset_transform_position.x)
 				_expect(option.visible and _label_on_screen(option, card_node), "D-177 %s: text on screen" % where)
 				_expect(option.position.x >= vis.x - 0.5 and option.position.x + option.size.x <= vis.y + 0.5,
@@ -382,14 +382,14 @@ func _test_card(host: Control) -> void:
 	# With the tilt on (5° at the limit, pivot at the bottom center), the turned label still
 	# ends inside the screen.
 	card.reduce_motion = false
-	for px in [18, 24, 36]:
+	for px in [100, 125, 150]:
 		slot.theme = ThemeBuilder.build(px)
 		await process_frame
 		for side in [1, -1]:
 			card.reset()
 			card.preview_drag(side, 0.40)
 			await process_frame
-			_expect(_label_on_screen_tilted(option, card_node), "D-177 tilt %d px, side %+d: turned text on screen" % [px, side])
+			_expect(_label_on_screen_tilted(option, card_node), "D-177 tilt %d%%, side %+d: turned text on screen" % [px, side])
 	card.reduce_motion = true
 	card.drag_limit = old_limit
 	slot.theme = null

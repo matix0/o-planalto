@@ -20,7 +20,7 @@ func _initialize() -> void:
 				_expect(failures, _contrast(fg, bg) >= 4.5, "%s %s on %s: %.2f:1 (%d, %s)" % [pair[0], pair[1], pair[2], _contrast(fg, bg), step, hc])
 	_expect(failures, Tokens.band_of(20) == 1 and Tokens.band_of(21) == 2 and Tokens.band_of(81) == 5, "bands")
 	var f: Dictionary = ThemeBuilder.fonts()
-	for k in ["inter_400", "inter_600", "inter_italic", "poppins_600", "poppins_700"]:
+	for k in ["body_400", "body_600", "body_italic", "title_md", "title_lg"]:
 		_expect(failures, f.get(k) != null, "font " + k)
 	if failures.is_empty():
 		print("test_theme: OK")

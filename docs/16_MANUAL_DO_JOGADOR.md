@@ -302,7 +302,7 @@ O jogo revela o **padrão de valores** que guiou seu governo, sem rótulos biná
 
 | Recurso | Status |
 | :--- | :--- |
-| Tamanho de texto (16/20/24 px) | Planejado |
+| Tamanho do texto (100% / 125% / 150%) | Pronto |
 | Reduzir movimento | Planejado |
 | Alto contraste | Planejado |
 | Navegação por teclado (PC) | Planejado |

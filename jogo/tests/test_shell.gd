@@ -306,13 +306,13 @@ func _settings_checks() -> void:
 	_expect(close.accessibility_name != "", "close has an accessibility name")
 	_check_tree(st, "settings default")
 	var size_sel: Node = st.find_child("TextSize", true, false)
-	_expect(size_sel.selected_step() == 18, "selector shows 18 by default")
+	_expect(size_sel.selected_step() == 100, "selector shows 100% by default")
 	var opts: Array = size_sel.buttons()
-	_expect(opts.size() == 4 and opts[1].button_pressed, "4 options, 18 marked")
-	opts[3].button_pressed = true
+	_expect(opts.size() == 3 and opts[0].button_pressed and opts[0].text == "100%" and opts[2].text == "150%", "3 options (100/125/150%), 100% marked")
+	opts[2].button_pressed = true
 	await _frames(2)
-	_expect(_settings.text_step == 24, "selector sets 24")
-	_expect(_main.theme.get_font_size(&"font_size", &"Body") == Tokens.type_size("Body", 24), "theme rebuilt at 24")
+	_expect(_settings.text_step == 150, "selector sets 150%")
+	_expect(_main.theme.get_font_size(&"font_size", &"Body") == Tokens.type_size("Body", 150), "theme rebuilt at 150%")
 	var rm: Node = st.find_child("ReduceMotion", true, false)
 	var hc: Node = st.find_child("HighContrast", true, false)
 	rm.switch().button_pressed = true
@@ -329,19 +329,19 @@ func _settings_checks() -> void:
 	_expect(is_equal_approx(_settings.drag_limit, 0.25), "slider sets drag_limit 0.25")
 	_expect(sens.slider().accessibility_name == "Sensibilidade do arraste: 25%", "slider name 25%")
 	await _frames(2)
-	_check_tree(st, "settings 24 px + toggles")
+	_check_tree(st, "settings 150% + toggles")
 	# Arrow keys move the selection inside the size group.
-	opts[3].grab_focus()
+	opts[2].grab_focus()
 	await _frames(1)
 	_key(KEY_LEFT)
 	await _frames(2)
-	_expect(_settings.text_step == 20, "arrow key selects 20")
-	_settings.set_value(&"text_step", 18)
+	_expect(_settings.text_step == 125, "arrow key selects 125%")
+	_settings.set_value(&"text_step", 100)
 	_settings.set_value(&"reduce_motion", false)
 	_settings.set_value(&"high_contrast", false)
 	_settings.set_value(&"drag_limit", 0.40)
 	await _frames(1)
-	_expect(size_sel.selected_step() == 18, "selector follows settings")
+	_expect(size_sel.selected_step() == 100, "selector follows settings")
 	_esc()
 	await _settle()
 	await _frames(2)
@@ -364,10 +364,10 @@ func _about_checks() -> void:
 	_expect(_main.current_id() == &"about", "settings → about")
 	var ab: Node = _main.current_screen()
 	var texts := _texts(ab)
-	for t in ["Idealização", "Mateus", "Professor Alisson", "Godot 4.7", "Poppins e Inter — Google Fonts, licença OFL"]:
+	for t in ["Idealização", "Mateus", "Professor Alisson", "Godot 4.7", "Plus Jakarta Sans e DM Sans — Google Fonts, licença OFL"]:
 		_expect(texts.has(t), "about shows '%s'" % t)
-	_expect(texts.has("Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)"), "Inter OFL notice")
-	_expect(texts.has("Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)"), "Poppins OFL notice")
+	_expect(texts.has("Copyright 2014 The DM Sans Project Authors (https://github.com/googlefonts/dm-fonts)"), "DM Sans OFL notice")
+	_expect(texts.has("Copyright 2020 The Plus Jakarta Sans Project Authors (https://github.com/tokotype/PlusJakartaSans)"), "Plus Jakarta Sans OFL notice")
 	# D-188: the real asset list (every file of assets/ in a group, no Kenney) and the Godot notice.
 	var groups: Array = ab.ASSETS
 	for g: Dictionary in groups:
@@ -393,14 +393,14 @@ func _about_checks() -> void:
 	_expect(_focus() == close, "T-13: focus on close")
 	_check_tree(ab, "about")
 	# Larger text and an open license still fit the column (no horizontal overflow).
-	_settings.set_value(&"text_step", 24)
+	_settings.set_value(&"text_step", 125)
 	folds[0].folded = false
 	folds[2].folded = false
 	await _frames(3)
-	_check_tree(ab, "about 24 px")
+	_check_tree(ab, "about 125%")
 	folds[0].folded = true
 	folds[2].folded = true
-	_settings.set_value(&"text_step", 18)
+	_settings.set_value(&"text_step", 100)
 	await _frames(2)
 	close.pressed.emit()
 	await _settle()

@@ -82,7 +82,7 @@ A escolha de cores não é arbitrária. Pesquisas sobre psicologia das cores e c
 | :--- | :--- | :--- |
 | **Paleta primária** | Verde (esperança), Azul (confiança), Cinza (neutralidade) | Evita cores partidárias na interface principal |
 | **Paleta secundária** | Vermelho (urgência), Amarelo (coletividade) | Usadas em alertas e destaques |
-| **Tipografia** | **Poppins** (títulos) + **Inter** (corpo) | Fontes modernas, legíveis, sem serifa |
+| **Tipografia** | **Plus Jakarta Sans** (títulos) + **DM Sans** (corpo) — D-206 | Fontes modernas, legíveis, sem serifa |
 | **Estilo de ícones** | Vetorial, minimalista, geométrico | Funciona bem em mobile, web e PC |
 | **Layout das cartas** | Fundo escuro, texto branco, ícones coloridos por medidor | Contraste alto, legibilidade |
 | **Animações** | Apenas o gesto de arrastar + feedback visual de medidores | Simplicidade, foco na mecânica |
@@ -91,7 +91,7 @@ A escolha de cores não é arbitrária. Pesquisas sobre psicologia das cores e c
 
 Pesquisas sobre design de jogos educativos mostram que:
 
-1. **Sans-serif é predominante** — fontes como Poppins e Inter são legíveis em telas pequenas.
+1. **Sans-serif é predominante** — fontes como Plus Jakarta Sans e DM Sans são legíveis em telas pequenas.
 2. **Evitar fontes rebuscadas** — fontes decorativas podem afastar o público 15-30.
 3. **Contraste é essencial** — fundo escuro com texto claro reduz fadiga visual.
 
@@ -172,7 +172,7 @@ O projeto usará apenas **assets públicos e conteúdos liberados** (CC0, domín
 | Categoria | Fonte | Licença |
 | :--- | :--- | :--- |
 | **Ícones** | Kenney, OpenGameArt | CC0 |
-| **Fontes** | Google Fonts (Poppins, Inter) | OFL |
+| **Fontes** | Google Fonts (Plus Jakarta Sans, DM Sans) | OFL |
 | **Música** | FreeMusicArchive, Freesound | CC0 |
 | **Efeitos sonoros** | Freesound, GameSounds.xyz | CC0 |
 | **Texturas** | BurningWell, OpenClipArt | Domínio Público |
@@ -194,4 +194,4 @@ O projeto usará apenas **assets públicos e conteúdos liberados** (CC0, domín
 - LIDWELL, William; HOLDEN, Kritina; BUTLER, Jill. *Universal Principles of Design*. Beverly: Rockport, 2010.
 - SALEN, Katie; ZIMMERMAN, Eric. *Rules of Play: Game Design Fundamentals*. Cambridge: MIT Press, 2003.
 - KENNEY. *High-quality game art under CC0*. 2026.
-- Google Fonts. *Poppins & Inter*. 2026.
+- Google Fonts. *Plus Jakarta Sans & DM Sans*. 2026.

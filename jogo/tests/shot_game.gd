@@ -129,36 +129,36 @@ func _shots() -> void:
 	await create_timer(0.2).timeout
 	await _shot("t05_1_event")
 	screen.event_notice().continue_now()
-	# T-15: 24 px + high contrast on the next card, then dragging and the learning card.
+	# T-15: 125% + high contrast on the next card, then dragging and the learning card.
 	await _wait(func() -> bool: return _step() == &"card", 6.0)
-	_settings.set_value(&"text_step", 24)
+	_settings.set_value(&"text_step", 125)
 	_settings.set_value(&"high_contrast", true)
 	await create_timer(0.4).timeout
-	await _shot("t15_24px_hc_card")
+	await _shot("t15_125_hc_card")
 	screen.card().preview_drag(-1, 0.40)
 	await _frames(6)
-	await _shot("t15_24px_hc_drag")
+	await _shot("t15_125_hc_drag")
 	screen.card().reset()
 	await _frames(3)
 	_choose(screen.card(), 1)
 	await _wait(func() -> bool: return _step() == &"consequence", 6.0)
 	await create_timer(0.3).timeout
-	await _shot("t15_24px_hc_consequence")
+	await _shot("t15_125_hc_consequence")
 	screen.consequence().continue_now()
 	await create_timer(0.45).timeout
 	screen.sheet().more().folded = false
 	await create_timer(0.35).timeout
-	await _shot("t15_4_24px_hc_learning_more")
+	await _shot("t15_4_125_hc_learning_more")
 	var scroll: ScrollContainer = screen.sheet().scroll()
 	scroll.scroll_vertical = 10000
 	await _frames(6)
-	await _shot("t15_4_24px_hc_learning_end")
-	_settings.set_value(&"text_step", 36)
+	await _shot("t15_4_125_hc_learning_end")
+	_settings.set_value(&"text_step", 150)
 	_settings.set_value(&"high_contrast", false)
 	screen.sheet().continue_button().pressed.emit()
 	await _wait(func() -> bool: return _step() == &"card", 6.0)
 	await create_timer(0.4).timeout
-	await _shot("t15_6_36px_card")
+	await _shot("t15_6_150_card")
 
 
 # --- Helpers ---------------------------------------------------------------------------------

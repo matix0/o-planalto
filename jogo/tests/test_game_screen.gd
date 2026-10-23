@@ -3,7 +3,7 @@ extends SceneTree
 ## Lote D with the real Game (seeded run, saves in a temporary file): calibration (T-03) →
 ## year card (T-04) → cards (T-06) → effects (T-07) → consequence (T-07.3) → learning card
 ## (T-08) → Year 2 → event notice (T-05) → card; Esc rule (D-167), tap outside (D-145), pause
-## button during the consequence, live settings, P1 at 36 px; resumed run shows the
+## button during the consequence, live settings, P1 at 150%; resumed run shows the
 ## consequence read-only without replaying effects (gdd 10 §5); through the title's "Continuar",
 ## a run closed on an event notice or in the calibration comes back where it was; a meter at 0
 ## through the screens ends on the final screen (P-014 etapa 6). No side words (D-084) and
@@ -273,15 +273,15 @@ func _settings_checks() -> void:
 	_expect(is_equal_approx(card.drag_limit, 0.25), "drag limit live (D-158)")
 	_expect(card.reduce_motion and screen.sheet().reduce_motion, "reduce motion live")
 	_expect(card.high_contrast and screen.hud().high_contrast, "high contrast live (P2)")
-	_settings.set_value(&"text_step", 36)
+	_settings.set_value(&"text_step", 150)
 	await _frames(3)
 	var portrait := screen.speaker().find_child("Portrait", true, false) as Control
-	_expect(portrait != null and not portrait.visible, "P1 (36 px): no portrait")
+	_expect(portrait != null and not portrait.visible, "P1 (150%): no portrait")
 	var scroll := screen.find_child("ProblemScroll", true, false) as ScrollContainer
-	_expect(scroll.custom_minimum_size.y == 4 * 44, "P1: problem keeps 4 lines and scrolls")
+	_expect(scroll.custom_minimum_size.y == 4 * Tokens.type_line("Body", 150), "P1: problem keeps 4 lines and scrolls")
 	var ftext := screen.footer().find_child("ProgressText", true, false) as Label
 	_expect(ftext.max_lines_visible == 3, "P1: the footer may take 3 lines (the 'n/7' is not cut)")
-	_expect(ftext.size.y >= ftext.get_line_count() * 44 - 1, "P1: the footer label is tall enough for its lines (V-048; h %.0f, %d lines)" % [ftext.size.y, ftext.get_line_count()])
+	_expect(ftext.size.y >= ftext.get_line_count() * Tokens.type_line("Footer", 150) - 1, "P1: the footer label is tall enough for its lines (V-048; h %.0f, %d lines)" % [ftext.size.y, ftext.get_line_count()])
 	_check_texts(screen, "P1")
 	_settings.reset_defaults(false)
 	await _frames(3)
@@ -443,8 +443,8 @@ func _component_checks() -> void:
 	sheet.close()
 	await _wait(func() -> bool: return not sheet.visible, 2.0)
 	_expect(not sheet.visible and not sheet.is_open(), "C-09 close() hides")
-	# Long text at 24 px: the sheet stops at the maximum height and scrolls; Continuar stays.
-	host.theme = ThemeBuilder.build(24, false)
+	# Long text at 125%: the sheet stops at the maximum height and scrolls; Continuar stays.
+	host.theme = ThemeBuilder.build(125, false)
 	var long := view.duplicate(true)
 	long["concept"] = "Texto longo de teste. ".repeat(40)
 	long["readonly"] = false

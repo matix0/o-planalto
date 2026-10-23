@@ -6,7 +6,7 @@ extends SceneTree
 ## after Game.abandon() (END-028). For each: the sections show/hide from the data
 ## (gdd 08 §5), the 8 meters show their numbers (the only screen with numbers, docs/14
 ## §14.09), the radar labels fit and do not overlap, no side words (D-084), no pause, Esc
-## does nothing. Then: Settings live (24 px, 36 px fallback, high contrast), PC column
+## does nothing. Then: Settings live (125%, 150% fallback, high contrast), PC column
 ## (D-171), focus and keyboard scroll, "Compartilhar" toast, and "Jogar novamente" starts a
 ## new run (tutorial the 1st time, calibration after).
 ## Saves and settings go to temporary files. Classes that use autoloads (AppMain, AppScreen,
@@ -265,21 +265,21 @@ func _settings_live() -> void:
 	var radar: Control = s.get_node(^"%Radar")
 	var name_label: Label = s.get_node(^"%EndingName")
 	var r18: float = radar.radius()
-	_eq(r18, 80.0, "18 px: radius 80 (C-13)")
-	_settings.set_value(&"text_step", 24)
+	_eq(r18, 80.0, "100%: radius 80 (C-13)")
+	_settings.set_value(&"text_step", 125)
 	await _frames(4)
-	_eq(name_label.get_theme_font_size(&"font_size"), Tokens.type_size("TitleL", 24), "24 px: theme applied live")
-	_expect(radar.radius() < r18 and not radar.is_keyed(), "24 px: radius shrinks (got %s), names still around (D14)" % radar.radius())
-	_check_radar(radar, "24 px")
-	_check_tree(s, "24 px")
-	_settings.set_value(&"text_step", 36)
+	_eq(name_label.get_theme_font_size(&"font_size"), Tokens.type_size("TitleL", 125), "125%: theme applied live")
+	_expect(radar.radius() < r18 and not radar.is_keyed(), "125%%: radius shrinks (got %s), names still around (D14)" % radar.radius())
+	_check_radar(radar, "125%")
+	_check_tree(s, "125%")
+	_settings.set_value(&"text_step", 150)
 	await _frames(4)
-	_expect(radar.is_keyed(), "36 px: names do not fit → numbered spokes + list (PROPOSTA, D14)")
+	_expect(radar.radius() <= r18 and radar.radius() >= 40.0, "150%%: radius within 40-80 (got %s)" % radar.radius())
 	var key: Array = radar.key_labels()
-	_expect(key.size() == 8 and (key[0] as Label).is_visible_in_tree() and (key[0] as Label).text == "1. " + radar.pole_name(0), "36 px: list under the chart")
-	_check_radar(radar, "36 px")
-	_check_tree(s, "36 px")
-	_settings.set_value(&"text_step", 18)
+	_expect(key.size() == 8 and (key[0] as Label).is_visible_in_tree() and (key[0] as Label).text == "1. " + radar.pole_name(0), "150%: list under the chart")
+	_check_radar(radar, "150%")
+	_check_tree(s, "150%")
+	_settings.set_value(&"text_step", 100)
 	await _frames(4)
 	_expect(not radar.is_keyed() and radar.radius() == r18, "back to 18 px")
 	_settings.set_value(&"high_contrast", true)

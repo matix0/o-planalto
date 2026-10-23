@@ -563,9 +563,9 @@ Vale o 1º padrão que casa, na ordem da tabela. "Alto" = acima de 60; "baixo" =
 
 | Uso | Fonte | Tamanho |
 | :--- | :--- | :--- |
-| Títulos | Poppins Bold | 24px |
-| Corpo | Inter Regular | 18px padrão (16/20/24 configurável) |
-| Citação | Inter Italic | 18px |
+| Títulos | Plus Jakarta Sans Bold/ExtraBold (D-206) | 22px (100%) |
+| Corpo | DM Sans Regular | 18px = 100% (125% e 150% configuráveis, D-207) |
+| Citação | DM Sans Itálico | 20px (100%) |
 
 ### 10.3. Telas
 
@@ -623,7 +623,7 @@ Vale o 1º padrão que casa, na ordem da tabela. "Alto" = acima de 60; "baixo" =
 | Categoria | Fontes |
 | :--- | :--- |
 | **Ícones** | Kenney, OpenGameArt |
-| **Fontes** | Google Fonts (Poppins, Inter) |
+| **Fontes** | Google Fonts (Plus Jakarta Sans, DM Sans) |
 | **Música** | FreeMusicArchive, Freesound |
 | **Efeitos** | Freesound, GameSounds.xyz |
 | **Texturas** | BurningWell, OpenClipArt |

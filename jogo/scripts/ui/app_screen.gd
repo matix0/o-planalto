@@ -82,7 +82,7 @@ func game() -> Node:
 
 
 ## FoldableContainer look for the app (no ThemeBuilder variation yet — a validar):
-## title in a #37474F panel (raio-12, esp-12 × esp-16), Inter 600 at the body size,
+## title in a #37474F panel (raio-12, esp-12 × esp-16), DM Sans 600 at the body size,
 ## white text, white focus ring; high contrast = black with a 2 px white edge.
 static func style_foldable(fold: FoldableContainer) -> void:
 	var hc: bool = Settings.high_contrast
@@ -111,7 +111,7 @@ static func style_foldable(fold: FoldableContainer) -> void:
 	ring.set_corner_radius_all(Tokens.RADIUS_12 + Tokens.FOCUS_OFFSET)
 	ring.set_expand_margin_all(Tokens.FOCUS_OFFSET)
 	fold.add_theme_stylebox_override(&"focus", ring)
-	fold.add_theme_font_override(&"font", ThemeBuilder.fonts()["inter_600"])
+	fold.add_theme_font_override(&"font", ThemeBuilder.fonts()["body_600"])
 	fold.add_theme_font_size_override(&"font_size", Tokens.type_size("Body", Settings.text_step))
 	for c in [&"font_color", &"hover_font_color", &"collapsed_font_color"]:
 		fold.add_theme_color_override(c, Tokens.TEXT)

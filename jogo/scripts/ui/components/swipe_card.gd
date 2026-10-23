@@ -35,7 +35,7 @@ const ARMED_VIBRATION_MS := 30        # P3 / A-21 (Input.vibrate_handheld; VIBRA
 const OPTION_BAND_P7 := false         # PROPOSTA P7 — option in a fixed band at the top at 36 px
 const DRAG_VISIBLE_MIN := 0.6         # D-177 / DP-009: a dragged card keeps ≥ 60% of its width on screen
 const FIT_MIN_FONT := 14              # D-186 / DP-009: smallest size when a long word must shrink to fit
-const OPTION_BAND_MIN_SIZE := 36      # Option font size that triggers P7
+const OPTION_BAND_MIN_SIZE := 27      # Option font size that triggers P7 (the 150% scale, D-207)
 const TAP_HINT_DELAY := 4.0           # D-163: idle time "[a definir]" — a validar
 const TAP_HINT_TEXT := "Arraste a carta ou toque em um lado para ver a opção"
 const TAP_SLOP := float(Tokens.ESP_8)        # travel before a press becomes a drag (a validar)
@@ -51,8 +51,11 @@ const USE_SCREEN_VELOCITY := false    # D-154: velocity × screen_velocity, to t
 const HALF_HIGHLIGHT_ALPHA := 0.06    # C-04: touched half +6% white (a validar)
 ## P-018 (playtest: "não sei para qual lado é qual resposta"; D-202): both options always show
 ## at the bottom corners of the card, each with an arrow to its side, until one is revealed.
-const PREVIEW_FORMAT_LEFT := "← %s"
-const PREVIEW_FORMAT_RIGHT := "%s →"
+## The arrow is glued to its word (no-break space) so it never lands alone on a line.
+const PREVIEW_FORMAT_LEFT := "←\u00A0%s"
+const PREVIEW_FORMAT_RIGHT := "%s\u00A0→"
+const PREVIEW_MIN_CARD_H := 220   # a smaller card (big text, short screen) has no room for the corners
+const PREVIEW_MAX_FONT := 20   # the corner text stays small at 150%: it is a hint, the big text comes on touch
 const PREVIEW_ALPHA := 0.85
 const TITLE_DIM := 0.45               # C-04: title opacity with the option visible (a validar)
 const CRISIS_MARGIN := Tokens.ESP_12  # C-10: hatched frame around the card
@@ -156,6 +159,8 @@ func _update_previews() -> void:
 	for side in _previews:
 		var text := String(_sides.get(side, {}).get("text", ""))
 		var l: Label = _previews[side]
+		l.remove_theme_font_size_override(&"font_size")
+		l.add_theme_font_size_override(&"font_size", mini(PREVIEW_MAX_FONT, l.get_theme_font_size(&"font_size")))
 		l.text = (PREVIEW_FORMAT_LEFT if side < 0 else PREVIEW_FORMAT_RIGHT) % text if text != "" else ""
 	# The title keeps the top of the card; the options take the bottom corners.
 	_face.add_theme_constant_override(&"margin_bottom", int(_card.size.y * 0.4) if _previews_on() else Tokens.ESP_24)
@@ -163,12 +168,13 @@ func _update_previews() -> void:
 
 
 func _previews_on() -> bool:
-	return not _previews.is_empty() and String(_sides.get(-1, {}).get("text", "")) != ""
+	return not _previews.is_empty() and String(_sides.get(-1, {}).get("text", "")) != "" and _card.size.y >= PREVIEW_MIN_CARD_H
 
 
 func _set_previews(on: bool) -> void:
+	var room := _previews_on()
 	for l: Label in _previews.values():
-		l.visible = on and l.text != ""
+		l.visible = on and room and l.text != ""
 
 
 ## Preview texts (tests): {-1: "← …", 1: "… →"}.

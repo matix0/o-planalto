@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://hnjgdut33855"
-path="res://.godot/imported/Inter-Italic-Variable.ttf-a6201a11b555a87c32682443294fa705.fontdata"
+uid="uid://dse7ujhuoe315"
+path="res://.godot/imported/PlusJakartaSans-ExtraBold.ttf-504f0b52313752690a4d875f43ab73f7.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/Inter-Italic-Variable.ttf"
-dest_files=["res://.godot/imported/Inter-Italic-Variable.ttf-a6201a11b555a87c32682443294fa705.fontdata"]
+source_file="res://assets/fonts/PlusJakartaSans-ExtraBold.ttf"
+dest_files=["res://.godot/imported/PlusJakartaSans-ExtraBold.ttf-504f0b52313752690a4d875f43ab73f7.fontdata"]
 
 [params]
 

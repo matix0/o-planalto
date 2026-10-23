@@ -107,7 +107,8 @@ func _show_question() -> void:
 		"mode": &"calibration",
 	})
 	_card.accessibility_name = CARD_A11Y % [index, total, question]
-	_footer.set_progress(index, total, PROGRESS_NOUN, PROGRESS_PREFIX)
+	# At 150% "Alinhamento · n/6" overflows beside the segments; the header already names the screen.
+	_footer.set_progress(index, total, PROGRESS_NOUN, "" if Settings.text_step >= Settings.P1_TEXT_STEP else PROGRESS_PREFIX)
 	_card.play_enter()
 	_focus_card()
 

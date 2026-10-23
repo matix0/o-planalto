@@ -287,10 +287,10 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 
 | Uso | Fonte |
 | :--- | :--- |
-| Títulos | Poppins |
-| Corpo | Inter |
+| Títulos | Plus Jakarta Sans (Bold e ExtraBold) — D-206 |
+| Corpo | DM Sans (Regular, SemiBold e Itálico) — D-206 |
 
-**Tamanhos de texto (configuração):** 16, 18, 20 e 24 px; **padrão 18 px** (D-165) (revisa GDD §10.2 e §10.5). A escala dos títulos fica para o protótipo (§14.13).
+**Escala do texto (configuração):** 100%, 125% e 150%; **padrão 100%** (D-207, revisa a D-165 e a D-148). O jogador vê só a porcentagem; 100% é o corpo de 18 px, 125% = 22 px e 150% = 27 px. Os títulos acompanham (`jogo/scripts/ui/tokens.gd`, tabela `TYPE`). No 150%, o retrato do falante some e o problema da carta rola (P1, D-169).
 
 ---
 
@@ -308,7 +308,7 @@ Padrões para o futuro modo daltônico (proposta do TA, pós-MVP): 0-20 sólido 
 
 | Recurso | Status |
 | :--- | :--- |
-| Tamanho de texto (16/18/20/24, D-165; teste a 36 px, D-169) | Planejado (GDD §10.5) |
+| Escala do texto 100/125/150% (D-207; P1 no 150%, D-169) | Pronto no protótipo |
 | Reduzir movimento | Planejado (proposta GF aprovada) |
 | Alto contraste | Planejado (GDD §10.5); base de teste: fundo preto, textos e contornos brancos, cores partidárias e faixas inalteradas (D-169) |
 | Navegação por teclado (PC) | Planejado (GDD §10.5): setas revelam a metade, Enter confirma, Esc cancela; com metade revelada, o 1º Esc cancela e o 2º abre a pausa (D-167) |
@@ -350,6 +350,8 @@ O playtest de 2026-10-21 mudou estas regras. Onde este doc diz outra coisa, vale
 | Textos | Nenhum `[a definir]` na tela (`jogo/tests/test_no_placeholders.gd`); textos em D-200/DP-025 | D-200, D-201 | — |
 | Folha de Aprendizado | O "Saiba mais" aberto deixa o dedo rolar até a fonte | P-017 | — |
 | Responsividade | Conferida em 390×680, 390×844 e 1280×720 (`.claude/notas/execucao/ferramentas/varredura-resolucoes.sh`); o cartão do ano cresce quando o texto grande não cabe | P-018 | — |
+| Fontes | Plus Jakarta Sans (títulos) e DM Sans (corpo) no lugar de Poppins e Inter; o download do jogo cai uns 1,9 MB (`gestao/estudo-fontes/`) | D-206 | D-140 (só a lista de fontes) |
+| Escala do texto | Só 100%, 125% e 150%; sem pixels na tela; migra o valor salvo em px | D-207 | D-165, D-148 |
 
 ---
 

@@ -22,28 +22,28 @@ static func build(step: int = Tokens.DEFAULT_STEP, high_contrast: bool = false) 
 	var text2 := Tokens.TEXT if high_contrast else Tokens.TEXT2
 	var outline := Tokens.TEXT if high_contrast else Tokens.OUTLINE
 
-	t.default_font = f["inter_400"]
+	t.default_font = f["body_400"]
 	t.default_font_size = Tokens.type_size("Body", step)
 
 	# --- Labels ---
 	t.set_color(&"font_color", &"Label", Tokens.TEXT)
-	_label(t, "Display", f["poppins_700"], step, Tokens.TEXT)
-	_label(t, "TitleL", f["poppins_700"], step, Tokens.TEXT)
-	_label(t, "TitleM", f["poppins_600"], step, Tokens.TEXT)
-	_label(t, "TitleS", f["poppins_600"], step, Tokens.TEXT)
-	_label(t, "Body", f["inter_400"], step, Tokens.TEXT)
-	_label(t, "Muted", f["inter_400"], step, text2, "Body")
-	_label(t, "Option", f["inter_600"], step, Tokens.TEXT)
-	_label(t, "Caption", f["inter_400"], step, text2)
-	_label(t, "Footer", f["inter_400"], step, text2)
-	_label(t, "Quote", f["inter_italic"], step, Tokens.TEXT)
-	_label(t, "Number", f["poppins_700"], step, Tokens.TEXT)
+	_label(t, "Display", f["title_lg"], step, Tokens.TEXT)
+	_label(t, "TitleL", f["title_lg"], step, Tokens.TEXT)
+	_label(t, "TitleM", f["title_md"], step, Tokens.TEXT)
+	_label(t, "TitleS", f["title_md"], step, Tokens.TEXT)
+	_label(t, "Body", f["body_400"], step, Tokens.TEXT)
+	_label(t, "Muted", f["body_400"], step, text2, "Body")
+	_label(t, "Option", f["body_600"], step, Tokens.TEXT)
+	_label(t, "Caption", f["body_400"], step, text2)
+	_label(t, "Footer", f["body_400"], step, text2)
+	_label(t, "Quote", f["body_italic"], step, Tokens.TEXT)
+	_label(t, "Number", f["title_lg"], step, Tokens.TEXT)
 
 	# --- Buttons (min height via node custom_minimum_size = TOUCH_MIN) ---
 	var btn_size := Tokens.type_size("Option", step)
 	for name in ["Primary", "Secondary", "Icon", "Link", "Segment"]:
 		t.set_type_variation(name, &"Button")
-		t.set_font(&"font", name, f["inter_600"])
+		t.set_font(&"font", name, f["body_600"])
 		t.set_font_size(&"font_size", name, btn_size)
 		t.set_stylebox(&"focus", name, _focus(Tokens.RADIUS_12))
 	# Primary: green of the ideia inicial (D-199), white text 5.1:1; high contrast keeps white.
@@ -89,13 +89,13 @@ static func build(step: int = Tokens.DEFAULT_STEP, high_contrast: bool = false) 
 	t.set_stylebox(&"hover_pressed", &"Segment", _box(Tokens.TEXT, Tokens.RADIUS_12, 2, Tokens.TEXT, Tokens.ESP_12, Tokens.ESP_12))
 
 	# --- Generic controls ---
-	t.set_font(&"font", &"Button", f["inter_600"])
+	t.set_font(&"font", &"Button", f["body_600"])
 	t.set_font_size(&"font_size", &"Button", btn_size)
-	t.set_font(&"font", &"CheckButton", f["inter_400"])
+	t.set_font(&"font", &"CheckButton", f["body_400"])
 	t.set_font_size(&"font_size", &"CheckButton", Tokens.type_size("Body", step))
 	t.set_color(&"font_color", &"CheckButton", Tokens.TEXT)
 	t.set_stylebox(&"focus", &"CheckButton", _focus(Tokens.RADIUS_12))
-	t.set_font(&"font", &"LinkButton", f["inter_400"])
+	t.set_font(&"font", &"LinkButton", f["body_400"])
 	t.set_font_size(&"font_size", &"LinkButton", Tokens.type_size("Body", step))
 	t.set_color(&"font_color", &"LinkButton", Tokens.TEXT)
 	t.set_stylebox(&"focus", &"LinkButton", _focus(4))
@@ -136,29 +136,19 @@ static func build(step: int = Tokens.DEFAULT_STEP, high_contrast: bool = false) 
 	return t
 
 
-## Loads the OFL fonts once (Inter variable + italic, Poppins SemiBold/Bold).
+## Loads the OFL fonts once (DM Sans 400/600/italic for the body, Plus Jakarta Sans Bold/ExtraBold
+## for the titles; D-206, replaces Inter + Poppins).
 static func fonts() -> Dictionary:
 	if not _fonts.is_empty():
 		return _fonts
-	var inter: FontFile = load(FONT_DIR + "Inter-Variable.ttf")
-	var inter_italic: FontFile = load(FONT_DIR + "Inter-Italic-Variable.ttf")
 	_fonts = {
-		"inter_400": _weight(inter, 400),
-		"inter_500": _weight(inter, 500),
-		"inter_600": _weight(inter, 600),
-		"inter_italic": _weight(inter_italic, 400),
-		"poppins_600": load(FONT_DIR + "Poppins-SemiBold.ttf"),
-		"poppins_700": load(FONT_DIR + "Poppins-Bold.ttf"),
+		"body_400": load(FONT_DIR + "DMSans-Regular.ttf"),
+		"body_600": load(FONT_DIR + "DMSans-SemiBold.ttf"),
+		"body_italic": load(FONT_DIR + "DMSans-Italic.ttf"),
+		"title_md": load(FONT_DIR + "PlusJakartaSans-Bold.ttf"),
+		"title_lg": load(FONT_DIR + "PlusJakartaSans-ExtraBold.ttf"),
 	}
 	return _fonts
-
-
-static func _weight(base: Font, wght: int) -> FontVariation:
-	var fv := FontVariation.new()
-	fv.base_font = base
-	var ts := TextServerManager.get_primary_interface()
-	fv.variation_opentype = {ts.name_to_tag("wght"): wght}
-	return fv
 
 
 static func _label(t: Theme, name: String, font: Font, step: int, color: Color, size_from: String = "") -> void:

@@ -125,10 +125,10 @@ func _acquittal_path() -> void:
 				await _wait(0.2)
 				await _shot("t09_4_chamber_hc")
 				_settings.set_value(&"high_contrast", false)
-				_settings.set_value(&"text_step", 24)
+				_settings.set_value(&"text_step", 125)
 				await _wait(0.3)
-				await _shot("t09_4_chamber_24px")
-				_settings.set_value(&"text_step", 18)
+				await _shot("t09_4_chamber_125")
+				_settings.set_value(&"text_step", 100)
 				await _wait(0.2)
 			4:
 				await _shot("t09_5_senate_target")

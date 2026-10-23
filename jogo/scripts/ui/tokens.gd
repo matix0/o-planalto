@@ -125,21 +125,22 @@ const FLICK_SPEED := 700.0               # px/s (D-146; unit to test, D-154)
 const FLICK_LOCK := 0.22                 # D-153: flick needs text shown or 20-25% travel
 const TAP_CONFIRM_DELAY := 0.5           # D-157
 
-# --- Typography per text step (Tokens board, "a validar", D11) ---
-const STEPS: Array[int] = [16, 18, 20, 24, 36]
-const DEFAULT_STEP := 18
-## style -> {step: [size, line_height]}; line_height 0 = font default.
+# --- Typography per text scale (D-207: 100% / 125% / 150%, replaces the 16-36 px steps) ---
+## The player sees only the percentage; 100% is the old 18 px base. The key is the percentage.
+const STEPS: Array[int] = [100, 125, 150]
+const DEFAULT_STEP := 100
+## style -> {scale: [size, line_height]}; line_height 0 = font default.
 const TYPE := {
-	"Display": {16: [56, 0], 18: [64, 0], 20: [64, 0], 24: [72, 0], 36: [56, 0]},   # 36: D-186 smaller titles (DP-009)
-	"TitleL": {16: [30, 0], 18: [34, 0], 20: [36, 0], 24: [40, 0], 36: [36, 0]},
-	"TitleM": {16: [20, 26], 18: [22, 28], 20: [24, 30], 24: [28, 34], 36: [30, 38]},
-	"TitleS": {16: [18, 24], 18: [20, 26], 20: [22, 28], 24: [26, 32], 36: [28, 36]},
-	"Body": {16: [16, 24], 18: [18, 26], 20: [20, 28], 24: [24, 32], 36: [36, 44]},
-	"Option": {16: [16, 22], 18: [18, 24], 20: [20, 26], 24: [24, 30], 36: [36, 44]},
-	"Caption": {16: [14, 20], 18: [16, 22], 20: [18, 24], 24: [20, 28], 36: [30, 40]},
-	"Footer": {16: [16, 22], 18: [18, 24], 20: [20, 26], 24: [24, 30], 36: [36, 44]},
-	"Quote": {16: [18, 24], 18: [20, 26], 20: [22, 28], 24: [26, 32], 36: [36, 44]},
-	"Number": {16: [28, 0], 18: [32, 0], 20: [32, 0], 24: [36, 0], 36: [44, 0]},
+	"Display": {100: [64, 0], 125: [64, 0], 150: [56, 0]},   # the big "O Planalto" must fit 390 px (D-186)
+	"TitleL": {100: [34, 0], 125: [40, 0], 150: [44, 0]},
+	"TitleM": {100: [22, 28], 125: [28, 35], 150: [33, 42]},
+	"TitleS": {100: [20, 26], 125: [25, 32], 150: [30, 38]},
+	"Body": {100: [18, 26], 125: [22, 32], 150: [27, 38]},
+	"Option": {100: [18, 24], 125: [22, 30], 150: [27, 36]},
+	"Caption": {100: [16, 22], 125: [20, 28], 150: [24, 33]},
+	"Footer": {100: [18, 24], 125: [22, 30], 150: [27, 36]},
+	"Quote": {100: [20, 26], 125: [25, 32], 150: [30, 38]},
+	"Number": {100: [32, 0], 125: [40, 0], 150: [44, 0]},
 }
 
 const METER_NAMES := {

@@ -7,10 +7,12 @@ signal changed(key: StringName)
 
 const DEFAULT_PATH := "user://settings.cfg"
 const SECTION := "settings"
-const TEXT_STEPS: Array[int] = [16, 18, 20, 24]   # selector (D-165)
-const TEST_TEXT_STEP := 36                        # test base P1 only (D-169), not in the selector
+const TEXT_STEPS: Array[int] = [100, 125, 150]   # text scale in % (D-207, replaces the 16-24 px selector of D-165)
+const P1_TEXT_STEP := 150                         # at the largest scale: no portrait, the problem scrolls (D-169)
+## Values stored by earlier builds (px steps) → nearest scale.
+const LEGACY_STEPS := {16: 100, 18: 100, 20: 100, 24: 125, 36: 150}
 const DEFAULTS := {
-	&"text_step": 18,
+	&"text_step": 100,
 	&"reduce_motion": false,
 	&"high_contrast": false,
 	&"drag_limit": 0.40,
@@ -87,9 +89,9 @@ func _sanitize(key: StringName, value: Variant) -> Variant:
 	match key:
 		&"text_step":
 			var step: int = int(value) if (value is int or value is float) else int(DEFAULTS[key])
-			if step == TEST_TEXT_STEP or TEXT_STEPS.has(step):
+			if TEXT_STEPS.has(step):
 				return step
-			return DEFAULTS[key]
+			return LEGACY_STEPS.get(step, DEFAULTS[key])
 		&"drag_limit":
 			var limit: float = float(value) if (value is int or value is float) else float(DEFAULTS[key])
 			return clampf(limit, Tokens.DRAG_LIMIT_MIN, Tokens.DRAG_LIMIT_DEFAULT)

@@ -27,7 +27,7 @@ Este anexo não cria regras. Ele lista, em forma de checklist, o que os docs 14,
 | 4 | Medidores sem números durante a partida; números só na tela final | `docs/14_UI_UX_DESIGN.md:59` |
 | 5 | Borda partidária sempre com contorno branco de 2-3 px; não há borda neutra | doc 14 §14.04.3 |
 | 6 | Sem meses e sem reais: `Caixa` é um medidor de 0 a 100 | doc 14 §14.02 |
-| 7 | Texto padrão 18 px (16 / 20 / 24 nas configurações); Poppins nos títulos, Inter no corpo | doc 14 §14.11.4 |
+| 7 | Texto padrão 100% (125% e 150% nas configurações, D-207); Plus Jakarta Sans nos títulos, DM Sans no corpo (D-206) | doc 14 §14.11.4 |
 | 8 | Retratos em silhueta genérica com nome, até o TA propor o estilo | D-142 |
 | 9 | Ícones só CC0; fontes do Google Fonts com crédito | D-140 |
 
@@ -190,7 +190,7 @@ Fonte: doc 14 §14.12; D-140.
 
 | Código | Estado | Conteúdo | Status |
 | :--- | :--- | :--- | :--- |
-| T-13.1 | Padrão | Créditos, licenças dos assets CC0, aviso de licença das fontes Poppins e Inter (Google Fonts, OFL) | ⏳ |
+| T-13.1 | Padrão | Créditos, licenças dos assets CC0, aviso de licença das fontes Plus Jakarta Sans e DM Sans (Google Fonts, OFL) | ⏳ |
 
 ### T-14 — Avisos do sistema
 
@@ -207,10 +207,10 @@ Fonte: doc 14 §14.12.1.
 | Código | Variante | Status |
 | :--- | :--- | :--- |
 | T-15.1 | T-06 com texto 16 px | ⏳ |
-| T-15.2 | T-06 com texto 24 px | ⏳ |
+| T-15.2 | T-06 com texto 125% | ⏳ |
 | T-15.3 | T-06 em alto contraste (base: P2, D-169) | ⏳ |
-| T-15.4 | T-08.2 com texto 24 px (pior caso de texto longo) | ⏳ |
-| T-15.6 | T-06 com texto 36 px (base: P1, D-169) | ⏳ |
+| T-15.4 | T-08.2 com texto 125% (pior caso de texto longo) | ⏳ |
+| T-15.6 | T-06 com texto 150% (base: P1, D-169) | ⏳ |
 | T-15.5 | Foco de teclado em T-01 e T-06 (PC): setas revelam a metade, Enter confirma, Esc cancela (D-156) | ⏳ |
 
 ### T-16 — Layout PC e Web
@@ -248,7 +248,7 @@ Fonte: doc 14 §14.02.
 | C-17 | Aviso de evento | Destaque na borda + ícone + texto | doc 14 §14.10.1 | ⏳ |
 | C-18 | Aviso de conteúdo | Lista dos 4 avisos da tela inicial | GDD §14.3 | ⏳ |
 | C-19 | Indicador de progresso | Tutorial (1/4 a 4/4); calibração (1/6 a 6/6) | doc 16 Parte B; doc 15 §15.04 | ⏳ |
-| C-20 | Controles de configuração | Seletor de tamanho (16 / 18 / 20 / 24, D-165); chaves de reduzir movimento e alto contraste; áudio: aviso "O jogo ainda não tem som." (P-017) | doc 14 §14.12.1 | ⏳ |
+| C-20 | Controles de configuração | Seletor de escala do texto (100% / 125% / 150%, D-207); chaves de reduzir movimento e alto contraste; áudio: aviso "O jogo ainda não tem som." (P-017) | doc 14 §14.12.1 | ⏳ |
 | C-21 | Aviso discreto | Falha ao gravar; salvamento ilegível | `gdd/sistemas/10_estado_partida.md` §5 | ⏳ |
 
 ---
@@ -294,7 +294,7 @@ Com "reduzir movimento": sem pulsos, "pop", deslizes, zoom e flash; ficam os fad
 
 ## 14A.06 — Tokens
 
-Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 faixas de ciano dos medidores, Poppins e Inter). Não repetidas aqui para não divergir.
+Cores e fontes: doc 14 §14.11 (paleta da interface, 7 cores partidárias, 5 faixas de ciano dos medidores, Plus Jakarta Sans e DM Sans). Não repetidas aqui para não divergir.
 
 ---
 

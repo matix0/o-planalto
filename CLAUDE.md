@@ -99,7 +99,7 @@ Detalhes dos papéis: `gestao/equipe.md`.
 - **Engine:** Godot 4.7 (instalado: 4.6 — risco RT-08)
 - **MCP:** `tugcantopaloglu/godot-mcp` (D-053) — configuração adiada para o P-005 (D-072)
 - **Agente:** Claude Code (Opus 5.5)
-- **Fontes:** Poppins (títulos) + Inter (corpo)
+- **Fontes:** Plus Jakarta Sans (títulos) + DM Sans (corpo), D-206
 - **Assets:** Kenney, OpenGameArt, FreeMusicArchive, Google Fonts
 
 ## GodotPrompter

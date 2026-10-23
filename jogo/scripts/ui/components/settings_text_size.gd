@@ -1,7 +1,7 @@
 class_name SettingsTextSize
 extends VBoxContainer
-## C-20 — seletor do tamanho do texto 16 / 18 / 20 / 24 px (D-165; T-12.1).
-## Um contorno 2 px #90A4AE (raio 12, padding 2) envolve 4 opções iguais
+## C-20 — seletor do tamanho do texto 100% / 125% / 150% (D-207; T-12.1).
+## Um contorno 2 px #90A4AE (raio 12, padding 2) envolve 3 opções iguais
 ## (Button com toggle_mode no mesmo ButtonGroup, mín. 48); a marcada fica
 ## branca com texto #263238. Foco: anel branco interno (escuro na marcada).
 ## Teclado: setas trocam a opção (grupo de opções).
@@ -26,13 +26,13 @@ func _ready() -> void:
 	_title.text = TITLE
 	for step in Settings.TEXT_STEPS:
 		var b := Button.new()
-		b.text = "%d px" % step
+		b.text = "%d%%" % step
 		b.toggle_mode = true
 		b.button_group = _group
 		b.theme_type_variation = &"Segment"
 		b.custom_minimum_size = Vector2(0, Tokens.TOUCH_MIN)
 		b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		b.accessibility_name = "%s: %d px" % [TITLE, step]
+		b.accessibility_name = "%s: %d%%" % [TITLE, step]
 		b.set_meta(&"step", step)
 		b.toggled.connect(_on_button_toggled.bind(b))
 		b.gui_input.connect(_on_button_input.bind(b))
@@ -53,7 +53,7 @@ func set_step(step: int) -> void:
 	for b in _buttons:
 		b.set_pressed_no_signal(int(b.get_meta(&"step")) == step)
 	_refresh_focus_rings()
-	_frame.accessibility_name = "%s: %d px" % [TITLE, step]
+	_frame.accessibility_name = "%s: %d%%" % [TITLE, step]
 
 
 func selected_step() -> int:

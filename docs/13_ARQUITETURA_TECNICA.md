@@ -829,7 +829,7 @@ jogo/
 │   ├── components/         # Componentes reutilizáveis
 │   └── dev/                # gallery.tscn
 ├── assets/
-│   ├── fonts/              # Inter e Poppins (OFL) e os avisos OFL-*.txt
+│   ├── fonts/              # Plus Jakarta Sans e DM Sans (OFL) e os avisos OFL-*.txt
 │   └── icons/              # Ícones provisórios (SVG)
 ├── tests/                  # test_*.gd (headless), shot_*.gd (capturas), run_all.sh
 ├── tools/                  # cards_doc.py: lê os docs 17 e 18, confere as regras e gera o JSON (P-015, DP-017)
@@ -878,7 +878,7 @@ O projeto usará **assets públicos e conteúdos liberados**. A pesquisa identif
 
 | Recurso | Licença | Destaques |
 | :--- | :--- | :--- |
-| **Google Fonts** | OFL, Apache | Poppins, Inter (usadas no projeto) |
+| **Google Fonts** | OFL, Apache | Plus Jakarta Sans, DM Sans (usadas no projeto) |
 | **OpenFontLibrary** | OFL, Domínio Público | Fontes livres |
 | **dotcolon** | CC0 | Fontes CC0 |
 | **DaFont** | Variadas | Grande coleção de fontes |
@@ -903,14 +903,14 @@ O projeto usará **assets públicos e conteúdos liberados**. A pesquisa identif
 
 | Tipo | Hoje | Licença | Onde |
 | :--- | :--- | :--- | :--- |
-| Fontes | Inter (corpo) e Poppins (títulos) | OFL 1.1, com aviso de licença na tela Sobre (D-140) | `jogo/assets/fonts/` (`OFL-Inter.txt`, `OFL-Poppins.txt`) |
+| Fontes | DM Sans (corpo) e Plus Jakarta Sans (títulos), D-206 | OFL 1.1, com aviso de licença em Créditos e licenças (D-140) | `jogo/assets/fonts/` (`OFL-DMSans.txt`, `OFL-PlusJakartaSans.txt`) |
 | Ícones | Provisórios, desenhados para o protótipo (SVG); trocar pelos ícones CC0 definitivos (D-140; TA) | Próprios | `jogo/assets/icons/` (`jogo/assets/icons/README.md:1-3`) |
 | Retratos | Silhueta genérica com nome (D-142) | Próprios | `jogo/assets/icons/portrait_silhouette.svg` |
 | Áudio | Nenhum (fora do escopo do protótipo, `jogo/README.md:132`) | — | — |
 
 Regra de licença (D-140): ícones só CC0 (o Font Awesome saiu); fontes do Google Fonts (OFL) com crédito e aviso na tela Sobre. Para áudio e para imagens que não são ícones, a regra segue por definir `[não verificado]`; as tabelas de 13.8.1 a 13.8.4 listam também licenças que a D-140 não cobre (CC-BY, GPL, *royalty-free*, variadas).
 
-A tela Sobre mostra a lista real de assets (D-188): ícones e retrato próprios do protótipo, provisórios, e as fontes Poppins e Inter (OFL 1.1) (`jogo/scripts/ui/screens/about_screen.gd:22-31`); `jogo/tests/test_shell.gd` confere que todo arquivo de `jogo/assets/` está num grupo da lista. O aviso do Godot vem de `Engine.get_license_text()` e os componentes de terceiros do Godot, de `Engine.get_copyright_info()`, os dois dobrados (`about_screen.gd:148-170`; DP-019, provisória). Os textos completos das licenças de terceiros (`Engine.get_license_info()`) não aparecem na tela `[pendente com o PO]`.
+A tela Sobre mostra a lista real de assets (D-188): ícones e retrato próprios do protótipo, provisórios, e as fontes Plus Jakarta Sans e DM Sans (OFL 1.1) (`jogo/scripts/ui/screens/about_screen.gd:22-31`); `jogo/tests/test_shell.gd` confere que todo arquivo de `jogo/assets/` está num grupo da lista. O aviso do Godot vem de `Engine.get_license_text()` e os componentes de terceiros do Godot, de `Engine.get_copyright_info()`, os dois dobrados (`about_screen.gd:148-170`; DP-019, provisória). Os textos completos das licenças de terceiros (`Engine.get_license_info()`) não aparecem na tela `[pendente com o PO]`.
 
 ---
 

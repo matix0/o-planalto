@@ -13,7 +13,7 @@ const TEXT_MAX_LINES := 2                                   # D21: 2 lines at 24
 ## At 36 px (P1) "Ano 2 · Realidade Bate · 1/7" needs 3 lines; 2 would cut the "1/7"
 ## (D21 covers up to 24 px — a validar).
 const TEXT_MAX_LINES_LARGE := 3
-const LARGE_TEXT_PX := 36
+const LARGE_TEXT_PX := 27                                    # the 150% scale (D-207)
 
 var high_contrast: bool = false:
 	set(v):

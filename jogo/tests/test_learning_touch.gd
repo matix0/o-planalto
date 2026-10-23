@@ -19,7 +19,7 @@ func _run() -> void:
 	if settings:
 		settings.storage_path = "user://test_learning_touch.cfg"
 		settings.reset_defaults(false)
-		settings.set_value(&"text_step", 24)
+		settings.set_value(&"text_step", 125)
 	var sheet: Control = (load(SHEET_SCENE) as PackedScene).instantiate()
 	root.add_child(sheet)
 	sheet.set_anchors_preset(Control.PRESET_TOP_LEFT)
@@ -34,7 +34,7 @@ func _run() -> void:
 	for i in 10:
 		await process_frame
 	var scroll: ScrollContainer = sheet.scroll()
-	_expect(sheet.is_scrolling(), "the open sheet scrolls at 24 px")
+	_expect(sheet.is_scrolling(), "the open sheet scrolls at 125%")
 	# Headless Godot only drag-scrolls on a touchscreen, so the finger drag itself is checked on
 	# the Web build (.claude/notas/execucao/ferramentas/web_touch.js, Chromium as a phone).
 	# Here: nothing between the finger and Scroll stops the drag, and the link is reachable.

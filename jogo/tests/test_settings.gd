@@ -21,9 +21,9 @@ func _run() -> void:
 	settings.storage_path = TEST_PATH
 	_remove(TEST_PATH)
 
-	# Defaults (D-165 text 18, D-146/D-158 drag 0.40).
+	# Defaults (D-207 text 100%, D-146/D-158 drag 0.40).
 	settings.reset_defaults(false)
-	_expect(settings.text_step == 18, "default text_step 18")
+	_expect(settings.text_step == 100, "default text_step 100")
 	_expect(settings.reduce_motion == false, "default reduce_motion off")
 	_expect(settings.high_contrast == false, "default high_contrast off")
 	_expect(is_equal_approx(settings.drag_limit, 0.40), "default drag_limit 0.40")
@@ -35,12 +35,17 @@ func _run() -> void:
 	var seen: Array[StringName] = []
 	settings.changed.connect(func(k: StringName) -> void: seen.append(k))
 	settings.set_value(&"text_step", 17)
-	_expect(settings.text_step == 18, "invalid step falls back to 18")
-	for step in [16, 20, 24, 36, 18]:
+	_expect(settings.text_step == 100, "invalid step falls back to 100")
+	for step in [125, 150, 100]:
 		settings.set_value(&"text_step", step)
-		_expect(settings.text_step == step, "step %d accepted" % step)
+		_expect(settings.text_step == step, "scale %d%% accepted" % step)
+	# Values saved by earlier builds (px steps) move to the nearest scale (D-207).
+	for pair in [[16, 100], [18, 100], [20, 100], [24, 125], [36, 150]]:
+		settings.set_value(&"text_step", 100)
+		settings.set_value(&"text_step", pair[0])
+		_expect(settings.text_step == pair[1], "legacy %d px -> %d%%" % [pair[0], pair[1]])
 	settings.set_value(&"text_step", "big")
-	_expect(settings.text_step == 18, "non-number step -> 18")
+	_expect(settings.text_step == 100, "non-number step -> 100")
 	settings.set_value(&"drag_limit", 0.1)
 	_expect(is_equal_approx(settings.drag_limit, 0.25), "drag_limit clamped to 0.25")
 	settings.set_value(&"drag_limit", 0.9)
@@ -57,15 +62,15 @@ func _run() -> void:
 	_expect(seen.size() == 1 and seen[0] == &"reduce_motion", "changed emitted once (%s)" % [seen])
 
 	# Round-trip through the temporary file.
-	settings.set_value(&"text_step", 24)
+	settings.set_value(&"text_step", 125)
 	settings.set_value(&"high_contrast", true)
 	settings.set_value(&"drag_limit", 0.3)
 	settings.set_value(&"tutorial_seen", true)
 	_expect(FileAccess.file_exists(TEST_PATH), "set_value writes the file")
 	settings.reset_defaults(false)
-	_expect(settings.text_step == 18 and not settings.high_contrast, "memory reset")
+	_expect(settings.text_step == 100 and not settings.high_contrast, "memory reset")
 	settings.load_settings()
-	_expect(settings.text_step == 24, "round-trip text_step")
+	_expect(settings.text_step == 125, "round-trip text_step")
 	_expect(settings.reduce_motion == true, "round-trip reduce_motion")
 	_expect(settings.high_contrast == true, "round-trip high_contrast")
 	_expect(is_equal_approx(settings.drag_limit, 0.3), "round-trip drag_limit")
@@ -78,14 +83,14 @@ func _run() -> void:
 	cfg.set_value("settings", "high_contrast", "yes")
 	cfg.save(TEST_PATH)
 	settings.load_settings()
-	_expect(settings.text_step == 18, "tampered step -> 18")
+	_expect(settings.text_step == 100, "tampered step -> 100")
 	_expect(is_equal_approx(settings.drag_limit, 0.25), "tampered drag -> 0.25")
 	_expect(settings.high_contrast == false, "tampered bool -> default")
 	var f := FileAccess.open(TEST_PATH, FileAccess.WRITE)
 	f.store_string("[[[ not a config")
 	f.close()
 	settings.load_settings()
-	_expect(settings.text_step == 18 and settings.tutorial_seen == false, "corrupt file -> defaults")
+	_expect(settings.text_step == 100 and settings.tutorial_seen == false, "corrupt file -> defaults")
 
 	# Clean up; the real file was not touched.
 	_remove(TEST_PATH)

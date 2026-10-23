@@ -113,7 +113,7 @@ autowrap_mode = 3
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"Body"
-text = "Poppins e Inter — Google Fonts, licença OFL"
+text = "Plus Jakarta Sans e DM Sans — Google Fonts, licença OFL"
 autowrap_mode = 3
 
 [node name="FontsBox" type="VBoxContainer" parent="SafeArea/Column/Scroll/Sections/Fonts"]
