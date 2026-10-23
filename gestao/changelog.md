@@ -10,7 +10,7 @@ Versionamento: [SemVer](https://semver.org/).
 ## [Unreleased]
 
 ### Alterado (fontes e escala do texto, D-206 e D-207)
-- Fontes: Plus Jakarta Sans (títulos) + DM Sans (corpo), no lugar de Poppins + Inter; download do jogo −1,9 MB
+- Fontes: Plus Jakarta Sans (títulos) + DM Sans (corpo), no lugar de Poppins + Inter; download do jogo −1 MB (2,3 para 1,2 MB)
 - Escala do texto: 100%, 125% e 150% (sem pixels na tela); valores antigos migram; 150% = P1
 - Opções nos cantos da carta com seta colada à palavra e fonte limitada a 20 px; somem em carta pequena
 - Cabeçalho do impeachment quebra linha; rodapé do alinhamento só "n/6" no 150%

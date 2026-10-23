@@ -215,7 +215,7 @@ Formato: `D-xxx: [Decisão]`. Decisão aprovada não volta à discussão sem ped
 | D-203 | Medidor que sobe pisca em verde (`#A5D6A7`) e o que cai em vermelho (`#FF8A80`), no rastro e na borda, durante o preenchimento. Revê a D-156 (pontos sem direção seguem sem direção) | 2026-10-22 | Escolha do PO (P-018) |
 | D-204 | O impacto de uma decisão não é mostrado antes da escolha (a surpresa faz parte do jogo) | 2026-10-22 | Escolha do PO (P-018; Dâmaso) |
 | D-205 | INST-121 "Bancada BBB" vira "Boi, Bala e Bíblia", com o problema em termos comuns; a Carta de Aprendizado segue explicando a sigla. Aviso de Captura encurtado para "Cuidado: poder demais também derruba um governo." (cabe em 36 px) | 2026-10-22 | Escolha do PO (P-018) |
-| D-206 | Fontes: Plus Jakarta Sans (títulos, Bold/ExtraBold) + DM Sans (corpo, Regular/SemiBold/Itálico) no lugar de Poppins + Inter, ambas OFL. Cobertura de PT-BR e das setas conferida; o download do jogo cai uns 1,9 MB. Estudo: `gestao/estudo-fontes/` | 2026-10-23 | Escolha do PO (opção A do estudo) |
+| D-206 | Fontes: Plus Jakarta Sans (títulos, Bold/ExtraBold) + DM Sans (corpo, Regular/SemiBold/Itálico) no lugar de Poppins + Inter, ambas OFL. Cobertura de PT-BR e das setas conferida; o download do jogo cai cerca de 1 MB (de 2,3 para 1,2 MB, medido no pacote exportado). Estudo: `gestao/estudo-fontes/` | 2026-10-23 | Escolha do PO (opção A do estudo) |
 | D-207 | Escala do texto com 3 opções, 100%, 125% e 150% (100% = corpo de 18 px), sem mostrar pixels. Revê a D-165 (16/18/20/24 px) e a D-148 (escala 200%). Configurações antigas em px migram para a escala mais próxima. No 150% vale o P1 (retrato some, problema rola) | 2026-10-23 | Escolha do PO |
 
 ---

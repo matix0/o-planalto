@@ -350,7 +350,7 @@ O playtest de 2026-10-21 mudou estas regras. Onde este doc diz outra coisa, vale
 | Textos | Nenhum `[a definir]` na tela (`jogo/tests/test_no_placeholders.gd`); textos em D-200/DP-025 | D-200, D-201 | — |
 | Folha de Aprendizado | O "Saiba mais" aberto deixa o dedo rolar até a fonte | P-017 | — |
 | Responsividade | Conferida em 390×680, 390×844 e 1280×720 (`.claude/notas/execucao/ferramentas/varredura-resolucoes.sh`); o cartão do ano cresce quando o texto grande não cabe | P-018 | — |
-| Fontes | Plus Jakarta Sans (títulos) e DM Sans (corpo) no lugar de Poppins e Inter; o download do jogo cai uns 1,9 MB (`gestao/estudo-fontes/`) | D-206 | D-140 (só a lista de fontes) |
+| Fontes | Plus Jakarta Sans (títulos) e DM Sans (corpo) no lugar de Poppins e Inter; o download do jogo cai cerca de 1 MB (de 2,3 para 1,2 MB, medido no pacote exportado) (`gestao/estudo-fontes/`) | D-206 | D-140 (só a lista de fontes) |
 | Escala do texto | Só 100%, 125% e 150%; sem pixels na tela; migra o valor salvo em px | D-207 | D-165, D-148 |
 
 ---
